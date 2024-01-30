@@ -1,0 +1,1476 @@
+1
+00:00:00,150 --> 00:00:09,030
+Panopto system, which hopefully will be better, and I'll see if I can get both recordings out to compare their quality,
+
+2
+00:00:09,030 --> 00:00:13,139
+their size, and decide which one to focus on going forward.
+
+3
+00:00:13,140 --> 00:00:19,710
+But with all those recordings underway, I'll officially say Welcome to Statistical physics.
+
+4
+00:00:20,790 --> 00:00:27,449
+Hey, introduce myself. My name is David Sheikh, which is a bit easier to pronounce.
+
+5
+00:00:27,450 --> 00:00:32,880
+And it might look sounds like handshake. And I'm a lecturer here in theoretical physics.
+
+6
+00:00:33,240 --> 00:00:37,379
+My office is just over in the theoretical physics wing across from the guild.
+
+7
+00:00:37,380 --> 00:00:40,440
+You can see there next to the seminar room with the funny roof.
+
+8
+00:00:41,340 --> 00:00:51,270
+And you are here for statistical physics. And I am looking forward to telling you all about this topic over the next few months.
+
+9
+00:00:52,680 --> 00:00:58,499
+So the plan for today I will go around and ask for introductions again.
+
+10
+00:00:58,500 --> 00:01:05,060
+I'll try to learn your names as we go along, but it will be a fairly gentle introduction.
+
+11
+00:01:05,520 --> 00:01:14,250
+Looking at first, what is the big picture or the big idea of statistical physics, which,
+
+12
+00:01:14,670 --> 00:01:20,640
+as some of you may have seen, has more to do with physics than it does with statistics.
+
+13
+00:01:20,880 --> 00:01:27,450
+Is this sometimes a confusing module name for people who don't already know the topic?
+
+14
+00:01:27,840 --> 00:01:32,220
+I think next year we're changing it. To be called more is different.
+
+15
+00:01:32,280 --> 00:01:37,410
+Statistical mechanics, thermodynamics and all that because that's really what we'll be focusing on.
+
+16
+00:01:37,770 --> 00:01:45,959
+So say just a bit about that in a minute. We have one lecture this morning so we won't get too far.
+
+17
+00:01:45,960 --> 00:01:51,210
+We'll do a quick review of the logistics for the module,
+
+18
+00:01:51,210 --> 00:01:59,370
+hopefully not repeating too much of what you've already seen on your own through the canvas site
+
+19
+00:01:59,370 --> 00:02:06,780
+or lecture notes and then just charge ahead with some of the foundations for statistical physics,
+
+20
+00:02:07,380 --> 00:02:18,000
+which are based in probability theory, the law of large numbers, central limit theorem and the necessary machinery to build up to all of that.
+
+21
+00:02:19,950 --> 00:02:23,679
+But. Well, pause for a moment,
+
+22
+00:02:23,680 --> 00:02:27,639
+see if there are any immediate questions that you might have had already coming in and would like
+
+23
+00:02:27,640 --> 00:02:37,810
+to ask that set that little thing to consider aside and just say that at the largest scale,
+
+24
+00:02:38,180 --> 00:02:42,780
+try to keep. The notes are projected on the screen.
+
+25
+00:02:43,680 --> 00:02:52,290
+And I will say this approach of writing on the document rather than on the board is done in part to help with the recording.
+
+26
+00:02:52,650 --> 00:02:57,990
+But it's also the choice that was preferred by students in years past.
+
+27
+00:02:58,320 --> 00:03:03,900
+And if you would prefer trying things in different ways, let me know and we can experiment.
+
+28
+00:03:05,400 --> 00:03:16,110
+But at the overall highest level, this domain of statistical physics is one of the three big revolutions that happened in physics,
+
+29
+00:03:16,620 --> 00:03:26,310
+a little over 100 to 150 years ago, along with relativity and quantum physics, the latter two.
+
+30
+00:03:28,090 --> 00:03:35,860
+May get a bit more publicity and screen time, but they both were developed around the same sorts of periods,
+
+31
+00:03:35,860 --> 00:03:38,890
+statistical physics starting in the late 1800s.
+
+32
+00:03:39,280 --> 00:03:43,270
+Both relativity and quantum physics in the early 1900s.
+
+33
+00:03:43,810 --> 00:03:50,890
+And of course, all of them interacting with each other and working together to form things like relativistic quantum field theory,
+
+34
+00:03:51,220 --> 00:03:57,700
+which underlines essentially all of the physics that is happening these days from
+
+35
+00:03:57,700 --> 00:04:03,670
+particle physics to condensed matter gravity and searches for quantum theory of gravity.
+
+36
+00:04:06,960 --> 00:04:12,840
+The main distinguishing feature of statistical physics compared to the domain of classical
+
+37
+00:04:12,840 --> 00:04:17,460
+mechanics or developments in relativity and quantum physics that you might have seen.
+
+38
+00:04:17,970 --> 00:04:26,190
+Those focussed mostly on behaviour of individual particles or individual objects you have in classical mechanics,
+
+39
+00:04:26,190 --> 00:04:34,950
+your block rolling down a slope in relativity, your particles moving very quickly with respect to one another.
+
+40
+00:04:35,490 --> 00:04:42,540
+Statistical physics is characterised by the behaviour of large numbers of particles.
+
+41
+00:04:43,200 --> 00:04:51,299
+Arrival emphasise the large and I will say that the particles here are not necessarily atoms or molecules,
+
+42
+00:04:51,300 --> 00:04:57,480
+but can just be considered degrees of freedom, objects that behave independently of each other.
+
+43
+00:04:58,230 --> 00:05:06,030
+And to illustrate sort of how large is large in the context of statistical physics, if we think about a.
+
+44
+00:05:07,040 --> 00:05:10,190
+Single cubic centimetre of water.
+
+45
+00:05:12,560 --> 00:05:16,090
+So a little block of water about a centimetre on a side.
+
+46
+00:05:16,100 --> 00:05:23,480
+You can sort of fit into the space of a die that consists of.
+
+47
+00:05:25,760 --> 00:05:31,910
+Roughly ten to the power 22. Molecules of H2O.
+
+48
+00:05:34,690 --> 00:05:42,130
+This ten to the power 22 or 23 is a number called Avogadro's number that we will see frequently in this module.
+
+49
+00:05:44,830 --> 00:05:55,000
+This precise value is 1/18 of Avogadro's number, which is basically the number of molecules that make up a molecular weight of water,
+
+50
+00:05:55,000 --> 00:06:00,520
+which for H2O is 18 grams with one gram per cubic centimetre.
+
+51
+00:06:01,960 --> 00:06:08,500
+And if we reflect on what to do with ten to the power 22 molecules,
+
+52
+00:06:08,890 --> 00:06:15,400
+we can sort of appreciate how trying to track the behaviour of every single
+
+53
+00:06:15,400 --> 00:06:21,220
+molecule in this tiny cubic centimetre of water is not a smart thing to do.
+
+54
+00:06:21,730 --> 00:06:27,400
+So if we wanted to take a snapshot of all those molecules at a single point in time.
+
+55
+00:06:29,710 --> 00:06:33,490
+Well, what would we need in order to do that?
+
+56
+00:06:35,710 --> 00:06:42,190
+So for each of these ten to the power 22 molecules we would want to record.
+
+57
+00:06:43,590 --> 00:06:53,760
+Both the position of the molecule within that cubic centimetre of water, and you also want to record its velocity or momentum.
+
+58
+00:06:55,020 --> 00:07:02,250
+There are three components to each position and velocity from the position of that particle in three dimensional space and how it is moving.
+
+59
+00:07:04,430 --> 00:07:10,460
+And if we want to have some amount of information about this, we would need to some say.
+
+60
+00:07:12,810 --> 00:07:17,340
+Some set of bits or bytes, some data to.
+
+61
+00:07:18,990 --> 00:07:23,520
+Reduce. This information to a manageable quantity.
+
+62
+00:07:24,120 --> 00:07:34,550
+So a typical floating point number in a computer program is made up of four bytes of data, which is 32 bits.
+
+63
+00:07:35,250 --> 00:07:46,980
+And if we multiply all of these together with two times three is six times four is 12 times ten to the 22 is roughly 10 to 23.
+
+64
+00:07:48,820 --> 00:07:57,380
+Bytes of information. To describe the system at a single point in time.
+
+65
+00:07:58,250 --> 00:08:08,390
+You're just barely fitting on the screen there, which if I convert from bytes to terabytes, so trillions of bytes takes out a factor of ten to the 12.
+
+66
+00:08:08,630 --> 00:08:18,170
+That leaves about ten to the 11 terabytes in units that you can convert to laptops or computers.
+
+67
+00:08:18,560 --> 00:08:25,400
+And just think that that tend to the 11th itself is 100.
+
+68
+00:08:28,580 --> 00:08:38,059
+Billion terabytes, which is a lot to capture the state of a cubic centimetre of water at one point in time.
+
+69
+00:08:38,060 --> 00:08:45,410
+And if we wanted to look at the dynamics of how all of those molecules evolved in time,
+
+70
+00:08:46,160 --> 00:08:51,650
+that itself would involve a similar number ten to the power 22.
+
+71
+00:08:52,810 --> 00:09:04,139
+A couple of differential equations. Independent of whether we're talking about simple classical mechanics evolving the states in time or the
+
+72
+00:09:04,140 --> 00:09:09,960
+quantum mechanics that starts to become relevant for small water molecules interacting with each other.
+
+73
+00:09:10,650 --> 00:09:15,240
+The short answer is we don't want to do that. We need to do something different.
+
+74
+00:09:15,600 --> 00:09:22,440
+And the different approach developed in the late 1800s was to instead of tracking every single individual molecule,
+
+75
+00:09:23,370 --> 00:09:33,720
+treat them all as essentially randomly fluctuating and try to make predictions on the basis of that approximation, that way of approaching things.
+
+76
+00:09:36,220 --> 00:09:39,629
+Is that writing legible to all of you out there?
+
+77
+00:09:39,630 --> 00:09:44,800
+Because it's not looking so hard from where I'm standing, just in terms of.
+
+78
+00:09:46,760 --> 00:09:54,799
+The focus. I think that's as good as the stock cam is going to do.
+
+79
+00:09:54,800 --> 00:09:58,850
+So I'll try to remember to write in a large.
+
+80
+00:10:00,170 --> 00:10:03,610
+Text. So yeah,
+
+81
+00:10:03,830 --> 00:10:12,049
+over the next few months we will be developing the approaches to treat collections of systems of degrees
+
+82
+00:10:12,050 --> 00:10:19,879
+of freedom sarcastically and see what large scale behaviour we can predict from that we will find.
+
+83
+00:10:19,880 --> 00:10:24,260
+So Brazil, at the level of the big picture, it's the sort of gold we're looking for.
+
+84
+00:10:27,300 --> 00:10:32,250
+The basic consequence of this statistical or stochastic approach to.
+
+85
+00:10:33,880 --> 00:10:41,320
+Dealing with systems with large numbers of degrees of freedom is the emergence of.
+
+86
+00:10:42,860 --> 00:10:56,639
+Smooth, large scale. Phenomena, some of which we can just talk through to forecast the targets to have in mind for this module,
+
+87
+00:10:56,640 --> 00:11:00,490
+as well as some of the things that we will be driving and analysing.
+
+88
+00:11:01,060 --> 00:11:11,040
+Maybe the most interesting one, even from a philosophical standpoint, is what's known as the arrow of time.
+
+89
+00:11:11,610 --> 00:11:16,830
+So this collection of pictures, to the extent they're showing up on the screen,
+
+90
+00:11:17,220 --> 00:11:23,640
+is considering dropping a drop of dye into a beaker of water on the way.
+
+91
+00:11:25,290 --> 00:11:35,790
+And I think we've all seen this sort of behaviour before, a drop of coloured dye in the first instance.
+
+92
+00:11:37,200 --> 00:11:48,480
+Of this sequence of pictures falls into a beaker and then it slowly spreads out or diffuses through the water in that beaker until in a final,
+
+93
+00:11:48,810 --> 00:11:56,970
+steady equilibrium state at the end. That die is pretty much evenly mixed all throughout the beaker and.
+
+94
+00:11:59,330 --> 00:12:05,750
+In the sort of traditional domain of physics of looking at the behaviour of water and dying
+
+95
+00:12:05,750 --> 00:12:10,940
+molecules bouncing off of each other to describe how the die is spreading throughout that water.
+
+96
+00:12:12,830 --> 00:12:15,990
+We could in principle predict this sort of behaviour.
+
+97
+00:12:16,670 --> 00:12:27,260
+But an interesting thing is that all of those collisions between molecules, whether they are classical using Newton's dynamics or quantum mechanical,
+
+98
+00:12:27,860 --> 00:12:30,620
+are reversible in time that is,
+
+99
+00:12:30,980 --> 00:12:38,180
+taking water and dice coming in from the left into the right is the same as taking those two molecules from the right into the left.
+
+100
+00:12:38,660 --> 00:12:49,790
+And in principle, the these four frames, if we were naive and turned off our intuition and our knowledge of the real world,
+
+101
+00:12:50,750 --> 00:13:01,219
+could correspond to time moving in either direction and just happening to have all of the particle
+
+102
+00:13:01,220 --> 00:13:07,490
+collisions between water and die occurring in such a way that the die started off evenly,
+
+103
+00:13:07,490 --> 00:13:12,050
+spread out through the water, bounced into a more condensed state,
+
+104
+00:13:12,290 --> 00:13:21,230
+and eventually popped up into a fluctuation big enough to actually pick it up out of the water and back into the air.
+
+105
+00:13:23,200 --> 00:13:25,690
+Intuitively, we know that doesn't happen.
+
+106
+00:13:27,520 --> 00:13:38,110
+And the fact that we can tell just by inspection which way time is running in this process and the way indicated by the
+
+107
+00:13:38,110 --> 00:13:45,610
+arrows corresponding to the arrow of time is something we will see emerging from statistical physics and immersion property,
+
+108
+00:13:46,630 --> 00:13:56,890
+not only of die in water, but any large scale system tending to move to states of what is called maximal entropy,
+
+109
+00:13:56,950 --> 00:14:02,080
+a concept that we'll get to just in the first few weeks of this module.
+
+110
+00:14:03,250 --> 00:14:09,790
+So that's a fairly basic. Application.
+
+111
+00:14:09,790 --> 00:14:14,770
+And for those of you who got here early, I had this little.
+
+112
+00:14:16,790 --> 00:14:21,070
+Thought experiment. On the projector for you to consider.
+
+113
+00:14:21,180 --> 00:14:31,169
+Just before we got going that it was these sorts of statistical physics arguments that actually
+
+114
+00:14:31,170 --> 00:14:38,100
+established the existence of atoms showing that those die in the water were not sort of continuous.
+
+115
+00:14:38,890 --> 00:14:45,540
+Media, just stuff that can't be described in terms of underlying degrees of freedom.
+
+116
+00:14:46,440 --> 00:14:57,000
+But even so, the existence of atoms was under debate for basically a full hundred years in the history of science.
+
+117
+00:14:57,420 --> 00:15:06,270
+This modern atomic theory in Europe was proposed in the early 1800s, and it was really only settled in the early 1900s.
+
+118
+00:15:06,280 --> 00:15:13,700
+So 1905. Albert Einstein as part of his so-called miracle year,
+
+119
+00:15:13,700 --> 00:15:19,099
+where he also developed relativity and quantum mechanics used statistical physics
+
+120
+00:15:19,100 --> 00:15:26,360
+to predict the behaviour of small grains of pollen suspended in a liquid,
+
+121
+00:15:26,390 --> 00:15:30,650
+assuming that that liquid was formed of molecules or atoms.
+
+122
+00:15:32,470 --> 00:15:39,780
+And. Predicted that the random so treating those individual atoms as randomly fluctuating
+
+123
+00:15:39,780 --> 00:15:45,330
+degrees of freedom as the we described for the big picture of statistical physics.
+
+124
+00:15:45,750 --> 00:15:54,480
+He predicted the particular way in which those grains of pollen would move throughout that liquid that they were sitting in.
+
+125
+00:15:54,810 --> 00:16:00,360
+This had been observed earlier on, and it was called Brownian motion at that point.
+
+126
+00:16:00,360 --> 00:16:04,600
+And you might see it referred to by that terminology.
+
+127
+00:16:05,730 --> 00:16:19,560
+In particular, he derived specific quantitative equations describing how those grains of pollen should randomly move if that water were made of atoms.
+
+128
+00:16:20,100 --> 00:16:29,540
+And just a few years later. A fellow named Jean Peron carried out the experiments to measure and confirm those
+
+129
+00:16:29,540 --> 00:16:36,230
+quantitative predictions for which she received the Nobel Prize in physics about 20 years.
+
+130
+00:16:37,200 --> 00:16:50,670
+Later on. And of course, all of that the age from 100 to 120 years ago was well before those individual atoms could be seen.
+
+131
+00:16:51,300 --> 00:16:59,590
+And. It was really the prediction of unique quantitative behaviour that was observable on large
+
+132
+00:16:59,590 --> 00:17:04,930
+scales from the underlying stochastic and statistical notion of the degrees of freedom.
+
+133
+00:17:05,200 --> 00:17:12,459
+That was the breakthrough both in that question and past and many more physics
+
+134
+00:17:12,460 --> 00:17:16,420
+developments that have come since and possibly might come in the future.
+
+135
+00:17:16,720 --> 00:17:17,920
+Certainly string theory,
+
+136
+00:17:17,980 --> 00:17:26,530
+where there's a proposal that everything in the universe is made out of very tiny strings that are far too small to see individually.
+
+137
+00:17:27,340 --> 00:17:35,829
+The dream of string theorists is that they can come up with larger scale behaviour that can be predicted on the basis of string theory,
+
+138
+00:17:35,830 --> 00:17:42,610
+even though the underlying strings like the underlying atoms are not directly visible.
+
+139
+00:17:43,420 --> 00:17:53,920
+So as a more recent example, the Nobel Prize in Physics a couple of years ago now in autumn 2021 was awarded to three folks.
+
+140
+00:17:54,980 --> 00:17:59,140
+Who? Applying statistical physics to.
+
+141
+00:18:03,320 --> 00:18:08,150
+Robustly, reliably, quantitatively describe very complex systems.
+
+142
+00:18:08,390 --> 00:18:13,310
+In particular for Sushi Romanova and CLOs Houseman.
+
+143
+00:18:14,060 --> 00:18:18,770
+They use these approaches to analyse the Earth's climate.
+
+144
+00:18:19,340 --> 00:18:28,610
+Pioneering the field of climate science and predict for the first time global warming the interactions of all
+
+145
+00:18:28,610 --> 00:18:36,439
+of the ridiculously large number of atoms and molecules that are interacting with each other to form weather,
+
+146
+00:18:36,440 --> 00:18:46,550
+climate and how they can be affected by things like pollution and greenhouse gases, as well as Giorgio Parisi doing that same sort of thing,
+
+147
+00:18:46,850 --> 00:18:58,460
+exploring statistical physics applications and the way they can manifest from small scales like magnets and atoms up to the very larger scales in.
+
+148
+00:18:59,270 --> 00:19:08,729
+The solar system and universe. And depending on how rapidly we go and how much interest there is,
+
+149
+00:19:08,730 --> 00:19:15,389
+we might be able to look at some of the systems that Parisi was considering things called
+
+150
+00:19:15,390 --> 00:19:20,520
+spin glasses in some of the tutorials probably on the other side of the Easter break.
+
+151
+00:19:23,530 --> 00:19:29,259
+And I have on the Kansas page actually a link to a recent lecture by Giorgio Parisi talking
+
+152
+00:19:29,260 --> 00:19:38,020
+about this philosophy of large scale complexity emerging from underlying statistical physics.
+
+153
+00:19:40,120 --> 00:19:43,290
+So that is at the bigger scale.
+
+154
+00:19:43,330 --> 00:19:48,459
+Some of the interesting targets for this overall approach of statistical physics,
+
+155
+00:19:48,460 --> 00:19:54,970
+I will just briefly flash some of the calculations we will definitely be doing to give you something to look forward to.
+
+156
+00:19:56,650 --> 00:20:02,530
+One of these is predicting properties of solid materials.
+
+157
+00:20:03,280 --> 00:20:08,170
+In this case, a property known as the heat capacity which.
+
+158
+00:20:09,070 --> 00:20:18,969
+If you. Recognise that the units being used in this plot, which we won't really bother with units too much in this mathematics module,
+
+159
+00:20:18,970 --> 00:20:28,890
+will keep everything in natural units where energy and temperature actually have the same units rather than being measured in Joules J and Kelvin K.
+
+160
+00:20:29,310 --> 00:20:38,190
+This heat capacity is a measure essentially of how much energy is needed to change the temperature of a material by one unit in
+
+161
+00:20:38,190 --> 00:20:48,510
+whatever units you care to use the materials here are some solid led aluminium and diamond and as a function of temperature,
+
+162
+00:20:48,750 --> 00:20:56,610
+the heat capacity behave as follows a characteristic behaviour that we will actually be able to derive from
+
+163
+00:20:56,610 --> 00:21:03,870
+knowing that these solids are made up of lattices of atoms that have electrons bouncing around between them.
+
+164
+00:21:04,680 --> 00:21:16,290
+And we will especially focus on this low temperature region where the behaviour of those electrons is particularly interesting,
+
+165
+00:21:16,320 --> 00:21:23,460
+with some implications for supernova and larger scale behaviour of bigger systems.
+
+166
+00:21:23,910 --> 00:21:31,469
+If I zoom in just on that heat capacity at the low temperature region and also change the axis of that,
+
+167
+00:21:31,470 --> 00:21:36,270
+now the horizontal axis is temperature squared rather than just temperature,
+
+168
+00:21:36,660 --> 00:21:44,310
+so a temperature squared of four corresponds to a temperature of two on this earlier scale, so very low.
+
+169
+00:21:46,320 --> 00:22:00,560
+And similarly, the 16 is a temperature of four Kelvin and I also divide out the temperature from a heat capacity C so that the units differ slightly,
+
+170
+00:22:01,130 --> 00:22:08,300
+but we see very straight lines which if we unwind the manipulations that we've used
+
+171
+00:22:08,570 --> 00:22:13,580
+on the axes to get straight lines out of this means that this heat capacity is.
+
+172
+00:22:15,020 --> 00:22:19,460
+A combination of a linear term in the temperature.
+
+173
+00:22:19,730 --> 00:22:28,040
+So that is this non-zero intercept. As the temperature goes to absolute zero kelvin, several hundred degrees centigrade below zero.
+
+174
+00:22:28,730 --> 00:22:36,709
+There is a non-zero heat capacity there which I can describe by this free parameter.
+
+175
+00:22:36,710 --> 00:22:46,640
+A And then the slope. If C over T is proportional to T squared, we get a second term that is cubic in the temperature,
+
+176
+00:22:47,300 --> 00:22:53,780
+both of which we will derive and be able to predict actual values for A and B again,
+
+177
+00:22:53,780 --> 00:22:59,890
+plugging in physical units to compare that with these sorts of laboratory experiments.
+
+178
+00:22:59,900 --> 00:23:03,620
+Now looking at gold, silver or copper, copper, some metals.
+
+179
+00:23:07,780 --> 00:23:18,190
+That's similarly to the LED aluminium and diamond are easy to well, easy for experimentalists to analyse to determine the heat capacity.
+
+180
+00:23:19,600 --> 00:23:31,659
+And one last picture which you may recognise from the logo for this module on canvas is another prediction.
+
+181
+00:23:31,660 --> 00:23:35,320
+We will be able to go after something that's known as the Planck distribution.
+
+182
+00:23:36,130 --> 00:23:51,970
+So this is the power source, the amount of energy times time per unit volume that is measured from the essentially empty intergalactic space.
+
+183
+00:23:52,450 --> 00:23:56,020
+So this is. Known as a cosmic.
+
+184
+00:23:58,470 --> 00:24:09,590
+Microwave background. A background because it is present at all points that we can observe in the universe,
+
+185
+00:24:09,590 --> 00:24:13,310
+even in between galaxies where there is essentially nothing else.
+
+186
+00:24:13,490 --> 00:24:24,320
+Just very few molecules of stray gas and radiation that escape from those galaxies coming to us in the form of photons.
+
+187
+00:24:25,190 --> 00:24:34,670
+These particular measurements in the square boxes, which are about the size of those boxes, is an indication of.
+
+188
+00:24:35,530 --> 00:24:37,930
+The experimental uncertainty on those measurements.
+
+189
+00:24:39,920 --> 00:24:49,850
+That was taken by a satellite known as the Cosmic Background Explorer COBE, published around 1990 and itself awarded.
+
+190
+00:24:51,150 --> 00:24:58,740
+The Nobel Prize. In believe 26 For these measurements.
+
+191
+00:24:59,580 --> 00:25:05,310
+The solid line is a fit of that data to something called the Planck spectrum.
+
+192
+00:25:06,660 --> 00:25:11,400
+The statistical physics prediction for the behaviour of a gas of photons,
+
+193
+00:25:11,760 --> 00:25:21,209
+which we will derive and we will see how it can fit these data and in particular how that fit depends on the temperature and can be used
+
+194
+00:25:21,210 --> 00:25:34,110
+to tell us the temperature of this background radiation that is essentially an afterglow left over from the early years of the universe.
+
+195
+00:25:35,540 --> 00:25:39,260
+That temperature ends up to be roughly two kelvin.
+
+196
+00:25:40,130 --> 00:25:46,460
+So again, very low, several hundred degrees below zero in the centigrade scale.
+
+197
+00:25:48,380 --> 00:25:59,180
+So that hopefully is some motivation for you to stick with this module and look forward to things we'll be doing with it.
+
+198
+00:25:59,580 --> 00:26:04,700
+There's that saying that the journey of a thousand miles begins with asking Is it worth it?
+
+199
+00:26:05,300 --> 00:26:12,470
+And I certainly think it is. And now that I hope to have convinced you of this,
+
+200
+00:26:13,220 --> 00:26:21,160
+we'll take just a few minutes today to talk through some of the logistical aspects of the module before I make that turn.
+
+201
+00:26:21,170 --> 00:26:27,080
+Are there any immediate questions about the big picture or sort of philosophy of statistical physics?
+
+202
+00:26:30,610 --> 00:26:34,620
+So this is the canvas page. It's been up for about a week.
+
+203
+00:26:34,630 --> 00:26:41,500
+Hopefully you've taken a look. Just a few things to highlight quickly.
+
+204
+00:26:41,770 --> 00:26:46,959
+You can feel free to shut those windows if you get cold or if the construction noise starts to annoy.
+
+205
+00:26:46,960 --> 00:26:50,800
+You know, you you've managed to find it.
+
+206
+00:26:52,060 --> 00:27:06,310
+Find the lecture room for today. We will be in here most weeks, both Tuesday morning and midday on Fridays and most weeks.
+
+207
+00:27:06,310 --> 00:27:12,549
+We will also have then a tutorial downstairs next week and the two weeks after that.
+
+208
+00:27:12,550 --> 00:27:18,340
+So the three four weeks in February, the schedule will be slightly different.
+
+209
+00:27:19,900 --> 00:27:28,090
+You will see that there will be a computer project that forms about 15% of the assessment for this module.
+
+210
+00:27:28,600 --> 00:27:35,889
+That project you will have by next week and you will have three computer labs to
+
+211
+00:27:35,890 --> 00:27:41,320
+work on it and learn about the programming that you will need to complete it.
+
+212
+00:27:42,190 --> 00:27:46,810
+So I want to emphasise that I'm not assuming you have any particular programming background,
+
+213
+00:27:47,650 --> 00:27:54,340
+probably in this week's tutorial on Thursday, as well as using some of those computer labs.
+
+214
+00:27:54,760 --> 00:27:59,890
+We'll talk through what you need for this project, which is not too much,
+
+215
+00:28:00,280 --> 00:28:14,200
+but enough to see how a very predictable and robust behaviour can emerge from the underlying random dynamics of degrees of freedom.
+
+216
+00:28:14,200 --> 00:28:21,580
+So for weeks two, three and four of the term, you'll have that computer lab on the Tuesday mornings rather than being in here.
+
+217
+00:28:22,150 --> 00:28:25,390
+And then the Friday lectures in here will be.
+
+218
+00:28:29,270 --> 00:28:30,290
+Will happen every week.
+
+219
+00:28:32,760 --> 00:28:42,360
+I should also say that for this computer lab, we have been assigned one portion of the big computer teaching lab room in the central teaching lab.
+
+220
+00:28:42,360 --> 00:28:49,830
+So that's on the first floor, room 1/17, sort of right at the top of the stairs as you come in and.
+
+221
+00:28:52,520 --> 00:29:00,230
+There are four zones in that room, I believe, red, blue, green and orange.
+
+222
+00:29:00,380 --> 00:29:02,810
+And we have been assigned to that green Zone.
+
+223
+00:29:03,260 --> 00:29:08,390
+We'll see how that works and how many other things are going on at the same time in all those other zones.
+
+224
+00:29:09,730 --> 00:29:19,190
+But those computer labs will give you a chance to hear a bit about programming background and also work on the computer lab itself,
+
+225
+00:29:19,190 --> 00:29:23,089
+which will be due on the 20th of February.
+
+226
+00:29:23,090 --> 00:29:28,190
+At the end of the day of the final computer lab meeting.
+
+227
+00:29:28,850 --> 00:29:37,400
+In addition to that computer project, there are going to be two homework assignments one do before the Easter break, the other two after.
+
+228
+00:29:39,430 --> 00:29:44,290
+You might have seen that. I was told the deadline for those assignments had to be at 5 p.m.
+
+229
+00:29:44,680 --> 00:29:48,280
+And just a few days ago those orders were rescinded.
+
+230
+00:29:48,670 --> 00:29:51,399
+So I don't know what was going on with that,
+
+231
+00:29:51,400 --> 00:29:57,610
+but I'm just going to give you the maximum flexibility to turn that in whatever you want on the day of the deadlines.
+
+232
+00:29:58,030 --> 00:30:04,000
+I think this shows up on canvas as a deadline at 11:59 p.m.
+
+233
+00:30:04,600 --> 00:30:08,540
+Yeah, there it is. You definitely don't need to wait for 11:59 p.m.
+
+234
+00:30:08,560 --> 00:30:13,720
+Feel free to have a mental deadline of 5 p.m. if that is what you prefer.
+
+235
+00:30:14,140 --> 00:30:20,650
+But you won't be charged any of the standard late penalties until the following calendar day.
+
+236
+00:30:20,680 --> 00:30:32,020
+No matter when you turn it in and looking at sort of the more detailed outline how that big picture is implemented in practice,
+
+237
+00:30:32,890 --> 00:30:37,240
+things are divided up into ten units across the 12 weeks of the term.
+
+238
+00:30:37,720 --> 00:30:40,570
+Not all of those units are going to be the same. Some are pretty quick.
+
+239
+00:30:40,900 --> 00:30:51,820
+Some will take some time and they are all organised around this kind of central idea of a statistical ensemble,
+
+240
+00:30:52,360 --> 00:30:58,060
+which is what we will be defining over the next week or two.
+
+241
+00:30:58,150 --> 00:31:05,110
+In this Unit one, the Central Limit theorem and diffusion, hopefully a reminder of something you have seen before,
+
+242
+00:31:05,710 --> 00:31:12,820
+as well as a different way of looking at it that is more suitable for statistical physics.
+
+243
+00:31:14,260 --> 00:31:21,520
+We will both develop three different types of sorts of statistical ensembles that
+
+244
+00:31:22,090 --> 00:31:25,720
+vary in some of their details and their applicability to different systems.
+
+245
+00:31:26,590 --> 00:31:36,280
+Let's not get into the details yet. We will also use those three different ensembles, apply them to analyse some different.
+
+246
+00:31:38,030 --> 00:31:48,950
+Physical systems and basically test cases looking at things like the behaviour of idealised non interacting gases,
+
+247
+00:31:49,970 --> 00:31:53,420
+thermodynamic cycles as well as quantum gases.
+
+248
+00:31:53,420 --> 00:31:59,000
+So here again something I want to emphasise that you don't need any quantum physics for this module.
+
+249
+00:31:59,630 --> 00:32:09,830
+The quantum part of this is just going to be a specification of how these gases behave essentially in arms arts or a proposal that we say,
+
+250
+00:32:10,100 --> 00:32:18,380
+suppose particles behave like this, let's see what would happen when they were put through the machinery of statistical physics.
+
+251
+00:32:21,320 --> 00:32:31,890
+So. The. Organisation of that outline is reflected in the modules that we have, the lecture notes that are up there.
+
+252
+00:32:32,610 --> 00:32:36,750
+We're worked on a lot over the past couple of years.
+
+253
+00:32:37,020 --> 00:32:38,790
+Hopefully they're more stable this year.
+
+254
+00:32:39,600 --> 00:32:48,270
+That said, it's always possible I will need to improve them, make some changes, add some content or possibly correct some errors.
+
+255
+00:32:48,900 --> 00:32:53,520
+So at the bottom of each page in the lecture notes you'll be able to see.
+
+256
+00:32:55,840 --> 00:32:59,980
+When they were last modified. And you can keep an eye.
+
+257
+00:33:01,560 --> 00:33:12,210
+On any modifications through a version control repository that is linked just from the logistical information that has sort of been talking through.
+
+258
+00:33:15,810 --> 00:33:24,120
+That's the link to the canvass site and. That is the link to the version control repository where you can see that.
+
+259
+00:33:27,160 --> 00:33:33,250
+This 5 p.m. deadline was removed as the most recent change.
+
+260
+00:33:33,250 --> 00:33:36,550
+I will try to flag any significant changes.
+
+261
+00:33:37,660 --> 00:33:44,920
+In some regular weekly announcements that just keep you on track with what is going on in the module.
+
+262
+00:33:46,840 --> 00:33:55,930
+And you know, both what we did, what we're looking forward to and checking in to see if there are any questions or concerns.
+
+263
+00:33:57,130 --> 00:34:04,300
+And I saw I was reminded just for going through this logistical information that
+
+264
+00:34:04,990 --> 00:34:10,450
+office hours will take place sort of immediately following every class meeting,
+
+265
+00:34:10,450 --> 00:34:16,570
+lectures, tutorial or computer labs that will be over in my office in that theoretical physics wing,
+
+266
+00:34:17,350 --> 00:34:25,300
+and also try to keep a zoom room open for those of you who might be off campus or out of town.
+
+267
+00:34:26,790 --> 00:34:38,600
+And to quickly wrap up some of the logistical overview, I think, you know, you're all in your third year.
+
+268
+00:34:38,610 --> 00:34:43,200
+I believe you know how to study, how to succeed in mathematics.
+
+269
+00:34:45,240 --> 00:34:52,139
+So I'm a believer of these points, but it's good to come to class, even if you know you're confident in your understanding.
+
+270
+00:34:52,140 --> 00:35:00,270
+It gives you a regular opportunity to check in with the material, make sure that everything is clear, and if you are bored,
+
+271
+00:35:00,270 --> 00:35:10,740
+you can ask for more advanced elaborations or point out where things are being oversimplified just for the case for the sake of getting through them.
+
+272
+00:35:12,420 --> 00:35:22,530
+And maybe more importantly than that, you should actually work through the the mathematical material that will be covering.
+
+273
+00:35:22,530 --> 00:35:26,939
+And there are sort of three ways for you to do that in the way that things are organised.
+
+274
+00:35:26,940 --> 00:35:33,540
+In the lecture notes, you'll see that there are some gaps that are left, most of which we'll talk through in the lectures.
+
+275
+00:35:33,930 --> 00:35:44,910
+But those are sort of basic exercises to some in some ways the sort of thing that other modules might leave to tutorials if you want.
+
+276
+00:35:45,330 --> 00:35:52,379
+So you should make sure that you can confidently fill in any of the gaps in the lecture
+
+277
+00:35:52,380 --> 00:35:58,110
+notes and see how they connect to the material that is explicit in the lecture notes.
+
+278
+00:35:58,410 --> 00:36:10,290
+That's a good check to make sure that everything is clear and you're able to derive the results that you have seen for the tutorials themselves.
+
+279
+00:36:10,530 --> 00:36:17,220
+These will be well, once we get through the computer lab that sort of displaces the tutorials for the first few weeks of the term.
+
+280
+00:36:17,790 --> 00:36:27,120
+The tutorials will generally focus around a sort of larger scale activity for you to work on, mostly in the week between the tutorial meetings.
+
+281
+00:36:27,630 --> 00:36:31,630
+So the Gitau tutorial meeting itself will introduce that activity,
+
+282
+00:36:31,670 --> 00:36:35,820
+give the bit of background, connecting it to the lectures and the rest of the module,
+
+283
+00:36:36,930 --> 00:36:44,550
+and then the following week it will start off by just reviewing some of the takeaways from that activity.
+
+284
+00:36:44,910 --> 00:36:52,140
+Make sure that you were able to get through it all. And of course there are those that computer lab and the two homework assignments,
+
+285
+00:36:53,040 --> 00:37:03,600
+the questions on there are going to be more challenging in larger scale than would be on the exam just because you have more time to work on them.
+
+286
+00:37:03,990 --> 00:37:10,559
+So it will be good to get started and take a look at those problems and start working on them well
+
+287
+00:37:10,560 --> 00:37:16,800
+before the deadline because they should take you more than just a couple of hours of the final exam.
+
+288
+00:37:18,510 --> 00:37:25,290
+So I've probably spent too much time repeating things that you've already seen and already know.
+
+289
+00:37:25,740 --> 00:37:31,890
+Any questions about logistics before we start the.
+
+290
+00:37:36,600 --> 00:37:39,870
+Detailed probability foundations for the module.
+
+291
+00:37:42,440 --> 00:37:49,830
+And while you think about that, I need to think about why. This projector has turned itself off.
+
+292
+00:37:51,600 --> 00:37:55,260
+It should not have. So I will try.
+
+293
+00:37:57,720 --> 00:38:02,780
+Reloading it in the hope that that wakes it back up. There it is.
+
+294
+00:38:06,470 --> 00:38:11,920
+So. Just a final 10 minutes on.
+
+295
+00:38:15,190 --> 00:38:18,940
+Some of the probability foundations that.
+
+296
+00:38:20,780 --> 00:38:23,930
+Over the next week will build up.
+
+297
+00:38:24,140 --> 00:38:29,180
+Oh, dear. That's completely illegible, isn't it?
+
+298
+00:38:38,560 --> 00:38:48,950
+See it looks. It looks like the right side of the projector is is able to project this intellectual way and the left side is not.
+
+299
+00:38:49,340 --> 00:38:57,379
+So let me try to write on half of the page so that it can be actually seen through the stock cam.
+
+300
+00:38:57,380 --> 00:39:02,750
+And I'll see what I can do about cleaning its lens or getting it repaired in some way.
+
+301
+00:39:03,590 --> 00:39:06,680
+So. This is a reminder.
+
+302
+00:39:08,840 --> 00:39:17,200
+The goal here is getting. Some smooth, large scale behaviour.
+
+303
+00:39:18,230 --> 00:39:27,710
+To emerge from the statistical and sarcastic fluctuations of a large number of particles.
+
+304
+00:39:30,380 --> 00:39:37,580
+And the basic ingredient or the sort of results that show how this happens,
+
+305
+00:39:37,850 --> 00:39:47,030
+how these small scale fluctuations are largely invisible in larger scale properties are.
+
+306
+00:39:48,220 --> 00:39:52,990
+Two results. One known as the law of Large numbers.
+
+307
+00:39:55,170 --> 00:39:58,650
+And the other the central limit theorem. Both of these.
+
+308
+00:40:00,180 --> 00:40:10,790
+I'm confident you have seen before in some. Weigh in, possibly with some different terminology in.
+
+309
+00:40:11,030 --> 00:40:14,510
+So in this module, we will.
+
+310
+00:40:15,940 --> 00:40:22,630
+Start by building those up from some more fundamental mathematical definitions.
+
+311
+00:40:26,130 --> 00:40:33,240
+Which will be useful. When we start to focus on.
+
+312
+00:40:36,270 --> 00:40:45,570
+This idea of a statistical ensemble and the three sorts of statistical ensembles that are highlighted in the outline for the module.
+
+313
+00:40:46,830 --> 00:40:50,880
+So the sort of classical mathematical approach to physics.
+
+314
+00:40:51,480 --> 00:40:55,530
+We begin with a series of definitions.
+
+315
+00:40:56,790 --> 00:41:00,800
+First. Defining a random experiment.
+
+316
+00:41:02,780 --> 00:41:07,050
+Shall I call this calligraphic e? Just as.
+
+317
+00:41:09,400 --> 00:41:12,790
+Some observation of the world.
+
+318
+00:41:14,500 --> 00:41:20,230
+The state of the universe after carrying out some process that involves some aspects of randomness.
+
+319
+00:41:20,680 --> 00:41:37,020
+So a. You know, they're easy example to keep in mind is just the experiment of flipping a coin and seeing how it comes out, how it comes out.
+
+320
+00:41:37,380 --> 00:41:45,840
+So the state of the universe, after carrying out this process, this random process and observing what happens,
+
+321
+00:41:45,870 --> 00:41:55,500
+well, that is just going to be a state for which we'll use the Greek letter Omega.
+
+322
+00:41:56,710 --> 00:42:00,400
+Looks like the English letter W with a bit of curvature.
+
+323
+00:42:02,020 --> 00:42:07,360
+So the state is not only whether that coin landed heads up or tails up.
+
+324
+00:42:07,840 --> 00:42:14,890
+The usual question we want to ask on flipping a coin, but also includes any other relevant information in the universe,
+
+325
+00:42:15,100 --> 00:42:23,830
+like where the coin landed over on the floor over there, of what time it landed down there or the temperature in the room where it landed.
+
+326
+00:42:24,700 --> 00:42:29,080
+Anything that we could observe after doing that.
+
+327
+00:42:30,300 --> 00:42:33,090
+A process that involves some randomness.
+
+328
+00:42:33,390 --> 00:42:41,160
+And so not necessarily intrinsic quantum randomness, but just randomness in the sense that we don't know the answer,
+
+329
+00:42:41,160 --> 00:42:45,780
+even if it could be computed in principle through a complicated calculation of how
+
+330
+00:42:45,780 --> 00:42:50,790
+that coin is spinning and interacting with the molecules of air it goes through.
+
+331
+00:42:53,920 --> 00:43:04,330
+Another Greek letter is this capital Omega. Which I will use to refer to the set of all possible omega.
+
+332
+00:43:06,520 --> 00:43:09,700
+So the set of all states.
+
+333
+00:43:12,200 --> 00:43:20,200
+Is. The collection of all of the possible states of the universe that we could observe after doing the experiment.
+
+334
+00:43:20,200 --> 00:43:24,130
+E And in particular, that means that.
+
+335
+00:43:25,930 --> 00:43:31,270
+The set of all states is dependent on the experiment that we choose to do.
+
+336
+00:43:32,590 --> 00:43:39,370
+So it is a property of that experiment that produces these states that we can observe.
+
+337
+00:43:40,070 --> 00:43:44,380
+Now, those states include lots of information that we may not be interested in.
+
+338
+00:43:46,440 --> 00:43:57,690
+So. The next step is to turn a state into something useful to analyse mathematically is to perform a measurement on it.
+
+339
+00:44:02,170 --> 00:44:07,570
+So we define a measurement ex acting on a state.
+
+340
+00:44:09,230 --> 00:44:16,670
+To be a way to extract the information that we're actually interested in.
+
+341
+00:44:17,800 --> 00:44:24,980
+So. In that case of flipping a coin, typically interested in did it land heads up or tails up.
+
+342
+00:44:25,460 --> 00:44:28,790
+In this case it is tails if you're wondering over there on the floor.
+
+343
+00:44:30,520 --> 00:44:35,020
+So. Acting.
+
+344
+00:44:36,130 --> 00:44:46,140
+Well, this measurement is sort of formally a function that we can apply to every state in that set of all states.
+
+345
+00:44:46,150 --> 00:44:51,910
+Omega which is to say that. This measurement function X.
+
+346
+00:44:52,950 --> 00:44:56,810
+Takes. The set of all states.
+
+347
+00:44:59,880 --> 00:45:07,220
+To. Extract the information of interest for all of those states.
+
+348
+00:45:10,140 --> 00:45:15,440
+So this a. Which is the set of all possible outcomes.
+
+349
+00:45:18,770 --> 00:45:25,590
+Is called. The outcome space.
+
+350
+00:45:27,570 --> 00:45:32,520
+And so for flipping a coin, the typical outcome, SpaceX heads up or tails up.
+
+351
+00:45:33,330 --> 00:45:36,420
+And this is something that can be.
+
+352
+00:45:38,680 --> 00:45:44,410
+Just a finite set with those two possibilities. Like for flipping a coin, it can be accountably infinite.
+
+353
+00:45:48,870 --> 00:45:52,830
+Or I've lost the screen there.
+
+354
+00:45:54,950 --> 00:46:01,519
+Or it can even be a continuous unaccountably infinite set of possible outcomes.
+
+355
+00:46:01,520 --> 00:46:14,390
+For example, if we wanted to measure the position at which that coin landed, then we could treat that as a continuously varying parameter.
+
+356
+00:46:15,050 --> 00:46:19,250
+And if we repeat that experiment several times.
+
+357
+00:46:20,920 --> 00:46:25,360
+And carry out this measurement on the state that comes out then.
+
+358
+00:46:26,910 --> 00:46:38,550
+The sequence of measurement outcomes that we get X for the oath states just as a label after each repetition of the experiment.
+
+359
+00:46:39,590 --> 00:46:44,230
+Is. Something known as a random variable.
+
+360
+00:46:49,280 --> 00:46:56,600
+Just a number that fluctuates randomly depending on the.
+
+361
+00:46:57,730 --> 00:47:01,870
+Randomness that is built into the experiment that we perform and the measurement
+
+362
+00:47:01,870 --> 00:47:06,130
+that we then perform to extract the information from the state that results.
+
+363
+00:47:06,520 --> 00:47:21,510
+And that is going to be. The basis of the probability foundations that we set up, which we've run out of time to do today, probably given.
+
+364
+00:47:22,810 --> 00:47:25,570
+The amount of time I spent on the big picture in logistics today,
+
+365
+00:47:25,870 --> 00:47:32,439
+I have to catch up with some of that probability foundations in the tutorial on Thursday,
+
+366
+00:47:32,440 --> 00:47:40,060
+so it will be less of an activity and more of a replacement lecture just to get us to the point where more interesting things can be done.
+
+367
+00:47:41,080 --> 00:47:48,340
+So I hope to see you then. Are there any quick questions before you declare victory for today?
+
+368
+00:47:53,260 --> 00:47:56,800
+If not, I'll shut down the recordings. I'll see you on Thursday.
+
+369
+00:47:57,370 --> 00:48:06,910
+And we'll hope that the camera in room 103 is better than this one and see if this one can be repaired.
+
