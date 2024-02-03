@@ -1,0 +1,2696 @@
+1
+00:00:00,750 --> 00:00:12,760
+There's that, and ... let's see.
+
+2
+00:00:17,150 --> 00:00:23,570
+Over the past few days, I think the first day the Panopto recording worked and the Zoom recording didn't, and then the second day, yesterday,
+
+3
+00:00:23,570 --> 00:00:31,790
+Zoom worked and Panopto had a really quiet audio.  So I'll keep them both going for now until things settle down.
+
+4
+00:00:32,270 --> 00:00:39,560
+And just for anyone who has trouble seeing the board, the number for today to check in
+
+5
+00:00:41,180 --> 00:00:46,170
+is there: 24 18 78, so I don't forget about it again.
+
+6
+00:00:46,820 --> 00:00:57,140
+And, where we are after doing a bit of lecturey stuff in yesterday's tutorial,
+
+7
+00:00:59,100 --> 00:01:03,180
+Is that we got through this full definition of
+
+8
+00:01:04,310 --> 00:01:14,140
+the probability space: The combination of the outcome space A the set of all outcomes that we can have
+
+9
+00:01:14,170 --> 00:01:19,150
+after performing a specified measurement on a specified random experiment.
+
+10
+00:01:20,890 --> 00:01:29,860
+Then we have the event space F, which is the collection of subsets of those outcomes that we are interested in mathematically analysing.
+
+11
+00:01:30,340 --> 00:01:37,530
+And for each events in that event space f we can assign it to probability as a measure
+
+12
+00:01:37,540 --> 00:01:50,380
+function that maps the event to some percentage between 0% and 100% of observing that event.
+
+13
+00:01:50,500 --> 00:01:59,770
+After our random experiment with the usual properties of probability, the probability of anything happening adds up to 100%,
+
+14
+00:02:00,190 --> 00:02:07,960
+and the probability of independent, mutually exclusive events is just the sum of each of the individual probabilities.
+
+15
+00:02:09,220 --> 00:02:16,900
+Any questions about that before we dive into the longer lecture for today?
+
+16
+00:02:17,500 --> 00:02:20,770
+And just to say upfront, I will give you the usual break.
+
+17
+00:02:20,950 --> 00:02:26,259
+About 10 minutes to the hour. So it'll be 250 minute sessions.
+
+18
+00:02:26,260 --> 00:02:37,420
+We will just charge straight through and also try to ask you some questions as we go along, help you stay awake after the Thursday night.
+
+19
+00:02:38,560 --> 00:02:50,880
+The plan for today is to start building up on these probability foundations, this probability space, and look at the refocuses.
+
+20
+00:02:50,890 --> 00:02:59,770
+Look at the end of two key outcomes, which I suspect you have seen before in some form,
+
+21
+00:03:00,490 --> 00:03:07,600
+possibly with a different perspective or notation, a result called the law of large numbers.
+
+22
+00:03:07,990 --> 00:03:14,560
+And then after that, basically briefly stating the central limit theorem which.
+
+23
+00:03:17,040 --> 00:03:32,429
+Will require a brief general or a quick generalisation to introduce probability distributions when our outcomes in events are continuously valued,
+
+24
+00:03:32,430 --> 00:03:36,330
+uncountable, the infinite and basically real numbers.
+
+25
+00:03:37,500 --> 00:03:42,300
+I think we should get through both of those and then start looking at. Random walks.
+
+26
+00:03:43,840 --> 00:03:53,740
+As a particular application of that central limit theorem, which may look familiar based on the tutorial activity that you saw yesterday,
+
+27
+00:03:54,250 --> 00:04:01,870
+and either by the end of the day or at the end of the next lecture, all of the ingredients for that tutorial will be in your grasp.
+
+28
+00:04:02,800 --> 00:04:16,990
+So. Building up to the law of large numbers, let's just say a little bit more about probability is just to.
+
+29
+00:04:18,600 --> 00:04:21,930
+Have that in a formal lecture in addition to that tutorial.
+
+30
+00:04:22,320 --> 00:04:27,730
+And think about a. Generic.
+
+31
+00:04:28,920 --> 00:04:32,820
+Probability example in the.
+
+32
+00:04:33,890 --> 00:04:41,330
+Notation that we've introduced where we have some finite set of all states.
+
+33
+00:04:44,200 --> 00:04:50,920
+That has. Some possible states we can label omega one through omega and.
+
+34
+00:04:52,410 --> 00:04:56,250
+Within elements in the set we have.
+
+35
+00:04:58,970 --> 00:05:08,190
+A given measurement X. Which just to emphasise something that I think I skipped over in the tutorial I didn't get to on Monday.
+
+36
+00:05:08,700 --> 00:05:15,720
+This measurement will often give the same outcome for distinct states.
+
+37
+00:05:19,520 --> 00:05:25,790
+So this is maybe obvious if you think about a specific example of flipping a coin
+
+38
+00:05:25,910 --> 00:05:30,890
+where the state can include information about where exactly the coin lands.
+
+39
+00:05:31,430 --> 00:05:36,890
+But the outcome that we are interested in is typically just heads up or tails up.
+
+40
+00:05:38,840 --> 00:05:51,890
+What this means and sort of full generality, if we have a measurement on state ie equal to a measurement on stage when those states are not the same.
+
+41
+00:05:53,180 --> 00:06:02,130
+That means that the outcomes set. Which is formed of some collection of outcomes.
+
+42
+00:06:03,940 --> 00:06:10,660
+He constructed by acting with this measurement on each of the states in the set of all states,
+
+43
+00:06:12,430 --> 00:06:16,120
+this will generically have a different number of elements.
+
+44
+00:06:16,540 --> 00:06:21,550
+I call that a lowercase end rather than the uppercase end for the number of states,
+
+45
+00:06:22,000 --> 00:06:27,520
+and there is a bound that the number of outcomes can be at most the number of states.
+
+46
+00:06:27,520 --> 00:06:29,710
+And typically it will be much, much,
+
+47
+00:06:30,190 --> 00:06:38,680
+much smaller because we're discarding all of the extra information in those various states that we aren't interested in analysing.
+
+48
+00:06:40,870 --> 00:06:55,599
+All of these outcomes are distinct results of that measurement, so that if we look at that joint probability of measuring outcome X,
+
+49
+00:06:55,600 --> 00:07:01,930
+sub I or outcome x sub J because they are distinct, mutually exclusive,
+
+50
+00:07:02,320 --> 00:07:10,900
+that breaks up following our probability definition into the sum of the probabilities of each of them separately,
+
+51
+00:07:11,260 --> 00:07:22,510
+which we can just call a lowercase piece of ie and piece of j where it all here is still what we're assuming is not equal to J.
+
+52
+00:07:23,850 --> 00:07:29,130
+So I talked about coin flips as a way to make this concrete.
+
+53
+00:07:29,580 --> 00:07:33,060
+If we go back to that example.
+
+54
+00:07:35,610 --> 00:07:40,650
+I think we went through it at the start of the tutorial yesterday where.
+
+55
+00:07:42,640 --> 00:07:49,810
+We flipped a coin four times. I'll say that that coin is fair, just to specify that.
+
+56
+00:07:52,510 --> 00:08:07,990
+Then we had the. Outcome set A that had all 16 possible combinations of heads entails that we could measure.
+
+57
+00:08:10,820 --> 00:08:13,820
+With a fair coin. The probability of.
+
+58
+00:08:15,030 --> 00:08:20,700
+Every outcome in the set is going to be the same, just as we saw for that roulette wheel.
+
+59
+00:08:21,330 --> 00:08:31,440
+For the 16 outcomes, we have a one over 16 possibility of getting each of the combinations of coin flips and.
+
+60
+00:08:34,140 --> 00:08:43,920
+To make things more interesting. We can choose events that don't match up precisely to the individual elements of the outcome space,
+
+61
+00:08:43,920 --> 00:08:52,470
+but can be, for example, if we end up with an equal number of heads versus tails or.
+
+62
+00:08:54,040 --> 00:09:01,730
+A different number. So as an example.
+
+63
+00:09:03,070 --> 00:09:09,590
+We. It's two heads and two tails that lands and set into that first event.
+
+64
+00:09:09,600 --> 00:09:18,300
+So that is part of that subset. And if we just keep counting the various possible ways.
+
+65
+00:09:20,520 --> 00:09:27,630
+That we. Can have. An equal number.
+
+66
+00:09:27,850 --> 00:09:36,400
+Well, with only four coin flips. The only way to get an equal number is to have two heads or tails in any order.
+
+67
+00:09:40,510 --> 00:09:45,890
+There was. And their opposites should be.
+
+68
+00:09:49,570 --> 00:09:54,160
+All of the distinct outcomes in this particular event.
+
+69
+00:09:54,850 --> 00:09:57,850
+There are six of them out of the 16 total.
+
+70
+00:09:58,690 --> 00:10:03,520
+Each of those six has that same probability, one over 16.
+
+71
+00:10:04,420 --> 00:10:19,060
+So the overall probability in our space for this event that combines these outcomes coming up with an equal number of heads entails 6/16 or.
+
+72
+00:10:20,210 --> 00:10:31,780
+3/8. And. To get the probability for the other events in our set f where the number of heads entails is different,
+
+73
+00:10:32,140 --> 00:10:39,040
+we can either go through that and enumerate them again or recognise that equal and different account for all of
+
+74
+00:10:39,040 --> 00:10:45,160
+the possibilities because the probabilities have to add up to one when all the possibilities are accounted for.
+
+75
+00:10:46,000 --> 00:10:51,160
+This will come out as one minus three eighths or 5/8 overall,
+
+76
+00:10:51,430 --> 00:10:59,290
+which can be checked just by explicitly enumerating them for the sort of tiny example where that is possible.
+
+77
+00:11:00,130 --> 00:11:09,310
+Of course, once we get up to our usual ten of the 23 particles that we have in mind, enumerating things is not something we want to do.
+
+78
+00:11:11,650 --> 00:11:28,100
+So. The reason I'm kind of stepping back and going through this example is to sort of introduce the concept of modelling,
+
+79
+00:11:28,100 --> 00:11:35,570
+at least within the framework of the definitions and terminology being established here.
+
+80
+00:11:36,320 --> 00:11:42,890
+So what this amounts to in terms of probabilities and probability spaces is just this process of.
+
+81
+00:11:44,560 --> 00:11:50,270
+Assigning probabilities. Two events in our event space.
+
+82
+00:11:54,770 --> 00:12:00,770
+And we have seen both yesterday for the roulette wheel and now just here in this example,
+
+83
+00:12:01,160 --> 00:12:08,180
+that these probabilities can in some cases be very simple to figure out if there are symmetries.
+
+84
+00:12:10,490 --> 00:12:23,030
+In this case, the symmetry between an equal probability of heads versus tails for flipping this fair coin was enough to tell us the probability of
+
+85
+00:12:23,300 --> 00:12:31,790
+every outcome in the whole outcome space A Which then just made it a counting problem to determine probabilities for given events.
+
+86
+00:12:34,390 --> 00:12:46,810
+And a similar example. Is she that roulette wheel or getting a probability of 164 ruling a fair die?
+
+87
+00:12:50,140 --> 00:12:58,510
+And where things become interesting is where we don't have these sorts of symmetries to simplify everything and kind of give us the number
+
+88
+00:12:58,510 --> 00:13:09,160
+by inspection to the point where we don't necessarily need to think about it at all in the absence of this in the more general situation.
+
+89
+00:13:12,490 --> 00:13:19,280
+A. Standard approach to this modelling.
+
+90
+00:13:19,370 --> 00:13:31,070
+This assignment of probabilities to the events of interest can be done in what we can maybe grandiosely call a data driven way where.
+
+91
+00:13:33,340 --> 00:13:38,040
+All I mean by this is that we have our experiments.
+
+92
+00:13:39,590 --> 00:13:42,170
+We repeat it many times.
+
+93
+00:13:47,510 --> 00:14:01,160
+And as we repeat our experiment, we monitor the outcomes that we get each time, see how they land into the events of interest that we have set up.
+
+94
+00:14:01,640 --> 00:14:12,410
+And from this data that we're collecting, the measurement outcomes of a repeated experiment, we can infer which is a fancier word for yes.
+
+95
+00:14:14,160 --> 00:14:23,700
+But make a sensible judgement for what the probabilities are, importantly with quantifiable uncertainties on this inference.
+
+96
+00:14:28,060 --> 00:14:32,139
+And maybe I should just use the same subscript there.
+
+97
+00:14:32,140 --> 00:14:40,030
+Even though these probabilities of individual outcomes can then be combined straightforwardly into probabilities for overall events.
+
+98
+00:14:40,750 --> 00:14:50,170
+And this is where we get that connection to the law of large numbers, which is the justification for making this inference.
+
+99
+00:14:54,860 --> 00:15:08,980
+In a way that they will now. Derive and establish a bit more carefully, if not in full rigour and try to keep the focus on.
+
+100
+00:15:11,130 --> 00:15:20,310
+The idea is in applications, rather than going through a formal proof of things like the law of large numbers.
+
+101
+00:15:21,370 --> 00:15:27,450
+Let's just, as we proceed, emphasise that this is both.
+
+102
+00:15:30,020 --> 00:15:40,520
+Being able to take data from outcomes to infer probabilities and also quantify how reliable our inferences are,
+
+103
+00:15:40,520 --> 00:15:44,570
+having some so-called statistical uncertainties on the outcomes.
+
+104
+00:15:44,930 --> 00:15:51,890
+So any questions about the sort of general set up or motivation for considering the law of large numbers?
+
+105
+00:16:01,730 --> 00:16:08,690
+So not seeing any. We will have to ingredients to add to the mix to.
+
+106
+00:16:10,490 --> 00:16:16,670
+Get this result. This justification for inferring probability is from repeating an experiment many times.
+
+107
+00:16:17,510 --> 00:16:21,650
+And one of those ingredients is this concept of.
+
+108
+00:16:23,050 --> 00:16:31,000
+And expectation values. So there will maybe unfortunately be a few more definitions coming at you this week.
+
+109
+00:16:32,950 --> 00:16:39,220
+So the expectation value, I think I chatted about with some of you after the tutorial yesterday,
+
+110
+00:16:39,880 --> 00:16:52,750
+it is basically looking at what we expect from having a set of events and a set of outcomes in our framework of a repeated experiment.
+
+111
+00:16:53,930 --> 00:17:05,910
+So if we consider. A generic event space that we set equal to the outcome space of our experiments and measurement of interest.
+
+112
+00:17:06,510 --> 00:17:16,020
+And for simplicity, we assume that this is the same finite outcome space that we talked about yesterday,
+
+113
+00:17:16,110 --> 00:17:23,280
+where the sum of all of these lower case and probabilities add up to one.
+
+114
+00:17:25,390 --> 00:17:36,160
+We can make this notation a bit more flexible by instead of relying on this enumeration and labelling with.
+
+115
+00:17:36,160 --> 00:17:44,049
+I would just say that the sum over all measurements in our outcome space of the
+
+116
+00:17:44,050 --> 00:17:50,320
+probability of that measurement identified with an event in the event space F.
+
+117
+00:17:50,590 --> 00:17:55,750
+Well, that is exactly the sum going over all of the possible measurements.
+
+118
+00:17:56,850 --> 00:18:02,100
+That is. The contains symbol, hopefully legible.
+
+119
+00:18:02,910 --> 00:18:08,190
+So that is what adds up to one from the definition of probability.
+
+120
+00:18:10,500 --> 00:18:22,260
+So. The expectation value.
+
+121
+00:18:24,480 --> 00:18:27,780
+Then based on this notation.
+
+122
+00:18:29,090 --> 00:18:44,180
+Is defined. As a very similar sum, again, going over all outcomes in that outcome space considering some function.
+
+123
+00:18:45,430 --> 00:18:52,210
+Of those outcomes. Each of which is weighted by the probability of the corresponding outcome.
+
+124
+00:18:52,990 --> 00:19:00,010
+And the notation to be used for this is a sort of angular bracket on.
+
+125
+00:19:02,180 --> 00:19:03,620
+Either side of that function.
+
+126
+00:19:04,700 --> 00:19:14,390
+So that is a generic expectation value and maybe a more familiar realisation of this that will make things more concrete and more familiar.
+
+127
+00:19:14,930 --> 00:19:21,420
+Is the mean. Of this probability space that we have.
+
+128
+00:19:26,900 --> 00:19:33,080
+So this is normally called MEU, and it is.
+
+129
+00:19:34,100 --> 00:19:44,150
+Just the expectation value of the events themselves, which if we plug that into our definition above this function of X is just x.
+
+130
+00:19:44,330 --> 00:19:49,310
+So the outcome that we are summing over,
+
+131
+00:19:50,180 --> 00:20:00,050
+we end up with the sum over all possible outcomes of the outcome itself weighted by the probability of getting that outcome,
+
+132
+00:20:00,380 --> 00:20:05,960
+hopefully something familiar and a way to connect.
+
+133
+00:20:07,750 --> 00:20:14,590
+Or make sense of this more generic definition of an expectation value of any function of these outcomes.
+
+134
+00:20:22,500 --> 00:20:29,490
+One thing that I should note here is that the expectation value,
+
+135
+00:20:29,850 --> 00:20:39,810
+because it is just summing over some sets that we assume to be countable at the moment, we even have it being finite and countable.
+
+136
+00:20:40,410 --> 00:20:44,490
+This is going to be a linear operation.
+
+137
+00:20:47,340 --> 00:20:53,040
+That we can manipulate. In some useful ways.
+
+138
+00:20:54,280 --> 00:21:05,800
+And those manipulations can even start when we add to them in another quantity that I suspect most or all of you have seen before, which is.
+
+139
+00:21:07,130 --> 00:21:16,340
+The variance that measures the scale of fluctuations around the mean normally denoted by the Greek letter sigma squared.
+
+140
+00:21:17,030 --> 00:21:25,340
+And this itself is a another expectation value for the difference between each outcome and that mean.
+
+141
+00:21:26,720 --> 00:21:35,120
+And then we square it so that assuming we have real numbers or generalising this to a modulus squared in the case of complex value,
+
+142
+00:21:35,120 --> 00:21:48,290
+individual outcomes, these squares, when we insert them into the definition of expectation value, you're summing over all outcomes and ensuring that.
+
+143
+00:21:50,270 --> 00:22:01,940
+The objects we are summing weighted with their corresponding probability are all non-negative numbers and give
+
+144
+00:22:01,940 --> 00:22:11,239
+us a measure for the total scale of fluctuations around that mean rather than potentially cancelling out.
+
+145
+00:22:11,240 --> 00:22:16,880
+If we have a big fluctuation to one side of the mean and followed by a big fluctuation to the other side.
+
+146
+00:22:17,330 --> 00:22:20,390
+We want all of those to remain accounted for.
+
+147
+00:22:23,070 --> 00:22:26,520
+So this is getting to that connection of.
+
+148
+00:22:29,250 --> 00:22:33,840
+How not only the probabilities but our confidence level in those probabilities.
+
+149
+00:22:35,700 --> 00:22:41,330
+Is going to be set from having data from repeated experiments.
+
+150
+00:22:52,020 --> 00:22:57,240
+And one final quantity just to notes kind of in passing.
+
+151
+00:22:58,610 --> 00:23:05,730
+If we take the square root of this variance. That is typically called the standard deviation.
+
+152
+00:23:06,480 --> 00:23:11,640
+That is why the variance is sigma squared rather than just being sigma by itself.
+
+153
+00:23:12,600 --> 00:23:17,220
+Standard deviation is the square root of the variance or just sigma.
+
+154
+00:23:18,060 --> 00:23:27,990
+And I'll also note this is the standard deviation of the full probability space rather than.
+
+155
+00:23:30,310 --> 00:23:37,600
+So the standard deviation of its mean or any expectation, the value that we compute that will be different.
+
+156
+00:23:37,600 --> 00:23:43,329
+We will come to that and I'll try to call that the standard error rather than the standard deviation.
+
+157
+00:23:43,330 --> 00:23:50,350
+So the standard deviation is the property of the set rather than of any expectation value that's coming out.
+
+158
+00:23:54,250 --> 00:23:59,180
+So if we. Plug in.
+
+159
+00:24:01,590 --> 00:24:10,920
+The connection between this me meu and expectation value of x in the formula for the variance.
+
+160
+00:24:11,310 --> 00:24:16,530
+We can write it in possibly a more useful, possibly a more familiar way.
+
+161
+00:24:17,010 --> 00:24:21,060
+We have an expectation value of.
+
+162
+00:24:22,790 --> 00:24:28,210
+The measurement outcome minus. Another expectation value.
+
+163
+00:24:29,420 --> 00:24:37,700
+Of the measurement outcome itself that's coming from our definition of MMU just plugged into here.
+
+164
+00:24:38,510 --> 00:24:46,220
+That all gets squared. And that overall function, we take an expectation value of that as a whole.
+
+165
+00:24:47,870 --> 00:24:51,950
+So breaking up the square we have.
+
+166
+00:24:53,590 --> 00:24:58,950
+The usual. Binomial factors.
+
+167
+00:25:02,850 --> 00:25:11,640
+And now the fact that this overall expectation value is a linear operation starts to pay benefits for us.
+
+168
+00:25:13,530 --> 00:25:27,540
+The. So just as a reminder, if we put a sum into a linear operation that breaks up into that operation acting independently on each term in that sum,
+
+169
+00:25:29,220 --> 00:25:38,250
+and if we have a constant that we multiply by, we can take that in or out of the linear operation.
+
+170
+00:25:38,910 --> 00:25:51,480
+In this case view, the expectation value of x is a constant, a probability, a a property of the probability space that we have already determined.
+
+171
+00:25:51,810 --> 00:25:54,930
+So we can pull that out of the expectation value in this second term.
+
+172
+00:25:55,350 --> 00:25:58,920
+All that's left is the expectation value of X itself.
+
+173
+00:25:59,460 --> 00:26:05,520
+And again, this here is a constant, so its expectation value is just itself.
+
+174
+00:26:07,050 --> 00:26:13,950
+And of course the expectation value of x squared is the expectation value of X times the expectation value of X.
+
+175
+00:26:14,490 --> 00:26:24,570
+So that positive term cancels out with one of those two negative terms and we end up with the expectation value of the square of the outcome,
+
+176
+00:26:25,140 --> 00:26:32,220
+minus the square of the expectation value of the outcome as a.
+
+177
+00:26:34,290 --> 00:26:37,620
+Possibly a familiar result for the variants.
+
+178
+00:26:38,340 --> 00:26:44,510
+And then, of course. The standard deviation just takes the square root.
+
+179
+00:26:45,230 --> 00:26:51,690
+If I can squeeze that in. In that corner there.
+
+180
+00:26:56,390 --> 00:26:59,720
+So. Is.
+
+181
+00:27:00,900 --> 00:27:06,450
+All of these concepts of mean variance centre deviation familiar to some of you.
+
+182
+00:27:06,450 --> 00:27:09,780
+I see plenty of nodding heads so I won't belabour this point.
+
+183
+00:27:10,260 --> 00:27:18,450
+Just go on to maybe the more novel ingredients and our approach to this law of large numbers.
+
+184
+00:27:18,840 --> 00:27:27,390
+So along with the expectation value, the other property that we will bring in is this repetition.
+
+185
+00:27:29,540 --> 00:27:33,980
+Petition. Of our experiment.
+
+186
+00:27:34,430 --> 00:27:46,940
+So we already have there we are implicitly done a bit of thinking along these lines when we talk about an experiment of flipping a coin four times.
+
+187
+00:27:47,510 --> 00:27:52,580
+That's four repetitions of the experiments of repeating that coin once.
+
+188
+00:27:53,330 --> 00:27:58,730
+So let's make this a bit more formal and structured and use it to.
+
+189
+00:28:00,480 --> 00:28:03,630
+Do fairly robust derivations.
+
+190
+00:28:04,920 --> 00:28:19,230
+So we take our original experiments, this calligraphic E and its measurements X, and we repeat that our times are for repetition.
+
+191
+00:28:19,920 --> 00:28:24,000
+The original experiment was what was giving us that outcome space.
+
+192
+00:28:26,210 --> 00:28:29,480
+A of x1 to extend.
+
+193
+00:28:31,550 --> 00:28:40,380
+With an elements. And now for this new experiment, we have a new outcome space.
+
+194
+00:28:41,330 --> 00:28:47,690
+Which I'll call B to distinguish it from the.
+
+195
+00:28:49,330 --> 00:28:57,110
+A single iteration experiment. And this will have.
+
+196
+00:28:59,080 --> 00:29:04,780
+A collection of AR elements coming from each of the possible outcomes of that experiment.
+
+197
+00:29:05,080 --> 00:29:12,670
+So just to be concrete, let's say you set our equals four just as we did for that coin toss.
+
+198
+00:29:15,520 --> 00:29:26,620
+And the outcome space be just as we had in the special case of that coin toss, we had four combinations of heads or tails.
+
+199
+00:29:27,820 --> 00:29:33,460
+More generally, here we have four possible outcomes,
+
+200
+00:29:33,880 --> 00:29:46,870
+each of which being pulled from the single iteration outcome space A So that can be getting the first outcome all four times the first outcome,
+
+201
+00:29:47,140 --> 00:29:51,760
+the second outcome, 99th outcome and the first outcome again.
+
+202
+00:29:52,210 --> 00:29:56,280
+And so on. And.
+
+203
+00:29:58,040 --> 00:30:06,290
+Maybe just to give you something to think about and check in, I'll ask how many elements are there in this repeated experiment?
+
+204
+00:30:06,290 --> 00:30:14,809
+Outcome space be for our repetitions and the assumption of elements in the original outcome.
+
+205
+00:30:14,810 --> 00:30:46,040
+Space a. All right.
+
+206
+00:30:46,040 --> 00:30:49,930
+What was we get from the. Almost.
+
+207
+00:30:50,470 --> 00:30:57,850
+So for each element in B, we have four elements in A.
+
+208
+00:30:58,810 --> 00:31:08,070
+So we will have say here and options from A for this first element, we will have an options in A for the second outcome.
+
+209
+00:31:08,080 --> 00:31:13,130
+And here. And options again for the third.
+
+210
+00:31:13,550 --> 00:31:17,960
+And options for the last. So rather than 40 and into the fourth.
+
+211
+00:31:20,770 --> 00:31:31,080
+And or or more generally if we. Don't specify that this number of repetitions equals four.
+
+212
+00:31:31,540 --> 00:31:42,790
+This will turn out to be end to the power. Ah, so if you know the possible outcomes and is already a large number, the more we repeat that experiment,
+
+213
+00:31:43,210 --> 00:31:55,510
+the number of possible outcomes in this repeated experiment outcome space is just growing exponentially larger with the number of repetitions.
+
+214
+00:32:00,800 --> 00:32:13,160
+So the point of introducing all of these repetitions is that we have now in these this outcome space be we have.
+
+215
+00:32:15,350 --> 00:32:23,420
+Physics, things going on that are coming from a large number of more fundamental processes.
+
+216
+00:32:23,450 --> 00:32:34,910
+The initial experiments and measurements that give a and this hopefully sounds familiar in the overall context of our goal for the module,
+
+217
+00:32:35,570 --> 00:32:44,120
+being able to predict the large scale behaviour of many degrees of freedom, many particles or equivalently many processes.
+
+218
+00:32:45,700 --> 00:32:52,000
+When we have all of them. Acting collectively and.
+
+219
+00:32:53,570 --> 00:32:58,460
+Being considered as a whole rather than individually one by one.
+
+220
+00:32:58,850 --> 00:33:03,500
+So dropping this specialisation of just four states.
+
+221
+00:33:06,030 --> 00:33:13,050
+You know, any individual element. In.
+
+222
+00:33:14,230 --> 00:33:18,010
+The outcome Space B is being built.
+
+223
+00:33:21,840 --> 00:33:32,430
+From our outcomes that are in just the single particle or single repetition outcome space.
+
+224
+00:33:32,430 --> 00:33:45,030
+A So I'll label those individual outcomes with this little index are each of these are elements of A and the
+
+225
+00:33:45,030 --> 00:33:54,420
+number of repetitions is ranging from one up to R and as we saw say for those fourth point coin tosses.
+
+226
+00:33:56,080 --> 00:34:00,610
+The probability in of this elements appearing.
+
+227
+00:34:02,650 --> 00:34:11,770
+Within the probability space built from the composite outcome set B, so Exide, J, K,
+
+228
+00:34:12,790 --> 00:34:25,750
+and so on just breaks up into the probability in the simpler single particle outcome space A for each individual outcome.
+
+229
+00:34:34,910 --> 00:34:42,890
+J k lots of other probability is coming in eventually getting to the earth one.
+
+230
+00:34:45,560 --> 00:34:55,639
+So this allows us to take random variables of that repeated experiment and hopefully relate them to the
+
+231
+00:34:55,640 --> 00:35:04,760
+properties of our much simpler single experiment outcome space that we started off by thinking of.
+
+232
+00:35:05,510 --> 00:35:10,100
+So. The random variable.
+
+233
+00:35:11,850 --> 00:35:19,770
+Of the repeated experiment we will consider. First is just the arithmetic mean.
+
+234
+00:35:23,170 --> 00:35:35,120
+For the average. So average over all our repetitions that are going into this repeated experiment.
+
+235
+00:35:35,600 --> 00:35:40,400
+And just look at. The overall.
+
+236
+00:35:44,890 --> 00:35:48,580
+Average of the outcomes that we get for each repetition.
+
+237
+00:35:48,970 --> 00:35:55,120
+So in every element of B, we will have some sequence of outcomes that form that elements.
+
+238
+00:35:55,570 --> 00:36:01,030
+Add them all together. Divide by the number of single experiment outcomes that we have.
+
+239
+00:36:01,720 --> 00:36:09,190
+This gives us an arithmetic mean usually denoted with a bar on top x bar.
+
+240
+00:36:09,580 --> 00:36:13,990
+And we can specify that this is the arithmetic mean.
+
+241
+00:36:14,680 --> 00:36:22,610
+After carrying out these are repetitions. And now we want to relate this.
+
+242
+00:36:24,650 --> 00:36:35,360
+Relate this random variable of the repeated experiment. Two properties of the individual experiment that we are repeating,
+
+243
+00:36:36,920 --> 00:36:43,280
+and in particular the properties that we have in mind are just that mean and variance.
+
+244
+00:36:44,700 --> 00:36:49,540
+That were our other ingredient we went through to build up to the law of large numbers.
+
+245
+00:36:49,680 --> 00:36:52,980
+So the expectation value for.
+
+246
+00:36:54,670 --> 00:37:01,650
+That single experiment outcome that gets repeated and its variance assuming.
+
+247
+00:37:04,790 --> 00:37:15,700
+That both. This mean and variance exist in the sense that they are finite, well-defined numbers for us to work with.
+
+248
+00:37:22,350 --> 00:37:25,920
+So I'll charge ahead and.
+
+249
+00:37:28,350 --> 00:37:40,380
+Just show you a way to do this relation, which is to consider how this random variable, the arithmetic mean you should note there.
+
+250
+00:37:47,090 --> 00:37:56,480
+Is fluctuating around the expectation value that we get from the single experiment outcome space.
+
+251
+00:37:56,990 --> 00:38:05,780
+So again, taking a square to ensure that fluctuations add up rather than cancelling and looking at the expectation value.
+
+252
+00:38:07,150 --> 00:38:15,400
+Of the difference between the arithmetic mean and the true meaning of the single experiment squared.
+
+253
+00:38:17,070 --> 00:38:24,780
+Which we can just plug in the definition of the arithmetic mean in here and end up with.
+
+254
+00:38:28,030 --> 00:38:37,739
+This. Kind of complicated expression to to work with.
+
+255
+00:38:37,740 --> 00:38:46,260
+We have a sum of many terms from that sum, which we divide by the total number of repetitions.
+
+256
+00:38:46,770 --> 00:38:54,020
+We subtract the mean, we square it all. We can simplify things a bit just with a little trick that if we.
+
+257
+00:38:56,320 --> 00:39:01,150
+Take this mean. It is again a fixed, constant number.
+
+258
+00:39:01,780 --> 00:39:05,379
+We see some over that our times.
+
+259
+00:39:05,380 --> 00:39:09,970
+We just get well, our times that number the mean we then divide.
+
+260
+00:39:11,040 --> 00:39:21,269
+That are out. We just cancel out that some over R and get the mean itself and this will allow us to take that mean and
+
+261
+00:39:21,270 --> 00:39:28,470
+actually put it inside the summation that we have over repetitions inside this overall expectation value.
+
+262
+00:39:29,250 --> 00:39:36,210
+We also have a one over our coming along for the ride, which is another constant that is now on all of the terms in here.
+
+263
+00:39:36,720 --> 00:39:41,850
+Constants can be pulled out of linear operations with that overall square.
+
+264
+00:39:42,800 --> 00:39:50,380
+So that will now just come along for the ride. What we have now the some.
+
+265
+00:39:51,290 --> 00:39:57,950
+Of differences. That sum as a whole gets squared.
+
+266
+00:39:58,430 --> 00:40:07,560
+And then we take the expectation value, which remember is itself going to be yet another sum on the outside of this inner one.
+
+267
+00:40:08,390 --> 00:40:13,900
+So. Just breaking up the square.
+
+268
+00:40:15,200 --> 00:40:18,980
+Rewriting it in a more useful way.
+
+269
+00:40:19,670 --> 00:40:27,230
+We have two copies of this sum and we can freely relabel.
+
+270
+00:40:29,000 --> 00:40:32,960
+The indices that we are using in each of those copies.
+
+271
+00:40:35,490 --> 00:40:48,690
+Make things look like this. Just denote or label the outcomes that we have in the first some by our in the second, some by s and.
+
+272
+00:40:53,050 --> 00:40:58,720
+Just think, well, maybe simplify this slightly by even writing it as.
+
+273
+00:41:01,420 --> 00:41:07,440
+Some quantity ace eyes some Dover I. A is that whole difference in there?
+
+274
+00:41:07,860 --> 00:41:18,780
+If we multiply that by another sum over j p sub J every single elements in the first sum gets multiplied by every single element in the second sum.
+
+275
+00:41:20,010 --> 00:41:26,550
+I can write this as a combined sum over I and j of each of those.
+
+276
+00:41:27,330 --> 00:41:31,440
+Binomial is the binary products of a and J,
+
+277
+00:41:31,980 --> 00:41:40,320
+and then this combined sum that we have now is another linear operation that we
+
+278
+00:41:40,320 --> 00:41:45,560
+are free to interchange with the linear operation of the expectation value.
+
+279
+00:41:46,140 --> 00:41:49,170
+So that can be pulled out front.
+
+280
+00:41:50,010 --> 00:41:56,370
+And we have a sum over expectation values of this project product.
+
+281
+00:41:59,830 --> 00:42:03,100
+Okay, I'm calling them in J now. So there's I.
+
+282
+00:42:08,340 --> 00:42:16,549
+There's J. And we can consider two generic possibilities.
+
+283
+00:42:16,550 --> 00:42:30,320
+If Y is equal to J, then we have the expectation value of x minus MU all squared within that expectation value, which should look familiar.
+
+284
+00:42:31,070 --> 00:42:34,160
+That is what we defined as the variance.
+
+285
+00:42:34,460 --> 00:42:41,550
+So. Oops, this becomes that variance sigma squared if I equals J.
+
+286
+00:42:43,310 --> 00:42:47,270
+If I does not equal Jake, that's a bit more complicated to here.
+
+287
+00:42:47,690 --> 00:42:51,560
+I'll just tell you the outcome rather than driving it rigorously.
+
+288
+00:42:51,860 --> 00:42:55,100
+Just for the sake of time as we kind of approach our break.
+
+289
+00:42:56,930 --> 00:43:07,490
+When I does not equal Jay, we have different sequences of outcomes coming from each of these repetitions of the experiment that we have.
+
+290
+00:43:08,750 --> 00:43:17,540
+And in particular, we will have generically fluctuations on each side of the mean so that the difference from the mean will be positive,
+
+291
+00:43:17,540 --> 00:43:25,640
+in one case, negative in the other. Case summed up over all of these possibilities within the expectation value.
+
+292
+00:43:26,090 --> 00:43:34,280
+So if we were to work through this in full rigorous detail, we would see lots of positive and negative contributions coming in,
+
+293
+00:43:34,280 --> 00:43:40,850
+match sets and all cancelling out in the limit where we have a large number of repetitions.
+
+294
+00:43:42,110 --> 00:43:49,400
+So hopefully that is at least plausible. Let me know if you object or think about it if you're not sure.
+
+295
+00:43:51,650 --> 00:43:59,930
+And for the time being, I will say that going along with this sigma squared, we have this.
+
+296
+00:44:03,060 --> 00:44:08,400
+Delta function, what's known as a chronic or delta. Is that something that you've seen before?
+
+297
+00:44:08,450 --> 00:44:13,110
+Okay, I see nods there. One when I equals J zero otherwise.
+
+298
+00:44:14,070 --> 00:44:21,570
+So we just get a little bit more space to complete this.
+
+299
+00:44:22,560 --> 00:44:28,120
+What we have now. Is much simpler than what we started off with.
+
+300
+00:44:29,170 --> 00:44:39,880
+We were looking at fluctuations of the arithmetic, mean around the true single experiment mean and we have now reduced that into a get a constant.
+
+301
+00:44:40,300 --> 00:44:47,680
+Sigma squared comes out of expectation values to join all of our other constants out front.
+
+302
+00:44:48,640 --> 00:44:51,850
+We still have that sum over I and J of.
+
+303
+00:44:52,850 --> 00:45:01,040
+The chronic hurdle to ink that picks out all of the possibilities that we can have roughly equal to JJ.
+
+304
+00:45:01,820 --> 00:45:12,990
+In that case, the chronic or Delta becomes one. And the double sum gets kicked down to just a single sum over all of those possibilities.
+
+305
+00:45:13,720 --> 00:45:26,550
+So summing over one for every I equal two J, those IIS and JS are started off as sums over the number of repetitions.
+
+306
+00:45:27,300 --> 00:45:37,800
+Our little R and S going from one up to Capital R, so this itself just counts our repetitions.
+
+307
+00:45:38,220 --> 00:45:46,830
+They come in, cancel out one factor of R in the denominator there and leave us with this result.
+
+308
+00:45:48,500 --> 00:45:55,460
+Where, again, we are assuming that the variance sigma squared is a nice, well-behaved, finite number,
+
+309
+00:45:55,880 --> 00:46:02,990
+as are all of these means that we were adding, subtracting and multiplying freely earlier on.
+
+310
+00:46:04,430 --> 00:46:09,020
+And this is interesting because when we look at the limit.
+
+311
+00:46:10,080 --> 00:46:20,730
+Or we have a large number of repetitions. Formally, when the number of repetitions becomes infinite, the variance stays finite.
+
+312
+00:46:21,420 --> 00:46:30,630
+This expectation value. Actually takes a very simple form, namely zero.
+
+313
+00:46:32,160 --> 00:46:44,130
+So what we can see here is that this overall sum of all of these squares, the magnitude of fluctuations around the true mean vanishes.
+
+314
+00:46:44,790 --> 00:46:52,109
+If the single experiment is repeated larger and larger number of times, we can say, in fact,
+
+315
+00:46:52,110 --> 00:47:01,860
+even more than that, because remember, this expectation value is a sum over all of the possible outcomes.
+
+316
+00:47:03,060 --> 00:47:16,310
+So this is. A vanishing sum where all of these terms are non-negative, either positive or zero, thanks to that square.
+
+317
+00:47:20,060 --> 00:47:25,690
+Which means if the sum of lots of non-negative numbers vanishes,
+
+318
+00:47:26,480 --> 00:47:31,129
+there's only one way for that to happen, which is for all of those numbers to be zero themselves.
+
+319
+00:47:31,130 --> 00:47:37,130
+So each and every term in that song itself has to go to zero in this limit.
+
+320
+00:47:39,260 --> 00:47:48,950
+Of very many repetitions, which we can rewrite now in an even simpler way, if we take that arithmetic,
+
+321
+00:47:48,950 --> 00:48:00,169
+mean look at the limit of infinitely many repetitions that is simply equal to the true mean the property of the probability
+
+322
+00:48:00,170 --> 00:48:09,110
+distribution that we get just from considering the single experiment or the single particle or the single degree of freedom.
+
+323
+00:48:09,920 --> 00:48:13,400
+This is. The law of large numbers that.
+
+324
+00:48:15,040 --> 00:48:19,330
+They were aiming for. You can see why.
+
+325
+00:48:19,360 --> 00:48:25,960
+To get here, we had to bring in both those ingredients of expectation, values and repetitions.
+
+326
+00:48:26,500 --> 00:48:35,050
+And more generally, we can say that when we have a large but still finite number of repetitions,
+
+327
+00:48:36,850 --> 00:48:44,470
+the arithmetic mean X bar is going to be approximately equal to this true mean.
+
+328
+00:48:46,030 --> 00:48:51,640
+With confidence intervals that can be quantified.
+
+329
+00:48:52,330 --> 00:49:06,550
+And we will just pause in a moment and take a break and reconvene at noon to look in a bit more detail about kind of the next stages of this.
+
+330
+00:49:06,940 --> 00:49:14,440
+Or we can see some of the initial promises of this module are visible in the results that we're getting.
+
+331
+00:49:15,100 --> 00:49:22,720
+We are taking a large number of processes or objects and getting very smooth and stable behaviour out of them.
+
+332
+00:49:25,340 --> 00:49:35,900
+So any questions about either that perspective of why we are going through this exercise or the sort of detailed calculations that we've gone through?
+
+333
+00:49:39,770 --> 00:49:46,490
+Not seeing any positive recordings. Get a drink and pick up again at the top of the hour.
+
+334
+00:50:04,522 --> 00:50:08,822
+Let's see. I think that's the recording back underway.
+
+335
+00:50:08,842 --> 00:50:19,402
+Any objection to picking back up? So Law of large numbers was one of our main targets for this week.
+
+336
+00:50:20,312 --> 00:50:26,752
+Other one is the central limit theorem, which I should be able to deal with more quickly.
+
+337
+00:50:26,752 --> 00:50:30,112
+Again, I expect expected something you've seen previously.
+
+338
+00:50:30,382 --> 00:50:35,812
+There are lots of different variations of the central limit theorem, lots of different ways of deriving it.
+
+339
+00:50:36,172 --> 00:50:39,742
+So let's not do another lengthy derivation today.
+
+340
+00:50:40,012 --> 00:50:47,781
+Just state it and start exploring some of the implications and consequences of the particular form of the central limit.
+
+341
+00:50:47,782 --> 00:50:55,912
+Theorem that we will state, though, is going to involve one further generalisation of what we already have.
+
+342
+00:50:56,872 --> 00:51:11,642
+So we want to take our machinery of probability spaces and make sure that it continues to function for continuous measurements.
+
+343
+00:51:11,662 --> 00:51:20,572
+So for example, things like measuring a position in space that can be any real number in any of our three dimensions,
+
+344
+00:51:22,012 --> 00:51:28,972
+the possible outcomes of that measurement are well, any real number, they are unaccountably infinite.
+
+345
+00:51:30,052 --> 00:51:39,092
+This is. A valid option for our outcome space that we introduced all the way back on Tuesday.
+
+346
+00:51:40,892 --> 00:51:47,822
+But it does mean that the identification of probabilities with outcomes becomes a bit more subtle.
+
+347
+00:51:48,212 --> 00:51:51,692
+Just when we have an uncannily infinite number of outcomes.
+
+348
+00:51:52,112 --> 00:52:01,622
+If we were to naively impose a symmetry among all of them, say we would find an infinitesimally small or uncomfortably small probability for each one.
+
+349
+00:52:02,312 --> 00:52:13,852
+So to actually get a meaningful probability when we have this continuous outcome of probability ity,
+
+350
+00:52:15,362 --> 00:52:21,152
+you basically have to integrate over a non vanishing range of these outcomes.
+
+351
+00:52:26,332 --> 00:52:30,492
+And. What the.
+
+352
+00:52:31,002 --> 00:52:32,472
+The object we are integrating.
+
+353
+00:52:34,652 --> 00:52:48,452
+Is the analogue of probability for this more general case of continuous measurements known as a probability distribution or a probability density.
+
+354
+00:52:52,962 --> 00:52:58,512
+The density can be a useful term to keep in mind because that helps to explain
+
+355
+00:52:58,512 --> 00:53:03,132
+or justify why we are integrating over it and what we get when we do so.
+
+356
+00:53:03,192 --> 00:53:11,402
+If we integrate over a density, we end up with the total amount of stuff that we are integrating over.
+
+357
+00:53:11,412 --> 00:53:23,772
+So the way of stating probabilities in this context is to say that we have our outcome X now just by itself as a real number,
+
+358
+00:53:23,772 --> 00:53:33,612
+but in some range say between two other numbers A and B, which form the limits of the integration that we do.
+
+359
+00:53:34,662 --> 00:53:37,722
+Over this. Probability distribution.
+
+360
+00:53:37,872 --> 00:53:48,642
+I call that a lowercase p. Now, as a function of this integration variable X, and for example, we've been talking about,
+
+361
+00:53:49,182 --> 00:53:55,992
+say, this case where if we measure just a single position along a line, that is a real number.
+
+362
+00:53:56,322 --> 00:54:08,262
+So this X can be the real number line or it can be two real numbers or three dimensional space or three higher dimensional objects.
+
+363
+00:54:10,972 --> 00:54:22,222
+So there is a similar generalisation or adaptation that we have to do in order to keep being able to keep talking about expectation,
+
+364
+00:54:22,222 --> 00:54:28,912
+values, means and variances. So. Just as.
+
+365
+00:54:31,402 --> 00:54:39,982
+The probabilities are now no longer a discrete, countable list of numbers.
+
+366
+00:54:41,092 --> 00:54:50,452
+The expectation values themselves are also need to be generalised from sums over those discrete values.
+
+367
+00:54:52,652 --> 00:54:57,092
+Taking those discrete sums and replacing them with.
+
+368
+00:54:59,182 --> 00:55:09,162
+Continuous integrals. In essentially the usual way the Newtonian limits came up with back in the day.
+
+369
+00:55:09,852 --> 00:55:13,212
+So the expectation value of a generic function.
+
+370
+00:55:15,392 --> 00:55:20,642
+Of this measurement outcome that I'll keep using the lowercase x for.
+
+371
+00:55:22,562 --> 00:55:28,512
+This now becomes the integral over all possible ex of that function.
+
+372
+00:55:29,132 --> 00:55:34,982
+Weighted by the probability distribution index is that integration variable.
+
+373
+00:55:35,432 --> 00:55:41,862
+And I will say. Just to keep from having to write down too much.
+
+374
+00:55:42,312 --> 00:55:52,422
+When I leave the limits of integration off of the integration symbol, that will implicitly be integration over the entire domain.
+
+375
+00:55:55,212 --> 00:55:58,572
+That's just a side comment to explain this notation.
+
+376
+00:55:59,322 --> 00:56:07,632
+So, for instance, if X is a real number running from negative infinity up to plus infinity.
+
+377
+00:56:08,262 --> 00:56:19,152
+So as an illustration of this, it will always be the case that integrating a probability distribution over its entire domain gives us 100%
+
+378
+00:56:19,872 --> 00:56:27,852
+in exactly the same way as the discrete sum over all of the possible probabilities for the outcome space.
+
+379
+00:56:28,552 --> 00:56:37,572
+And to add up to 100%, that's just keeping us in touch with the familiar way that probabilities work day to day.
+
+380
+00:56:40,402 --> 00:56:50,372
+Maybe it will help to give a more concrete example. We can actually write down several interesting expectation values in a kind of
+
+381
+00:56:50,792 --> 00:56:57,422
+unified way by thinking about the expectation value of this continuous outcome.
+
+382
+00:56:57,422 --> 00:56:59,432
+X raised to some power.
+
+383
+00:56:59,432 --> 00:57:11,522
+L Well, from the definition that is just X to the L, weighted by the probability distribution and integrated over the entire range of outcomes.
+
+384
+00:57:12,632 --> 00:57:16,892
+If we set L equals one, we get our mean.
+
+385
+00:57:18,962 --> 00:57:28,102
+MU That's just the expectation value. Of that X and similarly the variance that we.
+
+386
+00:57:30,342 --> 00:57:36,432
+Related to the expectation value of x and x squared.
+
+387
+00:57:42,432 --> 00:57:51,942
+We get this first expectation value from the L equals two case, and this latter one is just mu.
+
+388
+00:57:52,842 --> 00:57:56,322
+The expectation value from setting L equals one.
+
+389
+00:57:58,542 --> 00:58:02,232
+In this way of writing these so-called moments.
+
+390
+00:58:05,472 --> 00:58:13,871
+So this gives us all the terminology and foundation we need to to write down the central
+
+391
+00:58:13,872 --> 00:58:18,702
+limit theorem or the form of the central limit theorem that is relevant for us.
+
+392
+00:58:22,122 --> 00:58:34,032
+So the background to this is, again, considering a large number of processes or particles or degrees of freedom.
+
+393
+00:58:40,562 --> 00:58:46,052
+So say we have. In. Identical.
+
+394
+00:58:46,132 --> 00:58:55,622
+Random variables. Put that back on the screen for you.
+
+395
+00:59:00,122 --> 00:59:10,472
+And in full generality, these can all be our continuous outcomes x1x2 and up to x.
+
+396
+00:59:10,472 --> 00:59:14,672
+And we by identical I mean that the.
+
+397
+00:59:16,582 --> 00:59:22,942
+All, have they? They all have the same.
+
+398
+00:59:25,742 --> 00:59:36,572
+Mean and expectation value. And just for simplicity, well, assume that both the mean and variance stay finite for all of these.
+
+399
+00:59:37,052 --> 00:59:45,002
+This is, of course, exactly what we get in that set up we had before the break of taking an experiment and repeating it in this case.
+
+400
+00:59:45,002 --> 00:59:54,572
+And number of times, each repetition of the experiment gives us a random variable because it's the same experiments that random variable always has,
+
+401
+00:59:54,932 --> 01:00:01,622
+the same mean and variance. And the terminology you may well have seen here is.
+
+402
+01:00:03,672 --> 01:00:10,142
+I'd. Or in four words.
+
+403
+01:00:11,522 --> 01:00:14,702
+Identical and identically distributed.
+
+404
+01:00:19,782 --> 01:00:29,872
+This. Identically distributed terminology is basically what it means to have the same.
+
+405
+01:00:31,492 --> 01:00:41,701
+Mean and variance. So with this set up a large number of random variables, all with the same meaning variance,
+
+406
+01:00:41,702 --> 01:00:47,192
+we can think about them as all coming from repetitions of a simple single experiment.
+
+407
+01:00:48,182 --> 01:00:55,652
+A useful. Collective random variable to consider.
+
+408
+01:00:55,682 --> 01:00:58,922
+Much like we did with the arithmetic mean.
+
+409
+01:01:00,572 --> 01:01:05,702
+It's actually just the sum of all of this and random variables that we have.
+
+410
+01:01:08,942 --> 01:01:14,402
+This is in fact almost identical to that arithmetic mean we just don't average over end.
+
+411
+01:01:15,732 --> 01:01:24,191
+Just add up all I with I running from one to end and the central limit theorem then becomes
+
+412
+01:01:24,192 --> 01:01:30,942
+a statement about the probability distribution for this continuous random variable.
+
+413
+01:01:30,942 --> 01:01:41,172
+S call it an s because it is a sum and the central limit theorem is stated.
+
+414
+01:01:42,302 --> 01:01:45,992
+Or is the statement that for.
+
+415
+01:01:47,572 --> 01:01:57,602
+Large values of n much greater than one. The probability distribution for this random variable.
+
+416
+01:01:57,602 --> 01:02:04,202
+S so P of s becomes a Gaussian function.
+
+417
+01:02:10,302 --> 01:02:16,142
+So. This is an approximation that becomes exact, and the limit we're in goes to infinity.
+
+418
+01:02:16,792 --> 01:02:25,522
+There's a constant pre factor. One over two pie end times the variance all under a square root.
+
+419
+01:02:26,182 --> 01:02:36,142
+And then a Gaussian distribution is an exponential function of a square of the variable s that is with an overall minus sign.
+
+420
+01:02:37,582 --> 01:02:47,152
+The difference between as the sun and times the mean all squared within the arguments of the exponential and divided by.
+
+421
+01:02:48,602 --> 01:02:59,701
+To times and times the variance where this is actually even less complicated than it might look up here.
+
+422
+01:02:59,702 --> 01:03:03,302
+It's already. A very simple expression.
+
+423
+01:03:03,302 --> 01:03:07,232
+If we think about all the moving pieces that are coming in from repeating an experiment and
+
+424
+01:03:07,232 --> 01:03:12,542
+times and coming up with the probability distribution for this collective random variable,
+
+425
+01:03:13,142 --> 01:03:25,952
+this pre factor is fixed by our usual requirements that integrating over the full probability distribution gives us 100%.
+
+426
+01:03:26,792 --> 01:03:31,952
+And that's something you can check if you haven't done so in some previous module.
+
+427
+01:03:32,552 --> 01:03:43,412
+Integrating a Gaussian function gives factors related to the argument of the exponents and square roots of Pi.
+
+428
+01:03:45,622 --> 01:03:53,062
+And essentially what we have here, the importance of this in the context of statistical physics is that.
+
+429
+01:03:55,082 --> 01:04:09,151
+We now have a probability distribution governing the collective behaviour of many random variables or in our context,
+
+430
+01:04:09,152 --> 01:04:16,192
+many particles, many degrees of freedom. This is being entirely determined.
+
+431
+01:04:20,172 --> 01:04:28,062
+By properties of the individual particles that we have in this collection of many particles.
+
+432
+01:04:29,962 --> 01:04:36,632
+And the particular properties are not coincidentally, the ones that we introduced earlier today.
+
+433
+01:04:36,662 --> 01:04:44,722
+The mean and the variance. Which we can see showing up in.
+
+434
+01:04:45,862 --> 01:04:49,552
+The Gaussian distribution that we have.
+
+435
+01:04:49,552 --> 01:05:01,222
+And then in turn in that constant pre factor, everything being determined just by a single particle, even when we have a large collection of them.
+
+436
+01:05:03,112 --> 01:05:12,772
+So any questions about the statements of the central limit theorem or for that matter about Gaussian functions and Gaussian integrals more generally?
+
+437
+01:05:12,772 --> 01:05:20,632
+Those are things I'm assuming you've seen. Definitely feel free to tell me if you have not and you can elaborate on them.
+
+438
+01:05:26,352 --> 01:05:30,542
+They're back in the screen. And.
+
+439
+01:05:31,922 --> 01:05:35,702
+Before moving on further from this,
+
+440
+01:05:36,122 --> 01:05:48,332
+something fun to look at is this question of how large does this large and actually have to be for this
+
+441
+01:05:48,812 --> 01:05:55,322
+central limit theorem prediction to become a good description of the behaviour of what's going on?
+
+442
+01:06:01,322 --> 01:06:07,142
+So how large of an end? Is large enough to.
+
+443
+01:06:09,162 --> 01:06:18,102
+Make use of this sort of machinery. So something that is not too hard and hopefully fun to do is actually.
+
+444
+01:06:19,102 --> 01:06:22,342
+Well, it's essentially what you're doing in that tutorial exercise,
+
+445
+01:06:22,912 --> 01:06:33,352
+spinning a roulette wheel up to five times and seeing how the exact predictions that you can come up with for how much
+
+446
+01:06:33,352 --> 01:06:41,931
+money you win or lose after those and four five repetitions match on to what the central limit theorem would predict was.
+
+447
+01:06:41,932 --> 01:06:46,672
+The mean and variance are plugged in. Something similar is to look at.
+
+448
+01:06:48,272 --> 01:06:51,751
+Just the easier question of a rolling affair.
+
+449
+01:06:51,752 --> 01:06:54,662
+Six sided die some number of times.
+
+450
+01:06:55,142 --> 01:07:05,672
+So if we roll that die once we've already seen since we say it's fair, there's the symmetry among all the six possible outcomes in our outcome space.
+
+451
+01:07:06,062 --> 01:07:13,172
+They all have that same probability of one over six. And then as we roll it again and again and again.
+
+452
+01:07:16,802 --> 01:07:22,201
+I'll take the risk of zooming out and hope that nothing breaks terribly.
+
+453
+01:07:22,202 --> 01:07:25,352
+Just get everything onto the screen here.
+
+454
+01:07:28,532 --> 01:07:40,352
+It is hopefully still visible that the minimum number that we can have is always comes from the single outcome of rolling one every single time.
+
+455
+01:07:40,802 --> 01:07:50,342
+So we get up to one, two, three, four and five and the corresponding probability is that one outcome out of all.
+
+456
+01:07:51,712 --> 01:07:55,582
+US six to the power end possibilities.
+
+457
+01:07:56,452 --> 01:08:01,792
+So starting to be a very small number. By the time we get up even to five.
+
+458
+01:08:03,042 --> 01:08:10,842
+And if in. The final little subplot here that I was back in on already,
+
+459
+01:08:11,652 --> 01:08:23,022
+we compare these histograms that are just obtained by naively counting what are the possible outcomes of rolling two or three, four or five days.
+
+460
+01:08:25,122 --> 01:08:29,322
+We can see the colours match on to the histograms.
+
+461
+01:08:29,322 --> 01:08:36,462
+So we're just looking at this constant one sixth in blue is coming from that single roll of the dice,
+
+462
+01:08:37,092 --> 01:08:43,302
+the linear green coming from two rolls, then three, four, five.
+
+463
+01:08:43,722 --> 01:08:54,371
+And the really interesting thing is that black line, which is the central limit theorem prediction for this process.
+
+464
+01:08:54,372 --> 01:09:02,352
+So formally in the infinite, in the limits of rolling the dice infinitely many times we expect to get that black curve as a
+
+465
+01:09:02,352 --> 01:09:09,492
+probability distribution once we roll the dice five times to get that dotted purple line in there.
+
+466
+01:09:11,362 --> 01:09:25,072
+You can see that it's not exact, but it is qualitatively quite close in a by inspection reasonable description of this full computation.
+
+467
+01:09:26,942 --> 01:09:30,122
+Of positive possibilities that we can enumerate.
+
+468
+01:09:31,312 --> 01:09:38,031
+And hopefully you see something similar for the roulette game now that you have the
+
+469
+01:09:38,032 --> 01:09:43,852
+central limit zero machinery to go and plug that into the remainder of that activity.
+
+470
+01:09:46,372 --> 01:09:49,982
+And actually, we have plenty of time left.
+
+471
+01:09:51,812 --> 01:10:00,182
+That roulette game is kind of a specific realisation of a more general and useful application of the central limit theorem.
+
+472
+01:10:00,202 --> 01:10:03,322
+What we will wrap up with today.
+
+473
+01:10:05,582 --> 01:10:16,262
+Which is. Just putting another line on here and getting everything we.
+
+474
+01:10:17,312 --> 01:10:29,852
+Aligned. So this is.
+
+475
+01:10:32,312 --> 01:10:37,192
+A. What's a good word to put it?
+
+476
+01:10:37,202 --> 01:10:43,742
+It's a application, a way of looking at the world that allows us to bring this mathematical machinery to
+
+477
+01:10:43,742 --> 01:10:51,512
+bear and make predictions in many cases in domains that you might not initially expect.
+
+478
+01:10:52,262 --> 01:11:03,362
+So the general framework is known as a random walk, which maybe has the disadvantage of sounding both boring and specific.
+
+479
+01:11:04,262 --> 01:11:08,852
+Like you have to be thinking about something like Brownian motion,
+
+480
+01:11:08,852 --> 01:11:19,052
+a pollen grains suspended in a in a fluid that is randomly being jostled by all the water molecules it hits with and moving in position.
+
+481
+01:11:19,862 --> 01:11:24,382
+But really, these random walks are a modelling tool.
+
+482
+01:11:26,262 --> 01:11:33,532
+And. In that manifestation.
+
+483
+01:11:34,522 --> 01:11:42,592
+They have a lot of very general applications. Well, one of which I have already said is that roulette game.
+
+484
+01:11:47,472 --> 01:11:55,142
+In that game of roulette that we talked about in the story yesterday. Every time the wheel spins, you can either gain win money or lose money.
+
+485
+01:11:55,152 --> 01:12:03,792
+There's an overall gain that each of those spins can be treated as a step in a random walk.
+
+486
+01:12:06,252 --> 01:12:11,292
+And because you win or lose money with each spin,
+
+487
+01:12:11,742 --> 01:12:20,742
+you are basically walking not left or right along an actual position, but in some sort of money space.
+
+488
+01:12:20,742 --> 01:12:29,112
+Your your bank account. Is being either increased or decreased with every step in that roulette game.
+
+489
+01:12:30,222 --> 01:12:44,372
+Brownian motion is. The kind of more direct random walk where the suspended pollen grain is literally walking, shifting its position over time.
+
+490
+01:12:46,802 --> 01:12:53,822
+So every every little interval of time is taking a small step in some randomly fluctuating direction,
+
+491
+01:12:55,142 --> 01:13:03,002
+but some more general and less straightforward applications are things like genetic drift and evolution.
+
+492
+01:13:04,292 --> 01:13:14,972
+We are then talking about how DNA sequences evolve or walk within the space of their possible collections of age.
+
+493
+01:13:17,672 --> 01:13:21,392
+The I forgot the technical term for it.
+
+494
+01:13:23,692 --> 01:13:36,562
+For those components of DNA, as well as things like prices on the stock market, also moving in the money space and many other applications.
+
+495
+01:13:36,562 --> 01:13:46,762
+If you can relate it to something randomly changing over time, chances are that can be expressed in the framework of and of a random walk.
+
+496
+01:13:47,242 --> 01:13:52,042
+So in all of these, the idea is that we have some object that.
+
+497
+01:13:53,392 --> 01:13:57,172
+Take some step that is chosen or at least adjustable.
+
+498
+01:13:58,522 --> 01:14:12,602
+Randomly. It's kind of implicit in what I was describing above with steps in money space, an actual position and so on.
+
+499
+01:14:13,892 --> 01:14:18,602
+And formally, each of these steps is changing.
+
+500
+01:14:18,902 --> 01:14:23,912
+The state that we get if we perform the experiment of looking at this object.
+
+501
+01:14:24,482 --> 01:14:30,062
+So we start from the current state, the outcome of that experiment.
+
+502
+01:14:31,172 --> 01:14:34,892
+And then when we take that step, it gives us a new state.
+
+503
+01:14:36,882 --> 01:14:40,152
+Within our set of all states.
+
+504
+01:14:40,152 --> 01:14:48,862
+Omega And then. Well, the last part of the idea for a random walk is that we don't just take the step once.
+
+505
+01:14:49,402 --> 01:14:53,792
+It keeps repeating. Many times giving us.
+
+506
+01:14:55,102 --> 01:15:03,262
+The collection of a large number of random variables that lets us bring the central limit theorem and law of large numbers to bear.
+
+507
+01:15:04,102 --> 01:15:09,022
+And just as an aside, something we will come back to after the break.
+
+508
+01:15:09,352 --> 01:15:19,302
+Is that. This generic process of starting from a particular state,
+
+509
+01:15:19,662 --> 01:15:28,902
+making a change and getting a new state out of it is somewhat more formally known as a Markov process.
+
+510
+01:15:32,032 --> 01:15:41,482
+In particular, the distinguishing feature of the Markov process is that the system or the object has no memory of anything before its current state.
+
+511
+01:15:42,862 --> 01:15:48,022
+So it always just starts in whatever state it's in. There's a random change that takes it to a new state.
+
+512
+01:15:48,292 --> 01:15:50,392
+It forgets everything that happened in the past.
+
+513
+01:15:50,692 --> 01:15:59,222
+Another random change and keep repeating this Markoff process is probably a more formal way of describing a random walk.
+
+514
+01:15:59,242 --> 01:16:01,552
+I'm using those terms essentially interchangeably,
+
+515
+01:16:02,872 --> 01:16:13,072
+but the sequence of states that is produced by this sort of Markov process is then known as a Markov chain.
+
+516
+01:16:14,112 --> 01:16:20,772
+The idea being that each link in a chain is a particular state that is connected only to
+
+517
+01:16:20,772 --> 01:16:25,212
+the state that came before from which it was determined and to the state that came after.
+
+518
+01:16:25,242 --> 01:16:28,602
+So rather than a big complicated network with lots of nodes talking to each other,
+
+519
+01:16:28,932 --> 01:16:34,242
+it's just a simple linear chain, one state to the next, to the next, and so on.
+
+520
+01:16:35,592 --> 01:16:42,612
+Again, we'll come back to that later on when we deal with interactions and phase transitions.
+
+521
+01:16:43,392 --> 01:16:50,772
+Markov chain methods are well, they are random walks.
+
+522
+01:16:50,772 --> 01:16:58,992
+They're the useful way of numerically analysing all of those sorts of processes for today.
+
+523
+01:16:59,922 --> 01:17:10,151
+Let's keep things a bit simpler and just think about kind of the simplest possible example of
+
+524
+01:17:10,152 --> 01:17:16,902
+a random walk to give us a concrete picture of what to have in mind and what is going on.
+
+525
+01:17:20,762 --> 01:17:33,782
+There is the screen. So we'll actually just consider a walker who is moving in space, taking actual physical steps,
+
+526
+01:17:34,352 --> 01:17:40,142
+either in one of two directions, either to the right or to the left along a line.
+
+527
+01:17:40,952 --> 01:17:47,462
+So a literal walk that is restricted to a single dimension.
+
+528
+01:17:47,582 --> 01:17:51,032
+I cannot go forward or backward. It cannot go up or down.
+
+529
+01:17:52,572 --> 01:17:53,832
+We take the street steps.
+
+530
+01:17:56,752 --> 01:18:09,172
+Only to the right, which we can represents mathematically as the position of the walker increasing by some step length l or to the left.
+
+531
+01:18:12,122 --> 01:18:17,162
+So the step length then goes the other direction. It decreases by that step length.
+
+532
+01:18:17,162 --> 01:18:25,472
+L And that's going along this one dimensional line, and we will further say that.
+
+533
+01:18:26,102 --> 01:18:29,972
+So there's an element of randomness and whether we choose to step right or left,
+
+534
+01:18:31,052 --> 01:18:36,992
+we will be a bit more general than flipping a coin and say that the probability of stepping right.
+
+535
+01:18:38,082 --> 01:18:45,162
+Is our. Which means that the only other option, the probability of stepping to the left.
+
+536
+01:18:47,302 --> 01:18:51,562
+As the remainder of the possibilities.
+
+537
+01:18:52,132 --> 01:19:00,832
+Call that Q and it has to be one minus P, so that the sum of all the options gets us to 100%.
+
+538
+01:19:01,102 --> 01:19:05,092
+As always, keep things as simple as possible.
+
+539
+01:19:05,962 --> 01:19:10,502
+We'll just. Use a fixed length for this step.
+
+540
+01:19:10,592 --> 01:19:14,972
+In principle, that's something that could possibly change from one step to the next.
+
+541
+01:19:15,212 --> 01:19:21,572
+That can make things more interesting. For now, we'll just say skip length is always one at every step.
+
+542
+01:19:23,432 --> 01:19:31,902
+And we will also say. That these steps are taken at regular intervals in time.
+
+543
+01:19:32,172 --> 01:19:38,172
+Kind of like the ticks of a clock. Every time some time interval passes, we take a step.
+
+544
+01:19:40,132 --> 01:19:47,652
+So there will be a step. Every delta T regular time interval.
+
+545
+01:19:52,982 --> 01:19:58,952
+Which means that we can convert the total number of steps that we take.
+
+546
+01:20:01,212 --> 01:20:15,802
+So if we were to take any steps. This would give us a conversion to a total time t which is and factors of that regular time interval.
+
+547
+01:20:18,252 --> 01:20:27,072
+Reason for doing this, Will. Become clearer, perhaps next week we might not get to it in the time remaining today,
+
+548
+01:20:28,302 --> 01:20:35,532
+but it will be a useful way of looking at these discrete processes more continuously.
+
+549
+01:20:38,892 --> 01:20:47,412
+So again, keeping things simple and keeping things concrete, we can just write down.
+
+550
+01:20:49,302 --> 01:20:56,112
+A representative random walk that follows these guidelines.
+
+551
+01:20:56,622 --> 01:21:03,202
+So. Randomly choosing with these probabilities P and Q To step to the left or to the right,
+
+552
+01:21:04,012 --> 01:21:13,342
+we can see that first we take one step to the left, going from the starting point, say X of zero to X of minus one.
+
+553
+01:21:14,062 --> 01:21:19,582
+The next step we can randomly choose to head back to the right, taking us back to that starting points.
+
+554
+01:21:21,052 --> 01:21:26,292
+Keep going. Or maybe take a couple of steps to the right in a row.
+
+555
+01:21:31,622 --> 01:21:37,531
+So this we have here is a step with our story.
+
+556
+01:21:37,532 --> 01:21:46,112
+It's a walk with six steps. We start at the position X not equal to zero.
+
+557
+01:21:47,252 --> 01:21:53,192
+The final position of the walk x is then to.
+
+558
+01:21:54,852 --> 01:22:00,482
+That's just adding up the sum of steps to the right minus the steps to the left.
+
+559
+01:22:01,352 --> 01:22:04,502
+If we were to reverse all of this.
+
+560
+01:22:06,222 --> 01:22:15,082
+First step, right? Then left and then a couple of extra steps to the left that would give a negative final position, for instance.
+
+561
+01:22:16,282 --> 01:22:23,572
+And now we can start thinking things like what is?
+
+562
+01:22:25,962 --> 01:22:29,292
+The total number of walks that we could have.
+
+563
+01:22:32,552 --> 01:22:40,562
+With these six steps. Shout out the answer if it occurs to you.
+
+564
+01:22:56,002 --> 01:23:01,012
+She said it is due to the six. It's essentially the same as flipping a coin.
+
+565
+01:23:01,312 --> 01:23:04,252
+Heads or tails has now become right or left.
+
+566
+01:23:05,122 --> 01:23:16,552
+So with each step, we have two possibilities Multiply them all together to get to the end, or in this case two to the six, which is 64.
+
+567
+01:23:17,782 --> 01:23:22,042
+And then the next question to just check that.
+
+568
+01:23:22,762 --> 01:23:36,592
+The simple example is all making sense. What is the probability for this particular walk that we were just thinking about with going left right?
+
+569
+01:23:38,232 --> 01:23:49,272
+Left, right. And then. Right. Right. This is also something I'll let you think about and shout out.
+
+570
+01:23:50,672 --> 01:24:42,042
+What do you think? Without any rush. You want to go, it can be one over 64.
+
+571
+01:24:43,552 --> 01:24:47,232
+That. Is what it comes out to.
+
+572
+01:24:48,252 --> 01:24:57,012
+If and only if these P's and Q's are both a half and like we had for the coin.
+
+573
+01:24:57,522 --> 01:25:01,332
+So we've now made that more general.
+
+574
+01:25:01,872 --> 01:25:09,522
+So if and only if P equals Q equals a half, we get one over 64 out of these Every single possibility,
+
+575
+01:25:10,122 --> 01:25:14,982
+regardless of whether you go left or right is equal. You could call that a fair walk if you wanted to.
+
+576
+01:25:15,912 --> 01:25:20,592
+More generally, we would have probability.
+
+577
+01:25:20,592 --> 01:25:23,592
+Q For that first step to the left.
+
+578
+01:25:24,342 --> 01:25:29,532
+P To the right and then Q p P which ends up being.
+
+579
+01:25:31,292 --> 01:25:35,132
+Four factors of the probability of heading to the right.
+
+580
+01:25:36,492 --> 01:25:41,202
+Plus two or times two factors of the probability of heading to the left.
+
+581
+01:25:42,372 --> 01:25:53,982
+And you can see again putting in one over two for each of those six factors gives one over two to the six or one over 64 just like you came out with.
+
+582
+01:25:53,992 --> 01:25:57,402
+So the more general case retains.
+
+583
+01:25:59,492 --> 01:26:02,582
+These P's and Q's going beyond.
+
+584
+01:26:03,852 --> 01:26:07,142
+Just flipping a fair coin and.
+
+585
+01:26:09,632 --> 01:26:13,562
+And so, you know, more generally if we have.
+
+586
+01:26:17,422 --> 01:26:22,072
+So. A general and step walk.
+
+587
+01:26:26,982 --> 01:26:32,092
+With say our. Steps to the right.
+
+588
+01:26:37,602 --> 01:26:42,401
+So this is going to seem similar to the setup we talked about yesterday,
+
+589
+01:26:42,402 --> 01:26:49,572
+where we spent a roulette wheel in times and we had w of those spins being ones where we won.
+
+590
+01:26:49,962 --> 01:26:57,402
+We've now just changed the W to an R, of course, when we only have these two possibilities right and left, win or lose,
+
+591
+01:26:58,032 --> 01:27:07,242
+all of the other steps have to be the other possibility, either losing in roulette or stepping to the left.
+
+592
+01:27:10,812 --> 01:27:27,042
+This is going to involve a probability that has our factors of that p of stepping to the right and then and minus R factors of Q stepping to the left.
+
+593
+01:27:29,802 --> 01:27:35,532
+But that's not necessarily the probability of.
+
+594
+01:27:37,422 --> 01:27:44,112
+Taking. These are steps to the right. This is one specific way of taking those steps when ordering.
+
+595
+01:27:44,562 --> 01:27:47,952
+And if we generalise so.
+
+596
+01:27:50,892 --> 01:27:54,252
+And in general, there will be.
+
+597
+01:27:56,462 --> 01:28:00,932
+Many ways of taking and step random walks.
+
+598
+01:28:03,342 --> 01:28:08,422
+That end up. With our steps to the right.
+
+599
+01:28:10,062 --> 01:28:17,802
+So they end up in the same final position, even though the order of the steps that we take is different.
+
+600
+01:28:18,372 --> 01:28:25,422
+That order does not matter in terms of where we end up. We can also say that these steps are just additions.
+
+601
+01:28:25,482 --> 01:28:30,552
+Another linear operation like that expectation value. So.
+
+602
+01:28:32,102 --> 01:28:38,962
+This is. Just to say, getting back on the screen, the order doesn't matter.
+
+603
+01:28:41,702 --> 01:28:45,012
+And can I ask. For instance.
+
+604
+01:28:51,982 --> 01:29:09,442
+How many? Ways to end up with a final position of four, say, rather than the two we had here, keeping that same number of steps.
+
+605
+01:29:30,522 --> 01:29:34,902
+So this is something I'll give you at least some time to to think about.
+
+606
+01:30:13,662 --> 01:30:19,541
+And I guess I could see why You do think that a good starting point is translating
+
+607
+01:30:19,542 --> 01:30:24,882
+this target final position to the corresponding number of steps to the right,
+
+608
+01:30:24,882 --> 01:30:28,361
+this lowercase r that we have to work in.
+
+609
+01:30:28,362 --> 01:30:33,222
+If all six steps were to the right, then we would end up at x equals six.
+
+610
+01:30:34,572 --> 01:30:41,352
+If instead we take one to the left, then not only do we only have five steps to the right, take us to five,
+
+611
+01:30:41,352 --> 01:30:47,142
+but we've also taken a step to the left and subtracted that one step from the final position.
+
+612
+01:30:47,172 --> 01:30:50,352
+So that is the four. There is a possibility of getting there.
+
+613
+01:30:52,672 --> 01:31:04,972
+So the question reduces to how many possible ordering are there of five steps to the right and a single step to the left,
+
+614
+01:31:06,142 --> 01:31:11,122
+which could be the last step, could be the first step.
+
+615
+01:31:12,232 --> 01:31:17,032
+It could be. A step in between. Oops.
+
+616
+01:31:17,042 --> 01:31:23,542
+I don't need commas there. The total number.
+
+617
+01:31:23,542 --> 01:31:31,402
+If we just count out all the possible positions, all the possible times, we could take that one step to the left.
+
+618
+01:31:32,762 --> 01:31:39,952
+We will get a list of six possibilities which you could also recognise as.
+
+619
+01:31:41,462 --> 01:31:45,332
+The binomial coefficient six choose five.
+
+620
+01:31:45,332 --> 01:31:50,342
+So choosing five steps to the right out of a total of six steps or more generally.
+
+621
+01:31:52,082 --> 01:31:57,812
+And shoes are for their binomial coefficients. And I should also check here like I did with the Gaussian.
+
+622
+01:31:58,172 --> 01:32:03,272
+I'm assuming binomial coefficients are things you've seen before that are familiar.
+
+623
+01:32:05,702 --> 01:32:16,872
+If not. Shout out, Let me know either here or afterwards, and can do a brief review just to make sure that the notation is clear throughout.
+
+624
+01:32:22,332 --> 01:32:26,352
+Not hearing any immediate objections. We can.
+
+625
+01:32:29,252 --> 01:32:35,911
+Combine this counting exercise or maybe the simplest possible combinatorics exercise you
+
+626
+01:32:35,912 --> 01:32:43,762
+can imagine with the consideration of the probabilities for a particular and step walk.
+
+627
+01:32:43,772 --> 01:32:52,982
+So each of these six corresponds to a chance p to the are times Q to the end minus R of being taken.
+
+628
+01:32:53,582 --> 01:33:05,612
+So the overall probability. For taking these are steps to the right.
+
+629
+01:33:06,392 --> 01:33:17,621
+Out of a total of an is. That individual capability for each one PTT are Q to the end minus R weighted by the
+
+630
+01:33:17,622 --> 01:33:24,492
+number of possible ordering that we can have the binomial coefficient and choose our.
+
+631
+01:33:33,702 --> 01:33:41,772
+We only have a few minutes left today to start doing things with this results in the in the simple example.
+
+632
+01:33:42,282 --> 01:33:50,472
+So to some extent this will be a forecast of a little calculation we will finalise and wrap up next week.
+
+633
+01:33:50,562 --> 01:33:59,172
+Just as a reminder, it's a computer lab on Tuesday morning over in the central teaching lab, so we won't pick this back up until next Friday morning.
+
+634
+01:34:00,072 --> 01:34:06,522
+The question to you will try to answer about this simple random walk.
+
+635
+01:34:07,712 --> 01:34:12,602
+Is getting connecting with the other things we've been looking at today.
+
+636
+01:34:13,412 --> 01:34:22,742
+What are some interesting expectation values for this process of repeating the experiment of taking a random step?
+
+637
+01:34:25,392 --> 01:34:35,082
+So specific targets will be the expectation value for the final position of the walk.
+
+638
+01:34:37,062 --> 01:34:40,142
+So I've been calling that this lowercase x.
+
+639
+01:34:41,682 --> 01:34:49,302
+We had actually the two in those examples. X equals four as a final position after and steps in these examples.
+
+640
+01:34:50,052 --> 01:35:01,272
+And we will also want to compute the scale of fluctuations around that expected final position that corresponds to the variance.
+
+641
+01:35:03,212 --> 01:35:07,202
+The expectation value of x squared minus the square.
+
+642
+01:35:08,842 --> 01:35:12,922
+Of the final position expectation value that we're also interested in.
+
+643
+01:35:13,642 --> 01:35:21,642
+And this will all be. As a function of the number of steps that we have in our walk.
+
+644
+01:35:23,192 --> 01:35:28,492
+And. You know, rather than.
+
+645
+01:35:30,802 --> 01:35:37,642
+Well, do just a bit of set up for this to give us a nice starting point when we come back to it next week.
+
+646
+01:35:38,982 --> 01:35:46,262
+I would just plug in a lot of the machinery that we have been developing today where we know
+
+647
+01:35:46,262 --> 01:35:55,591
+that an expectation value is the sum over the random variable weighted by the probability.
+
+648
+01:35:55,592 --> 01:36:00,242
+So we sum over all of the possible final positions that we could have.
+
+649
+01:36:01,952 --> 01:36:07,142
+Ranging from minus. And if all the steps are to the left up to plus end, if all the steps are to the right,
+
+650
+01:36:07,892 --> 01:36:17,132
+that gets weighted by the probability that we have of ending up in that final position from all of these to to the end.
+
+651
+01:36:18,112 --> 01:36:29,212
+Possible walks. So we need to convert all of these expressions of X and this probability of ending up in that
+
+652
+01:36:29,212 --> 01:36:37,432
+final position to the probability that we have of taking a discrete number of steps to the right.
+
+653
+01:36:38,182 --> 01:36:44,782
+So, for instance, the set up for this is going to be just noticing that.
+
+654
+01:36:46,062 --> 01:36:54,342
+When we take each of these our steps to the right, we pick up a plus one in our position.
+
+655
+01:36:54,822 --> 01:37:00,292
+That's a simplification that. We put in place taking a fixed.
+
+656
+01:37:02,202 --> 01:37:08,652
+Step length at every tick of our clock on all the other steps.
+
+657
+01:37:09,872 --> 01:37:16,892
+There are and minus are of those. We instead go minus one to the left and if we break up.
+
+658
+01:37:18,272 --> 01:37:23,522
+That product, the negative signs cancel and we end up with two or minus.
+
+659
+01:37:23,522 --> 01:37:30,842
+And so that the expectation value we will be looking for can be cast into the form
+
+660
+01:37:31,502 --> 01:37:38,372
+of a sum over the number of steps to the right that we take out of the end of this.
+
+661
+01:37:40,422 --> 01:37:50,952
+Final position expressed in terms or as a function of and it are and now weighted by the probability that we have computed.
+
+662
+01:37:52,602 --> 01:37:58,092
+So again, this hopefully seems a bit familiar based on what you were looking at yesterday,
+
+663
+01:37:58,662 --> 01:38:06,012
+where you had a number of spins of the roulette wheel and a number of wins
+
+664
+01:38:06,342 --> 01:38:11,292
+and you wanted to estimate how much money you had at the end of all of those.
+
+665
+01:38:13,062 --> 01:38:18,942
+And next Friday we will come back and actually complete that calculation.
+
+666
+01:38:19,572 --> 01:38:24,882
+I don't think it should take us too long connected to the law of diffusion,
+
+667
+01:38:25,302 --> 01:38:31,122
+the way that those molecules of dye spread out in the beaker of water as we've.
+
+668
+01:38:32,322 --> 01:38:40,782
+Show just at the start. Another example of a random walk in a different form and then probably go on to statistical ensembles.
+
+669
+01:38:41,442 --> 01:38:44,832
+So we're making progress,
+
+670
+01:38:45,822 --> 01:38:52,242
+seeing emergent behaviour of large collections of degrees of freedom from the properties
+
+671
+01:38:52,242 --> 01:38:56,022
+of much smaller ones through that law of large numbers and central limit theorem.
+
+672
+01:38:56,892 --> 01:39:01,692
+Any final last minute questions before you make your escape on Friday afternoon?
+
+673
+01:39:07,602 --> 01:39:13,331
+Hope you have a good weekend. I'll see you next Tuesday morning for that first computer lab.
+
+674
+01:39:13,332 --> 01:39:17,442
+We'll talk about some programming background to kick that off.
+
