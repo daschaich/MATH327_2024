@@ -1,6 +1,6 @@
 % ------------------------------------------------------------------
 \renewcommand{\thisunit}{MATH327 Unit 1}
-\renewcommand{\moddate}{Last modified 29 Jan.~2024}
+\renewcommand{\moddate}{Last modified 4 Feb.~2024}
 \setcounter{section}{1}
 \setcounter{subsection}{0}
 \phantomsection
@@ -478,7 +478,7 @@ This is shown in the two figures below, considering a low but non-zero drift vel
   \includegraphics[width=0.45\textwidth]{figs/unit01_diff_low.pdf}\hfill \includegraphics[width=0.45\textwidth]{figs/unit01_diff_high.pdf}
 \end{center}
 In the figure on the left, each individual probability distribution looks similar to the corresponding one for $\vdr = 0$, but now their central peaks (and expectation values $\vev{x}$) drift steadily to the right.
-The distributions in the figure on the right look a bit different, but still diffuse to exhibit shorter and broader peaks as time goes on.
+The distributions in the figure on the right look a bit different, but still diffuse to exhibit lower and broader peaks as time goes on.
 
 When $p \neq \frac{1}{2}$ so that $\vev{x} \neq 0$, it is interesting to compare the drift in the expectation value against the growth in fluctuations around $\vev{x}$ due to diffusion.
 We can do this by considering the following \textit{relative} uncertainty:
@@ -524,7 +524,7 @@ This result is related to the generality of the law of diffusion (\eq{eq:diff_la
 Since $t > 0$, the exponential in the gaussian distribution $p(x)$ peaks at the drifting expectation value $x = \vdr t = \vev{x}$.
 The factor $(x - \vdr t)^2$ simply quantifies the distance from this peak.
 As $t$ increases, so does the factor $2D^2 t$ dividing this $(x - \vdr t)^2$, meaning that a larger distance from the peak is needed for the overall argument of the exponential to reach a given value --- in other words, the peak becomes broader.
-This in turn requires a shorter peak, reflected in the $\frac{1}{\sqrt{t}}$ in the overall coefficient, which is set by requiring $\int p(x) \; dx = 1$.
+This in turn requires a lower peak, reflected in the $\frac{1}{\sqrt{t}}$ in the overall coefficient, which is set by requiring $\int p(x) \; dx = 1$.
 In other words, the law of diffusion holds whenever the central limit theorem is applicable.
 This requires that the mean and variance of the single-step process are finite, and in the computer project we will numerically investigate the \textit{anomalous diffusion} that occurs when this condition is not satisfied.
 % ------------------------------------------------------------------
