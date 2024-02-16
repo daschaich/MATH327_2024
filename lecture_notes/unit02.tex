@@ -1,6 +1,6 @@
 % ------------------------------------------------------------------
 \renewcommand{\thisunit}{MATH327 Unit 2}
-\renewcommand{\moddate}{Last modified 3 Feb.~2024}
+\renewcommand{\moddate}{Last modified 15 Feb.~2024}
 \setcounter{section}{2}
 \setcounter{subsection}{0}
 \phantomsection
@@ -23,7 +23,7 @@ At a different time $t_2$, the system's state $\om_2$ is generally different fro
 However, there are some measurements we can perform that always produce the same outcome even as the system's state changes over time.
 These measurements define \textit{conserved quantities}, such as the number of spins considered in the example above.
 
-Another important conserved quantity is the total energy $E$ \textit{inside} an isolated (or `closed') system,
+Another important conserved quantity is the \textit{internal} energy $E$ of an isolated (or `closed') system,
 \begin{equation*}
   E(\om_1) = E(\om_2).
 \end{equation*}
@@ -32,11 +32,11 @@ Because statistical physics was first developed when conservation of energy was 
 Another way of stating the first law is that any change in the internal energy of one particular system \Om must be matched by an equal and opposite change in the energy of some other system with which \Om is in contact.
 This will be important when we consider thermodynamic cycles later in the term.
 
-For now, let's return to the example above, and endow the spin system with an internal energy by placing it in a magnetic field of strength $H$.
+For now, let's return to the example above, and endow the spin system with an internal energy by placing it in a `magnetic field' of strength $H$.
 That is, if a spin is parallel to the field, it contributes energy $-H$ to the total energy $E$ of the system. % TODO: Note magnetic field strength and energy have same dimensions in this system of units...
 If a spin is anti-parallel to the field, it instead contributes energy $H$.
 For later convenience, we define a positive magnetic field $H > 0$ to point upward, and also define $n_+$ to be the number of spins pointing upward --- parallel to the field and therefore contributing \textit{negative} energy.
-Similarly, the remaining $n_- = N - n_+$ downward-pointing spins are anti-aligned with the field and contribute positive energy.
+Similarly, the remaining $n_- = N - n_+$ downward-pointing spins are anti-parallel to the field and contribute positive energy.
 What is the total energy $E$ of the system in terms of $n_+$ and $n_-$?
 What is $E$ for the representative $8$-spin state you wrote down above?
 What fraction of the states of the spin system have this energy?
@@ -45,11 +45,11 @@ What fraction of the states of the spin system have this energy?
 \end{mdframed}
 
 If instead we consider $N \sim 10^{23}$ hydrogen (H$_2$) molecules in a container, we can write a simple expression for the internal energy $E$ by treating each molecule as a \textit{point-like particle}, with no size or structure.
-In this case each molecule contributes only its kinetic energy to $E$,
+In this case each molecule contributes only its kinetic energy, and
 \begin{equation*}
   E = \frac{m}{2} \sum_{n = 1}^N \vec{v}_n^{\,2} = \frac{1}{2m} \sum_{n = 1}^N \vec{p}_n^{\,2},
 \end{equation*}
-where $\vec v_n$ is the velocity of the $n$th molecule, $\vec p_n = m \vec v_n$ is its momentum, and all molecules have exactly the same mass $m$.
+where $\vec v_n$ is the velocity of the $n$th molecule, $\vec p_n = m \vec v_n$ is its momentum, and all molecules have the same mass $m$.
 
 As forecast at the start of the module, we treat the time evolution of any given system as a stochastic process in which the system probabilistically adopts a sequence of states $\om_i \in \Om$:
 \begin{equation*}
@@ -66,8 +66,8 @@ Since we cannot hope to record so much information or carry out so many computat
 
 Because these states $\om_i$ depend on the `microscopic' degrees of freedom that compose the overall system, we will refer to them as \textbf{micro-states} from now on.
 From the definition of probability in \secref{sec:prob}, we have the requirement $\sum_i p_i = 1$, which simply means that the system must be in \textit{some} micro-state at any point in time.
-The fact that time evolution cannot change any conserved quantities, as discussed above, means that such conserved quantities \textit{characterize} statistical ensembles.
-We will define different types of statistical ensemble that depend on the specific set of conserved quantities.
+The fact that time evolution cannot change any conserved quantities, as discussed above, means that such conserved quantities characterize statistical ensembles.
+Throughout the next seven units we will consider different statistical ensembles with different sets of conserved quantities.
 
 \begin{shaded}
   First we define the \textbf{micro-canonical ensemble} to be a statistical ensemble characterized by conserved internal energy $E$ and conserved number of degrees of freedom $N$ --- which we will call \textbf{particle number} for short.
@@ -135,9 +135,9 @@ What is the entropy if $E = 0$ with $H > 0$ (which requires $n_+ = n_-$)?
 % ------------------------------------------------------------------
 \subsubsection{Extensivity}
 The increase in entropy for an increasing number of micro-states $M$ is a reflection of entropy being an \textit{extensive} quantity.
-Extensive quantities are formally defined by considering how they behave if two isolated systems are \textit{analyzed} as a single system --- while still remaining isolated from each other, exchanging neither energy nor particles.
-This is clearest to consider through the specific example shown below of two isolated spin systems, $\Om_1$ \& $\Om_2$, respectively characterized by the corresponding energies $E_1$ \& $E_2$ and particle numbers $N_1$ \& $N_2$.
-To simplify the subsequent analysis, we can assume that both systems are placed in magnetic fields with the same $H$, so that $E_S = -H\left(n_+^{(S)} - n_-^{(S)}\right)$ for $S \in \left\{1, 2\right\}$.
+Extensive quantities are formally defined by considering how they behave if two isolated subsystems are \textit{analyzed} as a single system --- while still remaining isolated from each other, exchanging neither energy nor particles.
+This is clearest to consider through the specific example shown below of two isolated spin subsystems, $\Om_1$ \& $\Om_2$, respectively characterized by the corresponding energies $E_1$ \& $E_2$ and particle numbers $N_1$ \& $N_2$.
+To simplify the subsequent analysis, we can assume that both subsystems are placed in magnetic fields with the same $H$, so that $E_S = -H\left(n_+^{(S)} - n_-^{(S)}\right)$ for $S \in \left\{1, 2\right\}$.
 \begin{center}
   \includegraphics[width=0.7\textwidth]{figs/unit02_entropy-separate.pdf}
 \end{center}
@@ -154,10 +154,10 @@ Then the entropies of the two systems are
   \includegraphics[width=0.7\textwidth]{figs/unit02_entropy-combo.pdf}
 \end{center}
 
-Now we keep these two (sub)systems isolated from each other, but consider them as a combined system $\Om_{1+2}$, as illustrated above.
+Now we keep these two subsystems isolated from each other, but consider them as a combined system $\Om_{1+2}$, as illustrated above.
 In order to compute the entropy $S_{1+2}$, we need to figure out the number of micro-states $M_{1+2}$ the combined system could possibly adopt, and then determine the corresponding probability for each micro-state.
-Both steps are simplified by the systems being isolated from each other, so that they are statistically independent.
-Specifically, with subsystem $\Om_1$ in any one of its $M_1$ micro-states $\om_i^{(1)}$, subsystem $\Om_2$ could independently inhabit any of its $M_2$ micro-states, implying $M_{1+2} = M_1 M_2$.
+Both steps are simplified by the subsystems being isolated from each other, so that they are statistically independent.
+Specifically, with subsystem $\Om_1$ in any one of its $M_1$ micro-states $\om_i^{(1)}$, subsystem $\Om_2$ could independently adopt any of its $M_2$ micro-states, implying $M_{1+2} = M_1 M_2$.
 
 Similarly, statistical independence means that the combined probability of subsystem $\Om_1$ adopting micro-state $\om_i^{(1)}$ while subsystem $\Om_2$ adopts $\om_k^{(2)}$ is the product of the individual probabilities, $p_i q_k$.
 We can check that this is a well-defined probability, with
@@ -166,9 +166,9 @@ We can check that this is a well-defined probability, with
 \end{equation*}
 Inserting the probability $p_i q_k$ into \eq{eq:entropy}, and recalling $\log(a\cdot b) = \log a + \log b$, what is the combined entropy $S_{1+2}$ of these two independent subsystems?
 \begin{mdframed}
-  $S_{1+2} = $ \\[80 pt]
+  $S_{1+2} = $ \\[100 pt] % WARNING: ADJUSTED SIZE BY HAND TO FILL MORE OF THE PAGE
 \end{mdframed}
-You should find that the total entropy is just the sum of the entropies of the two isolated systems, which is also how the energies and particle numbers behave,
+You should find that the total entropy is the sum of the entropies of the two isolated subsystems, which is also how the energies and particle numbers behave,
 \begin{align*}
   E_{1+2} & = E_1 + E_2 &
   N_{1+2} & = N_1 + N_2.
@@ -177,7 +177,7 @@ You should find that the total entropy is just the sum of the entropies of the t
 This behaviour identifies the energy, particle number and entropy as \textbf{extensive} quantities, which are \href{https://goldbook.iupac.org/terms/view/E02281}{defined} to be those that add up across independent subsystems.
 This can be contrasted with \textbf{intensive} quantities, which are \href{https://goldbook.iupac.org/terms/view/I03074}{defined} to be independent of the extent of the system, and hence the same (on average) for subsystems as for the combined system. % External magnetic field strength $H$ is control parameter rather than system property...
 Temperature and density are everyday examples of intensive quantities, though we will see below that the micro-canonical approach introduces some subtleties.
-It is possible for quantities to be neither extensive nor intensive: $M_{1+2} = M_1 M_2$ is an example we've already seen.
+It is possible for quantities to be neither extensive nor intensive, for example the number of micro-states $M_{1+2} = M_1 M_2$.
 
 Finally, suppose that each subsystem is independently in thermodynamic equilibrium, with finite $M_1$ and $M_2$, implying
 \begin{align*}
@@ -196,10 +196,10 @@ In this situation it's even easier to see $S_{1+2} = \log\left(M_1 M_2\right) = 
 
 % ------------------------------------------------------------------
 \subsubsection{\label{sec:second_law}Second law of thermodynamics}
-Let's continue considering the two spin (sub)systems discussed above, with one significant change: We suppose the two subsystems are now able to exchange energy (but not particles) with each other.
+Let's continue considering two subsystems, with one significant change: Suppose the subsystems are now able to exchange energy (but not particles) with each other.
 We'll say they are in \textit{thermal contact} with each other, rather than being fully isolated.
-We'll also wait long enough after establishing thermal contact for the combined system to reach equilibrium.
-This is illustrated by the figure below:
+We'll also wait long enough after establishing thermal contact for the combined system \Om to reach equilibrium.
+This is illustrated below:
 \begin{center}
   \includegraphics[width=0.7\textwidth]{figs/unit02_entropy-exchange.pdf}
 \end{center}
@@ -237,7 +237,7 @@ This is all we can say in full generality, without specifying more details of a 
 Though we won't go through a more general derivation here, it turns out that the total entropy never decreases (and generically increases) as time passes, under \textit{any} circumstances.
 This has many far-reaching consequences, the first of which is a more general definition of thermodynamic equilibrium that (unlike \eq{eq:micro_equil}) will also apply when we consider statistical ensembles other than the micro-canonical ensemble.
 For simplicity we assume that any system under consideration has a finite number of micro-states, which means that its entropy is bounded from above.
-To motivate the definition below, note that the overall system \Om may have undergone an equilibration process to reach its thermodynamic equilibrium after its two (independently equilibrated) subsystems were brought into thermal contact --- and in this process the entropy was non-decreasing.
+To motivate the definition below, note that the overall system \Om may have undergone an equilibration process to reach its thermodynamic equilibrium after any independently equilibrated subsystems were brought into thermal contact --- and in this process the entropy was non-decreasing.
 
 \begin{shaded}
   A system is defined to be in \textbf{thermodynamic equilibrium} if its entropy is maximal.
