@@ -1,6 +1,6 @@
 % ------------------------------------------------------------------
 \renewcommand{\thisunit}{MATH327 Unit 2}
-\renewcommand{\moddate}{Last modified 15 Feb.~2024}
+\renewcommand{\moddate}{Last modified 23 Feb.~2024}
 \setcounter{section}{2}
 \setcounter{subsection}{0}
 \phantomsection
@@ -302,7 +302,7 @@ Your results should generalize to
 To take the derivative in \eq{eq:temperature}, we need to express $n_-$ in terms of $\left\{E, N\right\}$.
 It will also be useful to avoid the factorial operation, which is inconvenient to differentiate.
 For $N \gg 1$, we can accomplish both these goals by treating the spin system as a random walk in the space of its possible energies $E$ and applying the central limit theorem:\footnote{Applying Stirling's formula, $\log(N!) \approx N \log N - N$, is another possible approach.} \\[-24 pt]
-\begin{itemize} % Adapted from a tutorial activity since sufficiently important to include in the main material...
+\begin{itemize} % Adapted from a tutorial activity since tutorial replaced by computer lab...
   \item Each spin adds to $x \equiv \frac{E}{-H} = 2n_+ - N$ a `step' of fixed `length' $\pm 1$.
         Our task therefore coincides with the special case we considered in \secref{sec:diffusion}.
   \item We don't impose any preference for positive vs.\ negative energies, meaning $p = q = \frac{1}{2}$ in the terminology of \secref{sec:diffusion}.
@@ -321,7 +321,7 @@ For $N \gg 1$, we can accomplish both these goals by treating the spin system as
         With $2n_+ - N = \frac{E}{-H}$, we therefore find
         \begin{equation}
           \label{eq:CLT_states}
-          M(E) = 2^N p(2n_+ - N) \approx \frac{2^N}{\sqrt{2\pi N}}\exp\left[-\frac{E^2}{2NH^2}\right].
+          M(E) \approx 2^N p(2n_+ - N) = \frac{2^N}{\sqrt{2\pi N}}\exp\left[-\frac{E^2}{2NH^2}\right].
         \end{equation}
 \end{itemize}
 What is the derivative of the log of \eq{eq:CLT_states} with $N$ fixed?
