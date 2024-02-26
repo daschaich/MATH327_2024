@@ -1,0 +1,212 @@
+% ------------------------------------------------------------------
+\documentclass[12 pt]{article} % A4 paper set by geometry package below
+\pagenumbering{arabic}
+\setlength{\parindent}{10 mm}
+\setlength{\parskip}{12 pt}
+
+% Nimbus Sans font should be reasonably legible
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[T1]{fontenc}  % Without this \textsterling produces $
+
+% Section header spacing
+\usepackage{titlesec}
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{verbatim}    % For comment
+\usepackage[paper=a4paper, marginparwidth=0 cm, marginparsep=0 cm, top=2.5 cm, bottom=2.5 cm, left=3 cm, right=3 cm, includemp]{geometry}
+\usepackage[pdftex, pdfstartview={FitH}, pdfnewwindow=true, colorlinks=true, citecolor=blue, filecolor=blue, linkcolor=blue, urlcolor=blue, pdfpagemode=UseNone]{hyperref}
+
+% Put module code and last-modified date in footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\cfoot{{\small \thisweek}\hfill \thepage\hfill {\small \moddate}}
+
+% Hopefully address Canvas complaints about pdf tagging and title
+%\usepackage[tagged]{accessibility}
+\hypersetup {
+  pdfauthor={David Schaich},
+  pdftitle={Statistical Physics Homework},
+}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+% Shortcuts
+\newcommand{\be}{\ensuremath{\beta} }
+\newcommand{\De}{\ensuremath{\Delta} }
+\newcommand{\eps}{\ensuremath{\varepsilon} }
+\newcommand{\si}{\ensuremath{\sigma} }
+\newcommand{\vdr}{\ensuremath{v_{\mathrm{dr}}} }
+\renewcommand{\d}[1]{\ensuremath{\mathop{d#1}} }
+\newcommand{\vev}[1]{\ensuremath{\left\langle #1 \right\rangle} }
+\newcommand{\pderiv}[2]{\ensuremath{\frac{\partial #1}{\partial #2}} }
+\newcommand{\showmarks}[1]{\rightline{\texttt{[#1 marks]}}} % \showmarks needs to follow a blank line!
+%\newcommand{\TODO}[1]{\textcolor{red}{\textbf{#1}}}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\begin{document}
+\newcommand{\thisweek}{MATH327 Homework 1}
+\newcommand{\moddate}{Last modified 26 Feb.~2024}
+\begin{center}
+  {\Large \textbf{MATH327: Statistical Physics, Spring 2024}} \\[12 pt]
+  {\Large \textbf{First homework assignment}} \\[24 pt]
+\end{center}
+
+\section*{Instructions}
+Complete all four questions below and submit your solutions by file upload \href{https://canvas.liverpool.ac.uk/courses/69036/assignments/263584}{on Canvas}.
+Clear and neat presentations of your workings and the logic behind them will contribute to your mark.
+Use of resources beyond the module materials must be explicitly referenced in your submissions.
+This assignment is \textbf{due Tuesday, 5 March}.
+Anonymous marking is turned on and I will aim to return feedback shortly after 19 March.
+
+\vfill
+The Department recently published \href{https://canvas.liverpool.ac.uk/files/10656162/}{more detailed academic integrity guidance}.
+To summarize it: \\
+By submitting solutions to this assessment you affirm that you have read and understood the \href{https://www.liverpool.ac.uk/media/livacuk/tqsd/code-of-practice-on-assessment/appendix_L_cop_assess.pdf}{Academic Integrity Policy} detailed in Appendix L of the Code of Practice on Assessment, and that you have successfully passed the Academic Integrity Tutorial and Quiz in the course of your studies.
+You also affirm that the work you are submitting is your own and you have not commissioned production of the work from a third party or used artificial intelligence (AI) software in an unacceptable manner to generate the work.
+(Generative AI software applications include, but are not limited to, ChatGPT, Bing Chat, DALL.E and Bard.)
+You also affirm that you have not copied material from another person or source, nor committed plagiarism, nor fabricated, falsified or embellished data when completing the attached piece of work.
+You also affirm that you have not colluded with any other student in the preparation or production of this work.
+Marks achieved on this assessment remain provisional until they are ratified by the Board of Examiners in June 2024.
+Please note that your submission will be analysed by Turnitin for plagiarism and an Artificial Intelligence detection tool.
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\newpage
+\section*{Question 1: Drift and diffusion}
+An oil spill near the Caribbean island of Tobago was recently \href{https://www.reuters.com/business/environment/tides-move-oil-spill-away-tobago-caribbean-cleanup-progresses-2024-02-14/}{in the news}.
+On 14 February 2024, changing currents caused several million litres of spilled oil to start moving towards Grenada's territorial waters, $144~\mathrm{km}$ away. % Up to 35,000 barrels ~ 5.6M litres, of which 2,000 barrels ~ 0.32M litres collected
+We can analyze the motion of the oil by treating each droplet as a random walker moving in one dimension --- towards or away from Grenadan waters.
+Satellite images and ocean models were used to estimate the rate at which the oil was moving.
+Suppose they indicated a drift velocity $\vdr = 6~\mathrm{km}/\mathrm{hour}$ towards Grenadan waters, with a diffusion constant $D = 8~\mathrm{km}/\sqrt{\mathrm{hour}}$. % The news stated 14 km/hour overall
+
+How many hours did Grenada have in which to take action before $1\%$ of the spilled oil was inside its waters?
+How much additional time did it take for the amount of oil inside Grenadan waters to double to $2\%$ of the total?
+
+\showmarks{20}
+
+Suppose the oil were moving towards the island of Grenada itself, rather than its territorial waters.
+It is significantly more complicated to analyze the situation of oil washing up on Grenada's shores, because each droplet's random walk would \textit{stop} once it reached the shore and left the water.
+This is known as a \textit{first-passage process}.
+Without attempting this more complicated calculation, decide whether it will take more time, less time or the same amount time for the spilled oil to wash up on shore, compared to entering territorial waters, with everything else the same.
+Explain your choice with clear reasoning.
+
+\showmarks{6}
+
+\vfill
+\textbf{Hint:} The error function
+\begin{equation*}
+  \mathrm{erf}(u) = \frac{1}{\sqrt{\pi}} \int_{-u}^u e^{-x^2} \d{x} \equiv P
+\end{equation*}
+may appear in your work, with $u > 0$.
+\href{https://scipy.org}{SciPy} is one tool you can use to invert the error function to find $u = \mathrm{erf}^{-1}(P)$ for a given $0 < P < 1$.
+Here are some examples: \\[-30 pt]
+\begin{verbatim}
+>>> import math
+>>> from scipy import special
+>>>
+>>> sigmas = [0.682689492, 0.954499736, 0.997300204, \
+...                        0.999936656, 0.999999427]
+>>> for P in sigmas:
+...   u = special.erfinv(P)
+...   n = round(u * math.sqrt(2.0))
+...   print("u = %.4f for P=%.7f (%d sigma)" % (u, P, n))
+
+u = 0.7071 for P=0.6826895 (1 sigma)
+u = 1.4142 for P=0.9544997 (2 sigma)
+u = 2.1213 for P=0.9973002 (3 sigma)
+u = 2.8284 for P=0.9999367 (4 sigma)
+u = 3.5356 for P=0.9999994 (5 sigma)
+\end{verbatim}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\newpage
+\section*{Question 2: Negative temperature}
+Consider a system of $N$ distinguishable particles in which the energy of each particle can assume only two distinct values, $\eps > 0$ and $2\eps$.
+Denote by $n_1$ the number of particles that have energy $\eps$, and by $n_2 = N - n_1$ the number of particles that have energy $2\eps$.
+Assume the system is in thermodynamic equilibrium with both $n_1 \gg 1$ and $n_2 \gg 1$.
+
+Suppose the system is isolated and governed by the micro-canonical ensemble with total conserved internal energy $E$.
+Approximating $\log(n!) \approx n\log n - n$, what is the entropy of the system in terms of $N$, $E$ and $\eps$?
+
+\showmarks{10}
+
+What is the temperature $T$ of the system in terms of $N$, $E$ and $\eps$?
+Can $T$ be negative?
+
+\showmarks{10}
+
+What happens when a system of negative temperature is brought into thermal contact with a system of positive temperature?
+
+\showmarks{8}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\vfill
+\section*{Question 3: Gas temperature}
+The number of micro-states for a gas of $N$ indistinguishable particles with total conserved internal energy $E > 0$ in thermodynamic equilibrium is
+\begin{equation*} % Schroeder Eq. 2.40
+  M = \frac{\mu^{3N} E^{3N / 2}}{N! \, \left(\frac{3}{2}N\right)!},
+\end{equation*}
+where $\mu$ is a constant factor that depends on the mass of the particles.
+
+What is the entropy of the gas?
+
+\showmarks{8}
+
+Derive a relation between the gas's temperature~$T$ and its energy~$E$.
+Can $T$ be negative?
+
+\showmarks{10}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\newpage
+\section*{Question 4: Heat capacity}
+Starting from the expectation value for the internal energy in the canonical ensemble,
+\begin{equation*}
+  \vev{E} = \frac{1}{Z} \sum_{i = 1}^M E_i \, e^{-\be E_i},
+\end{equation*}
+derive a relation between the heat capacity
+\begin{equation*}
+  c_v = \pderiv{}{T} \vev{E}
+\end{equation*}
+and the quantity $\vev{\left(E - \vev{E}\right)^2}$.
+
+\showmarks{12}
+
+If the heat capacity vanishes at a non-zero temperature, what can we conclude about the micro-state energies $E_i$?
+
+\showmarks{4}
+
+Derive a relation between $c_v$, $\pderiv{}{T} c_v$ and the quantity $\vev{\left(E - \vev{E}\right)^3}$.
+
+\showmarks{12}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\end{document}
+% ------------------------------------------------------------------
