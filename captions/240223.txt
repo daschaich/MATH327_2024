@@ -1,0 +1,2816 @@
+1
+00:00:01,090 --> 00:00:05,320
+That should be the recording underway. So we'll get it.
+
+2
+00:00:05,770 --> 00:00:09,610
+Get going. The clock on the wall is a few minutes fast,
+
+3
+00:00:10,090 --> 00:00:21,850
+but it is time for us to kick off today and I'll start by putting down the attendance code on the projected notes as well.
+
+4
+00:00:26,740 --> 00:00:32,050
+Bit of a smaller crowd today, I suspect, because some folks might need to recover from that computer project.
+
+5
+00:00:32,620 --> 00:00:36,189
+Good news is that if the computer project was not to your liking,
+
+6
+00:00:36,190 --> 00:00:43,149
+it's done now and the rest of the module in its assessment will be more traditional homeworks and exams.
+
+7
+00:00:43,150 --> 00:00:50,020
+And we go back next week to the kind of more traditional schedule of lecture on Tuesday
+
+8
+00:00:50,020 --> 00:00:54,340
+morning for one hour tutorial Thursday afternoon over in the engineering building.
+
+9
+00:00:54,700 --> 00:00:58,930
+And then this Friday, two hour block is what stays constant.
+
+10
+00:01:02,780 --> 00:01:07,940
+That will also help us get through in a more material light, a bit more of a pace.
+
+11
+00:01:08,480 --> 00:01:12,410
+Think in the mini questionnaire that ran through last weekend.
+
+12
+00:01:13,070 --> 00:01:16,880
+Nobody had major objections to the pace either being too fast or slow.
+
+13
+00:01:18,560 --> 00:01:29,060
+Some didn't know difficulty that I suspect was related to that computer project and I should apologise when I since this week's
+
+14
+00:01:29,060 --> 00:01:37,730
+announcement canvas was misbehaving and not actually showing me any free four written comments that came in with that mini questionnaire,
+
+15
+00:01:38,420 --> 00:01:44,600
+making it look like nobody had said anything for any of those stop, start continue prompts.
+
+16
+00:01:45,080 --> 00:01:51,380
+It turned out people had I just had to dig through the guts of canvas in order to find that there were
+
+17
+00:01:51,710 --> 00:01:59,950
+a couple of people asking for the gaps in the lecture notes to be filled and uploaded to canvas.
+
+18
+00:01:59,960 --> 00:02:06,800
+So if you have been looking at the lecture notes, you'll recall that there are, well,
+
+19
+00:02:06,860 --> 00:02:11,810
+things like these gaps places for you to fill in and check your understanding.
+
+20
+00:02:12,290 --> 00:02:25,340
+We cover most, not necessarily all of those in the lecture and in the project, two notes that are scanned PDFs of what goes up on the document camera.
+
+21
+00:02:25,880 --> 00:02:32,000
+Whenever a gap is filled, it gets blocked off in green like so with the page number noted.
+
+22
+00:02:32,330 --> 00:02:46,700
+So. That is something that is there for you already in terms of moving on from the computer project onto the next bit of assessment.
+
+23
+00:02:46,700 --> 00:02:52,250
+That's a first homework assignment due in about ten days from now, the 5th of March.
+
+24
+00:02:53,210 --> 00:02:57,050
+You will get it within the next few days, so you'll have at least a week to work on that.
+
+25
+00:02:57,560 --> 00:03:01,910
+And in the meantime, I'll be marking those computer projects.
+
+26
+00:03:03,230 --> 00:03:09,410
+I learned something this week that apparently I'm not supposed to return feedback until at least
+
+27
+00:03:09,410 --> 00:03:14,870
+two weeks have passed from the deadlines in case people later on have extenuating circumstances,
+
+28
+00:03:15,260 --> 00:03:22,820
+requests or removal of late penalties. So I think I initially promised feedback before then.
+
+29
+00:03:22,910 --> 00:03:29,510
+It'll be delayed, hopefully not by too much. So lots of logistics there.
+
+30
+00:03:29,960 --> 00:03:34,010
+Any questions about that before we turn to physics?
+
+31
+00:03:38,720 --> 00:03:42,230
+And it's been a week since we last had a lecture.
+
+32
+00:03:42,230 --> 00:03:55,190
+So let's recap that. Last Friday we introduced the Micro Canonical Ensemble as the first statistical ensemble that we
+
+33
+00:03:55,190 --> 00:04:04,730
+look at a realisation of probability spaces specialised to collections of degrees of freedom whose.
+
+34
+00:04:06,880 --> 00:04:13,480
+Micro states are sampled just by letting the system sit and seeing how it evolves over time,
+
+35
+00:04:13,960 --> 00:04:22,060
+moving from one state to the next subject to certain physical constraints and in the case of the micro canonical ensemble.
+
+36
+00:04:23,880 --> 00:04:29,850
+The constraints are that the energy, specifically the internal energy of the particles,
+
+37
+00:04:30,240 --> 00:04:36,960
+has to be conserved as time passes, as does the total number of degrees of freedom or particles.
+
+38
+00:04:37,530 --> 00:04:45,389
+So a useful cartoon to give you a kind of mental shortcut for this for a micro
+
+39
+00:04:45,390 --> 00:04:51,120
+canonical ensemble is that we have some collection of degrees of freedom.
+
+40
+00:04:52,320 --> 00:04:56,910
+And in order to keep the number of particles at the energy constant,
+
+41
+00:04:57,390 --> 00:05:03,300
+we require that these particles are effectively completely isolated from the rest of the universe.
+
+42
+00:05:03,600 --> 00:05:10,110
+Here they're sitting in a beaker and there's a note. There's some insulation around there that puts in a hard barrier,
+
+43
+00:05:10,620 --> 00:05:19,710
+making it impossible for particles to go in or out, as well as for any energy to go in or out, which.
+
+44
+00:05:21,740 --> 00:05:29,240
+Is this something to consider pointed out makes it difficult to actually observe a micro canonical ensemble
+
+45
+00:05:29,240 --> 00:05:39,020
+since any observation we can conceivably do implement involves in some way exchanging energy with a system.
+
+46
+00:05:39,020 --> 00:05:44,239
+So today we will think about how we can get a more useful description of
+
+47
+00:05:44,240 --> 00:05:48,860
+statistical systems that while still obeying that first law of thermodynamics,
+
+48
+00:05:49,520 --> 00:06:00,980
+energy conservation allows us to actually look at a system, measure it, observe it, and do physics with it.
+
+49
+00:06:02,840 --> 00:06:14,400
+Before we get to that, though, that's still to come. And starting from the micro Canonical ensemble,
+
+50
+00:06:14,850 --> 00:06:22,679
+we introduced some derived quantities that in stable thermodynamic equilibrium are going to be
+
+51
+00:06:22,680 --> 00:06:29,400
+smooth and stable over time and depend on these conserved quantities that characterise the ensemble.
+
+52
+00:06:30,000 --> 00:06:36,990
+So the first one we looked at is the famous entropy and the related second law of thermodynamics.
+
+53
+00:06:37,930 --> 00:06:43,530
+And there is a general definition of entropy that holds for any statistical ensemble,
+
+54
+00:06:43,530 --> 00:06:50,590
+not just the micro canonical case that is the negative sum over all of those microstates
+
+55
+00:06:51,300 --> 00:06:57,090
+all of the possible states that the particles in the system can be arranged.
+
+56
+00:06:58,540 --> 00:07:02,560
+Of that probability multiplied by its log and all summed up.
+
+57
+00:07:03,940 --> 00:07:12,010
+And the second law says that in general, as time passes, the entropy can never decrease.
+
+58
+00:07:12,250 --> 00:07:18,970
+And generically, except in very special situations, it always increases rather than staying the same.
+
+59
+00:07:20,800 --> 00:07:27,070
+The second law then has a consequence that if we maximise the entropy.
+
+60
+00:07:29,140 --> 00:07:37,480
+We know that we have reached the smooth and stable state over time that corresponds to.
+
+61
+00:07:38,510 --> 00:07:42,260
+Thermodynamic equilibrium where everything is.
+
+62
+00:07:44,440 --> 00:07:56,680
+Simplified by depending only on the conserved quantities and being able to be expressed as functions of just those few conserved quantities.
+
+63
+00:07:57,130 --> 00:08:02,530
+And as a reminder, this thermodynamic equilibrium, while it is stable, it is not static.
+
+64
+00:08:02,800 --> 00:08:08,050
+It's still a dynamic system that is constantly probabilistically sampling the
+
+65
+00:08:08,050 --> 00:08:12,490
+different micro states that are available to it with these probabilities.
+
+66
+00:08:12,790 --> 00:08:25,390
+And in the micro canonical case, the probability for any accessible micro states with the conserved energy and particle number all have to be equal.
+
+67
+00:08:30,640 --> 00:08:33,370
+In that particular case of the micro canonical ensemble.
+
+68
+00:08:34,450 --> 00:08:43,540
+And those probabilities for the different micro states essentially specify the complete information about the system.
+
+69
+00:08:47,250 --> 00:08:51,990
+So shout out if there are questions related to what we've covered before.
+
+70
+00:08:52,920 --> 00:08:58,880
+While. While you consider that, we'll look ahead to the plan for today.
+
+71
+00:09:00,280 --> 00:09:04,570
+Is to introduce the temperature in the context of the micro canonical ensemble.
+
+72
+00:09:05,140 --> 00:09:11,890
+That's a familiar quantity from everyday life, but not one that is conserved in the micro canonical up.
+
+73
+00:09:12,820 --> 00:09:18,219
+So we have to define it as another derived quantity similar to the entropy that depends
+
+74
+00:09:18,220 --> 00:09:26,620
+on the conserved quantities inside and then see whether this formal mathematical
+
+75
+00:09:26,620 --> 00:09:34,540
+definition corresponds to our intuition or experience from everyday life in the
+
+76
+00:09:34,540 --> 00:09:41,530
+way we would normally talk about temperature in English as opposed to mathematics.
+
+77
+00:09:41,950 --> 00:09:44,349
+We'll look at a couple of examples for that.
+
+78
+00:09:44,350 --> 00:09:53,830
+First, looking at a spin system that will give us some new and maybe unexpected behaviour for the temperature,
+
+79
+00:09:54,340 --> 00:10:00,070
+and then consider heat exchange and flows of energy more generally,
+
+80
+00:10:01,000 --> 00:10:10,960
+which will behave a bit more as we expect, and connect the mathematics of statistical physics to our.
+
+81
+00:10:12,370 --> 00:10:13,120
+Intuition.
+
+82
+00:10:14,430 --> 00:10:24,960
+And after that, the next big topic is fairly quickly moving on from the micro canonical ensemble to the case that's called the canonical Ensemble.
+
+83
+00:10:26,580 --> 00:10:30,330
+We will see how this is defined later on, but.
+
+84
+00:10:32,000 --> 00:10:39,620
+Some of the key concepts to be introduced to Oops, I wrote that wrong are the partition function.
+
+85
+00:10:41,890 --> 00:10:48,610
+Essentially the collection of all information governing a system described by the canonical ensemble.
+
+86
+00:10:48,610 --> 00:10:55,929
+So something to look forward to. And then we'll look at some derived quantities in the canonical case to be
+
+87
+00:10:55,930 --> 00:11:00,670
+able to contrast that with the micro canonical case aiming in particular at.
+
+88
+00:11:02,430 --> 00:11:06,450
+A quantity known as the heat capacity. Something that.
+
+89
+00:11:09,070 --> 00:11:14,950
+We will revisit in a few different contexts later on, both now and later on in this module.
+
+90
+00:11:14,950 --> 00:11:23,950
+If we don't get to higher capacity today than we certainly will on Tuesday morning and in the homework after that.
+
+91
+00:11:27,410 --> 00:11:33,240
+So unless. There are objections.
+
+92
+00:11:33,250 --> 00:11:37,690
+Let's move on and put this plan into practice.
+
+93
+00:11:39,870 --> 00:11:43,710
+So starting with that temperature, the guy already.
+
+94
+00:11:46,620 --> 00:11:56,970
+Said out loud that this is. Another derived quantity in the microeconomic setting.
+
+95
+00:11:58,910 --> 00:12:02,260
+So. Like the entropy.
+
+96
+00:12:03,280 --> 00:12:09,910
+It is a function of the conserved quantities, energy and particle number, at least when we.
+
+97
+00:12:12,820 --> 00:12:19,750
+Declare that we are considering systems in some of the damage equilibrium, which is what we will do in this module.
+
+98
+00:12:21,490 --> 00:12:30,680
+And. Rather than trying to motivate this definition,
+
+99
+00:12:30,680 --> 00:12:40,190
+let's just write it down and then look at it in a few examples in a few contexts to see how it behaves.
+
+100
+00:12:40,340 --> 00:12:46,370
+So we'll actually define things in terms of the inverse temperature of one over T and say that this is.
+
+101
+00:12:48,190 --> 00:12:57,190
+Equal to the derivative of the entropy with respect to that conserved energy given a fixed number of particles.
+
+102
+00:12:58,060 --> 00:13:07,630
+And if we recall of the micro canonical ensemble in thermodynamic equilibrium, the entropy is just the logarithm of the number of micro states in.
+
+103
+00:13:09,160 --> 00:13:15,650
+We directly. Connect that temperature.
+
+104
+00:13:16,870 --> 00:13:20,769
+To simply counting the number of micro states,
+
+105
+00:13:20,770 --> 00:13:27,880
+all of which are appearing with equal probability in thermodynamic equilibrium for the microeconomic ensemble.
+
+106
+00:13:29,830 --> 00:13:38,410
+So a way to interpret the meaning of this equation is that if we add energy to a system.
+
+107
+00:13:41,240 --> 00:13:46,460
+So we know that the micro economical system has conserved energy,
+
+108
+00:13:47,120 --> 00:13:52,519
+but here we are considering what happens if we were to change from one micro canonical system with a certain
+
+109
+00:13:52,520 --> 00:13:57,830
+energy to another micro canonical system with the same number of particles and just a bit more energy.
+
+110
+00:13:58,250 --> 00:14:07,490
+What is the response of the entropy to that? If the entropy increases by a large amount.
+
+111
+00:14:11,650 --> 00:14:18,940
+And that corresponds to a large partial derivative and a large one over T.
+
+112
+00:14:21,920 --> 00:14:25,820
+Which in turn means a small temperature.
+
+113
+00:14:27,610 --> 00:14:35,110
+And vice versa. So the temperature here is being defined in terms of how sensitive the entropy
+
+114
+00:14:35,110 --> 00:14:41,350
+is to the amount of energy that we have in our isolated micro canonical system.
+
+115
+00:14:43,590 --> 00:14:49,350
+And similarly, if there is only a small increase in energy from adding a bit of sorry,
+
+116
+00:14:49,350 --> 00:14:54,090
+only a small increase in entropy from adding a bit of energy, we end up with a large temperature.
+
+117
+00:14:54,970 --> 00:15:04,010
+One over t is very small. And there are some ways this behaves as we would expect.
+
+118
+00:15:04,280 --> 00:15:11,450
+Some ways it may not. So let's look at an extended example of the letter.
+
+119
+00:15:13,370 --> 00:15:21,620
+What used to be a tutorial exercise, but we don't have a tutorial this week, so we'll go over it just directly in the lecture.
+
+120
+00:15:22,100 --> 00:15:34,940
+And this is using the spin system that we've introduced already to see how the temperature behaves for the microeconomic spin system.
+
+121
+00:15:35,420 --> 00:15:43,690
+As a reminder, the energy for a spin system is related to the external magnetic field with positive strength.
+
+122
+00:15:43,700 --> 00:15:46,810
+H. And then.
+
+123
+00:15:48,270 --> 00:15:53,520
+There is a contribution of negative H from the end plus spins that align with
+
+124
+00:15:53,520 --> 00:15:59,460
+that external field and a contribution of plus H from the end minus spins
+
+125
+00:15:59,910 --> 00:16:07,710
+that are anti align which we can reorganise to depend just on the total number of spins and as well as twice the number of upward pointing spins.
+
+126
+00:16:09,090 --> 00:16:20,350
+So if we have. Some different value of the energy in this open system conserved in the micro canonical case.
+
+127
+00:16:22,350 --> 00:16:33,480
+That basically boils down to having different numbers of upward pointing spins out of the total number and capital in that is fixed,
+
+128
+00:16:34,350 --> 00:16:40,709
+which then affects the number of micro states that we have with that particular number of upward pointing spins from
+
+129
+00:16:40,710 --> 00:16:50,250
+the log of the micro states that affects the entropy and from that we get the temperature and its dependence on E,
+
+130
+00:16:50,610 --> 00:17:00,180
+So we have a string of quantities to compute in order to see how the temperature of the spin system behaves.
+
+131
+00:17:03,120 --> 00:17:05,999
+As an illustration to maybe make this more concrete.
+
+132
+00:17:06,000 --> 00:17:16,650
+What I mean by having different and plus number of micro stages, entropy and temperature, we can start by thinking about a few special cases.
+
+133
+00:17:18,420 --> 00:17:28,020
+And hopefully you will agree that the lowest energy for this system corresponds to every
+
+134
+00:17:28,020 --> 00:17:35,040
+single spin being aligned with that external magnetic field and each of them contributing.
+
+135
+00:17:40,710 --> 00:17:42,780
+One unit of minus H and energy.
+
+136
+00:17:43,260 --> 00:17:54,540
+So in this particular micro state, with all of the spins aligned, that end plus just equals n, they are all aligned and minus equals zero.
+
+137
+00:17:56,050 --> 00:18:04,450
+The energy that I'll call E0 is just a minus H times all and upward pointing spins.
+
+138
+00:18:05,260 --> 00:18:12,220
+And the number of microstates that we have with this energy is just the the one that I drew here.
+
+139
+00:18:12,790 --> 00:18:20,140
+There is a single. Micro states are completely determined by having every single spin pointing up.
+
+140
+00:18:24,210 --> 00:18:31,590
+So that is the simplest possible case and the next simplest to consider is the next lowest energy.
+
+141
+00:18:31,620 --> 00:18:35,370
+Sometimes called the first excited energy level.
+
+142
+00:18:37,690 --> 00:18:40,959
+That's terminology that we don't need to worry about for the time being.
+
+143
+00:18:40,960 --> 00:18:46,930
+But I mentioned it as a forecast of things coming up around the time of the spring break.
+
+144
+00:18:52,230 --> 00:18:56,040
+And hopefully here as well you will be.
+
+145
+00:18:59,610 --> 00:19:09,530
+Content for me to say that the next lowest energy comes from having the next largest number of spins aligned with the field.
+
+146
+00:19:10,110 --> 00:19:13,860
+Every spin except for one has to be aligned with it.
+
+147
+00:19:15,920 --> 00:19:20,059
+So might have one toward the end that is anti aligned.
+
+148
+00:19:20,060 --> 00:19:28,850
+But of course that one single spin pointing down against the field could be any one of the end.
+
+149
+00:19:30,720 --> 00:19:38,730
+So long as it is only one. What that means is that and pluses now and minus one you have one anti aligned spin.
+
+150
+00:19:40,800 --> 00:19:48,750
+The energy when we have one spin anti aligned to the magnetic field picks up a
+
+151
+00:19:48,750 --> 00:19:55,890
+minus H from the n minus one upward pointing spins plus that single h which is.
+
+152
+00:19:58,220 --> 00:20:03,710
+Now a minus and minus two times that magnetic field strength.
+
+153
+00:20:06,450 --> 00:20:12,640
+So I need to get that onto the screen there.
+
+154
+00:20:14,850 --> 00:20:19,590
+That's just keeping track of negative signs. And the more interesting next step is.
+
+155
+00:20:21,470 --> 00:20:30,410
+To follow the number of micro states with this next lowest energy.
+
+156
+00:20:31,640 --> 00:20:39,350
+So as I said, we have a choice of any one of these and spins could be the one aligned against the magnetic field.
+
+157
+00:20:40,070 --> 00:20:45,560
+So that gives us an options for in different micro states and different configurations of spins,
+
+158
+00:20:45,980 --> 00:20:52,010
+all of which have the same next to lowest energy and have to be counted when considering the
+
+159
+00:20:52,280 --> 00:20:58,280
+entropy and temperature of the system with the energy fixed and the micro canonical approach.
+
+160
+00:21:00,470 --> 00:21:10,160
+And we want to generalise this to any energy corresponding to any number of upward and downward pointing spins out of our whole system.
+
+161
+00:21:13,030 --> 00:21:20,800
+The trick to do so is to recognise that this end, as well as this zero, corresponds to binomial coefficients.
+
+162
+00:21:22,020 --> 00:21:25,830
+And she one and up here and she zero.
+
+163
+00:21:28,340 --> 00:21:44,240
+And in general. We can basically write down the number of microstates for a given number of anti aligned spins.
+
+164
+00:21:45,410 --> 00:21:51,440
+Just being the total number of spins from which we choose and minus to be anti aligned.
+
+165
+00:21:53,120 --> 00:22:03,440
+And if we recall the general definition of the binomial coefficient, the full set factorial in the numerator multiplied by.
+
+166
+00:22:05,960 --> 00:22:14,750
+The smaller set that we choose in the denominator and then the difference between them and minus sorry, n minus and sub minus,
+
+167
+00:22:15,560 --> 00:22:24,920
+which is known to its friends as and plus all of the other spins that we don't use to be aligned against the magnetic field are aligned with it.
+
+168
+00:22:26,510 --> 00:22:35,690
+There is actually a symmetry here between an plus and minus, and we could use those two binomial coefficients interchangeably.
+
+169
+00:22:37,340 --> 00:22:45,799
+We get the same fraction in both cases just because n minus plus n plus add up to the total number of spins.
+
+170
+00:22:45,800 --> 00:22:52,080
+N. So hopefully, so far so good.
+
+171
+00:22:53,010 --> 00:23:08,010
+And the next step on our path to the temperature is getting the entropy from the counting these micro states for any given conserved energy.
+
+172
+00:23:10,130 --> 00:23:17,000
+And just looking ahead in order to get the temperature, you will actually not only need that entropy.
+
+173
+00:23:18,260 --> 00:23:30,219
+But it's derivative with respect to energy. And in order to take a derivative with respect to energy,
+
+174
+00:23:30,220 --> 00:23:37,990
+we need to get the functional form of this number of micro states into the conserved quantities he had m.
+
+175
+00:23:40,280 --> 00:23:43,970
+That we expect should characterise it in somewhat an epic equilibrium.
+
+176
+00:23:44,450 --> 00:23:47,870
+So we need. And plus and minus.
+
+177
+00:23:53,340 --> 00:24:03,250
+In terms of our large scale. Macroscopic conserved quantities that characterise this micro canonical system.
+
+178
+00:24:04,060 --> 00:24:11,350
+And even more than just getting an plus and minus written in terms of those quantities, we need to make sure that the.
+
+179
+00:24:12,370 --> 00:24:18,160
+Function that we have is differentiable so that we can take this derivative to get the temperature.
+
+180
+00:24:30,690 --> 00:24:40,950
+And I'll say in advance that the differentiable function we will go after here is going to be an approximation to the.
+
+181
+00:24:42,990 --> 00:24:46,170
+Derivative of the logarithm of these binomial coefficients.
+
+182
+00:24:52,970 --> 00:25:05,540
+We want to. Get some way of approximating factorial functions by differentiable functions.
+
+183
+00:25:05,960 --> 00:25:15,560
+Continuous and differentiable functions. One way to do that is known as Sterling's approximation, which we will look at in next week's tutorial.
+
+184
+00:25:16,580 --> 00:25:25,580
+I'll do something different here just to give you some maximum variety and note that the spin system that we are considering.
+
+185
+00:25:29,080 --> 00:25:34,860
+Is actually a random walk. In the space of its energies.
+
+186
+00:25:38,910 --> 00:25:44,600
+And to clarify. What I mean by that and what I mean by energy space.
+
+187
+00:25:44,600 --> 00:25:52,670
+We can see that if we look from one spin to the next in this line, what it amounts to is.
+
+188
+00:25:53,870 --> 00:26:01,730
+A single step in the energy. The length of that step.
+
+189
+00:26:03,830 --> 00:26:10,550
+The amount that the energy varies is either plus or minus H, depending on whether the spin is up or down,
+
+190
+00:26:11,450 --> 00:26:16,010
+equivalent to a step to a positive or negative direction of.
+
+191
+00:26:18,200 --> 00:26:27,950
+Energy. And we can rewrite this as a step of plus or minus one in a variable x, which is.
+
+192
+00:26:29,560 --> 00:26:36,200
+For simplicity. E divided by the total energy, divided by units of minus H.
+
+193
+00:26:36,890 --> 00:26:43,910
+So basically choosing a appropriate system of units and normalisation.
+
+194
+00:26:45,710 --> 00:26:46,160
+Which.
+
+195
+00:26:48,350 --> 00:26:58,520
+We remember how e and H are related to the number of spins E over minus H just gives us twice the number of upward pointing spins minus the total.
+
+196
+00:26:59,360 --> 00:27:06,660
+Will that fit on here? It is higher up in the page anyway.
+
+197
+00:27:07,890 --> 00:27:17,490
+So we are walking in the number of upward pointing spins, just as in the same way as in our simple example.
+
+198
+00:27:17,490 --> 00:27:22,260
+In earlier lectures we walked in left or right for two oriented steps.
+
+199
+00:27:22,800 --> 00:27:30,600
+So this is in fact the simplest case of a one dimensional random walk.
+
+200
+00:27:38,710 --> 00:27:46,510
+And in particular because there is an equal probability a priori for either spin to point either up or down.
+
+201
+00:27:46,960 --> 00:27:59,140
+Each of those two options. The P's and Q's for probabilities of steps of plus or minus one that we had are both equally weighted.
+
+202
+00:27:59,320 --> 00:28:03,370
+50% chance that has been pointing up or it's been pointing down.
+
+203
+00:28:06,640 --> 00:28:16,990
+So that is not only the simple example we considered, but the simplest realisation of that example.
+
+204
+00:28:16,990 --> 00:28:25,690
+Rather than having arbitrary PS and Qs for this fixed unit length step, we have equal probabilities so that all.
+
+205
+00:28:27,000 --> 00:28:30,120
+To to the power in of these walks.
+
+206
+00:28:31,840 --> 00:28:36,130
+Where each walk corresponds to a configuration.
+
+207
+00:28:38,120 --> 00:28:51,969
+Of the and spins. Are equally likely, the probability for each particular one is just one over two to the in the choice of words or downwards,
+
+208
+00:28:51,970 --> 00:29:00,460
+pointing spin at each step and the total number of microstates for a given energy.
+
+209
+00:29:03,920 --> 00:29:09,170
+That we can write when looking at the system in this way is.
+
+210
+00:29:10,640 --> 00:29:18,590
+The total number of walks times the probability of having and plus spins corresponding
+
+211
+00:29:18,590 --> 00:29:25,400
+to the energy of interest in this subscript here should actually be in minus.
+
+212
+00:29:26,890 --> 00:29:32,410
+Which can be interchanged with and plus thinks that symmetry in the binomial coefficient we saw earlier,
+
+213
+00:29:34,270 --> 00:29:38,920
+this is essentially just rewriting what we had earlier the probability of having.
+
+214
+00:29:39,970 --> 00:29:48,190
+Spit a walk with and spit is pointing up is the total number of such walks that we have.
+
+215
+00:29:48,190 --> 00:29:52,090
+The order doesn't matter. So it's the binomial coefficient and choose and plus.
+
+216
+00:29:52,720 --> 00:29:55,990
+And then we normalise by the total number of spins.
+
+217
+00:29:55,990 --> 00:30:01,750
+That's essentially restating what we found earlier when generalising to simple cases
+
+218
+00:30:02,350 --> 00:30:13,420
+to now be written in the language of random walks that we have some experience with.
+
+219
+00:30:20,310 --> 00:30:30,510
+So what we want to do is to proceed to our ultimate goal of a differentiable function for this number of microstates is.
+
+220
+00:30:31,580 --> 00:30:35,180
+To determine a differentiable function for this probability.
+
+221
+00:30:38,540 --> 00:30:42,230
+Which we have seen you can do from the central limit theorem.
+
+222
+00:30:43,310 --> 00:30:49,620
+So we will get an approximate probability. From the central limit theorem.
+
+223
+00:30:49,860 --> 00:30:56,790
+Assuming that an is much larger than one we recall,
+
+224
+00:30:56,790 --> 00:31:12,330
+we have a probability distribution for this variable x that we just defined to be the energy in units of minus H related to the number of steps,
+
+225
+00:31:13,260 --> 00:31:21,300
+the number of upward pointing spins. And for large and this is approximately equal to.
+
+226
+00:31:23,190 --> 00:31:27,260
+Usual to pi and various factor and then a Gaussian exponential.
+
+227
+00:31:28,280 --> 00:31:32,450
+With a minus. X minus.
+
+228
+00:31:32,450 --> 00:31:39,000
+And you? Squared. And the variance showing up in the denominator again.
+
+229
+00:31:40,710 --> 00:31:51,090
+And we recall this is useful because the mean value and the variance sigma squared are defined for the single step process.
+
+230
+00:31:52,590 --> 00:31:56,160
+So that's all we have to consider to bring the central limit theorem to bear.
+
+231
+00:31:57,120 --> 00:32:08,430
+The mean we derived in detail in a previous lecture, it was $0.02 minus one for a single step.
+
+232
+00:32:09,470 --> 00:32:14,030
+And plugging in equals a half. We get zero trivially.
+
+233
+00:32:14,840 --> 00:32:19,520
+This should make sense and equal probability of a spin pointing up or spin pointing down.
+
+234
+00:32:19,880 --> 00:32:31,370
+Add them together a average to zero. And in the mean is just that expectation value summing over all possible outcomes of this single step.
+
+235
+00:32:32,720 --> 00:32:43,010
+Similarly we derived that the variance was for P, Q, P and Q are both a half that cancel out the for to give one.
+
+236
+00:32:44,360 --> 00:32:48,320
+So we can plug that into the central limit theorem.
+
+237
+00:32:51,430 --> 00:32:59,170
+Sigma squared is one music mu is zero, so only the x squared remains.
+
+238
+00:33:00,820 --> 00:33:08,980
+And that is a differentiable function in terms of x and N for the probability distribution
+
+239
+00:33:09,940 --> 00:33:15,520
+corresponding to this particular set of spin configurations where they give an energy.
+
+240
+00:33:17,660 --> 00:33:24,980
+Of course, a lowercase p for the distribution is not the same as this upper case probability.
+
+241
+00:33:25,670 --> 00:33:29,090
+And in that very first week's tutorial,
+
+242
+00:33:29,510 --> 00:33:38,540
+we explored various approximations that we could make to integrate the distribution and get a probability out of it.
+
+243
+00:33:39,980 --> 00:33:46,220
+That is a key step. We have a distribution.
+
+244
+00:33:47,540 --> 00:33:53,540
+We have to integrate it over some range in order to find the probability corresponding to that range.
+
+245
+00:33:54,380 --> 00:34:00,440
+And the simplest thing we can do is. Use the constant approximation.
+
+246
+00:34:02,380 --> 00:34:11,790
+We checked. In the tutorial for large and gives a good description of the exact results.
+
+247
+00:34:13,980 --> 00:34:18,240
+So remember that this is the statement that.
+
+248
+00:34:19,410 --> 00:34:32,090
+P and plus, we assume that the probability distribution is constant around the centre of a small interval centred at the x corresponding to and plus.
+
+249
+00:34:32,100 --> 00:34:43,320
+So x was two and plus minus N, and then because that is constant and we integrate, we just get that constant times the size of the interval,
+
+250
+00:34:44,040 --> 00:34:53,850
+the delta and plus, which is just counting the number of spins that we have as we add a single spin.
+
+251
+00:34:54,450 --> 00:35:01,380
+So every time we add one spin we get a delta n of one and that multiplication drops out.
+
+252
+00:35:02,720 --> 00:35:06,380
+So the integral. Just becomes.
+
+253
+00:35:09,810 --> 00:35:14,100
+The expression, the caution factor from the central limit theorem.
+
+254
+00:35:14,190 --> 00:35:25,139
+Now, with our ex plugged in equal to the energy divided by H and I'll drop some of the subscripts s of and minus four.
+
+255
+00:35:25,140 --> 00:35:35,590
+Now where I. We can keep in mind that that is the particular energy that we are interested in.
+
+256
+00:35:35,890 --> 00:35:42,970
+It gets squared from x we have to and and H squared also coming from x.
+
+257
+00:35:43,720 --> 00:35:54,640
+So this is our answer. That the number of microstates for a given energy for this system is this
+
+258
+00:35:54,640 --> 00:35:59,590
+probability multiplied by the total number of spin configurations that we have.
+
+259
+00:36:00,990 --> 00:36:04,510
+And it is an approximation. Accurate in the margin limit.
+
+260
+00:36:05,080 --> 00:36:10,340
+It just brings a factor of two to the end. Multiplying.
+
+261
+00:36:11,530 --> 00:36:15,490
+Everything else that comes along for the ride.
+
+262
+00:36:17,380 --> 00:36:27,820
+And we can just determine the inverse temperature from the derivative of the logarithm of this number of microstates directly.
+
+263
+00:36:28,150 --> 00:36:33,700
+We keep n fixed. So that's a constant and.
+
+264
+00:36:37,310 --> 00:36:42,320
+What happens when we apply the law to these to this number of micro states?
+
+265
+00:36:42,320 --> 00:36:48,080
+The log of the product of these two factors breaks up into the sum of the logs.
+
+266
+00:36:48,890 --> 00:36:54,350
+The log of the exponential is just its arguments. E squared over two an H squared,
+
+267
+00:36:54,920 --> 00:37:04,190
+and then the log of everything else is independent of the energy and we'll just cancel out when we take the derivative of it.
+
+268
+00:37:04,190 --> 00:37:06,140
+So we don't need to worry about it.
+
+269
+00:37:06,590 --> 00:37:15,680
+And I'm sure you've already done in your head the derivative of e squared with respect to E is just to E to choose cancel,
+
+270
+00:37:16,130 --> 00:37:20,510
+and we have an H squared in the denominator.
+
+271
+00:37:20,510 --> 00:37:29,840
+So inverting the temperature. For the spin system is.
+
+272
+00:37:31,720 --> 00:37:38,560
+Approximately again in the large and limited. Negative and H squared divided by E.
+
+273
+00:37:40,240 --> 00:37:44,020
+And I should specify, this has been much greater than what it also has.
+
+274
+00:37:45,210 --> 00:37:56,790
+Nonzero magnetic field, which I should have pointed out when we defined this X, we defined that as the energy in units of the magnetic field.
+
+275
+00:37:56,790 --> 00:38:00,540
+So implicitly assuming that we're not dividing by zero here.
+
+276
+00:38:02,630 --> 00:38:07,730
+So H is strictly positive in this calculation using the central limit theorem.
+
+277
+00:38:12,250 --> 00:38:15,280
+So that is the result. What does it mean?
+
+278
+00:38:18,090 --> 00:38:24,960
+You might already be seeing a few unexpected aspects of this temperature.
+
+279
+00:38:27,240 --> 00:38:31,470
+So some features that are unusual compared to.
+
+280
+00:38:33,370 --> 00:38:39,670
+Our daily experience with gases and things other than these spinning systems.
+
+281
+00:38:41,050 --> 00:38:45,610
+For one thing, if this energy approach is zero,
+
+282
+00:38:45,610 --> 00:38:54,760
+which corresponds to equal numbers of upward and downward pointing spins with a non-zero magnetic field, the temperature goes to infinity.
+
+283
+00:38:57,410 --> 00:39:01,520
+It is divergence. That limits.
+
+284
+00:39:03,090 --> 00:39:11,340
+That's and plus approximately equal to and minus and even more generally if the energy is
+
+285
+00:39:11,340 --> 00:39:19,680
+positive so that there are more spins anti aligned against the magnetic field compared it to.
+
+286
+00:39:21,120 --> 00:39:26,700
+Those aligned with it, then the overall negative sign.
+
+287
+00:39:28,310 --> 00:39:33,320
+That gives us a negative temperature, something we are not used to in everyday life.
+
+288
+00:39:36,020 --> 00:39:39,050
+So that happens whenever there are more.
+
+289
+00:39:43,220 --> 00:39:50,180
+Downward pointing spins and minus anti align with magnetic field compared to the number of aligned fields.
+
+290
+00:39:51,440 --> 00:39:54,889
+And this is something that should be causing you concern.
+
+291
+00:39:54,890 --> 00:40:02,870
+You probably are familiar with the statement that temperatures can never go below absolute zero.
+
+292
+00:40:02,870 --> 00:40:11,959
+They can never become negative. This is a feature of the micro canonical ensemble that does not match the
+
+293
+00:40:11,960 --> 00:40:16,130
+physical systems that we can actually observe by exchanging energy with them.
+
+294
+00:40:16,640 --> 00:40:26,000
+It has a very precise mathematical meaning from our definition of temperature, so a negative temperature in the micro canonical case just means that.
+
+295
+00:40:27,520 --> 00:40:34,510
+The number of microstates available decreases whenever energy is added to the system.
+
+296
+00:40:41,540 --> 00:40:50,270
+That filters through to a decrease in entropy and then a decrease in the derivative.
+
+297
+00:40:50,780 --> 00:41:01,100
+Well, sorry, a decrease in entropy gives you a negative derivative, which was a case that we could have considered already back from the definition,
+
+298
+00:41:01,640 --> 00:41:08,390
+we only talk about adding energy and assuming that the entropy increased either by a large amount or by a small amount.
+
+299
+00:41:09,110 --> 00:41:15,230
+We didn't consider what would happen if the entropy decreased when energy was added.
+
+300
+00:41:15,680 --> 00:41:15,770
+Well,
+
+301
+00:41:15,800 --> 00:41:25,550
+that's exactly what happens for the spin system and gives the negative value negative temperature from that definition in terms of the derivative,
+
+302
+00:41:27,170 --> 00:41:31,250
+that is something unnatural.
+
+303
+00:41:32,000 --> 00:41:36,980
+And in fact, there is a. Definition related to this.
+
+304
+00:41:40,010 --> 00:41:49,940
+So this will sound like an English language statement, but it arises as a formal mathematical definition.
+
+305
+00:41:50,840 --> 00:41:57,760
+We define a natural system. To have positive energy.
+
+306
+00:42:01,320 --> 00:42:10,350
+So the statement that whenever energy is added to a natural system, the number of microstates available for it to occupy necessarily increases.
+
+307
+00:42:11,010 --> 00:42:17,700
+And so in the case of the example, we just did so for the spin system.
+
+308
+00:42:21,780 --> 00:42:30,510
+That spin system is natural whenever the energy is less than zero, so it's negative sign cancels out the overall negative sign in our result,
+
+309
+00:42:31,110 --> 00:42:36,899
+which happens whenever there are more upward pointing spins aligned with the
+
+310
+00:42:36,900 --> 00:42:42,930
+field compared to the number of downward pointing spins anti aligned against it.
+
+311
+00:42:43,380 --> 00:42:50,370
+That is the natural regime for a spin system where if we start from.
+
+312
+00:42:52,850 --> 00:42:55,850
+This is, again, specific to the spend system, the minimum energy.
+
+313
+00:42:58,080 --> 00:43:01,510
+For the spin system. Go here or.
+
+314
+00:43:01,560 --> 00:43:09,760
+Sorry, the. The minimum natural temperature in the skin system.
+
+315
+00:43:09,760 --> 00:43:15,640
+Example. Is the case where the energy is most negative.
+
+316
+00:43:16,120 --> 00:43:21,550
+So that is that lowest energy micro states we looked at earlier.
+
+317
+00:43:24,400 --> 00:43:37,240
+So. We get the minimum and we have that E0, which I'll remind you is minus an H.
+
+318
+00:43:37,600 --> 00:43:43,060
+Every single and every single one of the end spins as a minus H to the energy.
+
+319
+00:43:43,720 --> 00:43:47,740
+And if we plug that in here, the negatives cancel the ends.
+
+320
+00:43:47,740 --> 00:43:51,730
+Cancel and one factor of the H cancels.
+
+321
+00:43:52,600 --> 00:43:56,920
+So Taemin is plus H for this lowest energy.
+
+322
+00:43:57,310 --> 00:44:00,340
+And then as we add energy.
+
+323
+00:44:05,110 --> 00:44:17,540
+It goes to a higher temperature. Eventually diverging when a number of.
+
+324
+00:44:20,400 --> 00:44:25,020
+Anti align spins, approaches half of the system starting from zero.
+
+325
+00:44:25,380 --> 00:44:32,580
+So increasing the number of spins aligned against the magnetic field moves the energy from negative values up to zero,
+
+326
+00:44:33,060 --> 00:44:38,130
+which is where the temperature diverges to a positive infinite amount.
+
+327
+00:44:42,720 --> 00:44:43,530
+And that is.
+
+328
+00:44:45,950 --> 00:44:57,419
+Through the culmination of a first example illustration of a micro canonical definition of temperature as another derived quantity similar to entropy,
+
+329
+00:44:57,420 --> 00:45:06,420
+depending only on the conserved quantities. And this may actually be a nice place to pause.
+
+330
+00:45:07,140 --> 00:45:13,140
+See if you have questions or objections to this calculation or any broader questions
+
+331
+00:45:13,140 --> 00:45:21,840
+about the meaning of this behaviour of temperature as defined in the canonical setting.
+
+332
+00:45:28,670 --> 00:45:33,200
+Because this example took a little longer than I thought it might.
+
+333
+00:45:33,560 --> 00:45:46,310
+This might be a good point to take a break and break up the two hour block of lectures and restarts by changing focus to a application
+
+334
+00:45:46,310 --> 00:45:55,850
+of temperature and the micro canonical ensemble that makes a bit more sense and then go into the canonical ensemble after that.
+
+335
+00:45:57,260 --> 00:46:05,270
+So we are. And a few minutes before 1150.
+
+336
+00:46:06,010 --> 00:46:17,180
+So maybe if we reconvene two or 3 minutes before noon, we will pick up with something, some application of temperature that is less counterintuitive.
+
+337
+00:46:17,930 --> 00:46:22,950
+Sound good? I see nods and.
+
+338
+00:46:27,940 --> 00:46:42,280
+That is the recording resumed. And the one last final bit of the micro canonical ensemble to take care of today is considering a more general.
+
+339
+00:46:44,560 --> 00:46:47,980
+Application or illustration of this definition of temperature.
+
+340
+00:46:49,110 --> 00:46:52,110
+To the case of heat exchange.
+
+341
+00:46:53,410 --> 00:47:03,490
+Where as a spoiler in advance, I can say that this will give us a shock that the.
+
+342
+00:47:05,820 --> 00:47:13,020
+Formal definition of temperature. Gives physically sensible behaviour.
+
+343
+00:47:14,880 --> 00:47:29,550
+In a line with our intuition. And without any need to define particularly unnatural or natural cases.
+
+344
+00:47:34,340 --> 00:47:40,940
+In seeing that exchange of heat between two systems with different temperatures behaves as you would expect.
+
+345
+00:47:40,940 --> 00:47:47,870
+So the setup as that introduction applies implies, is going to go through three steps.
+
+346
+00:47:47,870 --> 00:47:53,000
+So we initially start with two isolated micro canonical subsystems.
+
+347
+00:47:55,610 --> 00:48:01,340
+And both of these are going to be separately in thermodynamic equilibrium.
+
+348
+00:48:04,560 --> 00:48:13,050
+So as a shorthand illustration, draw one system in its box, isolated from the rest of the universe over on the left.
+
+349
+00:48:13,710 --> 00:48:20,550
+Call it system Omega a with some number of particles and a some energy A,
+
+350
+00:48:21,000 --> 00:48:27,750
+and we'll specify for simplicity that it has a natural temperature resulting from
+
+351
+00:48:28,650 --> 00:48:35,220
+those conserved quantities and e they give a temperature to that is greater than zero.
+
+352
+00:48:35,760 --> 00:48:45,300
+Similarly, for a second subsystem omega be isolated from the rest of the universe off to the right.
+
+353
+00:48:46,710 --> 00:48:49,680
+With a similar natural temperature.
+
+354
+00:48:50,640 --> 00:48:59,070
+So we take these two subsystems independently thermal lines with different temperatures to A.B and we put them into thermal contact.
+
+355
+00:49:04,320 --> 00:49:10,980
+Which is something we looked at last week to derive a form of the second law of thermodynamics.
+
+356
+00:49:12,660 --> 00:49:16,080
+So in cartoon form are two systems.
+
+357
+00:49:17,290 --> 00:49:22,270
+Now are remain isolated from the rest of the universe.
+
+358
+00:49:22,870 --> 00:49:27,970
+They are only in thermal contacts of the number of particles in each subsystem stays fixed.
+
+359
+00:49:28,420 --> 00:49:34,000
+But the total amount of energy can now slosh back and forth between this.
+
+360
+00:49:36,110 --> 00:49:42,200
+Barrier between them. So there's no longer complete isolation from each other, just from the rest of the universe,
+
+361
+00:49:42,770 --> 00:49:49,280
+and it's only the total energy AEA plus EB that is conserved.
+
+362
+00:49:50,660 --> 00:49:55,030
+So we'll call this. System of legacy coming after A and B,
+
+363
+00:49:55,510 --> 00:50:04,839
+and we wait long enough for this new system or the combined system with thermal contact to reach some equilibrium
+
+364
+00:50:04,840 --> 00:50:14,140
+itself and say that it equilibrate to some temperature t c that is now common to both of those subsystems.
+
+365
+00:50:16,310 --> 00:50:23,210
+So, so far we've just done the same consideration as we did when introducing the second law of thermodynamics.
+
+366
+00:50:23,810 --> 00:50:30,890
+The new wrinkle, the new step that we add to consider heat exchange is now to re isolate.
+
+367
+00:50:32,010 --> 00:50:37,290
+Those two subsystems. So.
+
+368
+00:50:39,220 --> 00:50:43,990
+Re-insert to the isolation between the two of them.
+
+369
+00:50:44,020 --> 00:50:49,420
+Take them back off to. Complete isolation themselves.
+
+370
+00:50:50,170 --> 00:50:59,680
+We have now an updated omega prime A that may no longer be exactly the same as the initial micro canonical system,
+
+371
+00:51:00,250 --> 00:51:04,180
+because although its number of particles has been fixed throughout,
+
+372
+00:51:04,840 --> 00:51:11,830
+the energy may have been updated to some time, resulting in some new temperature to prime.
+
+373
+00:51:12,490 --> 00:51:23,130
+And similarly for system B. The energy is updated, the number of particles is not the temperature.
+
+374
+00:51:24,170 --> 00:51:33,639
+Has quite possibly changed through this process of coming into thermal equilibrium and then being re isolated into separate systems.
+
+375
+00:51:33,640 --> 00:51:40,750
+So what we would naively expect if we were to do this in our lab and every day or to do this by.
+
+376
+00:51:46,230 --> 00:51:49,410
+Putting a hot drink in a cold box and then taking it out.
+
+377
+00:51:51,760 --> 00:51:57,930
+The generic expectation is that energy. We'll flow.
+
+378
+00:52:00,820 --> 00:52:04,600
+From the hotter system into the colder system,
+
+379
+00:52:05,410 --> 00:52:12,040
+lowering the energy of the hotter system and raising the energy of the colder system to something somewhere in between.
+
+380
+00:52:20,710 --> 00:52:29,620
+And this is. What we want to check based on the mathematics we've developed for the micro canonical ensemble.
+
+381
+00:52:29,650 --> 00:52:38,320
+So to set up that check, we will express these final energies.
+
+382
+00:52:38,830 --> 00:52:44,340
+So east of S Prime, we're s is a label for the system, either A or B,
+
+383
+00:52:45,040 --> 00:52:53,889
+So we say that this is the initial energy, energy A or B plus whatever energy flow.
+
+384
+00:52:53,890 --> 00:52:59,990
+There was the change in energy from step one or state.
+
+385
+00:53:00,570 --> 00:53:12,190
+Yeah, step one to step three in this procedure and from the first law of thermodynamics that conserves the overall energy A plus B,
+
+386
+00:53:12,730 --> 00:53:22,990
+we know that any energy lost or gained from subsystem A must be equal and opposite to whatever happened to that other subsystem.
+
+387
+00:53:24,220 --> 00:53:31,090
+And just for simplicity, we'll do a tailor expansion of the new energy around its starting point.
+
+388
+00:53:35,760 --> 00:53:43,110
+So what this amounts to is looking at functions of this energy and in particular the entropy.
+
+389
+00:53:44,540 --> 00:53:49,450
+That gives us the temperature through a simple derivative. The.
+
+390
+00:53:51,380 --> 00:53:56,690
+Entropy is a function of the final temperature for each of those two subsystems equals A or B.
+
+391
+00:53:59,750 --> 00:54:02,240
+This depends on these conserved quantities.
+
+392
+00:54:03,370 --> 00:54:13,719
+So the initial energy plus whatever changed and the Taylor expansion says that we start from the initial entropy,
+
+393
+00:54:13,720 --> 00:54:17,800
+the initial value of this function and what we add to it.
+
+394
+00:54:18,770 --> 00:54:22,169
+Depends on. The response of the entropy.
+
+395
+00:54:22,170 --> 00:54:33,329
+So how? The entropy depends on the energy, and in each case evaluated at the initial entropy, the initial energy that we started off with.
+
+396
+00:54:33,330 --> 00:54:36,840
+So I should note that unlike,
+
+397
+00:54:38,670 --> 00:54:42,719
+unfortunately reusing notation here or the vertical bar in some cases means a
+
+398
+00:54:42,720 --> 00:54:48,390
+derivative taken with a quantity fixed like in the definition of temperature.
+
+399
+00:54:48,900 --> 00:54:56,790
+Here it means the derivative is evaluated for the energy equal to the initial use of s in each system.
+
+400
+00:54:57,300 --> 00:55:03,959
+Hopefully pillar expansions are something you've seen before, so this is reasonably familiar.
+
+401
+00:55:03,960 --> 00:55:08,520
+We look at the response and then multiply it by the amount of change that we have.
+
+402
+00:55:09,150 --> 00:55:18,719
+And this is a systematic expansion that can be continued to however many higher orders in this change in energy that we want.
+
+403
+00:55:18,720 --> 00:55:26,220
+So all of those higher orders start at the change in energy squared and go up to cubed callback and so on.
+
+404
+00:55:27,330 --> 00:55:35,970
+And again, for simplicity we can make the assumption that the change in energy is going to be small compared to the
+
+405
+00:55:36,210 --> 00:55:43,110
+scale of the energies themselves so that we can truncate this Taylor expansion after just that first term.
+
+406
+00:55:44,130 --> 00:55:53,970
+So this is an approximation that is valid when we have a lot of energy in the system so that the energy flow is modest,
+
+407
+00:55:54,990 --> 00:56:00,570
+It can be done without loss of generality, but I'll skip that more detailed discussion in the interest of keeping things moving,
+
+408
+00:56:01,350 --> 00:56:09,390
+this truncation gives us an approximation that says the final entropy in each system is related to the initial entropy,
+
+409
+00:56:10,080 --> 00:56:17,760
+plus the change in energy in each system now multiplied by this derivative,
+
+410
+00:56:17,760 --> 00:56:26,130
+which we can recognise, as does T is one over t in the micro canonical ensemble,
+
+411
+00:56:26,910 --> 00:56:33,420
+the temperature for each system and evaluated at stage one in this process.
+
+412
+00:56:34,490 --> 00:56:40,040
+The ayes to and tbe that we assume to be natural from the start.
+
+413
+00:56:41,870 --> 00:56:45,980
+Is this an acceptable argument to to all of you?
+
+414
+00:56:52,390 --> 00:56:57,480
+Make sure it's. On the screen to the extent possible.
+
+415
+00:57:09,040 --> 00:57:12,400
+So not hearing any objections we can.
+
+416
+00:57:15,110 --> 00:57:27,530
+See how this relation between the initial and final entropy is stacks up against what we require on the basis of the second law of thermodynamics.
+
+417
+00:57:27,530 --> 00:57:32,450
+The statement that the entropy can never decrease as time passes.
+
+418
+00:57:33,200 --> 00:57:40,280
+And in particular these three stages each happen at subsequent moments in time as time is passing.
+
+419
+00:57:41,660 --> 00:57:50,900
+So that means that the initial energy, so the initial entropy we start off with before doing any of these manipulations.
+
+420
+00:57:51,620 --> 00:57:56,510
+Entropy is that extensive quantity that adds across independent subsystems.
+
+421
+00:57:57,350 --> 00:58:04,190
+We know that this can never decrease when those two subsystems are brought together into that system of Mega C.
+
+422
+00:58:06,340 --> 00:58:11,860
+With. The combined energy.
+
+423
+00:58:11,860 --> 00:58:17,300
+AEA plus eps that's a shorthand for is second stage in the process.
+
+424
+00:58:18,890 --> 00:58:27,650
+And then the third stage there can again be no further decrease as the two subsystems are re isolated with their new energies,
+
+425
+00:58:28,040 --> 00:58:31,070
+their new enterprise and their new temperatures.
+
+426
+00:58:32,560 --> 00:58:42,100
+This is s of e be prime again, adding across those two independent subsystems that are now isolated from each other.
+
+427
+00:58:45,160 --> 00:58:50,740
+This last inequality actually turns out to be inequality.
+
+428
+00:58:51,340 --> 00:58:57,880
+But the argument for that is not not crucial today.
+
+429
+00:58:58,070 --> 00:59:02,310
+And something I can leave for you to go through if you want to see it, basically.
+
+430
+00:59:04,850 --> 00:59:08,720
+In order to show that this less than her equals two is in fact an equals two,
+
+431
+00:59:09,230 --> 00:59:18,560
+you have to consider all the possible values that E Prime and EB Prime can take and compare that to the possible values in the combined system.
+
+432
+00:59:18,770 --> 00:59:25,280
+We will revisit this in a week or two in a different context, but the same sort of argument.
+
+433
+00:59:25,290 --> 00:59:36,350
+So we don't need to go through it right now. What these inequalities tell us when combined with the Taylor expansion that we had, is that the sum?
+
+434
+00:59:37,890 --> 00:59:54,250
+SBA and EPI for the initial enterprise has to be less than or equal to the sum in the final stage, which we approximated as the initial plus delta.
+
+435
+00:59:55,150 --> 01:00:00,670
+I should put both A and B in here separately.
+
+436
+01:00:03,000 --> 01:00:06,010
+So that is SBA there.
+
+437
+01:00:06,030 --> 01:00:19,040
+This is SVP. Plus the contribution from the leading term of the Taylor expansion relating the temperature change to the change in energy.
+
+438
+01:00:20,510 --> 01:00:24,560
+So there is a significant simplification.
+
+439
+01:00:25,250 --> 01:00:37,370
+All of the starting point cancels out and we end up with just these two terms remaining and required to be greater than or equal to zero.
+
+440
+01:00:37,790 --> 01:00:50,870
+And if we then. And the other condition we had from the first law that Delta EB is equal and opposite to Delta EPA.
+
+441
+01:00:51,740 --> 01:00:59,180
+We get delta A. Over each of the temperatures with a relative negative sign.
+
+442
+01:00:59,600 --> 01:01:05,270
+And we're looking here at the larger than or equal to sign of zero.
+
+443
+01:01:06,830 --> 01:01:24,530
+And we can pull out the overall Delta IPA and just have in parentheses one over to minus one over TB that is non-negative and in general positive.
+
+444
+01:01:25,520 --> 01:01:30,739
+We can see what this implies for energy flow and heat exchange.
+
+445
+01:01:30,740 --> 01:01:37,170
+So. Based on this condition, there are three situations that are possible.
+
+446
+01:01:38,370 --> 01:01:51,630
+So consider first, if we started off in that initial stage or system, A had a greater energy than system B, So what does that imply?
+
+447
+01:01:52,920 --> 01:01:59,340
+If TA is greater than TB, then what? Over to is less than one over TB just taking the inverse.
+
+448
+01:02:00,000 --> 01:02:09,630
+So a larger quantity is being subtracted from a smaller positive one and giving an overall negative sign in the parentheses.
+
+449
+01:02:10,110 --> 01:02:16,140
+So to keep the product greater than or equal to zero, we require that the energy flow.
+
+450
+01:02:17,910 --> 01:02:24,240
+Is strictly positive. So the change in energy sorry, it is strictly negative.
+
+451
+01:02:25,860 --> 01:02:30,900
+That's negative. That's negative. The negative signs cancel the product and we get something positive.
+
+452
+01:02:31,200 --> 01:02:42,710
+So sorry to misspeak. So what delta Eaé less than zero means is that energy is flowing.
+
+453
+01:02:44,260 --> 01:02:47,440
+From system A into system B.
+
+454
+01:02:48,610 --> 01:02:53,140
+And in this case, we noted that system A is the hotter one.
+
+455
+01:02:58,780 --> 01:03:02,979
+And system B was the colder one to start off with.
+
+456
+01:03:02,980 --> 01:03:11,590
+So this is exactly what we would expect every day if we have a part of the whole system that are brought together and allowed to exchange energy.
+
+457
+01:03:12,160 --> 01:03:17,800
+Energy flows from the hotter one to the colder one. And this means that.
+
+458
+01:03:19,690 --> 01:03:21,399
+Relative to the initial temperature,
+
+459
+01:03:21,400 --> 01:03:34,360
+to the final to prime is reduced and relative to the initial temperature to be the final temperature to be prime is increased.
+
+460
+01:03:35,560 --> 01:03:43,180
+So the two temperatures start off at these different values and meet at least closer to the middle.
+
+461
+01:03:44,830 --> 01:03:49,210
+Not necessarily exactly in the middle, depending on the details of the system, but they are.
+
+462
+01:03:52,880 --> 01:03:56,240
+Going in the right direction that we would expect.
+
+463
+01:03:56,900 --> 01:04:05,420
+So there's nothing surprising here from the micro canonical ensemble, nothing like the negative temperatures we saw before the break.
+
+464
+01:04:06,140 --> 01:04:15,360
+And we can repeat this for, you know, another case where System B was the colder one in general or sort of the colder one sorry,
+
+465
+01:04:15,380 --> 01:04:18,440
+system A was the colder one initially and B was hotter.
+
+466
+01:04:20,180 --> 01:04:30,500
+So here again, inverting the temperatures A and B we have a larger one over to from which a smaller one over TB is subtracted.
+
+467
+01:04:31,130 --> 01:04:40,790
+So the factor in parentheses is positive. In order to have the overall product be positive, the energy flow has to be positive as well.
+
+468
+01:04:40,790 --> 01:04:45,410
+So energy is flowing into system A out of system B.
+
+469
+01:04:47,650 --> 01:04:53,650
+But that system be that energy is flowing out of is now the one that initially was hotter.
+
+470
+01:04:54,160 --> 01:04:58,600
+So this qualitative statement about the energy flow is identical.
+
+471
+01:04:58,600 --> 01:05:08,650
+So I'll just put some dyno marks there. The only change is that System B is the hotter one, and system A is the colder one.
+
+472
+01:05:09,910 --> 01:05:13,600
+So again, energy flowing from hot to cold.
+
+473
+01:05:13,990 --> 01:05:17,320
+Balancing out to some extent the temperatures between them.
+
+474
+01:05:20,020 --> 01:05:29,260
+Then finally, the only other possibility is the very special case where the initial temperatures were exactly equal.
+
+475
+01:05:31,100 --> 01:05:41,750
+So in that case. This is something we can't actually say anything about from inequalities, but from.
+
+476
+01:05:44,470 --> 01:05:48,070
+The more general situation we have.
+
+477
+01:05:49,220 --> 01:05:52,549
+Ahead. We know that there is no net energy flow in this case.
+
+478
+01:05:52,550 --> 01:05:55,270
+The temperatures remain equal.
+
+479
+01:05:55,280 --> 01:06:05,120
+And this is the special case, the special situation where these inequalities less than or equal to you turn into exactly equalities.
+
+480
+01:06:09,860 --> 01:06:19,980
+So that is. The second check of how the temperature behaves in the microeconomic ensemble of this case,
+
+481
+01:06:20,250 --> 01:06:27,629
+showing a sensible behaviour and not leading to any divergence or negative temperatures.
+
+482
+01:06:27,630 --> 01:06:32,850
+Are there? Questions about it or about my canonical ensemble in general?
+
+483
+01:06:32,970 --> 01:06:36,620
+Go ahead. I just finished how you covered it.
+
+484
+01:06:37,820 --> 01:06:47,750
+Don't you think? Yeah. That is hiding on the previous page of this calculation that that's not the previous page.
+
+485
+01:06:54,990 --> 01:06:57,000
+And how things got disordered.
+
+486
+01:06:58,380 --> 01:07:09,810
+So when we were defining the final energy in terms of the initial energy, we knew that if so, the overall energy E plus B is conserved.
+
+487
+01:07:10,530 --> 01:07:23,910
+So if this delta E increases, then Delta EB has to decrease by the same amount in order for the sum of the two subsystems to remain conserved.
+
+488
+01:07:25,290 --> 01:07:36,300
+So that was where that came from. And then that negative sign allows us to simplify the inequality that comes from the second law.
+
+489
+01:07:37,290 --> 01:07:44,730
+Any other questions? I'm pausing.
+
+490
+01:07:50,910 --> 01:08:03,059
+I'm pausing in part to note a change in direction, as this is the last example, a calculation that we will do for the micro canonical ensemble.
+
+491
+01:08:03,060 --> 01:08:13,380
+In these lectures. We will now return to the sort of initial prompts to consider today,
+
+492
+01:08:14,280 --> 01:08:26,850
+asking How can we arrange a system while still obeying conservation of energy and using that as motivation for introducing a new statistical ensemble?
+
+493
+01:08:27,240 --> 01:08:30,810
+So a line straight across that page.
+
+494
+01:08:33,490 --> 01:08:46,600
+Noting that. Not only does it complete isolation required by the micro economical setup of conserved internal energy
+
+495
+01:08:49,030 --> 01:08:54,249
+get in the way of us imagining doing any experiments or observation on a micro canonical system.
+
+496
+01:08:54,250 --> 01:09:04,510
+It's also very unrealistic. Even if we had our black box sitting in the void of intergalactic space,
+
+497
+01:09:05,110 --> 01:09:11,470
+there's still a constant background of microwave photons leftover from the Big Bang that are constantly impinging on it.
+
+498
+01:09:11,890 --> 01:09:20,530
+And no matter how good our insulation is, some of those will eventually tunnel through and exchange energy with the contents of that box.
+
+499
+01:09:20,890 --> 01:09:28,780
+So the Micro Canonical ensemble is a very straightforward direct implementation of conservation of energy, that first law.
+
+500
+01:09:29,500 --> 01:09:35,230
+But it's the sort of situation where a mathematical construct.
+
+501
+01:09:37,460 --> 01:09:43,340
+Departs too far from the real world to be of much use for physics.
+
+502
+01:09:45,060 --> 01:09:52,380
+A more useful alternative. Which is in fact even part of the origin of.
+
+503
+01:09:53,480 --> 01:09:56,840
+The naming of these different statistical ensembles.
+
+504
+01:09:58,340 --> 01:10:04,250
+Something more useful and more ordinary to consider is what's known as the canonical ensemble.
+
+505
+01:10:05,690 --> 01:10:09,950
+Again, named about 120 years ago by Willard Gibbs.
+
+506
+01:10:11,810 --> 01:10:18,950
+So unlike the micro canonical ensemble, the canonical ensemble is defined to be.
+
+507
+01:10:20,300 --> 01:10:30,970
+Characterised by. Again, two fixed quantities, but no longer the conserved energy.
+
+508
+01:10:30,970 --> 01:10:37,030
+So one of the quantities is now going to be the temperature.
+
+509
+01:10:38,380 --> 01:10:39,280
+Of the system.
+
+510
+01:10:40,240 --> 01:10:51,670
+So t that becomes the input that is fixed that we want to express some of the express derived quantities in terms of in thermodynamic equilibrium.
+
+511
+01:10:52,810 --> 01:10:57,620
+And as well, we actually keep the. Conserved particle number.
+
+512
+01:10:59,680 --> 01:11:07,090
+So that is a bit of overlap with the micro canonical ensemble and the micro canonical case.
+
+513
+01:11:07,690 --> 01:11:17,470
+We had a constant number of particles and internal energy now going from micro canonical to canonical, we keep the particle number fixed,
+
+514
+01:11:19,210 --> 01:11:27,820
+but instead of demanding exact conservation of energy within the system, we instead fixed the temperature.
+
+515
+01:11:29,620 --> 01:11:36,070
+A immediate question to ask when we say something like this is well, how do we fix the temperature?
+
+516
+01:11:37,960 --> 01:11:41,800
+We've been talking about temperature so far in terms of the micro canonical definition
+
+517
+01:11:41,800 --> 01:11:47,860
+where it was a derived quantity and a function of the conserved energy and.
+
+518
+01:11:49,130 --> 01:11:54,620
+I will just tell you and build up to a demonstration of this that in the canonical case,
+
+519
+01:11:54,620 --> 01:12:04,100
+we imagine that our system is constantly exchanging energy with its environment and that thermal contact,
+
+520
+01:12:04,580 --> 01:12:09,440
+that energy exchange is what allows the temperature to be fixed.
+
+521
+01:12:13,160 --> 01:12:24,140
+So we specify for simplicity that the environment of our system is going to be some large external reservoir.
+
+522
+01:12:26,510 --> 01:12:30,420
+Of energy. She is.
+
+523
+01:12:31,710 --> 01:12:34,860
+Sometimes called for short a heat bath.
+
+524
+01:12:37,070 --> 01:12:48,290
+And because this temperature is a intensive quantity, if this large external reservoir in combination with the system of interest,
+
+525
+01:12:48,290 --> 01:13:01,080
+has some temperature, then we know that looking at the system on its own will keep that temperature in place and fixed by that that reservoir.
+
+526
+01:13:01,100 --> 01:13:14,870
+So more formally, the combined or the combination of our system of interest plus its large external reservoir remains.
+
+527
+01:13:16,180 --> 01:13:18,550
+Governed by the micro ensemble.
+
+528
+01:13:21,260 --> 01:13:30,500
+And if we want to sort of reduce this to a trivial case, we can say that our external reservoir is the entire universe.
+
+529
+01:13:31,730 --> 01:13:34,040
+Our system is able to exchange energy with that,
+
+530
+01:13:34,040 --> 01:13:40,880
+but the overall energy in the whole universe is constant as required by that micro canonical ensemble.
+
+531
+01:13:41,870 --> 01:13:53,720
+So if we call our system Omega, we can see that it is being combined with so a direct product with the.
+
+532
+01:13:55,060 --> 01:14:04,510
+System of the reservoir recalling the definitions of these state spaces omega as the set of all possible states,
+
+533
+01:14:05,290 --> 01:14:07,720
+the system on its own can have or the reservoir can have.
+
+534
+01:14:08,500 --> 01:14:20,200
+Each one is fluctuating independently, so you get a product between those two that defines the overall set of all states for the combined system,
+
+535
+01:14:20,200 --> 01:14:25,690
+plus reservoir, potentially the entire universe of which we want to look at a small sub system.
+
+536
+01:14:27,010 --> 01:14:41,089
+And I will just put. Subscripts total you for total on everything having to do with that combination of system and reservoir.
+
+537
+01:14:41,090 --> 01:14:49,760
+So the total energy as an extensive quantity just adds across the system and the reservoir.
+
+538
+01:14:51,830 --> 01:14:58,580
+And thanks to that thermal contact, both of the individual energy is being added.
+
+539
+01:14:59,090 --> 01:15:04,540
+The energy in the system or the energy use of rest of the reservoir can each
+
+540
+01:15:04,550 --> 01:15:08,450
+fluctuate so long as they fluctuate like that in tandem with the negative side,
+
+541
+01:15:08,480 --> 01:15:12,950
+equal and opposite, so that the overall energy is conserved.
+
+542
+01:15:13,340 --> 01:15:19,460
+And as. This energy for our system is fluctuating.
+
+543
+01:15:22,060 --> 01:15:28,360
+Because we have specified that the reservoir is large. These fluctuations only have a very small effect.
+
+544
+01:15:28,780 --> 01:15:35,900
+I want to spell that with E! So this energy can fluctuate without changing.
+
+545
+01:15:38,230 --> 01:15:41,410
+The intensive temperature that the system inherits.
+
+546
+01:15:44,150 --> 01:15:48,900
+From being part of. The universe or.
+
+547
+01:15:50,270 --> 01:15:53,570
+From being in contact with this large civil reservoir.
+
+548
+01:15:55,070 --> 01:16:00,590
+So any objections to this set up so far?
+
+549
+01:16:06,880 --> 01:16:12,160
+One thing you might be wondering about this is does it actually get us anything?
+
+550
+01:16:12,160 --> 01:16:14,530
+Because we are talking about a system,
+
+551
+01:16:14,980 --> 01:16:25,930
+but we still have to define it in a way that is embedded into a micro canonical universe with conservation of energy across the system,
+
+552
+01:16:25,930 --> 01:16:36,130
+plus this reservoir combined. So we have a micro canonical set up kind of wrapping around this definition of a canonical fixed temperature system.
+
+553
+01:16:37,000 --> 01:16:48,370
+And the way we can benefit from this exercise is by actually showing that the details of the reservoir that fix the temperature
+
+554
+01:16:49,510 --> 01:16:56,020
+don't actually matter and in fact cannot be known from the perspective of the system we are actually interested in.
+
+555
+01:16:56,920 --> 01:17:05,200
+So that's what we will start doing today and possibly finish or possibly have to wrap up Tuesday morning.
+
+556
+01:17:06,520 --> 01:17:13,870
+So that is our next goal. We need to show that the.
+
+557
+01:17:15,340 --> 01:17:18,940
+Details of what exactly this reservoir is.
+
+558
+01:17:21,130 --> 01:17:29,330
+Don't matter. They cannot be. Determined or deduced from the perspective of the system apart from.
+
+559
+01:17:30,940 --> 01:17:37,690
+Being away to fix this intensive temperature. And when those details don't matter, that this is the way that.
+
+560
+01:17:38,770 --> 01:17:47,680
+We can consider a system on its own governed by the micro canonical sorry governed by the canonical ensemble.
+
+561
+01:17:49,370 --> 01:17:53,980
+Moving away from. The micro canonical case.
+
+562
+01:18:05,050 --> 01:18:17,620
+So the traditional way of showing that something doesn't matter is to introduce some sensible nonsense for what it looks like.
+
+563
+01:18:17,620 --> 01:18:22,060
+How it behaves carry out the calculation using that particular onslaughts,
+
+564
+01:18:22,390 --> 01:18:28,000
+and then show that all of the information in that order that drops out of the final answer,
+
+565
+01:18:28,360 --> 01:18:36,850
+which allows us to logically deduce that the form of the hazards we started with does not matter in the first place.
+
+566
+01:18:37,600 --> 01:18:56,700
+That was irritating. So hopefully we are back now and so it all starts is just, you know, an educated guess for what this reservoir might look like.
+
+567
+01:19:02,100 --> 01:19:09,240
+And in order to guarantee that we have a physically sensible reservoir that is realistic
+
+568
+01:19:09,510 --> 01:19:17,580
+and not hiding anything special that would cause this logical argument to break down.
+
+569
+01:19:20,140 --> 01:19:25,370
+We will. Allow or we will take this reservoir.
+
+570
+01:19:26,680 --> 01:19:31,210
+Just to be a bunch of copies of the system we are interested in.
+
+571
+01:19:31,660 --> 01:19:38,620
+So a large number of copies or what are traditionally called replicas labelled
+
+572
+01:19:38,620 --> 01:19:44,560
+by our of the system omega that we are interested in in the first place.
+
+573
+01:19:47,120 --> 01:19:51,860
+So this is known as. The replica trick.
+
+574
+01:19:57,570 --> 01:20:02,250
+We assume that any system we want to analyse is a system worth analysing,
+
+575
+01:20:02,580 --> 01:20:09,450
+and by taking the reservoir to be copies of that, we guarantee that it is also just as sensible as the system itself.
+
+576
+01:20:10,170 --> 01:20:22,650
+And by specifying that the total number of replicas is very large, we obtain the large external reservoir that can fix the temperature.
+
+577
+01:20:24,490 --> 01:20:27,640
+For just a small subsystem within it.
+
+578
+01:20:28,450 --> 01:20:40,660
+We further should specify that all of these are copies of the system, one from the system itself and are minus one from these replicas.
+
+579
+01:20:42,400 --> 01:20:47,170
+They are all in thermal contacts, able to exchange energy with each other.
+
+580
+01:20:50,640 --> 01:20:55,380
+And they are all in thermodynamic equilibrium.
+
+581
+01:20:58,530 --> 01:21:05,910
+And it is sometimes stated as the zeroth law of thermodynamics that thermodynamic equilibrium is a transitive property.
+
+582
+01:21:06,300 --> 01:21:16,110
+If two systems are both in thermodynamic equilibrium and in thermal contact with each other and the overall system is also in somewhat in equilibrium.
+
+583
+01:21:17,820 --> 01:21:21,720
+Basically what you would expect, but it can be mathematically formalised.
+
+584
+01:21:22,470 --> 01:21:29,460
+So what this gives us is the total energy for the system plus the reservoir.
+
+585
+01:21:30,560 --> 01:21:33,709
+We had that. Defined as.
+
+586
+01:21:33,710 --> 01:21:40,100
+So the reservoir is now are minus one copies of the system,
+
+587
+01:21:40,100 --> 01:21:53,299
+which we can label with a subscript given by a lowercase our running from one to r the energy in replica r is s of our animal up to
+
+588
+01:21:53,300 --> 01:22:03,620
+get the total and say that one of them say e So Capital R is the energy for the system of interest that is now no longer conserved.
+
+589
+01:22:06,020 --> 01:22:20,600
+We can also, in addition to working in terms of these individual replicas, we can think about the possible micro states that each replica can take.
+
+590
+01:22:20,690 --> 01:22:23,990
+That is the system that we are interested in in the first place.
+
+591
+01:22:25,430 --> 01:22:33,050
+And I will use a different subscript to refer to the energy of a particular micro state.
+
+592
+01:22:33,770 --> 01:22:41,330
+So east of I. So this is the energy.
+
+593
+01:22:42,260 --> 01:22:47,440
+Of. The corresponding micro state omega sub i.
+
+594
+01:22:49,710 --> 01:22:55,140
+Which is one of the states in the set of states in our system that we are interested in.
+
+595
+01:22:55,740 --> 01:22:59,340
+And just as a reminder, this this energy now is.
+
+596
+01:23:00,540 --> 01:23:08,930
+No longer. Conserved, referring just to a single replica our system of interest rather than the whole.
+
+597
+01:23:12,200 --> 01:23:19,080
+Combination of system plus reservoir. So.
+
+598
+01:23:23,570 --> 01:23:28,400
+We can look at a simple example of.
+
+599
+01:23:31,600 --> 01:23:35,590
+This idea. So this is maybe the simplest possible.
+
+600
+01:23:36,790 --> 01:23:42,849
+So what an epic system we can imagine. I get a spin system and we just say, let's consider an equals two.
+
+601
+01:23:42,850 --> 01:23:48,100
+We only have two spins in our system and take the.
+
+602
+01:23:49,270 --> 01:23:54,740
+A copy of the system here outlined in red to be the omega that we are interested in,
+
+603
+01:23:55,970 --> 01:24:03,060
+which has now one of four microstates for these and equal to systems.
+
+604
+01:24:03,060 --> 01:24:09,799
+So the micro states that we have are both of the spins pointing up the left spin,
+
+605
+01:24:09,800 --> 01:24:15,770
+pointing up in the right spin, pointing down vice versa, and then everything pointing down.
+
+606
+01:24:16,160 --> 01:24:28,010
+And the eight replicas that we have just in this picture for illustration are all falling in one of those four micro states.
+
+607
+01:24:28,010 --> 01:24:34,850
+So we can organise calculations either in terms of the nine copies of the system.
+
+608
+01:24:34,860 --> 01:24:39,980
+So here are equals nine, that is one system plus eight replicas.
+
+609
+01:24:41,450 --> 01:24:51,200
+We can count those or we can organise calculations in terms of the four micro states that we have for each of those individual copies of the system.
+
+610
+01:24:56,230 --> 01:25:04,690
+And in order to simplify the process of going back and forth between those two different ways of organising the.
+
+611
+01:25:07,240 --> 01:25:20,470
+Information that we have, we can. Connect the replica accounting to the micro states by defining what is called the occupation number.
+
+612
+01:25:23,330 --> 01:25:29,150
+So you'll call this end supply. So it has an index running over micro states.
+
+613
+01:25:32,250 --> 01:25:39,490
+And what this is defined to be. Is the number of replicas.
+
+614
+01:25:43,810 --> 01:25:48,160
+That have adopted this micro state omega sub i.
+
+615
+01:25:50,340 --> 01:25:55,889
+At the particular point in time where we look at the system plus its reservoir and get
+
+616
+01:25:55,890 --> 01:26:04,860
+an overall combined micro state for that total combined system plus reservoir setup.
+
+617
+01:26:06,270 --> 01:26:22,089
+So. What this means and how this allows us to connect micro states to replicas is that if we sum over all of the micro
+
+618
+01:26:22,090 --> 01:26:30,100
+states out of our small system of interest omega or now we will assume that this is a nice finite countable sum.
+
+619
+01:26:30,100 --> 01:26:38,319
+It can be generalised to the continuous case, but if we sum over the occupation numbers and what does that give us?
+
+620
+01:26:38,320 --> 01:26:44,410
+Each term in the sum is the number of replicas that adopt the corresponding micro states.
+
+621
+01:26:44,890 --> 01:26:48,760
+If we some of our own micro states, we better account for all of the replicas.
+
+622
+01:26:49,570 --> 01:26:56,590
+So the sum of occupation numbers is the total number of replicas, including the system itself.
+
+623
+01:26:58,060 --> 01:27:03,400
+And we can, for a concrete illustration, look at.
+
+624
+01:27:05,410 --> 01:27:09,310
+This simple example. Nine replicas with four microstates.
+
+625
+01:27:09,850 --> 01:27:15,850
+And compute the occupation numbers for each of these four microstates.
+
+626
+01:27:15,880 --> 01:27:25,130
+So I see two. Copies of our to spend system that are in this first micro states with everything pointed up.
+
+627
+01:27:27,000 --> 01:27:30,180
+Four and up on the right and down on the left.
+
+628
+01:27:30,180 --> 01:27:35,040
+I see. Again to those two there.
+
+629
+01:27:36,150 --> 01:27:42,990
+For down and up. Well, it's again, I see two top rate and bottom right.
+
+630
+01:27:43,410 --> 01:27:50,700
+And then for both down, I see 1 to 3 replicas in that micro state.
+
+631
+01:27:51,150 --> 01:28:03,320
+And hopefully if I add those all up the. Some is two, four, six plus three is nine, which is indeed the number of replicas that we should account for.
+
+632
+01:28:04,610 --> 01:28:12,680
+So we have a connection between replicas and micro states through this occupation number.
+
+633
+01:28:14,360 --> 01:28:21,950
+And we can't generalise this if we similarly consider that some of our micro
+
+634
+01:28:21,950 --> 01:28:28,230
+states of the occupation numbers are the number of replicas in each micro states.
+
+635
+01:28:28,820 --> 01:28:39,530
+If we within this sub weight each of these micro states by its corresponding energy piece of I then.
+
+636
+01:28:40,910 --> 01:28:54,910
+This will account for the contributions of every replica to the energy of the overall system, so it better will add up to that e total energy.
+
+637
+01:28:54,920 --> 01:29:00,229
+We started off with the conserved energy of the overall micro canonical setup that
+
+638
+01:29:00,230 --> 01:29:07,070
+combines the system omega plus the reservoir given by the R minus one replicas of omega.
+
+639
+01:29:07,320 --> 01:29:19,190
+And what other thing we can do if we divide both sides of this relation between occupation number and replicas.
+
+640
+01:29:19,190 --> 01:29:27,680
+By the total number of replicas we will have the sum of our microstates and i.e. divided by that constant are.
+
+641
+01:29:29,850 --> 01:29:36,810
+We can rewrite this as some sum over piece of i's, which equals are divided by R, which is one.
+
+642
+01:29:38,760 --> 01:29:42,300
+And these piece of I's we define to be.
+
+643
+01:29:45,620 --> 01:30:03,450
+The occupation probability. Which at least at the moment is interpreted as the probability that if we select a random replica out of our total number,
+
+644
+01:30:03,930 --> 01:30:07,620
+we will find it to be in this Microstate, Omega said.
+
+645
+01:30:08,670 --> 01:30:21,630
+So it is a definition of occupation probability related to the replica trick and the specific form of the external reservoir that we have assumed,
+
+646
+01:30:21,990 --> 01:30:32,690
+at least for now. And.
+
+647
+01:30:37,710 --> 01:30:42,750
+So. With this set up.
+
+648
+01:30:42,960 --> 01:30:55,110
+What we want to do is look at the temperature and see how this replica trick has fixed the temperature in a way that we can identify as.
+
+649
+01:30:56,270 --> 01:31:05,599
+The starting point, the definitional foundation for the system we're interested in Omega and to get to that temperature,
+
+650
+01:31:05,600 --> 01:31:13,580
+we need to consider again the SO from the micro canonical combination of system plus reservoir,
+
+651
+01:31:14,390 --> 01:31:24,350
+we get the temperature out of that by computing the number of micro states for that whole combination of all our copies taking the logarithm of that,
+
+652
+01:31:24,350 --> 01:31:29,090
+taking the derivative, that's our one over temperature of the micro canonical context.
+
+653
+01:31:30,570 --> 01:31:34,020
+So we will start that off and maybe finish on Tuesday.
+
+654
+01:31:35,820 --> 01:31:43,350
+The. Starting point is to note that we having introduced these occupation numbers.
+
+655
+01:31:43,920 --> 01:31:47,620
+The overall. Combination of.
+
+656
+01:31:50,330 --> 01:31:55,250
+System and reservoir. Is that is this omega total?
+
+657
+01:31:57,140 --> 01:32:01,040
+This is going to be fully specified. By.
+
+658
+01:32:03,260 --> 01:32:05,480
+Information about these occupation numbers.
+
+659
+01:32:05,490 --> 01:32:15,380
+So the set of occupation numbers running over all micro microstates or equivalently, if we just normalise that by the number of replicas,
+
+660
+01:32:16,130 --> 01:32:29,330
+the occupation probabilities for each micro state and the temperature for this combination of our system and its reservoir.
+
+661
+01:32:31,990 --> 01:32:42,910
+As I was just saying, it's given by the derivative of the total entropy for that total system with respect to the total energy.
+
+662
+01:32:46,110 --> 01:32:53,310
+Of that total system with the constraints at the total number of particles is fixed, and that entropy itself.
+
+663
+01:32:55,780 --> 01:33:06,640
+Is given by the log of the total number of microstates across all of the replicas that we have and again, fixing the total number of particles.
+
+664
+01:33:10,650 --> 01:33:19,980
+So because our system is specified by the occupation numbers, we can expect to that.
+
+665
+01:33:21,290 --> 01:33:27,380
+Or we can basically organise the computation of the number of micro states by considering
+
+666
+01:33:27,860 --> 01:33:33,860
+how many ways there are to get the set of occupation numbers that characterises the system.
+
+667
+01:33:38,750 --> 01:33:41,840
+So you just write that down.
+
+668
+01:33:41,840 --> 01:33:57,750
+We are counting. The ways of arranging the are replicas that we have into the set of and occupation numbers.
+
+669
+01:34:00,250 --> 01:34:06,520
+At specify any given micro states of the overall combined mini replica system.
+
+670
+01:34:11,780 --> 01:34:15,680
+So there is a systematic way to go about this.
+
+671
+01:34:16,790 --> 01:34:23,540
+So we have specified the occupation numbers for Microstates one, two, three and so on.
+
+672
+01:34:23,900 --> 01:34:31,309
+We have and one of these replicas need to have adopted Microstates Omega one at the time.
+
+673
+01:34:31,310 --> 01:34:38,040
+We are looking at it. The number of ways of doing that is our now familiar binomial coefficient.
+
+674
+01:34:38,730 --> 01:34:45,290
+Take the total number of replicas and say that and one of them have to be in that microstate omega one.
+
+675
+01:34:47,240 --> 01:34:55,670
+So that is the number of ways that we can arrange these our replicas to have the proper number of or the proper and one.
+
+676
+01:34:56,030 --> 01:35:00,890
+But that's just one occupation number out of the whole set.
+
+677
+01:35:02,030 --> 01:35:07,579
+We then have to consider how to take the the number of ways that the remaining
+
+678
+01:35:07,580 --> 01:35:11,660
+or minus and one replicas that have not yet been assigned to a micro state.
+
+679
+01:35:13,790 --> 01:35:21,200
+And two of them will need to have microstate and two sorry microstate omega to the second microstate.
+
+680
+01:35:23,000 --> 01:35:31,660
+So there is a another combination of ways we can assign replicas to Microstate omega two,
+
+681
+01:35:31,670 --> 01:35:35,270
+but we start off with a smaller number that have not yet been assigned.
+
+682
+01:35:36,110 --> 01:35:43,969
+And independent of that, we are now left with our minus and one and two when we go on to micro stage,
+
+683
+01:35:43,970 --> 01:35:49,340
+omega three and so on, up to however many, many micro states that we have.
+
+684
+01:35:50,600 --> 01:35:57,530
+So just in the last 2 minutes here, we can do this calculation.
+
+685
+01:35:57,530 --> 01:36:02,920
+These binomial coefficients are just. Combinations of.
+
+686
+01:36:04,820 --> 01:36:07,880
+Factorial is, as we have seen before.
+
+687
+01:36:08,390 --> 01:36:12,980
+So that is that ratio corresponds to the first binomial coefficient.
+
+688
+01:36:13,400 --> 01:36:19,760
+In the second one, we start off with our minus and one factorial and two factorial.
+
+689
+01:36:21,690 --> 01:36:29,760
+And the difference between. And the what we choose and what we choose from and so on.
+
+690
+01:36:34,240 --> 01:36:44,350
+So in three factorial and this are minus and one minus and two now gets and three subtracted from it before the factorial
+
+691
+01:36:44,350 --> 01:36:53,920
+and so on throughout all of the microstates that we have corresponding to these the set of occupation probabilities.
+
+692
+01:36:54,580 --> 01:37:00,910
+So we can see that this is what's called a telescoping product similar to a telescoping sum,
+
+693
+01:37:02,020 --> 01:37:04,659
+something you might not have seen before, But the same general principle,
+
+694
+01:37:04,660 --> 01:37:15,220
+every binomial coefficient that we have comes along and cancels out part of the one that came before it until we reach the final micro states.
+
+695
+01:37:17,720 --> 01:37:26,450
+And we only have left or minus every single occupation number, which we know is zero.
+
+696
+01:37:27,050 --> 01:37:41,010
+And I'll remind you that zero factorial is one. So the end result that we will have to take the log of and then differentiate is
+
+697
+01:37:41,010 --> 01:37:47,610
+that the number of microstates in the total system of our replicas is given.
+
+698
+01:37:47,610 --> 01:37:59,340
+By that our factorial divided by the set of occupation numbers, each of them factorial and multiplied together up to the very last one.
+
+699
+01:38:00,480 --> 01:38:07,200
+So we're out of time to finish the temperature calculation today, but this is where we can pick up on Tuesday.
+
+700
+01:38:08,610 --> 01:38:15,120
+And I should let you go at this point and just check to see that the calculation up
+
+701
+01:38:15,120 --> 01:38:23,339
+till now is not causing any concern or since this is the end of the lecture for today,
+
+702
+01:38:23,340 --> 01:38:27,600
+whether you have any broader questions about anything we've seen so far.
+
+703
+01:38:37,820 --> 01:38:44,600
+I'm not hearing anything at the moment.
+
+704
+01:38:44,600 --> 01:38:48,350
+I will stop that recording.
+
