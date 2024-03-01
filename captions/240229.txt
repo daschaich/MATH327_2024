@@ -1,0 +1,948 @@
+1
+00:00:09,120 --> 00:00:15,030
+All right. It looks like just about time for us to get underway.
+
+2
+00:00:15,670 --> 00:00:20,370
+You start by checking in and seeing if any of you have any immediate questions about
+
+3
+00:00:20,370 --> 00:00:26,340
+what we've been covering so far to bring up now that we're back into tutorial mode.
+
+4
+00:00:26,850 --> 00:00:32,130
+I think this is the first tutorial that we've had since the very first day of February.
+
+5
+00:00:32,610 --> 00:00:41,060
+It's now the very last day of February. You're not hearing immediate questions.
+
+6
+00:00:41,270 --> 00:00:51,680
+Let's see. One thing I should do is put up the six digit code for today, which there don't seem to be any pens around here to put it up on the board.
+
+7
+00:00:52,040 --> 00:00:57,740
+I'll just put it up on to the document camera.
+
+8
+00:01:00,360 --> 00:01:05,730
+5932 16 on.
+
+9
+00:01:07,440 --> 00:01:11,240
+Thursday. 29th of February.
+
+10
+00:01:15,500 --> 00:01:22,280
+Over the past four weeks, since the 1st of February, we have gone through a lot of material in lectures,
+
+11
+00:01:22,280 --> 00:01:26,600
+even with some of those lectures replaced by the computer lab sessions.
+
+12
+00:01:27,050 --> 00:01:34,670
+And that gives us a lot of topics to mine for activities to do during these tutorials.
+
+13
+00:01:35,510 --> 00:01:46,940
+So two activities were uploaded to I uploaded to canvas earlier today to activities one connected to Unit two and the other on unit three.
+
+14
+00:01:49,130 --> 00:01:53,030
+We'll introduce both of those today. Can make some progress with at least one of them.
+
+15
+00:01:53,450 --> 00:02:00,320
+And then you'll have the coming week to keep working on the both before we come back here this time next Thursday.
+
+16
+00:02:00,710 --> 00:02:10,040
+Wrap them up and move on to what's next. And I've also printed off just half a dozen copies of them in case any of you
+
+17
+00:02:10,670 --> 00:02:15,380
+prefer to have a paper copy rather than using the PDF that is up on canvas.
+
+18
+00:02:16,850 --> 00:02:27,230
+And what I will do just to get things underway is talk through some of the.
+
+19
+00:02:29,860 --> 00:02:33,069
+Set up for the activities that you'll be doing.
+
+20
+00:02:33,070 --> 00:02:40,480
+So we'll switch back and forth in between that web browser and this projector.
+
+21
+00:02:43,630 --> 00:02:50,980
+Just to start off by remembering what we did a few weeks ago and first introducing the second law of thermodynamics.
+
+22
+00:02:51,490 --> 00:03:03,070
+We saw how that works by considering a particular example of two subsystems that are put into thermal contacts allowed to exchange energy,
+
+23
+00:03:03,130 --> 00:03:06,100
+but not momentum. Sorry, energy, but not particles.
+
+24
+00:03:07,330 --> 00:03:14,470
+So the particle number in each subsystem is conserved, but the energy in each subsystem can move back and forth between the two.
+
+25
+00:03:15,250 --> 00:03:29,290
+And this allowed us to analyse how the overall entropy of the combined system compared to the two subsystems and in the micro canonical ensemble in
+
+26
+00:03:29,290 --> 00:03:36,549
+thermodynamic equilibrium that entropy is just the logarithm of the total
+
+27
+00:03:36,550 --> 00:03:41,200
+number of microstates accessible to that combined system with energy exchange.
+
+28
+00:03:41,620 --> 00:03:43,659
+I shouldn't belabour this because we did it in lecture.
+
+29
+00:03:43,660 --> 00:03:52,959
+We came up with an expression for the total number of microstates, which is the product of the microstates that we have in subsystem one.
+
+30
+00:03:52,960 --> 00:03:56,650
+If it has lowercase e one energy,
+
+31
+00:03:58,150 --> 00:04:03,880
+which means that the rest of the energy capital E minus E one has to be in subsystem to
+
+32
+00:04:04,240 --> 00:04:09,130
+coming along with its set of microstates that multiply those from the other system.
+
+33
+00:04:10,950 --> 00:04:19,979
+And rather than trying to deal with this some, we just said, well, it is greater than the product that we would get from those two systems separately.
+
+34
+00:04:19,980 --> 00:04:23,250
+Therefore, the entropy has not decreased and most likely increased.
+
+35
+00:04:23,670 --> 00:04:34,110
+And that was the second law. Now we can go and look into this in a bit more detail, actually try to not necessarily evaluate this some,
+
+36
+00:04:34,530 --> 00:04:47,130
+but extract some more information from it by basically putting bounds on this overall M and the corresponding entropy from its logarithm.
+
+37
+00:04:47,520 --> 00:05:02,099
+So if we just define in terms to be the number of terms in that sum, which has to be at least one and can be in principle much larger than that,
+
+38
+00:05:02,100 --> 00:05:06,420
+depending on the possibilities for how the energy can be distributed between these two subsystems.
+
+39
+00:05:07,800 --> 00:05:15,030
+We can look at these in terms terms in the sun and see that the largest term.
+
+40
+00:05:15,990 --> 00:05:26,400
+So the particular partitioning of energy that gives us the maximum number of micro states, we will just call that term max for maximum.
+
+41
+00:05:27,510 --> 00:05:34,350
+Which immediately gives us some almost trivial bounds on the number of micro states.
+
+42
+00:05:35,040 --> 00:05:42,000
+So. Because there is a term that is at least the size max in the sum.
+
+43
+00:05:42,750 --> 00:05:49,710
+The sum as a whole has to be at least that size equality when there's only a single term in the sum.
+
+44
+00:05:50,970 --> 00:06:01,770
+And since this maximum term is the largest, the overall sum has to be smaller than the number of terms multiplied by that largest term.
+
+45
+00:06:02,190 --> 00:06:07,590
+And again, equality is possible if every single term in the sum has this same size.
+
+46
+00:06:08,850 --> 00:06:18,000
+So for the micro canonical ensemble in thermodynamic equilibrium, this immediately translates to balance on the entropy.
+
+47
+00:06:19,330 --> 00:06:26,440
+The log of this Max has to be. Less than or equal to the entropy, which in turn.
+
+48
+00:06:27,760 --> 00:06:36,250
+His less than or equal to. The logarithm of in terms copies of that largest term.
+
+49
+00:06:38,110 --> 00:06:40,210
+And just to illustrate that,
+
+50
+00:06:40,540 --> 00:06:49,510
+even though these are very simple bounds that we basically wrote off by inspection of the sum we had already derived, they can introduce.
+
+51
+00:06:50,990 --> 00:07:01,160
+Very interesting information and give us access, interesting information about any given spin or any given system for a illustrative example.
+
+52
+00:07:06,430 --> 00:07:21,680
+Suppose we have. Just tend to the 23 particles, and we can motivate some approximations for this setup by,
+
+53
+00:07:22,100 --> 00:07:25,610
+again, thinking about the simple spin system that we've talked about,
+
+54
+00:07:26,870 --> 00:07:32,089
+where units of energy correspond to individual spins and therefore the different ways of
+
+55
+00:07:32,090 --> 00:07:39,260
+partitioning energy between two subsystems would just be determined by that number of.
+
+56
+00:07:41,950 --> 00:07:46,450
+Possible of spins that are in each case or in each subsystem.
+
+57
+00:07:46,450 --> 00:07:55,419
+So the number of terms in the sum is going to depend on and in some fairly straightforward way, the larger the number of spins,
+
+58
+00:07:55,420 --> 00:08:04,809
+the larger the number of terms in that sum and the maximum number of micro states
+
+59
+00:08:04,810 --> 00:08:11,590
+for any given division of the energy is going to be exponentially large in an.
+
+60
+00:08:13,010 --> 00:08:16,040
+Which is actually something we've already seen for spin systems.
+
+61
+00:08:17,540 --> 00:08:25,100
+Just to give this concrete example for spin systems, for an isolated spin system with no external magnetic field.
+
+62
+00:08:25,590 --> 00:08:33,470
+I remember the number of micro states was just due to the power and which we can rewrite as e to the end log too.
+
+63
+00:08:34,880 --> 00:08:44,660
+And if we had an external magnetic field, then the number of micro states involved factors of n factorial,
+
+64
+00:08:45,230 --> 00:08:48,200
+which by Sterling's approximation that we've seen in lecture.
+
+65
+00:08:50,590 --> 00:09:02,910
+It has a leading approximation that looks, well, essentially like into the end with corrections that we will discuss a bit later on today.
+
+66
+00:09:03,540 --> 00:09:06,610
+So. With this.
+
+67
+00:09:09,010 --> 00:09:15,660
+Very rough and fairly reliable way of treating the system in place.
+
+68
+00:09:15,670 --> 00:09:24,340
+We can just write down that the entropy is going to be at least the logarithm of this max.
+
+69
+00:09:24,460 --> 00:09:32,920
+So that's and I'll make that a squiggly line because these are rough approximations and with end terms also given by N.
+
+70
+00:09:34,860 --> 00:09:38,280
+On the other side, we have roughly the bound.
+
+71
+00:09:39,310 --> 00:09:47,390
+That the entropy is an. Plus the logarithm of n and with end around ten to the power 23.
+
+72
+00:09:47,960 --> 00:09:54,430
+What this would give us is. Knowledge that the interview itself is.
+
+73
+00:09:55,560 --> 00:10:04,170
+Between ten of the power, 23 and ten to the power 23, plus the logarithm of that which if you plug that in to a calculator,
+
+74
+00:10:04,170 --> 00:10:08,490
+I don't expect you to know that off the top of your head it's about 50.
+
+75
+00:10:09,540 --> 00:10:18,270
+So the range of these two bounds, upper and lower is roughly ten to the power, 21 part in ten to the 22.
+
+76
+00:10:18,750 --> 00:10:29,610
+So we have just with this few minutes of simple consideration, bounded the entropy for this system to a very precise value.
+
+77
+00:10:32,310 --> 00:10:41,190
+So that is the setup for this first tutorial activity on these entropy bounds.
+
+78
+00:10:41,640 --> 00:10:47,550
+All of this information just goes through the argument we just worked out for.
+
+79
+00:10:50,980 --> 00:11:01,720
+Marked out live on the document cam. And the activity itself is to actually do some of these calculations for, say, a simple spin system.
+
+80
+00:11:02,110 --> 00:11:06,160
+Starting off as a warm up, keeping things as simple as possible.
+
+81
+00:11:06,220 --> 00:11:14,830
+So take that external magnetic field to be non-zero, but just give it a magnitude of one so that it drops out of all the expressions.
+
+82
+00:11:15,520 --> 00:11:20,770
+Consider ten spins in each of the two subsystems for that combined system.
+
+83
+00:11:21,340 --> 00:11:25,650
+Fix a particular value of the energy and see.
+
+84
+00:11:26,260 --> 00:11:32,260
+So we can easily compute the entropy s that comes out of this setup.
+
+85
+00:11:32,890 --> 00:11:36,520
+We can compute both of these bounds and see how they compare.
+
+86
+00:11:37,000 --> 00:11:49,000
+So with all of that set up, I'll give a call for questions if any aspect of this activity isn't clear, but if there aren't any,
+
+87
+00:11:49,000 --> 00:12:00,010
+I'll just pause the recording for 15 or 20 minutes or so and then come back after that to talk through the simple case and leave more.
+
+88
+00:12:01,560 --> 00:12:09,209
+Interesting cases of larger values of and for you to look at over the coming week and also introduce the other activity,
+
+89
+00:12:09,210 --> 00:12:16,410
+looking at Sterling's formula, that will also be something for you to do on your own over the coming days.
+
+90
+00:12:17,810 --> 00:12:24,547
+Sound like a plan. So that is.
+
+91
+00:12:25,048 --> 00:12:34,258
+Repeat what I just said with the recording of running. So there's interest in checking out the simple case here.
+
+92
+00:12:34,408 --> 00:12:39,748
+With ten spins in each of the two subsystems of our overall system before,
+
+93
+00:12:40,408 --> 00:12:47,548
+where to get a basis and a grounding for going on to the larger numbers of spins where things are more interesting.
+
+94
+00:12:49,288 --> 00:12:53,098
+So over back to the DOT, can we.
+
+95
+00:12:55,278 --> 00:13:03,668
+Have this. Now more concrete example where instead of looking at rough scaling arguments,
+
+96
+00:13:04,058 --> 00:13:13,598
+we can pretty easily do everything, do all the calculations either in our heads or with the aid of a calculator.
+
+97
+00:13:14,318 --> 00:13:19,537
+So we're setting the external magnetic field to one.
+
+98
+00:13:19,538 --> 00:13:26,498
+In our spin system, we have 20 spins evenly divided into two subsystems, just like we did in lecture.
+
+99
+00:13:27,008 --> 00:13:35,587
+And the energy which is broken up into two subsystem energies that are allowed to fluctuate,
+
+100
+00:13:35,588 --> 00:13:41,558
+but subject to the constraints that the total energy across both subsystems is conserved.
+
+101
+00:13:42,038 --> 00:13:54,098
+And that combined system is micro canonical. So the values that each of these you want e can take are just set by the usual minus H times.
+
+102
+00:13:54,548 --> 00:13:59,408
+Twice the number of aligned spins, minus the total number of spins H is one.
+
+103
+00:13:59,528 --> 00:14:06,518
+That's a bit easy. We have the number of aligned spins and subsystem one minus the number of spins in that system.
+
+104
+00:14:07,358 --> 00:14:14,168
+So the lowest temperature we can have is sorry, the lowest energy we can have is when all of the spins are aligned with the magnetic field,
+
+105
+00:14:14,588 --> 00:14:18,248
+we get two times ten minus ten, an overall negative sign.
+
+106
+00:14:18,848 --> 00:14:26,048
+And then if we were to flip any one of those spins, we lose its negative contribution and we pick up a positive contribution.
+
+107
+00:14:26,468 --> 00:14:31,117
+So there is a change in two units of in units of H,
+
+108
+00:14:31,118 --> 00:14:37,777
+which is one all the way up to the highest possible energy of ten when all ten
+
+109
+00:14:37,778 --> 00:14:42,788
+spins in this subsystem are anti aligned against that external magnetic field.
+
+110
+00:14:44,318 --> 00:14:51,998
+Same for the other subsystem. So we have two energies and we want to make sure they both add up to minus ten.
+
+111
+00:14:52,448 --> 00:15:01,208
+So not all of these possible divisions of energy between the two systems are going to allow a total of minus ten.
+
+112
+00:15:01,868 --> 00:15:06,068
+We can make a table just to see what the possibilities are.
+
+113
+00:15:06,068 --> 00:15:12,758
+The simplest case is if we already have those minus ten years of energy in this first subsystem,
+
+114
+00:15:13,958 --> 00:15:17,078
+the other subsystem has to have the difference, which is just zero.
+
+115
+00:15:17,558 --> 00:15:22,987
+That is within the range of possibilities and corresponds to half of the spins,
+
+116
+00:15:22,988 --> 00:15:28,688
+pointing up half of the spins pointing down and exact cancellation of those energy contributions.
+
+117
+00:15:30,708 --> 00:15:41,568
+In this case, though, all ten or the maximum amounts of align spends giving the lowest possible energy means that all ten spins in
+
+118
+00:15:41,568 --> 00:15:51,467
+subsystem one are aligned with the magnetic field as that and plus in subsystem two to get that zero energy.
+
+119
+00:15:51,468 --> 00:16:01,847
+I just said there were five up, five down and the total number of micro states that are being contributed to the
+
+120
+00:16:01,848 --> 00:16:07,788
+corresponding term in the sum for this particular value of each one of minus ten.
+
+121
+00:16:08,418 --> 00:16:19,778
+Well, there's one way of getting. All ten spins aligned, pointing up, which is just a binomial factor of ten choose zero anti align spins.
+
+122
+00:16:20,768 --> 00:16:29,168
+There's another binomial factor from the other system. Ten choose five and okay ten you zero is just one.
+
+123
+00:16:30,008 --> 00:16:41,438
+Hopefully you agree, ten choose five. We have to work through the ten factorial in the numerator and then two five factorial in the denominator.
+
+124
+00:16:41,528 --> 00:16:46,928
+So one of them will cancel off the five, four, three two from the ten factorial.
+
+125
+00:16:47,558 --> 00:16:59,528
+There's a five, four, three two left over two and five is ten and the three and six and four and eight.
+
+126
+00:16:59,798 --> 00:17:03,048
+We'll take both of those down. Two factors of two.
+
+127
+00:17:03,068 --> 00:17:08,398
+So we have. Let's see.
+
+128
+00:17:11,158 --> 00:17:15,268
+That's why I'm confused. I missed the seven. So there is a seven in there as well,
+
+129
+00:17:15,268 --> 00:17:19,918
+which ideally should have come between the eight and the six that we have
+
+130
+00:17:20,698 --> 00:17:27,148
+factors of four from those two powers of two and then seven times six is sorry,
+
+131
+00:17:27,148 --> 00:17:39,507
+seven times nine is 63. So that is 120 and I'm sorry, 140 and 12, 240 and 12, 252 overall.
+
+132
+00:17:39,508 --> 00:17:48,838
+And you might want to check that because I had enough difficulty writing down all those numbers that you may not want to trust me too much,
+
+133
+00:17:49,618 --> 00:17:55,558
+but we can similarly just keep going through other possibilities for the amount
+
+134
+00:17:55,558 --> 00:18:01,348
+of energy in the subsystem one shifted to get that back up on the screen.
+
+135
+00:18:02,728 --> 00:18:14,608
+By the time we get down to no energy in subsystem one which corresponds to five of the spins anti aligned against that magnetic field,
+
+136
+00:18:14,818 --> 00:18:25,408
+the other five aligned with it. That's the largest energy we can get and still have a value of E minus E one
+
+137
+00:18:25,498 --> 00:18:33,748
+that stays within the range of energies available to each subsystem and well,
+
+138
+00:18:33,748 --> 00:18:40,158
+we can fill in. E minus E won without too much effort.
+
+139
+00:18:40,608 --> 00:18:44,388
+And there's a similar sort of symmetry in.
+
+140
+00:18:46,598 --> 00:18:53,828
+The values of the upward pointing spins in the two systems as one spin flips in one system,
+
+141
+00:18:54,398 --> 00:18:58,808
+the spin and the other system has to flip in the same way to keep the overall energy conserved.
+
+142
+00:19:01,638 --> 00:19:05,238
+Let's just jump to these two cases in the middle here.
+
+143
+00:19:05,718 --> 00:19:13,278
+We can see that the contribution from this final term, zero of minus ten will be the same as minus ten zero.
+
+144
+00:19:13,488 --> 00:19:19,788
+The same binomial coefficients appear just in a different order, which doesn't matter for multiplication.
+
+145
+00:19:20,508 --> 00:19:25,638
+There will be a similar duplication from these two in the middle.
+
+146
+00:19:26,268 --> 00:19:30,768
+They both give ten choose eight multiplied by ten.
+
+147
+00:19:30,768 --> 00:19:36,828
+Choose seven, which is actually a bit easier to compute than the extreme cases.
+
+148
+00:19:38,658 --> 00:19:51,258
+Ten times nine over two for ten choose eight and that gets multiplied by ten, nine, eight over three times two.
+
+149
+00:19:52,788 --> 00:19:57,018
+So that's five times nine is 45.
+
+150
+00:19:57,588 --> 00:20:03,128
+And then. We can take off a factor of.
+
+151
+00:20:04,158 --> 00:20:07,808
+Three. From the nine.
+
+152
+00:20:12,098 --> 00:20:15,748
+End up with a factor of four after the aid is cancelled off with a two.
+
+153
+00:20:15,758 --> 00:20:18,938
+So that's 12 times ten or 120.
+
+154
+00:20:20,538 --> 00:20:29,408
+So 4500 plus 900 is going to give 5400 overall.
+
+155
+00:20:29,918 --> 00:20:34,808
+I won't go through the other two. It's the same exercise.
+
+156
+00:20:34,808 --> 00:20:44,248
+They end up in between. So we can. Identify this 5400 as our max term in the sum over all six.
+
+157
+00:20:46,328 --> 00:20:50,478
+So. Just write that down.
+
+158
+00:20:51,438 --> 00:20:54,588
+Max is 5400.
+
+159
+00:20:55,398 --> 00:21:00,728
+The number of terms. Is six, which will grow with the number of spins.
+
+160
+00:21:01,328 --> 00:21:14,258
+So the bounds that we have are going to be at the log of 5400 should be less than or equal to s, which is the log of the sum of these six terms.
+
+161
+00:21:15,788 --> 00:21:19,388
+We can also do that without needing a calculator.
+
+162
+00:21:19,388 --> 00:21:24,908
+That 5400 plus 2100 is 7500 to double that to 15,000.
+
+163
+00:21:25,238 --> 00:21:30,518
+And then there is 500 for coming along with that 15,000.
+
+164
+00:21:30,998 --> 00:21:39,487
+And this should be less than or equal to the log of six times 5400, which is up above 30,000.
+
+165
+00:21:39,488 --> 00:21:52,298
+And indeed all the inequalities work out. The more interesting aspect of this is how tight the bounds are around the correct value that we can.
+
+166
+00:21:53,478 --> 00:22:00,108
+Compute. In this case, resorting to a calculator, putting in these logs, which I did in advance.
+
+167
+00:22:01,768 --> 00:22:06,148
+I got that. The slowest down is about 8.6.
+
+168
+00:22:07,078 --> 00:22:23,308
+The entropy itself is about 9.6 and the upper bound, which we would get if every single term were as large as the biggest ends up being 10.4 roughly.
+
+169
+00:22:23,698 --> 00:22:29,757
+So in terms of the absolute variation in the energy from the simple balance we
+
+170
+00:22:29,758 --> 00:22:34,048
+would get just by identifying the largest term and counting the number of terms.
+
+171
+00:22:34,558 --> 00:22:44,878
+We are within about one unit of energy out of ten total, so close to 10% accuracy from an equals ten,
+
+172
+00:22:45,358 --> 00:22:49,018
+which you can expect to see improve as you go to larger.
+
+173
+00:22:49,318 --> 00:22:59,248
+And so in this case. Just this logarithm of a single maximum term in the series.
+
+174
+00:23:01,018 --> 00:23:04,318
+Ends up giving about 89%.
+
+175
+00:23:05,668 --> 00:23:11,548
+Of the total entropy. That was a more elaborate calculation to come up with.
+
+176
+00:23:11,578 --> 00:23:18,688
+So are you happy with all of the argumentation and calculation I went through
+
+177
+00:23:19,288 --> 00:23:27,838
+here as a basis for exploring the larger and set up over the coming week.
+
+178
+00:23:33,088 --> 00:23:41,848
+In that case, I will leave that to you and just mention or point out this one last comment at the bottom of the activity sheet,
+
+179
+00:23:41,848 --> 00:23:56,098
+that if we were to look in detail at the sort of energy partitions that are giving us the maximum contribution to the sub for these larger and cases,
+
+180
+00:23:56,548 --> 00:24:07,588
+you will be able to see the emergence of an arrow of time, something that we brought up even in the first lecture of this module.
+
+181
+00:24:09,328 --> 00:24:13,048
+That's something that I'll leave for you to explore.
+
+182
+00:24:13,498 --> 00:24:18,988
+We can talk about that in more detail next Thursday.
+
+183
+00:24:20,788 --> 00:24:21,657
+What I want to do now,
+
+184
+00:24:21,658 --> 00:24:33,418
+in the few minutes remaining is introduce the other activity that you will have to work to have to play with over the next few days.
+
+185
+00:24:33,658 --> 00:24:38,308
+This is connected to Sterling's formula.
+
+186
+00:24:38,308 --> 00:24:43,888
+So it's an approximation that we have seen already in the lectures.
+
+187
+00:24:44,308 --> 00:24:53,488
+And rather than reading off that tutorial sheet, which again, there's a printed copy up at the front for those who want it just.
+
+188
+00:24:56,708 --> 00:25:02,908
+Go through the notes quickly here. And.
+
+189
+00:25:05,998 --> 00:25:13,078
+Let's start by reminding you that what we have made use of in some of the lectures and I believe it pops up in the homework as well,
+
+190
+00:25:13,678 --> 00:25:22,078
+is this approximation that the logarithm of in factorial is approximately and log n minus n when.
+
+191
+00:25:23,218 --> 00:25:34,258
+And is very large. We can exponentially eat both sides of that equation to cast this as an approximation for infection control itself.
+
+192
+00:25:35,038 --> 00:25:41,378
+If that is the exponential and log in minus and then properties of exponentials,
+
+193
+00:25:41,378 --> 00:25:48,318
+then logs tell us that that first term in the exponential reduces to end to the power end.
+
+194
+00:25:48,888 --> 00:25:58,798
+And then we have e to the minus end coming along for the second term, which is just the ratio and over the natural base.
+
+195
+00:25:59,128 --> 00:26:11,038
+E all raised to the power in this is a rough approximation that can be made more precise and that's what this activity will walk you through.
+
+196
+00:26:12,948 --> 00:26:20,448
+So the more precise statement of Sterling's formula is that factorial is a.
+
+197
+00:26:22,098 --> 00:26:26,898
+Equal to a fun free factor with square roots of two pies.
+
+198
+00:26:28,128 --> 00:26:38,688
+Then we have this. Same and over e reset the power n that corresponds to the simpler form of the approximation we've been using.
+
+199
+00:26:39,258 --> 00:26:47,988
+And then we have the interpretation that this whole factor is just the first term in a formerly infinite series.
+
+200
+00:26:49,378 --> 00:26:53,037
+And organised in powers of one over n.
+
+201
+00:26:53,038 --> 00:27:01,618
+So there is some correction that is suppressed by our large, and there is a smaller correction to that suppressed by two powers of N and.
+
+202
+00:27:03,138 --> 00:27:09,657
+So on ad infinitum. In light of the time.
+
+203
+00:27:09,658 --> 00:27:14,818
+I'll just point out in passing that this series is formally asymptotic.
+
+204
+00:27:17,048 --> 00:27:26,588
+I'll probably come back to that next week. But if we were to plot the accuracy of Sterling's formula versus the number of terms,
+
+205
+00:27:28,058 --> 00:27:34,748
+eventually for any value of NRR, the approximation will start getting worse as the number of terms increases.
+
+206
+00:27:35,168 --> 00:27:40,148
+Another way of saying this is that as radius of conversions is exactly zero,
+
+207
+00:27:41,318 --> 00:27:49,748
+but we can see that if we truncate the approximation at some given value of the number of terms,
+
+208
+00:27:50,138 --> 00:27:56,908
+we get extremely precise approximations accurate to one part in 10 to 10 or ten of the
+
+209
+00:27:56,918 --> 00:28:04,478
+30 or ten to the 50 something that you'll be able to explore through this activity.
+
+210
+00:28:06,158 --> 00:28:17,348
+But. Before we run out of time today, just step through the three ways of building up this whole result,
+
+211
+00:28:17,888 --> 00:28:24,068
+which first starts with a simple, bound based argument, much like we were doing for the entropy now.
+
+212
+00:28:26,848 --> 00:28:33,208
+There are upper and lower bounds that it is not hard to set on the logarithm of and factorial.
+
+213
+00:28:35,578 --> 00:28:46,918
+The easiest one really is showing that this is strictly less than an log in by itself and with a bit more effort.
+
+214
+00:28:48,058 --> 00:28:52,738
+There are actually many ways of showing that log in factorial is.
+
+215
+00:28:54,538 --> 00:29:06,407
+Strictly larger than end log in minus end, which is to say that the subsequent correction coming in the series is going to be a positive one,
+
+216
+00:29:06,408 --> 00:29:18,318
+increasing this rough approximation that we normally are satisfied with and giving us a larger value for longer than factorial itself.
+
+217
+00:29:19,488 --> 00:29:25,458
+So those hopefully will be quick and easy for you to confirm.
+
+218
+00:29:26,088 --> 00:29:35,658
+And then the next calculation is bringing in that fun square root to pi factor.
+
+219
+00:29:37,988 --> 00:29:44,798
+So the leading term in the sum that corresponds to that one just amounts to its pre factor.
+
+220
+00:29:46,328 --> 00:29:52,208
+And again, there are many ways of showing this.
+
+221
+00:29:53,108 --> 00:29:57,248
+The one that I would recommend you work on is.
+
+222
+00:30:00,878 --> 00:30:07,808
+Finding or confirming a given integral form of the factorial function, also known as the gamble function,
+
+223
+00:30:09,128 --> 00:30:16,208
+which is integral over x of x to the power in suppressed by e to the minus x.
+
+224
+00:30:17,828 --> 00:30:24,518
+Which can be approximated as the Gaussian and integral that you know how to do.
+
+225
+00:30:27,678 --> 00:30:33,288
+There are other approaches possible, but that will give you the first term in the series.
+
+226
+00:30:33,588 --> 00:30:42,198
+And then once you have that first term and you are willing to organise it in this way with this brought out as a pre factor,
+
+227
+00:30:42,198 --> 00:30:46,158
+multiplying A and B and C with additional powers of N,
+
+228
+00:30:47,568 --> 00:31:01,518
+it is a fairly straightforward, if not necessarily short calculation to start computing those corrections A, B, C, and so on.
+
+229
+00:31:02,658 --> 00:31:06,348
+And again, there are many ways of approaching this.
+
+230
+00:31:06,888 --> 00:31:13,598
+My favourite is to. Compare the factorial of an itself.
+
+231
+00:31:15,468 --> 00:31:24,498
+Against, say, and plus one factorial that can be usually related to an factorial just from the definition of factorial.
+
+232
+00:31:25,218 --> 00:31:30,798
+And plus one factorial is just in factorial with that additional factor of and plus one out front.
+
+233
+00:31:32,018 --> 00:31:47,628
+So matching the terms organised in powers of one over and between those two factorial is a automatable way to compute as many terms as you like.
+
+234
+00:31:48,398 --> 00:31:54,758
+If you're doing this by hand, I'd suggest you stop after two or three and not go off to a few hundred,
+
+235
+00:31:55,138 --> 00:32:03,937
+but you can see how you get on and we will come back to this next week and just review these three steps.
+
+236
+00:32:03,938 --> 00:32:13,238
+So I've hit the time limit. I'll throw out any quick questions if these activities for you to work on are not clear.
+
+237
+00:32:17,148 --> 00:32:22,248
+And not seeing any. I'll let you go and head over to start the office hours across the street.
+
