@@ -1,0 +1,1316 @@
+1
+00:00:01,980 --> 00:00:06,020
+That recording shouldn't be underway. So morning, folks.
+
+2
+00:00:07,050 --> 00:00:10,830
+We'll see if we get any more. Coming in or joining me online.
+
+3
+00:00:11,340 --> 00:00:20,700
+I imagine some are focussed on the homework that's due later today, even though several of you have already submitted your solutions to that.
+
+4
+00:00:20,700 --> 00:00:27,940
+And I get the impression that you're finding it a lot more familiar than that computer project and hopefully easier to handle.
+
+5
+00:00:27,990 --> 00:00:39,630
+It will make a start at this point and keep moving forward with applications of the canonical ensemble for which I need to get this.
+
+6
+00:00:41,330 --> 00:00:47,450
+Document camera up and in focus, which it is not.
+
+7
+00:00:57,730 --> 00:01:04,740
+Fortunately, it should behave well today with the limited brightness coming from outside.
+
+8
+00:01:04,750 --> 00:01:11,560
+It's our first full week of March and the.
+
+9
+00:01:13,570 --> 00:01:16,710
+And see. Zooming in.
+
+10
+00:01:17,970 --> 00:01:30,070
+And that's the six digit code for today when it refocuses is 3852, 73.
+
+11
+00:01:31,430 --> 00:01:38,450
+So while you continue to work on that homework assignment, for those of you who have not yet finished it in the lectures,
+
+12
+00:01:38,450 --> 00:01:44,330
+we will continue going through applications of the canonical ensemble where.
+
+13
+00:01:45,850 --> 00:01:53,319
+We have the temperature fixed and the internal energy allowed to vary.
+
+14
+00:01:53,320 --> 00:02:05,229
+So last Friday we saw by looking at the canonical ensemble that we had formulated that the pure information content of simple spin systems,
+
+15
+00:02:05,230 --> 00:02:14,860
+but it generalises to any other system you care to think about actually has observable and and measurable consequences,
+
+16
+00:02:15,940 --> 00:02:22,060
+in particular in the dependence of the energy on or the expectation value of the energy,
+
+17
+00:02:22,090 --> 00:02:30,160
+I should say on the temperature of the system differs depending on whether or not the spins.
+
+18
+00:02:31,790 --> 00:02:35,420
+In that system were distinguishable or not.
+
+19
+00:02:35,960 --> 00:02:43,730
+Even though just thinking about that qualitatively is not something we would necessarily have expected.
+
+20
+00:02:44,420 --> 00:02:50,510
+And the next application that we will spend a bit of time working on and lead into
+
+21
+00:02:51,140 --> 00:02:57,200
+the broader topic of heat engines and refrigerators is using the canonical ensemble
+
+22
+00:02:57,200 --> 00:03:06,200
+to analyse gases and in particular focusing first on so called classical non
+
+23
+00:03:06,200 --> 00:03:11,390
+relativistic ideal gases where the terminology classical just means non quantum.
+
+24
+00:03:12,140 --> 00:03:16,940
+Non relativistic means the particles in the gas are moving slow compared to the speed of light.
+
+25
+00:03:17,450 --> 00:03:25,220
+So they're governed by Newton's laws of motion and the idealised bit is that the particles in the gas are not interacting with each other,
+
+26
+00:03:25,580 --> 00:03:32,930
+which we will see turns out to be a good approximation for many physical systems.
+
+27
+00:03:33,230 --> 00:03:36,709
+And we saw just writing down the partition function,
+
+28
+00:03:36,710 --> 00:03:49,070
+our usual starting point for any statistical physics analysis that for these gases we had continuously varying momentum
+
+29
+00:03:49,070 --> 00:03:58,040
+leading to uncountable the infinite number of micro states that we want to sum over to define the partition function.
+
+30
+00:03:58,850 --> 00:04:12,650
+So the way we deal with this is regulating or regularising the system so that the partition function remains well defined as a sum over micro states.
+
+31
+00:04:14,310 --> 00:04:18,330
+We then. Take the limit.
+
+32
+00:04:18,330 --> 00:04:28,399
+Where this. This well-defined partition function Z that sums Boltzmann factors.
+
+33
+00:04:28,400 --> 00:04:38,240
+Overall, micro states then becomes a continuous integral rather than a discrete sum.
+
+34
+00:04:38,840 --> 00:04:48,920
+So that's what we will deal with today. Are there any questions about where we are or how we got here before we proceed with that?
+
+35
+00:05:01,780 --> 00:05:08,670
+So the picture we have for these gases is that we have some particles in there.
+
+36
+00:05:08,710 --> 00:05:15,850
+We have particles at temperature tea, and we place them inside some container of a volume V.
+
+37
+00:05:17,720 --> 00:05:21,260
+These particles each have some momentum.
+
+38
+00:05:26,890 --> 00:05:37,360
+And the way we will regularise the system is to declare that only a certain countable set of momenta are possible.
+
+39
+00:05:43,920 --> 00:05:51,960
+So we will. Take that continuous momentum with X, Y, and Z components,
+
+40
+00:05:52,440 --> 00:06:05,460
+and for each component we will replace it with some integer valued sequence that is going to depend on the size of this volume that we are in.
+
+41
+00:06:05,790 --> 00:06:15,360
+That V is L cubed in three dimensions, just a cubic box with length L on each side and in each of the x, y, and z directions.
+
+42
+00:06:16,470 --> 00:06:24,280
+We. Declare that the momenta are integer multiples of this fact.
+
+43
+00:06:24,280 --> 00:06:32,830
+So this factor h bar times pi over l where h ha is known as the Planck constant.
+
+44
+00:06:33,610 --> 00:06:37,840
+And essentially all it does is.
+
+45
+00:06:39,290 --> 00:06:42,920
+Convert. The units from.
+
+46
+00:06:44,190 --> 00:06:55,140
+One over L so an inverse length from the rest of that factor to the units of momentum that we want to get out.
+
+47
+00:06:55,410 --> 00:07:02,340
+So this is some number that has units of momentum times length to cancel out
+
+48
+00:07:02,580 --> 00:07:09,330
+that one over length in there that is now on the screen and all of these X,
+
+49
+00:07:09,330 --> 00:07:21,090
+Y and Z. I said out loud, but all right, here, these are just positive integers or I should say non negative integers, 012 and so on.
+
+50
+00:07:22,380 --> 00:07:33,300
+Now it's possible to describe this sort of momentum as quantised and that is where the quantum in quantum mechanics comes from.
+
+51
+00:07:34,170 --> 00:07:40,170
+This is some motivation for it. It turns out to be realised in nature that the momenta depend on the volume.
+
+52
+00:07:40,170 --> 00:07:43,680
+In this way we don't need to care about that necessarily.
+
+53
+00:07:43,950 --> 00:07:48,780
+We are just looking for some way to get countable labels for our momenta.
+
+54
+00:07:48,840 --> 00:07:56,999
+This is just some simplification that we will want to remove in order to get back to our original
+
+55
+00:07:57,000 --> 00:08:03,660
+starting point where the momenta are continuous as well as we can observe in our day to day life.
+
+56
+00:08:04,870 --> 00:08:18,060
+But what this does from this declaration that only they countable set of momenta are possible immediately gives us a countable set of energy levels.
+
+57
+00:08:20,070 --> 00:08:25,440
+Or I should say, accountable set of energies that we will call energy levels.
+
+58
+00:08:26,400 --> 00:08:39,590
+So for. Each particle that has these quantised momentum, the possible energies depend on this.
+
+59
+00:08:39,590 --> 00:08:46,850
+K So in the non relativistic case, energy is momentum squared over twice the mass known.
+
+60
+00:08:47,000 --> 00:08:58,940
+So that's coming from Newton and plugging in this expression for the most momentum you get in H bar squared pi squared.
+
+61
+00:09:00,250 --> 00:09:06,760
+We have the two men coming along and then an L squared, and then this overall K squared, which is.
+
+62
+00:09:08,470 --> 00:09:15,700
+As usual, the inner product of those momentum. Three vectors, X squared plus k y squared plus is that squared.
+
+63
+00:09:16,150 --> 00:09:22,120
+Or to save some ink, I've just defined this unit of energy H bar squared,
+
+64
+00:09:22,120 --> 00:09:37,510
+pi squared over two and elsewhere that I will call epsilon so we can consider some of the lowest possible energies just to see what.
+
+65
+00:09:38,640 --> 00:09:46,000
+We have to deal with in this case. Anyone shout out the lowest energy that we have?
+
+66
+00:09:50,590 --> 00:09:53,620
+As I try to spell energy correctly.
+
+67
+00:09:54,400 --> 00:10:08,770
+So working in units of Epsilon, dividing through that, we can have each one of these integer momentum components starting from zero.
+
+68
+00:10:10,090 --> 00:10:21,130
+So we have a zero plus zero plus zero. One of them can have one unit of momentum, which translates to one unit of energy in these units of epsilon.
+
+69
+00:10:22,030 --> 00:10:26,050
+And there are three ways to get that, either in the X, Y or Z direction.
+
+70
+00:10:26,800 --> 00:10:34,750
+We can have one unit in x, one units and Y to get to total or cyclic permutations of that.
+
+71
+00:10:34,750 --> 00:10:39,010
+We can have all three directions holding a single unit.
+
+72
+00:10:39,850 --> 00:10:52,120
+And if we go up to momentum of two in one of these directions and zero in the other two, then that square gives us four and one again.
+
+73
+00:10:52,840 --> 00:11:05,200
+So this energy of six units comes from case of 211 plus permutations of that one, two, 1112.
+
+74
+00:11:06,520 --> 00:11:12,060
+And if we go up then to. A.
+
+75
+00:11:14,620 --> 00:11:17,960
+Next highest or next lowest, I should say.
+
+76
+00:11:18,130 --> 00:11:25,350
+The next one up would be two units of energy in both of two directions.
+
+77
+00:11:25,360 --> 00:11:29,440
+Again, permutations 202022.
+
+78
+00:11:29,740 --> 00:11:34,240
+That gives us four. Plus four is eight. I can add one to get nine.
+
+79
+00:11:34,870 --> 00:11:42,820
+Move on to also get nine by having a three, which gives us ten, 11 and so on.
+
+80
+00:11:45,150 --> 00:11:51,420
+But what's notable here is that we have not found a way to get.
+
+81
+00:11:52,820 --> 00:11:58,190
+Seven units of energy from these. Jazz guitarist Momenta.
+
+82
+00:12:00,440 --> 00:12:11,850
+So this is. In contrast to the spin system where there was a constant energy gap between all of the energy levels that we had.
+
+83
+00:12:12,420 --> 00:12:17,350
+So the energy levels for this ideal gas. Are not.
+
+84
+00:12:18,710 --> 00:12:29,090
+Evenly spaced, and the missing energies that are not possible are not too hard to just work out directly.
+
+85
+00:12:29,090 --> 00:12:32,660
+But they also form a famous sequence.
+
+86
+00:12:33,560 --> 00:12:40,010
+And Alexander proved a theorem that exactly describes all of the missing energies
+
+87
+00:12:40,010 --> 00:12:46,459
+that cannot be expressed as the sum of three integers squared Each integer squared,
+
+88
+00:12:46,460 --> 00:12:53,840
+three of them summed is 15, 23, 28, 31, and so on.
+
+89
+00:12:55,350 --> 00:13:07,050
+With the more and more units missed as the numbers become larger and the gaps between case squared increase.
+
+90
+00:13:10,830 --> 00:13:16,569
+So. That's somewhat of a mathematical aside.
+
+91
+00:13:16,570 --> 00:13:26,200
+There's a nice theorem telling us what energy levels are missing, but what we want to do with these disparities,
+
+92
+00:13:26,200 --> 00:13:32,230
+Momenta and the Quantised energy is get a partition function out that is well-defined.
+
+93
+00:13:33,070 --> 00:13:43,480
+And thanks to our assumption of or our declaration that we're working with an ideal gas that does not have interactions, we can simplify.
+
+94
+00:13:46,070 --> 00:13:53,840
+This calculation of the partition function just by considering the simplest possible case of a gas with.
+
+95
+00:13:55,780 --> 00:14:01,860
+A single particle. So end equals one.
+
+96
+00:14:02,850 --> 00:14:10,709
+And the one particle partition function called Z sub one is then exactly the sum over the
+
+97
+00:14:10,710 --> 00:14:18,150
+Boltzmann factors for the single particle energy levels that we've now written down.
+
+98
+00:14:18,600 --> 00:14:26,970
+So that is the sum over all momentum, three vectors of these exponential factors minus.
+
+99
+00:14:29,100 --> 00:14:39,480
+Epsilon over t. Was the sum of integer momentum numbers in each of the three directions.
+
+100
+00:14:44,110 --> 00:14:56,710
+And this piece you're going we already did, replaced by X, Y, and Z running from zero to infinity, Indiscrete steps.
+
+101
+00:14:58,120 --> 00:15:04,810
+So we have three sums over the three different components of k, k, x, y, z.
+
+102
+00:15:05,800 --> 00:15:12,580
+The exponential factor is the sum of k x squared k y squared z squared that we can rewrite as
+
+103
+00:15:12,580 --> 00:15:17,979
+the product of the exponential of K squared times the exponential of k y squared plus the
+
+104
+00:15:17,980 --> 00:15:26,139
+exponential of k z squared three identical exponentials in three identical sums each completely
+
+105
+00:15:26,140 --> 00:15:35,980
+independent of the other gives us the same sort of factorisation that we saw earlier.
+
+106
+00:15:36,580 --> 00:15:46,479
+So three copies of a sum over each component and I'll just call k i of our exponential factor
+
+107
+00:15:46,480 --> 00:15:52,480
+and reinserting the specific energies that we have just to keep track of what is going on.
+
+108
+00:15:52,990 --> 00:15:58,180
+There is an H squared of pi squared to M times a T,
+
+109
+00:15:58,750 --> 00:16:08,440
+and then an L squared times that chi squared and three copies of that from the three exponentials that we get.
+
+110
+00:16:11,380 --> 00:16:15,430
+So there we have it in our partition function for a single particle.
+
+111
+00:16:16,780 --> 00:16:24,310
+The next step, what we wanted to do with this to get back to the continuously varying.
+
+112
+00:16:27,980 --> 00:16:37,310
+Well, we are already fairly close to continuously varying momentum, and I can just point out in.
+
+113
+00:16:39,630 --> 00:16:55,830
+Passing that. The classical aspect of these ideal gases actually corresponds to the volume of the system and the temperature being large compared to.
+
+114
+00:16:57,670 --> 00:17:01,390
+This playing Carlsen age bar while the non relativistic case.
+
+115
+00:17:02,950 --> 00:17:08,740
+Has a large mass in units of Planck's constant.
+
+116
+00:17:09,400 --> 00:17:15,490
+So overall, this factor in the energies place constant squared, divided by.
+
+117
+00:17:16,920 --> 00:17:24,600
+Four factors of those things. Two of L one each have been C that are much larger than it is going to be much smaller than one.
+
+118
+00:17:26,100 --> 00:17:38,190
+So all of the terms in this exponential are already very close together as K changes from end to end plus one.
+
+119
+00:17:41,040 --> 00:17:51,870
+The arguments of the exponential. Is this going to change by this small factor?
+
+120
+00:17:53,620 --> 00:18:05,109
+h.R. Squared. Pi squared over two A.L. squared times the difference between and squared and
+
+121
+00:18:05,110 --> 00:18:10,290
+then plus one squared and plus one squared is and squared plus two and plus one.
+
+122
+00:18:11,250 --> 00:18:17,010
+The and squared is already accounted for. So the change is two and plus one.
+
+123
+00:18:19,080 --> 00:18:30,440
+So. Yeah. Whenever and is small changing from end to end.
+
+124
+00:18:30,440 --> 00:18:38,509
+Plus one is going to make a very small change in the exponential leading to the leading
+
+125
+00:18:38,510 --> 00:18:43,910
+to the sum being a sum over lots of contributions that are very close to each other,
+
+126
+00:18:44,540 --> 00:18:55,200
+very smooth and nearly continuous, like an integral. So these terms that are being summed.
+
+127
+00:18:58,640 --> 00:19:05,340
+Our. Very close together and resemble integration.
+
+128
+00:19:08,200 --> 00:19:13,179
+Unless we have these ends going off to infinity.
+
+129
+00:19:13,180 --> 00:19:18,760
+So eventually they will be large enough to overcome the small factor.
+
+130
+00:19:20,860 --> 00:19:25,060
+But in that case, one end is much larger than one.
+
+131
+00:19:26,260 --> 00:19:31,040
+The terms are going to be suppressed not by end, but by.
+
+132
+00:19:32,020 --> 00:19:36,610
+The exponential of. Minus and squared.
+
+133
+00:19:40,290 --> 00:19:48,599
+So that's an exponential suppression that is going to be only a small contribution to the term.
+
+134
+00:19:48,600 --> 00:19:55,860
+So this whole argument is just telling us that we are already in the form of this.
+
+135
+00:19:55,860 --> 00:20:01,160
+Some have something that is nearly an integral up to exponentially small differences.
+
+136
+00:20:03,070 --> 00:20:07,180
+Coming from this, criticising the momenta and of course.
+
+137
+00:20:09,940 --> 00:20:20,890
+We want to get back to continuous momentum, which is going to basically, if we imagine that case, are instead of being integers,
+
+138
+00:20:21,520 --> 00:20:28,600
+1/10 of an integer or 100th of an integer, and taking that limit where those meant momentum become continuous again.
+
+139
+00:20:36,700 --> 00:20:46,400
+We will just have the sun. Going smoothly into an integration.
+
+140
+00:20:46,880 --> 00:20:51,890
+The difference between the two is going to be this exponentially suppressed factor that becomes smaller
+
+141
+00:20:51,890 --> 00:21:01,610
+and smaller as the steps in momentum and the steps and energy that we allow the system to take become.
+
+142
+00:21:03,170 --> 00:21:12,410
+Closer and closer together. So this sum, each one in each one of these three factors that we computed.
+
+143
+00:21:16,440 --> 00:21:25,300
+Going from zero to infinity. Exponential of that epsilon over T times k squared.
+
+144
+00:21:26,740 --> 00:21:28,780
+Well smoothly approach.
+
+145
+00:21:30,130 --> 00:21:45,010
+Integral also from zero to infinity of epsilon over t times I'll call k hat squared integrating over this k hat or I've changed variables just to.
+
+146
+00:21:47,940 --> 00:21:55,110
+McKay had being continuous real numbers that are related to.
+
+147
+00:21:57,330 --> 00:22:05,940
+The momenta by the factor of h par pi over l that we introduced just a few minutes ago.
+
+148
+00:22:07,890 --> 00:22:17,860
+So as a reminder that. Momenta is now going to be continuous each bar pi over l.
+
+149
+00:22:19,040 --> 00:22:22,330
+K. Hat i. So.
+
+150
+00:22:24,420 --> 00:22:27,460
+If we plug things in into this exponential.
+
+151
+00:22:28,240 --> 00:22:33,170
+We have the usual. Epsilon.
+
+152
+00:22:34,190 --> 00:22:40,400
+H where h r squared pi squared over 2ml squared with the T coming along for the ride.
+
+153
+00:22:40,970 --> 00:22:45,920
+We then have h bar pi over L squared.
+
+154
+00:22:46,900 --> 00:22:58,990
+P squared, integrating over H power pi over l P, That's some constants that we can and bring out front.
+
+155
+00:23:00,620 --> 00:23:03,649
+And I wrote this backwards, unfortunately.
+
+156
+00:23:03,650 --> 00:23:06,990
+So I'm just going to rewrite it on the next line. Sorry.
+
+157
+00:23:07,010 --> 00:23:12,440
+I need to isolate the k hat. It looks like you saw that as I was writing it.
+
+158
+00:23:20,050 --> 00:23:33,150
+So k hat is l over h are pi squared to get p from k hat and then l p over age.
+
+159
+00:23:33,160 --> 00:23:38,040
+Bar pie is what we can bring out.
+
+160
+00:23:40,170 --> 00:23:42,930
+I will also change the limits of integration.
+
+161
+00:23:43,290 --> 00:23:56,130
+So this integral from zero to infinity of a function that is even in P depends only on P squared is one half integral from minus infinity to infinity.
+
+162
+00:23:57,870 --> 00:24:06,510
+And then in this exponential the h bars pi as an ls cancel out and we are left with.
+
+163
+00:24:09,060 --> 00:24:13,770
+Pi squared the two M and the T do not cancel.
+
+164
+00:24:15,660 --> 00:24:28,240
+And there's a tepee at the end. So that is one of the sons that we had three of.
+
+165
+00:24:28,570 --> 00:24:33,910
+For a single particle. We can. If you move to.
+
+166
+00:24:36,190 --> 00:24:52,690
+A fresh sheet of paper here. And actually see that the same factorisation of that single, that single particle partition function into three factors.
+
+167
+00:24:53,260 --> 00:25:00,190
+One for each of X, Y, and Z is going to repeat if we have another particle in our box.
+
+168
+00:25:00,580 --> 00:25:04,930
+And if we keep adding more and more eventually generalising.
+
+169
+00:25:07,680 --> 00:25:13,260
+To. And particles if we assume they're.
+
+170
+00:25:15,280 --> 00:25:27,520
+All distinguishable. We will, instead of three factors of these integrals, just get in factors.
+
+171
+00:25:27,700 --> 00:25:33,310
+So this partition function for distinguishable particles is just going to be.
+
+172
+00:25:35,440 --> 00:25:38,560
+And factors of the single particle partition function.
+
+173
+00:25:40,300 --> 00:25:47,590
+We have three factors of the pre factor l over two pi h bar.
+
+174
+00:25:48,610 --> 00:25:56,800
+Out front, and then we integrate from minus infinity to infinity, the exponential factor.
+
+175
+00:25:57,810 --> 00:26:03,390
+Of the sum overall of the and particles momenta squared.
+
+176
+00:26:06,970 --> 00:26:14,980
+That is our Boltzmann factor. And then this integration is going over all three and momentum components that we have.
+
+177
+00:26:16,540 --> 00:26:21,550
+So what we have are in total three and completely independent.
+
+178
+00:26:23,580 --> 00:26:31,360
+Calcium integrals. You know, integrals hopefully are familiar.
+
+179
+00:26:31,360 --> 00:26:35,230
+I think we've seen them already in the context of the central limit theorem.
+
+180
+00:26:35,680 --> 00:26:40,420
+So each one is going to give a factor of square root pi.
+
+181
+00:26:42,060 --> 00:26:47,340
+Over a or a is the coefficient of the P squared that we integrate over.
+
+182
+00:26:47,340 --> 00:26:56,639
+So one over one over to empty gives us two pi empty in that square root raised to the
+
+183
+00:26:56,640 --> 00:27:08,130
+three in power and the overall partition function for distinguishable particles then has.
+
+184
+00:27:11,260 --> 00:27:14,680
+Two factors, each raised to the three in power.
+
+185
+00:27:15,100 --> 00:27:22,330
+So an L over two pi four times the square root of two pi empty.
+
+186
+00:27:25,360 --> 00:27:32,049
+So the three end, which we can simplify this just a bit,
+
+187
+00:27:32,050 --> 00:27:42,940
+cancelling out factors of two pi and putting everything except the L under the square root there's an empty.
+
+188
+00:27:44,080 --> 00:27:51,220
+The two pi is left over after cancellation. There are two factors of h bar in the square root.
+
+189
+00:27:53,960 --> 00:28:01,160
+And I've organised things in this way so that they can then be repackaged as this ratio.
+
+190
+00:28:01,880 --> 00:28:06,980
+L Over a lambda t. H That depends on the temperature.
+
+191
+00:28:07,700 --> 00:28:15,380
+Again, raised to the three in power where the definition of lambda is.
+
+192
+00:28:17,430 --> 00:28:28,650
+Also done for some notational convenience. But it also isn't it useful way of thinking about these gases in general.
+
+193
+00:28:29,370 --> 00:28:37,290
+So connecting the mathematical computation of Gaussian integrals to physical intuition about what is actually going on.
+
+194
+00:28:39,030 --> 00:28:48,410
+So I can see. At this lambda t h of t is just one over this square root factor.
+
+195
+00:28:49,580 --> 00:28:55,190
+So two pi h ha squared on top with the m in t.
+
+196
+00:28:56,250 --> 00:28:59,910
+In the denominator all under the square root.
+
+197
+00:29:01,260 --> 00:29:04,860
+I can remember that for classical non relativistic gases.
+
+198
+00:29:05,370 --> 00:29:08,820
+M.A. you are all small.
+
+199
+00:29:09,060 --> 00:29:13,020
+So they are all large compared to H far square. So this is very small.
+
+200
+00:29:13,800 --> 00:29:16,160
+L is also large compared to each of our squares.
+
+201
+00:29:16,170 --> 00:29:28,590
+Overall, our assumptions of a classical and non relativistic gas are telling us that lambda is much smaller than L, and this lambda to h is known.
+
+202
+00:29:30,250 --> 00:29:38,810
+As a thermal deploy wave function. And I said, Well, you function what I meant, Wavelength.
+
+203
+00:29:40,560 --> 00:29:46,440
+So we can tell it has the same units of length as L, so that the partition function,
+
+204
+00:29:46,440 --> 00:29:51,210
+which is counting micro states with weights, is just a pure number.
+
+205
+00:29:53,520 --> 00:30:01,799
+And this is basically telling us a characteristic length scale for particles of a given mass.
+
+206
+00:30:01,800 --> 00:30:10,770
+M any given temperature. T And that typical length scale compared to the length scale for the box that these
+
+207
+00:30:10,770 --> 00:30:16,409
+particles are sitting in turns out to determine their overall partition function.
+
+208
+00:30:16,410 --> 00:30:26,610
+And from that partition function, every other aspect of the system that we then derive in the usual way from our canonical ensemble framework.
+
+209
+00:30:27,000 --> 00:30:30,490
+So are there any questions about. The.
+
+210
+00:30:32,670 --> 00:30:41,159
+Partition function we've been able to obtain for this ideal gas by first regularising the system and then
+
+211
+00:30:41,160 --> 00:30:50,310
+removing that regularisation by moving from integer steps in momentum back to continuously varying real numbers.
+
+212
+00:30:56,820 --> 00:31:01,180
+It's something that may be worth thinking over to make sure you agree with my claims
+
+213
+00:31:01,180 --> 00:31:07,660
+that moving between integers and real numbers in that way is a legitimate thing to do.
+
+214
+00:31:08,440 --> 00:31:23,890
+What we. Can do at this point is start to write down some of the large scale properties we can derive from our partition function.
+
+215
+00:31:24,670 --> 00:31:33,150
+For this ideal gas, again, considering just distinguishable particles, we can write that partition function in several different ways.
+
+216
+00:31:35,300 --> 00:31:45,620
+Each of which can have use depending on which aspects of the physics we want to highlight, like dependence on the mass or on the on Planck's constant.
+
+217
+00:31:46,950 --> 00:31:48,780
+We can repackage that into.
+
+218
+00:31:52,220 --> 00:31:59,480
+Dependence on this thermal destroy wavelength just to hide some of the factors of two pi and H bar that are floating around.
+
+219
+00:31:59,480 --> 00:32:04,040
+And we can also note that l cubed is the volume and interpret.
+
+220
+00:32:05,190 --> 00:32:09,270
+The thermal temperature wavelength cubed as.
+
+221
+00:32:11,390 --> 00:32:16,160
+A form of volume characteristic to each particle in this gas.
+
+222
+00:32:17,000 --> 00:32:23,270
+Note that all of this is just and factors of the single particle partition function,
+
+223
+00:32:23,870 --> 00:32:28,730
+which, unlike the spin systems and everything we've worked with up to this point,
+
+224
+00:32:29,540 --> 00:32:37,040
+I should highlight that this partition function depends on the volume in which we
+
+225
+00:32:38,330 --> 00:32:45,260
+place this gas along with the usual quantities that are kept fixed in the canonical.
+
+226
+00:32:47,950 --> 00:32:53,140
+Framework. So the canonical ensemble approach fixes the number of particles at the temperature.
+
+227
+00:32:53,710 --> 00:33:00,010
+We now have dependence on the volume along with and t in this partition function.
+
+228
+00:33:02,420 --> 00:33:06,110
+So one obvious question that you might have.
+
+229
+00:33:07,480 --> 00:33:11,410
+Is. Why did I emphasise?
+
+230
+00:33:13,280 --> 00:33:16,710
+Focusing on distinguishable particles for this result.
+
+231
+00:33:16,760 --> 00:33:21,620
+So what happens if particles in the gas are indistinguishable as we.
+
+232
+00:33:23,860 --> 00:33:31,450
+We typically expect for everyday gases like the air in this room is made up of simple small molecules,
+
+233
+00:33:32,380 --> 00:33:40,930
+and it is a fairly fundamental law of nature that one nitrogen molecule cannot be distinguished from any other nitrogen molecule.
+
+234
+00:33:40,930 --> 00:33:43,180
+There's no way of assigning a label to it.
+
+235
+00:33:43,660 --> 00:33:57,550
+Say that this molecule is label a this, this molecule, this molecule will be so indistinguishable particles like that since they can't be labelled.
+
+236
+00:33:59,730 --> 00:34:04,440
+We have less information available in each micro state.
+
+237
+00:34:04,450 --> 00:34:14,070
+So just to give an illustration of this, if we consider a extremely simple case of two particles in our gas,
+
+238
+00:34:15,300 --> 00:34:19,350
+each with some particular momenta P one and P two,
+
+239
+00:34:21,300 --> 00:34:32,370
+then when we can label those particles, in the case of distinguishable particles of macroscopic balls that we can paint A big A and B on,
+
+240
+00:34:33,060 --> 00:34:43,230
+Then for any values of these momenta, there will be two distinct micro states, one where the particle with momentum p one is the one labelled A,
+
+241
+00:34:44,160 --> 00:34:51,210
+the other one is B, and one where that particle with momentum P one is labelled B and the other is A.
+
+242
+00:34:51,660 --> 00:34:56,670
+Without those labels, there's no way to distinguish between those two cases.
+
+243
+00:34:57,540 --> 00:35:03,570
+All we have is that one of our particles has a momentum, P one, the other has P two.
+
+244
+00:35:04,140 --> 00:35:11,160
+So instead of these two Microstates for every set of momenta, we just have a single one.
+
+245
+00:35:15,460 --> 00:35:18,610
+To zoom back into it that more visible.
+
+246
+00:35:19,030 --> 00:35:25,470
+So in that very simple example of. Two particles we had.
+
+247
+00:35:27,340 --> 00:35:33,310
+Half as many. Micro states just from labelling.
+
+248
+00:35:41,230 --> 00:35:46,570
+If we think about the labels, we could apply for an equal three.
+
+249
+00:35:47,200 --> 00:36:00,920
+And I should also emphasise the assumption that we have here, which is that all of the end particles, two or three or more generally,
+
+250
+00:36:00,950 --> 00:36:03,040
+some large number like ten of the power 23,
+
+251
+00:36:03,670 --> 00:36:12,370
+we will assume that all of the particles have different momenta so that they can be distinguished in that way.
+
+252
+00:36:13,870 --> 00:36:20,890
+And this turns out to be essentially guaranteed for classical gases.
+
+253
+00:36:21,310 --> 00:36:29,110
+And this is an assumption that breaks down in the quantum case that we will come to in a few weeks possibly.
+
+254
+00:36:29,830 --> 00:36:35,710
+Yeah. I think before the the spring break. So we will revisit this assumption in due course.
+
+255
+00:36:37,120 --> 00:36:41,710
+But the. If we take a single.
+
+256
+00:36:43,150 --> 00:36:47,540
+Set of momenta. Which describes.
+
+257
+00:36:49,330 --> 00:36:53,489
+A micro state for. Indistinguishable particles.
+
+258
+00:36:53,490 --> 00:36:57,770
+So there's a. Distinct momentum.
+
+259
+00:36:57,770 --> 00:37:08,330
+P one P2P three. For each of these three particles in the distinguishable.
+
+260
+00:37:09,700 --> 00:37:17,250
+Case. We will have in addition to the momentum information.
+
+261
+00:37:20,250 --> 00:37:24,650
+Some labels that we can apply to this as well.
+
+262
+00:37:25,830 --> 00:37:33,150
+So we can say that the first particle is labelled A, second B, a third C, and so on.
+
+263
+00:37:33,660 --> 00:37:44,220
+And just count all of the possible ways these labels can be assigned to each of the possible momenta.
+
+264
+00:37:45,830 --> 00:37:49,000
+See. B and c.
+
+265
+00:37:49,020 --> 00:37:58,790
+A B, so. In every every possibility, I believe, is accounted for.
+
+266
+00:37:58,810 --> 00:38:09,160
+They're giving me six distinct micro states for distinguishable particles, which we can recognise as a three factorial,
+
+267
+00:38:10,120 --> 00:38:15,910
+while the factor of two that we had four and equals to half as many micro states as a factor of two factorial.
+
+268
+00:38:21,930 --> 00:38:32,190
+And this generalises to an overall n factorial when we get back to in general in particles.
+
+269
+00:38:36,110 --> 00:38:40,620
+So the general result for. The.
+
+270
+00:38:42,700 --> 00:38:57,330
+Indistinguishable. Partition function is that we have all of the same integrals over momenta, but we have n factorial times fewer microstates.
+
+271
+00:38:59,140 --> 00:39:10,510
+From this, the lack of labelling. So those integrals over the momenta gave us the partition function for distinguishable particles,
+
+272
+00:39:10,510 --> 00:39:28,300
+which were just in times the single particle partition function that we wrote in various ways, including this ratio of volumes raised to the end.
+
+273
+00:39:30,100 --> 00:39:34,240
+So in the remaining time we can.
+
+274
+00:39:36,950 --> 00:39:40,820
+Right down the Helmholtz free energy for these indistinguishable particles.
+
+275
+00:39:41,360 --> 00:39:52,080
+That's minus. T logs had the log of what over in factorial is the negative log of n factorial.
+
+276
+00:39:52,920 --> 00:40:03,780
+So we pick up that term minus the temperature times the log of that volume over.
+
+277
+00:40:11,340 --> 00:40:17,850
+Thermal destroy wavelength lost the screen a bit.
+
+278
+00:40:18,450 --> 00:40:26,700
+We need to plug that. Some will deploy wavelength back in and so I'll put that back up here as one more way of writing this.
+
+279
+00:40:27,690 --> 00:40:36,600
+There's an m t l squared, h bar squared, all raised to the.
+
+280
+00:40:37,750 --> 00:40:53,560
+Three has power for each end. Taking the log brings down that three and over two and that whole factor of L squared over deployed wavelength squared
+
+281
+00:40:54,940 --> 00:41:05,680
+stays inside the log and from the partition function or the free energy we can almost immediately derive and see.
+
+282
+00:41:07,270 --> 00:41:14,280
+There's the screen. The macroscopic properties of the system that we're interested in.
+
+283
+00:41:15,300 --> 00:41:26,190
+So the expectation value for the internal energy we computed earlier is a derivative with respect to temperature of.
+
+284
+00:41:27,000 --> 00:41:38,340
+The negative log is the partition function with an overall factor of t squared, so that t cancels off ts in both terms in that partition function.
+
+285
+00:41:39,960 --> 00:41:50,020
+So. Inside that derivative we have minus three and over two times the log of T.
+
+286
+00:41:51,430 --> 00:41:55,750
+We have then all of the other terms a log of and factorial.
+
+287
+00:41:55,990 --> 00:42:05,940
+The log of m l squared over two pi h bar squared are all independent of T and just are killed off by that integral.
+
+288
+00:42:08,540 --> 00:42:14,749
+So the negative signs cancel. Derivative of the log of t gives us a one over C cancels one of the factors
+
+289
+00:42:14,750 --> 00:42:19,670
+of t outfront the three and over two is a constant that comes along for the
+
+290
+00:42:19,670 --> 00:42:32,480
+ride and we end up with a very simple internal energy expectation value that is just three halves times the number of particles times the temperature.
+
+291
+00:42:34,280 --> 00:42:38,990
+So that is sensible. More particles gives more energy, more temperature gives more energy.
+
+292
+00:42:39,650 --> 00:42:43,220
+And this is a very simple macroscopic.
+
+293
+00:42:45,340 --> 00:42:54,910
+Relation that we have now derived, starting from the microscopic dynamics of each particle energy of P squared over two M.
+
+294
+00:42:56,990 --> 00:43:08,590
+From Newton's laws. So as promised.
+
+295
+00:43:09,900 --> 00:43:13,380
+Statistical physics has taken us from.
+
+296
+00:43:14,540 --> 00:43:20,540
+The microscopic behaviour of individual particles, whether they're atoms or molecules,
+
+297
+00:43:21,800 --> 00:43:31,400
+to very simple, large scale thermodynamic relations, the entropy is not too much more complicated.
+
+298
+00:43:32,240 --> 00:43:44,840
+So we can determine this from the overall relation that we had between energy, internal energy, free energy and the entropy.
+
+299
+00:43:45,710 --> 00:43:50,360
+So we have a three and over two when dividing out the T,
+
+300
+00:43:50,780 --> 00:43:56,690
+and then all of these contributions from the Helmholtz free energy itself with a negative sign.
+
+301
+00:43:57,650 --> 00:44:01,580
+And we can write that in this way.
+
+302
+00:44:02,180 --> 00:44:14,730
+Log of L squared. Over lambda squared minus that log of in fact, for you in the tutorial we've looked at Sterling's approximation to.
+
+303
+00:44:17,990 --> 00:44:24,830
+The log of and factorial is approximated by and log n minus n when and is large as we assume it to be.
+
+304
+00:44:25,640 --> 00:44:37,230
+For typical statistical systems. So minus the minus and gives us a plus and factor that we can add to the three halves to get five halves.
+
+305
+00:44:37,240 --> 00:44:49,630
+This is a large an approximation, and then the end log in with the negative sign, we can move into the end log and here that three halves out front.
+
+306
+00:44:51,070 --> 00:44:59,260
+We can turn into elsewhere to the three houses l cubed, which is the volume and again and give us an end.
+
+307
+00:45:00,010 --> 00:45:06,560
+And similarly. Three factors of the thermal deploy wavelength.
+
+308
+00:45:08,730 --> 00:45:15,900
+So the entropy here, unlike the energy, depends on the volume which.
+
+309
+00:45:17,520 --> 00:45:26,310
+Makes sense because we can get information from the location of those particles within that volume.
+
+310
+00:45:27,180 --> 00:45:34,410
+And that information then translates to the entropy, but not necessarily the energy.
+
+311
+00:45:35,340 --> 00:45:44,550
+And we can immediately write down the corresponding results for the case of distinguishable particles.
+
+312
+00:45:45,300 --> 00:45:49,200
+We just have to drop that one over.
+
+313
+00:45:51,440 --> 00:46:00,470
+And factorial from the partition function or the log of n factorial from the free energy and all the derivatives of it.
+
+314
+00:46:01,130 --> 00:46:05,480
+That free energy for the distinguishable case is just.
+
+315
+00:46:06,750 --> 00:46:13,650
+The other term that we have. So minus three and T over two times the log.
+
+316
+00:46:22,450 --> 00:46:33,190
+The energy expectation value comes out the same because the temperature derivative killed off the constant log of an factorial in the first place.
+
+317
+00:46:33,910 --> 00:46:41,380
+So we have three have sent here. Exactly the same as the indistinguishable energy.
+
+318
+00:46:41,890 --> 00:46:50,820
+But the entropy does differ. So here we no longer have the log and factorial cancelled off.
+
+319
+00:46:50,830 --> 00:46:57,900
+We just have these two terms, the three. Haves and plus.
+
+320
+00:46:59,660 --> 00:47:03,530
+And times the ratio of lambda V over lambda.
+
+321
+00:47:05,210 --> 00:47:16,930
+T h cubed. So that is where we have to stop for today and pick up on Friday by.
+
+322
+00:47:19,650 --> 00:47:24,959
+Doing some more interesting things with these results, in particular,
+
+323
+00:47:24,960 --> 00:47:29,370
+looking at what happens when we mix distinguishable and indistinguishable particles,
+
+324
+00:47:29,790 --> 00:47:34,290
+much like we looked at the transfer of heat, the micro canonical case.
+
+325
+00:47:35,760 --> 00:47:38,219
+I am out of time for further comments.
+
+326
+00:47:38,220 --> 00:47:47,160
+I'll just check to make sure that you are all happy with the derivations of these simple macroscopic quantities depending on the.
+
+327
+00:47:48,820 --> 00:47:58,420
+Fixed quantities in t and now volume ve that characterise these canonical ideal gases.
+
+328
+00:47:59,610 --> 00:48:09,360
+And. Not seeing any questions. I will leave you with that and see you again Thursday afternoon for the tutorial.
+
+329
+00:48:09,360 --> 00:48:19,380
+Wrapping up this derivation of Sterling's approximation and looking at something new for the coming week.
+
