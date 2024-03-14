@@ -1,0 +1,1560 @@
+1
+00:00:00,870 --> 00:00:05,160
+He approached the time to start. That should be the recording underway.
+
+2
+00:00:05,280 --> 00:00:11,040
+We'll see if anyone more shows up either remotely or in person.
+
+3
+00:00:12,000 --> 00:00:17,880
+I guess we can tell that the equinox is approaching and the temperatures are getting more pleasant outside.
+
+4
+00:00:18,120 --> 00:00:23,310
+Spring break is also just about a week away. Fortunately, we have.
+
+5
+00:00:24,610 --> 00:00:29,080
+Some fun stuff in statistical physics to play with up until then.
+
+6
+00:00:29,620 --> 00:00:36,549
+Looking at thermodynamic cycles this weekend into next, and in particular,
+
+7
+00:00:36,550 --> 00:00:45,820
+the next activity that will introduce today is going to look at the thermodynamic cycles that govern petrol engines and.
+
+8
+00:00:46,870 --> 00:00:51,400
+Can generalise that to diesel engines and compare those.
+
+9
+00:00:51,670 --> 00:00:56,620
+Next week. But I'm getting ahead of myself with that preview.
+
+10
+00:00:57,490 --> 00:01:10,060
+I should start. Really. First by putting on ear for those connected remotely the six digit code for this afternoon.
+
+11
+00:01:11,980 --> 00:01:14,410
+And then as this is a tutorial for your benefit,
+
+12
+00:01:14,410 --> 00:01:21,100
+checking in to see if there are any questions or issues or concerns that any of you who are here want to raise.
+
+13
+00:01:21,700 --> 00:01:26,180
+Well, we are together with an opportunity to do that.
+
+14
+00:01:29,440 --> 00:01:33,810
+While you consider that if you don't have. Anything to nominate.
+
+15
+00:01:34,320 --> 00:01:43,830
+There are a few things I have in mind, so I did not give you much time last week to work on the mixing entropy activity.
+
+16
+00:01:45,730 --> 00:01:54,120
+Here. Live in the tutorial. So we can check in on that and.
+
+17
+00:01:55,470 --> 00:02:02,040
+Connected to some of the other fun topics and statistical physics like Maxwell's Demon and the second law of thermodynamics.
+
+18
+00:02:03,400 --> 00:02:05,140
+And, you know,
+
+19
+00:02:05,200 --> 00:02:12,400
+we are also at an awkward stage again this week because we are right in the middle of introducing these thermodynamic cycles that are the topic of.
+
+20
+00:02:14,360 --> 00:02:17,880
+The next activity on petrol engines.
+
+21
+00:02:17,900 --> 00:02:24,080
+So that particular cycle we will look at today is known as the auto cycle describing.
+
+22
+00:02:25,030 --> 00:02:34,550
+A petrol engine. So there are. Some things you should be able to do off the bat to look into that.
+
+23
+00:02:34,910 --> 00:02:43,639
+Here and now, it may be worthwhile for me to make this a bit more luxury than it might ideally
+
+24
+00:02:43,640 --> 00:02:51,080
+be if we had already had tomorrow's lecture yesterday and go over some of the.
+
+25
+00:02:52,090 --> 00:02:57,850
+Concepts and tricks we'll be seeing then. But if no.
+
+26
+00:02:59,820 --> 00:03:10,040
+There are no calls for other things to. Tackle here, such as the model solutions for the computing project that are on the canvas site.
+
+27
+00:03:10,050 --> 00:03:16,640
+We can. Go back to this mixing entropy activity.
+
+28
+00:03:17,600 --> 00:03:22,580
+That we introduced last week. You've had a few days to work on that.
+
+29
+00:03:23,890 --> 00:03:29,490
+Where. There were two pieces to this activity first.
+
+30
+00:03:30,210 --> 00:03:35,820
+Essentially computing the mixing entropy in this special case where we have two
+
+31
+00:03:36,150 --> 00:03:42,210
+distinguishable populations of gas particles who are indistinguishable from each other.
+
+32
+00:03:43,590 --> 00:03:51,630
+So I can ask how you all got on with that and whether you want to see any discussion of it here and now.
+
+33
+00:04:03,050 --> 00:04:06,170
+No strong calls either way.
+
+34
+00:04:08,270 --> 00:04:18,530
+But there may be one. Worthwhile thing to touch on just in the context of this first task of computing.
+
+35
+00:04:18,770 --> 00:04:23,450
+The mixing entropy is that this is the easy part of last week's activity.
+
+36
+00:04:25,220 --> 00:04:33,980
+I had this sort of cryptic comment in the activity sheet about exploiting the properties of logarithms to look at ratios of partitioned functions.
+
+37
+00:04:34,430 --> 00:04:42,170
+And it may be worth making sure that it's clear what I meant by that and how this can be a useful trick.
+
+38
+00:04:43,290 --> 00:04:53,620
+So the. Basic idea when looking at any difference of entropy, is like that which goes into this mixing entropy.
+
+39
+00:04:54,550 --> 00:05:05,770
+We have the entropy of the combined system and that volume to V, we subtract from that the initial entropy of the two isolated subsystems.
+
+40
+00:05:06,280 --> 00:05:13,090
+In both of those we can express as derivatives with respect to the temperature of the negative.
+
+41
+00:05:13,420 --> 00:05:23,410
+Helmholtz free energy, which is. Tee times the log of the partition function for each of those two systems.
+
+42
+00:05:24,070 --> 00:05:28,940
+Partial derivative is a linear operation, so we can. Oops.
+
+43
+00:05:32,740 --> 00:05:42,490
+Put both of the logarithms for both of those entries in that same set of parentheses and the properties of logarithms that I mentioned.
+
+44
+00:05:42,490 --> 00:05:51,230
+Then give us. The temperature derivative of this lack of ratios with the C.
+
+45
+00:05:52,720 --> 00:06:00,879
+On top and then not underneath. Now, in general, this partial derivative will have at least two terms,
+
+46
+00:06:00,880 --> 00:06:09,430
+one where the T goes away and the log carries on to the another, where we have to consider the temperature dependence of those logs.
+
+47
+00:06:10,030 --> 00:06:20,920
+What's useful, at least in this example as well as many others, is that the ratio going into that log turns out to simplify fairly dramatically.
+
+48
+00:06:21,070 --> 00:06:25,620
+So. We had like in the.
+
+49
+00:06:28,780 --> 00:06:33,549
+Tutorial. She itself itself just given so you wouldn't have to worry about it.
+
+50
+00:06:33,550 --> 00:06:40,990
+The expression for the canonical partition function of the combined system with that wall removed.
+
+51
+00:06:41,860 --> 00:06:49,630
+So that was. One over two factors of in factorial seven factorial squared and then.
+
+52
+00:06:50,630 --> 00:06:56,190
+He toovey over the usual. Two point wavelength cubed.
+
+53
+00:06:56,610 --> 00:07:06,629
+All raised to the two in power and the initial partition function is just two copies of indistinguishable gases of and particles,
+
+54
+00:07:06,630 --> 00:07:10,920
+which we have already derived some time ago now.
+
+55
+00:07:12,370 --> 00:07:15,729
+So that is a gas of indistinguishable particles.
+
+56
+00:07:15,730 --> 00:07:19,480
+We have two of them in a direct product that get that squared.
+
+57
+00:07:20,050 --> 00:07:25,870
+And then if we go through all of this, almost everything cancels out.
+
+58
+00:07:26,140 --> 00:07:35,290
+The two one over and factorial is the two factors of V, two, the two N and lambda to the six.
+
+59
+00:07:35,290 --> 00:07:44,950
+And the only thing that doesn't cancel out in fact is that factor of two that we have from the different volumes for the systems.
+
+60
+00:07:45,280 --> 00:07:51,370
+So this ratio of partitioned functions is two to the two in power, which is in this case.
+
+61
+00:07:52,430 --> 00:08:00,830
+Nicely independent of the temperature. So it just drops out of that partial derivative and we can sort of immediately write down this mixing entropy.
+
+62
+00:08:02,230 --> 00:08:08,090
+That is just. The log itself and the log of 2 to 2 and.
+
+63
+00:08:09,110 --> 00:08:19,960
+Is two in like to. So hopefully that is the same as you were able to derive in whatever way you chose.
+
+64
+00:08:20,440 --> 00:08:26,979
+It's also not hard to find when computing the full entropy of the combined system and then
+
+65
+00:08:26,980 --> 00:08:32,980
+subtracting the entropy of the original system that we actually looked at in last week's lecture.
+
+66
+00:08:34,880 --> 00:08:41,360
+The interesting thing about this, or at least interests me, is that this is the.
+
+67
+00:08:42,550 --> 00:08:52,840
+Same mixing energy as we computed in that lecture or the case when all two end of these particles were fully distinguishable from each other.
+
+68
+00:08:54,260 --> 00:09:00,740
+Even though the amount of entropy that we have either in the initial.
+
+69
+00:09:01,940 --> 00:09:06,799
+Collection of two subsystems or that combined system with a wall removed are
+
+70
+00:09:06,800 --> 00:09:10,300
+both different from the distinguishable case that we looked at in lecture.
+
+71
+00:09:10,310 --> 00:09:15,410
+The difference between them is the same which we can interpret.
+
+72
+00:09:17,190 --> 00:09:25,260
+This change in energy as sorry change in entropy has indicating that although there is less information,
+
+73
+00:09:25,280 --> 00:09:29,970
+we have particles that are only distinguished by colour and cannot be labelled.
+
+74
+00:09:30,240 --> 00:09:41,490
+Apart from that. The same relative change in that information, that entropy is the same when all those particles are.
+
+75
+00:09:42,430 --> 00:09:53,020
+Allowed to mix. So that's a way to.
+
+76
+00:09:54,780 --> 00:10:04,620
+Interpret the fact that we get the same mixing entropy out of those two different examples, one in the lecture, the other in this tutorial activity.
+
+77
+00:10:04,620 --> 00:10:13,460
+So. Perhaps you were able to reach that same conclusion over the past week and hopefully saw that same true analogue to.
+
+78
+00:10:15,390 --> 00:10:25,410
+And hopefully he also turned over that sheet of paper or moved on to the second page and saw the more involved aspect of this tutorial activity,
+
+79
+00:10:25,410 --> 00:10:28,680
+which I probably should say something about as well,
+
+80
+00:10:28,680 --> 00:10:35,190
+which is actually doing a calculation once these systems have been re separated
+
+81
+00:10:35,640 --> 00:10:40,020
+to see that the second law of thermodynamics does continue to hold and.
+
+82
+00:10:41,140 --> 00:10:48,670
+The argument that we were able to apply in lecture for indistinguishable articles which said that the initial and
+
+83
+00:10:48,670 --> 00:10:56,530
+final entropy is should be the same is not applicable when we have this single distinguishing characteristic.
+
+84
+00:10:58,890 --> 00:11:04,650
+So I was planning to just go through that. Aspect of the activity.
+
+85
+00:11:05,520 --> 00:11:09,640
+Would that be a worthwhile use of time? Okay, I see nods there.
+
+86
+00:11:09,660 --> 00:11:19,320
+This is the trickier one, and it's also a place where this trick can be useful again.
+
+87
+00:11:19,740 --> 00:11:30,959
+So if we consider that final entropy, we can apply that trick of looking at ratios of partition functions by adding and
+
+88
+00:11:30,960 --> 00:11:35,910
+subtracting the entropy from the combined system that we want to compare this with.
+
+89
+00:11:36,660 --> 00:11:41,820
+So this is a fairly trivial identity.
+
+90
+00:11:44,280 --> 00:11:48,940
+But if we. Just put some parentheses around that difference.
+
+91
+00:11:49,720 --> 00:11:55,680
+Then we can swap in. Our ratio of.
+
+92
+00:11:56,580 --> 00:12:05,400
+Partition functions now for the final system compared to the combined one, and that combined entropy just comes along for the ride.
+
+93
+00:12:08,050 --> 00:12:12,870
+And. As we justified in the lecture.
+
+94
+00:12:13,860 --> 00:12:19,670
+At least for now, we can. Invoke gives approximation.
+
+95
+00:12:21,190 --> 00:12:31,489
+Where. We have seen actually in the previous tutorial that the entropy of this final system is going to be almost
+
+96
+00:12:31,490 --> 00:12:38,030
+entirely dominated by the case where there are an equal number of particles in the two subsystems.
+
+97
+00:12:38,030 --> 00:12:43,850
+We saw that for a spin system where the entropy was dominated by an equal distribution of energies.
+
+98
+00:12:45,030 --> 00:12:48,810
+But while I went through this argument in lecture, I don't need to repeat it now.
+
+99
+00:12:50,600 --> 00:12:56,129
+If we just consider and particles. In each of those two containers.
+
+100
+00:12:56,130 --> 00:13:04,550
+So on each side of the wall that we have reinserted, we will get to a very good approximation, the final entropy.
+
+101
+00:13:06,410 --> 00:13:19,229
+And this simplifies things by. Telling us that basically all we have to specify now to compute the entropy or if that is the entropy,
+
+102
+00:13:19,230 --> 00:13:25,230
+but to write down the partition function that goes into this calculation is that if we have,
+
+103
+00:13:25,660 --> 00:13:36,540
+say, new red particles in the left hand system, then we know that there are and minus new.
+
+104
+00:13:37,850 --> 00:13:46,130
+Blue particles on the left. And there are also and minus new red particles on the right along with.
+
+105
+00:13:47,870 --> 00:13:51,860
+Do the remaining new. Blue particles.
+
+106
+00:13:55,030 --> 00:13:59,450
+Get that back on the screen. So. We can.
+
+107
+00:14:01,790 --> 00:14:12,650
+Pretty much immediately right down. Pretty much by inspection the final partition function as the sum over all of these.
+
+108
+00:14:14,160 --> 00:14:21,150
+Partition functions for individual distributions of red and blue particles adding up to an on each side.
+
+109
+00:14:22,140 --> 00:14:32,760
+So there's an overall sum over new. We have two systems of new indistinguishable particles in a volume V, so that gives us.
+
+110
+00:14:33,750 --> 00:14:37,350
+The usual one over new factorial ratio of.
+
+111
+00:14:38,630 --> 00:14:42,440
+Total volume to occupied volume to the new power.
+
+112
+00:14:44,220 --> 00:14:53,430
+And at the same time, we also have two systems of and minus V indistinguishable particles in that volume V.
+
+113
+00:14:56,010 --> 00:15:01,500
+So this differs only by having a different factorial in front of.
+
+114
+00:15:05,240 --> 00:15:13,940
+The volume factor. And both of those. We have two reds on one side and blues on the other, and I forgot to put in.
+
+115
+00:15:15,210 --> 00:15:23,340
+The power of that ratio V over lambda cubed, that's the and minus new power and that is all squared.
+
+116
+00:15:26,170 --> 00:15:31,510
+So there are some simplifications here. The. Ratios are the same.
+
+117
+00:15:31,510 --> 00:15:35,290
+So the new and minus new power cancels out.
+
+118
+00:15:36,750 --> 00:15:43,410
+And if I re-arrange to a new page, I can pull out.
+
+119
+00:15:47,620 --> 00:15:51,470
+That. Remaining constant factor of.
+
+120
+00:15:54,800 --> 00:15:58,820
+The over. Deploy wavelength cubed.
+
+121
+00:15:59,240 --> 00:16:07,430
+Now, just to the two and and then what is left in the sum that depends on new are these factors of.
+
+122
+00:16:08,780 --> 00:16:13,000
+Win over new factorial. And.
+
+123
+00:16:15,360 --> 00:16:19,230
+One over and minus new factorial both of those squared.
+
+124
+00:16:22,090 --> 00:16:29,890
+So this is a relatively short equation, but still a complicated one to worry about with all of these.
+
+125
+00:16:31,470 --> 00:16:37,220
+Products of factorial squared. One thing we can do with this is.
+
+126
+00:16:39,200 --> 00:16:47,660
+Recognise this as a set of terms that appear from the binomial coefficients and choose new.
+
+127
+00:16:49,980 --> 00:16:57,510
+So I can remember that and she is new is in factorial over new factorial times and minus new factorial.
+
+128
+00:16:58,080 --> 00:17:07,320
+So if we have two powers of that, we get all of those factorial and we are just missing a one over.
+
+129
+00:17:08,300 --> 00:17:12,590
+In factorial all squared. So.
+
+130
+00:17:14,060 --> 00:17:20,630
+Within the sum we can. Swap all those factories of new for binomial.
+
+131
+00:17:21,970 --> 00:17:26,260
+Coefficients and pull out. Even more.
+
+132
+00:17:27,390 --> 00:17:35,900
+Turns. The end factorial squared is now independent of new.
+
+133
+00:17:36,350 --> 00:17:42,230
+The only thing that's left in the sum of her new, in fact, is the square of this binomial coefficient,
+
+134
+00:17:42,320 --> 00:17:50,060
+which is something you would have known to aim for by this little hint that was in the sheet last week.
+
+135
+00:17:51,620 --> 00:17:58,820
+A famous identity named after a 17th century French scientist but discovered about 600 years earlier in China.
+
+136
+00:18:01,110 --> 00:18:05,220
+Where. Well, there are more, General.
+
+137
+00:18:06,270 --> 00:18:14,430
+Sets of relations for products of binomial coefficients that are summed over the linked article on binomial sums.
+
+138
+00:18:14,880 --> 00:18:23,940
+I was into some of those. This is the simplest possible case, and conveniently it gets rid of all of that dependence on new.
+
+139
+00:18:24,030 --> 00:18:28,890
+So it essentially performs the the same for us and the.
+
+140
+00:18:30,150 --> 00:18:36,930
+Final result that we get has. The same custom factors out front.
+
+141
+00:18:40,860 --> 00:18:46,050
+And then just the binomial coefficient of two and choose n.
+
+142
+00:18:48,700 --> 00:18:52,430
+Now looking back to. The.
+
+143
+00:18:54,040 --> 00:18:57,640
+Partition function for the combined system that we were working with earlier.
+
+144
+00:18:58,390 --> 00:19:02,830
+We have two factors of one over and factorial that will cancel.
+
+145
+00:19:03,340 --> 00:19:07,270
+We have V over lambda cubed to the two when that will cancel.
+
+146
+00:19:07,840 --> 00:19:14,980
+So the only thing that does not cancel in the ratio that we are now interested in is.
+
+147
+00:19:15,990 --> 00:19:21,210
+First, the two of the two and coming from that see now in the.
+
+148
+00:19:22,080 --> 00:19:33,410
+Denominator and. Second the binomial coefficient to n choose n which.
+
+149
+00:19:34,370 --> 00:19:38,420
+From. Our trick immediately tells us that the final entropy is.
+
+150
+00:19:40,130 --> 00:19:47,120
+The entropy of the combined system, plus the log of that binomial coefficient, which I was just.
+
+151
+00:19:49,090 --> 00:19:56,550
+We right here in terms of. The usual factorial and then minus two in.
+
+152
+00:19:58,060 --> 00:20:02,650
+Boggs, who from having to raise to the minus two and power.
+
+153
+00:20:03,850 --> 00:20:08,890
+And the question is which of these terms is going to dominate?
+
+154
+00:20:09,640 --> 00:20:12,580
+Or maybe a better way of phrasing it, because a lot can be negative.
+
+155
+00:20:12,580 --> 00:20:23,379
+Will these two terms give an increase to the combined entropy or will they decrease it violating the second law of thermodynamics?
+
+156
+00:20:23,380 --> 00:20:28,660
+We expect that sort of hope for the second law to be respected.
+
+157
+00:20:29,800 --> 00:20:33,800
+And we can. Just check that quickly and easily by.
+
+158
+00:20:34,930 --> 00:20:42,060
+Applying some of our earlier investigations for Sterling's formula to this log.
+
+159
+00:20:43,970 --> 00:20:49,010
+So we expand the log of in factorial as in log n minus.
+
+160
+00:20:49,010 --> 00:20:53,510
+And for all of the factorial factors that we have in there.
+
+161
+00:20:54,750 --> 00:21:03,060
+This is an approximation which we should keep in mind, including only those leading terms from the numerator.
+
+162
+00:21:03,540 --> 00:21:07,230
+We have a two and log two n minus two n.
+
+163
+00:21:07,850 --> 00:21:11,820
+And then in the denominator we have two factors of.
+
+164
+00:21:13,580 --> 00:21:22,430
+And in minus in. And then the two in League two comes along for the ride.
+
+165
+00:21:24,200 --> 00:21:32,510
+So there are cancellations here that we can see between the minus two end and the plus two end when those negative signs cancel out.
+
+166
+00:21:34,650 --> 00:21:45,810
+The two and log n will cancel out part of the two and log two in what remains is a two and log two,
+
+167
+00:21:46,470 --> 00:21:52,970
+which will then cancel out with the two and log two that we have down there.
+
+168
+00:21:52,980 --> 00:21:58,460
+So in fact everything cancels out and that expression is just equal to the combined entropy.
+
+169
+00:21:58,470 --> 00:22:05,340
+So overall we have the result at this level of approximation that.
+
+170
+00:22:06,310 --> 00:22:09,860
+As time goes on, we start from some initial entropy.
+
+171
+00:22:10,180 --> 00:22:14,170
+It increases by that positive mixing entropy to analogue to two,
+
+172
+00:22:14,620 --> 00:22:21,910
+and then that stays just about the same when the wall is reinserted and the systems are separated.
+
+173
+00:22:22,240 --> 00:22:26,920
+So all of that is. Consistent with the.
+
+174
+00:22:28,890 --> 00:22:32,340
+Second law. Which is always reassuring.
+
+175
+00:22:34,980 --> 00:22:43,270
+What's maybe not so reassuring is if we. Remember our previous tutorial and include the.
+
+176
+00:22:44,630 --> 00:22:48,380
+Next correction in Sterling's approximation.
+
+177
+00:22:50,050 --> 00:22:57,300
+We will have a. Log of the square root of two pi.
+
+178
+00:22:57,690 --> 00:23:04,620
+And where is the. Argument to the law.
+
+179
+00:23:04,640 --> 00:23:11,160
+So I'll just. To clarify this and log in minus and.
+
+180
+00:23:13,240 --> 00:23:27,860
+Plus. The log of the square root of two pi in something we derived a few weeks ago or between one and two weeks ago.
+
+181
+00:23:29,630 --> 00:23:36,380
+We've already dealt with those first use terms. And if we add in the change coming from this log of the square root of two
+
+182
+00:23:36,380 --> 00:23:42,200
+by and again for all of the factorial factors that are combined in that log,
+
+183
+00:23:42,680 --> 00:23:50,730
+the overall correction that we have. Taking out the square root to be one half of the log.
+
+184
+00:23:52,090 --> 00:24:00,010
+We get one half times the log of two pi times two n and then a minus sign from having the.
+
+185
+00:24:01,420 --> 00:24:04,930
+To add factorial factors in the denominator.
+
+186
+00:24:05,860 --> 00:24:11,200
+Each of those brings in one half of a log of to play with a single end.
+
+187
+00:24:11,890 --> 00:24:16,400
+So. We can combine this to be.
+
+188
+00:24:17,760 --> 00:24:20,190
+A log of four pi in.
+
+189
+00:24:22,140 --> 00:24:34,140
+I'll bring the square root back in The square root cancels out from having two of the other term, so we just get to pie in the denominator there.
+
+190
+00:24:35,560 --> 00:24:47,060
+And this is. So the square root of four cancels with two, and we are left with the log of one over the square root of high end.
+
+191
+00:24:48,600 --> 00:24:56,650
+Bringing out a negative sign. In front, which is less than zero, which would then.
+
+192
+00:24:58,450 --> 00:25:04,870
+Give it this level of approximation. That.
+
+193
+00:25:06,880 --> 00:25:13,030
+The final entropy is in fact decreased compared to the intermediate.
+
+194
+00:25:15,350 --> 00:25:20,030
+Combine system with the wall removed. So this is perhaps concerning.
+
+195
+00:25:21,240 --> 00:25:28,270
+And the solution. To this conundrum is that we have to.
+
+196
+00:25:29,290 --> 00:25:40,900
+Go beyond that Gibbs approximation. And consider all of the ways that the system could be separated with different numbers
+
+197
+00:25:41,230 --> 00:25:47,770
+of particles ending up on either side of the wall in each of the two subsystems.
+
+198
+00:25:47,780 --> 00:25:54,130
+So we would have C and plus K particles on one side and minus K particles on the other.
+
+199
+00:25:54,610 --> 00:25:57,610
+And for each distribution of the number of particles,
+
+200
+00:25:57,610 --> 00:26:05,140
+we would then similarly have to sum over the distribution of reds and blues among there, all of which is.
+
+201
+00:26:07,170 --> 00:26:14,790
+Too complicated to deal with here and now, but it can. Be something you can play with if you are so inclined.
+
+202
+00:26:15,540 --> 00:26:23,729
+If we do go beyond that, gives approximation. What it introduces is sort of void corrections that the order of log in which
+
+203
+00:26:23,730 --> 00:26:28,860
+are usually negligible when compared to and itself when and is very large.
+
+204
+00:26:28,860 --> 00:26:35,670
+We saw that if we have ten of the power, 23 particles and we take the log of that, we end up with about 50,
+
+205
+00:26:36,060 --> 00:26:41,850
+which is about ten to the power, 22 orders of magnitude smaller, it's usually negligible.
+
+206
+00:26:41,850 --> 00:26:49,050
+But here it is the size of the difference that is introduced upon reinserting that wall.
+
+207
+00:26:54,260 --> 00:27:01,130
+That is the remaining step that I will spare you here and now.
+
+208
+00:27:04,840 --> 00:27:08,350
+Instead of going into those.
+
+209
+00:27:11,180 --> 00:27:14,680
+Very complicated. Calculations.
+
+210
+00:27:16,000 --> 00:27:27,200
+It might be nice to take a bit of a. A break from the maths and think a bit more about the physics and kind of intuitive physical arguments.
+
+211
+00:27:30,530 --> 00:27:34,400
+Of which there are a lot related to this sort of.
+
+212
+00:27:36,690 --> 00:27:42,360
+Question of how do we see that the entropy is always increasing as time goes on.
+
+213
+00:27:42,930 --> 00:27:54,660
+And one of the earliest and and most famous of these kind of thought experiments was introduced in the mid 1800s by Maxwell,
+
+214
+00:27:55,380 --> 00:27:58,860
+same fellow as Maxwell's Laws of Electromagnetism.
+
+215
+00:28:00,950 --> 00:28:03,980
+And Maxwell. Suggested that.
+
+216
+00:28:04,580 --> 00:28:10,730
+What if we had? Some very clever demon.
+
+217
+00:28:12,420 --> 00:28:21,960
+Or speaking less poetically, some mechanical device that could be set up in such a way as to distinguish between
+
+218
+00:28:22,830 --> 00:28:29,070
+the different properties of the kinds of particles that we are dealing with.
+
+219
+00:28:29,550 --> 00:28:34,379
+In this thought experiment of combining a system, mixing them up and then trying to re separate them.
+
+220
+00:28:34,380 --> 00:28:40,800
+So if we had a demon that could see these particles and tell the difference between the reds and blues,
+
+221
+00:28:41,550 --> 00:28:50,700
+it could then arrange for red particles to pass through this wall or to get to the left side and blue particles to pass through
+
+222
+00:28:50,700 --> 00:29:00,419
+on to the right and get back exactly to that initial state whose entropy is less than the mixed system by that mixing entropy.
+
+223
+00:29:00,420 --> 00:29:03,420
+And so the argument is that.
+
+224
+00:29:05,280 --> 00:29:15,450
+Such a device would then violate the second law of thermodynamics and allow the entropy to be reduced by the mixing entropy.
+
+225
+00:29:16,460 --> 00:29:18,020
+To get back to that initial state.
+
+226
+00:29:21,250 --> 00:29:28,840
+Maybe a better or the the way of formulating this than Maxwell himself did was not in terms of the colour of particles,
+
+227
+00:29:29,290 --> 00:29:32,410
+but rather in terms of their energy.
+
+228
+00:29:34,180 --> 00:29:39,640
+Which is related, as we saw, to the temperature of a gas in the canonical ensemble.
+
+229
+00:29:42,000 --> 00:29:47,070
+So the idea here is that this red shaded region.
+
+230
+00:29:49,210 --> 00:29:52,720
+The demon has a little door that it can open or close as particles come around.
+
+231
+00:29:53,230 --> 00:30:01,780
+If particles have a high amount of kinetic energy, the demon opens or closes the door to keep them all on that left hand side in that container.
+
+232
+00:30:01,810 --> 00:30:10,270
+B If the particles have little kinetic energy, the same thing happens to keep them in the left, in the right hand side, a container.
+
+233
+00:30:10,300 --> 00:30:19,750
+A So overall, as this goes on, more and more energy starts to be concentrated in this container.
+
+234
+00:30:19,750 --> 00:30:26,110
+B And what is happening is basically you start off with a set of two systems at the same temperature,
+
+235
+00:30:26,410 --> 00:30:31,870
+and the operation of this demon is raising the temperature of one of those systems while lowering the temperature of the other.
+
+236
+00:30:32,410 --> 00:30:35,560
+It's not something you expect to happen spontaneously.
+
+237
+00:30:38,150 --> 00:30:43,700
+And it does correspond to a reduction in the entropy of those total systems.
+
+238
+00:30:43,730 --> 00:30:48,020
+That's something that. We can now determine.
+
+239
+00:30:49,830 --> 00:30:56,070
+From the work that we've done mathematically formulating this, I think at the time actually was working in 1867.
+
+240
+00:30:56,430 --> 00:31:05,920
+Entropy was. A newly introduced concept and not quite on the level of mathematical rigour that we are used to it.
+
+241
+00:31:06,340 --> 00:31:17,900
+So this is phrased more. As the unnatural illness of a spontaneous difference in temperatures arising by the action of whatever device.
+
+242
+00:31:18,830 --> 00:31:23,520
+We have enough. In operation in this sort of setup.
+
+243
+00:31:24,180 --> 00:31:27,450
+So I think I said out loud, but didn't write down that this was.
+
+244
+00:31:28,760 --> 00:31:33,940
+Back in the 1860s. And ever since then.
+
+245
+00:31:34,120 --> 00:31:43,600
+So we're approaching the 200 year mark, or at least 175 years where this thought experiment has been in the literature.
+
+246
+00:31:44,350 --> 00:31:51,070
+And people throughout that time and continuing today have been looking for ways of realising
+
+247
+00:31:51,640 --> 00:31:59,420
+this sort of demon or this sort of device that can conceptually violate the second law.
+
+248
+00:31:59,440 --> 00:32:05,390
+So. This is a picture I have to zoom out even further to.
+
+249
+00:32:06,410 --> 00:32:14,629
+Fit on the screen. This is a cartoon from that's as far zoomed out as it goes.
+
+250
+00:32:14,630 --> 00:32:22,280
+So we'll talk through it step by step. I'm cartoon conceptually illustrating an experiment from 2010.
+
+251
+00:32:24,110 --> 00:32:29,930
+I've put I think this was in a Physics Today article which is a nice kind of.
+
+252
+00:32:31,640 --> 00:32:36,140
+Not quite popular, but not technical magazine on physics and physics topics.
+
+253
+00:32:37,490 --> 00:32:50,030
+Article was 2022, I think, 2021 a couple of years ago, and it was reporting, among other things, work by a Japanese group.
+
+254
+00:32:51,650 --> 00:32:58,330
+Let's see, Tayyab. It's all working in 2010.
+
+255
+00:32:58,330 --> 00:33:07,900
+So a little while ago. Where they constructed an experiment that was functionally equivalent to Maxwell's demon.
+
+256
+00:33:08,830 --> 00:33:13,420
+Which is why they have a little cartoon demon floating around this cartoon of what they were doing.
+
+257
+00:33:14,290 --> 00:33:19,000
+The idea is they have particles that. RNA statistical system.
+
+258
+00:33:19,510 --> 00:33:26,890
+The micro states these particles adapt are fluctuating sarcastically as time goes on and.
+
+259
+00:33:28,100 --> 00:33:33,890
+Whenever the particle fluctuates to a higher energy level, the.
+
+260
+00:33:34,970 --> 00:33:45,690
+Experimental device that they had set up. Basically turns on a barrier that prevents the particle from fluctuating back to lower energy levels.
+
+261
+00:33:46,050 --> 00:33:49,960
+So that's what's being illustrated in this first step. Particle has some energy.
+
+262
+00:33:49,980 --> 00:33:54,420
+It's in a statistical system, so those energies are sarcastically fluctuating.
+
+263
+00:33:55,020 --> 00:34:01,230
+If they go down or we wait for it to come back up, if they ever go up, then this barrier is inserted.
+
+264
+00:34:02,190 --> 00:34:06,940
+But as well. Zoom in a bit to the second step.
+
+265
+00:34:08,260 --> 00:34:12,580
+This prevents the particle from ever going back down to a lower energy.
+
+266
+00:34:12,850 --> 00:34:17,830
+It is still fluctuating. It can still keep climbing up to higher energies.
+
+267
+00:34:18,310 --> 00:34:22,030
+You repeat this process and you end up with particles essentially rolling,
+
+268
+00:34:22,510 --> 00:34:28,390
+rolling up hills in the energy landscape, going to higher and higher potential energy.
+
+269
+00:34:29,970 --> 00:34:38,310
+And this. It's obvious to see from that discussion of energies as opposed to entropy is.
+
+270
+00:34:39,630 --> 00:34:50,330
+But if you go through that calculation. And hopefully it seems intuitively plausible when I say that this sort of process
+
+271
+00:34:50,330 --> 00:34:56,450
+of a particle rolling up a hill is reducing the entropy of the overall system.
+
+272
+00:34:56,630 --> 00:35:03,230
+It is the unnatural behaviour that you expect to be forbidden by the second law of thermodynamics.
+
+273
+00:35:04,470 --> 00:35:08,820
+And then the question becomes, is the second law violated?
+
+274
+00:35:27,680 --> 00:35:32,110
+I'll just give you a few seconds to think whether you expect the second law to be violated.
+
+275
+00:35:33,770 --> 00:35:38,929
+And. Maybe more interestingly, if you do not expect the second law to be violated,
+
+276
+00:35:38,930 --> 00:35:44,690
+which is what I would recommend, assuming in general, how is it not violated if you.
+
+277
+00:35:46,820 --> 00:35:56,060
+Except to my contention that this process is reducing the energy of these particles that are being rolled, randomly rolled back up the hill.
+
+278
+00:36:03,070 --> 00:36:09,250
+Well, that's not our activity for today, so I won't leave it for you to puzzle over.
+
+279
+00:36:09,250 --> 00:36:15,490
+But just basically summarise the inclusion of this work, which is.
+
+280
+00:36:16,550 --> 00:36:25,300
+That. The process. The operation of this daemon ends up adding entropy to the total universe.
+
+281
+00:36:25,300 --> 00:36:35,530
+And in particular, they do the calculation in the experiment to verify that the entropy that gets added to the total universe and the surroundings of
+
+282
+00:36:35,530 --> 00:36:44,140
+this experiment by the operation of the experiment is indeed more entropy added than is removed from the particles themselves.
+
+283
+00:36:44,560 --> 00:36:51,430
+So entropy is not being destroyed, but it is being moved around from this particle system to its surroundings.
+
+284
+00:36:52,950 --> 00:36:58,349
+And also created in such a way that the second law is obeyed.
+
+285
+00:36:58,350 --> 00:37:05,590
+And some of the details are that. Of the little cartoon barriers that are being shown here are not.
+
+286
+00:37:07,390 --> 00:37:11,980
+They don't look like that in the experiment itself. What these amounts to are actually.
+
+287
+00:37:15,270 --> 00:37:21,450
+Lasers that are being shown or shine that are shining on all of these particles.
+
+288
+00:37:22,140 --> 00:37:24,629
+As the particles fluctuate, the higher energies,
+
+289
+00:37:24,630 --> 00:37:32,400
+new laser frequencies are activated to prevent those particles from dropping back down to lower energies again.
+
+290
+00:37:34,330 --> 00:37:37,570
+So. Some of the technical terminology.
+
+291
+00:37:41,400 --> 00:37:49,650
+These lasers are introducing a so-called trapping potential that traps the particles at certain energy levels,
+
+292
+00:37:50,070 --> 00:37:59,340
+and this trapping the need to shine lots of laser light into all of its associated energy into this system.
+
+293
+00:37:59,820 --> 00:38:04,970
+Turns out also to. Add some entropy.
+
+294
+00:38:06,870 --> 00:38:13,260
+From that external action that is being used to lower the entropy of the particles, the overall.
+
+295
+00:38:14,330 --> 00:38:21,500
+Entropy of the universe. If we account for the lasers as well as the trapped particles does indeed.
+
+296
+00:38:22,690 --> 00:38:28,120
+And of increasing in agreement with the the second law of thermodynamics.
+
+297
+00:38:29,960 --> 00:38:37,640
+So. Probably going on too long with.
+
+298
+00:38:38,970 --> 00:38:43,860
+That discussion of mixing entropy and this related concept of Maxwell's demon.
+
+299
+00:38:45,980 --> 00:38:46,730
+Do you have any?
+
+300
+00:38:48,510 --> 00:38:57,720
+Questions are anything you want to raise about both those mathematical calculations or the more conceptual physics arguments about these?
+
+301
+00:38:58,990 --> 00:39:02,350
+Clever daemons that Maxwell proposed.
+
+302
+00:39:14,300 --> 00:39:24,300
+Not seeing any. Let's talk about the actual activity for not merely today, but for the for you to work on over the coming week, which is.
+
+303
+00:39:25,290 --> 00:39:33,390
+Connecting to these still anaemic cycles that we are in the in the midst of talking about.
+
+304
+00:39:33,960 --> 00:39:44,910
+So maybe before jumping into the activity itself, which is related to a particular thermodynamic cycle that describes petrol engines,
+
+305
+00:39:45,390 --> 00:39:51,510
+it would be worth stepping back a bit and kind of previewing what we will.
+
+306
+00:39:52,540 --> 00:39:55,690
+Start off doing tomorrow morning.
+
+307
+00:39:56,680 --> 00:40:05,030
+So. In. Some of the index cycles in general, we have.
+
+308
+00:40:05,920 --> 00:40:10,900
+The basic idea initially introduced by a Saudi colonel in the 1820s.
+
+309
+00:40:12,410 --> 00:40:17,030
+And that, you know, even before the physical physics had been developed as a discipline.
+
+310
+00:40:18,540 --> 00:40:25,290
+We imagine our system of ideal gas particles through which we are.
+
+311
+00:40:29,490 --> 00:40:35,220
+Expanding, contracting or raising a lowering the pressure as we looked at the PV diagrams on Tuesday.
+
+312
+00:40:35,700 --> 00:40:37,140
+If we allow that system to be.
+
+313
+00:40:38,200 --> 00:40:50,050
+Connected to two different reservoirs or generalise the concept of this thermal reservoir to some source or sink of energy.
+
+314
+00:40:51,340 --> 00:40:59,080
+Then we can carry out the sorts of idiomatic or isothermal compression and expansion that we were working through earlier.
+
+315
+00:40:59,800 --> 00:41:04,180
+So the kind of cartoon we can look at to.
+
+316
+00:41:05,130 --> 00:41:11,820
+Have an intuitive physical picture of this sort of thing is here.
+
+317
+00:41:11,850 --> 00:41:16,770
+We will go through the details of this tomorrow, but we can already see the idea that.
+
+318
+00:41:18,350 --> 00:41:26,300
+We have some stages or some processes in a thermodynamic cycle that ends up circling back around to its starting point.
+
+319
+00:41:27,340 --> 00:41:33,250
+In some of those stages, the volume of the gas is being expanded and others it's being compressed.
+
+320
+00:41:34,000 --> 00:41:39,820
+And there are two different reservoirs from which we can either bring in heat.
+
+321
+00:41:40,780 --> 00:41:48,730
+So we have the idea that this. Heat is coming in from some hot reservoir with a temperature t h.
+
+322
+00:41:49,990 --> 00:41:54,790
+And at the same time there's a different thermal reservoir that the system can also talk to.
+
+323
+00:41:55,240 --> 00:41:58,840
+So here, draw on the left side. This has a.
+
+324
+00:41:59,780 --> 00:42:06,170
+Low temperature t l It's a cold reservoir and that can absorb some of the output exhaust heat.
+
+325
+00:42:08,340 --> 00:42:12,780
+Generated in the process of running this cycle. So each of these.
+
+326
+00:42:13,980 --> 00:42:14,520
+Steps.
+
+327
+00:42:14,910 --> 00:42:24,900
+Whether we allow he to come in as we expand or compress the system, or if we expand or compress it so rapidly that there's no time for heat to flow.
+
+328
+00:42:25,500 --> 00:42:32,910
+All of this maps on to lines in the P diagrams that we saw on Tuesday.
+
+329
+00:42:34,260 --> 00:42:41,190
+This is the PV diagram for the particular cycle that that cartoon describes, the Cano cycle.
+
+330
+00:42:41,910 --> 00:42:46,590
+That's not the one that this activity is about. So we'll go through the Kano cycle.
+
+331
+00:42:47,990 --> 00:42:55,030
+In detail in class tomorrow. The tutorial activity that I'm sorry to leave you.
+
+332
+00:42:55,540 --> 00:43:00,610
+Time to get started with it today, really, but I can look at it briefly.
+
+333
+00:43:01,300 --> 00:43:10,840
+This is the PV diagram for the auto cycle, so it has some similarities with the car note cycle but also some.
+
+334
+00:43:12,390 --> 00:43:20,250
+Differences in the details. I forget exactly when this was developed.
+
+335
+00:43:20,250 --> 00:43:23,639
+It would have been in the actually, it was developed by people other than Otto.
+
+336
+00:43:23,640 --> 00:43:29,820
+Some French and Italian physicists came up with this idea, but Otto was the one who got the credits around the.
+
+337
+00:43:31,240 --> 00:43:41,380
+Mid 1800s again, I believe. This is basically describing an idealised way, the operation of a petrol engine.
+
+338
+00:43:42,070 --> 00:43:49,120
+So if we start from this point one, which has a volume one and a temperature one.
+
+339
+00:43:50,710 --> 00:43:54,400
+Then our engine compresses the gas.
+
+340
+00:43:55,510 --> 00:44:01,659
+In particular by driving a piston into a cylinder which squeezes the gas,
+
+341
+00:44:01,660 --> 00:44:07,180
+and as it compresses, the pressure of the gas has to rise by the ideal gas law.
+
+342
+00:44:08,490 --> 00:44:11,520
+This also leads to a rise in his temperature.
+
+343
+00:44:12,060 --> 00:44:18,030
+And this compression, as you can expect for a petrol engine, is happening rather rapidly,
+
+344
+00:44:18,300 --> 00:44:26,880
+can have thousands of RPM in a typical car engine that is carrying out the cycle.
+
+345
+00:44:27,750 --> 00:44:40,120
+So this is. An idiomatic compression up until we get to some high pressure at point two, which has some higher temperature t two.
+
+346
+00:44:40,960 --> 00:44:47,890
+And what happens here is that well, ignition, the gas that is being compressed is not just air,
+
+347
+00:44:47,890 --> 00:44:52,600
+but it's a mixture of air and vaporised petrol, that is.
+
+348
+00:44:55,460 --> 00:45:04,400
+Very highly flammable. And at this point, point to a spark is introduced to that mixture, which is already at a relatively high pressure.
+
+349
+00:45:04,790 --> 00:45:11,840
+The mixture burns. And this we interpret as our reservoir, dumping lots of heat into the gas itself.
+
+350
+00:45:12,470 --> 00:45:19,400
+We can. It is a legitimate way of analysing these systems.
+
+351
+00:45:19,400 --> 00:45:25,040
+Just to say that the same heat flow that we are thinking about from energy exchange.
+
+352
+00:45:26,070 --> 00:45:29,459
+Between a system and its external heat.
+
+353
+00:45:29,460 --> 00:45:39,570
+Baths is the same kind of introduction of heat that we have from burning a bunch of gas and introducing a lot of energy to the remaining particles.
+
+354
+00:45:40,230 --> 00:45:50,670
+This happens very quickly, essentially, instantaneously, and in particular so quickly that the volume of the gas does not have any time to change.
+
+355
+00:45:51,180 --> 00:45:59,550
+So it's driven up to a very high pressure at a very high temperature t three at that same fixed volume V two.
+
+356
+00:46:00,930 --> 00:46:07,829
+And now there's just so much pressure in this system that it pushes back out on that
+
+357
+00:46:07,830 --> 00:46:13,950
+piston which can be used to drive work and get power out of the operation of the cycle.
+
+358
+00:46:14,580 --> 00:46:17,790
+This is also a very fast process.
+
+359
+00:46:18,510 --> 00:46:23,640
+So it's very. Almost ideally idiomatic.
+
+360
+00:46:24,930 --> 00:46:30,290
+Expansion of the system. The one final wrinkle is in this exhaust process.
+
+361
+00:46:31,190 --> 00:46:38,330
+We in order to get back to our starting point, we have to to lower the energy of and lower the temperature.
+
+362
+00:46:39,770 --> 00:46:43,490
+Of the gas from this t four down to t one.
+
+363
+00:46:44,180 --> 00:46:53,210
+We do that at a fixed volume not by sitting around and waiting for the gas to cool, but actually by swapping.
+
+364
+00:46:55,900 --> 00:47:07,930
+The burnt gas particles with a fresh batch of that mixture of air and petrol that is then ready to be compressed and ignites again.
+
+365
+00:47:10,500 --> 00:47:21,470
+So we bring in a fresh amount of fuel. Expelling the burnt particles 1 to 1 with the number,
+
+366
+00:47:21,640 --> 00:47:29,890
+the amount of particles that we bring in so that the overall number of particles stays the same and we get back exactly to our starting macro state.
+
+367
+00:47:31,490 --> 00:47:35,780
+And that is, well, the exhaust that we are used to seeing on the road.
+
+368
+00:47:36,410 --> 00:47:41,270
+So the activity is going to be to compute.
+
+369
+00:47:43,210 --> 00:47:46,880
+The efficiency. Of this auto cycle.
+
+370
+00:47:46,890 --> 00:47:51,370
+So this is something that we will define. In.
+
+371
+00:47:54,430 --> 00:48:00,130
+More carefully in lecture tomorrow, but essentially it is the net amount of work.
+
+372
+00:48:01,100 --> 00:48:07,079
+That is done by the cycle. Normalised by the amount of heat that has to be dumped into it.
+
+373
+00:48:07,080 --> 00:48:12,300
+In this case, that is just the amount of fuel that we need.
+
+374
+00:48:13,490 --> 00:48:22,090
+To drive the the engine. And the word out is the the power that we are getting from the engine.
+
+375
+00:48:22,630 --> 00:48:31,110
+The work in is what we have to do to compress it in the first place, which does not happen spontaneously, but requires some energy investment from us.
+
+376
+00:48:31,780 --> 00:48:37,240
+And for the auto cycle specifically, this efficiency turns out to be.
+
+377
+00:48:38,650 --> 00:48:43,690
+A function of the ratio of the two volumes that we are given.
+
+378
+00:48:46,070 --> 00:48:51,890
+That's known as the. Compression ratio often called our.
+
+379
+00:48:53,100 --> 00:49:04,760
+So that. Volume 2.1 divided by the volume at point two, which is greater than one, and this can also be expressed in terms of.
+
+380
+00:49:07,840 --> 00:49:11,480
+All of the. Let's see in terms.
+
+381
+00:49:13,390 --> 00:49:19,720
+Of the four temperatures as we go around the cycle t one, two, two, two, two, three and four.
+
+382
+00:49:20,170 --> 00:49:31,820
+And this is something that. You have a week to explore and compute and compare to the Kano cycle we will do in lecture tomorrow morning.
+
+383
+00:49:37,100 --> 00:49:41,720
+So the first step, what you could have done today, if I had left you any time, would have been.
+
+384
+00:49:42,620 --> 00:49:50,989
+Considering each of these four stages compression, ignition, power and exhaust and seeing where heat comes in, where work is done,
+
+385
+00:49:50,990 --> 00:49:59,810
+either through the system or by the system, that will have to be done on your own At this point, because I've gone over time.
+
+386
+00:50:00,380 --> 00:50:09,860
+I will check one last time to see if there are questions about this setup or the the goal of this.
+
+387
+00:50:11,270 --> 00:50:20,030
+Next activity. If any questions do arise later today while you'll have a chance to ask them tomorrow morning.
+
+388
+00:50:20,030 --> 00:50:27,860
+So consider how this would work out and then I'll see you tomorrow morning for probably the
+
+389
+00:50:28,340 --> 00:50:36,170
+last bit of lecture on these thermodynamic cycles in the canonical ensemble as a whole.
+
+390
+00:50:39,460 --> 00:50:39,750
+So.
+
