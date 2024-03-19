@@ -1,0 +1,1332 @@
+1
+00:00:00,900 --> 00:00:09,570
+Okay, I can get going on a warm and sunny Tuesday morning before.
+
+2
+00:00:11,620 --> 00:00:15,400
+We pick back up with where we were last week?
+
+3
+00:00:16,220 --> 00:00:19,480
+Are there any immediate questions?
+
+4
+00:00:20,980 --> 00:00:27,040
+And have it occurred to you since then and just to.
+
+5
+00:00:29,000 --> 00:00:37,670
+Take a quick look at the overall course of the of the module. We are done for now in lecture with applications of the canonical ensemble.
+
+6
+00:00:38,150 --> 00:00:46,280
+You have the Otto cycle to work with in the tutorial, and although we have a bit of a break after this week's tutorial,
+
+7
+00:00:46,280 --> 00:00:53,659
+I'll probably give you something more that it comes in the context of the canonical ensemble looking at heat
+
+8
+00:00:53,660 --> 00:01:03,710
+capacities and solids so that can keep going on while the lectures turn to a bit more formal and foundational topics.
+
+9
+00:01:04,400 --> 00:01:13,380
+So what we started introducing. On Friday we'll sort of formalise this morning is.
+
+10
+00:01:15,040 --> 00:01:20,950
+The third and final of the statistical ensembles that we will look at in this module.
+
+11
+00:01:21,760 --> 00:01:28,960
+So we started with the micro canonical ensemble that describes systems that directly conserve energy and particle number,
+
+12
+00:01:28,990 --> 00:01:32,620
+therefore have to be completely isolated from the rest of the universe.
+
+13
+00:01:34,240 --> 00:01:43,479
+We moved to the canonical ensemble and did a lot with that, where the system is in thermal contact with its surroundings that fixes its temperature,
+
+14
+00:01:43,480 --> 00:01:47,140
+but allows its energy to fluctuate from micro state to micro state.
+
+15
+00:01:47,920 --> 00:01:56,680
+And now in the grand canonical case, we enhanced that thermal reservoir to a particle reservoir,
+
+16
+00:01:57,460 --> 00:02:03,760
+which allows the system to exchange both energy and particles with its environment.
+
+17
+00:02:06,750 --> 00:02:12,310
+And at the same time fixes both the temperature. And this new quantity we introduced.
+
+18
+00:02:13,470 --> 00:02:21,990
+The chemical potential which for the micro canonical ensemble and thermodynamic equilibrium is.
+
+19
+00:02:23,490 --> 00:02:29,580
+Defined as the dependence of the entropy on the number of particles with a fixed total energy.
+
+20
+00:02:31,290 --> 00:02:38,400
+And we saw that with this particular definition factors of T and negative signs,
+
+21
+00:02:40,680 --> 00:02:54,180
+we had the sort of intuitive result that this led to particles flowing from larger to smaller chemical potentials.
+
+22
+00:02:56,160 --> 00:03:06,960
+In order to keep the entropy itself increasing as the number of degrees of freedom increased, and obey the second law of thermodynamics.
+
+23
+00:03:08,520 --> 00:03:15,210
+So similarly to the way that the energy can fluctuate from micro state to micro state in the grey in the canonical ensemble.
+
+24
+00:03:15,990 --> 00:03:28,260
+Now in the grand canonical ensemble of the particle number and the energy are specific to the micro state I and they can change.
+
+25
+00:03:29,460 --> 00:03:34,320
+As our system evolves in time. Sampling different possible.
+
+26
+00:03:35,320 --> 00:03:39,580
+Configurations of its particles and in this case, even different.
+
+27
+00:03:41,220 --> 00:03:51,220
+Numbers of particles. And our initial goal for today, again very similar to the canonical ensemble,
+
+28
+00:03:51,970 --> 00:03:59,770
+is that we want to write down the probability for each of those micro states and we want to
+
+29
+00:03:59,770 --> 00:04:06,850
+have an expression that does not depend on the details of the particle reservoir at all,
+
+30
+00:04:07,360 --> 00:04:12,160
+apart from knowing that that reservoir is there to fix T and EMU.
+
+31
+00:04:15,380 --> 00:04:20,990
+And although I have the attendance code on the board, I realise I forgot to write it down here.
+
+32
+00:04:20,990 --> 00:04:25,970
+So just step back. And put.
+
+33
+00:04:27,460 --> 00:04:32,480
+That on this record. 710 1154 this morning.
+
+34
+00:04:34,820 --> 00:04:42,559
+And check again if there are any questions about the ideal gases and thermodynamic cycles
+
+35
+00:04:42,560 --> 00:04:48,470
+that we've been working on or the grand canonical ensemble that we are now turning to.
+
+36
+00:04:54,890 --> 00:05:07,670
+So the steps that we will follow to attain our ultimate goal of getting the probability distribution for grand canonical microstates are
+
+37
+00:05:07,670 --> 00:05:18,380
+going to be a lot like we did to formally define the canonical ensemble and get rid of the of any dependence on the external reservoir.
+
+38
+00:05:20,090 --> 00:05:26,270
+We will introduce a sensible arts for the form of that reservoir.
+
+39
+00:05:26,900 --> 00:05:37,040
+Use that to derive these probabilities and then show that the probabilities are independent of the onslaughts that we adopted.
+
+40
+00:05:37,550 --> 00:05:43,550
+So that. We all information about the reservoir drops out apart from TMU.
+
+41
+00:05:43,560 --> 00:05:46,980
+So try to go through this fairly quickly.
+
+42
+00:05:47,850 --> 00:05:51,750
+So hopefully it will be more of a reminder than something brand new.
+
+43
+00:05:54,180 --> 00:06:04,780
+So we will take that same. Replica trick that we used in the canonical case and adapt it to the grand canonical setting.
+
+44
+00:06:06,190 --> 00:06:13,070
+So as a reminder, that trick is illustrated by this sort of drawing which.
+
+45
+00:06:17,950 --> 00:06:21,580
+It's almost symmetric around 180 degree rotation.
+
+46
+00:06:22,030 --> 00:06:27,310
+But now we have. Our overall total system.
+
+47
+00:06:27,430 --> 00:06:30,820
+That is the combination of our small system of interest.
+
+48
+00:06:30,850 --> 00:06:40,660
+This single box that is outlined in red, that is in thermal equilibrium and thermal contact with several other.
+
+49
+00:06:42,390 --> 00:06:47,040
+Copies of itself that form that particle reservoir.
+
+50
+00:06:48,090 --> 00:06:52,490
+Now, in addition to that. Thermal.
+
+51
+00:06:53,490 --> 00:06:58,530
+Heat exchange. That is possible. That leaves these particles in thermodynamic equilibrium.
+
+52
+00:06:58,780 --> 00:07:03,300
+We also allow the exchange of individual particles from.
+
+53
+00:07:04,280 --> 00:07:15,080
+What any of these different replicas to others replicas are all at least indirectly in contact with each other,
+
+54
+00:07:15,530 --> 00:07:18,590
+which puts the ball in an epic equilibrium,
+
+55
+00:07:19,040 --> 00:07:24,860
+sometimes called the zeroth law of thermodynamics, which I might have glossed over when we did this in the canonical case.
+
+56
+00:07:25,430 --> 00:07:32,240
+So this reservoir, our anxieties is that this is our minus one copies.
+
+57
+00:07:34,300 --> 00:07:43,480
+Of our system of interest that guarantees that the reservoir is both large and sensible as our minus one is much larger than one.
+
+58
+00:07:43,480 --> 00:07:49,050
+So we have lots of copies and overall. We have.
+
+59
+00:07:49,890 --> 00:07:56,430
+Our copies. Of our system to deal with in.
+
+60
+00:07:57,780 --> 00:08:02,160
+This overall micro canonical.
+
+61
+00:08:04,180 --> 00:08:13,420
+Total system that conserves energy and particles across the system, along with the reservoir, but not in any individual replica.
+
+62
+00:08:16,930 --> 00:08:25,390
+So that is the setting, essentially the same as the replica trick or the canonical ensemble.
+
+63
+00:08:31,510 --> 00:08:41,170
+And with that set up, we can write down some of the same results for the properties of that total system.
+
+64
+00:08:41,500 --> 00:08:47,709
+It's energy. So this is the total energy, the energy of the entire universe system,
+
+65
+00:08:47,710 --> 00:08:54,760
+plus replica breaks up into just the sum of those pieces as an extensive quantity.
+
+66
+00:08:56,260 --> 00:09:00,100
+So the system can swap energy with.
+
+67
+00:09:01,370 --> 00:09:05,600
+The. Ah, minus one copies of itself in that reservoir.
+
+68
+00:09:06,020 --> 00:09:13,560
+And the total sum just ends up being a literal sum over all our copies that form the system plus reservoir.
+
+69
+00:09:13,580 --> 00:09:21,920
+What is new is that the same thing happens for the total number of particles now only conserved across.
+
+70
+00:09:22,990 --> 00:09:34,000
+The sum of all our replicas we are in for the system itself can fluctuate by exchanging particles with its environment.
+
+71
+00:09:35,410 --> 00:09:38,740
+So if as a matter of notation, we say that.
+
+72
+00:09:40,190 --> 00:09:45,590
+Our small system of interest has a countable number of micro states.
+
+73
+00:09:47,850 --> 00:09:52,740
+Which we've seen how to generalise this to the uncountable.
+
+74
+00:09:54,750 --> 00:10:10,500
+Case. Which we did in the context of ideal gases and could well will deal with that probably after the spring break in this case.
+
+75
+00:10:10,500 --> 00:10:15,270
+But for now, without loss of generality, we can take the number of microstates to be finite.
+
+76
+00:10:15,640 --> 00:10:24,660
+Know that we can extend this to the infinite uncountable case later on and each of these microstates.
+
+77
+00:10:24,660 --> 00:10:32,480
+So make a one through omega m. As its corresponding micro state energy sub i.
+
+78
+00:10:34,290 --> 00:10:37,799
+The corresponding number of particles.
+
+79
+00:10:37,800 --> 00:10:42,250
+And so by. Can also.
+
+80
+00:10:43,910 --> 00:10:56,360
+Again. For now, consider these particles to be indistinguishable, which is motivated by physical applications later on.
+
+81
+00:10:56,690 --> 00:10:59,390
+If we apply this to gases of molecules,
+
+82
+00:11:01,400 --> 00:11:08,450
+we can tell that labelling molecules is not possible thanks to the different energy attributes that we observe.
+
+83
+00:11:09,260 --> 00:11:18,380
+For now, this can be just a particular choice that we will use for our answers and show that information about it drops out.
+
+84
+00:11:20,030 --> 00:11:26,180
+And in terms of these micro states, rather than the replicas,
+
+85
+00:11:26,780 --> 00:11:39,620
+we can recast these total conserved quantities of that micro canonical universe in the form of more convenient sums that.
+
+86
+00:11:40,940 --> 00:11:49,000
+It was done through the framework of these. Occupation numbers and occupation probabilities.
+
+87
+00:11:50,920 --> 00:11:59,730
+So and I can recall, is the number of replicas from the villages.
+
+88
+00:12:00,960 --> 00:12:11,500
+And I is the number of replicas that have adopted microstate I at any given point in time and the probability piece of I just divides
+
+89
+00:12:12,310 --> 00:12:24,250
+that into by by the total number of replicas to get a set of numbers that all add up to 100% behaving like probabilities and that way.
+
+90
+00:12:25,290 --> 00:12:36,610
+So this is just counting. The number of replicas that have adopted each corresponding microstate omega ie,
+
+91
+00:12:37,300 --> 00:12:47,170
+and correspondingly the probability that if we choose a replica at random, we will find it in Microstate omega i at that particular point in time.
+
+92
+00:12:47,950 --> 00:12:53,739
+So. As before. Summing over all of the small system,
+
+93
+00:12:53,740 --> 00:13:02,560
+micro states and counting of the occupation numbers for each of those micro states has to account for all our of the replicas.
+
+94
+00:13:05,220 --> 00:13:13,740
+Dividing through both sides of that equation by our give us our usual expression for probabilities, summing up to one,
+
+95
+00:13:15,210 --> 00:13:21,960
+and we can now express those total conserved quantities in terms of sums over
+
+96
+00:13:21,960 --> 00:13:29,880
+micro states and occupation numbers rather than directly sums over replicas.
+
+97
+00:13:29,880 --> 00:13:34,310
+So this is. Rearranging those sums,
+
+98
+00:13:34,310 --> 00:13:40,070
+which we are free to do because we have a finite number of microstates and a
+
+99
+00:13:40,070 --> 00:13:47,300
+well-defined procedure to take that finite number and extend it to a continuous case.
+
+100
+00:13:47,690 --> 00:13:52,160
+And I'm sorry about writing an equation that says end equals end times end with three different ends,
+
+101
+00:13:52,550 --> 00:13:59,430
+but that's what we've built ourselves into by the definitions of terminology that have come along so far.
+
+102
+00:13:59,450 --> 00:14:04,730
+So keeping things consistent with what we're used to in terms of occupation numbers.
+
+103
+00:14:06,450 --> 00:14:09,600
+Particles in each micro states and the total number of particles.
+
+104
+00:14:10,080 --> 00:14:13,380
+Hopefully this isn't causing any confusion.
+
+105
+00:14:16,380 --> 00:14:21,510
+So any questions about the basic setup of the replica trick before we go on to.
+
+106
+00:14:22,810 --> 00:14:42,250
+Put it to use. So also something to recall from the canonical ensemble work is that given this on, that's for the form of the reservoir.
+
+107
+00:14:42,250 --> 00:14:43,780
+As a bunch of replicas,
+
+108
+00:14:44,470 --> 00:14:54,610
+we want to compute the temperature and now extending that to include also the chemical potential of this overall micro canonical system,
+
+109
+00:14:55,570 --> 00:15:04,510
+because both of those are intensive quantities. They are inherited by every individual replica in that system.
+
+110
+00:15:08,170 --> 00:15:16,280
+And computing. The micro economical temperature and chemical potential is something we know how to do.
+
+111
+00:15:16,310 --> 00:15:24,560
+These are both given by derivatives of the entropy with respect to either energy or particle number.
+
+112
+00:15:25,790 --> 00:15:26,449
+But importantly,
+
+113
+00:15:26,450 --> 00:15:36,050
+all of those derivatives are taken in thermodynamic equilibrium so that only dependence on the large scale conserved quantities arises.
+
+114
+00:15:38,870 --> 00:15:47,810
+And in order to ensure that our overall omega total is in thermodynamic.
+
+115
+00:15:49,340 --> 00:15:52,340
+Equilibrium. We need to.
+
+116
+00:15:54,060 --> 00:16:05,940
+Maximise its entropy, subject to the constraints that come from the conserved energy and particle number.
+
+117
+00:16:10,860 --> 00:16:19,950
+A maximisation problem with constraints. We are now very familiar with how to do that using electronic multipliers.
+
+118
+00:16:21,960 --> 00:16:32,520
+So we will bring that to bear, modify the expression for the entropy to impose these constraints conveniently.
+
+119
+00:16:32,910 --> 00:16:40,770
+We already have the expression for the entropy itself without any constraints.
+
+120
+00:16:41,490 --> 00:16:48,240
+So. We recall that in the Micro Canonical Ensemble intro Thermodynamic Equilibrium,
+
+121
+00:16:48,630 --> 00:16:57,150
+the entropy is the log of the number of micro states that we have and the number of micro states for this total system.
+
+122
+00:16:58,750 --> 00:17:04,240
+We can compute exactly the same way we did the last time we had replicas.
+
+123
+00:17:05,110 --> 00:17:15,430
+We have. All of the information in the system presented in the form of the occupation numbers or equivalently the occupation probabilities.
+
+124
+00:17:16,330 --> 00:17:26,070
+We have to account for all the possible ways that say and one replicas can be in state.
+
+125
+00:17:26,350 --> 00:17:36,550
+Omega one then the way that all of the remaining are minus and one replicas can be in the state omega two and so on.
+
+126
+00:17:37,060 --> 00:17:46,260
+We get that. Telescoping product.
+
+127
+00:17:47,560 --> 00:18:01,840
+Our minus and one minus, and to end all the ways of distributing and three replicas in micro states, omega three all the way off until the end.
+
+128
+00:18:02,590 --> 00:18:06,490
+That telescopes down just to the ratio of.
+
+129
+00:18:07,790 --> 00:18:15,950
+The total number of replicas divided by the product with a factorial divided by the product of the factorial is of all of the.
+
+130
+00:18:17,790 --> 00:18:24,330
+And the occupation numbers that we have for our M micro states and.
+
+131
+00:18:26,690 --> 00:18:37,520
+Taking the log of this and applying Sterling's formula for all of these occupation numbers and are itself being much larger than one gave us.
+
+132
+00:18:39,880 --> 00:18:40,960
+Exactly this.
+
+133
+00:18:44,410 --> 00:18:59,050
+Expression for all and I much larger than one and are much larger than all individual and I so it's the same formal expression for the entropy.
+
+134
+00:18:59,110 --> 00:19:03,760
+The difference is that the micro states corresponding to these occupation numbers
+
+135
+00:19:04,150 --> 00:19:08,410
+are now different and in particular can have fluctuating numbers of particles.
+
+136
+00:19:08,860 --> 00:19:19,930
+So all that difference has been wrapped up in these probabilities that we are trying to extract and show they are independent of the reservoir.
+
+137
+00:19:21,740 --> 00:19:30,860
+So that is. The starting points that we now modify with like ranch multipliers to impose constraints and having.
+
+138
+00:19:33,310 --> 00:19:36,720
+Use this reservoir to fix a another quantity.
+
+139
+00:19:36,730 --> 00:19:41,680
+We have another constraint to incorporate as a Lagrange multiplier.
+
+140
+00:19:42,760 --> 00:19:50,080
+So this modified entropy that we will maximise starts off as.
+
+141
+00:19:52,260 --> 00:19:59,660
+The total entropy. And then it's modifications imposed.
+
+142
+00:20:01,740 --> 00:20:08,310
+Two of the constraints. We've already seen that all the occupation probabilities add up to one and.
+
+143
+00:20:09,760 --> 00:20:21,240
+The. Total energy has to be accounted for by the energy in each micro state,
+
+144
+00:20:21,750 --> 00:20:30,360
+summed up by the occupation numbers of each micro state where I've broken up that occupation number into the occupation,
+
+145
+00:20:30,360 --> 00:20:37,940
+probability times the overall number of replicas. And now similarly for the particle number.
+
+146
+00:20:42,590 --> 00:20:49,100
+You have effectively the same constraints with a new Lagrange multiplier that I've chosen
+
+147
+00:20:49,100 --> 00:20:57,170
+to call a gamma that we will end up relating to the fixed quantities in this system,
+
+148
+00:20:57,770 --> 00:21:02,690
+or at least that is the goal that we pursue by maximising.
+
+149
+00:21:04,330 --> 00:21:14,500
+Our modified entropy with respect to the occupation probability for any given micro state peak.
+
+150
+00:21:17,240 --> 00:21:22,250
+At the at the maximum. This derivative is zero.
+
+151
+00:21:22,820 --> 00:21:29,899
+And we've done this derivative before. So I don't need to go through the whole song and dance about getting delta function's Delta chronic or deltas.
+
+152
+00:21:29,900 --> 00:21:36,350
+Okay, I'm taking derivatives of pi with respect to peak and then summing over them to.
+
+153
+00:21:40,890 --> 00:21:45,840
+Basically convert. Isaac Hayes can just charge through.
+
+154
+00:21:47,100 --> 00:21:53,159
+And see that we get a log peek out of the first term in that derivative.
+
+155
+00:21:53,160 --> 00:22:00,930
+The second term will give pi over pi with deltas high in K, which is one.
+
+156
+00:22:03,970 --> 00:22:09,940
+Alpha times that some of Delta's. Which also collapses to one.
+
+157
+00:22:09,940 --> 00:22:14,909
+And similarly. Beta r e.
+
+158
+00:22:14,910 --> 00:22:26,780
+K plus gamma are. NK any objections to that rapid calculation?
+
+159
+00:22:32,420 --> 00:22:45,300
+Not seeing any. Let's isolate. You dependence on peak by moving it to the other side of the equation and dividing through by it are.
+
+160
+00:22:46,260 --> 00:22:55,470
+We had a negative one plus alpha over r minus beta e k.
+
+161
+00:22:57,880 --> 00:23:02,140
+Plus gamma and K and then exponential dating. Both sides.
+
+162
+00:23:04,210 --> 00:23:11,870
+And rearranging. The exponentials again in the same way that we did in the canonical case.
+
+163
+00:23:13,450 --> 00:23:21,190
+Can pull out this exponential minus beta, e k, plus gamma and k, and then.
+
+164
+00:23:25,200 --> 00:23:34,529
+Divide that by the exponential of one minus alpha over r so properties of exponential split the sign of the argument by putting it in
+
+165
+00:23:34,530 --> 00:23:46,110
+the denominator and we are free to swap out our free parameter with that Lagrange multiplier alpha for a different free parameter,
+
+166
+00:23:46,860 --> 00:23:55,290
+which I will just call z G to distinguish it from the Z that we used in the canonical case,
+
+167
+00:23:56,760 --> 00:24:06,030
+the G standing for grand and then the numerator is just the exponential.
+
+168
+00:24:07,260 --> 00:24:13,630
+Of that some. So.
+
+169
+00:24:16,000 --> 00:24:19,540
+This is only part way to the goal we want to reach.
+
+170
+00:24:19,540 --> 00:24:30,400
+We have an expression for peak, but it depends on these three like branch multipliers alpha, beta, gamma, or equivalently z, g, beta gamma.
+
+171
+00:24:30,970 --> 00:24:37,870
+And we have to impose our constraints to figure out what exactly those amount to in terms
+
+172
+00:24:37,870 --> 00:24:43,900
+of the fixed quantities that we have to deal with the temperature and chemical potential.
+
+173
+00:24:44,890 --> 00:24:54,900
+So starting. By imposing the constraints that.
+
+174
+00:24:56,140 --> 00:25:03,280
+All of these probabilities peak have to add up to one when we go across all micro states of the system.
+
+175
+00:25:05,500 --> 00:25:14,140
+The CGI, as we can see from the exponential, does not depend on the properties of the micro states e, k or NK.
+
+176
+00:25:14,810 --> 00:25:19,210
+That's a constant that can be pulled out of that sum.
+
+177
+00:25:19,420 --> 00:25:25,750
+The exponential factor. Does depend on I and I.
+
+178
+00:25:27,190 --> 00:25:30,310
+And if we will solve this equation for.
+
+179
+00:25:32,670 --> 00:25:40,680
+Synergy itself. We obtain an expression for this parameter in terms of the other two beta and gamma,
+
+180
+00:25:41,730 --> 00:25:49,350
+and in particular it is just the sum over all micro states of this exponential factor.
+
+181
+00:25:54,230 --> 00:26:01,480
+Which. Is very similar to the partition function that we found in the canonical case.
+
+182
+00:26:01,990 --> 00:26:09,250
+Now our exponential has just been extended to depend on a number of particles in the system as well.
+
+183
+00:26:10,750 --> 00:26:15,370
+As the energy in the system for each micro state.
+
+184
+00:26:18,330 --> 00:26:26,050
+So going forward, we will call this edgy. A grand canonical partition function.
+
+185
+00:26:27,600 --> 00:26:32,399
+In a fairly direct analogy to the canonical partition function that we've been
+
+186
+00:26:32,400 --> 00:26:38,520
+working with as our starting points for analysing any canonical system of interest.
+
+187
+00:26:38,520 --> 00:26:43,680
+This will also be the starting point for analysing grand canonical systems.
+
+188
+00:26:48,080 --> 00:26:56,710
+Since we once. So we still have to get this grand canonical partition function in terms of temperature and chemical potential rather than electrons,
+
+189
+00:26:56,720 --> 00:27:00,980
+multipliers, beta and gamma. And to do that.
+
+190
+00:27:02,700 --> 00:27:07,490
+Nobody can remember that. These.
+
+191
+00:27:08,920 --> 00:27:15,549
+Fixed quantities are coming from derivatives of the entropy in thermodynamic equilibrium.
+
+192
+00:27:15,550 --> 00:27:18,670
+So let's write down that entropy and see.
+
+193
+00:27:21,520 --> 00:27:36,710
+What we can get out of it. So going back to the total entropy that we started off with before this modification, we can write it down by.
+
+194
+00:27:39,610 --> 00:27:51,870
+Plugging in. This expression for the probability is that we have found in one of the two places that these probabilities appear in the sum.
+
+195
+00:27:54,350 --> 00:28:04,950
+So we. Have a sum over pi times a logarithm.
+
+196
+00:28:06,740 --> 00:28:24,450
+Of. One over ZG times our exponential factor depending on energy and particle number that we can break up just using the properties of logarithms.
+
+197
+00:28:25,410 --> 00:28:38,160
+So there's a minus R out front sum of her PI and then three terms, the log of one over Z, she is the negative log of said she itself.
+
+198
+00:28:39,690 --> 00:28:44,430
+And then to this gets added the log of the exponential which is just its arguments.
+
+199
+00:28:46,020 --> 00:28:56,830
+So. Minus Beta II, plus Gamma and I in this first term, when we sum over the micro states,
+
+200
+00:28:57,310 --> 00:29:02,950
+Z G is independent of micro state and we just get some of the probabilities that add up to one.
+
+201
+00:29:03,970 --> 00:29:13,810
+The negative signs cancel there. Just give us a r log of the grand canonical partition function negatives.
+
+202
+00:29:13,810 --> 00:29:21,060
+Also cancel in the second term. MG multiplayer beta is independent of micro state.
+
+203
+00:29:22,320 --> 00:29:33,629
+And this our times The Sum of Pi Times II we can rewrite as the sum of occupation
+
+204
+00:29:33,630 --> 00:29:42,840
+number and I times he I which was the total energy that we had written down.
+
+205
+00:29:43,680 --> 00:29:46,860
+So just to make this explicit in these notes.
+
+206
+00:29:48,850 --> 00:29:59,320
+The relation between occupation numbers and occupation probabilities introduces the overall factors of R and multiplying the probability.
+
+207
+00:30:00,160 --> 00:30:07,810
+So that sum just gives us that conserves micro canonical energy of our r replica system.
+
+208
+00:30:08,530 --> 00:30:17,080
+And similarly the relative negative sign of the total particle number of that overall micro canonical system.
+
+209
+00:30:20,440 --> 00:30:29,770
+And now we having maximised this entropy by taking this derivative and getting this expression that we've put in,
+
+210
+00:30:30,280 --> 00:30:36,520
+we can now take the derivatives which were corresponded to thermodynamic equilibrium and give us,
+
+211
+00:30:37,960 --> 00:30:49,210
+for instance, one over t, which was just the derivative of that total entropy with respect to the total energy or the total number of particles fixed.
+
+212
+00:30:49,660 --> 00:30:58,090
+And to save some ink, I will not put the total subscripts on all of those AC and they just come along for the ride in all of this.
+
+213
+00:30:59,020 --> 00:31:08,120
+So. Happy with the calculation that we've done to get this far before taking these derivatives.
+
+214
+00:31:12,080 --> 00:31:17,360
+Today is a pretty calculation heavy day. But after this point,
+
+215
+00:31:17,630 --> 00:31:24,770
+we will have all of the formalism and foundations in place and then be able to look at more interesting and more physical
+
+216
+00:31:24,770 --> 00:31:31,339
+applications of the great canonical ensemble like we did in the canonical case with ideal gases and thermodynamic cycles.
+
+217
+00:31:31,340 --> 00:31:38,930
+So it should just be today. That is this extended derivation and then we can put it to use later on.
+
+218
+00:31:52,330 --> 00:32:00,640
+So charging ahead with this derivative, when we take the derivative of the law, Gibbs said,
+
+219
+00:32:02,170 --> 00:32:13,090
+what we need to do is keep in mind that at least at this point, the ZG that we have depends on beta and gamma.
+
+220
+00:32:13,210 --> 00:32:18,820
+The other two electrons multipliers. So we need to basically pull.
+
+221
+00:32:20,750 --> 00:32:23,810
+Or highlight that dependence by.
+
+222
+00:32:25,940 --> 00:32:35,240
+Working through the chain rule, taking derivatives with respect to taking derivatives of beta and gambling with respect to E and then getting.
+
+223
+00:32:37,130 --> 00:32:41,030
+The direct dependence of that logarithm that we actually have.
+
+224
+00:32:41,600 --> 00:32:46,610
+So in that way, the basic application of the chain rule.
+
+225
+00:32:49,340 --> 00:32:53,620
+For both. Beta and Gamma.
+
+226
+00:32:59,490 --> 00:33:04,380
+It looks like I might not have left myself enough space on that line to go through the other two terms.
+
+227
+00:33:06,240 --> 00:33:09,270
+E With respect to itself is fairly easy.
+
+228
+00:33:10,460 --> 00:33:13,640
+That is beta. We also add.
+
+229
+00:33:15,510 --> 00:33:19,600
+The Times debated he.
+
+230
+00:33:21,220 --> 00:33:26,860
+A partial derivative of the branch multiplier with respect to the conserved quantity that we don't yet know.
+
+231
+00:33:27,400 --> 00:33:37,270
+And similarly. And the gamma D, so.
+
+232
+00:33:38,380 --> 00:33:44,860
+Out of all of the partial derivatives in here, the ones we know how to do are these partial derivatives of log, said G.
+
+233
+00:33:45,310 --> 00:33:56,770
+With respect to beta and gamma, since we have a nice compact expression for the G in terms of those Lagrange multipliers.
+
+234
+00:33:57,130 --> 00:34:10,430
+So pulling that out. The derivative of the log gives one over its argument, and then the derivative passes inside and in particular.
+
+235
+00:34:11,540 --> 00:34:15,410
+Through the finite sum.
+
+236
+00:34:18,760 --> 00:34:23,560
+And inside there it encounters this exponential factor.
+
+237
+00:34:26,450 --> 00:34:35,130
+Which will then bring down. Just a negative eye for all of these.
+
+238
+00:34:37,280 --> 00:34:42,350
+Micro states. Exponential factor sticks around unchanged.
+
+239
+00:34:43,860 --> 00:34:57,030
+And we can recognise each of those exponential factors normalised by our grand canonical partition function as the micro states probability.
+
+240
+00:35:00,900 --> 00:35:09,030
+So with that. Overall negative sign out front we have the sum of.
+
+241
+00:35:10,780 --> 00:35:20,470
+Micro state energies, each weighted by their occupation probability, which is almost that total energy with a negative sign.
+
+242
+00:35:20,950 --> 00:35:28,690
+Just divided by our. To get us to convert back and forth between occupation probabilities and occupation numbers.
+
+243
+00:35:33,050 --> 00:35:39,740
+The derivative of log, said G. With respect to gamma is going to be similar.
+
+244
+00:35:41,540 --> 00:35:45,140
+The log flows out one of his g. We just have.
+
+245
+00:35:46,770 --> 00:35:50,190
+D Gamma. Inside the sun.
+
+246
+00:35:54,250 --> 00:36:04,510
+So we will again have that exponential factor and one over his energy that corresponds to the probability piece of I this time.
+
+247
+00:36:04,510 --> 00:36:16,420
+Now we bring down a positive and I, which just adds up to and divided by the total number of replicas in that same way.
+
+248
+00:36:17,890 --> 00:36:29,740
+And plugging these two results back into our expression for the inverse temperature we have are divided by our times.
+
+249
+00:36:29,740 --> 00:36:42,160
+A negative E. Keep party and then are divided by R plus and times.
+
+250
+00:36:42,160 --> 00:36:47,380
+D. Gamma d. And the other three terms.
+
+251
+00:36:50,080 --> 00:36:57,020
+Similar to what happened for. The canonical ensemble.
+
+252
+00:36:57,230 --> 00:37:07,970
+They simplify very pleasantly and keep us from ever having to worry about how these Lagrange multipliers depend on Gamma.
+
+253
+00:37:08,540 --> 00:37:15,620
+We have plus and minus copies of E deep ed, E and the committee E,
+
+254
+00:37:16,910 --> 00:37:22,370
+and all that is left is the same relation we found for the canonical ensemble
+
+255
+00:37:22,370 --> 00:37:28,580
+that beta electrons multiplier is now identified as one over the temperature.
+
+256
+00:37:37,110 --> 00:37:44,910
+I'll content with that result and also the extended calculation we needed in order to get it.
+
+257
+00:37:53,860 --> 00:37:59,590
+So far so good. And the chemical potential itself is similar.
+
+258
+00:38:00,730 --> 00:38:05,860
+If I pull that negative T to the left side of the equation, I'm just left with.
+
+259
+00:38:07,990 --> 00:38:14,350
+The corresponding partial derivative with the role of particle number and energy.
+
+260
+00:38:16,090 --> 00:38:20,960
+Interchanged. So.
+
+261
+00:38:22,590 --> 00:38:28,210
+Essentially the only difference here is that we have. The derivative of.
+
+262
+00:38:29,170 --> 00:38:36,370
+Peter and Gamma with respect to end rather than with respect to E.
+
+263
+00:38:39,490 --> 00:38:48,549
+Though, in the other terms. I mean, the derivative of E with respect to end with E fixed is zero.
+
+264
+00:38:48,550 --> 00:38:58,760
+So that does not appear. We just pick up a minus gamma, minus and GMAT and.
+
+265
+00:38:59,990 --> 00:39:06,560
+And. We can plug in our results from above for these two derivatives.
+
+266
+00:39:07,760 --> 00:39:14,060
+The derivative of loggerhead with respect to beta was minus E over R.
+
+267
+00:39:14,840 --> 00:39:15,829
+With respect to gamma,
+
+268
+00:39:15,830 --> 00:39:30,320
+it was an over our those two results there and we can recognise minus e the hours cancel debate at the end will cancel off that term
+
+269
+00:39:31,100 --> 00:39:43,730
+and then the plus and the gamut and cancels with that term and we end with gamma equals R minus gamma is equal to minus me over T.
+
+270
+00:39:46,060 --> 00:39:49,060
+So the negative signs also cancel.
+
+271
+00:39:49,870 --> 00:39:53,590
+And we have a expression for our other Lagrange multiplier.
+
+272
+00:39:56,660 --> 00:40:00,320
+Expressed in terms of our fixed quantities, chemical potential and temperature.
+
+273
+00:40:01,220 --> 00:40:05,420
+So. Putting everything together.
+
+274
+00:40:10,250 --> 00:40:19,060
+We have. Derived an expression for the micro state probabilities.
+
+275
+00:40:21,920 --> 00:40:34,330
+That depend only on. Fixed quantity is available to us with no information about the particle reservoir.
+
+276
+00:40:35,790 --> 00:40:47,550
+So the probability pi for microstate omega I is a one over z g times the exponential factor of its energy divided by temperature
+
+277
+00:40:48,150 --> 00:40:56,100
+and still in that exponential the chemical potential times its particle number also divided by the temperature which we can.
+
+278
+00:40:58,240 --> 00:41:05,500
+Rewrite it a bit more compactly by reusing beta now is the inverse temperature rather than a Lagrange multiplier.
+
+279
+00:41:06,250 --> 00:41:09,280
+E-I minus MEW and I.
+
+280
+00:41:10,690 --> 00:41:19,870
+That overall negative sign pulled out front and importantly in here the grand canonical partition function.
+
+281
+00:41:20,710 --> 00:41:31,150
+We now have available the function of t in view rather than like ranch multipliers, and this is just the sum of these exponential factors.
+
+282
+00:41:32,930 --> 00:41:46,150
+Over. All of the micro states of the system with a analogous result when we move to continuous variables.
+
+283
+00:41:46,750 --> 00:41:55,660
+So from micro states, a micro state, both the energy and particle number.
+
+284
+00:41:56,820 --> 00:42:05,340
+Now fluctuate. The temperature and chemical potential are kept fixed from that reservoir.
+
+285
+00:42:05,340 --> 00:42:12,749
+But all information about the reservoir has dropped out of the quantities that we have describing our system.
+
+286
+00:42:12,750 --> 00:42:17,220
+So that reservoir is not only irrelevant, but in fact unknowable.
+
+287
+00:42:17,670 --> 00:42:22,600
+In this statistical approach. So this was.
+
+288
+00:42:25,060 --> 00:42:31,780
+The goal for today, which we've reached with a few minutes to spare.
+
+289
+00:42:33,760 --> 00:42:41,320
+So I'll spend those few minutes. Just briefly previewing where we will start.
+
+290
+00:42:43,610 --> 00:42:56,280
+On Friday. So we have our grand canonical alchemical potential that like the.
+
+291
+00:42:58,420 --> 00:43:09,820
+Canonical chemical potential will be our starting point for every analysis that we do of a grand canonical system.
+
+292
+00:43:11,270 --> 00:43:19,070
+So just like going through the calculations today, but looking ahead to.
+
+293
+00:43:21,720 --> 00:43:28,650
+The next step is to make use of what we have derived in the grant canonical setting.
+
+294
+00:43:31,290 --> 00:43:33,750
+We will always start.
+
+295
+00:43:36,920 --> 00:43:46,580
+With the grand canonical partition function that contains all possible information about our system and use that as a basis to derive.
+
+296
+00:43:48,340 --> 00:43:51,920
+Large scale quantities. Of interest.
+
+297
+00:43:54,080 --> 00:43:58,670
+So similarly to what we did for the canonical ensemble.
+
+298
+00:43:59,330 --> 00:44:05,150
+One of those quantities. We'll be the entropy now.
+
+299
+00:44:07,480 --> 00:44:13,570
+Viewed as a function of the fixed quantities, temperature and chemical potential.
+
+300
+00:44:14,560 --> 00:44:22,720
+The basic definition of this stays the same as it as it is for all different statistical ensembles.
+
+301
+00:44:25,530 --> 00:44:28,980
+Similar to the canonical case.
+
+302
+00:44:30,940 --> 00:44:34,090
+Because the internal energy is.
+
+303
+00:44:35,470 --> 00:44:39,040
+No longer conserved. It can fluctuate from micro state to micro state.
+
+304
+00:44:39,550 --> 00:44:47,830
+The well-defined smooth quantity that we can look at as a function of temperature and chemical potential is its expectation value.
+
+305
+00:44:48,670 --> 00:44:53,050
+So there are some overall micro states. Of the micro energy.
+
+306
+00:44:53,090 --> 00:44:59,240
+Weighted by a corresponding micro state of probability which will look.
+
+307
+00:45:04,300 --> 00:45:12,370
+Like the usual. Essentially a generalisation of that Boltzmann distribution to incorporate
+
+308
+00:45:12,910 --> 00:45:18,730
+information about the particle number as well as the energy in each microstate.
+
+309
+00:45:20,470 --> 00:45:28,540
+And now that the particle number itself is allowed to fluctuate, we also have to.
+
+310
+00:45:30,620 --> 00:45:34,730
+Focus on its expectation value in order to get.
+
+311
+00:45:37,050 --> 00:45:46,170
+A smooth, large scale quantity. That we can analyse in thermodynamic equilibrium.
+
+312
+00:45:46,800 --> 00:45:52,150
+So the analogous expression. With.
+
+313
+00:45:53,110 --> 00:45:58,310
+Particle number and I. In place of the internal energy.
+
+314
+00:46:00,980 --> 00:46:02,330
+In this overall expression.
+
+315
+00:46:07,420 --> 00:46:20,950
+And what we will do on Friday is relate all of these to derivatives of the log of the greater canonical partition function, which is.
+
+316
+00:46:22,310 --> 00:46:30,950
+Sufficiently fundamental that we will repackage that logarithm as an analogue.
+
+317
+00:46:32,220 --> 00:46:36,990
+Of the Helmholtz free energy. Formerly called.
+
+318
+00:46:39,460 --> 00:46:44,000
+The grand canonical potential. And this statement.
+
+319
+00:46:47,430 --> 00:46:56,520
+Holds in thermodynamic equilibrium. So all of these quantities will end up being related to derivatives of.
+
+320
+00:47:01,590 --> 00:47:05,440
+The negative temperature times the log of said G.
+
+321
+00:47:06,840 --> 00:47:23,130
+Which if we reorganised that to solve for ZG in terms of this grand canonical potential, fine, we just get a exponential factor and can write.
+
+322
+00:47:24,490 --> 00:47:27,720
+The. Micro state probabilities.
+
+323
+00:47:28,840 --> 00:47:35,080
+In a compact way is just this exponential factor of beta.
+
+324
+00:47:37,480 --> 00:47:40,480
+Times five minus I.
+
+325
+00:47:41,910 --> 00:47:49,170
+Plus you and I. Just dividing through.
+
+326
+00:47:50,630 --> 00:47:55,120
+By e to the minus five over T for z g.
+
+327
+00:47:55,850 --> 00:48:03,380
+So this is the grand canonical analogue of the Helmholtz free energy, sometimes called the Landauer Free energy.
+
+328
+00:48:05,700 --> 00:48:09,360
+To emphasise that. Analogy.
+
+329
+00:48:10,170 --> 00:48:17,430
+And we will see how this grand economical potential, the land our free energy provides our quantities of interest.
+
+330
+00:48:18,210 --> 00:48:18,840
+On Friday.
+
+331
+00:48:21,100 --> 00:48:34,390
+So any questions about what we've done today for that forecast for Friday Before we wrap up and I'll let you get on with the rest of your Tuesday.
+
+332
+00:48:34,690 --> 00:48:52,670
+Hopefully the sun stays shining. Not seeing any.
+
+333
+00:48:52,970 --> 00:49:03,310
+That is it for today. So stop that recording and clear out so that the next class can.
+
