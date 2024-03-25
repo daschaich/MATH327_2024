@@ -1,0 +1,1492 @@
+1
+00:00:01,820 --> 00:00:11,240
+Okay. The. Computer was having trouble loading some programs this morning, but it seems to be working now,
+
+2
+00:00:11,240 --> 00:00:19,190
+just almost on time to get underway with the last couple of hours of statistical physics lecture before a bit of a break.
+
+3
+00:00:19,190 --> 00:00:29,329
+So. Plan for today is to wrap up that grand canonical ensemble, the third and final statistical ensemble we'll be looking at,
+
+4
+00:00:29,330 --> 00:00:33,020
+and it doesn't look like that will take too long from where we are.
+
+5
+00:00:33,020 --> 00:00:41,509
+So we will then start to, uh, think about how to formulate quantum statistics and what exactly that entails,
+
+6
+00:00:41,510 --> 00:00:46,190
+which you don't need to have any background in quantum mechanics to follow this,
+
+7
+00:00:46,190 --> 00:00:52,400
+but it will be more involved than just saying we quantised the energy levels and to proceed from there.
+
+8
+00:00:52,880 --> 00:00:56,780
+So I think it's going to be good to introduce that.
+
+9
+00:00:57,170 --> 00:01:03,980
+And this, uh, last lecture before the break and you can have a few weeks to meditate on it and we'll,
+
+10
+00:01:04,940 --> 00:01:10,940
+uh, think about it again, review the basic arguments back when we reconvene in April.
+
+11
+00:01:10,940 --> 00:01:14,150
+And hopefully they will sound familiar. And, uh.
+
+12
+00:01:17,510 --> 00:01:22,760
+Unobjectionable by that point. But before we get on with that, here is.
+
+13
+00:01:24,100 --> 00:01:29,219
+Then you. Six digit code for today and I can check to see.
+
+14
+00:01:29,220 --> 00:01:35,580
+Are there any questions about what we've been doing up until now in the module?
+
+15
+00:01:42,590 --> 00:01:47,750
+So the plan for today or the place to start for today is just picking up from.
+
+16
+00:01:50,500 --> 00:02:02,450
+The formulation of the grand canonical ensemble that. We began earlier this week where we repeated the replica trick, um,
+
+17
+00:02:03,200 --> 00:02:11,540
+with a slight variation of now allowing the number of particles in each microstates to fluctuate along with the energy.
+
+18
+00:02:11,930 --> 00:02:22,490
+With the idea that our system is able to exchange both particles and energy with some big external particle reservoir.
+
+19
+00:02:23,970 --> 00:02:33,090
+And the replica trick then gave us this grand canonical partition function with no reference to any details of that reservoir, which is.
+
+20
+00:02:34,300 --> 00:02:37,780
+Similarly to the partition function for the canonical ensemble,
+
+21
+00:02:37,780 --> 00:02:46,090
+the starting point of all analyses that we will do for grand canonical systems where the particle number is not conserved,
+
+22
+00:02:46,420 --> 00:02:51,280
+but in its place the chemical potential is fixed by.
+
+23
+00:02:52,880 --> 00:02:56,780
+Particle exchange with that reservoir. So similarly to.
+
+24
+00:02:58,300 --> 00:03:00,640
+The ordinary partition function that we are used to.
+
+25
+00:03:00,640 --> 00:03:07,660
+In the canonical case, the screen canonical partition function z sub g sums over all possible microstates,
+
+26
+00:03:07,660 --> 00:03:20,680
+with generalisation possible when these microstates vary continuously and we extend that Boltzmann factor exponential of minus beta times energy,
+
+27
+00:03:20,740 --> 00:03:30,070
+where is the inverse temperature. This picks up another factor of beta times mu, the chemical potential times the number of particles.
+
+28
+00:03:30,490 --> 00:03:38,170
+So essentially the the more particles that we have with you being a negative number,
+
+29
+00:03:38,380 --> 00:03:44,410
+the less of a weight that microstates is going to introduce in general into the overall system.
+
+30
+00:03:46,790 --> 00:03:51,620
+And I think we wrapped up on Tuesday just at the point of.
+
+31
+00:03:53,670 --> 00:03:58,830
+Introducing a slate. Slightly different way of looking at this partition function.
+
+32
+00:03:59,970 --> 00:04:04,540
+The. Introducing the grand canonical potential.
+
+33
+00:04:06,310 --> 00:04:12,640
+This capital. Phi is the negative temperature times the logarithm of the partition function,
+
+34
+00:04:13,480 --> 00:04:20,350
+and this is analogous to the Helmholtz free energy that was related to the canonical partition function.
+
+35
+00:04:20,770 --> 00:04:29,169
+It's sometimes called the Landau free energy to emphasise that similarity, and in a similar way to the canonical case,
+
+36
+00:04:29,170 --> 00:04:40,450
+we now want to derive interesting large scale quantities for any given statistical system governed by the grand canonical ensemble.
+
+37
+00:04:41,170 --> 00:04:52,420
+And we will do that by computing derivatives of this grand canonical potential, or equivalently, the logarithm of the partition function.
+
+38
+00:04:53,470 --> 00:04:59,980
+And this gives us things like the entropy, the expectation value for the internal energy,
+
+39
+00:05:00,850 --> 00:05:10,290
+as well as the expectation value for the number of particles, all of which are in thermodynamic equilibrium.
+
+40
+00:05:10,300 --> 00:05:15,150
+Smooth, stable properties of the fixed quantities in the grand canonical setting.
+
+41
+00:05:15,160 --> 00:05:26,229
+The temperature and chemical potential. So if there are no immediate questions or objections, we can charge ahead.
+
+42
+00:05:26,230 --> 00:05:32,860
+And. Just compute these derivatives coming from this fundamental definition.
+
+43
+00:05:35,200 --> 00:05:40,180
+Since I don't see. Any signs of a concern we'll start with.
+
+44
+00:05:41,590 --> 00:05:45,310
+It's the easiest derivative we have to consider.
+
+45
+00:05:45,640 --> 00:05:51,570
+That will bring in only this dependence on the chemical potential in z g.
+
+46
+00:05:52,090 --> 00:05:56,530
+So just to massage things slightly.
+
+47
+00:05:57,940 --> 00:06:02,620
+Will write this in terms of beta rather than inverse beta which is temperature.
+
+48
+00:06:03,130 --> 00:06:07,180
+So that grand canonical potential has a negative one over beta.
+
+49
+00:06:08,350 --> 00:06:19,070
+Corresponding to negative t. And then the derivative of the log will bring down a factor of the argument to the log.
+
+50
+00:06:20,370 --> 00:06:25,290
+Along with by the usual chain rule, the derivative itself.
+
+51
+00:06:26,630 --> 00:06:32,280
+Which. We can freely move inside the sum over all microstates.
+
+52
+00:06:33,640 --> 00:06:40,150
+So derivative of this exponential factor with respect to the chemical potential.
+
+53
+00:06:41,410 --> 00:06:46,300
+So that brings down a positive beta times.
+
+54
+00:06:46,480 --> 00:06:50,230
+And I know that beta does not depend on.
+
+55
+00:06:51,490 --> 00:06:56,650
+The microstate. It can come outside the sum and we are left with.
+
+56
+00:07:02,050 --> 00:07:09,460
+And so the number of particles in each microstate being weighted by the exponential factor feeding into the partition function,
+
+57
+00:07:09,970 --> 00:07:13,870
+we can cancel out those factors of beta.
+
+58
+00:07:15,040 --> 00:07:30,749
+Recognise that. This one over ZG times the sum or times the exponential factor is our probability pi in each microstate.
+
+59
+00:07:30,750 --> 00:07:40,530
+I probably should have written that down as part of the, um, recap in review, so I will do so.
+
+60
+00:07:42,380 --> 00:07:49,340
+Just here to have it. Pi is one over z, g and e to the minus beta.
+
+61
+00:07:51,610 --> 00:07:57,159
+Energy minus chemical potential times and hopefully familiar.
+
+62
+00:07:57,160 --> 00:08:03,250
+So we recognise that down here and end up with just the definition of the expectation value.
+
+63
+00:08:03,250 --> 00:08:07,480
+For there's no I in there. So I will write this properly.
+
+64
+00:08:08,860 --> 00:08:18,580
+Expectation value of that number of particles. One of the large scale quantities we were aiming to look for just with this relative negative sign.
+
+65
+00:08:19,650 --> 00:08:27,810
+So. Hopefully that is.
+
+66
+00:08:30,390 --> 00:08:33,770
+Um. Something you can all agree with,
+
+67
+00:08:34,550 --> 00:08:39,770
+and there are no concerns if we just move on to repeat this for the derivative of the
+
+68
+00:08:39,770 --> 00:08:45,229
+temperature or derivative of the grand canonical potential with respect to the temperature,
+
+69
+00:08:45,230 --> 00:08:49,750
+which will bring down a bit more. Um.
+
+70
+00:08:53,130 --> 00:08:59,880
+Things to work with. So. Let's see how this goes on rather than.
+
+71
+00:08:59,910 --> 00:09:07,440
+So this one over beta is the inverse temperature that depends on T and cannot come outside of the derivative anymore.
+
+72
+00:09:07,860 --> 00:09:11,670
+Instead, we pick up just a negative log z from.
+
+73
+00:09:13,580 --> 00:09:18,230
+The derivative of the temperature with respect to itself, and then the product rule leaves us with.
+
+74
+00:09:20,540 --> 00:09:28,220
+Negative t times the derivative of the log of the grand canonical partition function with respect to its temperature.
+
+75
+00:09:30,240 --> 00:09:37,480
+And. As I've written, the grand canonical partition function in terms of beta rather than t,
+
+76
+00:09:37,840 --> 00:09:42,490
+it can be convenient to go back and forth between those two different.
+
+77
+00:09:43,860 --> 00:09:46,980
+Um, ways of representing the temperature either.
+
+78
+00:09:47,430 --> 00:09:58,229
+T itself or its inverse data. And we've seen before that the derivative of any function with respect to T is
+
+79
+00:09:58,230 --> 00:10:03,600
+just related to the derivative with respect to beta by this beta squared factor.
+
+80
+00:10:04,230 --> 00:10:10,080
+That's just coming from the derivative of one over t with respect to t gives negative one over t squared.
+
+81
+00:10:11,340 --> 00:10:16,860
+So if we look at this second term. As a whole.
+
+82
+00:10:17,490 --> 00:10:24,780
+At minus T times, DDT log Z will bring in a minus speed, a squared,
+
+83
+00:10:25,440 --> 00:10:33,210
+and then derivative of log z with respect to beta will again have the one over z out front,
+
+84
+00:10:33,990 --> 00:10:41,010
+and the derivative that can move inside the sum over all microstates E to the minus.
+
+85
+00:10:43,350 --> 00:10:46,980
+Beta times energy and it's mu and I.
+
+86
+00:10:47,550 --> 00:10:50,490
+So this is now a simple derivative.
+
+87
+00:10:51,330 --> 00:11:02,550
+We just bring down the argument of that exponential say without the beta, one factor of t will cancel out with one factor of beta.
+
+88
+00:11:03,750 --> 00:11:10,920
+We have an overall negative sign from the derivative of the exponential that I'll pull out front, even though those two signs cancel.
+
+89
+00:11:11,820 --> 00:11:19,480
+So overall we end up with. A one over T out front and then a one over z g.
+
+90
+00:11:19,660 --> 00:11:30,130
+With that exponential factor we can recognise as the probability again, and the argument from the exponential that comes down is e I minus mu and I,
+
+91
+00:11:31,570 --> 00:11:44,020
+which can write as expectation value of e plus mu times the expectation value of n all divided by the temperature.
+
+92
+00:11:47,240 --> 00:11:50,750
+So that is the second term there as a whole.
+
+93
+00:11:51,590 --> 00:11:59,180
+And that just leaves us with the overall result that this derivative of the grand
+
+94
+00:11:59,180 --> 00:12:07,370
+canonical potential with respect to temperature ends up with a negative log z g minus.
+
+95
+00:12:08,690 --> 00:12:19,770
+This combination. A relative negative sign between the expectation values of the energy and particle number, and because.
+
+96
+00:12:21,150 --> 00:12:28,680
+The log of Z is just the grand canonical potential divided by the temperature.
+
+97
+00:12:29,130 --> 00:12:34,350
+We can combine all of these terms into.
+
+98
+00:12:36,760 --> 00:12:43,339
+A single fraction. Like so.
+
+99
+00:12:43,340 --> 00:12:48,980
+So this derivative is now connected to.
+
+100
+00:12:50,820 --> 00:12:57,270
+Both of the expectation values for internal energy and particle number that we want to um.
+
+101
+00:13:00,420 --> 00:13:03,450
+You want to derive and consider independently.
+
+102
+00:13:05,100 --> 00:13:12,600
+So we will when we rearrange things to give some final results for those expectation values,
+
+103
+00:13:13,230 --> 00:13:24,810
+we will come up with both the dependence on this temperature derivative as well as the other derivative that we have.
+
+104
+00:13:25,800 --> 00:13:30,570
+So. That will be easier to see when we actually do it.
+
+105
+00:13:30,570 --> 00:13:38,160
+So let's just keep going forward with analysing the large scale quantities of interest
+
+106
+00:13:38,160 --> 00:13:42,450
+that we want to predict from the partition function of the properties of microstates.
+
+107
+00:13:42,990 --> 00:13:50,400
+We've looked at what we've seen popping up that internal energy expectation value and the particle number expectation value.
+
+108
+00:13:50,970 --> 00:13:57,660
+The third and final one was the entropy. And to deal with the entropy.
+
+109
+00:14:00,890 --> 00:14:06,980
+It is going to be. Most convenient to step back to.
+
+110
+00:14:08,330 --> 00:14:14,810
+The standard definition that holds for all statistical ensembles.
+
+111
+00:14:16,010 --> 00:14:19,850
+So the familiar p log p summed over all microstates.
+
+112
+00:14:20,960 --> 00:14:25,970
+The quantity that we maximise in order to derive thermodynamic equilibrium.
+
+113
+00:14:27,960 --> 00:14:32,350
+Um. Just just on Tuesday.
+
+114
+00:14:32,920 --> 00:14:42,550
+And if we plug in our expression for the microstate probability in the grand canonical context, this turns into.
+
+115
+00:14:43,810 --> 00:14:51,490
+Sum over all microstates of the log, one over ZG, and there's no sum in there.
+
+116
+00:14:51,490 --> 00:14:54,700
+There's just the exponential. Factor.
+
+117
+00:14:55,720 --> 00:15:01,990
+Where we can use the properties of logarithms to break this up into individual terms.
+
+118
+00:15:02,530 --> 00:15:10,600
+So we have the log of one over ZG is the negative log of ZG that cancels that negative out front.
+
+119
+00:15:11,290 --> 00:15:15,670
+We're left with a sum over all probabilities, which is known to its friends as one.
+
+120
+00:15:17,840 --> 00:15:26,420
+So there's just a long, said she. From the first part of that log, and then the log of the product breaks up into the sum of logs.
+
+121
+00:15:26,630 --> 00:15:37,370
+The log of the exponential is just its argument. So we have then a negative beta coming down and cancelling the negative sign out front.
+
+122
+00:15:38,030 --> 00:15:43,250
+The sum of pi times e is that expectation value.
+
+123
+00:15:44,210 --> 00:15:50,780
+And similarly a positive beta mu. And I will just have a different sign,
+
+124
+00:15:51,320 --> 00:15:59,960
+different pre factor and the expectation value of the particle number from summing over all microstates weighted by their probabilities.
+
+125
+00:16:05,220 --> 00:16:10,410
+So hopefully I'm not going too quickly talking through the steps rather than writing them down.
+
+126
+00:16:10,830 --> 00:16:17,360
+Shout out if. Anything is not, um, comprehensible as I just talk through it.
+
+127
+00:16:19,160 --> 00:16:24,950
+But if you're satisfied with this expression, you can actually do something quite nice with it.
+
+128
+00:16:26,310 --> 00:16:31,200
+Which is to recognise. What we found.
+
+129
+00:16:32,270 --> 00:16:37,270
+When considering the temperature derivative. Of the grand canonical potential.
+
+130
+00:16:37,870 --> 00:16:42,880
+So log z is minus phi over t, beta is the inverse temperature.
+
+131
+00:16:44,250 --> 00:16:54,830
+And then there's a minus mu. And all of that over tea, which is exactly what we computed.
+
+132
+00:16:57,800 --> 00:17:03,500
+Just a few minutes ago with an overall negative sign. So at this point,
+
+133
+00:17:03,500 --> 00:17:13,160
+we have expressions that involve all three of the derived quantities we're going after at this point on the basis of this grand canonical potential.
+
+134
+00:17:13,640 --> 00:17:18,430
+So we can just. Collect all of these results.
+
+135
+00:17:21,130 --> 00:17:30,010
+And write down the summary of how we get derived quantities out of the grand canonical
+
+136
+00:17:30,890 --> 00:17:35,379
+potential and partition function that are the starting point for any analysis.
+
+137
+00:17:35,380 --> 00:17:42,640
+Given a system that has a set of microstates with fluctuating energies and temperatures.
+
+138
+00:17:42,640 --> 00:17:47,959
+So. We saw the particle number.
+
+139
+00:17:47,960 --> 00:17:53,420
+Expectation value was just the negative derivative of the potential with respect to the chemical potential.
+
+140
+00:17:54,440 --> 00:18:00,860
+So two different uses of the word potential that unfortunately are very different.
+
+141
+00:18:03,650 --> 00:18:07,550
+And keep them straight just by the context and definitions.
+
+142
+00:18:07,880 --> 00:18:15,320
+The entropy was the analogous derivative with a negative sign with respect to the temperature.
+
+143
+00:18:17,220 --> 00:18:21,030
+And for the internal energy expectation value.
+
+144
+00:18:23,620 --> 00:18:33,900
+The [INAUDIBLE]. One convenient way of writing this is to step back to its first appearance here.
+
+145
+00:18:33,910 --> 00:18:37,570
+When we looked at one of the terms that came out of the temperature derivative,
+
+146
+00:18:37,930 --> 00:18:47,860
+this minus t derivative of log of the partition function that came out to be minus e divided by t,
+
+147
+00:18:47,980 --> 00:18:52,180
+which had an additional contribution from the particle number.
+
+148
+00:18:53,020 --> 00:18:57,460
+So moving that t to the other side, we would have.
+
+149
+00:18:59,720 --> 00:19:04,870
+A T squared DDT. Of the log of ZG.
+
+150
+00:19:07,150 --> 00:19:16,330
+Then, plus the additional contribution from. The particle number is set by the derivative with respect to chemical potential.
+
+151
+00:19:16,900 --> 00:19:25,040
+And if we want to get everything in terms of phi itself. You can just recognise this as the derivative of.
+
+152
+00:19:26,910 --> 00:19:32,370
+Five divided by two, with an overall negative sign to connected to the log of that partition function.
+
+153
+00:19:35,920 --> 00:19:42,160
+Which is not so different from the expression for the internal energy that we had in the canonical ensemble.
+
+154
+00:19:43,600 --> 00:19:47,140
+And finally, there is a relation among all three of these.
+
+155
+00:19:48,580 --> 00:19:52,719
+Large scale derived quantities. You mean that?
+
+156
+00:19:52,720 --> 00:19:57,100
+The combination of entropy.
+
+157
+00:19:58,380 --> 00:20:05,370
+Um, which is off the screen. So entropy, energy and chemical potential all add up to.
+
+158
+00:20:07,530 --> 00:20:12,000
+Give that land our free energy or the grand canonical potential.
+
+159
+00:20:13,050 --> 00:20:24,930
+If we just multiply through by this factor of temperature and rearrange so that temperature is or that expression is a minus t times s,
+
+160
+00:20:26,670 --> 00:20:31,530
+and then the energy itself.
+
+161
+00:20:32,890 --> 00:20:37,900
+Comes along and finally and negative mu times in.
+
+162
+00:20:39,260 --> 00:20:41,420
+So a connection between.
+
+163
+00:20:42,900 --> 00:20:51,300
+These three quantities in the grand canonical potential that can be used to essentially get one of them if the other two are known.
+
+164
+00:20:53,010 --> 00:21:01,130
+So this is. Something we will be applying after the break rather than doing an example today.
+
+165
+00:21:01,610 --> 00:21:10,370
+These are equations to have in mind that tell us how to get from the microscopic dynamics of the individual particles into the stable,
+
+166
+00:21:10,370 --> 00:21:19,160
+large scale thermodynamic equilibrium quantities. The essential goal of what we're doing in statistical physics in general.
+
+167
+00:21:20,300 --> 00:21:24,320
+So any questions about those derivations?
+
+168
+00:21:27,530 --> 00:21:32,960
+I think they will become more physically intuitive once we apply them.
+
+169
+00:21:33,620 --> 00:21:37,879
+Um. Which unfortunately will be it for free for a few weeks yet.
+
+170
+00:21:37,880 --> 00:21:45,860
+So we'll recap this when we return and see how this can be applied to systems of quantum gases.
+
+171
+00:21:45,860 --> 00:21:59,049
+But, um. Over in April. Since we are doing immediate applications,
+
+172
+00:21:59,050 --> 00:22:06,340
+this is basically the the key results for the grand canonical ensemble that we will make use of in the future.
+
+173
+00:22:07,360 --> 00:22:11,530
+There's just one more thing, one more topic to address.
+
+174
+00:22:12,850 --> 00:22:18,340
+Um, before we switch gears and start to introduce quantum statistics.
+
+175
+00:22:20,320 --> 00:22:31,270
+And this is a further generalisation of the first law of thermodynamics that we have seen in a couple of different guises already.
+
+176
+00:22:33,610 --> 00:22:42,750
+In the module. So first we said that this first law of thermodynamics was just the statement that energy is conserved.
+
+177
+00:22:43,260 --> 00:22:48,960
+And then when we moved to the canonical ensemble that allow the energy.
+
+178
+00:22:50,110 --> 00:22:53,830
+Of the system to fluctuates by exchanging.
+
+179
+00:22:55,300 --> 00:22:58,060
+Heater work with its surroundings.
+
+180
+00:22:59,380 --> 00:23:06,850
+We generalised that conservation of energy to be the statement that any change in the internal energy of our system.
+
+181
+00:23:07,480 --> 00:23:12,550
+Switching to a slightly more compact notation that was either.
+
+182
+00:23:13,750 --> 00:23:17,710
+Due to heat flowing between the system and its surroundings,
+
+183
+00:23:18,190 --> 00:23:23,860
+or work being done either by the surroundings on the system or by the system on the surroundings.
+
+184
+00:23:24,820 --> 00:23:28,210
+And we derived expressions for both of those.
+
+185
+00:23:29,660 --> 00:23:34,000
+The work is the change in entropy multiplied by the temperature. That's the heat.
+
+186
+00:23:34,140 --> 00:23:37,820
+You may have said that wrong. The heat is the change in entropy times the temperature.
+
+187
+00:23:38,270 --> 00:23:46,130
+The work is the change in volume times the pressure. These are the infinitesimal relations that can be integrated to give off.
+
+188
+00:23:47,300 --> 00:23:48,470
+General differences.
+
+189
+00:23:50,100 --> 00:24:02,670
+And we now need to further extend and generalise this to allow the number of particles to change in the framework of the grand canonical ensemble.
+
+190
+00:24:06,320 --> 00:24:15,900
+So. We can expect both changes in the energy and changes in the particle number,
+
+191
+00:24:16,320 --> 00:24:27,740
+and both of those processes will generically change the entropy, which was our starting point for deriving this first law earlier on.
+
+192
+00:24:27,750 --> 00:24:33,300
+So what we did. This might seem familiar if we expand.
+
+193
+00:24:35,490 --> 00:24:45,000
+Any infinitesimal change in the energy in terms of all possible control parameters, that we can vary for our grand canonical system.
+
+194
+00:24:47,080 --> 00:24:56,290
+We have the usual changes of the energy with respect, sorry, the changes of the entropy with respect to energy at fixed volume and particle number.
+
+195
+00:24:57,370 --> 00:25:09,750
+Change of the entropy with respect to the volume at fixed energy and particle number there is a d and d v connected to there.
+
+196
+00:25:09,820 --> 00:25:13,540
+Sorry to have to squeeze those in.
+
+197
+00:25:14,080 --> 00:25:22,250
+And then the new contribution that we have. In the grand canonical setting is the change in entropy with respect to the change in particle number,
+
+198
+00:25:22,250 --> 00:25:28,910
+fixing the volume in the energy, and that gets multiplied by the differential d n.
+
+199
+00:25:31,300 --> 00:25:38,470
+And we can recognise this change in entropy with particle number as the inverse temperature.
+
+200
+00:25:43,720 --> 00:25:51,980
+We'll have to say a bit about. How the entropy depends on volume on the energy and particle number are fixed.
+
+201
+00:25:52,280 --> 00:25:57,680
+So we'll come back to that. But for now we've also introduced the chemical potential as.
+
+202
+00:25:59,560 --> 00:26:06,220
+Negative t times this partial derivative of entropy with respect to particle number with the energy fixed.
+
+203
+00:26:08,300 --> 00:26:13,280
+So that comes along in the same way that the temperature does now.
+
+204
+00:26:14,330 --> 00:26:17,390
+If we focus on this last partial derivative.
+
+205
+00:26:18,730 --> 00:26:24,160
+And go through the argument that fixing the n when we take this derivative.
+
+206
+00:26:25,790 --> 00:26:37,940
+Um, effectively brings us into the framework of the canonical ensemble so we can apply results that we derived in the canonical setting.
+
+207
+00:26:39,320 --> 00:26:44,960
+And in particular the form of the first law of thermodynamics.
+
+208
+00:26:46,130 --> 00:26:50,110
+That we. We're working within that context.
+
+209
+00:26:51,740 --> 00:26:57,920
+That the change in energy is heat plus work TDs minus PDV.
+
+210
+00:26:59,980 --> 00:27:10,700
+But of course we are also fixing E! And when taking this partial derivative, which means that the change in E is just zero.
+
+211
+00:27:11,090 --> 00:27:25,160
+Or rearranging this equality to solve for DSD, we just get a ratio of pressure over temperature.
+
+212
+00:27:26,300 --> 00:27:38,360
+So that's what we can plug in to this third term in our expansion of the entropy upon changing every possible control parameter that we have.
+
+213
+00:27:40,010 --> 00:27:50,670
+And the result. Is an expression known as a generalised thermodynamic identity.
+
+214
+00:27:58,970 --> 00:28:04,070
+Effectively just a generalisation of the first law that gets this fancy terminology.
+
+215
+00:28:04,850 --> 00:28:10,930
+If I isolate that change in energy from our expression for dz.
+
+216
+00:28:13,100 --> 00:28:19,280
+Then on the other side of the equation, we will start off with the temperature times dz,
+
+217
+00:28:20,270 --> 00:28:28,910
+and we have to move um p over the temperature times the temperature times DV to the other side, picking up a negative sign.
+
+218
+00:28:29,210 --> 00:28:35,180
+So that is. The usual first law that we have seen before.
+
+219
+00:28:35,690 --> 00:28:41,239
+And then finally, the last term moves this end to the other side of the equation.
+
+220
+00:28:41,240 --> 00:28:42,920
+So it comes in with a plus sign.
+
+221
+00:28:44,180 --> 00:28:54,440
+The factors of temperature cancel out, and that is the generalisation of the first law that is appropriate for the grand canonical ensemble.
+
+222
+00:28:55,760 --> 00:29:01,419
+So sometimes this. Factor of chemical potential times.
+
+223
+00:29:01,420 --> 00:29:04,630
+Change in particle number is referred to as.
+
+224
+00:29:05,880 --> 00:29:16,830
+Chemical work, as opposed to the work that is done by an external force that changes the volume of the system.
+
+225
+00:29:17,130 --> 00:29:20,460
+This is done the more mechanical work.
+
+226
+00:29:21,300 --> 00:29:29,970
+In contrast to this chemical work, which is the amount of energy that is carried by the particles that are flowing into or out of the system,
+
+227
+00:29:30,480 --> 00:29:33,150
+which depends on this chemical potential.
+
+228
+00:29:33,150 --> 00:29:40,230
+The the larger the chemical potential, the more work has to be done to squeeze more particles into the system.
+
+229
+00:29:41,540 --> 00:29:52,639
+I'll say a bit more about that now. But maybe just to emphasise that although this is a pretty compact and in some ways
+
+230
+00:29:52,640 --> 00:29:58,730
+intuitive expression for the various ways that the energy of a system can change by,
+
+231
+00:29:59,900 --> 00:30:05,600
+uh, adjusting control parameters and exchanging heat or work or particles with its environment,
+
+232
+00:30:06,050 --> 00:30:11,030
+there's a lot of information that's all packed together into this relation, um,
+
+233
+00:30:12,020 --> 00:30:19,730
+that we can dig out and see several results that should be familiar at this point.
+
+234
+00:30:20,180 --> 00:30:29,390
+So just to give an illustration of the the type of information that is hiding in this generalised some of the dynamic identity,
+
+235
+00:30:30,500 --> 00:30:35,300
+if we consider fixing the particle number and the volume.
+
+236
+00:30:37,070 --> 00:30:47,280
+Then the last two terms cancel out and we end up with the change in energy just being the heat that's flowing in.
+
+237
+00:30:47,300 --> 00:30:48,560
+So t times dz,
+
+238
+00:30:49,010 --> 00:31:02,630
+which we can rearrange to find that the inverse temperature is a change in entropy with respect to the change in energy with n and v fixed,
+
+239
+00:31:02,960 --> 00:31:11,450
+which was one of the first definitions that we introduced many weeks ago back in the context of the micro canonical ensemble.
+
+240
+00:31:12,680 --> 00:31:17,450
+There we had to introduce it just as well. Let's try this out and see whether it makes sense.
+
+241
+00:31:17,870 --> 00:31:25,610
+Now it's something that we can derive and extract from this generalised first law of thermodynamics, the somewhat dynamic identity.
+
+242
+00:31:27,430 --> 00:31:32,180
+And, not surprisingly, um. Some of the other.
+
+243
+00:31:33,270 --> 00:31:43,420
+Definitions that. We just had to state and motivate after the fact are now also popping out of this identity.
+
+244
+00:31:43,430 --> 00:31:52,790
+So fixing the entropy rather than the volume kills off the first and last terms
+
+245
+00:31:52,790 --> 00:31:58,940
+in the identity and leaves us with just the change in energy coming from work.
+
+246
+00:31:59,750 --> 00:32:05,150
+Which is bringing us back to the definition that we introduced for pressure.
+
+247
+00:32:06,820 --> 00:32:15,910
+As the change in the internal energy with respect to a change in the volume at constant entropy as well as it cast it in,
+
+248
+00:32:16,300 --> 00:32:27,100
+which takes us to that canonical setting. So this is again another definition that we can extract from the thermodynamic identity,
+
+249
+00:32:27,100 --> 00:32:32,020
+rather than just having to propose it and check that it makes sense.
+
+250
+00:32:32,980 --> 00:32:40,770
+And there is a third combination. Where you can kill off the first two terms, fixing the entropy and volume.
+
+251
+00:32:41,700 --> 00:32:49,660
+This is going to be. Something new that we have not looked at in these terms before.
+
+252
+00:32:50,350 --> 00:32:55,000
+We will end up with a relation between the chemical potential.
+
+253
+00:32:57,390 --> 00:33:02,970
+Mu and how the energy varies with respect to the particle number.
+
+254
+00:33:04,510 --> 00:33:11,650
+Specifically and the same way as above. Mu is the change in energy.
+
+255
+00:33:14,070 --> 00:33:18,990
+With respect to a change in the particle number at fixed entropy and in a fixed volume.
+
+256
+00:33:19,950 --> 00:33:28,300
+So. We can dig into what this means a bit and it will illustrate a bit what is meant by that chemical work.
+
+257
+00:33:30,280 --> 00:33:33,640
+That if we imagine adding a particle to the system,
+
+258
+00:33:34,600 --> 00:33:42,100
+the amount by which the energy of that system changes at fixed entropy is giving us that chemical potential.
+
+259
+00:33:42,100 --> 00:33:51,620
+Or if we rearrange that, the chemical potential is telling us how much energy is added or removed by changing the particle.
+
+260
+00:33:51,640 --> 00:34:00,610
+The number of particles in the system. So I think it was last Friday, not on Tuesday.
+
+261
+00:34:00,620 --> 00:34:08,299
+We went through the arguments that. Um, in general adding particles to a system.
+
+262
+00:34:08,300 --> 00:34:11,810
+So a a positive change in N.
+
+263
+00:34:13,990 --> 00:34:20,720
+Um, even if we. Fix the energy of that system.
+
+264
+00:34:21,560 --> 00:34:27,200
+It is natural for more particles to um.
+
+265
+00:34:27,680 --> 00:34:32,360
+Lead to the definition of more microstates, leading to a larger entropy.
+
+266
+00:34:34,350 --> 00:34:39,180
+A larger amount of information that the entropy is quantifying.
+
+267
+00:34:41,300 --> 00:34:51,030
+So if we. Want to think about increasing the number of particles while keeping the entropy fixed.
+
+268
+00:34:51,780 --> 00:35:01,560
+We cannot have a fixed internal energy, but instead we have to adjust that internal energy to compensate for this increase in s,
+
+269
+00:35:02,490 --> 00:35:07,560
+and in particular for a natural system with positive temperature,
+
+270
+00:35:08,400 --> 00:35:16,590
+we have to reduce E to get S back down to the fixed value that we want to feed into this partial derivative.
+
+271
+00:35:21,720 --> 00:35:25,710
+And that is just coming from this relation between.
+
+272
+00:35:27,030 --> 00:35:33,060
+Energy and entropy that defines the temperature. So this is for a natural system with positive temperature.
+
+273
+00:35:33,420 --> 00:35:37,680
+The smaller energy leads to a smaller entropy.
+
+274
+00:35:38,940 --> 00:35:52,500
+And that is telling us that in these natural systems when the end is positive, we need to be negative to correspond to that fixed entropy condition.
+
+275
+00:35:54,120 --> 00:36:01,290
+So which is then the statement that the partial derivative mu is negative.
+
+276
+00:36:03,070 --> 00:36:06,840
+Um. For these natural systems.
+
+277
+00:36:08,020 --> 00:36:17,110
+Which is again something that. I sort of had to introduce and then motivate after the fact by looking at particle flow.
+
+278
+00:36:20,170 --> 00:36:23,950
+But here we've been able to extract that information from.
+
+279
+00:36:24,400 --> 00:36:27,910
+Well, it's all coming from this generalised thermodynamic identity.
+
+280
+00:36:29,500 --> 00:36:29,950
+Essentially,
+
+281
+00:36:29,950 --> 00:36:41,740
+all of the connections between the control parameters and the variations in the large scale derived quantities of our systems are arising.
+
+282
+00:36:43,200 --> 00:36:48,240
+Just or I reflected in this first law of thermodynamics.
+
+283
+00:36:50,020 --> 00:36:54,250
+So that's a good place to stop with the grand canonical potential.
+
+284
+00:36:54,280 --> 00:37:02,470
+We've derived the results, derived relations between them, and seen how a lot of information is packed into those relations.
+
+285
+00:37:04,480 --> 00:37:13,540
+And the applications of the grand canonical ensemble that we will be doing after the break will be to quantum gases,
+
+286
+00:37:13,990 --> 00:37:19,870
+which means that we need to bring in one other aspect of information,
+
+287
+00:37:19,870 --> 00:37:27,970
+which is the quantum part of that, and that will be what we do over the next hour and a bit before we move on to that.
+
+288
+00:37:27,980 --> 00:37:34,720
+Are there any final questions about the grand canonical ensemble partition function potential,
+
+289
+00:37:35,260 --> 00:37:39,640
+or the generalisation of the first law into this thermodynamic identity?
+
+290
+00:37:53,700 --> 00:38:02,220
+Not seeing any. We will take a hard turn and start talking about something completely different,
+
+291
+00:38:03,420 --> 00:38:08,910
+at least to, um, give you something to think about during the time off.
+
+292
+00:38:11,510 --> 00:38:16,870
+Before we come back. And review.
+
+293
+00:38:19,020 --> 00:38:22,380
+The framework that we will develop after the break in April.
+
+294
+00:38:23,970 --> 00:38:28,440
+So quantum statistics is going to.
+
+295
+00:38:31,100 --> 00:38:39,140
+Involve two main ingredients, one of which we have already seen when we started talking about ideal gases.
+
+296
+00:38:40,690 --> 00:38:52,070
+So. If we recall. The approach that we took to regularise the canonical partition function.
+
+297
+00:38:53,360 --> 00:38:58,130
+When we first started thinking about ideal gases.
+
+298
+00:38:59,640 --> 00:39:05,210
+We needed to generalise the expression for the partition function from discrete micro
+
+299
+00:39:05,310 --> 00:39:10,500
+states that we summed over to continuously varying energies that we had to integrate over.
+
+300
+00:39:11,160 --> 00:39:26,820
+And we did that by proposing that only a certain set of discrete momenta were possible for a and each individual particle in its fixed volume.
+
+301
+00:39:27,540 --> 00:39:32,660
+And that gave us. Discrete energy levels.
+
+302
+00:39:33,720 --> 00:39:37,140
+That. Were.
+
+303
+00:39:40,480 --> 00:39:49,840
+Um, they were space. So the energy levels depended on the combination of Planck's constant h bar and.
+
+304
+00:39:51,610 --> 00:39:58,479
+The mass of the particles, the size of the box, and in the partition function itself.
+
+305
+00:39:58,480 --> 00:40:08,890
+We always had the beta e combination of the Boltzmann factor that brought in a power of temperature to get everything dimensionless.
+
+306
+00:40:11,860 --> 00:40:18,189
+And we were considering there this discretization not as anything fundamental,
+
+307
+00:40:18,190 --> 00:40:25,180
+but as a trick that we could use to organise the partition function as a sum that.
+
+308
+00:40:27,010 --> 00:40:31,400
+Moved smoothly into. A collection of integrals.
+
+309
+00:40:32,270 --> 00:40:39,530
+When we took the limit that these momenta were closer and closer together, and eventually continuously varying.
+
+310
+00:40:44,590 --> 00:40:50,830
+So that limit of continuous momenta just translated sums to integrals in.
+
+311
+00:40:53,300 --> 00:40:58,340
+The works that we did on classical ideal gases, um, a few weeks ago.
+
+312
+00:41:00,000 --> 00:41:09,930
+So, not too surprisingly, if one ingredient for quantum statistics is sticking with these discrete quantised energy levels.
+
+313
+00:41:15,520 --> 00:41:21,230
+The fact that this is something that turns out to describe nature is almost secondary.
+
+314
+00:41:21,250 --> 00:41:27,900
+We can just say that we. Can consider these discrete energy levels.
+
+315
+00:41:30,500 --> 00:41:36,350
+On their own as an onslaught and see what sort of statistical predictions pop out,
+
+316
+00:41:36,350 --> 00:41:43,850
+and then compare those with experimental observation to see whether this is a good description of nature.
+
+317
+00:41:44,810 --> 00:41:52,520
+But this is only going to be one ingredient to us in the mixture that gives true quantum statistics.
+
+318
+00:41:53,420 --> 00:42:00,410
+So let's go through. Well, after the break we will go through the analysis of um.
+
+319
+00:42:01,520 --> 00:42:06,170
+A canonical system with these discrete energy levels, in fact the grand canonical system.
+
+320
+00:42:06,680 --> 00:42:09,499
+We've introduced the grand canonical ensemble.
+
+321
+00:42:09,500 --> 00:42:19,100
+We might as well keep working in that term or in in those terms, just as a preview or a forecast, I will say that.
+
+322
+00:42:21,830 --> 00:42:30,180
+If we just. Declare that our system has energy levels that are quantised and discrete.
+
+323
+00:42:30,810 --> 00:42:36,570
+We will end up with a system of classical or non quantum.
+
+324
+00:42:38,990 --> 00:42:52,680
+Statistics. And in particular this type of statistics is known as Maxwell-Boltzmann statistics.
+
+325
+00:42:52,680 --> 00:43:03,210
+After some of the folks who developed this all the way back in the 1800s, uh, several decades before quantum physics was, uh, formulated.
+
+326
+00:43:05,270 --> 00:43:14,990
+They. They basically used the same trick of discrete momenta as a regularisation, and saw what popped out of that without any.
+
+327
+00:43:16,440 --> 00:43:27,810
+Um, indication of quantum physics at play, but it is useful when building up to quantum statistics to go through this non quantum derivation.
+
+328
+00:43:32,630 --> 00:43:40,360
+Because doing so will reveal what is needed for true quantum statistics.
+
+329
+00:43:40,370 --> 00:43:49,910
+The other ingredients that. Goes beyond just keeping energy levels discrete and quantised.
+
+330
+00:43:59,420 --> 00:44:04,130
+So just in the last few minutes before we take a bit of a break.
+
+331
+00:44:05,510 --> 00:44:18,310
+Let's introduce a. Bit of terminology in a way of looking at these systems that will be useful to distinguish classical and quantum statistics.
+
+332
+00:44:18,970 --> 00:44:22,690
+When we have these discrete eigenvalues or, sorry, these discrete energy levels.
+
+333
+00:44:23,530 --> 00:44:29,140
+So we will try to get this on the screen as best I can.
+
+334
+00:44:32,610 --> 00:44:38,640
+We will reorganise and relabel things to put these energy levels kind of front and centre.
+
+335
+00:44:39,180 --> 00:44:50,170
+So. You will say that each energy level is this calligraphic e sub l.
+
+336
+00:44:51,490 --> 00:44:54,940
+The energy that it has is going to be.
+
+337
+00:44:57,100 --> 00:45:09,490
+Our usual capital E sub L, and I just want to note that this L is the energy for the energy level, rather than the energy of a microstate.
+
+338
+00:45:09,730 --> 00:45:15,730
+So I'll try to keep the subscripts consistent using I for microstates and L for energy levels.
+
+339
+00:45:16,900 --> 00:45:23,770
+Um that's something to. Keep an eye out for as we go through these arguments and derivations.
+
+340
+00:45:24,970 --> 00:45:37,960
+I'm sorry to have to make the meaning of the subscript context dependence in that way, but it's a bit easier than introducing a new variable for.
+
+341
+00:45:38,960 --> 00:45:42,500
+This, uh, this energy for the energy level.
+
+342
+00:45:43,820 --> 00:45:48,110
+And I want to emphasise that the energy level.
+
+343
+00:45:49,880 --> 00:45:53,340
+Contains more information than just the energy source.
+
+344
+00:45:53,480 --> 00:45:58,910
+And in particular we can have two different energy levels that.
+
+345
+00:46:01,430 --> 00:46:05,420
+End up with the same energy. So.
+
+346
+00:46:07,270 --> 00:46:17,430
+Energy level. M an energy level E, and can have the same value of the energy,
+
+347
+00:46:18,210 --> 00:46:29,310
+but be different levels with different labels distinguished by other properties of the particles in these energy levels.
+
+348
+00:46:29,970 --> 00:46:38,310
+So just to make this more concrete, a simple example is if we have just a single gas particle in a box.
+
+349
+00:46:39,930 --> 00:46:45,030
+And it has these discrete. Momenta hbar pi over l.
+
+350
+00:46:46,170 --> 00:46:55,360
+You say it has one unit of momenta in the x direction. Or one unit of momenta in the z direction.
+
+351
+00:46:56,690 --> 00:47:05,480
+Those are two distinct energy levels, because we can basically tell apart whether a particle is going in the x direction or the Z direction,
+
+352
+00:47:05,840 --> 00:47:13,940
+but they have the same energies, just that h bar pi squared over l squared over all that divided by twice the mass.
+
+353
+00:47:15,470 --> 00:47:24,620
+So in this situation, when we have multiple energy levels with the same value of the energy, I will.
+
+354
+00:47:25,760 --> 00:47:33,150
+Say that this describes. Degenerate energy levels.
+
+355
+00:47:35,250 --> 00:47:39,530
+So distinct. Um.
+
+356
+00:47:40,920 --> 00:47:48,149
+Distinct microstates, distinct ways of having our degrees of freedom in the system that end up leading to the same energy,
+
+357
+00:47:48,150 --> 00:47:51,570
+but can be distinguished by other properties of that microstates.
+
+358
+00:47:52,290 --> 00:47:57,960
+And this one last bit of labelling before the break.
+
+359
+00:47:58,440 --> 00:48:04,050
+Without loss of generality, I can assign all of these labels on the energy levels.
+
+360
+00:48:06,430 --> 00:48:17,680
+Just so that we go from small energies when the subscript is small, to larger energies, when the when the subscript is larger.
+
+361
+00:48:19,930 --> 00:48:24,910
+And in particular the zeroth energy level will be,
+
+362
+00:48:25,360 --> 00:48:30,519
+will correspond to that ground state that we introduced in the context of a spin system a while ago.
+
+363
+00:48:30,520 --> 00:48:42,490
+So we are formalising that concept where all energies are at least as large as that ground states energy is not.
+
+364
+00:48:43,240 --> 00:48:51,070
+And so long as we don't consider general relativity and the dynamics of gravity,
+
+365
+00:48:51,730 --> 00:49:04,020
+we are free to shift all of these energies by constant offsets so that the ground state energy is, uh, non-negative, though possibly zero.
+
+366
+00:49:04,030 --> 00:49:12,670
+This is a bit of a convention, a bit of a choice that makes things easier and can be done without loss of generality.
+
+367
+00:49:13,180 --> 00:49:21,250
+And this will be useful when we start analysing grand canonical partition functions in terms of these energy levels.
+
+368
+00:49:22,060 --> 00:49:25,240
+Um, which will be our task for after the break.
+
+369
+00:49:26,170 --> 00:49:31,120
+So that's a bit of setup and a bit of motivation for what we'll be doing.
+
+370
+00:49:32,110 --> 00:49:33,190
+Any questions about.
+
+371
+00:49:36,690 --> 00:49:49,560
+Just this beginning steps of quantum statistics before we have a bit of a break and pick up with actual calculations and illustrations at noon.
+
+372
+00:49:54,650 --> 00:49:59,120
+I'll go ahead and pause the recording and let you.
+
+373
+00:50:02,470 --> 00:50:03,254
+It a bit. Uh. Refreshed.
+

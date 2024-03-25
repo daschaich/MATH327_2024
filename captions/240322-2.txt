@@ -1,0 +1,1264 @@
+1
+00:00:01,790 --> 00:00:05,179
+Okay, I accidentally stopped the recording rather than resuming it.
+
+2
+00:00:05,180 --> 00:00:08,209
+So there will be two recordings, one for each half of today.
+
+3
+00:00:08,210 --> 00:00:15,830
+And in the end, I think it's time to get back to quantum statistics.
+
+4
+00:00:15,830 --> 00:00:19,520
+And this way of looking at things in terms of energy levels.
+
+5
+00:00:21,020 --> 00:00:26,890
+If any questions occurred in the time to reflect over that break before we move on to.
+
+6
+00:00:28,520 --> 00:00:31,610
+Some more concrete calculations in this framework.
+
+7
+00:00:35,900 --> 00:00:42,230
+So. We have a bit of build up to continue doing to get us.
+
+8
+00:00:43,140 --> 00:00:44,310
+Through this derivation.
+
+9
+00:00:44,850 --> 00:01:01,260
+So building on from this labelling of energy levels, um, and that way of organising the information in our system, it will also be useful to.
+
+10
+00:01:06,020 --> 00:01:11,330
+Derive a new expression for this grand canonical partition function.
+
+11
+00:01:12,850 --> 00:01:18,180
+In terms of the number of particles that we have in each of the microstates.
+
+12
+00:01:18,190 --> 00:01:31,479
+So in preparation for recasting the grand canonical partition function in terms of energy levels, it'll be useful to go through this manipulation.
+
+13
+00:01:31,480 --> 00:01:39,550
+So starting off still with the usual expression in terms of microstates summing over I rather than summing over L,
+
+14
+00:01:40,960 --> 00:01:47,900
+we will take this and organise this sum. In terms of.
+
+15
+00:01:49,550 --> 00:02:05,580
+The particle number in each microstate. So what I mean by that is taking this sum and breaking it up into a collection of sub sums.
+
+16
+00:02:06,000 --> 00:02:11,580
+So first summing over all of the microstates I for which the particle number is zero.
+
+17
+00:02:13,080 --> 00:02:16,080
+This leaves us just with. The.
+
+18
+00:02:18,110 --> 00:02:22,400
+What looks like the usual Boltzmann factor exponential of minus beta I.
+
+19
+00:02:22,880 --> 00:02:27,560
+And then we pull out from this some. Similarly another some.
+
+20
+00:02:28,700 --> 00:02:34,370
+Over J. Where the particle number in every microstate j is one.
+
+21
+00:02:34,850 --> 00:02:42,740
+So what gets summed in here is beta times e I minus mu times n or sorry j.
+
+22
+00:02:43,810 --> 00:02:52,760
+E j minus mu times NJ is one. Similarly for all of the microstates with two particles.
+
+23
+00:02:54,690 --> 00:03:00,570
+You have an EQ minus two mu and this goes off.
+
+24
+00:03:02,650 --> 00:03:08,410
+Up to as many, um, particle numbers as we may have in all of these microstates.
+
+25
+00:03:10,450 --> 00:03:14,350
+And this is useful because we can basically identify.
+
+26
+00:03:15,760 --> 00:03:23,920
+Each of the individual sums in this series as separate canonical partition functions with.
+
+27
+00:03:25,200 --> 00:03:30,630
+These extra factors of exponential beta mu pulled out front.
+
+28
+00:03:36,420 --> 00:03:47,159
+So here the z1, z0, z1 and z2 are the canonical partition functions for this fixed number of zero, 1 or 2 particles.
+
+29
+00:03:47,160 --> 00:03:54,960
+Just summing over Boltzmann factors with the number of particles fixed in each case,
+
+30
+00:03:55,740 --> 00:04:02,010
+and the overall sum that we have going off formally to having an infinite number of particles.
+
+31
+00:04:05,260 --> 00:04:10,540
+Just brings in this e to the beta mu factor out front.
+
+32
+00:04:10,990 --> 00:04:18,969
+Raised to the power of N in each term in this sum. And then the n particle partition function z n again.
+
+33
+00:04:18,970 --> 00:04:28,390
+Canonical partition function. All of these canonical partition functions get added up to form that grand canonical partition function.
+
+34
+00:04:32,600 --> 00:04:43,660
+And. This particular dependence on the chemical potential that comes along for the ride to connect canonical and grand canonical is.
+
+35
+00:04:45,010 --> 00:04:52,080
+A quantity known as the frugality. So this is sometimes called the focus,
+
+36
+00:04:52,110 --> 00:04:57,829
+the expansion of the grand canonical partition function that relates it to all
+
+37
+00:04:57,830 --> 00:05:04,469
+possible canonical partition functions with every allowable number of particles.
+
+38
+00:05:04,470 --> 00:05:09,830
+So. Once. There are a few different symbols in use for for Cassidy.
+
+39
+00:05:09,860 --> 00:05:17,510
+One of them is a Z, but we already have lots of Z's floating around here, so I will use the Greek letter C for this.
+
+40
+00:05:18,260 --> 00:05:29,780
+So that is just the exponential of beta times mu, or in other words, exponential of the ratio of chemical potential divided by temperature.
+
+41
+00:05:33,170 --> 00:05:44,270
+And if we recall the expression we had for and particle partition functions, in particular for, uh, indistinguishable particles,
+
+42
+00:05:45,890 --> 00:05:56,690
+we wrote down that Z and was just n powers of the single particle partition function with a one over n factorial.
+
+43
+00:05:58,440 --> 00:06:05,220
+A factor out front to correct for over counting the different ways in which those and particles could be labelled.
+
+44
+00:06:05,460 --> 00:06:08,820
+When we combined their single particle partition functions in this way,
+
+45
+00:06:09,960 --> 00:06:17,010
+this at least is for the ideal gases or ideal systems that we've been considering throughout the.
+
+46
+00:06:18,730 --> 00:06:25,330
+Module two now. So that ideal means that there are no interactions between the two.
+
+47
+00:06:25,570 --> 00:06:32,340
+The degrees of freedom in these systems. That one over N is there too?
+
+48
+00:06:33,510 --> 00:06:42,890
+Correct? For over counting when we have indistinguishable particles, that cannot be.
+
+49
+00:06:44,250 --> 00:06:50,560
+Labelled. So hopefully that's familiar and you have no objections to that.
+
+50
+00:06:51,040 --> 00:06:58,420
+And if we plug in this expression for the end particle canonical partition function into our food gas, the expansion,
+
+51
+00:06:59,860 --> 00:07:09,849
+then we have for indistinguishable particles a grand canonical partition function that sums over NA1 over n factorial,
+
+52
+00:07:09,850 --> 00:07:13,660
+and then everything inside the sum raised to this and power.
+
+53
+00:07:14,510 --> 00:07:19,970
+E to the beta mu times single particle partition function.
+
+54
+00:07:20,630 --> 00:07:25,160
+And this is nothing more than the serious expression for the exponential.
+
+55
+00:07:26,810 --> 00:07:33,290
+So we end up with. The exponential of the frugality times.
+
+56
+00:07:33,890 --> 00:07:36,020
+Single particle partition function.
+
+57
+00:07:39,400 --> 00:07:50,260
+So this is a somewhat more compact way of expressing that grand canonical partition function compared to an explicit sum over all of the microstates.
+
+58
+00:07:51,580 --> 00:08:03,910
+The step that remains is to relate now just the single particle partition function to the energy levels that we want to organise all of our work in,
+
+59
+00:08:05,080 --> 00:08:09,850
+in the build up to the quantum statistics. So.
+
+60
+00:08:16,390 --> 00:08:21,850
+Because this, this z1 is the partition function for a single particle.
+
+61
+00:08:22,450 --> 00:08:27,370
+That turns out to be fairly straightforward. So we only have.
+
+62
+00:08:29,170 --> 00:08:39,010
+One particle to work with. And the possible microstates that we will get for the single particle.
+
+63
+00:08:39,760 --> 00:08:46,540
+We'll just consider all of the possible ways in which that single particle can
+
+64
+00:08:46,540 --> 00:08:53,920
+occupy any one of the energy levels that are available to it in our system.
+
+65
+00:08:56,470 --> 00:09:01,540
+So there is a nice map of microstates directly on to energy levels.
+
+66
+00:09:02,410 --> 00:09:07,730
+The single particle partition function just sums over all of these possible energy levels.
+
+67
+00:09:07,750 --> 00:09:16,030
+I'll use a capital L as the upper bound for that sum, which we can take to infinity later on.
+
+68
+00:09:17,080 --> 00:09:26,290
+And when that single particle occupies this energy level again, this is the canonical single particle partition function.
+
+69
+00:09:26,290 --> 00:09:35,080
+So it just has the usual Boltzmann factor minus beta times the energy L for that corresponding energy level.
+
+70
+00:09:37,530 --> 00:09:46,680
+So in general. Well, we already have our expression for the grand canonical partition function expressed in these terms.
+
+71
+00:09:47,430 --> 00:09:59,210
+We have the exponential. Of E to the beta mu times this sum over energy levels L Boltzmann factor E to the minus.
+
+72
+00:10:00,150 --> 00:10:06,170
+Beta times energy L. We can combine.
+
+73
+00:10:10,150 --> 00:10:19,180
+The two exponentials in here, move the constant velocity back into the sum over L that just gives us.
+
+74
+00:10:20,390 --> 00:10:25,430
+Something that looks a bit more grand. Canonical. A difference between energy and chemical potential.
+
+75
+00:10:27,880 --> 00:10:34,570
+And because we have an exponential of a sum that is nothing more than the product of exponentials,
+
+76
+00:10:36,550 --> 00:10:43,450
+and in particular exponentials of exponentials of this quantity,
+
+77
+00:10:43,780 --> 00:10:50,230
+the difference between the energy for each level and the chemical potential all divided by the temperature.
+
+78
+00:10:54,250 --> 00:11:00,820
+So this is. Exactly the grand canonical partition function for.
+
+79
+00:11:02,650 --> 00:11:06,220
+Maxwell-Boltzmann statistics call that grand canonical.
+
+80
+00:11:09,070 --> 00:11:10,150
+Partition function.
+
+81
+00:11:14,300 --> 00:11:26,600
+Expressed now in terms of the energy levels, rather than the individual partition functions for a single particle being brought together.
+
+82
+00:11:26,840 --> 00:11:36,050
+And I mentioned before the break that this is a classical statistics, a classical theory,
+
+83
+00:11:36,530 --> 00:11:44,180
+even though we have these discrete quantised energy levels that we are summing or multiplying over.
+
+84
+00:11:45,470 --> 00:11:53,780
+So within the derivation that we have done to get here, there is a hidden classical assumption that I will reveal.
+
+85
+00:11:54,260 --> 00:12:00,589
+Um, so long as there are not any immediate questions about the derivation and the reorganisation really,
+
+86
+00:12:00,590 --> 00:12:10,670
+that we went through to get the grand canonical partition function expressed in terms of these energy levels and their corresponding energies.
+
+87
+00:12:33,590 --> 00:12:45,799
+So not seeing any questions. We'll just state that the hidden classical assumptions that we made is coming from how we connected
+
+88
+00:12:45,800 --> 00:12:52,190
+the particle canonical partition function to the single particle canonical partition function.
+
+89
+00:12:52,190 --> 00:13:03,019
+This relation between z and powers of z one with this over counting is correct if,
+
+90
+00:13:03,020 --> 00:13:11,660
+but only if all of these particles happen to occupy different energy levels.
+
+91
+00:13:19,540 --> 00:13:23,830
+So there's different energy levels. Calligraphic e sub l.
+
+92
+00:13:26,970 --> 00:13:35,920
+And. In the classical regime, this assumption is effectively guaranteed.
+
+93
+00:13:35,930 --> 00:13:41,120
+It's something that I may have mentioned in passing when we first regularised ideal gases,
+
+94
+00:13:42,350 --> 00:13:48,380
+but it's coming essentially from the spacing between energy levels that we looked at here.
+
+95
+00:13:49,760 --> 00:13:55,669
+This place counts at each bar in terms of or in units that we would use for masses,
+
+96
+00:13:55,670 --> 00:14:03,740
+temperatures and lengths of everyday human scales give us spacing between these energies that are extraordinarily small.
+
+97
+00:14:04,340 --> 00:14:07,550
+Um, so when we have things like continuous momenta,
+
+98
+00:14:08,060 --> 00:14:15,889
+there is effectively zero chance that two particles will have exactly the same momenta and
+
+99
+00:14:15,890 --> 00:14:21,710
+exactly the same energy when that energy and momenta are continuously varying real numbers.
+
+100
+00:14:23,090 --> 00:14:29,240
+And in fact, even when we have these discrete energy levels feeding into Maxwell-Boltzmann statistics,
+
+101
+00:14:29,720 --> 00:14:38,030
+when we plug in this way of expressing the n particle partition function in terms of single particle partition functions.
+
+102
+00:14:39,310 --> 00:14:48,220
+We are also relying on having energies or having energy levels that are different for every particle.
+
+103
+00:14:49,520 --> 00:14:57,770
+Um, and that corresponds just to these different particles all having different properties,
+
+104
+00:14:57,770 --> 00:15:03,440
+whether that is a slightly different momentum that we can use to distinguish them and label them,
+
+105
+00:15:03,590 --> 00:15:12,110
+and then correct for the over accounting of that labelling or different positions if the particles have exactly the same momentum.
+
+106
+00:15:12,320 --> 00:15:20,400
+Unlikely as that may be. So this is all a bit of qualitative and hand-waving.
+
+107
+00:15:20,450 --> 00:15:23,930
+We'll do a concrete example to sort of illustrate what we have going on.
+
+108
+00:15:25,070 --> 00:15:36,260
+But just to say one other thing about this connection between the ideal gas energy levels and the quantities it depends on,
+
+109
+00:15:36,650 --> 00:15:47,810
+we can see from this relation where we can expect quantum effects in the form of violations of this classical assumption to start to come into play.
+
+110
+00:15:48,320 --> 00:15:54,350
+And that is when this factor is no longer very small, when the energy levels start to become.
+
+111
+00:15:55,190 --> 00:15:58,340
+Very widely spaced. And there are, um.
+
+112
+00:15:59,510 --> 00:16:03,750
+You know, no longer and effectively continuous variation of energies that are possible.
+
+113
+00:16:04,530 --> 00:16:09,810
+So that will happen when either the temperature is very low.
+
+114
+00:16:10,350 --> 00:16:17,290
+The size of the system is very small. Um. Or the the mass of the particles becomes very small.
+
+115
+00:16:18,590 --> 00:16:25,400
+That will all pump up the the spacing between energy levels and make quantum effects important.
+
+116
+00:16:28,220 --> 00:16:33,740
+For now, though, if there are no kind of philosophical questions about that hidden assumption,
+
+117
+00:16:33,740 --> 00:16:39,890
+let's just illustrate how and where this breaks down and causes trouble.
+
+118
+00:16:40,220 --> 00:16:45,110
+If we have things organised in terms of energy levels.
+
+119
+00:16:46,850 --> 00:16:58,050
+So. It kind of in some ways, a trivial example that illustrates the trouble we can get into is suppose we.
+
+120
+00:16:59,380 --> 00:17:09,310
+Just consider some system that has two particles and some small number of energy levels,
+
+121
+00:17:09,700 --> 00:17:17,590
+all of which for simplicity we will say the energy for energy for every level is just going to be zero.
+
+122
+00:17:18,970 --> 00:17:22,920
+So that e sub l. So we have.
+
+123
+00:17:24,490 --> 00:17:29,820
+Um. L plus one.
+
+124
+00:17:29,910 --> 00:17:34,530
+Total energy levels. They are all degenerate with zero energy.
+
+125
+00:17:35,130 --> 00:17:44,490
+And just to make this concrete, let's say there are five energy levels in the system with two particles that can occupy them.
+
+126
+00:17:50,160 --> 00:17:58,170
+So because the energy is zero, this Boltzmann factor just turns into the exponential of zero, which is one.
+
+127
+00:17:58,620 --> 00:18:07,200
+And our canonical partition function becomes more like the micro canonical case that we started off with.
+
+128
+00:18:07,620 --> 00:18:14,640
+So all of these partition functions just count the number of microstates that we have.
+
+129
+00:18:17,100 --> 00:18:19,170
+So they will be integers.
+
+130
+00:18:20,350 --> 00:18:29,890
+Um, ranging from and possibly zero if there's no system at all, but up to some large number, um, counting the number of microstates.
+
+131
+00:18:32,090 --> 00:18:33,110
+And as an example,
+
+132
+00:18:33,550 --> 00:18:44,090
+if we just look at the single particle partition function that we plugged in to derive the Maxwell-Boltzmann grand canonical partition function,
+
+133
+00:18:44,090 --> 00:18:48,440
+that was just the sum of the Boltzmann factor over all energy levels.
+
+134
+00:18:49,940 --> 00:19:00,320
+So that sum of L going from 0 to 4 E to the minus beta L with a vanishing energy is just that sum.
+
+135
+00:19:02,690 --> 00:19:07,610
+Of one over these five terms, counting the number of possible microstates.
+
+136
+00:19:10,690 --> 00:19:16,510
+So the combinatorial problem that we would have to solve to.
+
+137
+00:19:17,700 --> 00:19:30,660
+Compute the end particle canonical partition function with this set up is the same as, say, counting the the different ways that.
+
+138
+00:19:31,770 --> 00:19:37,349
+We can take some objects and place them in these energy levels, um,
+
+139
+00:19:37,350 --> 00:19:49,470
+which we can illustrate and draw just by considering each energy level to be a box and each particle to be some ball that we are placing.
+
+140
+00:19:51,230 --> 00:20:06,160
+In. One of these L plus one boxes, so one microstates to count for could be placing the ball.
+
+141
+00:20:07,790 --> 00:20:14,300
+If we have two, we could place one ball in that second box or the second energy level.
+
+142
+00:20:14,810 --> 00:20:17,810
+Place the other ball in the fourth energy level.
+
+143
+00:20:18,940 --> 00:20:26,500
+Or it is also possible. To put both balls together in that same energy level.
+
+144
+00:20:27,580 --> 00:20:41,410
+So all of these are different possible microstates that we all just need to count in order to derive the target canonical partition function.
+
+145
+00:20:42,340 --> 00:20:47,080
+So as a warmup exercise, if we.
+
+146
+00:20:49,040 --> 00:20:53,780
+Go back to these two particles and allow them to be distinguishable.
+
+147
+00:20:58,640 --> 00:21:06,880
+Um. What is the canonical partition function that we have in this case?
+
+148
+00:21:06,890 --> 00:21:10,880
+I'll ask that to you and you can shout it out if you have the answer.
+
+149
+00:21:11,240 --> 00:21:14,570
+So the idea here is that we can take.
+
+150
+00:21:16,790 --> 00:21:23,810
+The two balls and say that one of them is red, perhaps, and the other is blue.
+
+151
+00:21:26,570 --> 00:21:36,860
+And the question is, how many ways can these red and blue balls be placed in these five energy levels,
+
+152
+00:21:36,860 --> 00:21:45,950
+these five boxes that add up to the canonical partition function in the distinguishable case?
+
+153
+00:22:46,090 --> 00:22:51,070
+You have any numbers to propose for this partition function?
+
+154
+00:22:53,440 --> 00:22:58,390
+If not, then an even simpler case is going down to that single particle case,
+
+155
+00:22:59,110 --> 00:23:05,469
+and then thinking about how two distinguishable particles can be combined,
+
+156
+00:23:05,470 --> 00:23:14,740
+when we can tell them apart from each other, and we have that independent single particle partition function for each of them.
+
+157
+00:23:17,330 --> 00:23:25,700
+So there are five possible boxes in which we can place either the red or the blue particle.
+
+158
+00:23:27,300 --> 00:23:30,630
+Because we can tell which particle we have placed in which box.
+
+159
+00:23:31,380 --> 00:23:38,400
+We can place the blue particle in five ways, independent of all five ways we place the red particle.
+
+160
+00:23:39,660 --> 00:23:45,340
+So the overall. Number of microstates that we are counting.
+
+161
+00:23:45,790 --> 00:23:50,530
+By placing balls in boxes is just 25.
+
+162
+00:23:51,460 --> 00:23:56,170
+The square of that single particle partition function.
+
+163
+00:23:57,370 --> 00:24:07,990
+So this is basically deriving the expression that we had earlier on when we first introduced distinguishable and indistinguishable particles.
+
+164
+00:24:09,460 --> 00:24:15,000
+And the argument that we went through back then. In that for the indistinguishable case,
+
+165
+00:24:15,000 --> 00:24:23,130
+we looked at all of the different ways we could label the distinguishable particles that then became an over counting of.
+
+166
+00:24:24,210 --> 00:24:28,930
+Indistinguishable. Micro microstates and.
+
+167
+00:24:30,050 --> 00:24:42,770
+From that work. Back then, we predicted that the AI was one over n factorial z1 to the n, which here is one half times 25, which is 12.5.
+
+168
+00:24:45,260 --> 00:24:49,550
+Microstates that we would propose counting, which.
+
+169
+00:24:51,520 --> 00:25:03,780
+Cannot be right. Because we are counting integer microstates, and we should not be coming out with non-integer numbers of terms in our sum.
+
+170
+00:25:04,650 --> 00:25:13,430
+So this is where we have. Um, use that hidden classical assumption and run into trouble with it.
+
+171
+00:25:14,000 --> 00:25:28,550
+And we can see what went wrong just by reviewing all 25 of the microstates that we had for the distinguishable particles.
+
+172
+00:25:30,440 --> 00:25:34,210
+This will let us see where. This.
+
+173
+00:25:35,610 --> 00:25:42,150
+Assumption broke down and what we have to do to get around it, which will take us to a true quantum statistics.
+
+174
+00:25:43,620 --> 00:25:48,630
+So. Just to try to organise things relatively quickly.
+
+175
+00:25:50,180 --> 00:26:02,940
+We can start off by looking at the. Five microstates that have the red ball in the first box and the blue ball in any of the other boxes.
+
+176
+00:26:02,960 --> 00:26:08,950
+I will just use a zero to indicate a box that has no balls in it.
+
+177
+00:26:08,960 --> 00:26:20,510
+So these are four microstates. Um, and it's also possible to have both red and blue balls in that first box.
+
+178
+00:26:20,780 --> 00:26:27,440
+So I'll call that two to indicate that there are two particles in there, the the red and the blue.
+
+179
+00:26:28,820 --> 00:26:34,220
+And then we just repeat this exercise for all five.
+
+180
+00:26:35,300 --> 00:26:39,380
+Positions of that red ball. And then blue can be.
+
+181
+00:26:41,390 --> 00:26:47,390
+In either of the. Well, any of the five, because it's distinguishable.
+
+182
+00:26:47,390 --> 00:26:58,050
+We can tell them apart. So it was. They're halfway through.
+
+183
+00:27:00,240 --> 00:27:11,780
+So. Zero.
+
+184
+00:27:11,940 --> 00:27:24,390
+Zero. Red zero. This is the blue particle there.
+
+185
+00:27:27,600 --> 00:27:34,410
+And finally. You have sort of the mirror image.
+
+186
+00:27:39,090 --> 00:27:46,400
+We started off with. And we can see.
+
+187
+00:27:47,010 --> 00:27:51,260
+So this is five rows of five microstates.
+
+188
+00:27:51,270 --> 00:27:57,870
+So all 25 are accounted for. And we can see the sort of double counting of the labelling that we saw before.
+
+189
+00:27:58,380 --> 00:28:10,920
+So these two microstates here would collapse into one if we did not have the ability to distinguish between the particles and label them red or blue.
+
+190
+00:28:12,300 --> 00:28:25,110
+Similarly, these two down here. And in general, for all 20 of these microstates where the particles are in different energy levels,
+
+191
+00:28:25,500 --> 00:28:32,940
+we have that double counting factor which is r one over n factorial one and equals two.
+
+192
+00:28:34,500 --> 00:28:38,900
+And inconvenient that it doesn't all quite fit on the screen.
+
+193
+00:28:38,910 --> 00:28:54,060
+But the key to see is that the five microstates where we have both red and blue particles in that same box, those are not double counted at first.
+
+194
+00:28:54,750 --> 00:29:06,270
+So they're. Is no one over n factorial over counting factor for these five microstates.
+
+195
+00:29:07,680 --> 00:29:16,800
+Just because this is the situation where these multiple particles have, or they occupy that same energy level,
+
+196
+00:29:17,370 --> 00:29:23,640
+and that energy level therefore is not over counted in the first place, and does not need to be corrected by that one over n factorial.
+
+197
+00:29:25,880 --> 00:29:37,610
+Now in all the work we've done up till now, including deriving that Maxwell-Boltzmann grand canonical partition function, we made the assumption that.
+
+198
+00:29:40,150 --> 00:29:43,930
+All of the particles were in different energy levels,
+
+199
+00:29:44,350 --> 00:29:55,300
+and this is also guaranteed by the continuous energies and positions and other properties that we work with in the classical and non quantum setting.
+
+200
+00:30:00,960 --> 00:30:10,170
+So we don't have to worry about. This misfiring of the over counting.
+
+201
+00:30:10,700 --> 00:30:16,410
+Correction. When we get into the quantum regime, then.
+
+202
+00:30:17,070 --> 00:30:26,129
+Well we do. We have things like these, um, balls in boxes that if we were to do the classical calculation,
+
+203
+00:30:26,130 --> 00:30:30,990
+they give us nonsense like summing up 12.5 terms in a sum.
+
+204
+00:30:32,160 --> 00:30:43,290
+So this is the second ingredient coming along with the discrete quantised energy levels that give us true quantum statistics.
+
+205
+00:30:44,430 --> 00:30:51,710
+So in addition. To keeping the energy levels quantised.
+
+206
+00:30:52,910 --> 00:31:00,080
+We also have to work in a way that ensures we don't make this hidden classical assumption.
+
+207
+00:31:00,830 --> 00:31:10,260
+And. Um, correctly count the number of microstates that are possible, and not surprisingly.
+
+208
+00:31:11,070 --> 00:31:16,380
+This is where organising things in terms of energy levels comes in useful.
+
+209
+00:31:17,740 --> 00:31:26,530
+So rather than starting with single particle partition functions, multiplying those together and trying to correct for over counting,
+
+210
+00:31:26,530 --> 00:31:31,690
+that depends on, um, how many particles might be in the same energy level.
+
+211
+00:31:33,710 --> 00:31:38,150
+When formulating quantum statistics, we will start at the beginning,
+
+212
+00:31:38,360 --> 00:31:49,160
+defining our microstates instead in terms of precisely how many particles we have in each of the available energy levels.
+
+213
+00:31:50,990 --> 00:31:58,430
+And by organising things in this way, there will never be any over counting that we need to correct.
+
+214
+00:32:01,400 --> 00:32:06,170
+We will have a quantum partition function.
+
+215
+00:32:08,660 --> 00:32:16,280
+Essentially with no further work, and will be able to see how it differs from the classical case of Maxwell-Boltzmann statistics.
+
+216
+00:32:17,830 --> 00:32:28,450
+And this, how many particles we have in each energy level is going to be a new type of occupation number.
+
+217
+00:32:31,340 --> 00:32:39,100
+So. The same symbol and terminology that we had when going through the replica trick,
+
+218
+00:32:40,690 --> 00:32:46,900
+where the occupation number was the number of replicas that occupied each microstate of our small system.
+
+219
+00:32:47,440 --> 00:32:53,370
+Here we are reintroducing that concept in a different context and asking how many?
+
+220
+00:32:53,400 --> 00:33:04,960
+So how many particles occupy each energy level S of L, and that will be and sub L or the occupation number of that energy level.
+
+221
+00:33:07,590 --> 00:33:19,470
+So if we go back to this very small scale example of two particles with five energy levels,
+
+222
+00:33:20,250 --> 00:33:28,260
+we can see how this way of organising the calculations immediately gives us the
+
+223
+00:33:28,930 --> 00:33:35,670
+the correct answer without having to exhaustively list all of the microstates,
+
+224
+00:33:36,300 --> 00:33:44,010
+or we will do this, uh, listing just to see how it all matches up with what we've already done.
+
+225
+00:33:47,750 --> 00:33:55,090
+So in that case. Of putting it to balls into these.
+
+226
+00:33:57,210 --> 00:34:09,750
+Five boxes. And here we actually don't need to reimpose the simplification that all of the energies for these energy levels are zero.
+
+227
+00:34:10,230 --> 00:34:18,010
+So we. Can have. Any energy is feeding into this.
+
+228
+00:34:18,030 --> 00:34:22,860
+We are just asking, how many microstates do we have to?
+
+229
+00:34:24,130 --> 00:34:30,700
+Sum up in order to define a canonical partition function for this fixed number of particles.
+
+230
+00:34:43,300 --> 00:34:47,709
+And here, if we just organise things in terms of numbers,
+
+231
+00:34:47,710 --> 00:35:01,000
+rather than trying to distinguish between the single particles and all of these, 25 microstates just collapse down into a smaller number.
+
+232
+00:35:01,300 --> 00:35:10,000
+So the pairs that we identified with the labels interchanged are now the same single microstate.
+
+233
+00:35:10,030 --> 00:35:13,900
+So, for example, one ball in each of the first two boxes.
+
+234
+00:35:21,540 --> 00:35:25,410
+Or two balls in that first box.
+
+235
+00:35:26,010 --> 00:35:33,870
+And similarly just going through. The remaining possibilities.
+
+236
+00:35:37,990 --> 00:35:42,050
+0011011.
+
+237
+00:35:42,070 --> 00:35:51,490
+And then the other ways of having. Two particles occupying each of the.
+
+238
+00:35:53,210 --> 00:36:03,010
+Five energy levels. And I've missed one which was 00101.
+
+239
+00:36:03,070 --> 00:36:10,420
+So. There are 15 micro states to sum over.
+
+240
+00:36:11,110 --> 00:36:18,640
+Oops. Not quite in perfect order, but you can check that all of the possibilities are accounted for.
+
+241
+00:36:19,090 --> 00:36:25,300
+So this two particle canonical partition function will be summing over.
+
+242
+00:36:27,990 --> 00:36:37,770
+The 15 corresponding microstates defined by how many particles out of those two total we have in each of the five energy levels.
+
+243
+00:36:38,220 --> 00:36:48,570
+And this is a definite improvement compared to the 12.5 that the classical analysis would have suggested.
+
+244
+00:36:54,550 --> 00:36:59,470
+So that is. Well, that's the second ingredient in quantum statistics.
+
+245
+00:36:59,980 --> 00:37:06,180
+It is, uh. Maybe not.
+
+246
+00:37:06,450 --> 00:37:15,270
+You need some reflection to see just how the classical assumption that all particles are in different microstates leads to problems,
+
+247
+00:37:15,660 --> 00:37:23,880
+but hopefully this simple example has shown in a kind of cartoon context how that can arise.
+
+248
+00:37:25,080 --> 00:37:31,380
+And just in the last few minutes before we break for a few weeks,
+
+249
+00:37:32,070 --> 00:37:41,250
+we can look forward to specific types of quantum statistics that we will now be able to formulate through the approach that
+
+250
+00:37:41,250 --> 00:37:51,060
+we have defined of organising or defining all of these microstates in terms of energy levels and their occupation numbers.
+
+251
+00:37:52,380 --> 00:37:57,600
+So the the question to answer that will define.
+
+252
+00:37:58,970 --> 00:38:09,560
+The form of the statistics that we have is what are the allowed occupation numbers for every energy level in our system of interest?
+
+253
+00:38:11,150 --> 00:38:14,150
+Um, before I say anything more about that,
+
+254
+00:38:14,150 --> 00:38:24,080
+are there questions about the definition that we have and this new approach of organising microstates that avoids all the over accounting issues?
+
+255
+00:38:30,470 --> 00:38:33,650
+You know, we will revisit this when we reconvene after the break.
+
+256
+00:38:33,980 --> 00:38:41,000
+And when we do, we will focus on sort of two generic possibilities of.
+
+257
+00:38:42,410 --> 00:38:49,760
+Um, occupation numbers that we can have. So just to preface this, just say that in general.
+
+258
+00:38:52,880 --> 00:39:01,610
+There are going to be limitations or constraints on the possible occupation numbers that we can have.
+
+259
+00:39:02,950 --> 00:39:13,970
+In a physical system. And at least when we have particles in three dimensions, there are two.
+
+260
+00:39:15,080 --> 00:39:22,240
+Possible cases that lead to. Two possibilities in three dimensions.
+
+261
+00:39:24,290 --> 00:39:27,590
+That lead to two different types of quantum statistics.
+
+262
+00:39:29,260 --> 00:39:38,170
+So one of these possibilities is where any non-negative occupation number is allowed.
+
+263
+00:39:40,040 --> 00:39:43,639
+So any given energy level, it can have no particles.
+
+264
+00:39:43,640 --> 00:39:48,890
+It can be unoccupied. It can be occupied by a single particle, 2 or 3 or so on.
+
+265
+00:39:49,400 --> 00:39:52,430
+And the types of particles that obey.
+
+266
+00:39:53,660 --> 00:39:57,260
+This possibility for the occupation.
+
+267
+00:39:57,260 --> 00:40:02,980
+Numbers are known as bosons, named in honour of such and such.
+
+268
+00:40:02,990 --> 00:40:09,570
+Indra Nath Bose, who. Introduced this in the early 1900s.
+
+269
+00:40:11,010 --> 00:40:19,470
+So examples of bosons are things like the Higgs boson that has been in the news a lot since its discovery about ten years ago.
+
+270
+00:40:20,340 --> 00:40:25,140
+Particles of light, photons are also bosons.
+
+271
+00:40:25,800 --> 00:40:35,910
+Um, helium four nuclei are bosonic, as are pions and other hadrons that arise in nuclear physics.
+
+272
+00:40:37,350 --> 00:40:47,100
+And in contrast to these bosons, the other class of particles that we can have, the only possibility in three dimensions are known as fermions.
+
+273
+00:40:48,160 --> 00:40:51,700
+Named in honour of. Um.
+
+274
+00:40:56,400 --> 00:41:00,060
+Of Fermi, and these have.
+
+275
+00:41:01,960 --> 00:41:11,470
+Only two possibilities. So rather than having any number of particles occupying any given energy level fermions.
+
+276
+00:41:14,460 --> 00:41:20,580
+And had only that energy level being occupied by a single particle or being unoccupied.
+
+277
+00:41:24,680 --> 00:41:38,060
+So examples of fermions that obey this type of counting of occupation numbers are things like electrons,
+
+278
+00:41:38,390 --> 00:41:44,690
+protons, helium, three nuclei, and lots of other nuclear physics particles.
+
+279
+00:41:45,860 --> 00:41:55,070
+And this, um, restriction to having only unoccupied or singly occupied energy levels.
+
+280
+00:41:56,250 --> 00:42:02,190
+Is known. As the Pauli exclusion principle.
+
+281
+00:42:02,190 --> 00:42:11,950
+So it was another of these. Things that was observed empirically before it was explained mathematically.
+
+282
+00:42:13,180 --> 00:42:17,050
+So named after Wolfgang Pauli prior to.
+
+283
+00:42:18,480 --> 00:42:26,760
+Being dubbed fermions. And this is basically what allows things like chemistry and life to exist.
+
+284
+00:42:27,860 --> 00:42:31,400
+So it's. Relatively importance to.
+
+285
+00:42:33,920 --> 00:42:43,790
+Our experience of being alive. The fact that electrons are fermions is what allows molecules to have different electronic structures.
+
+286
+00:42:44,900 --> 00:42:49,430
+Um, and have them bound together.
+
+287
+00:42:51,220 --> 00:43:00,400
+Um into the the complex structures that eventually form molecules, proteins and all the building blocks of life.
+
+288
+00:43:01,810 --> 00:43:06,550
+If the electrons were all able to, um, have.
+
+289
+00:43:07,730 --> 00:43:12,910
+A. Arbitrary occupation number for the ground state, then.
+
+290
+00:43:14,510 --> 00:43:19,100
+In contrast to all that electronic structure that allows molecules to arise.
+
+291
+00:43:19,430 --> 00:43:30,890
+We would just have all of the electrons hanging out in their ground state and unable to interact with any other atoms to form molecules.
+
+292
+00:43:32,830 --> 00:43:36,690
+So. I can.
+
+293
+00:43:38,540 --> 00:43:45,150
+This is something that it is possible to prove that these are the only two possibilities, at least in three dimensions.
+
+294
+00:43:45,170 --> 00:43:51,380
+There are more exotic possibilities. If we look at systems that live on a two dimensional plane.
+
+295
+00:43:52,730 --> 00:43:57,240
+Like a sheet of graphene, for instance. Give it a time.
+
+296
+00:43:57,260 --> 00:44:05,880
+I will not go into even a qualitative explanation for how these two classes of particles are arising.
+
+297
+00:44:05,900 --> 00:44:10,520
+I'll just give that to you and forecast what we will be working on after the break.
+
+298
+00:44:10,520 --> 00:44:18,320
+We will formulate different quantum statistics for these two different possibilities.
+
+299
+00:44:19,670 --> 00:44:29,300
+And if we just to wrap up briefly and motivate, you know, how and why we will be seeing these different possibilities.
+
+300
+00:44:29,990 --> 00:44:34,040
+Going back to this small example of two particles,
+
+301
+00:44:35,000 --> 00:44:47,420
+if we were to assume that the two particles that we have were fermions that are restricted to either unoccupied or singly occupied energy levels,
+
+302
+00:44:47,990 --> 00:44:51,260
+then some of these microstates would not be allowed.
+
+303
+00:44:51,650 --> 00:44:58,130
+So all of the ones with double occupancy in any of the five energy levels.
+
+304
+00:44:59,390 --> 00:45:06,990
+So. Just ending up with a final look at that example.
+
+305
+00:45:08,810 --> 00:45:18,130
+In the. Fermionic case. Instead of summing over 15 microstates, we would only have.
+
+306
+00:45:19,550 --> 00:45:23,030
+Ten left to sum over.
+
+307
+00:45:24,170 --> 00:45:28,970
+Of course, all 15 are perfectly fine for bosons that can have any non-negative occupation number.
+
+308
+00:45:29,660 --> 00:45:30,590
+But the fact that.
+
+309
+00:45:31,700 --> 00:45:44,060
+We are ending up with different allowed microstates in these two cases is the fundamental reason why we end up with different statistics.
+
+310
+00:45:45,590 --> 00:45:52,700
+Once we. Turn the crank and move these systems through the.
+
+311
+00:45:54,600 --> 00:46:01,910
+Quantities. Quantum. Turn the crank and move these systems through.
+
+312
+00:46:02,060 --> 00:46:08,840
+The construction of partition functions and the analysis of those partition functions that we have now built up.
+
+313
+00:46:09,350 --> 00:46:20,809
+That's what we'll be doing when we come back. That's a good place to to start for today with that forecast of the Bose-Einstein and Fermi-Dirac
+
+314
+00:46:20,810 --> 00:46:26,030
+statistics that will result from these two different possibilities for occupation numbers.
+
+315
+00:46:27,110 --> 00:46:33,440
+So are there any final questions before we break for a while?
+
+316
+00:46:38,800 --> 00:46:44,380
+In that case and get the second half of two.
+
