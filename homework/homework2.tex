@@ -1,0 +1,216 @@
+% ------------------------------------------------------------------
+\documentclass[12 pt]{article} % A4 paper set by geometry package below
+\pagenumbering{arabic}
+\setlength{\parindent}{10 mm}
+\setlength{\parskip}{12 pt}
+
+% Nimbus Sans font should be reasonably legible
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[T1]{fontenc}  % Without this \textsterling produces $
+
+% Section header spacing
+\usepackage{titlesec}
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{verbatim}    % For comment
+\usepackage[shortlabels]{enumitem}
+\usepackage[paper=a4paper, marginparwidth=0 cm, marginparsep=0 cm, top=2.5 cm, bottom=2.5 cm, left=3 cm, right=3 cm, includemp]{geometry}
+\usepackage[pdftex, pdfstartview={FitH}, pdfnewwindow=true, colorlinks=true, citecolor=blue, filecolor=blue, linkcolor=blue, urlcolor=blue, pdfpagemode=UseNone]{hyperref}
+
+% Put module code and last-modified date in footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\cfoot{{\small \thisweek}\hfill \thepage\hfill {\small \moddate}}
+
+% Hopefully address Canvas complaints about pdf tagging and title
+%\usepackage[tagged]{accessibility}
+\hypersetup {
+  pdfauthor={David Schaich},
+  pdftitle={Statistical Physics Homework},
+}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+% Shortcuts
+\newcommand{\cO}{\ensuremath{\mathcal O} }
+\newcommand{\be}{\ensuremath{\beta} }
+\newcommand{\eps}{\ensuremath{\varepsilon} }
+\newcommand{\vev}[1]{\ensuremath{\left\langle #1 \right\rangle} }
+\newcommand{\pderiv}[2]{\ensuremath{\frac{\partial #1}{\partial #2}} }
+\newcommand{\showmarks}[1]{\rightline{\texttt{[#1 marks]}}} % \showmarks needs to follow a blank line!
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\begin{document}
+\newcommand{\thisweek}{MATH327 Homework 2}
+\newcommand{\moddate}{Last modified 8 Apr.~2024}
+\begin{center}
+  {\Large \textbf{MATH327: Statistical Physics, Spring 2024}} \\[12 pt]
+  {\Large \textbf{Second homework assignment}} \\[24 pt]
+\end{center}
+
+\section*{Instructions}
+Complete all four questions below and submit your solutions by file upload \href{https://canvas.liverpool.ac.uk/courses/69036/assignments/263585}{on Canvas}.
+Clear and neat presentations of your workings and the logic behind them will contribute to your mark.
+Use of resources beyond the module materials must be explicitly referenced in your submissions.
+This assignment is \textbf{due Friday, 26 April}.
+Anonymous marking is turned on and I will aim to return feedback shortly after 10 May.
+
+\vfill
+The Department recently published \href{https://canvas.liverpool.ac.uk/files/10656162/}{more detailed academic integrity guidance}.
+To summarize it: \\
+By submitting solutions to this assessment you affirm that you have read and understood the \href{https://www.liverpool.ac.uk/media/livacuk/tqsd/code-of-practice-on-assessment/appendix_L_cop_assess.pdf}{Academic Integrity Policy} detailed in Appendix L of the Code of Practice on Assessment, and that you have successfully passed the Academic Integrity Tutorial and Quiz in the course of your studies.
+You also affirm that the work you are submitting is your own and you have not commissioned production of the work from a third party or used artificial intelligence (AI) software in an unacceptable manner to generate the work.
+(Generative AI software applications include, but are not limited to, ChatGPT, Bing Chat, DALL.E and Bard.)
+You also affirm that you have not copied material from another person or source, nor committed plagiarism, nor fabricated, falsified or embellished data when completing the attached piece of work.
+You also affirm that you have not colluded with any other student in the preparation or production of this work.
+Marks achieved on this assessment remain provisional until they are ratified by the Board of Examiners in June 2024.
+Please note that your submission will be analysed by Turnitin for plagiarism and an Artificial Intelligence detection tool.
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\newpage
+\section*{Question 1: Energy and entropy} % Could plug in specific N...
+Using the canonical ensemble with inverse temperature $\be = 1 / T$, consider a system of $N \gg 1$ indistinguishable non-interacting spins in an external magnetic field with strength $H > 0$.
+
+\begin{enumerate}[label={(\alph*)}]
+  \item What are the internal energy $\vev{E}_I$ and the entropy $S_I$ as functions of $\be$, $N$ and $H$?
+
+  \showmarks{4}
+
+  \item Use your results to confirm the following low- and high-temperature limits:
+        \begin{align*}
+               \lim_{T \to 0} \vev{E}_I & = -NH &      \lim_{T \to 0} S_I & = 0           \\
+          \lim_{T \to \infty} \vev{E}_I & = 0   & \lim_{T \to \infty} S_I & = \log(N + 1)
+        \end{align*}
+
+  \showmarks{6}
+
+  \item For low but non-zero temperatures, expand both $\vev{E}_I$ and $S_I$ in terms of $\eps \equiv e^{-2\be H} \ll 1$.
+        Show that the largest temperature-dependent term in the energy expansion is proportional to $\eps$ and find the constant of proportionality.
+        Show that the largest temperature-dependent term in the entropy expansion is proportional to $\be\eps$ and find the constant of proportionality.
+
+  \showmarks{8}
+
+  \item For high but finite temperatures, expand both $\vev{E}_I$ and $S_I$ in terms of $x \equiv 2\be H \ll 1$.
+        Show that the largest temperature-dependent term in the energy expansion is proportional to $x$ and find the constant of proportionality.
+        Show that the largest temperature-dependent term in the entropy expansion is proportional to $x^2$ and find the constant of proportionality.
+
+  \showmarks{8}
+\end{enumerate}
+
+\noindent The following famous results may be useful:
+\begin{align*}
+  \frac{1}{1 - e^{-x}} & = \frac{1}{x} + \frac{1}{2} + \frac{x}{12} - \frac{x^3}{720} + \frac{x^5}{30\,240} + \cO\!\left(x^6\right) \\
+  \log\left[1 - e^{-x}\right] & = \log(x) - \frac{x}{2} + \frac{x^2}{24} - \frac{x^4}{2880} + \frac{x^6}{181\,440} + \cO\!\left(x^7\right).
+\end{align*}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\newpage
+\section*{Question 2: Diesel cycle} % Could plug in specific r and C...
+Consider the Diesel cycle defined by the $PV$~diagram shown below, in which the `compression' stage $1 \to 2$ and the `power' stage $3 \to 4$ are both adiabatic, while the pressure is constant during the `injection/ignition' stage $2 \to 3$, and the volume is constant during the `exhaust' stage $4 \to 1$.
+The compression ratio is $r \equiv V_1 / V_2 > 1$ and the cutoff ratio is $C \equiv V_3 / V_2 > 1$, with $C < r$.
+
+\begin{center}\includegraphics[width=0.8\textwidth]{figs/Diesel.pdf}\end{center}
+
+\begin{enumerate}[label={(\alph*)}]
+  \item By computing $W_{\text{out}}$, $W_{\text{in}}$ and $Q_{\text{in}}$, show that the Diesel cycle's efficiency is
+        \begin{equation*}
+          \eta_D = 1 - \frac{f(C)}{r^{2 / 3}}
+        \end{equation*}
+        and determine the function $f(C)$ that depends only on the cutoff ratio.
+
+  \showmarks{18}
+
+  \item Show $f(C) > 1$ for $C > 1$.
+        This will confirm a claim made in a tutorial, that the Diesel cycle is less efficient than the Otto cycle with the same compression ratio $r$.
+
+  \showmarks{6}
+\end{enumerate}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\vfill
+\section*{Question 3: Particle number fluctuations}
+Consider the fugacity expansion of the grand-canonical partition function (Eq.~82 in the lecture notes):
+\begin{equation*}
+  Z_g(T, \mu) = \sum_{N = 0}^{\infty} \xi^N \, Z_N(T).
+\end{equation*}
+Here $\xi = e^{\be \mu} = e^{\mu / T}$ is the fugacity and $Z_N(T)$ is the $N$-particle canonical partition function, which is independent of $\xi$.
+Recall that $\Phi(T, \mu) = -T \log Z_g(T, \mu)$ is the corresponding grand-canonical potential.
+
+\begin{enumerate}[label={(\alph*)}]
+  \item Derive a relation between the average particle number $\vev{N}$ and the derivative $\displaystyle \pderiv{}{\log \xi}\Phi$.
+
+  \showmarks{8}
+
+  \item Derive a relation between $\vev{\left(N - \vev{N}\right)^2}$ and $\displaystyle \left(\pderiv{}{\log \xi}\right)^2 \Phi$.
+
+  \showmarks{8}
+
+  \item Specialize to the case of Maxwell--Boltzmann statistics, for which the fugacity expansion simplifies to $Z_g^{\text{MB}}(T, \mu) = \exp[\xi Z_1(T)]$, where $Z_1$ is the single-particle partition function.
+        Use the relations you have derived to determine $\vev{N}$ and $\vev{\left(N - \vev{N}\right)^2}$ for this case, and show
+        \begin{equation*}
+          \frac{\sqrt{\vev{\left(N - \vev{N}\right)^2}}}{\vev{N}} = \frac{1}{\sqrt{\vev{N}}}.
+        \end{equation*}
+        It may be useful to note $\displaystyle \pderiv{}{\log \xi} = \xi \pderiv{}{\xi}$.
+
+  \showmarks{8}
+\end{enumerate}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\vfill
+\section*{Question 4: Bosons and fermions}
+Using the grand-canonical ensemble with temperature $T = 1 / \be$ and chemical potential $\mu$, consider a quantum system that has only three energy levels, with energies $E_0 = 0$, $E_1 = \eps$ and $E_2 = 2\eps$.
+\begin{enumerate}[label={(\alph*)}]
+  \item If the particles in this system are fermions, how many micro-states are there?
+
+  \showmarks{2}
+
+  \item How many micro-states would there be if the particles were bosons?
+
+  \showmarks{2}
+
+  \item For the fermionic case, write down every term in the grand-canonical partition function.
+
+  \showmarks{6}
+
+  \item For the fermionic case, what is the average internal energy $\vev{E}$?
+
+  \showmarks{8}
+
+  \item For the fermionic case, what are the average occupation numbers $\vev{n_0}$, $\vev{n_1}$ and $\vev{n_2}$ for the three energy levels?
+
+  \showmarks{8}
+\end{enumerate}
+
+\noindent It may be useful to consider a system with only two energy levels as a warm-up exercise.
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\end{document}
+% ------------------------------------------------------------------
