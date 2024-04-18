@@ -190,7 +190,7 @@ What are the resulting exact mean $\mu$ and standard deviation \si of $p(x)$?
 
 \showmarks{5}
 
-Reset by initializing the random number generator with seed $314159$.
+Reset by initializing the random number generator with seed $314159$. % TODO: Change to PRNG...
 Now, using the \texttt{arcsin} function provided by Numerical Python (NumPy), generate $R = 2{,}000{,}000$ pseudo-random numbers $x_r$ via \eq{eq:transform}.
 Use these to numerically estimate the mean and standard deviation of $p(x)$, analogously to \eq{eq:mean} in the previous exercise.
 How do your numerical results compare to your exact $\mu$ and \si above?
@@ -229,7 +229,7 @@ each as a function of $N$?
 \showmarks{2}
 
 \subsection*{(b) Fixed number of steps}
-Reset by initializing the random number generator with seed $314159$.
+Reset by initializing the random number generator with seed $314159$. % TODO: Change to PRNG...
 With fixed $N = 100$, generate $R$ $100$-step random walks for each of $R = 20$, $200$, $2000$, $20{,}000$ and $200{,}000$.
 Use the five resulting sets $\left\{X_r\right\}$ to numerically estimate both
 \begin{align*}
@@ -243,7 +243,7 @@ Five significant figures should suffice for this comparison.
 \showmarks{8}
 
 \subsection*{(c) Diffusion constant}
-Reset by initializing the random number generator with seed $314159$.
+Reset by initializing the random number generator with seed $314159$. % TODO: Change to PRNG...
 Then fix $R = 20{,}000$ and compute $\overline{\ell_2(N)}_R$ for \textit{every} $N = 1, 2, \cdots, 500$.
 Rather than reporting results as numerical values, plot $\overline{\ell_2(N)}_R$ vs.\ $N$.
 (\textbf{Hint:} You can ignore potential correlations between $\overline{\ell_2(N)}_R$ for different values of $N$.)
@@ -318,9 +318,9 @@ You can choose the \href{https://en.wikipedia.org/wiki/Constant_of_integration}{
 
 \showmarks{6}
 
-Now reset by initializing the random number generator with seed $s = 314159$.
+Now reset by initializing the random number generator with seed $s = 314159$. % TODO: Change to PRNG...
 Generate $R = 2{,}000{,}000$ pseudo-random numbers $x_r = F(u_r)$ using the transform you found.
-Plot the histogram of these million $\left\{x_r\right\}$ and check whether it agrees with the Cauchy--Lorentz distribution shown above.
+Plot the histogram of these two million $\left\{x_r\right\}$ and check whether it agrees with the Cauchy--Lorentz distribution shown above.
 
 \textbf{Hints:} You will need to set an appropriate range for the x-axis of this histogram.
 A range $-10 \leq x \leq 10$ with roughly $201$ bins should suffice to show all the interesting features.
@@ -370,8 +370,8 @@ This exercise investigates the exponent \al for the distribution $p_C(x)$ in \eq
 
 \newpage % WARNING: FORMATTING BY HAND
 \subsection*{Task a: Fixed number of steps}
-Reset by initializing the random number generator with seed $314159$.
-With fixed $N = 100$, generate $R$ $100$-step random walks,
+Reset by initializing the random number generator with seed $314159$. % TODO: Change to PRNG...
+With fixed $N = 100$, generate $R$ $100$-step random walks using the transform you found in Exercise~4,
 \begin{align*}
   X_r(N) & = \sum_{i = 1}^N x_i &
   r & = 1, 2, \cdots, R,
@@ -387,7 +387,7 @@ for three values of $\theta = 0.2$, $0.5$ and $0.8$.
 \showmarks{12}
 
 \subsection*{Task b: Anomalous diffusive exponent}
-Reset by initializing the random number generator with seed $314159$.
+Reset by initializing the random number generator with seed $314159$. % TODO: Change to PRNG...
 Then fix $R = 20{,}000$ and estimate $\overline{\ell_{\theta}(N)}_R$ for \textit{every} $N = 1, 2, \cdots, 200$, again considering $\theta = 0.2$, $0.5$ and $0.8$.
 Instead of reporting your numerical results, plot all three $\overline{\ell_{\theta}(N)}_R$ vs.\ $N$ in a single figure.
 (\textbf{Hint:} You can ignore potential correlations between $\overline{\ell_{\theta}(N)}_R$ for different values of $N$.)
