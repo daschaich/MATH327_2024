@@ -1,0 +1,1568 @@
+1
+00:00:01,140 --> 00:00:05,790
+So there's the recording underway on Tuesday morning.
+
+2
+00:00:07,310 --> 00:00:15,050
+The 23rd of April. And the magic number for this morning.
+
+3
+00:00:16,220 --> 00:00:20,550
+This is 1969. 85.
+
+4
+00:00:23,900 --> 00:00:29,900
+So what do we have going on this week? Well, the final homework assignment for the module is due on Friday.
+
+5
+00:00:30,650 --> 00:00:34,640
+It's been up for over a week now, so hopefully you've gotten a start on that.
+
+6
+00:00:35,030 --> 00:00:40,309
+And you're welcome to ask her any questions or clarifications about that either this
+
+7
+00:00:40,310 --> 00:00:45,170
+morning or this is horrible on Thursday or for that matter in the lecture on Friday,
+
+8
+00:00:45,560 --> 00:00:52,580
+as well as office hours going on through there now, less than a month away toward the final exam,
+
+9
+00:00:52,580 --> 00:00:59,240
+you're also looking forward to and deep within the, uh, topic of quantum gases.
+
+10
+00:00:59,630 --> 00:01:05,240
+So some of the fun stuff that we've been building up towards, um, throughout this whole module,
+
+11
+00:01:05,240 --> 00:01:13,100
+being able to use the grand canonical ensemble to analyse gases that are governed by quantum physics,
+
+12
+00:01:13,100 --> 00:01:22,340
+quantum statistics, and seeing the relation between that and the ordinary classical statistics based on Newton's laws.
+
+13
+00:01:23,270 --> 00:01:28,310
+Are there any questions from last week before we pick up where we left off?
+
+14
+00:01:30,850 --> 00:01:43,020
+What do you think about that? I'll just remind you that what we did on Friday was finish formulating both Bose-Einstein and Fermi-Dirac statistics.
+
+15
+00:01:43,920 --> 00:01:49,379
+So Bose-Einstein is a the version of quantum statistics relevant for bosonic particles,
+
+16
+00:01:49,380 --> 00:01:56,400
+where any non-zero non-negative number of particles can occupy any given energy level.
+
+17
+00:01:57,090 --> 00:02:07,260
+Fermi-Dirac is the corresponding alternative quantum statistics for fermions, where energy levels can only be either unoccupied or occupied.
+
+18
+00:02:08,100 --> 00:02:13,590
+And we checked that both of those sets of quantum statistics reproduce.
+
+19
+00:02:14,570 --> 00:02:22,190
+The classical case of particles with discrete energy levels analysed,
+
+20
+00:02:22,190 --> 00:02:28,940
+taking the classical approach of just um, considering the single particle partition function,
+
+21
+00:02:29,780 --> 00:02:36,830
+uh, raising that to the nth power and trying to correct for over counting, assuming that no energy levels are multiply occupied.
+
+22
+00:02:37,160 --> 00:02:44,720
+That's this Maxwell Boltzmann statistics and the regime of temperatures and chemical potentials where.
+
+23
+00:02:46,440 --> 00:02:56,100
+The quantum world, reduced to what we are used to classically was when the temperature was high and the negative chemical potential was even higher.
+
+24
+00:02:56,730 --> 00:03:04,950
+The high temperature made many energy levels accessible so that multiple occupancy was unlikely,
+
+25
+00:03:05,400 --> 00:03:11,700
+and the negative chemical potential made the number of particles under control and bounded so that
+
+26
+00:03:11,700 --> 00:03:19,170
+that didn't blow or run away and fill up all of the energy levels that were becoming accessible.
+
+27
+00:03:21,000 --> 00:03:26,820
+So based on the Bose-Einstein and Fermi-Dirac statistics that we now have.
+
+28
+00:03:27,360 --> 00:03:32,470
+You're applying this to. Concrete quantum gases with.
+
+29
+00:03:33,400 --> 00:03:39,160
+Particular sets of energy levels with particular sets of particles as well as occupation numbers.
+
+30
+00:03:39,700 --> 00:03:45,340
+And the first case we are considering is the ultra relativistic limit.
+
+31
+00:03:48,030 --> 00:03:58,110
+As opposed to the. Non-relativistic energies we considered for classical particles back before the break.
+
+32
+00:04:00,290 --> 00:04:07,790
+And looking specifically at a gas of ultra relativistic massless bosons which are known to their friends.
+
+33
+00:04:09,040 --> 00:04:20,620
+As photons and are connected to the electromagnetic waves in a way that we can look into a bit more in this week's tutorial.
+
+34
+00:04:21,430 --> 00:04:26,500
+What all this means is that the energy of a given photon with a.
+
+35
+00:04:28,250 --> 00:04:32,570
+Angular frequency omega is given by Planck's constant h bar times omega.
+
+36
+00:04:33,530 --> 00:04:39,140
+And we also discussed that this photon gas has a vanishing chemical potential.
+
+37
+00:04:39,170 --> 00:04:51,440
+Because the number of photons is freely changeable without affecting the energy or the entropy of the gas, which is a somewhat slippery concept that.
+
+38
+00:04:52,720 --> 00:04:57,930
+Has been discussed a bit further on the discussion board and also in an article that I post.
+
+39
+00:04:57,940 --> 00:04:59,740
+All right, uploaded to canvas.
+
+40
+00:05:01,620 --> 00:05:09,840
+Going into the concept of chemical potential more broadly, and also addressing why that is exactly zero for a gas of photons.
+
+41
+00:05:12,020 --> 00:05:18,350
+Just as with the classical ideal gases we looked at a while ago when.
+
+42
+00:05:20,580 --> 00:05:26,160
+These photons are placed into a finite volume of size cubed.
+
+43
+00:05:26,640 --> 00:05:31,950
+This quantise is their momenta, which now take the form of frequencies.
+
+44
+00:05:33,030 --> 00:05:36,270
+And these frequencies are related to.
+
+45
+00:05:37,740 --> 00:05:43,000
+The wavelength of the photon. By the speed at which.
+
+46
+00:05:43,920 --> 00:05:48,540
+They propagate. Known to its friends as the Speed of Light.
+
+47
+00:05:48,570 --> 00:05:55,350
+See? This is the wavelength Lambda times the frequency and divided by two pi.
+
+48
+00:05:55,560 --> 00:05:58,500
+Just based on where those factors of two pi have gone in.
+
+49
+00:05:59,960 --> 00:06:08,150
+So plugging these energies and wavelength frequency relations into the Bose Einstein grand canonical potential.
+
+50
+00:06:09,490 --> 00:06:15,150
+We were able to. Obtain. The so-called Planck spectrum.
+
+51
+00:06:17,320 --> 00:06:23,420
+So expressing the energy density. Of the photon gas as an integral.
+
+52
+00:06:25,040 --> 00:06:28,090
+Over frequencies. Of some.
+
+53
+00:06:29,050 --> 00:06:31,120
+Spectral density P of omega,
+
+54
+00:06:32,020 --> 00:06:40,120
+which we can also change variables and write as the corresponding spectral density as a function of wavelength rather than momentum.
+
+55
+00:06:40,120 --> 00:06:46,870
+In both cases, integrating from zero to infinity and finding that.
+
+56
+00:06:48,190 --> 00:06:53,470
+The specific or the particular Planck spectrum going into these integrals.
+
+57
+00:06:57,710 --> 00:07:06,350
+Has in terms of frequencies, some constant factors out front, and then a ratio of a polynomial in frequency.
+
+58
+00:07:06,590 --> 00:07:11,830
+Specifically frequency cubed divided by. An exponential function.
+
+59
+00:07:13,200 --> 00:07:16,320
+Or in terms of the wavelength.
+
+60
+00:07:18,980 --> 00:07:23,120
+We have, instead of a frequency in the numerator, we end up with a wavelength.
+
+61
+00:07:23,980 --> 00:07:28,840
+In the denominator, now raised to the power of five.
+
+62
+00:07:29,700 --> 00:07:34,320
+And the exponential factor is almost identical up to swapping in.
+
+63
+00:07:35,970 --> 00:07:40,620
+Um. Two pi.
+
+64
+00:07:42,020 --> 00:07:46,860
+Better h bar. And. See in place of Omega.
+
+65
+00:07:50,240 --> 00:07:53,330
+So that's where we got to last week.
+
+66
+00:07:54,380 --> 00:08:01,350
+Any questions about that before we move on to. The new matters.
+
+67
+00:08:05,210 --> 00:08:16,310
+So as always, given a expression, a complicated function for some large scale quantity of interest, it is wise to consider.
+
+68
+00:08:18,530 --> 00:08:24,770
+What happens in the extreme cases? What is the limiting behaviour of.
+
+69
+00:08:26,300 --> 00:08:29,150
+This Planck spectrum, for instance, in the.
+
+70
+00:08:32,290 --> 00:08:42,820
+Ultraviolet of high frequencies, high energies, small wavelengths or the infrared of low energies, low frequencies and large wavelengths.
+
+71
+00:08:45,000 --> 00:08:50,380
+So that ultraviolet light corresponds to lambda going to zero.
+
+72
+00:08:50,400 --> 00:09:00,120
+If we plug in a very small lambda into the form of the Planck spectrum in terms of the wavelength, then we see.
+
+73
+00:09:01,290 --> 00:09:11,279
+A one over zero coming from the one over land to the fifth factor out front, but we also have the exponential of one over zero.
+
+74
+00:09:11,280 --> 00:09:15,930
+So the exponential of a very large number that diverges exponentially quickly.
+
+75
+00:09:16,110 --> 00:09:23,610
+So in the actual limit this is an indeterminate form, some constant divided by zero times infinity.
+
+76
+00:09:24,690 --> 00:09:34,650
+If we were to hit that with a loop at whole 5 or 6 times, the polynomial factor would gradually be ground down to a constant.
+
+77
+00:09:35,340 --> 00:09:44,790
+The exponential factor would stick around throughout, so that exponential um infinity wins in the denominator.
+
+78
+00:09:45,120 --> 00:09:48,240
+So that sends the overall.
+
+79
+00:09:49,790 --> 00:10:03,090
+Product. Of these two factors down to zero in this high energy short wavelength limit.
+
+80
+00:10:03,570 --> 00:10:07,740
+So p of lambda. Heads to zero.
+
+81
+00:10:08,970 --> 00:10:16,440
+And this is something that we can see in a figure that doesn't quite fit on the screen.
+
+82
+00:10:19,970 --> 00:10:24,320
+So zoom out a bit and see what we can include in here.
+
+83
+00:10:25,220 --> 00:10:33,840
+So looking at. The. Spectral radiance, which is almost, but not exactly what we've been talking about.
+
+84
+00:10:33,840 --> 00:10:42,240
+So all this is, if we look at the units, is multiplying by a constant factor, the speed of light C over the four pi.
+
+85
+00:10:42,780 --> 00:10:55,840
+Um. Solid angle. To convert this from a energy density into a power density per unit solid angle.
+
+86
+00:10:56,440 --> 00:11:06,040
+So what's instead of joules in these particular units? The three coloured lines here are exactly this Planck spectrum as a function of
+
+87
+00:11:06,040 --> 00:11:12,400
+wavelength for three different temperatures going from 3000 Kelvin up to 5000 Kelvin.
+
+88
+00:11:12,760 --> 00:11:23,319
+And what we have confirmed is that all three of these expressions go to zero exponentially quickly in that small wavelength ultraviolet limit,
+
+89
+00:11:23,320 --> 00:11:27,670
+which is labelled up at the top here and just off of the screen.
+
+90
+00:11:29,060 --> 00:11:32,130
+So they. Um.
+
+91
+00:11:33,770 --> 00:11:36,590
+Are all suppressed and also all suppressed exponentially quickly.
+
+92
+00:11:37,070 --> 00:11:43,580
+And we can also see there are more interesting things going on at larger wavelengths.
+
+93
+00:11:44,150 --> 00:11:49,070
+So zooming back in, refocusing and connecting.
+
+94
+00:11:50,790 --> 00:11:54,360
+The ultraviolet limit to the opposite extreme.
+
+95
+00:11:55,710 --> 00:12:03,750
+The infrared. Where the energy is low, the wavelength is long, and in particular lambda.
+
+96
+00:12:05,550 --> 00:12:13,690
+This is going to be large. Compared to the other set of quantities that have the same units.
+
+97
+00:12:13,710 --> 00:12:22,230
+What's showing up here in the exponential factor is the inverse temperature times Planck's constant times the speed of light.
+
+98
+00:12:31,960 --> 00:12:37,810
+And in this limit, the argument of the exponential is going to be close to zero.
+
+99
+00:12:37,840 --> 00:12:47,800
+It's a exponential of a small number that we can expand in the usual Taylor series two pi beta h bar c over lambda minus one.
+
+100
+00:12:48,880 --> 00:12:56,740
+The leading term in the expansion of the exponential is one that cancels out there, so we are just left with two pi.
+
+101
+00:12:58,010 --> 00:13:01,970
+Beta hbar C over lambda. And the.
+
+102
+00:13:04,210 --> 00:13:08,290
+Planck spectrum as a whole. Um, put this on the next line.
+
+103
+00:13:11,380 --> 00:13:27,520
+Is approximately this constant factor. That power of one over Lambda five, and we pick up one power of lambda from having one over this ratio to pi.
+
+104
+00:13:28,560 --> 00:13:34,170
+Peter H, bar C. All the H bars and C's cancel out.
+
+105
+00:13:34,170 --> 00:13:37,710
+The beta is the inverse temperature, so we can write this as.
+
+106
+00:13:38,910 --> 00:13:43,920
+Uh, 16 over two is eight pi squared over pi is pi.
+
+107
+00:13:44,670 --> 00:13:51,760
+There is a temperature and. A factor of lambda to the fourth, which also goes to zero.
+
+108
+00:13:52,390 --> 00:13:59,140
+When lambda gets very large again confirming what you were able to see by plotting the entire spectrum.
+
+109
+00:14:00,520 --> 00:14:04,800
+And this particular function. Um.
+
+110
+00:14:06,300 --> 00:14:12,840
+The temperature divided by wavelength of the fourth power, with an overall factor of eight pi is.
+
+111
+00:14:14,480 --> 00:14:18,530
+A famous result of 19th century physics.
+
+112
+00:14:20,210 --> 00:14:26,780
+Known as the Raleigh Jeans spectrum. And this is.
+
+113
+00:14:27,890 --> 00:14:36,860
+In fact, the classical result that we would get if we were to analyse these photons not as particles,
+
+114
+00:14:36,860 --> 00:14:43,460
+but as electromagnetic waves being emitted by some, um, object at a particular temperature.
+
+115
+00:14:44,630 --> 00:14:49,430
+So it's not the classical Maxwell-Boltzmann statistics that we looked at last week,
+
+116
+00:14:50,000 --> 00:14:58,010
+but a different classical analysis we can set aside for the purposes of this module has a lot depends a lot on we've analyses,
+
+117
+00:14:59,840 --> 00:15:03,110
+but that is the black line that is being.
+
+118
+00:15:04,230 --> 00:15:14,100
+Shown on this figure we were looking at earlier, the classical religions theory, a piety over lambs of the fourth.
+
+119
+00:15:17,470 --> 00:15:25,540
+And we can confirm what we found that in the infrared regime where the wavelength is getting large,
+
+120
+00:15:26,230 --> 00:15:32,020
+the colour lines from the Planck spectrum are converging to that classical theory.
+
+121
+00:15:33,730 --> 00:15:37,180
+And in this case, the best. The, um.
+
+122
+00:15:38,980 --> 00:15:43,630
+Reliable comparison to make as the two cases with that same temperature of 5000 Kelvin.
+
+123
+00:15:44,720 --> 00:15:50,720
+Because there are also these this linear temperature effect in the classical theory that would shift it around.
+
+124
+00:15:51,710 --> 00:15:57,260
+Compared to the three temperatures for the Planck spectrum that we have shown here.
+
+125
+00:16:01,130 --> 00:16:04,770
+One thing to. Note about.
+
+126
+00:16:07,930 --> 00:16:17,290
+This classical theory that, as I mentioned, had been derived by considering electromagnetic waves in the 1800s.
+
+127
+00:16:17,320 --> 00:16:21,040
+So zooming back in and refocusing.
+
+128
+00:16:24,280 --> 00:16:29,410
+It's classical Raleigh jeans spectrum. For.
+
+129
+00:16:30,700 --> 00:16:37,450
+What we now recognise is that gas and photons. If that were all that we had from.
+
+130
+00:16:38,370 --> 00:16:42,150
+A classical analysis without accounting for any quantum effects.
+
+131
+00:16:42,810 --> 00:16:47,760
+You would predict that the energy density is actually going to infinity.
+
+132
+00:16:49,310 --> 00:16:53,270
+Like one over land the fourth. As these wavelengths get.
+
+133
+00:16:54,280 --> 00:17:02,770
+Small. This was a clear result that, you know, Raleigh and genes noted as soon as they derived this functional form.
+
+134
+00:17:04,070 --> 00:17:09,740
+And this became known in the late 1800s. As the ultraviolet catastrophe.
+
+135
+00:17:13,880 --> 00:17:24,070
+Basically a prediction that. Any electromagnetic radiation being emitted from a body at effectively any temperature.
+
+136
+00:17:24,880 --> 00:17:34,390
+Um included a infinite amount of energy coming from these short wavelength or high frequency modes.
+
+137
+00:17:35,590 --> 00:17:44,350
+And this, in fact, was the ultimate origin for Planck to introduce, um, his spectrum,
+
+138
+00:17:44,710 --> 00:17:55,900
+which he was able to get just by kind of guessing, not blindly, but without any physical motivation, guessing that there was some.
+
+139
+00:17:57,790 --> 00:18:02,290
+Limiting frequency or limiting wavelength at which the.
+
+140
+00:18:03,430 --> 00:18:09,160
+Um, energy in these gases could be emitted.
+
+141
+00:18:09,730 --> 00:18:12,820
+You call that a quantum or a quantum of energy?
+
+142
+00:18:13,510 --> 00:18:24,170
+And this. Was essentially the first step along the, you know, decades long path to deriving true quantum physics,
+
+143
+00:18:24,500 --> 00:18:31,910
+showing that nature actually does impose a discrete spectrum on its particles,
+
+144
+00:18:33,320 --> 00:18:40,340
+and relates well the fact that waves themselves can be represented as particles was a consequence of this.
+
+145
+00:18:42,140 --> 00:18:46,970
+Um. And I think Planck himself called it an act of desperation to.
+
+146
+00:18:48,290 --> 00:18:52,730
+Proposed quantising electromagnetic radiation and coming up with.
+
+147
+00:18:53,860 --> 00:18:59,950
+The spectrum that now bears his name, which can be compared to what was actually being measured.
+
+148
+00:19:00,580 --> 00:19:05,840
+Um. For the energy of various objects at various temperatures.
+
+149
+00:19:07,830 --> 00:19:14,310
+Back in the. I think this was done in 1901, and it was another 20 years before.
+
+150
+00:19:14,460 --> 00:19:18,600
+Quantum mechanics was really fully established and formulated.
+
+151
+00:19:21,090 --> 00:19:28,830
+But speaking of comparing the mathematical prediction to physical observations,
+
+152
+00:19:30,540 --> 00:19:37,740
+one thing we can pull out from that figure that I will bring back up shortly.
+
+153
+00:19:38,250 --> 00:19:43,140
+There's. The alignment with what this scam is picking up.
+
+154
+00:19:44,160 --> 00:19:51,810
+If we look at the full Planck spectrum, we've checked that it goes to zero in both the ultraviolet and infrared limits.
+
+155
+00:19:51,840 --> 00:19:54,480
+There is no more ultraviolet catastrophe.
+
+156
+00:19:55,620 --> 00:20:08,340
+And in between those two limits where the energy density vanishes, there is a maximum, a peak in the spectrum that shifts depending on.
+
+157
+00:20:09,430 --> 00:20:15,270
+The temperature. So I'm just referring to.
+
+158
+00:20:15,910 --> 00:20:19,530
+We keep things zoomed in at the moment. We have.
+
+159
+00:20:20,850 --> 00:20:26,700
+A very broad maximum. Around a little under a wavelength of one micron.
+
+160
+00:20:27,000 --> 00:20:33,300
+For a gaseous temperature of 3000 Kelvin, that shifts down to about.
+
+161
+00:20:34,930 --> 00:20:37,980
+Point seven microns.
+
+162
+00:20:38,520 --> 00:20:45,390
+As the temperature increases by a thousand Kelvin and down even further to just a little over.
+
+163
+00:20:46,350 --> 00:20:51,210
+Um, half a micron when we get to this temperature of 5000 Kelvin.
+
+164
+00:20:51,900 --> 00:20:55,020
+And what is superimposed behind it?
+
+165
+00:20:55,020 --> 00:20:59,629
+These three curves. Is the spectrum of visible radiation.
+
+166
+00:20:59,630 --> 00:21:06,770
+So the light that our eyes can see. Which ranges from about four 400 nanometres, which is 0.4 microns.
+
+167
+00:21:07,730 --> 00:21:11,000
+At the bottom of the plot here, we can still see the colours coming along.
+
+168
+00:21:11,780 --> 00:21:18,830
+That's the violet colour, about 400 some nanometres is going up to the lower.
+
+169
+00:21:19,700 --> 00:21:24,819
+Um. Longer wavelength. Red spectrum.
+
+170
+00:21:24,820 --> 00:21:29,980
+It lower energies, longer wavelengths around 700 nanometres.
+
+171
+00:21:31,500 --> 00:21:41,160
+And the fact that the playing spectrum is peaked almost right in the middle of the visible light for a temperature of 5000 Kelvin,
+
+172
+00:21:41,580 --> 00:21:50,520
+actually, turns out not to be a coincidence. So.
+
+173
+00:21:57,450 --> 00:22:02,250
+For this particular. 5000 Kelvin.
+
+174
+00:22:03,570 --> 00:22:17,270
+Peak. The fact that this the light around this peak is visible to us is essentially because we have evolved to see it.
+
+175
+00:22:18,650 --> 00:22:30,050
+That is because. The light. From our son that is reaching us ends up having an effective temperature in this.
+
+176
+00:22:31,320 --> 00:22:34,920
+Ballpark. It's. We measure it fairly precisely.
+
+177
+00:22:35,580 --> 00:22:41,190
+Closer to 6000 Kelvin than 5000. But that is still, um.
+
+178
+00:22:41,730 --> 00:22:47,520
+The range of temperatures where the peak in the Planck spectrum is within.
+
+179
+00:22:49,880 --> 00:22:57,670
+This sort of 500 nanometre range. What we have come to call visible light.
+
+180
+00:22:59,000 --> 00:23:03,560
+So this is the measured spectrum of solar radiation.
+
+181
+00:23:04,160 --> 00:23:13,880
+The again the power so differing from the energy density only by a constant factor of C that reaches the Earth from the sun.
+
+182
+00:23:14,920 --> 00:23:20,160
+So the sunlight that comes in. There are two colours here.
+
+183
+00:23:20,510 --> 00:23:30,989
+Uh, yellow and red. The yellow, um, shading is the spectrum of sunlight that hits the outer limits of the Earth's atmosphere.
+
+184
+00:23:30,990 --> 00:23:37,470
+So what actually reaches the planet from the sun shown here is sunlight without atmospheric absorption.
+
+185
+00:23:39,150 --> 00:23:50,280
+The red subset of that is the portion of that sunlight that can actually make it through the atmosphere to reach us around sea level.
+
+186
+00:23:51,820 --> 00:24:01,809
+Um, and there are various labels for the molecules in the atmosphere that are absorbing some of that rotation,
+
+187
+00:24:01,810 --> 00:24:06,160
+being absorbing photons to be excited to higher energy states.
+
+188
+00:24:06,580 --> 00:24:11,680
+A lot of that is water, oxygen, carbon dioxide or other molecules.
+
+189
+00:24:13,250 --> 00:24:21,650
+And for both the sunlight reaching the outer limits of the atmosphere and the the red set of photons that we actually see.
+
+190
+00:24:22,430 --> 00:24:28,460
+There is a peak in the visible range of frequencies now in nanometres 400 to 700 or so.
+
+191
+00:24:29,000 --> 00:24:34,850
+And this is visible because it is what it is best for our eyes to evolve to see.
+
+192
+00:24:35,390 --> 00:24:41,570
+It is where the bulk of the photons are coming in for us to use, to see what's going on around us.
+
+193
+00:24:42,990 --> 00:24:47,350
+The. Black line here.
+
+194
+00:24:48,130 --> 00:24:53,800
+Superimposed upon these actual measurements is exactly the Planck spectrum.
+
+195
+00:24:54,610 --> 00:25:00,000
+They are calling it black body. The black body spectrum of black body radiation.
+
+196
+00:25:00,540 --> 00:25:07,080
+That's a kind of old fashioned term that Planck and his contemporaries were talking about.
+
+197
+00:25:08,480 --> 00:25:09,980
+Quickly. The idea is that.
+
+198
+00:25:11,300 --> 00:25:19,490
+If we want to consider the electromagnetic radiation, the photons that a particle is giving off what it has some temperature.
+
+199
+00:25:20,000 --> 00:25:26,240
+We don't want that to be confused with photons that are bouncing off that particle from the background.
+
+200
+00:25:26,840 --> 00:25:39,020
+So they suppose that the object under consideration was completely black, in the sense that it absorbed all of its environmental energy,
+
+201
+00:25:39,680 --> 00:25:48,050
+did not reflect any of that, and just emitted photons or electromagnetic waves based on the temperature that it had.
+
+202
+00:25:48,110 --> 00:25:52,940
+That's the origin of that. Somewhat old fashioned terminology.
+
+203
+00:25:54,720 --> 00:26:02,670
+But we can see that even accounting for all of the complicated processes going on in
+
+204
+00:26:02,670 --> 00:26:09,900
+our sun that are releasing these photons with this range of wavelengths and energies.
+
+205
+00:26:11,280 --> 00:26:17,669
+I think spectrum is a very good approximation to the actual behaviour of the sun,
+
+206
+00:26:17,670 --> 00:26:28,800
+especially at lower energies or longer wavelengths where things are a bit more gentle, and individual molecular physics effects are less noticeable.
+
+207
+00:26:30,150 --> 00:26:36,740
+So there's a bit of a. Difference between us at the higher energies cut off here around 250 nanometres.
+
+208
+00:26:36,740 --> 00:26:48,960
+That is just due to, um. Molecular effects, basically playing a role in the generation of the photons in the corona of the sun.
+
+209
+00:26:50,940 --> 00:26:57,900
+So this is some. Well, really fantastic agreement and I should say that.
+
+210
+00:26:58,860 --> 00:27:03,179
+This is also how the temperature of the sun specifically is effective.
+
+211
+00:27:03,180 --> 00:27:08,820
+Surface temperature of 500. Sorry, 5778 Kelvin is determined.
+
+212
+00:27:09,720 --> 00:27:18,210
+You measure this spectrum of energy used as a function of wavelength, and you fit that to the Planck spectrum.
+
+213
+00:27:19,020 --> 00:27:25,140
+For a particular you use that fit to determine the value of the temperature that gives the best description.
+
+214
+00:27:26,870 --> 00:27:34,380
+So from comparing. The light of the sun to the Planck spectrum.
+
+215
+00:27:34,800 --> 00:27:41,270
+We have a measure for its temperature. Which.
+
+216
+00:27:42,640 --> 00:27:47,170
+Should be specified as the effective surface temperature.
+
+217
+00:27:48,840 --> 00:27:56,270
+Of the sun. As opposed to.
+
+218
+00:27:57,360 --> 00:28:02,400
+The temperature deep within its core, which we don't see directly from the light that it emits.
+
+219
+00:28:03,930 --> 00:28:14,550
+And this is just determined. By fitting the Planck spectrum to the measurements of solar power or energy that we have.
+
+220
+00:28:16,730 --> 00:28:24,470
+And well, the sun is just a star and there are many stars in the galaxy.
+
+221
+00:28:25,710 --> 00:28:29,160
+And we can do the same procedure for all of those.
+
+222
+00:28:29,430 --> 00:28:37,050
+Now that technology has developed to the point, we can measure the spectrum of photons coming from distant stars.
+
+223
+00:28:39,280 --> 00:28:48,330
+We can get effective surface temperatures from all of these and categorise them based on the temperature that they have.
+
+224
+00:28:48,340 --> 00:28:52,660
+So the so-called red stars that have a more reddish colour to our eye.
+
+225
+00:28:54,370 --> 00:29:01,360
+Have lower temperatures compared to our sun. The peak of the Planck spectrum has shifted to that longer wavelength.
+
+226
+00:29:02,050 --> 00:29:12,970
+As we saw in this figure. So for a star to be considered red, it usually has to have an effective surface temperature below about 3500 Kelvin.
+
+227
+00:29:13,960 --> 00:29:16,690
+And similarly going in the other direction.
+
+228
+00:29:17,900 --> 00:29:30,230
+Blue stars, with their spectral peaks shifted to lower wave wavelengths, higher frequencies, and the blue or violet side of the visible spectrum.
+
+229
+00:29:31,900 --> 00:29:34,990
+Would correspond to stars with higher temperatures.
+
+230
+00:29:35,380 --> 00:29:38,980
+Around or above 10,000 Kelvin.
+
+231
+00:29:40,210 --> 00:29:44,950
+And those stars in between, like our sun, are normally called the yellow stars.
+
+232
+00:29:45,580 --> 00:29:51,820
+Um, the yellow sun that we are used to. So that is.
+
+233
+00:29:52,820 --> 00:29:57,190
+I think a fun application of the Planck spectrum to astronomy.
+
+234
+00:29:57,200 --> 00:30:00,500
+Are there any questions about, um,
+
+235
+00:30:00,920 --> 00:30:11,030
+the ultraviolet catastrophe or comparison of the spectrum that we've derived to actual data coming from solar measurements?
+
+236
+00:30:21,750 --> 00:30:28,720
+Not seeing any. Let's before we move on to compute more properties of this full time gas.
+
+237
+00:30:28,740 --> 00:30:31,050
+There's one more fun connection that we can make.
+
+238
+00:30:32,270 --> 00:30:43,220
+And that is using the same procedure of fitting measurements of, um, an energy spectrum to the Planck functional form.
+
+239
+00:30:44,570 --> 00:30:50,360
+We can do this looking not at an individual star, but looking at.
+
+240
+00:30:52,930 --> 00:30:57,100
+The so-called empty space in between galaxies.
+
+241
+00:30:58,830 --> 00:31:05,190
+So again, we have we have the technology to point our telescopes in between stars,
+
+242
+00:31:05,520 --> 00:31:14,730
+subtract out all of the photons that we can associate with particular galaxies or stars, and measure what is left over from.
+
+243
+00:31:16,380 --> 00:31:20,070
+The empty space in between these galaxies.
+
+244
+00:31:21,060 --> 00:31:27,270
+And we measure from that procedure a temperature of around 2.7 Kelvin.
+
+245
+00:31:28,760 --> 00:31:32,330
+2.725. Roughly.
+
+246
+00:31:33,380 --> 00:31:38,540
+Measurements are actually more precise than that these days. And what is being measured here?
+
+247
+00:31:38,870 --> 00:31:43,069
+The photons that are coming from this, you know.
+
+248
+00:31:43,070 --> 00:31:47,990
+Very. Dear. Vacuum. Very dilute space.
+
+249
+00:31:49,320 --> 00:31:54,150
+Is. A remnant of the Big Bang.
+
+250
+00:31:55,370 --> 00:31:59,350
+Known as the Cosmic Microwave Background. Net.
+
+251
+00:32:00,870 --> 00:32:08,220
+Is filling all of the space that we can see whether there's a galaxy there or not.
+
+252
+00:32:08,820 --> 00:32:11,820
+It is effectively energy that is left over.
+
+253
+00:32:14,250 --> 00:32:21,160
+From the Big Bang. Roughly 13.7 billion years ago.
+
+254
+00:32:22,000 --> 00:32:26,590
+Call it 13.7 years. So.
+
+255
+00:32:32,470 --> 00:32:40,870
+Again, this is something that we can. Talk about in a bit more depth during the tutorial on Thursday.
+
+256
+00:32:42,000 --> 00:32:51,940
+I'll just flash the kind of. Image of the cosmic microwave background that we are able to.
+
+257
+00:32:53,220 --> 00:33:02,540
+Um. To produce with the satellites that and satellite telescopes that exist these days.
+
+258
+00:33:03,940 --> 00:33:13,749
+This particular image, which you may have seen, um, in popular culture, was produced by the Planck telescope,
+
+259
+00:33:13,750 --> 00:33:22,840
+named in honour of Max Planck, who derived the spectrum being used to determine the temperature of the cosmic microwave background.
+
+260
+00:33:23,380 --> 00:33:30,950
+So it's about ten year old image now. That satellite, I think, has been operating since about 2008.
+
+261
+00:33:31,370 --> 00:33:35,960
+In his first five years of data sufficed to produce this image.
+
+262
+00:33:37,550 --> 00:33:45,350
+And basically what is going on here is that this telescope is looking at each particular point of the sky.
+
+263
+00:33:45,410 --> 00:33:54,510
+So this oval here is the full four pi sky that we can look out and see being projected onto two dimensions,
+
+264
+00:33:54,560 --> 00:33:58,220
+the same way that we would do with a map of the surface of the Earth.
+
+265
+00:33:58,940 --> 00:34:05,690
+If we look at a particular point, subtract away the photons from all the galaxies that are contaminating that point.
+
+266
+00:34:06,230 --> 00:34:10,250
+Measure what is left fitted to the Planck spectrum. We get a temperature.
+
+267
+00:34:11,910 --> 00:34:18,030
+And the red points are those that are slightly, slightly hotter than the average temperature overall,
+
+268
+00:34:18,390 --> 00:34:22,820
+and the blue points are those that are slightly lower. So.
+
+269
+00:34:24,700 --> 00:34:31,870
+Zoom back in and be a bit more specific about what I mean by slightly higher and slightly lower.
+
+270
+00:34:32,350 --> 00:34:37,040
+I've zoomed in too much there. You know.
+
+271
+00:34:37,060 --> 00:34:43,030
+And. So in that plot.
+
+272
+00:34:46,770 --> 00:34:50,460
+The temperature at. Each point.
+
+273
+00:34:52,830 --> 00:34:58,710
+Was being determined from the photons that were reaching this satellite telescope.
+
+274
+00:35:00,900 --> 00:35:06,930
+After subtracting away those. Coming from galaxies in that direction.
+
+275
+00:35:10,000 --> 00:35:17,170
+And it is a bit amazing that it is even possible to to do this subtract away so called foregrounds and.
+
+276
+00:35:18,300 --> 00:35:22,710
+Determine which photons are being emitted from the empty space between the galaxies.
+
+277
+00:35:24,890 --> 00:35:29,700
+And that blue or red? Colour was corresponding to.
+
+278
+00:35:31,760 --> 00:35:39,420
+These small fluctuations. Around the average temperature of this cosmic microwave background.
+
+279
+00:35:42,940 --> 00:35:47,799
+Which I said before was about 2.725 Kelvin.
+
+280
+00:35:47,800 --> 00:35:53,890
+And I think this has been determined by that Planck satellite to something like six significant figures.
+
+281
+00:35:54,430 --> 00:36:01,930
+We don't need quite so many. And in particular, these small fluctuations correspond to changes in temperature.
+
+282
+00:36:03,310 --> 00:36:12,340
+On the order of 0.2 Millikelvin or 0.02 Kelvin.
+
+283
+00:36:13,780 --> 00:36:23,589
+Around the average temperature of the cosmic microwave background, which also roughly corresponds to the peak in the Planck spectrum.
+
+284
+00:36:23,590 --> 00:36:28,780
+If we were to look at these background photons from the whole sky.
+
+285
+00:36:30,780 --> 00:36:38,610
+What's also interesting in this figure, and maybe the biggest scientific impact of his head,
+
+286
+00:36:39,030 --> 00:36:47,430
+is that the pattern of fluctuations, roughly speaking, how far on average a blue region is from a red region.
+
+287
+00:36:48,700 --> 00:36:53,800
+So how the fluctuations on average are distributed as we look at different angular scales.
+
+288
+00:36:56,830 --> 00:37:04,570
+That actually turns out to be some of the strongest evidence that we have for the existence of dark matter.
+
+289
+00:37:07,500 --> 00:37:17,639
+And in particular, establishing that other evidence for dark matter coming from shorter distance scales like galaxies and
+
+290
+00:37:17,640 --> 00:37:25,380
+clusters of galaxies cannot be explained just by modifying Newtonian or modifying general relativity.
+
+291
+00:37:25,860 --> 00:37:33,150
+Um. That there is, in fact, some additional type of matter.
+
+292
+00:37:33,990 --> 00:37:39,700
+We don't know what it is, but we know that it is about five sixth of the total amount of matter in the universe.
+
+293
+00:37:39,720 --> 00:37:45,540
+It is unlike everything that we are made out of, or we are able to experimentally manipulate.
+
+294
+00:37:46,650 --> 00:37:53,040
+And it's a major topic in modern physics trying to figure out more details of this dark matter again.
+
+295
+00:37:54,560 --> 00:37:58,010
+Something that, uh, could say a bit more about in the tutorial.
+
+296
+00:37:59,240 --> 00:38:12,200
+Unless there are immediate questions about it. So there is time to show sort of one final plots connecting to the.
+
+297
+00:38:14,260 --> 00:38:17,260
+Average temperature of this cosmic microwave background that I mentioned.
+
+298
+00:38:17,260 --> 00:38:21,760
+So zooming out for the final time, this is a somewhat older plot.
+
+299
+00:38:23,610 --> 00:38:33,230
+Again of the. The power related to the energy density now is a function of frequency rather than wavelength,
+
+300
+00:38:33,240 --> 00:38:38,310
+so the horizontal axis has changed compared to the previous plots of the Planck spectrum.
+
+301
+00:38:39,930 --> 00:38:43,680
+This is an earlier set of results from.
+
+302
+00:38:44,790 --> 00:38:48,810
+A satellite telescope known as Cobi, which.
+
+303
+00:38:50,760 --> 00:39:01,319
+Stands for the Cosmic Background Explorer, and it was one of the first telescopes that was really able to resolve the energies of
+
+304
+00:39:01,320 --> 00:39:07,200
+these cosmic microwave background photons well enough to fit them to the Planck spectrum,
+
+305
+00:39:07,200 --> 00:39:13,499
+which is the solid line. The black points themselves are the data from Cobe.
+
+306
+00:39:13,500 --> 00:39:22,770
+The size of the squares are probably a conservative indication of the uncertainties that these experimental measurements have,
+
+307
+00:39:23,280 --> 00:39:28,170
+and this data was taken some time ago. Now back in.
+
+308
+00:39:29,310 --> 00:39:36,300
+1990 is when these particular data were published. So they were collected during the late 80s and rewarded with the.
+
+309
+00:39:37,520 --> 00:39:43,460
+Nobel Prize. In 2006.
+
+310
+00:39:43,610 --> 00:39:51,690
+So about 15 years later. So this here is fitting.
+
+311
+00:39:52,950 --> 00:39:56,100
+The measurements to the Planck spectrum.
+
+312
+00:39:56,700 --> 00:40:02,860
+So this black line. Is the playing spectrum as a function of frequency.
+
+313
+00:40:04,490 --> 00:40:14,340
+Where? The orbital frequency f in units of hertz or inverse seconds, is just related by two pi to that angular frequency.
+
+314
+00:40:15,210 --> 00:40:25,180
+Um. This. Overall scale of the peak here is in units of ten to the 11Hz.
+
+315
+00:40:25,960 --> 00:40:33,110
+So we can write that. Maybe in more familiar units as.
+
+316
+00:40:35,330 --> 00:40:38,810
+About 100,000,000,000Hz, or 100GHz.
+
+317
+00:40:39,990 --> 00:40:45,870
+And you know this having zoomed out makes it a bit hard to see, so I'll zoom back in once we are.
+
+318
+00:40:47,870 --> 00:40:49,370
+Done and is hitting this plot,
+
+319
+00:40:50,210 --> 00:41:01,970
+the temperature that is going into the Planck spectrum to produce this agreement between data and the predicted functional form is.
+
+320
+00:41:03,740 --> 00:41:12,470
+Again that 2.7. So in this case, close to 35 years ago, the uncertainty on the spectrum was.
+
+321
+00:41:15,270 --> 00:41:25,730
+In the sort of 60. Millikelvin range, so they were able to resolve the temperature of 2.7 plus or -0.06 Kelvin,
+
+322
+00:41:26,390 --> 00:41:35,000
+and the overall peak of the Planck spectrum corresponding to that temperature is roughly 150.
+
+323
+00:41:36,140 --> 00:41:43,850
+Gigahertz for. The. Orbital frequency, which if we plug that into.
+
+324
+00:41:45,430 --> 00:41:49,120
+Our relation between wavelength and frequency.
+
+325
+00:41:49,630 --> 00:41:58,360
+Sorry, c over f is the wavelength corresponds to a wavelength of around two millimetres 2000 microns.
+
+326
+00:41:59,950 --> 00:42:04,170
+So that is. The range of.
+
+327
+00:42:05,930 --> 00:42:09,020
+Photon frequencies known. Notice the microwave range.
+
+328
+00:42:09,170 --> 00:42:11,720
+It is well into the.
+
+329
+00:42:12,930 --> 00:42:23,220
+Infrared compared to visible lights about 2000 times longer wavelengths than the visible spectrum we were looking at in the context of the sun.
+
+330
+00:42:24,890 --> 00:42:34,870
+But the overall procedure of. Measuring the spectrum of energies as a function of frequencies or wavelengths.
+
+331
+00:42:35,290 --> 00:42:45,460
+And fitting that to the Planck spectrum continues to operate and function over those, um, several orders of magnitude of factors of thousand.
+
+332
+00:42:45,940 --> 00:42:53,930
+In. Frequency and wavelength, and overall, especially for this very low energy case.
+
+333
+00:42:55,860 --> 00:43:04,310
+We are seeing. Really? Agreements between predictions and measurements that.
+
+334
+00:43:05,300 --> 00:43:08,480
+I think are fair to say are amazingly accurate.
+
+335
+00:43:10,370 --> 00:43:14,270
+When we consider that we are still.
+
+336
+00:43:16,470 --> 00:43:24,959
+Taking the approximation that our photon gas is ideal, non-interacting, and all of the interactions,
+
+337
+00:43:24,960 --> 00:43:36,240
+like the molecular physics that's responsible for actually generating the photons in the sun or the higher energy effects of the early universe.
+
+338
+00:43:37,740 --> 00:43:47,750
+In the era of the Big Bang. All of those are not having much visible effect when we compare.
+
+339
+00:43:48,780 --> 00:43:57,950
+The. Universe that we can observe to simple, non-interacting ideal photon gas that we have now derived.
+
+340
+00:44:05,140 --> 00:44:10,600
+So are there questions about the Planck spectrum or cosmic microwave background?
+
+341
+00:44:11,470 --> 00:44:25,600
+Before we wrap up for this morning. We have a few minutes left.
+
+342
+00:44:25,620 --> 00:44:35,230
+That. May as well use to set up the next calculation that we will wrap up on Friday.
+
+343
+00:44:35,740 --> 00:44:47,260
+And that is to, um, actually finish integrating the Planck spectrum, get the average internal energy of our photon gas and use that.
+
+344
+00:44:48,540 --> 00:44:55,560
+To derive the equation of states that governs the macroscopic properties of this gas of photons.
+
+345
+00:44:58,480 --> 00:45:10,630
+So you may have noticed that we've. Left our expression for the average internal energy in terms of an integral over wavelengths or frequencies.
+
+346
+00:45:13,390 --> 00:45:17,770
+So it's a bit easier to integrate the.
+
+347
+00:45:20,720 --> 00:45:31,940
+Frequency form of the Planck spectrum. The omega cubed over exponential factor integrated over frequencies from zero to infinity.
+
+348
+00:45:33,470 --> 00:45:39,140
+If we change variables. To make the argument to the exponential.
+
+349
+00:45:40,280 --> 00:45:49,250
+Our relevant integration parameter. So working with an x that is h bar omega over temperature.
+
+350
+00:45:51,000 --> 00:46:00,080
+And plugging this into. The integral over the Planck spectrum.
+
+351
+00:46:01,620 --> 00:46:11,070
+This change of variables brings out from the three powers of Omega and the one power of Omega for powers of this ratio.
+
+352
+00:46:12,070 --> 00:46:16,890
+Of temperature over h bar. Which will cancel out.
+
+353
+00:46:19,040 --> 00:46:22,700
+One of the factors to cancel out this factor of power we had at the start.
+
+354
+00:46:24,420 --> 00:46:31,000
+And then we have. An integral of x cubed e to the x minus 1DX,
+
+355
+00:46:31,420 --> 00:46:42,190
+which is a famous and very delicious type of integral that shows up a lot in these sorts of quantum gas calculations related to topology logarithms.
+
+356
+00:46:42,730 --> 00:46:52,150
+It's not something that's easy to do just off the top of your head, but you can look it up in tables of integrals or in Wolfram Alpha.
+
+357
+00:46:52,930 --> 00:46:58,960
+And this will tell you that it has a really wonderful exact result.
+
+358
+00:46:59,740 --> 00:47:03,940
+This integral. X cubed over E to the x minus one,
+
+359
+00:47:04,540 --> 00:47:11,019
+evaluates to the Euler gamma function with an argument to four multiplied by the
+
+360
+00:47:11,020 --> 00:47:17,070
+Riemann zeta function with that same argument to for the Euler gamma function.
+
+361
+00:47:17,080 --> 00:47:20,229
+Back in the tutorial, we relate it to the factorial function.
+
+362
+00:47:20,230 --> 00:47:24,490
+So gamma of n was n minus one factorial.
+
+363
+00:47:25,240 --> 00:47:33,910
+So three factorial is six. And you can also look up that the Riemann zeta function has um.
+
+364
+00:47:35,430 --> 00:47:41,130
+Nice expressions for even, uh, even positive integers.
+
+365
+00:47:42,690 --> 00:47:46,650
+In the case of. An argument to for the.
+
+366
+00:47:47,710 --> 00:47:51,790
+Riemann zeta function is pi to the fourth over 90.
+
+367
+00:47:52,960 --> 00:48:00,160
+So overall, we can cancel out the factor of six and end up with just part of the fourth over 15 for this integral.
+
+368
+00:48:01,090 --> 00:48:10,540
+And. And energy density of, so part of the force cancels out two factors of pi and the denominator.
+
+369
+00:48:11,860 --> 00:48:15,850
+We have the 15. We have three factors of h bar.
+
+370
+00:48:16,810 --> 00:48:24,240
+And three factors of see coming along. The volume of our gas and its temperature raised to that fourth power.
+
+371
+00:48:25,440 --> 00:48:28,950
+And what we will do on Friday is.
+
+372
+00:48:30,860 --> 00:48:36,310
+Try to. Uh, express this in different ways.
+
+373
+00:48:36,640 --> 00:48:37,390
+And in particular,
+
+374
+00:48:37,390 --> 00:48:47,470
+see if we can get an analogue of the result that we had for the classical non-relativistic gas of particles in the canonical ensemble,
+
+375
+00:48:48,070 --> 00:48:53,140
+where the average internal energy was just three halves times the number of particles n times t.
+
+376
+00:48:54,070 --> 00:49:02,500
+If we compute the average number of photons in this gas, something that fluctuates from microstate to microstates,
+
+377
+00:49:02,950 --> 00:49:12,190
+but the average is well defined, we can see if a similar relation holds in this intrinsically quantum mechanical case.
+
+378
+00:49:13,390 --> 00:49:17,410
+So that is a good place for us to stop this morning.
+
+379
+00:49:18,490 --> 00:49:24,970
+Any final questions? Before I let you go to enjoy the rest of your day.
+
+380
+00:49:25,630 --> 00:49:30,500
+Joe. Yeah. You know the expression. What's that got?
+
+381
+00:49:31,190 --> 00:49:34,430
+It. Is this here? Yeah. That's the.
+
+382
+00:49:34,460 --> 00:49:37,850
+Yeah. Or their gamma function as best I could write it.
+
+383
+00:49:38,480 --> 00:49:41,900
+Well, is the three. That's the zeta.
+
+384
+00:49:42,830 --> 00:49:46,640
+As best I can draw Zeta. It's not my strongest Greek letter.
+
+385
+00:49:48,950 --> 00:50:03,400
+Should look something like that. And that is actually worth writing down here for future reference.
+
+386
+00:50:06,050 --> 00:50:09,290
+We have the Euler gamma function multiplied by.
+
+387
+00:50:10,870 --> 00:50:19,030
+The Riemann zeta function. So.
+
+388
+00:50:20,200 --> 00:50:25,980
+You know, the Riemann zeta function gets a lot of interesting and complex analysis and number theory.
+
+389
+00:50:26,400 --> 00:50:30,360
+So depending on what modules you've taken, you may have run into it there. And it's.
+
+390
+00:50:31,490 --> 00:50:36,740
+I think, really delicious that is popping up in these, uh, grand canonical quantum gases.
+
+391
+00:50:38,090 --> 00:50:42,790
+Um. Just as a consequence of, well, what we have derived.
+
+392
+00:50:45,390 --> 00:50:48,090
+So stop the recording there.
+
