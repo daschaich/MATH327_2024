@@ -1,0 +1,1800 @@
+1
+00:00:01,740 --> 00:00:12,570
+Okay, that should be a recording underway so we can get going with this afternoon's tutorial on the 25th.
+
+2
+00:00:14,330 --> 00:00:18,480
+Of April and. Starting with the.
+
+3
+00:00:19,920 --> 00:00:24,470
+Six digits. Code for today, which is 57.
+
+4
+00:00:25,560 --> 00:00:37,940
+3156. And just looking through all of the topics I've promised to, uh, go into more detail about in this tutorial.
+
+5
+00:00:37,940 --> 00:00:43,550
+This might be one of those days where I yammer on through the full hour if I'm not interrupted.
+
+6
+00:00:44,180 --> 00:00:51,290
+Um, so you should feel free to interrupt me if there are things you want more details about or questions you want to raise,
+
+7
+00:00:51,290 --> 00:00:56,420
+in particular regarding the, uh, final homework assignment that is due tomorrow.
+
+8
+00:00:57,230 --> 00:01:01,190
+So there have been some clarifying questions coming by email about that.
+
+9
+00:01:01,640 --> 00:01:04,700
+Any more here and now feel free to shout them out.
+
+10
+00:01:07,210 --> 00:01:13,270
+But in absence of shouts, some of the things that have come up in lectures that I've said we could look at
+
+11
+00:01:13,270 --> 00:01:20,200
+a bit more in tutorials include things like details of what exactly photons are,
+
+12
+00:01:20,200 --> 00:01:28,930
+and in particular, how the polarisation of photons makes all of their energy levels doubly degenerate in the photon gas that we've been looking at.
+
+13
+00:01:30,260 --> 00:01:36,790
+A particular photon gas that we dealt with earlier this week was the cosmic microwave background,
+
+14
+00:01:36,790 --> 00:01:45,460
+and I mentioned that the behaviour of the cosmic microwave background gives some of the strongest evidence that we have.
+
+15
+00:01:46,450 --> 00:01:49,480
+For the existence and properties of.
+
+16
+00:01:50,530 --> 00:01:56,219
+Dark matter. And both of those I might just touch on quickly this afternoon,
+
+17
+00:01:56,220 --> 00:02:03,540
+rush through them so that we can get to the tutorial activities that we have in play, and in particular looking at.
+
+18
+00:02:05,570 --> 00:02:12,770
+Results for the heat capacity predicted by Einstein's model of a solid.
+
+19
+00:02:14,130 --> 00:02:20,520
+Which we will see you do better than the distinguishable spins that we considered last week.
+
+20
+00:02:21,210 --> 00:02:25,530
+This is the plot for those distinguishable spins which goes which has a heat
+
+21
+00:02:25,530 --> 00:02:31,280
+capacity that goes to zero at both zero temperature and infinite temperature,
+
+22
+00:02:31,290 --> 00:02:37,290
+disagreeing with experimental measurements. Oh, I need to restart the.
+
+23
+00:02:40,340 --> 00:02:47,980
+Scam. Capture now. We'll see how much that happens today.
+
+24
+00:02:48,460 --> 00:02:51,940
+Um, so those results will improve upon what we had.
+
+25
+00:02:52,270 --> 00:02:57,730
+They won't be entirely correct and will actually motivate an improved model, which will be.
+
+26
+00:02:58,880 --> 00:03:03,580
+The next activity that you will have to work on over the coming week.
+
+27
+00:03:03,590 --> 00:03:08,030
+So want to make sure that we get to introduce that improved model,
+
+28
+00:03:08,510 --> 00:03:15,530
+at least to the extent that you are able to get underway and play around with those investigations.
+
+29
+00:03:16,810 --> 00:03:21,510
+Um, over the coming week. So without further ado.
+
+30
+00:03:21,900 --> 00:03:25,260
+The photon polarisation itself. Let me see if.
+
+31
+00:03:25,500 --> 00:03:29,040
+What happens if I minimise this and then go to a different window?
+
+32
+00:03:29,940 --> 00:03:33,300
+Um, on the the modules page on canvas.
+
+33
+00:03:33,870 --> 00:03:39,840
+There is a link to some visualisations of what these photon polarisations actually are,
+
+34
+00:03:40,500 --> 00:03:47,370
+which are things that some of you may well have encountered in other modules, or even possibly A-level work.
+
+35
+00:03:47,370 --> 00:03:54,430
+The idea that. These photons are, um, related to electromagnetic waves.
+
+36
+00:03:55,030 --> 00:04:01,030
+We motivated that in the lecture, and you can take it as a given if it's not something you have encountered before.
+
+37
+00:04:01,420 --> 00:04:10,840
+But this top figure here, which we can zoom in a bit more, is showing both an electric field labelled E in the red colour,
+
+38
+00:04:11,260 --> 00:04:16,450
+as well as its corresponding magnetic field that is connected to it by Maxwell's equations.
+
+39
+00:04:16,450 --> 00:04:28,870
+In B, the properties of electromagnetism mean that these E and B fields are perpendicular to each other as they propagate through space.
+
+40
+00:04:29,320 --> 00:04:37,420
+So this is an electromagnetic wave or a photon that is propagating in this direction, effectively out of the screen.
+
+41
+00:04:39,150 --> 00:04:44,459
+Um, and the two polarisations that we could identify.
+
+42
+00:04:44,460 --> 00:04:51,930
+Here are the cases where one is shown the electric field is oscillating in the y z plane.
+
+43
+00:04:52,140 --> 00:05:00,140
+So vertically on this screen here the blue magnetic magnetic field is oscillating in the x y plane.
+
+44
+00:05:00,150 --> 00:05:08,160
+So horizontally that's one polarisation. And the other is when we take this and rotate it 90 degrees so that the red electric
+
+45
+00:05:08,160 --> 00:05:13,680
+field is oscillating horizontally and the blue magnetic field is oscillating vertically.
+
+46
+00:05:14,740 --> 00:05:21,580
+And there is in fact a difference and possibly more common way of packaging these degrees of freedom,
+
+47
+00:05:21,580 --> 00:05:26,830
+these two polarisation states coming from horizontal vertical orientation.
+
+48
+00:05:27,400 --> 00:05:34,960
+And that is to continuously rotate from vertical to horizontal and back again as the wave progresses,
+
+49
+00:05:35,560 --> 00:05:45,520
+which is a way of organising things known as circular polarisation rather than the linear polarisation of vertical or horizontal planes.
+
+50
+00:05:46,180 --> 00:05:52,479
+So effectively what's happening in these two bottom figures is that the orientation of the
+
+51
+00:05:52,480 --> 00:05:57,850
+electric field is while constantly spinning around from horizontal or vertical and back again.
+
+52
+00:05:58,270 --> 00:06:02,620
+As we look at different points in space or different points in time,
+
+53
+00:06:03,010 --> 00:06:10,239
+as the electromagnetic magnetic wave passes and the two polarisation states that were
+
+54
+00:06:10,240 --> 00:06:16,300
+vertical versus horizontal in the linear case now become different directions of rotation,
+
+55
+00:06:16,960 --> 00:06:23,080
+which if you focus on and hopefully you can see the spinning arrow in this black circle here.
+
+56
+00:06:24,330 --> 00:06:31,500
+You can appreciate that. And the left hand figure, the arrow is spinning clockwise.
+
+57
+00:06:31,980 --> 00:06:35,760
+So if I were to follow that direction, it's going with my left hand.
+
+58
+00:06:36,330 --> 00:06:41,850
+The direction of my thumb corresponds to the propagation of the photon, the electromagnetic wave.
+
+59
+00:06:43,440 --> 00:06:49,560
+The opposite is happening here in the right hand figure. That arrow in the black circle is going counterclockwise.
+
+60
+00:06:49,980 --> 00:06:55,750
+And if I. Try to do this backwards, but follow its direction with my right hand.
+
+61
+00:06:56,140 --> 00:07:00,550
+And this is the right handed polarisation. That's the left handed polarisation.
+
+62
+00:07:01,060 --> 00:07:08,110
+Just referring to the direction of the photons travel compared with how the orientation of its constituents,
+
+63
+00:07:08,110 --> 00:07:12,520
+electric and magnetic fields are varying in this way of packaging things.
+
+64
+00:07:13,210 --> 00:07:16,180
+So left and right handed polarisations are.
+
+65
+00:07:17,290 --> 00:07:24,189
+Probably the usual setup you might have encountered before, especially if you have any polarised sunglasses.
+
+66
+00:07:24,190 --> 00:07:31,810
+This is what they're filtering out. Um, the linear polarisation is a bit more basic and might be easier to.
+
+67
+00:07:32,700 --> 00:07:38,639
+Um, appreciate just from looking at it in a plot like this, but all of this.
+
+68
+00:07:38,640 --> 00:07:42,840
+So the points that we emphasise in lecture, and I can repeat briefly here,
+
+69
+00:07:42,840 --> 00:07:50,310
+is that this left and right handed photon down at the bottom, even if it has exactly the same.
+
+70
+00:07:51,310 --> 00:07:57,040
+Momentum vector exactly the same energy. There are two distinct energy levels with that same energy.
+
+71
+00:07:57,490 --> 00:08:02,350
+One of which is right handed and the other is left handed in this way.
+
+72
+00:08:02,950 --> 00:08:09,070
+So that is the explanation for the factor of two that popped up in.
+
+73
+00:08:10,400 --> 00:08:17,540
+Our analysis of the photon gas. Earlier this week and.
+
+74
+00:08:19,320 --> 00:08:22,710
+Yeah, maybe I shouldn't even. Reboots the.
+
+75
+00:08:24,930 --> 00:08:30,030
+Okay. I'm at this point. Let's. Well, okay, I will.
+
+76
+00:08:30,960 --> 00:08:37,820
+I have some. Of the same pictures printed out that we looked at.
+
+77
+00:08:37,840 --> 00:08:43,750
+So unless there are questions about photon polarisation. Had a return back to the.
+
+78
+00:08:44,900 --> 00:08:50,090
+Gas of photons, called the cosmic microwave background that we looked at on Tuesday.
+
+79
+00:08:50,540 --> 00:08:58,490
+This is that map of temperature fluctuations in the cosmic microwave background in the sky from the Planck satellite,
+
+80
+00:08:59,390 --> 00:09:03,630
+which reduced it produced this particular map about ten years ago.
+
+81
+00:09:03,650 --> 00:09:07,340
+It is still, in fact, running, getting more and better data.
+
+82
+00:09:08,700 --> 00:09:14,370
+But to put this into a bit more context than we had time for in the lecture.
+
+83
+00:09:15,780 --> 00:09:26,740
+Can. Kind of map it into this picture, which is not to scale of the overall history of the universe to the extent that we understand it.
+
+84
+00:09:27,310 --> 00:09:34,060
+And I should emphasise that these quantum fluctuations listed before inflation are not something we actually understand.
+
+85
+00:09:35,910 --> 00:09:42,210
+That's kind of a placeholder for a theory of quantum gravity to go there if and when it is ever figured out,
+
+86
+00:09:42,960 --> 00:09:53,670
+but just close to that inflationary era at the first few nanoseconds of the universe, there is effectively this.
+
+87
+00:09:54,630 --> 00:10:01,890
+Image. Spun around and slapped into a vertical slice in time.
+
+88
+00:10:02,430 --> 00:10:06,970
+That corresponds to about 300,000 years after the Big Bang.
+
+89
+00:10:06,990 --> 00:10:13,030
+Starting with that inflationary era. So that is 13.
+
+90
+00:10:13,030 --> 00:10:18,960
+So. 13.7696 billion years ago.
+
+91
+00:10:19,440 --> 00:10:26,130
+So very early in the evolution of the universe from our current perspective, 14 billion years later.
+
+92
+00:10:27,390 --> 00:10:31,230
+What's going on? Um, what they're calling here,
+
+93
+00:10:31,230 --> 00:10:40,710
+this afterglow light pattern that we've been calling the cosmic microwave background is a phase transition in the matter in the universe,
+
+94
+00:10:41,220 --> 00:10:46,440
+in the very early universe, when it is much smaller than it is today, though still fairly large,
+
+95
+00:10:47,370 --> 00:10:57,899
+there is an enormous amount of matter and energy all squished together into that much smaller volume, to the point that all of the atoms are ionised.
+
+96
+00:10:57,900 --> 00:11:05,970
+The electrons in the atoms are all kicked away and are propagating in this charged plasma of electrons, protons, and other nuclei.
+
+97
+00:11:07,920 --> 00:11:18,150
+And because of all of these free charged particles, um, going around this strongly interacting soup of of matter in the early universe.
+
+98
+00:11:19,460 --> 00:11:24,860
+The actual photons are not able to propagate. They're basically just bouncing from particle to particle.
+
+99
+00:11:25,550 --> 00:11:34,860
+Something that. You shouldn't necessarily be able to to follow if you haven't seen a bit of.
+
+100
+00:11:36,890 --> 00:11:40,670
+Particle physics or electromagnetism previously, but again, you can take it as a given.
+
+101
+00:11:41,180 --> 00:11:46,639
+That in that early universe charged plasma, there is, um,
+
+102
+00:11:46,640 --> 00:11:56,780
+no free flowing photons until the universe expands enough and cools enough for atoms to recombine or just combine in the first place.
+
+103
+00:11:58,300 --> 00:12:01,390
+The electrons and protons are bound together.
+
+104
+00:12:01,960 --> 00:12:05,980
+Atoms become neutral and photons are suddenly free to propagate.
+
+105
+00:12:06,400 --> 00:12:11,260
+For the following 13.7696 billion years,
+
+106
+00:12:11,470 --> 00:12:23,350
+up until our Planck satellite looks out into the sky and sees them coming from areas of the universe that are 13.796 billion light years away.
+
+107
+00:12:24,670 --> 00:12:29,560
+And what that satellite sees then is exactly these photons emitted.
+
+108
+00:12:30,460 --> 00:12:34,340
+Um. Just a few hundred thousand years after the Big Bang.
+
+109
+00:12:34,490 --> 00:12:43,550
+The first moment when they are able to propagate through space without being continually interacting with these charged particles.
+
+110
+00:12:45,260 --> 00:12:52,110
+And as a consequence, this. Surface of, well, the night sky.
+
+111
+00:12:53,440 --> 00:12:56,770
+Um, three. So 13.7 billion years.
+
+112
+00:12:56,890 --> 00:13:06,470
+Billion light years away is. The earliest that we can look back toward the start of the of the universe using photons.
+
+113
+00:13:06,980 --> 00:13:14,330
+There's been a lot of work recently using gravitational waves to try to explore that even earlier region,
+
+114
+00:13:14,330 --> 00:13:17,900
+before photons were able to to travel, to propagate.
+
+115
+00:13:18,870 --> 00:13:27,420
+There were some exciting results announced last summer about detections of, um, gravitational waves from pulsar timing arrays.
+
+116
+00:13:27,900 --> 00:13:32,310
+That's all getting to be too far removed from the topics of this module.
+
+117
+00:13:34,080 --> 00:13:41,820
+But as effectively the earliest physics that we can see with any force other than gravity.
+
+118
+00:13:43,550 --> 00:13:46,190
+The pattern of this afterglow light.
+
+119
+00:13:46,190 --> 00:13:54,590
+The cosmic microwave background is telling us a lot about what is going on in the early universe, in the era of the Big Bang.
+
+120
+00:13:55,100 --> 00:13:59,900
+And I mentioned specifically that the pattern of how these.
+
+121
+00:14:00,940 --> 00:14:04,500
+Uh, hot and cold. Red and blue regions are distributed.
+
+122
+00:14:05,340 --> 00:14:10,150
+Um. As we look at, say, two points separated by some angle.
+
+123
+00:14:11,770 --> 00:14:20,200
+This is one thing that you can measure. Once you have fantastic data like this with temperature fluctuations at all of these small scales.
+
+124
+00:14:22,030 --> 00:14:26,590
+This is the kind of data that results from doing that measurement.
+
+125
+00:14:27,280 --> 00:14:33,580
+So the horizontal axis to define things first is expressed in two different ways.
+
+126
+00:14:34,120 --> 00:14:38,140
+And the easier one to understand maybe this angular scale at the top,
+
+127
+00:14:38,680 --> 00:14:46,750
+which is the angle separating two points in the sky that are being, um, considered and in tandem.
+
+128
+00:14:48,330 --> 00:14:56,790
+So the angular scale is on a logarithmic scale, going from about 90 degrees all the way down to tenths or hundredths of degrees.
+
+129
+00:14:57,420 --> 00:15:02,730
+So that 90 degree separation is where our satellite, we take our satellite measurements,
+
+130
+00:15:03,030 --> 00:15:09,930
+map them onto the sky, and ask if a point over there has a certain temperature fluctuation.
+
+131
+00:15:11,080 --> 00:15:15,640
+Figure out 90 degrees to that. It's like, so what is the point over there doing?
+
+132
+00:15:16,150 --> 00:15:23,290
+And then this, just this, um, correlation as it's called this two point.
+
+133
+00:15:24,200 --> 00:15:30,650
+Um, well correlation function. See, which is what's going on in the vertical axis.
+
+134
+00:15:31,040 --> 00:15:38,720
+Just gets swept over the whole night sky, keeping that 90 degree separation fixed all possible orientations and angles.
+
+135
+00:15:39,110 --> 00:15:42,740
+And that gives this first point down here.
+
+136
+00:15:43,700 --> 00:15:50,360
+The measure of if there's a high temperature fluctuation over there, what is likely to be happening 90 degrees away,
+
+137
+00:15:50,810 --> 00:15:57,950
+and then get things closer and closer together so that if there is a high temperature fluctuation over there,
+
+138
+00:15:58,010 --> 00:16:10,940
+what is happening just two degrees away or 0.2 degrees away or so on the other horizontal axis is translating this to so-called multiples, which.
+
+139
+00:16:12,720 --> 00:16:15,540
+Again, depending on your modules, you may or may not have seen before.
+
+140
+00:16:15,990 --> 00:16:23,280
+The easiest multipole to think about is a dipole, where we look at what's happening in opposite directions,
+
+141
+00:16:23,280 --> 00:16:31,469
+up and down versus left and right or forward and backward. The next multipole moment after that is the quadrupole or instead of up and down.
+
+142
+00:16:31,470 --> 00:16:40,380
+So back to back. Look at that 90 degree angle talking about before and then higher and higher poles of that sort.
+
+143
+00:16:40,710 --> 00:16:47,670
+Can't just be related to that angular scale just giving a different um, expression for.
+
+144
+00:16:49,410 --> 00:16:54,420
+The way that separation and angle in the sky is being described.
+
+145
+00:16:56,140 --> 00:17:08,080
+And obviously, as I've been talking, you've all been staring at, um, the black data points and this red curve that is superimposed on top of them.
+
+146
+00:17:09,130 --> 00:17:11,170
+So what those black data points are,
+
+147
+00:17:11,800 --> 00:17:21,730
+are just measurements for these correlations between temperature fluctuations in that cosmic microwave background coming from several experiments.
+
+148
+00:17:21,730 --> 00:17:26,890
+The most recent of these is, uh, the map experiments in 2006.
+
+149
+00:17:27,310 --> 00:17:31,180
+That's the Wilkinson Microwave and isotropy probe that, um,
+
+150
+00:17:31,180 --> 00:17:38,350
+was a satellite that ran in between the Cobe satellite we talked about on Tuesday and the Planck satellite that is still running.
+
+151
+00:17:38,350 --> 00:17:48,280
+And we also talked about on Tuesday. WMAp was the first of these satellite telescopes that was able to resolve more
+
+152
+00:17:48,310 --> 00:17:54,670
+than this first big peak in the correlations in this cosmic microwave background.
+
+153
+00:17:55,150 --> 00:18:00,670
+So the fact that there are these peaks is telling us, you know, a lot of very interesting things.
+
+154
+00:18:00,670 --> 00:18:05,590
+There's there are characteristic angular scales where at the level of about.
+
+155
+00:18:06,670 --> 00:18:13,930
+A little under one degree. If there's a fluctuation, um, over here at about one degree away,
+
+156
+00:18:14,260 --> 00:18:22,240
+there's a higher likelihood to have a correlated fluctuation going the same way nearby, which.
+
+157
+00:18:23,210 --> 00:18:32,330
+You may be able to believe from looking at this by eye, but this is quantifying it and in particular the form of.
+
+158
+00:18:33,320 --> 00:18:39,710
+The curve that is shown on top of the data is actually a fit to a theoretical prediction.
+
+159
+00:18:40,490 --> 00:18:48,510
+Um. That combines dark matter, dark energy, and ordinary physics.
+
+160
+00:18:49,260 --> 00:18:52,650
+So it is the standard model of cosmology.
+
+161
+00:18:53,160 --> 00:19:01,950
+It has six parameters. So there are well, many more than six data points going into, um, the fit here.
+
+162
+00:19:02,340 --> 00:19:07,410
+And these six parameters are more than enough to follow the data very well.
+
+163
+00:19:08,370 --> 00:19:11,610
+Up to the point where the error bars the uncertainties on these data.
+
+164
+00:19:12,460 --> 00:19:20,760
+Become too large to really be constraining. There are still wiggles that you can see, and over the past almost 20 years of more and better data,
+
+165
+00:19:21,330 --> 00:19:25,770
+all the error bars in this high multiple or the low angular,
+
+166
+00:19:25,980 --> 00:19:34,230
+um scale region have continued to shrink and continue to follow this theoretical prediction better.
+
+167
+00:19:34,230 --> 00:19:40,140
+And that are better with very few, if any, signs of anything being wrong with it.
+
+168
+00:19:41,040 --> 00:19:47,460
+Which means, um. Few signs of anything being wrong with the assumption of dark energy and dark matter.
+
+169
+00:19:48,390 --> 00:19:51,510
+The specific place that dark matter pops up in here.
+
+170
+00:19:53,360 --> 00:20:04,190
+So well beyond the scope of this module. But you can explain these peaks not just by having that six parameter fit, but also by.
+
+171
+00:20:05,590 --> 00:20:10,570
+Pulling back the curtain and looking at the processes that are going on in that.
+
+172
+00:20:11,580 --> 00:20:17,520
+Early universe plasma. Before the formation of the cosmic microwave background.
+
+173
+00:20:18,150 --> 00:20:22,010
+This is a plasma that can be treated by fluid dynamics.
+
+174
+00:20:22,110 --> 00:20:25,830
+Bunches of particles sloshing back and forth, bouncing off of each other.
+
+175
+00:20:26,430 --> 00:20:37,259
+And. The specifics of that fluid dynamics and that bouncing for matter as opposed to radiation and photons.
+
+176
+00:20:37,260 --> 00:20:43,340
+So things like protons. Is responsible for producing.
+
+177
+00:20:45,510 --> 00:20:49,530
+This first peak at the angular scale of a little under one degree.
+
+178
+00:20:49,890 --> 00:20:55,020
+So the total amount of matter sets the height of that first peak, and then.
+
+179
+00:20:56,720 --> 00:21:05,030
+The ratios of the heights of the first and second peaks relate to the total amount of matter to other components of the universe.
+
+180
+00:21:05,840 --> 00:21:13,999
+Photons, radiation and dark energy. And this third peak down here, actually.
+
+181
+00:21:14,000 --> 00:21:23,840
+And so the ratio of this third peak to the first and second peaks tells us how much of the total matter is dark matter,
+
+182
+00:21:24,170 --> 00:21:31,880
+and how much is the matter that we work with every day and can treat more precisely in the early universe.
+
+183
+00:21:34,460 --> 00:21:40,280
+And just to show one less aspect of this, I will go to a.
+
+184
+00:21:42,190 --> 00:21:52,280
+Another version of. That same plot. So the correlation of temperature fluctuations of the cosmic microwave background, um.
+
+185
+00:21:53,780 --> 00:21:58,790
+Now showing somewhat improved data from 2009.
+
+186
+00:21:58,820 --> 00:22:08,420
+So a few years after that earlier plot, what's more interesting here are the two different curves that are shown on this plot.
+
+187
+00:22:09,620 --> 00:22:13,010
+So one is a solid line. The other is this dotted line.
+
+188
+00:22:13,520 --> 00:22:18,200
+They agree very well at that first peak that's set by the total amount of matter.
+
+189
+00:22:18,830 --> 00:22:23,250
+But they have some differences. Um, away from that peak.
+
+190
+00:22:23,730 --> 00:22:30,250
+And especially we can see here. That hopefully you can see on the screen.
+
+191
+00:22:31,540 --> 00:22:39,190
+Over here at high multiples around 1000. So that corresponds to tenths of degrees.
+
+192
+00:22:39,670 --> 00:22:46,810
+That is the third peak where this dotted line is that same dark matter model with six parameters.
+
+193
+00:22:47,230 --> 00:22:52,360
+That was the only one shown on the previous plot. So that is what we get with dark matter.
+
+194
+00:22:55,470 --> 00:23:00,180
+And the solid line is what would be predicted if there were no dark matter,
+
+195
+00:23:00,480 --> 00:23:08,540
+but gravity were modified in some way to explain some of the other observations that suggest the existence of dark matter,
+
+196
+00:23:08,550 --> 00:23:12,090
+like how galaxies or clusters of galaxies are rotating.
+
+197
+00:23:12,660 --> 00:23:16,690
+So that's. Often called modified gravity.
+
+198
+00:23:20,060 --> 00:23:21,860
+That's the prediction of modified gravity.
+
+199
+00:23:22,310 --> 00:23:31,070
+And this is a result showing that modified gravity cannot actually describe all of the observations that are available.
+
+200
+00:23:31,370 --> 00:23:39,800
+There has to be dark matter. Either that or some different modification of gravity that no one has thought of yet, despite a few decades of trying.
+
+201
+00:23:40,910 --> 00:23:44,720
+And yeah, this particular article from which I.
+
+202
+00:23:45,790 --> 00:23:52,089
+Uh, took this plot and was trying to argue that the uncertainties were large enough at these final few
+
+203
+00:23:52,090 --> 00:23:58,240
+data points from that WMAp experiment that modified gravity was still not entirely ruled out.
+
+204
+00:24:00,170 --> 00:24:07,040
+The error bars have improved in the 15 years since. They continue to follow the dark Matter standard model prediction,
+
+205
+00:24:07,490 --> 00:24:17,240
+and they definitely rule out the proposal for modified gravity that was under consideration here and everything like it so far.
+
+206
+00:24:18,490 --> 00:24:27,130
+So that. It's probably more time than I really had to touch on that, but I thought it would be interesting to see,
+
+207
+00:24:27,790 --> 00:24:33,579
+um, how the sorts of objects we are able to study or not objects,
+
+208
+00:24:33,580 --> 00:24:45,340
+but the sorts of systems we are able to study with statistical physics are connected to really ongoing research about the nature of the universe and,
+
+209
+00:24:45,910 --> 00:24:48,940
+and matter. So any questions about that?
+
+210
+00:24:48,940 --> 00:24:55,690
+Before we turn to the official tutorial activities that we had for this past week in the in the coming week.
+
+211
+00:25:02,450 --> 00:25:06,950
+Not hearing any can get. The.
+
+212
+00:25:08,280 --> 00:25:12,140
+Ecam zooms back in and well.
+
+213
+00:25:14,320 --> 00:25:20,080
+For the Einstein solid. The task was to compute.
+
+214
+00:25:21,200 --> 00:25:23,989
+The heat capacity of the Einstein solid,
+
+215
+00:25:23,990 --> 00:25:33,770
+which was this model where atoms in the solid are held in place by oscillators that are taken to have quantised momenta.
+
+216
+00:25:35,050 --> 00:25:44,620
+And I'm looking at the micro canonical ensemble with some fixed number of units of energy k.
+
+217
+00:25:45,220 --> 00:25:52,870
+We can predict the temperature or the entropy, the temperature, and then the heat capacity of this solid.
+
+218
+00:25:53,410 --> 00:26:01,690
+And see if that does any better than the simple spin system that we looked at last week, which I won't bring back up on the screen.
+
+219
+00:26:02,140 --> 00:26:04,180
+Well, I actually have it here.
+
+220
+00:26:06,230 --> 00:26:16,170
+This large, high temperature behaviour of the spin system was strongly disagreeing with the experimental measurements we were trying to describe.
+
+221
+00:26:16,190 --> 00:26:20,180
+So does the Einstein solid do any better? And.
+
+222
+00:26:21,350 --> 00:26:27,950
+The first task in getting the. Entropy in the micro canonical ensemble.
+
+223
+00:26:29,210 --> 00:26:37,120
+Is to compute the number of microstates. For a given number of oscillators with a given number of units of energy and.
+
+224
+00:26:38,150 --> 00:26:42,420
+In case. That may be the trickiest aspect of this.
+
+225
+00:26:42,420 --> 00:26:48,870
+The combinatorics question of how many different microstates are there that account
+
+226
+00:26:48,870 --> 00:26:53,370
+for different ways of distributing energy between all of these different oscillators?
+
+227
+00:26:53,940 --> 00:26:58,339
+So. In case that was problematic.
+
+228
+00:26:58,340 --> 00:27:00,980
+I gave you the result last week that.
+
+229
+00:27:02,100 --> 00:27:12,660
+The total number of microstates was this binomial coefficient of choosing the k units of energy out of this total quantity k plus n minus one.
+
+230
+00:27:13,080 --> 00:27:16,830
+So you could just plug that in and charge ahead with the heat capacity.
+
+231
+00:27:18,000 --> 00:27:24,330
+If you were unable to solve that um I will quickly sketch out.
+
+232
+00:27:26,190 --> 00:27:30,360
+One possible way to derive this result.
+
+233
+00:27:31,320 --> 00:27:34,560
+There are several possibilities, but one that is.
+
+234
+00:27:35,810 --> 00:27:45,260
+Um, that I like is identifying the problem of assigning key units of indistinguishable energy
+
+235
+00:27:45,770 --> 00:27:51,380
+to n distinguishable oscillators that are distinguished by their locations in the solid.
+
+236
+00:27:52,010 --> 00:27:56,150
+That is the same counting problem as taking.
+
+237
+00:27:57,910 --> 00:28:02,380
+K indistinguishable balls and placing them.
+
+238
+00:28:04,190 --> 00:28:07,190
+Into indistinguishable boxes.
+
+239
+00:28:15,330 --> 00:28:25,590
+And this. Well, thinking about it in terms of balls going into boxes can suggest a graphical way of looking at
+
+240
+00:28:25,590 --> 00:28:31,920
+the problem where the boxes are laid side by side and we just count the number of particles,
+
+241
+00:28:33,140 --> 00:28:38,250
+the units of energy that are in each of the box where the vertical line is.
+
+242
+00:28:39,940 --> 00:28:43,930
+A wall between each box. Each dot is a unit of energy.
+
+243
+00:28:44,380 --> 00:28:48,940
+So this describes four units of energy assigned to four boxes.
+
+244
+00:28:50,410 --> 00:28:55,540
+With two units in the first box than one than none than one.
+
+245
+00:28:56,890 --> 00:29:02,170
+That is one possible microstate, and the total number of microstates is.
+
+246
+00:29:05,720 --> 00:29:11,630
+Obtained by simply interpreting these this graphical language.
+
+247
+00:29:13,120 --> 00:29:20,800
+Noting that there are in all microstates k plus n minus one symbols in each of these graphs.
+
+248
+00:29:21,280 --> 00:29:27,489
+So here there are eight symbols. Four balls, sorry, seven symbols for balls.
+
+249
+00:29:27,490 --> 00:29:30,490
+Three box walls separating the four boxes.
+
+250
+00:29:32,200 --> 00:29:37,060
+So four, four plus four. Minus one. Symbols.
+
+251
+00:29:37,930 --> 00:29:47,430
+And. If we choose k of those symbols to be balls, that counts.
+
+252
+00:29:48,860 --> 00:29:54,710
+The number of ways. To assign those key units of energy.
+
+253
+00:29:55,400 --> 00:30:00,780
+So choosing K. Of the k plus n minus one symbols.
+
+254
+00:30:04,330 --> 00:30:10,600
+And well that's done. So it's a very quick argument.
+
+255
+00:30:10,630 --> 00:30:16,540
+Once it is set up in this way. And I will just say in passing, um.
+
+256
+00:30:17,650 --> 00:30:21,440
+That. If we had tried.
+
+257
+00:30:23,410 --> 00:30:26,770
+To argue along the lines that we had.
+
+258
+00:30:27,850 --> 00:30:34,570
+Um K units of energy at each of those units could go into any of the of the oscillators.
+
+259
+00:30:35,560 --> 00:30:43,130
+Um, so starting with. The corresponding end to the power k.
+
+260
+00:30:43,730 --> 00:30:48,590
+So all the possible ways that k units of energy can go into and oscillators.
+
+261
+00:30:49,190 --> 00:30:52,640
+This over counts the total number of microstates.
+
+262
+00:30:54,050 --> 00:30:58,060
+Which we can see with a quick example later on.
+
+263
+00:30:58,930 --> 00:31:02,980
+Um, but trying to correct for that over counting.
+
+264
+00:31:04,490 --> 00:31:16,640
+Would not be fun. They're just become back totally many ways that this way of approaching the combinatorial problem over counts microstates.
+
+265
+00:31:18,140 --> 00:31:25,820
+So that it's really a nightmare to try to unravel that and get back to just this binomial coefficient.
+
+266
+00:31:28,950 --> 00:31:35,000
+I'll remind you, takes that form in terms of factorials.
+
+267
+00:31:38,930 --> 00:31:42,310
+So it would. The an awful mess.
+
+268
+00:31:42,490 --> 00:31:51,930
+If we were to try to, um. Take the sort of approach that we looked at on occasion in similar situations earlier in the module.
+
+269
+00:31:53,010 --> 00:31:55,710
+Count everything and then correct for over counting.
+
+270
+00:31:57,410 --> 00:32:09,110
+But maybe as an illustration of this, we can go to in just a few minutes checking the minimal case of three oscillators.
+
+271
+00:32:12,260 --> 00:32:16,130
+With. Some small number of units of energy.
+
+272
+00:32:16,220 --> 00:32:20,540
+So if there are no units of energy, then things are pretty trivial.
+
+273
+00:32:22,490 --> 00:32:33,560
+There is only a single microstate where each of the three oscillators, the wiggly lines that are meant to evoke springs between the atoms in this.
+
+274
+00:32:34,470 --> 00:32:40,140
+Tiny toy solid. Each of those three oscillators just has no units of energy.
+
+275
+00:32:41,400 --> 00:32:46,370
+And if there is a single energy, then it's just as easy to see.
+
+276
+00:32:46,380 --> 00:32:51,330
+There are three ways that unit of energy could be assigned to the three oscillators.
+
+277
+00:32:52,110 --> 00:32:55,650
+It could be in the first one, the second one, or the third one.
+
+278
+00:32:56,340 --> 00:33:04,430
+And we're done. It's where we have two units of energy to deal with that things get more interesting.
+
+279
+00:33:05,090 --> 00:33:11,270
+And this is where we could see, you know, how the over counting can start to come into place if we took.
+
+280
+00:33:13,000 --> 00:33:20,170
+Uh, three squared and got nine possible ways of assigning energy to oscillators.
+
+281
+00:33:21,010 --> 00:33:25,150
+Uh, three of those would be um, over counts.
+
+282
+00:33:26,140 --> 00:33:34,420
+And those are the cases where we have one unit of energy in each of two of the balls.
+
+283
+00:33:37,690 --> 00:33:41,430
+The end of the K would treat. Um.
+
+284
+00:33:42,600 --> 00:33:49,200
+This one. Cover one, cover zero. Microstate has two different microstates, so ball A it oscillator one,
+
+285
+00:33:49,200 --> 00:33:54,210
+ball B and oscillator two or ball B, and oscillator one, ball A and oscillator two.
+
+286
+00:33:54,780 --> 00:33:57,840
+Because the balls are indistinguishable, that collapses.
+
+287
+00:33:58,110 --> 00:34:02,970
+We have those three. Um, these three states are double counted.
+
+288
+00:34:03,630 --> 00:34:09,330
+If we take away those three from three squared is nine, we would end up with six.
+
+289
+00:34:09,840 --> 00:34:13,680
+Three of them are here and the other three are.
+
+290
+00:34:15,100 --> 00:34:20,290
+The permutations of having both units of energy in any one of the three.
+
+291
+00:34:22,500 --> 00:34:33,340
+Uh, oscillators. And we can check that all of these numbers are matching this binomial coefficient.
+
+292
+00:34:33,850 --> 00:34:38,889
+So. Where should I put that?
+
+293
+00:34:38,890 --> 00:34:44,190
+Here. Um, we have k plus n minus one.
+
+294
+00:34:44,190 --> 00:34:47,490
+So n minus one is two, k is zero. We have to choose zero.
+
+295
+00:34:48,090 --> 00:34:51,930
+And that's because zero factorial is defined to be one.
+
+296
+00:34:52,530 --> 00:34:55,920
+I think we've encountered that earlier in the module. But if we plug in.
+
+297
+00:34:57,160 --> 00:35:06,190
+Two factorial over two factorial. We get one. The binomial coefficient of three, choose one is three.
+
+298
+00:35:06,670 --> 00:35:15,130
+And here we are up to four. Choose two, which is four times three over two, which is six.
+
+299
+00:35:17,190 --> 00:35:20,820
+Exactly what we would have wanted to get. And we can do the same for.
+
+300
+00:35:22,480 --> 00:35:27,160
+Three units of energy pretty quickly. So here.
+
+301
+00:35:28,270 --> 00:35:34,360
+We have three possibilities from having all three units in any one of the oscillators.
+
+302
+00:35:35,570 --> 00:35:41,450
+So three of those we can have two units in one, one unit in another.
+
+303
+00:35:41,840 --> 00:35:49,400
+And there are going to be three choices of oscillator to have the two units for each of those three.
+
+304
+00:35:49,430 --> 00:35:53,300
+We have two choices for the oscillator that has the remaining one.
+
+305
+00:35:53,870 --> 00:36:00,040
+So there are six um. Microstates with that distribution.
+
+306
+00:36:00,580 --> 00:36:06,940
+And then finally, we have the case for each of the three oscillators has one unit of energy.
+
+307
+00:36:08,290 --> 00:36:12,340
+And that gives us one. So m overall is ten.
+
+308
+00:36:12,910 --> 00:36:23,650
+And we want to check whether that is equal to the binomial coefficient five times three which is five times four over two which is indeed ten.
+
+309
+00:36:24,760 --> 00:36:28,300
+So get that on the screen briefly. And.
+
+310
+00:36:29,900 --> 00:36:34,490
+See how quickly we can charge ahead and just, um.
+
+311
+00:36:35,060 --> 00:36:43,820
+So that's a check of our results. And we want to use that result to find the.
+
+312
+00:36:45,050 --> 00:36:51,709
+Heat capacity for this model of a solid and shout out if there are any questions.
+
+313
+00:36:51,710 --> 00:36:58,760
+Otherwise, I will charge ahead to try to wrap this up in five minutes and spend five minutes introducing its problem and solution.
+
+314
+00:36:59,960 --> 00:37:06,480
+We have that. The inverse temperature beta in the micro canonical ensemble.
+
+315
+00:37:07,170 --> 00:37:13,590
+There's the screen. Is the derivative of the entropy, the logarithm of m.
+
+316
+00:37:14,980 --> 00:37:19,690
+With respect to the energy, the logarithm of all of these factorials.
+
+317
+00:37:19,720 --> 00:37:27,220
+We can expand using Stirling's formula because the terms cancel out and the energy itself.
+
+318
+00:37:28,710 --> 00:37:33,090
+We have related to key units of energy of size h bar.
+
+319
+00:37:33,810 --> 00:37:40,980
+So this is one over h bar Omega TDK of.
+
+320
+00:37:44,660 --> 00:37:50,120
+The logarithm. Sorry, it's not the. Just write the whole thing out here.
+
+321
+00:37:51,500 --> 00:37:56,190
+We have a k plus in. Log k plus n.
+
+322
+00:37:57,840 --> 00:38:02,640
+Minus k log k minus n log n. So something that may look familiar.
+
+323
+00:38:03,060 --> 00:38:05,880
+From taking the logarithm of binomial coefficients of the past.
+
+324
+00:38:06,450 --> 00:38:13,860
+If you're I've simplified things slightly by approximating n minus one as and when n is much greater than one.
+
+325
+00:38:14,910 --> 00:38:21,540
+Because that will be a one over end effect in the final result, which turns out to be just.
+
+326
+00:38:22,700 --> 00:38:30,409
+Churning through that logarithm. We'll have a log of um n plus k minus log of k k's.
+
+327
+00:38:30,410 --> 00:38:36,980
+Cancel. We have a and over k and we can take the h bar omega to the other side.
+
+328
+00:38:39,950 --> 00:38:45,610
+The full details are in the model solutions that are on canvas, so I'll skip some intermediate steps.
+
+329
+00:38:45,620 --> 00:38:58,820
+You can look them up to follow things. Plugging okay, back in terms of the energy gives us the log of n h bar omega over e.
+
+330
+00:39:00,100 --> 00:39:03,940
+We want to solve this for e as a function of temperature.
+
+331
+00:39:03,940 --> 00:39:09,970
+So changing our perspective from the micro canonical ensemble to the canonical ensemble.
+
+332
+00:39:12,460 --> 00:39:17,560
+And it's just a. A few steps to rearrange things.
+
+333
+00:39:17,580 --> 00:39:22,470
+Take the exponential of beta hbar omega. Subtract one and.
+
+334
+00:39:23,590 --> 00:39:29,260
+Invert. To find that the energy in the Einstein solid is.
+
+335
+00:39:30,930 --> 00:39:36,490
+N h bar omega over beta e to the beta H bar Omega minus one.
+
+336
+00:39:38,080 --> 00:39:46,090
+And the heat capacity, then is the derivative of this with respect to temperature,
+
+337
+00:39:46,360 --> 00:39:50,560
+which we can express as the derivative with respect to inverse temperature data.
+
+338
+00:39:52,160 --> 00:39:55,370
+Of well, e that is in the line above.
+
+339
+00:39:58,230 --> 00:40:01,950
+So data only appears in the denominator.
+
+340
+00:40:02,580 --> 00:40:07,800
+We end up with one over that denominator squared.
+
+341
+00:40:09,420 --> 00:40:20,490
+And then we have the chain rule. Um there's a negative one from the power of e to the h bar omega minus one that cancels the negative one in front.
+
+342
+00:40:21,240 --> 00:40:25,650
+There's a beta squared because in each bar Omega comes along for the ride.
+
+343
+00:40:26,070 --> 00:40:31,830
+And then we chain rule that denominator. We get the exponential factor in the numerator.
+
+344
+00:40:32,430 --> 00:40:39,840
+And chain rule again we get the argument of the exponential um factor.
+
+345
+00:40:40,380 --> 00:40:52,440
+And all together end up with an expression that we can write as an x squared e to the x over e to the x minus one squared, where x.
+
+346
+00:40:52,440 --> 00:40:57,810
+Here is. This is shorthand. For this quantity beta hbar omega.
+
+347
+00:40:58,140 --> 00:41:01,860
+All three of those terms are squared and they show up in the exponential.
+
+348
+00:41:06,990 --> 00:41:10,020
+So we can quickly plot.
+
+349
+00:41:11,210 --> 00:41:17,960
+This function and see how it compares to what we had earlier with.
+
+350
+00:41:20,260 --> 00:41:27,380
+And yep, it went. So this is what we had earlier for distinguishable spins.
+
+351
+00:41:27,460 --> 00:41:31,990
+This is x squared e to the x over e to the x minus one squared.
+
+352
+00:41:32,590 --> 00:41:37,600
+Just what we derived for that heat capacity. Dividing through by n.
+
+353
+00:41:39,180 --> 00:41:42,480
+And this is how it looks as a function of data. So.
+
+354
+00:41:43,910 --> 00:41:47,000
+Much difference. Then.
+
+355
+00:41:48,190 --> 00:41:51,639
+The distinguishable spins, and in particular,
+
+356
+00:41:51,640 --> 00:41:58,660
+if we change variables to get back to the temperature rather than the inverse temperature, we see something that is.
+
+357
+00:41:59,830 --> 00:42:05,370
+Much closer to. The data we are trying to describe.
+
+358
+00:42:06,480 --> 00:42:12,570
+The heat capacity goes to zero as the temperature goes to zero, and it goes to a constant value in particular.
+
+359
+00:42:13,200 --> 00:42:17,460
+And as the temperature goes to infinity, all of that is.
+
+360
+00:42:19,150 --> 00:42:24,940
+Fairly straightforward to read off of the expression that we now have derived.
+
+361
+00:42:26,140 --> 00:42:31,270
+So in the high temperature limit.
+
+362
+00:42:33,150 --> 00:42:36,600
+When he goes to infinity. Beta goes to zero.
+
+363
+00:42:37,410 --> 00:42:47,970
+X goes to zero. And E to the x goes to one, E to the x minus one goes to x to cv over n.
+
+364
+00:42:48,950 --> 00:42:56,300
+Goes to x squared times one over x squared, which is indeed one.
+
+365
+00:42:57,590 --> 00:43:01,170
+The. Next correction to this.
+
+366
+00:43:01,190 --> 00:43:05,150
+If we expand these exponentials more carefully.
+
+367
+00:43:05,630 --> 00:43:11,660
+Something that you. Are doing similarly in the homework assignment.
+
+368
+00:43:12,620 --> 00:43:19,670
+The next correction to this is. Quadratic in beta the inverse temperature.
+
+369
+00:43:19,680 --> 00:43:28,530
+So it's a one over t squared. And then there are one over t cubed corrections coming in.
+
+370
+00:43:29,340 --> 00:43:33,630
+And maybe one point to emphasise and refer you to.
+
+371
+00:43:35,490 --> 00:43:38,910
+The model solutions on canvas.
+
+372
+00:43:39,870 --> 00:43:43,020
+It looks like this is the way to keep the projector from crashing.
+
+373
+00:43:43,620 --> 00:43:47,830
+In order to get. This quadratic correction.
+
+374
+00:43:49,020 --> 00:43:56,880
+Because of cancellations, the exponential in the denominator has to be expanded to cubic order, and that is.
+
+375
+00:43:57,870 --> 00:44:03,400
+Um, possibly reminiscent of what you are currently doing on the the homework due tomorrow.
+
+376
+00:44:03,420 --> 00:44:07,830
+You have to expand carefully in order to keep things from dropping out.
+
+377
+00:44:10,430 --> 00:44:15,890
+Five minutes left to look at the low temperature limit and the tasks for the next week.
+
+378
+00:44:16,610 --> 00:44:22,759
+And here where? Beta is going to infinity.
+
+379
+00:44:22,760 --> 00:44:30,440
+And so therefore is x. This expression x squared e to the x over e to the x minus one.
+
+380
+00:44:32,330 --> 00:44:41,060
+Um, well, e to the x minus one when x goes to infinity is going to be just e to the x to a extremely good approximation.
+
+381
+00:44:41,840 --> 00:44:48,680
+So the heat capacity is going to well there's the an x squared e to the x over
+
+382
+00:44:48,680 --> 00:44:55,249
+e to the two x which is x squared over e to the x which does indeed go to zero.
+
+383
+00:44:55,250 --> 00:44:59,480
+As we saw. That is one way of.
+
+384
+00:45:01,030 --> 00:45:07,210
+Describing the third law of thermodynamics that the heat capacity vanishes in the limit of absolute zero temperature,
+
+385
+00:45:08,530 --> 00:45:12,580
+but it is going to zero exponentially quickly.
+
+386
+00:45:13,270 --> 00:45:18,670
+In the inverse temperature beta um, which.
+
+387
+00:45:19,530 --> 00:45:24,740
+We. Can see in if we zoom in.
+
+388
+00:45:25,740 --> 00:45:28,110
+Just to the bottom there. There's a very rapid.
+
+389
+00:45:29,430 --> 00:45:42,630
+Uh, collapse in the heat capacity, which, if we go back to one of the other sets of results that was flashed on the, uh, first week of the term.
+
+390
+00:45:43,440 --> 00:45:50,100
+This is the heat capacity divided by temperature for extremely low temperatures below four Kelvin squared.
+
+391
+00:45:51,560 --> 00:46:02,690
+This is not exponential. It is in fact a linear function with a cubic correction, which we can see by having c divided by t going to this constant a,
+
+392
+00:46:03,140 --> 00:46:08,360
+and then the slope versus t squared brings in two additional factors of T cubed.
+
+393
+00:46:08,780 --> 00:46:21,410
+That slope is then b. So the Einstein solid is giving the wrong prediction for the functional form of the heat capacity at low temperatures.
+
+394
+00:46:22,130 --> 00:46:26,640
+And this is because. Something you may have to.
+
+395
+00:46:27,910 --> 00:46:32,560
+Read about in more detail in the next.
+
+396
+00:46:34,460 --> 00:46:42,040
+Tutorial activity. That's there's a few copies printed out here, and the PDF is on canvas.
+
+397
+00:46:43,520 --> 00:46:47,510
+The reason for the shortcoming of the Einstein's solid.
+
+398
+00:46:49,080 --> 00:46:53,550
+Lies in treating each of these oscillators as completely independent of each other.
+
+399
+00:46:54,120 --> 00:46:58,350
+When they are performing the physical task of holding the atoms in place.
+
+400
+00:46:58,920 --> 00:47:04,050
+So if we think about a real solid, if one of these atoms starts wiggling and tries to get out of position,
+
+401
+00:47:04,680 --> 00:47:11,520
+these oscillators are shoving it back into place. But Newton's third law says that this force is, um.
+
+402
+00:47:12,850 --> 00:47:17,169
+The force of the oscillator on the atom is accompanied by an equal and opposite force of the atom on
+
+403
+00:47:17,170 --> 00:47:22,840
+the oscillator that gets shoved along to the next atom in the chain and starts that wiggling as well,
+
+404
+00:47:23,320 --> 00:47:26,260
+and so on to the next atom, and so on to the next.
+
+405
+00:47:26,890 --> 00:47:33,820
+So instead of randomly assigning units of energy to these oscillators that are holding the atoms into place.
+
+406
+00:47:35,290 --> 00:47:40,960
+We have to worry about potentially correlated motion of the atoms in the solid.
+
+407
+00:47:41,440 --> 00:47:49,210
+The ways in which. Um. Waves of displacements can sweep through this lattice.
+
+408
+00:47:49,960 --> 00:47:54,490
+Um. Kind of in the same way as. Waves sweeping through.
+
+409
+00:47:55,490 --> 00:47:59,600
+Sports stadiums. So there's a picture you can have in mind.
+
+410
+00:48:03,700 --> 00:48:07,930
+All our atoms are doing that, and that's not captured by Einstein's approximation.
+
+411
+00:48:10,340 --> 00:48:16,760
+So a few years later, Devi came up with an improvement that treats.
+
+412
+00:48:17,660 --> 00:48:24,200
+So if you'll let me go a minute or two over. Um, we've talked about the.
+
+413
+00:48:25,660 --> 00:48:30,430
+Problem neglecting waves or neglecting correlated motion.
+
+414
+00:48:35,240 --> 00:48:39,470
+These waves can be treated as so-called quasi particles.
+
+415
+00:48:39,980 --> 00:48:45,820
+So. A particular quasiparticles are a concept.
+
+416
+00:48:45,820 --> 00:48:50,710
+They are collective behaviour that can be treated like a particle,
+
+417
+00:48:50,950 --> 00:49:00,670
+even though they themselves involve many different particles like that crowd at the stadium, the waves of wiggles going through solids.
+
+418
+00:49:01,390 --> 00:49:07,940
+Yeah, I spelled it wrong. Are known as phonons, coming from a Greek word for sound.
+
+419
+00:49:08,690 --> 00:49:12,440
+These are. This is the same way that sound waves behave in the air.
+
+420
+00:49:13,770 --> 00:49:19,560
+And these phonons are very similar to.
+
+421
+00:49:20,680 --> 00:49:24,540
+Photons. Where we can bring to bear.
+
+422
+00:49:26,220 --> 00:49:34,890
+The calculations that we did on Tuesday looking at, uh, photon gases and adapt those for phonons.
+
+423
+00:49:36,740 --> 00:49:41,720
+There are a few differences. Phonons have three polarisations compared to the two for photons.
+
+424
+00:49:42,290 --> 00:49:46,580
+We can ignore all of those constant numerical factors for the purposes of this activity.
+
+425
+00:49:47,630 --> 00:49:52,640
+Um, photons also travel at the speed of sound rather than the speed of light.
+
+426
+00:49:54,410 --> 00:50:02,540
+The only relevant difference is that the wavelength of photons are, um is cut off.
+
+427
+00:50:04,770 --> 00:50:08,770
+So. These phonons.
+
+428
+00:50:11,970 --> 00:50:20,090
+Have a minimum wavelength. That is set by the spacing between the atoms in the solid.
+
+429
+00:50:20,270 --> 00:50:25,820
+So this is the tutorial activity you can find on canvas illustrating this.
+
+430
+00:50:27,230 --> 00:50:35,150
+The highest frequency we can have is when every nearest neighbour atom is oscillating in an opposite way to the ones that are next to it.
+
+431
+00:50:36,300 --> 00:50:41,610
+There are longer wavelength modes, um, going on down to to one.
+
+432
+00:50:42,450 --> 00:50:47,790
+But this minimum wavelength set by the atomic separation introduces a.
+
+433
+00:50:49,700 --> 00:50:55,190
+Maximum frequency. And if you redo.
+
+434
+00:50:57,460 --> 00:51:03,210
+The. So the photon gas calculations for phonons.
+
+435
+00:51:06,890 --> 00:51:10,310
+With this, uh, maximum frequency.
+
+436
+00:51:12,390 --> 00:51:15,570
+Call it Omega max. You can also call it.
+
+437
+00:51:16,760 --> 00:51:22,910
+A so-called divide temperature divided by h bar. Um.
+
+438
+00:51:24,520 --> 00:51:34,470
+You should find. So. For high temperature, the heat capacity should resemble that of the Einstein solid.
+
+439
+00:51:35,460 --> 00:51:46,080
+At low temperature, the heat capacity should go like T cubed rather than an exponential of inverse t.
+
+440
+00:51:47,840 --> 00:51:51,229
+And. There is.
+
+441
+00:51:51,230 --> 00:51:54,650
+Then what? I've run out of time to even talk about today.
+
+442
+00:51:54,650 --> 00:51:59,030
+But tomorrow we will look at fermion gases.
+
+443
+00:51:59,960 --> 00:52:06,020
+And there's a second task in this activity that is going to use.
+
+444
+00:52:07,790 --> 00:52:13,220
+As fermion gases to look at the behaviour of the electrons in this solid.
+
+445
+00:52:13,850 --> 00:52:17,120
+And that will give you at very low temperatures.
+
+446
+00:52:19,620 --> 00:52:26,560
+The linear term. In the experimental results that we are trying to reproduce.
+
+447
+00:52:27,800 --> 00:52:31,640
+Um. This here. So sorry to go over time.
+
+448
+00:52:32,000 --> 00:52:37,100
+And maybe I'll even, uh, flag some of this electron gas stuff in lecture tomorrow.
+
+449
+00:52:37,760 --> 00:52:45,500
+Uh, that is where we should wrap up the photon gas and go into, um, ideal gases of fermions.
+
+450
+00:52:46,040 --> 00:52:50,240
+And I will stop talking now and let you go off to the rest of your day.
+
