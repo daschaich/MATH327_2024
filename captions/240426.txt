@@ -1,0 +1,2888 @@
+1
+00:00:01,040 --> 00:00:05,090
+Okay, I think it's time to get things underway.
+
+2
+00:00:05,270 --> 00:00:12,620
+It's Friday morning, 26th of April, with the magic number ten.
+
+3
+00:00:14,000 --> 00:00:22,490
+2488. As you know, the final homework assignment for this module is due by the end of today.
+
+4
+00:00:22,970 --> 00:00:28,380
+Welcome to ask questions about that either here or in office hours this afternoon.
+
+5
+00:00:28,490 --> 00:00:32,600
+There were some questions asked after yesterday's tutorial.
+
+6
+00:00:33,500 --> 00:00:40,610
+Nothing that seemed to really raise clarifications that are needed in general, but feel free to.
+
+7
+00:00:41,850 --> 00:00:50,890
+Shout out here and now. Otherwise, the plan for today will be to continuing to focus on quantum gases.
+
+8
+00:00:50,910 --> 00:00:58,110
+Looking especially at the equations of state that bring together all of their emergent macroscopic phenomena.
+
+9
+00:00:59,000 --> 00:01:01,500
+And doing that first for the photon gas,
+
+10
+00:01:02,100 --> 00:01:12,120
+and then start developing the derivation of the behaviour of gases of fermions, looking at a different regime.
+
+11
+00:01:12,120 --> 00:01:15,240
+So rather than massless ultra relativistic photons,
+
+12
+00:01:15,660 --> 00:01:28,140
+look at relatively heavy non-relativistic fermions and see how well see the full range of behaviour for quantum gases in the grand canonical ensemble.
+
+13
+00:01:29,070 --> 00:01:35,100
+So the. Place that we wrapped up on Tuesday.
+
+14
+00:01:37,570 --> 00:01:43,090
+We focus on that photon gas and a couple of fun applications.
+
+15
+00:01:44,260 --> 00:01:53,290
+So we derived the Planck spectrum that describes the wavelength dependence of the energies of a gas of photons.
+
+16
+00:01:53,920 --> 00:02:04,610
+We saw how. This Planck spectrum gives a perhaps surprisingly good description of the spectrum of solar radiation coming from the sun.
+
+17
+00:02:06,240 --> 00:02:12,260
+Uh, despite all of the complicated molecular physics that is responsible for the emission of those photons from the sun,
+
+18
+00:02:12,260 --> 00:02:18,110
+to a very good approximation, they can be treated as a non-interacting ideal photon gas.
+
+19
+00:02:18,740 --> 00:02:22,100
+And there was similar story, in fact,
+
+20
+00:02:22,490 --> 00:02:29,660
+with even better agreement between this Planck spectrum and the energies of the cosmic microwave background leftover from the Big Bang,
+
+21
+00:02:29,660 --> 00:02:33,920
+which we looked at a little bit more in yesterday's tutorial.
+
+22
+00:02:35,270 --> 00:02:38,510
+Where we ended on Tuesday was.
+
+23
+00:02:40,480 --> 00:02:45,190
+Integrating over this flank spectrum, um, integrating all frequencies.
+
+24
+00:02:45,790 --> 00:02:50,830
+And finding the overall average internal energy of the photon gas.
+
+25
+00:02:52,370 --> 00:02:55,760
+It's expectation value. That was.
+
+26
+00:02:57,330 --> 00:03:03,960
+Given by a very fun integral involving products of the Euler gamma function and Riemann zeta function.
+
+27
+00:03:05,610 --> 00:03:08,220
+Along with factors of Planck's constant, the speed of light,
+
+28
+00:03:08,670 --> 00:03:14,700
+and the functional dependence on the volume that the gas occupies and the fourth power of its temperature.
+
+29
+00:03:15,450 --> 00:03:23,910
+Where if we plug in specific values for the gamma function evaluated at four is three, factorial is six.
+
+30
+00:03:24,570 --> 00:03:29,970
+And the Riemann zeta function evaluated at four is pi to the fourth over 90.
+
+31
+00:03:30,300 --> 00:03:34,410
+So all together can cancel out two factors of pi.
+
+32
+00:03:37,110 --> 00:03:43,890
+And we ended up with that particular pre factor on that v t to the fourth.
+
+33
+00:03:44,010 --> 00:03:52,560
+Functional dependence. So any questions about what we've done with the photon gas of the Planck spectrum so far to get up to this point.
+
+34
+00:03:55,470 --> 00:03:58,950
+If not the next step that.
+
+35
+00:04:01,060 --> 00:04:07,210
+Would be interesting to consider is how this internal energy.
+
+36
+00:04:08,710 --> 00:04:14,800
+Compares with what we got earlier for ideal gases in the case of classical.
+
+37
+00:04:15,520 --> 00:04:19,570
+Non-relativistic particles in the canonical ensemble.
+
+38
+00:04:23,830 --> 00:04:31,860
+So. The. Result for the average internal energy in that case, which we applied to.
+
+39
+00:04:32,040 --> 00:04:42,200
+So one of damage cycles was. A very simple relation between the energy expectation value and the temperature.
+
+40
+00:04:42,470 --> 00:04:48,590
+That just involved the number of particles and a constant numerical factor of three halves.
+
+41
+00:04:50,240 --> 00:04:56,350
+If we want to. Come up with some similar relation between energy and particle number.
+
+42
+00:04:56,370 --> 00:05:02,189
+Now that we are in the grand canonical context, for, what we need to do is actually compute the particle number,
+
+43
+00:05:02,190 --> 00:05:06,990
+which is no longer a fixed input characterising the system.
+
+44
+00:05:07,740 --> 00:05:17,070
+But in the grand canonical case, it is another large scale derived quantity on the same footing as the average internal energy.
+
+45
+00:05:20,320 --> 00:05:30,220
+And you may recall from before the break, or look up in your notes that from the grand canonical potential, the logarithm of the partition function,
+
+46
+00:05:30,940 --> 00:05:41,200
+just taking a derivative with respect to the chemical potential with a negative sign will give us this average photon number.
+
+47
+00:05:41,770 --> 00:05:47,230
+And as we talked about both earlier this week and last week, um,
+
+48
+00:05:47,710 --> 00:05:53,590
+this might take you by surprise because we have set Mu to be exactly zero for a photon gas.
+
+49
+00:05:54,610 --> 00:06:03,460
+So what we need to do is consider the grand canonical potential as a function of both temperature and chemical potential,
+
+50
+00:06:04,000 --> 00:06:07,210
+and then set mu to zero as the final step.
+
+51
+00:06:07,960 --> 00:06:15,520
+After taking this derivative and computing a more general expression for the average number of particles.
+
+52
+00:06:16,060 --> 00:06:22,460
+So without further ado, let's do that calculation. Again.
+
+53
+00:06:24,140 --> 00:06:25,700
+Probably something you won't have memorised,
+
+54
+00:06:25,700 --> 00:06:32,060
+but can look up from your notes or the lecture notes as the form of the grand canonical potential that we can plug into.
+
+55
+00:06:36,160 --> 00:06:40,080
+This derivative. It had a factor of VTI.
+
+56
+00:06:41,660 --> 00:06:45,560
+Speed of light cubed and pi squared, with a negative sign coming along.
+
+57
+00:06:45,680 --> 00:06:51,860
+From the derivative, and I'm going to move inside the integral over frequencies.
+
+58
+00:06:52,850 --> 00:06:58,290
+The only dependence on chemical potential in the grand canonical.
+
+59
+00:06:58,310 --> 00:07:01,340
+Potential shows up inside this integral.
+
+60
+00:07:04,950 --> 00:07:09,630
+Where we have a logarithm of one minus the usual grand canonical exponential.
+
+61
+00:07:11,740 --> 00:07:18,550
+Factor E to the minus beta times energy minus mu, which I broken up here.
+
+62
+00:07:18,850 --> 00:07:23,440
+To make it clearer how this mu is going to come about or come out.
+
+63
+00:07:24,970 --> 00:07:32,850
+So. This is not a hard derivative to do.
+
+64
+00:07:32,880 --> 00:07:36,960
+The derivative of a log starts with one over the arguments of that log.
+
+65
+00:07:37,940 --> 00:07:41,120
+And then we chain rule it a time or two.
+
+66
+00:07:42,140 --> 00:07:47,510
+The omega squared comes along for the ride. We have a negative exponential.
+
+67
+00:07:49,780 --> 00:07:53,530
+Of beta hbar omega hbar omega being the energy.
+
+68
+00:07:55,240 --> 00:08:02,380
+An exponential of beta mu. And then chain rule again gives us the beta coming from the arguments of that exponential.
+
+69
+00:08:02,950 --> 00:08:06,640
+So the beta is going to cancel out the temperature.
+
+70
+00:08:07,150 --> 00:08:14,080
+We have two negative signs that cancel out. We are still integrating over frequencies.
+
+71
+00:08:14,500 --> 00:08:24,250
+And at this point. The derivative has been taken, and we are free to impose the vanishing chemical potential that we have for the photon gas,
+
+72
+00:08:24,250 --> 00:08:33,300
+which will simplify this result. At least in terms of how much we have to write.
+
+73
+00:08:36,630 --> 00:08:40,650
+So integrating over all frequencies, we have an omega squared.
+
+74
+00:08:40,650 --> 00:08:50,640
+And if we divide through by the remaining exponential factors we have an exponential beta h bar omega minus one.
+
+75
+00:08:51,760 --> 00:08:52,540
+The Omega.
+
+76
+00:08:55,270 --> 00:09:04,210
+Which is looking somewhat like the the Bose-Einstein statistics we've seen before with this exponential factor minus one in the denominator.
+
+77
+00:09:05,440 --> 00:09:11,360
+So changing variables to. Emphasise that beta hbar omega.
+
+78
+00:09:11,990 --> 00:09:16,670
+Integrating over the argument of the exponential instead of over just the frequency itself.
+
+79
+00:09:18,570 --> 00:09:30,840
+We'll bring out. So from omega squared D omega we will have three factors of one over h bar beta which is beta is the inverse temperature.
+
+80
+00:09:30,840 --> 00:09:35,100
+So one over beta is the temperature over h bar all cubed.
+
+81
+00:09:36,630 --> 00:09:45,480
+And then another. Integral similar to what we had on Tuesday for the energy.
+
+82
+00:09:46,320 --> 00:09:59,100
+Only difference now is the power of x in the numerator here, rather than x cubed, we have x squared and the actual result is just as delightful.
+
+83
+00:09:59,400 --> 00:10:08,280
+This integral exactly evaluates to the Euler gamma function of three times the Riemann zeta function of three,
+
+84
+00:10:09,120 --> 00:10:14,790
+which is two factorial times a complicated, um, irrational number.
+
+85
+00:10:15,390 --> 00:10:19,020
+So I'll just leave this as two zeta three,
+
+86
+00:10:20,760 --> 00:10:29,190
+and we can see that this whole calculation has only differed from the computation of the photon internal energy,
+
+87
+00:10:29,190 --> 00:10:42,000
+photon gas internal energy that we did last time by a different number of omegas in our integral, along with a different number of h bars.
+
+88
+00:10:42,600 --> 00:10:49,860
+Um, the energy is exactly the same functional form up to an additional factor of h bar omega, which makes sense.
+
+89
+00:10:50,310 --> 00:10:57,030
+It is essentially counting how much energy each particle has and integrating over that, whereas this is just,
+
+90
+00:10:57,420 --> 00:11:03,990
+uh, counting the number of particles without bringing along an extra factor of the energy for the ride.
+
+91
+00:11:10,330 --> 00:11:15,570
+So moving on to. A new page and.
+
+92
+00:11:20,180 --> 00:11:24,280
+Writing down this final result with all. Factors of.
+
+93
+00:11:25,810 --> 00:11:31,510
+Feet are accounted for. We have this two Zeta three over.
+
+94
+00:11:33,410 --> 00:11:40,800
+Pi squared. Planck's constant cubed c cubed multiplied by the volume.
+
+95
+00:11:42,130 --> 00:11:51,820
+See there is actual screen volume in t cubed, which in terms of functional form is.
+
+96
+00:11:55,480 --> 00:12:02,140
+Or exhibits the same relation that we saw in the classical, non-relativistic canonical case.
+
+97
+00:12:02,710 --> 00:12:13,240
+The number of particles is just proportional to the average internal energy divided by t, and go from v t to the fourth to v t cubed.
+
+98
+00:12:15,350 --> 00:12:25,520
+And. We have the same sort of relation that we had before.
+
+99
+00:12:26,560 --> 00:12:31,240
+That the average internal energy is proportional.
+
+100
+00:12:33,400 --> 00:12:42,970
+To the particle number times the single power of the temperature, which we can justify just on dimensional grounds.
+
+101
+00:12:44,140 --> 00:12:52,510
+What's interesting is the constant of proportionality in this relation that was just three halves for a classical gas.
+
+102
+00:12:56,410 --> 00:13:01,310
+Now with a photon gas obeying. Quantum statistics.
+
+103
+00:13:01,580 --> 00:13:15,590
+It's a bit more complicated. So the relation between energy and volume times two to the fourth has this pi squared over 15 h bar s cubed c cubed.
+
+104
+00:13:20,170 --> 00:13:27,970
+And then to take. The cubed out of that vat to the fourth and replace that with the.
+
+105
+00:13:28,920 --> 00:13:38,220
+Number of photons gives us the inverse. Of the result that we just computed.
+
+106
+00:13:41,320 --> 00:13:47,830
+So there are some cancellations in particular, all these factors of HMRC which are just,
+
+107
+00:13:49,000 --> 00:13:52,690
+uh, unit conversion factors that we could have said equal to one at the start.
+
+108
+00:13:52,720 --> 00:14:00,370
+Those all cancel out and we are left with pi to the fourth over 30 Zeta three.
+
+109
+00:14:02,340 --> 00:14:10,900
+Which. We could rewrite in a suggestive way instead of combining everything into 30.
+
+110
+00:14:11,050 --> 00:14:15,910
+We can keep it as 90 over six times two.
+
+111
+00:14:16,930 --> 00:14:25,480
+And this is worth writing in this way, because it can get get us back to the ultimate origin of all of these factors,
+
+112
+00:14:26,260 --> 00:14:30,010
+which are these fun combinations of gamma functions.
+
+113
+00:14:31,500 --> 00:14:41,400
+And zeta functions, which, if we were to plug in all of the irrational values that we have, is about 2.7.
+
+114
+00:14:42,180 --> 00:14:48,540
+So not quite double the three halves that we had for classical non-relativistic particles.
+
+115
+00:14:49,500 --> 00:14:52,590
+So 1.5 going up to 2.7.
+
+116
+00:14:53,580 --> 00:15:03,719
+But the functional form this relation between energy and particle number remains the same just with an adjustment to the
+
+117
+00:15:03,720 --> 00:15:12,900
+coefficients reflecting the different physics and the different statistics of the photons that we are now working with.
+
+118
+00:15:16,660 --> 00:15:37,130
+Any questions about that general result? Something similar will now happen if we go on to look at the full equation of state.
+
+119
+00:15:38,030 --> 00:15:43,250
+So the classical equation of state that we've dealt with before the break was the ideal gas law.
+
+120
+00:15:43,550 --> 00:15:47,420
+Pressure times volume equals the number of particles times the temperature.
+
+121
+00:15:48,620 --> 00:15:56,960
+And just as we had that same functional relation with just an adjustment in the constant of proportionality between the two sides of that equation,
+
+122
+00:15:57,470 --> 00:16:04,490
+we can expect or hope to see a similar equation of state for photons, um,
+
+123
+00:16:04,670 --> 00:16:10,760
+a relation between pressure times volume and the average number of photons times the temperature.
+
+124
+00:16:12,050 --> 00:16:19,400
+In order to derive that, we need the pressure, and we need in fact to do.
+
+125
+00:16:20,610 --> 00:16:27,030
+Uh. Get used to the idea that even these massless photons.
+
+126
+00:16:27,030 --> 00:16:33,780
+So particles of light can in fact exert a pressure that is coming from our usual definition.
+
+127
+00:16:34,140 --> 00:16:40,480
+It's known as the radiation pressure. Treating photons or lights.
+
+128
+00:16:42,290 --> 00:16:54,320
+As a form of massless radiation. It is defined in the same way that we define pressure in the context of the canonical ensemble.
+
+129
+00:16:55,010 --> 00:17:00,260
+How the average internal energy depends on the volume.
+
+130
+00:17:01,430 --> 00:17:11,049
+If we impose constant entropy. And this radiation pressure is actually a big part of what keeps stars from collapsing.
+
+131
+00:17:11,050 --> 00:17:21,280
+So the sun and the other stars that we considered earlier this week have outward radiation pressure balancing the inward force of gravity that,
+
+132
+00:17:21,280 --> 00:17:30,370
+if left unchecked, would want to collapse all of that matter down to a single point modulo the effects of.
+
+133
+00:17:32,370 --> 00:17:43,890
+General relativity and quantum gravity. So the first step to taking this derivative and computing the radiation pressure.
+
+134
+00:17:44,640 --> 00:17:51,600
+Based on the result that we had on Tuesday, is checking the condition of constant entropy.
+
+135
+00:17:53,950 --> 00:17:57,130
+And seeing what constraints that imposes.
+
+136
+00:18:00,570 --> 00:18:05,370
+On the form of the energy that we take the derivative of.
+
+137
+00:18:07,610 --> 00:18:17,480
+And the most straightforward way to determine the entropy is by using the relation between entropy.
+
+138
+00:18:19,990 --> 00:18:23,270
+Uh, free energy or the, uh, grand canonical potential.
+
+139
+00:18:23,290 --> 00:18:31,630
+The land of free energy and the internal energy. So this is analogous to what we did in the canonical.
+
+140
+00:18:32,910 --> 00:18:34,700
+Ensemble for classical particles.
+
+141
+00:18:34,710 --> 00:18:45,960
+We just need to actually evaluate this grand canonical potential that up until now, we have also left as an integral over frequencies.
+
+142
+00:18:48,670 --> 00:18:55,710
+So writing down. The grand canonical potential, again with no derivative.
+
+143
+00:18:57,200 --> 00:19:04,580
+Over chemical potential, and with that chemical potential set to zero as appropriate for the photon gas.
+
+144
+00:19:05,930 --> 00:19:15,500
+Our usual change of variables to x being beta h bar omega brings out the usual factors of.
+
+145
+00:19:16,670 --> 00:19:20,220
+T cubed over. Hbar cubed.
+
+146
+00:19:23,010 --> 00:19:32,760
+And the integral becomes x squared times log of one minus e to the minus x dx x.
+
+147
+00:19:35,540 --> 00:19:47,360
+This, not too surprisingly, is yet another in those families of poly logarithmic integrals that all have these fun relations to zeta functions.
+
+148
+00:19:47,960 --> 00:19:54,470
+In this case, it's not quite as elegant. It's and minus two times zeta of four.
+
+149
+00:19:55,130 --> 00:19:59,600
+That's the same zeta four that we had in the energy pi to the fourth over 90.
+
+150
+00:20:00,230 --> 00:20:07,710
+So this integral. In the end is minus pi to the fourth over 45.
+
+151
+00:20:08,160 --> 00:20:11,640
+So plugging that in to the expression for the.
+
+152
+00:20:12,740 --> 00:20:24,380
+Entropy of the photon gas. If we divide the internal energy by a factor of t, we have v t cubed in both terms,
+
+153
+00:20:25,250 --> 00:20:30,650
+which is good because we want them to have the same dimension so that they can be subtracted to give us the entropy.
+
+154
+00:20:32,720 --> 00:20:38,270
+Both terms also have the pi squared over h bar cubed c cubed.
+
+155
+00:20:39,260 --> 00:20:44,370
+Coming from. This family of integrals.
+
+156
+00:20:44,790 --> 00:20:53,970
+And then the energy had go back from Tuesday a factor of one over 15.
+
+157
+00:20:57,450 --> 00:21:10,020
+Um, multiplying those constant factors. And we've just found that the grand canonical potential has a negative sign that cancels and a one over 45,
+
+158
+00:21:10,560 --> 00:21:19,290
+which, if we put everything together, is v cubed times four pi squared over 45.
+
+159
+00:21:20,140 --> 00:21:31,350
+Hbar cubed C cubed. What we really care about here, in the context of the radiation pressure, is the condition of constant entropy, which is now.
+
+160
+00:21:33,410 --> 00:21:37,880
+The requirement that this combination of factors volume times temperature cubed.
+
+161
+00:21:40,190 --> 00:21:45,730
+Has to stay. Constant, which we can.
+
+162
+00:21:47,140 --> 00:21:53,440
+Just rearrange into a relation between the temperature and the volume.
+
+163
+00:21:54,340 --> 00:22:04,510
+So with this B being some constant, the entropy is constant when the temperature varies like one over the cube root of the volume,
+
+164
+00:22:05,710 --> 00:22:14,950
+which if we think all the way back to when we did this for the canonical ensemble in classical gases before the break,
+
+165
+00:22:15,940 --> 00:22:21,490
+what we had there, the condition of constant entropy was volume times temperature to the three halves power.
+
+166
+00:22:22,270 --> 00:22:27,850
+And this relation between temperature and volume had another factor of two v to the minus two thirds.
+
+167
+00:22:28,390 --> 00:22:35,350
+So we are seeing already a difference in the photon gas compared to earlier non-relativistic work.
+
+168
+00:22:36,820 --> 00:22:50,680
+But if we plug in four powers of the temperature into the internal energy whose derivative we need to take, we will get the radiation pressure.
+
+169
+00:22:52,660 --> 00:22:58,090
+Minus pi squared over 15 hbar cubed c cubed.
+
+170
+00:22:59,270 --> 00:23:03,320
+And then the derivative of volume times.
+
+171
+00:23:05,190 --> 00:23:09,960
+Be to the fourth times. Volume to the minus four thirds leaves at the end.
+
+172
+00:23:10,960 --> 00:23:14,800
+An overall one over cube root of the volume.
+
+173
+00:23:18,020 --> 00:23:21,740
+When we take the derivative with respect to v, we get.
+
+174
+00:23:23,550 --> 00:23:31,390
+All of this back out again, just with a factor of minus one over three of the minus sign.
+
+175
+00:23:31,410 --> 00:23:35,190
+We'll cancel that one out front. So there's a one over three V.
+
+176
+00:23:36,660 --> 00:23:41,660
+Times all the constants that. Just come along for the ride.
+
+177
+00:23:43,190 --> 00:23:48,590
+Be to the fourth. Due to the minus third which we can recognise as well the.
+
+178
+00:23:50,870 --> 00:23:54,500
+Internal energy. We were taking the derivative of in the first place.
+
+179
+00:23:57,140 --> 00:24:01,460
+With a factor of one over three. The out front.
+
+180
+00:24:02,820 --> 00:24:06,780
+And we are now starting to see something that looks like an equation of state.
+
+181
+00:24:08,310 --> 00:24:16,290
+You move the volume to the other side. We have the radiation pressure times the volume of the photon gas.
+
+182
+00:24:17,810 --> 00:24:21,800
+Is one third the average internal energy.
+
+183
+00:24:24,320 --> 00:24:32,660
+One fun thing we can do is recognise one third as the ratio of two factorial over three factorial, which is.
+
+184
+00:24:34,020 --> 00:24:40,890
+In turn, the ratio of gamma functions evaluated at three divided by that at four.
+
+185
+00:24:42,720 --> 00:24:53,730
+And this is useful because of the constant factor that we have relating the internal energy to the number of photons times the temperature.
+
+186
+00:24:56,020 --> 00:25:00,580
+Gamma four. Zeta four over gamma three.
+
+187
+00:25:02,050 --> 00:25:07,120
+Zeta three. So there's some cancellations in there.
+
+188
+00:25:11,490 --> 00:25:15,889
+And we end up with. Overall.
+
+189
+00:25:15,890 --> 00:25:21,050
+Zeta to the fourth over Zeta sorry, 90 to the fourth Zeta of four over Zeta of three.
+
+190
+00:25:21,590 --> 00:25:27,480
+That's Pi. To the fourth over 90 to 3.
+
+191
+00:25:29,900 --> 00:25:34,940
+And false number of photons times the temperature. So the functional form.
+
+192
+00:25:37,050 --> 00:25:40,530
+Look is, uh, equivalent to the ideal gas law.
+
+193
+00:25:41,130 --> 00:25:51,510
+The classical PV equals empty. We just now have again, a different constant factor out front pi to the fourth over 90 Zeta three.
+
+194
+00:25:52,650 --> 00:25:57,000
+Numerically, this is not actually that far from the classical one.
+
+195
+00:25:57,540 --> 00:26:07,920
+It is about 0.9. Um, to, well, so 10% away from the classical case.
+
+196
+00:26:08,220 --> 00:26:12,150
+This is the photon gas equation of state.
+
+197
+00:26:19,190 --> 00:26:23,240
+The same functional form as the ideal gas law.
+
+198
+00:26:25,480 --> 00:26:31,180
+Just as we saw with the relation between energy and particle number,
+
+199
+00:26:31,930 --> 00:26:40,510
+a different constant factor resulting from the different quantum statistics of photons compared to classical particles.
+
+200
+00:26:42,160 --> 00:26:48,020
+So that is. One of the equations of state that we were after today.
+
+201
+00:26:48,650 --> 00:26:52,130
+And that is where we will wrap up with the photon gas.
+
+202
+00:26:52,850 --> 00:27:02,250
+So. We have 20 minutes before a brief break to change gears and start looking at fermion gases.
+
+203
+00:27:03,480 --> 00:27:14,940
+Before we do that, a last chance for questions or comments about photons applying spectrum and the equation to state that we have in the end.
+
+204
+00:27:28,520 --> 00:27:37,710
+Not seeing any. It's time for something new. She will be still looking at ideal, non-interacting gases.
+
+205
+00:27:39,430 --> 00:27:47,960
+Now consisting of. Fermionic particles, and maybe a paradigmatic fermion to have in mind.
+
+206
+00:27:48,800 --> 00:27:54,920
+Um. We'll be. Electrons.
+
+207
+00:27:55,190 --> 00:28:01,910
+So those are, um, fermions that are crucial constituents of matter.
+
+208
+00:28:02,300 --> 00:28:09,650
+And one place they behave like a gas is actually in metals, solid materials.
+
+209
+00:28:09,920 --> 00:28:13,460
+Electrons are able to move about metals freely.
+
+210
+00:28:13,970 --> 00:28:19,610
+This is called electrical conduction. Um, and they can be treated as gases.
+
+211
+00:28:20,150 --> 00:28:32,300
+They do have interactions. But as an idealised example we can neglect those and see how well we reproduce behaviours of metals.
+
+212
+00:28:33,670 --> 00:28:37,720
+As well as other solids that are built of atoms that contain electrons.
+
+213
+00:28:38,680 --> 00:28:46,960
+Now, you can remember that the big difference between fermions and bosons is the Pauli exclusion principle.
+
+214
+00:28:48,070 --> 00:28:53,890
+Energy levels for fermions can only ever be unoccupied or singly occupied.
+
+215
+00:28:54,580 --> 00:29:01,660
+Unlike bosonic particles that can have any number of particles in each energy level.
+
+216
+00:29:03,550 --> 00:29:12,790
+The consequence of this is working with Fermi-Dirac statistics rather than Bose-Einstein statistics, and in practice.
+
+217
+00:29:13,900 --> 00:29:24,370
+The difference between those two sets of quantum statistics is different locations of negative signs in the
+
+218
+00:29:24,940 --> 00:29:31,480
+grand canonical partition function and the corresponding grand canonical potential a minus T out front,
+
+219
+00:29:32,020 --> 00:29:37,630
+and a relative plus sign between one and the exponential factor within the logarithm.
+
+220
+00:29:39,730 --> 00:29:45,100
+So having done ultra relativistic bosons for the photon gas, let's.
+
+221
+00:29:46,250 --> 00:29:55,550
+Make this as big a change as possible to cover as many different options as we can without going through each and every one of them in full detail.
+
+222
+00:29:56,330 --> 00:30:08,570
+Let's head back to. The non-relativistic particles that we considered for the classical physics in the canonical ensemble.
+
+223
+00:30:10,490 --> 00:30:18,640
+So this gives us the relation between the energy and the quantised momenta that.
+
+224
+00:30:20,410 --> 00:30:22,300
+We have seen, you know, a couple of times.
+
+225
+00:30:24,230 --> 00:30:32,600
+Planck's constant squared times pi squared over twice the mass of the fermions times the length of the volume that they are in,
+
+226
+00:30:32,610 --> 00:30:41,270
+so the linear length squared, the volume itself is L cubed, and then in each of the three space dimensions.
+
+227
+00:30:43,450 --> 00:30:47,200
+We have integer units of momenta.
+
+228
+00:30:48,470 --> 00:30:49,010
+Okay.
+
+229
+00:30:49,370 --> 00:31:05,180
+That gets squared to give us the energy p squared over to m these k x k y k z start at one and can go arbitrarily high from there and altogether.
+
+230
+00:31:07,060 --> 00:31:11,800
+This inner product is just going to be the scalar k squared.
+
+231
+00:31:14,460 --> 00:31:22,650
+So if we plug in these energy levels and the corresponding energies into.
+
+232
+00:31:24,370 --> 00:31:31,090
+The grand canonical partition saw a great canonical potential for Fermi-Dirac statistics.
+
+233
+00:31:32,590 --> 00:31:39,860
+We have. A temperature.
+
+234
+00:31:41,450 --> 00:31:49,130
+We have now sums over these integer three vectors and inside the logarithm.
+
+235
+00:31:50,260 --> 00:31:54,340
+The argument to the exponential takes a more complicated form.
+
+236
+00:31:56,090 --> 00:32:09,030
+Minus. Hbar squared pi squared k squared over two and l squared times the temperature with that beta mu.
+
+237
+00:32:09,690 --> 00:32:15,780
+Coming along for the ride and out front I've left a little gap here because we
+
+238
+00:32:15,780 --> 00:32:22,380
+will again have degenerates or degeneracy among all of these energy levels.
+
+239
+00:32:22,980 --> 00:32:29,700
+For each momentum vector k there will be.
+
+240
+00:32:30,930 --> 00:32:37,320
+Two. Energy levels with the same k and the same energy.
+
+241
+00:32:38,130 --> 00:32:42,480
+In the case of photons, those are the two polarisations that we talked about a bit yesterday.
+
+242
+00:32:43,080 --> 00:32:51,630
+In the case of the fermions that we are considering, like electrons, this factor of two comes from a different property,
+
+243
+00:32:53,490 --> 00:33:02,550
+which is known as spin, which I will put in quotation marks because these fermions are not actually spinning.
+
+244
+00:33:03,330 --> 00:33:08,880
+They just have some angular momentum that behaves as though they were spinning.
+
+245
+00:33:09,570 --> 00:33:13,070
+So for every. Momentum vector.
+
+246
+00:33:13,700 --> 00:33:20,600
+We have so-called spin up and spin down varieties of that fermion with exactly the same energy.
+
+247
+00:33:23,050 --> 00:33:31,900
+And this is the this full form of the grand canonical potential, similar to where we started off with photons,
+
+248
+00:33:31,900 --> 00:33:42,640
+is not really convenient to work with infinite sums over integer three vectors, so we want to simplify it to carry out approximate analyses.
+
+249
+00:33:43,150 --> 00:33:51,460
+And what are these simplifications that we can do. Is the same that we did for the photon gas.
+
+250
+00:33:54,030 --> 00:34:02,820
+And this is to, instead of sum, integrate over continuously varying momenta k hat.
+
+251
+00:34:06,810 --> 00:34:15,410
+Also the same set of steps in the same argument that we went through in the classical case,
+
+252
+00:34:15,420 --> 00:34:25,680
+going from sums over discrete energy levels to integrals over continuous.
+
+253
+00:34:27,670 --> 00:34:32,350
+You know, k x, y z. All positive.
+
+254
+00:34:33,100 --> 00:34:42,060
+And as for photons. We will integrate over spherical coordinates.
+
+255
+00:34:45,510 --> 00:34:51,060
+And these will be confined to the positive octant of the sphere.
+
+256
+00:34:51,990 --> 00:34:58,469
+So a quick visualisation of this octant.
+
+257
+00:34:58,470 --> 00:35:04,170
+Just something we will come back to probably after the break at noon,
+
+258
+00:35:06,000 --> 00:35:15,900
+is essentially replacing this cube of energy levels with integration over this eighth of a sphere.
+
+259
+00:35:17,430 --> 00:35:20,670
+Um, that we can see roughly matches.
+
+260
+00:35:23,450 --> 00:35:33,860
+We'll come back to this a bit later on to discuss more precisely how closely it matches and what we can do about the mismatches.
+
+261
+00:35:34,880 --> 00:35:42,410
+For now, though, we can remember that the angular integrals in spherical coordinates.
+
+262
+00:35:42,410 --> 00:35:49,700
+Instead of giving us four pi for the full surface of the sphere 360 degrees, just give us one eighth of that.
+
+263
+00:35:49,700 --> 00:36:02,000
+So a pi over two from the positive octant. So our grand canonical potential is now the twos cancel.
+
+264
+00:36:02,420 --> 00:36:07,880
+We have negative pi times the temperature integrating.
+
+265
+00:36:11,760 --> 00:36:19,600
+Over k squared. From the spherical coordinates and then this logarithm.
+
+266
+00:36:22,510 --> 00:36:27,100
+Involving now k squared. As well.
+
+267
+00:36:34,820 --> 00:36:40,400
+And including the chemical potential which is no longer vanishing.
+
+268
+00:36:42,190 --> 00:36:52,320
+For non-relativistic fermions. And if we change variables to work in terms of.
+
+269
+00:36:54,920 --> 00:36:59,420
+The continuous energy rather than this continuous k hat.
+
+270
+00:37:02,380 --> 00:37:16,720
+Then this gets a bit more. Elegant so we can remember the energy is just k squared over two m times.
+
+271
+00:37:17,110 --> 00:37:18,220
+Constant factors.
+
+272
+00:37:19,000 --> 00:37:30,220
+Rearranging that k itself or k hat in this case will be those constant factors with the square root times the square root of that energy.
+
+273
+00:37:32,500 --> 00:37:36,760
+So the specific factors that we can read off are.
+
+274
+00:37:38,400 --> 00:37:46,830
+L squared with a square root is just L. There's a square root of M and square roots of pi squared h bar squared.
+
+275
+00:37:46,830 --> 00:37:58,080
+Leave us pi and h bar. And I'll put the square root of the two in with the square root of the energy, the DQ in the integral.
+
+276
+00:38:00,250 --> 00:38:05,110
+Just involves the derivative of the square root of e that we have here.
+
+277
+00:38:05,380 --> 00:38:14,410
+We go down one unit in power. We get E to the minus one half, which is one over the square root of E, all the constant factors.
+
+278
+00:38:16,290 --> 00:38:21,720
+Come along for the ride and the one half power.
+
+279
+00:38:22,820 --> 00:38:30,500
+Um, we'll cancel out that square root and leave us with a square root to the denominator as well.
+
+280
+00:38:32,120 --> 00:38:35,630
+So the expressed in terms of the energy.
+
+281
+00:38:36,530 --> 00:38:41,240
+Yeah. Let me shift this down a bit further in the page.
+
+282
+00:38:43,790 --> 00:38:49,200
+What we have is. Minus pi t times.
+
+283
+00:38:50,490 --> 00:38:54,660
+So three factors of these.
+
+284
+00:38:54,660 --> 00:38:57,870
+This constant ratio coming from the k hat squared and the d k.
+
+285
+00:38:58,620 --> 00:39:04,290
+So l root m pi and h bar all cubed.
+
+286
+00:39:06,730 --> 00:39:17,920
+Limits of integration remain the same. And the cat squared just then leaves us with two e in the integral.
+
+287
+00:39:18,880 --> 00:39:22,510
+The log of one plus.
+
+288
+00:39:22,510 --> 00:39:32,320
+And this is where we get the real simplification going from k f squared to energy absorbs everything but the t.
+
+289
+00:39:35,530 --> 00:39:39,980
+In. The exponential factor. Let me just get back to the usual.
+
+290
+00:39:40,250 --> 00:39:43,970
+Exponential of minus beta times energy minus mu.
+
+291
+00:39:44,720 --> 00:39:48,680
+And this is all being integrated over energies.
+
+292
+00:39:49,400 --> 00:39:53,320
+And. Simplifying the slightly.
+
+293
+00:39:54,560 --> 00:40:02,300
+You can see that I wrote down V what I meant to write t the v comes from having l cubed.
+
+294
+00:40:04,530 --> 00:40:08,850
+The tea is still there. The.
+
+295
+00:40:10,470 --> 00:40:22,110
+Factors of two, which I missed. One here coming from D over route two E, so we have overall a square root of two.
+
+296
+00:40:23,880 --> 00:40:30,450
+We have three square roots of the fermion mass along with.
+
+297
+00:40:33,490 --> 00:40:38,710
+Two factors of pi. So pi cubed with a pi that cancels out one of those factors.
+
+298
+00:40:39,520 --> 00:40:45,790
+Three factors of Planck's constant and then the integral over.
+
+299
+00:40:50,810 --> 00:40:58,530
+The logarithm of one plus exponential. With a square root Eddie at the end.
+
+300
+00:41:00,360 --> 00:41:09,030
+So that is progress compared to the complicated sum over integer three vectors that we started off with.
+
+301
+00:41:10,200 --> 00:41:14,730
+It's still not the easiest integral to evaluate.
+
+302
+00:41:18,820 --> 00:41:21,820
+So the next simplification that we will do.
+
+303
+00:41:23,400 --> 00:41:33,600
+For this analysis will be to try to make this a bit simpler, and also be motivated by taking us away from the classical regime.
+
+304
+00:41:33,600 --> 00:41:40,260
+So looking at the brain to create a spread of physical behaviour.
+
+305
+00:41:41,450 --> 00:41:49,820
+That we can consider. And that is to say, the classical regime is based in the high temperature limit.
+
+306
+00:41:50,540 --> 00:41:56,030
+So getting far from that if I want to see how.
+
+307
+00:41:58,710 --> 00:42:04,260
+These results simplify. If we consider low temperatures.
+
+308
+00:42:05,890 --> 00:42:14,630
+Far from that classical limit. And to make things a bit more concrete.
+
+309
+00:42:16,220 --> 00:42:20,810
+Let's. Instead of working directly with the grand canonical potential,
+
+310
+00:42:21,260 --> 00:42:27,440
+work with something a bit more physical and apply this simplification, at least at first.
+
+311
+00:42:28,580 --> 00:42:32,650
+Looking at. The average.
+
+312
+00:42:33,820 --> 00:42:37,130
+Uh. Density of particles.
+
+313
+00:42:39,040 --> 00:42:45,220
+So the ratio of the particle number for this fermion gas divided by the volume.
+
+314
+00:42:46,000 --> 00:42:55,060
+This is the same derivative with respect to the chemical potential that we started off with today.
+
+315
+00:42:55,990 --> 00:42:59,110
+And what this gives us we can just.
+
+316
+00:43:01,760 --> 00:43:05,300
+Evaluate it without re copying.
+
+317
+00:43:07,940 --> 00:43:12,980
+The Chemical Society, the grand canonical potential that we have up here,
+
+318
+00:43:14,060 --> 00:43:20,630
+the derivative of the log within the integral over energies, bring us down this argument again.
+
+319
+00:43:24,390 --> 00:43:32,150
+We have. Then a chain rule bringing us now with a positive sign, our exponential factor.
+
+320
+00:43:32,870 --> 00:43:41,890
+And then the argument of that exponential with the root Eddie coming along for the ride temperature,
+
+321
+00:43:41,900 --> 00:43:48,110
+an inverse temperature cancelling and dividing through by that exponential factor.
+
+322
+00:43:49,070 --> 00:43:56,910
+We have. An integral over.
+
+323
+00:44:00,180 --> 00:44:13,130
+Something that looks like. The kind of occupation, average occupation number that we saw when we first arrived.
+
+324
+00:44:13,140 --> 00:44:22,340
+Fermi-Dirac statistics one over exponential plus one rather than one over exponential, minus one for Bose-Einstein statistics.
+
+325
+00:44:22,820 --> 00:44:26,840
+And then a root eddy left at the end.
+
+326
+00:44:28,190 --> 00:44:40,270
+And what we can do with this is. Pull out this exponential or exponentially dependent factor and to find that to be.
+
+327
+00:44:41,840 --> 00:44:44,600
+Something analogous to the Planck spectrum.
+
+328
+00:44:46,480 --> 00:44:54,550
+So the plank spectrum was a description of how the energies of photons varied as a function of their frequency.
+
+329
+00:44:55,060 --> 00:45:01,870
+Here we have a description of how the number of fermions varies as a function of their energy.
+
+330
+00:45:03,550 --> 00:45:11,830
+So we integrate over what we will call a function f of e with the square root e d e.
+
+331
+00:45:11,860 --> 00:45:23,080
+Coming along for the ride. And we can read off pretty easily that this f of a function is just one over our exponential factor.
+
+332
+00:45:23,980 --> 00:45:31,220
+The plus sign there. So that looks like.
+
+333
+00:45:32,710 --> 00:45:35,860
+An average energy level occupation number in Fermi-Dirac directions.
+
+334
+00:45:36,850 --> 00:45:37,990
+And this is called.
+
+335
+00:45:40,960 --> 00:45:54,460
+The Fermi function in analogy to the Planck spectrum, and something that we can analyse on its own, sort of pulled out from its appearance in.
+
+336
+00:45:56,120 --> 00:46:00,560
+These predictions for larger scale properties like the average particle density.
+
+337
+00:46:02,270 --> 00:46:09,860
+One difference between the Fermi function and the Planck spectrum that you may have noticed is that these causal factors have fronts.
+
+338
+00:46:09,860 --> 00:46:14,000
+The mass cubed, pi squared and h bar cubed are not included.
+
+339
+00:46:14,480 --> 00:46:21,220
+So that just leaves the. Fermi function as essentially a pure number.
+
+340
+00:46:22,090 --> 00:46:34,120
+And if we think about what happens as the energy varies with respect to the chemical potential, we can map out the overall range of this function.
+
+341
+00:46:35,920 --> 00:46:45,590
+So if we. Let's see what I can fit on this page.
+
+342
+00:47:01,820 --> 00:47:08,570
+There's a few things to say about the ferry function, so I'll give myself space to put them without squeezing things.
+
+343
+00:47:09,050 --> 00:47:12,950
+If we assume a positive chemical potential.
+
+344
+00:47:15,110 --> 00:47:23,270
+So this is something that we will justify later, and also something that takes us further from the classical limit,
+
+345
+00:47:23,780 --> 00:47:27,980
+where the chemical potential goes to negative infinity as the temperature goes to infinity.
+
+346
+00:47:28,940 --> 00:47:33,890
+Then the Fermi function has a threshold.
+
+347
+00:47:35,960 --> 00:47:44,450
+Exactly when the energy is equal to the chemical potential that e minus mu cancels out in the exponential,
+
+348
+00:47:44,450 --> 00:47:54,770
+we get E to the zero is one, and the Fermi function as a whole is one half, and that is, while c is a half.
+
+349
+00:47:55,490 --> 00:48:04,280
+Independent of the temperature, beta times zero is just zero for any any beta.
+
+350
+00:48:05,240 --> 00:48:14,780
+And this is a threshold because there is different behaviour on either side of it, which is not too hard to see when the energy is greater than mu.
+
+351
+00:48:15,470 --> 00:48:26,060
+The argument of the exponential is positive. So especially at low temperature, we have an exponentially enhanced denominator of the Fermi function,
+
+352
+00:48:26,900 --> 00:48:31,880
+which means that the Fermi function as a whole is exponentially suppressed.
+
+353
+00:48:36,500 --> 00:48:41,220
+And in particular it will go to zero.
+
+354
+00:48:41,240 --> 00:48:46,639
+But either the energy becomes very large or beta becomes very large.
+
+355
+00:48:46,640 --> 00:48:48,350
+The temperature becomes very low.
+
+356
+00:48:50,180 --> 00:49:01,100
+And on the opposite side of this threshold, if the energy is less than mu, then the exponential itself e to a negative number becomes zero.
+
+357
+00:49:01,490 --> 00:49:04,910
+It becomes negligible compared to the one in the denominator.
+
+358
+00:49:05,450 --> 00:49:13,820
+For very well large differences between energy and chemical potential or low temperatures.
+
+359
+00:49:18,400 --> 00:49:27,670
+So the exponential itself goes away and the Fermi function will approach one over one from below.
+
+360
+00:49:28,990 --> 00:49:34,330
+So this is the range of behaviours that we can have for the Fermi function.
+
+361
+00:49:34,330 --> 00:49:37,990
+Just a number ranging between 0 and 1.
+
+362
+00:49:39,820 --> 00:49:47,920
+Um, and with a threshold when the energy is equal to the chemical potential.
+
+363
+00:49:47,920 --> 00:49:56,650
+Or to put this in another way that we will come back to after taking a bit of a break until noon.
+
+364
+00:49:57,610 --> 00:50:05,560
+If we express this as a ratio of energy over chemical potential, the threshold sets in or this ratio is one.
+
+365
+00:50:07,150 --> 00:50:11,950
+So we'll talk about this plot in full detail in about ten minutes.
+
+366
+00:50:11,950 --> 00:50:16,670
+But are there any questions about what we've done so far with fermions?
+
+367
+00:50:16,720 --> 00:50:21,670
+Before we take that break and reconvene at noon.
+
+368
+00:50:27,830 --> 00:50:30,372
+Not seeing any. I'll try to pause rather than stop that recording and just leave that up on the screen.
+
+369
+00:50:38,176 --> 00:50:51,016
+We can get back to it and say a bit more about the behaviour of the Fermi function that we have plotted here.
+
+370
+00:50:51,556 --> 00:51:00,196
+So just to get the functional form into the same form as we're showing here,
+
+371
+00:51:01,216 --> 00:51:16,666
+plotted against the ratio of energy and chemical potential, we can write down that Fermi function as one over the exponential of.
+
+372
+00:51:19,536 --> 00:51:22,056
+Energy over chemical potential by pulling out.
+
+373
+00:51:23,176 --> 00:51:35,386
+An overall factor of chemical potential and of temperature, so that E to the beta energy minus mu, we pull out a mu replace beta with one over T.
+
+374
+00:51:36,316 --> 00:51:40,726
+This is the form it takes. There's a plus one in the denominator.
+
+375
+00:51:41,446 --> 00:51:47,656
+And. If we recall properties of exponentials with this product of um.
+
+376
+00:51:50,696 --> 00:51:53,846
+You over t times e over mu minus one.
+
+377
+00:51:55,466 --> 00:51:57,596
+We can turn that into.
+
+378
+00:51:59,836 --> 00:52:11,386
+The exponential factor of e over mu minus one raised to the power of mu over t, and that's essentially what is being shown in this figure.
+
+379
+00:52:11,566 --> 00:52:15,496
+We have this Fermi function versus e over mu.
+
+380
+00:52:15,886 --> 00:52:23,296
+So an e over mu equals one. That exponential vanishes for all powers depending on chemical potential and temperature.
+
+381
+00:52:24,046 --> 00:52:29,046
+And we always get that one half. That, uh, we computed.
+
+382
+00:52:30,036 --> 00:52:33,456
+So for all temperatures, there is an intersection there at a half.
+
+383
+00:52:35,016 --> 00:52:40,986
+And as the temperature gets lower. Well, the two things can happen either.
+
+384
+00:52:41,586 --> 00:52:47,886
+The Fermi function decreases to zero or increases to one,
+
+385
+00:52:49,086 --> 00:52:56,976
+and we can see that this increase is happening more and more quickly depending on this ratio of chemical potential over temperature.
+
+386
+00:52:57,396 --> 00:53:02,496
+So here it's unfortunately the inverse of the labels on these curves.
+
+387
+00:53:02,496 --> 00:53:07,626
+But the red line is when mu over t equals one.
+
+388
+00:53:08,286 --> 00:53:17,166
+The dashed green line that is the next steepest going through a half has mu over t equal to a half.
+
+389
+00:53:18,326 --> 00:53:21,746
+And then you look at a 10th and a hundredth.
+
+390
+00:53:22,166 --> 00:53:25,226
+For the dotted blue line and solid black line.
+
+391
+00:53:25,736 --> 00:53:31,526
+By the time we have a temperature that is 100 times lower than the chemical potential,
+
+392
+00:53:31,946 --> 00:53:38,816
+you can see there's a very rapid jump from the asymptotic limit for every function of one.
+
+393
+00:53:39,416 --> 00:53:43,076
+For lower energy is going down to zero at higher energies.
+
+394
+00:53:44,356 --> 00:53:48,586
+So the takeaway from this plot and what we've seen by.
+
+395
+00:53:50,526 --> 00:53:54,516
+Or what we can see from the mathematics itself is that.
+
+396
+00:53:55,996 --> 00:54:07,806
+The. The lower temperature that corresponds to the larger beta produces a faster approach to these asymptotic limits,
+
+397
+00:54:07,816 --> 00:54:11,116
+zero and one, depending on the temperature.
+
+398
+00:54:16,046 --> 00:54:24,146
+And this is, um, the justification for the simplification that we get from considering low temperatures.
+
+399
+00:54:24,746 --> 00:54:29,426
+So I've been coy about what exactly has been simplified so far.
+
+400
+00:54:29,936 --> 00:54:33,896
+But what we can do for these very low temperatures.
+
+401
+00:54:36,416 --> 00:54:41,106
+Is actually. Approximate this Fermi function by.
+
+402
+00:54:46,086 --> 00:54:49,746
+A simpler function that will simplify the.
+
+403
+00:54:52,006 --> 00:55:00,496
+Integrals it appears in. So the simplification itself will be to approximate.
+
+404
+00:55:02,996 --> 00:55:08,446
+The Fermi function f of e. As a step function.
+
+405
+00:55:08,456 --> 00:55:17,486
+So going this continuously from one for low energies to zero for high energies.
+
+406
+00:55:22,896 --> 00:55:26,366
+I remember that we always have non-negative energies.
+
+407
+00:55:28,056 --> 00:55:32,646
+Oh, and it didn't quite fit in there. I'm just going to rewrite this down here.
+
+408
+00:55:35,366 --> 00:55:45,206
+It's either 1 or 0, it's one. Whenever the non-negative energy is less than mu, it is zero otherwise.
+
+409
+00:55:47,686 --> 00:55:53,296
+The special case of a half exactly at e equals mu is something.
+
+410
+00:55:53,716 --> 00:55:59,416
+It only happens at a point a set of measure zero. We don't have to worry about what's going on at that boundary.
+
+411
+00:56:01,066 --> 00:56:06,016
+What this does in the equation where we introduce this Fermi function.
+
+412
+00:56:06,676 --> 00:56:11,626
+So if we rewrite this particle number density.
+
+413
+00:56:17,596 --> 00:56:27,966
+With all of its constant factors attached. We will have in this integral either 0 or 1.
+
+414
+00:56:29,346 --> 00:56:36,996
+So every. Um, part of the domain with an energy larger than mu will be killed off.
+
+415
+00:56:37,866 --> 00:56:41,076
+So the approximation that we have.
+
+416
+00:56:45,806 --> 00:56:57,676
+Just limits the. Upper bound of integration, where f of t equals one, and all that is left is the square root of E itself.
+
+417
+00:56:58,126 --> 00:57:02,236
+And that is an integral that we are able to do without trouble.
+
+418
+00:57:05,256 --> 00:57:11,856
+It's even more you know, the troubling thing is to keep rewriting all these causal factors.
+
+419
+00:57:11,856 --> 00:57:20,466
+But integrating E to the one half will give us each of the three halves times one over that power is two thirds.
+
+420
+00:57:21,896 --> 00:57:26,786
+And this is evaluated from zero to mu and we end up with.
+
+421
+00:57:27,716 --> 00:57:34,496
+Three. Square roots of two. Three square roots of M and three square roots of the chemical potential mu.
+
+422
+00:57:35,276 --> 00:57:38,546
+So all of those are raised to the three house power.
+
+423
+00:57:39,596 --> 00:57:43,826
+And we have a three pi squared h bar cubed in the denominator.
+
+424
+00:57:44,036 --> 00:57:52,166
+So a simple zero temperature limit effectively of the particle density.
+
+425
+00:57:54,396 --> 00:58:03,636
+Um. More formally, this result corresponds to a leading order of a low temperature expansion.
+
+426
+00:58:11,286 --> 00:58:20,945
+More formally, an expansion that brings in powers of the temperature relative to the chemical potential as a small parameter to expand in.
+
+427
+00:58:20,946 --> 00:58:27,546
+This is to limit where that temperature goes to zero, or equivalently, the chemical potential goes to infinity.
+
+428
+00:58:29,046 --> 00:58:32,196
+Um, this expansion is.
+
+429
+00:58:34,446 --> 00:58:38,106
+Related to or known as a Summerfield expansion.
+
+430
+00:58:38,586 --> 00:58:42,126
+Something that I think we will skip for the time being,
+
+431
+00:58:42,456 --> 00:58:48,306
+but might come back to sort of around the end of the term, depending on how quickly we get through.
+
+432
+00:58:49,736 --> 00:58:56,786
+The big remaining topic on interacting systems, which we will get to not today, but next week.
+
+433
+00:58:59,666 --> 00:59:04,796
+The physical picture that we can have with this result.
+
+434
+00:59:06,236 --> 00:59:10,676
+So in. The zero temperature limit.
+
+435
+00:59:12,886 --> 00:59:16,156
+We have seen previously. Um.
+
+436
+00:59:18,006 --> 00:59:26,696
+For low temperatures, a exponential enhancement for the relative probability of low energy energy levels,
+
+437
+00:59:26,726 --> 00:59:32,616
+so energy levels with low energy being occupied. Coming just from the the normal Boltzmann factor.
+
+438
+00:59:33,816 --> 00:59:40,386
+So what happens as the temperature goes to zero. But we have a Pauli exclusion principle in play is that.
+
+439
+00:59:41,406 --> 00:59:45,486
+All of the low lying energy levels are.
+
+440
+00:59:47,596 --> 00:59:51,706
+Filled. But due to Pauli exclusion.
+
+441
+00:59:53,026 --> 00:59:57,466
+There can only be one fermion in each of those low energy levels.
+
+442
+00:59:59,246 --> 01:00:05,456
+So each of them is occupied with the maximum occupation number and sub l equals one.
+
+443
+01:00:06,806 --> 01:00:14,906
+I'll mention in passing. This is a simple example of a density of states, which came up in a question a week or two ago.
+
+444
+01:00:15,506 --> 01:00:19,076
+Um, I won't say anything more about that here.
+
+445
+01:00:19,646 --> 01:00:23,516
+This is essentially a step function for the density of states.
+
+446
+01:00:24,056 --> 01:00:28,886
+All states below a Cut-Off are occupied. All states above are unoccupied.
+
+447
+01:00:30,056 --> 01:00:33,656
+And because the.
+
+448
+01:00:34,886 --> 01:00:41,106
+Energies that we have for these energy levels are proportional to that momentum k squared.
+
+449
+01:00:41,126 --> 01:00:47,276
+In this non-relativistic case, the total number of particles.
+
+450
+01:00:49,196 --> 01:00:54,326
+Are effectively just filling that positive octant of the sphere.
+
+451
+01:00:56,496 --> 01:01:09,066
+Going up to. The cut off on the energy given by the chemical potential turns into a cut off on the momentum,
+
+452
+01:01:10,146 --> 01:01:17,586
+which is just the square root of that energy, or equivalently, the square root of that chemical potential.
+
+453
+01:01:17,586 --> 01:01:22,806
+So this is the context in which this figure.
+
+454
+01:01:25,246 --> 01:01:28,996
+We can discuss in a bit more detail. This is from.
+
+455
+01:01:29,416 --> 01:01:36,766
+I took this from Schroders introduction to Thermal Physics where he uses lowercase in where we would use.
+
+456
+01:01:37,736 --> 01:01:40,886
+K is just a set of integers.
+
+457
+01:01:41,666 --> 01:01:50,456
+The energy levels that we have are positive integer values for each of these 3KX Kiki z.
+
+458
+01:01:51,086 --> 01:01:57,326
+So that is the set of black points in the middle of this cube.
+
+459
+01:01:58,556 --> 01:02:04,586
+We are approximating this with a sphere of radius k max, which is.
+
+460
+01:02:05,726 --> 01:02:09,326
+Um. We just said proportional to.
+
+461
+01:02:12,316 --> 01:02:20,956
+Square root of the chemical potential that sets the maximum energy of the particles,
+
+462
+01:02:22,606 --> 01:02:27,106
+or the maximum energy level that all the particles fill up at low temperatures.
+
+463
+01:02:28,306 --> 01:02:38,236
+And we can see that this approximation of these integer energy levels by spherical coordinates is bringing in two um.
+
+464
+01:02:40,056 --> 01:02:48,876
+Sets of disagreements. First, there is a deficit in three places where the sphere goes beyond.
+
+465
+01:02:50,316 --> 01:02:55,016
+The cube with. Maximum.
+
+466
+01:02:58,896 --> 01:03:04,386
+Uh integer k. And then this is compensated by the other four corners.
+
+467
+01:03:04,626 --> 01:03:07,986
+So a small one down there from this perspective.
+
+468
+01:03:09,216 --> 01:03:26,045
+But other places where. The integers would exceed this cube and all balance out up to effects that vanish like the surface area over the volume.
+
+469
+01:03:26,046 --> 01:03:35,556
+So like one over L or well, the l here is the integers k vanishes like one over the number of particles that we have.
+
+470
+01:03:36,036 --> 01:03:40,296
+And in statistical physics we are always working with the large number of particles
+
+471
+01:03:40,296 --> 01:03:45,906
+where this these spherical coordinates become that very good approximation.
+
+472
+01:03:46,566 --> 01:03:52,266
+And from filling an octant of a sphere with a radius root mu,
+
+473
+01:03:52,956 --> 01:04:01,836
+we end up with the expectation that the number of particles goes like the volume of the sphere 4/3 pi r cubed over eight.
+
+474
+01:04:03,106 --> 01:04:13,336
+Which is where we get that square root mu cubed dependence from the radius of the sphere corresponding to the volume.
+
+475
+01:04:14,356 --> 01:04:20,556
+I'll say in passing in modules on solid state physics, the sphere.
+
+476
+01:04:20,566 --> 01:04:29,356
+So the surface of the sphere, um, the boundary between occupied and unoccupied energy levels is known as the Fermi surface.
+
+477
+01:04:29,956 --> 01:04:32,655
+That's a bit beyond what we will deal with in this module,
+
+478
+01:04:32,656 --> 01:04:38,895
+but it's something you might have seen or heard before in other modules, either now or in the future.
+
+479
+01:04:38,896 --> 01:04:44,786
+For those of you on, uh, master's programs. So that's a Fermi surface.
+
+480
+01:04:45,086 --> 01:04:55,706
+And the Fermi surface in our non-relativistic, non-interacting ideal gas case is a simple sphere.
+
+481
+01:04:55,856 --> 01:05:03,416
+It's as simple as it can be. And there is one related bit of terminology.
+
+482
+01:05:03,476 --> 01:05:09,926
+So in this zero temperature limit where we have the sharp cut off between filled and empty energy levels.
+
+483
+01:05:11,836 --> 01:05:19,456
+Maximum energy. Corresponding to that Cut-Off, so defining the Fermi surface of the sphere.
+
+484
+01:05:20,776 --> 01:05:29,606
+Is known as the Fermi energy. So this will be just E sub f with no expectation values.
+
+485
+01:05:30,386 --> 01:05:34,706
+Well we've seen the threshold is just the energy equal to mu.
+
+486
+01:05:35,096 --> 01:05:39,566
+So Fermi energy is a fancy word for the chemical potential.
+
+487
+01:05:41,216 --> 01:05:50,666
+Which, if we rearrange our zero temperature result, the leading order term that survives, um, in this power series.
+
+488
+01:05:52,826 --> 01:05:56,546
+We can take the two thirds power of.
+
+489
+01:05:57,746 --> 01:06:01,996
+The particle density. And.
+
+490
+01:06:02,916 --> 01:06:06,366
+F over V along with that three.
+
+491
+01:06:07,816 --> 01:06:20,236
+Pi squared factor. And then two thirds of H bar cubed and to M to the three halves will give us just h bar over.
+
+492
+01:06:21,516 --> 01:06:27,346
+To em. Um.
+
+493
+01:06:28,386 --> 01:06:43,686
+Each bar squared in fact. So this is the Fermi energy related to the particle density for these non-interacting fermions at zero temperature.
+
+494
+01:06:49,156 --> 01:06:55,036
+So any questions about the simplifications that we have done to get nice,
+
+495
+01:06:55,036 --> 01:07:03,616
+elegant expressions for the zero temperature limit of this fermion gas, assuming a positive chemical potential.
+
+496
+01:07:07,316 --> 01:07:11,026
+Because if there aren't, I think you can guess what's coming next.
+
+497
+01:07:11,036 --> 01:07:17,236
+We go through the same procedure that we did for the photon gas, checking the average internal energy, uh,
+
+498
+01:07:17,486 --> 01:07:25,616
+relating that to the number of particles and considering the pressure and equation of state, we'll get at least a.
+
+499
+01:07:27,736 --> 01:07:30,736
+Um, good bit of the way through that.
+
+500
+01:07:32,636 --> 01:07:38,726
+In the remaining time today. Starting with the.
+
+501
+01:07:41,476 --> 01:07:52,846
+Internal energy. So just as we saw for the photon gas,
+
+502
+01:07:52,846 --> 01:07:58,456
+the only difference between the integrals that we have to do for the particle number
+
+503
+01:07:58,876 --> 01:08:05,596
+versus the energy is just integrating over the energies carried by the particles versus.
+
+504
+01:08:07,456 --> 01:08:15,166
+Integrating over the particles themselves. So compared to the calculation that we just did.
+
+505
+01:08:17,926 --> 01:08:29,146
+We only have to insert an extra factor of the energy into the integral over energies to get the overall internal energy of the photon gas.
+
+506
+01:08:33,996 --> 01:08:36,996
+Which is to say, we have, as always.
+
+507
+01:08:38,766 --> 01:08:42,756
+Are two cubed or pi squared, each bar cubed.
+
+508
+01:08:43,776 --> 01:08:47,516
+Now. With instead of.
+
+509
+01:08:49,946 --> 01:08:53,606
+The Fermi function times the square root of energy. We have.
+
+510
+01:08:54,906 --> 01:09:00,096
+An extra energy waiting. With that.
+
+511
+01:09:01,446 --> 01:09:11,086
+Square root still there and the same. Low temperature simplification of a step function for the Fermi function.
+
+512
+01:09:13,486 --> 01:09:19,306
+Cuts off this integral as well. At the chemical potential mu.
+
+513
+01:09:19,996 --> 01:09:28,456
+It is just e to the three halves power d e again something with that we can do without any fuss.
+
+514
+01:09:30,846 --> 01:09:36,096
+So. You have to mute the three halves as usual.
+
+515
+01:09:36,666 --> 01:09:45,936
+We have an extra factor of mu now coming from the five horsepower of that integral, and instead of two thirds, we have 2/5.
+
+516
+01:09:46,946 --> 01:09:52,386
+Uh, multiplying that. So just replacing all the threes by fives and that expression.
+
+517
+01:09:54,936 --> 01:09:58,356
+Pi squared and hbar cubed.
+
+518
+01:10:00,216 --> 01:10:09,306
+And well because there is this, these similarities with to mu over hbar cubed pi squared.
+
+519
+01:10:09,786 --> 01:10:13,746
+We can bring in the particle number density.
+
+520
+01:10:16,886 --> 01:10:21,036
+And well, as I said, all the threes above were replaced by fives here.
+
+521
+01:10:21,056 --> 01:10:23,666
+A factor of 3/5. We'll do that.
+
+522
+01:10:24,716 --> 01:10:32,516
+The extra mew comes along for the ride, and we have the particle number density accounting for all of the other factors in this expression.
+
+523
+01:10:33,726 --> 01:10:44,496
+So this is more significantly different from the classical three halves empty than we had for the photon gas.
+
+524
+01:10:45,126 --> 01:10:50,796
+Remember, for the photon gas today, we just had about 2.7 and T for the energy.
+
+525
+01:10:51,876 --> 01:10:59,046
+Now there is no T at all. Um, in part because we've sort of formally taken that t to zero limit.
+
+526
+01:10:59,746 --> 01:11:04,596
+What's interesting is that this particle density and energy density are both nonzero.
+
+527
+01:11:05,786 --> 01:11:16,376
+Even in the zero temperature limit, which is qualitatively different from what we found for classical particles or for the photon gas.
+
+528
+01:11:19,376 --> 01:11:26,066
+And we can just rearrange this slightly to see that.
+
+529
+01:11:28,396 --> 01:11:34,336
+In this limit of absolute zero temperature, the average energy per particle.
+
+530
+01:11:38,136 --> 01:11:46,636
+Is related to the ferry energy. So it is just.
+
+531
+01:11:48,026 --> 01:11:53,546
+Ratio of these expectation values, the volumes cancel.
+
+532
+01:11:53,876 --> 01:11:58,076
+It's just this 3/5 mu factor. And that mu is.
+
+533
+01:11:59,106 --> 01:12:12,206
+The Fermi energy at zero temperature. So this is just related to that same physical picture we talked about for the particle number.
+
+534
+01:12:12,806 --> 01:12:19,556
+Because every energy level with low energies are filled on average the.
+
+535
+01:12:23,526 --> 01:12:32,466
+The way that the number of energy levels depends on the value of their energy is such that we just get the overall upper limit,
+
+536
+01:12:32,466 --> 01:12:37,236
+the threshold for the boundary between filled and unfilled energy levels.
+
+537
+01:12:38,646 --> 01:12:42,156
+Again, all as a consequence of Pauli exclusion.
+
+538
+01:12:43,836 --> 01:12:54,586
+So they use the fermions are. Filling all of the low and all of the energy levels with low values of the energy.
+
+539
+01:13:00,536 --> 01:13:09,556
+Going up to E.f. And that is why they cannot have zero energy even at absolute zero.
+
+540
+01:13:10,996 --> 01:13:16,876
+Um, they cannot all collapse to an energy level that has zero energy by Pauli exclusion.
+
+541
+01:13:17,296 --> 01:13:27,346
+They are continually forced to squeeze in as close as they can to zero, but still pushed away from it by the restrictions on the occupation numbers.
+
+542
+01:13:31,756 --> 01:13:39,076
+So at this point. Now take a brief digression and touch on.
+
+543
+01:13:41,026 --> 01:13:44,296
+Yesterday's tutorial where I didn't.
+
+544
+01:13:45,406 --> 01:13:49,786
+Well, I had too many things to talk about and didn't get through all of them.
+
+545
+01:13:50,626 --> 01:13:54,536
+And in particular, I promised that we would. Um.
+
+546
+01:13:56,846 --> 01:14:06,326
+See in a bit more detail today. The final task for the current tutorial activity of looking at the heat capacity for,
+
+547
+01:14:08,036 --> 01:14:13,645
+um, models of a solid that don't explicitly invoke quantum mechanics,
+
+548
+01:14:13,646 --> 01:14:22,076
+where we try to explain the experimental results for the behaviour of that heat capacity.
+
+549
+01:14:23,216 --> 01:14:27,626
+So here are those results again a.
+
+550
+01:14:29,776 --> 01:14:33,646
+Term that is linear in the temperature. That is, that intercept there.
+
+551
+01:14:33,946 --> 01:14:37,816
+And that a cubic term. That corresponds to the slope versus t squared.
+
+552
+01:14:39,376 --> 01:14:45,016
+The slope comes from the phonon gas that you.
+
+553
+01:14:46,106 --> 01:14:58,636
+Um, are already. Able to to work on based on photons, but for very low energies, that linear term in.
+
+554
+01:15:00,646 --> 01:15:12,076
+The heat capacity comes from the next correction, especially essentially to this summer expansion that.
+
+555
+01:15:14,846 --> 01:15:18,116
+We will be setting aside for now. So.
+
+556
+01:15:18,946 --> 01:15:20,446
+You don't need to do the full expansion,
+
+557
+01:15:20,446 --> 01:15:28,786
+but just enough of it to extract the functional form and confirm that it is a linear dependence once you get down to that heat capacity.
+
+558
+01:15:29,386 --> 01:15:33,226
+So what has to happen is actually integrating.
+
+559
+01:15:35,076 --> 01:15:43,886
+That full integral. No longer approximating the Fermi function as a step function.
+
+560
+01:15:46,086 --> 01:15:58,596
+So the way to do this? Well, one way in the way that I think is easiest to to manage with the tools that you have so far is integrating this by parts,
+
+561
+01:15:59,586 --> 01:16:02,916
+arguing that the boundary term vanishes.
+
+562
+01:16:06,186 --> 01:16:14,096
+While the other. Remaining integral is sharply peaked around.
+
+563
+01:16:18,026 --> 01:16:24,296
+The threshold value that we have identified in our earlier work.
+
+564
+01:16:30,876 --> 01:16:35,256
+Which is to say. Right around.
+
+565
+01:16:36,706 --> 01:16:40,096
+And energy approximately equal to the chemical potential.
+
+566
+01:16:41,886 --> 01:16:47,435
+So with a sharply peaked integrand, what we can do to tackle that.
+
+567
+01:16:47,436 --> 01:16:56,796
+The formal Somerville expansion really just amounts to a Taylor expansion of the integrand around its maximum value.
+
+568
+01:16:59,936 --> 01:17:03,926
+That expansion then gives more manageable integrals that.
+
+569
+01:17:05,476 --> 01:17:11,476
+Without too much more manipulation, we'll produce the target result.
+
+570
+01:17:12,166 --> 01:17:20,046
+Linear dependence of the heat capacity at these very low temperatures where any of these causal factors,
+
+571
+01:17:20,656 --> 01:17:26,146
+you know, square root to M cubed over pi squared h bar cubed, those can all be neglected or really rare.
+
+572
+01:17:26,806 --> 01:17:36,396
+For the purposes of that tutorial, only interested in the functional form and confirming that the experimental measurements um,
+
+573
+01:17:36,746 --> 01:17:48,166
+we are trying to reproduce can be described both by the phonons in the lattice structure as well as by the low temperature electron gas,
+
+574
+01:17:49,666 --> 01:17:57,046
+um, that becomes dominant for all of these materials when the temperature becomes very low.
+
+575
+01:18:03,706 --> 01:18:14,956
+So a brief aside. Um, are there questions about the the nonzero energy in the low temperature limit or this picture of,
+
+576
+01:18:15,676 --> 01:18:20,356
+um, the Fermi surface separating field and empty energy levels?
+
+577
+01:18:23,166 --> 01:18:31,086
+I'll actually do one more thing with that picture, which is to to justify the approximation or the assumption that we made earlier.
+
+578
+01:18:32,936 --> 01:18:37,946
+So when looking at the Fermi function, we.
+
+579
+01:18:39,336 --> 01:18:47,136
+Assumed that the chemical potential was positive so that the energy could be either less than or greater than it.
+
+580
+01:18:48,126 --> 01:18:51,186
+Um. And you want to.
+
+581
+01:18:53,636 --> 01:19:00,026
+See that this is the. This is the case for a low temperature fermion gas.
+
+582
+01:19:00,506 --> 01:19:12,116
+In contrast to the classical limit, where the chemical potential is a large negative number, or the photon gas where the chemical potential vanishes.
+
+583
+01:19:12,116 --> 01:19:18,445
+Exactly. So we can do this justification based on our physical picture of a Fermi surface.
+
+584
+01:19:18,446 --> 01:19:26,876
+By remembering the expression for chemical potential that we got from our generalised thermodynamic identity.
+
+585
+01:19:27,566 --> 01:19:31,076
+How much does the energy change when we change the number of particles?
+
+586
+01:19:31,436 --> 01:19:37,766
+Imposing a condition of constant entropy as well as keeping the the volume fixed.
+
+587
+01:19:39,116 --> 01:19:43,916
+So in this simple zero temperature limit.
+
+588
+01:19:46,286 --> 01:19:51,086
+What we have really talking about the entropy is.
+
+589
+01:19:53,926 --> 01:20:04,366
+We can express the entropy as in the usual way. Sum over all of the probabilities for the system to adopt each microstate I.
+
+590
+01:20:04,966 --> 01:20:10,006
+So pi times log pi. As t goes to zero.
+
+591
+01:20:10,636 --> 01:20:14,296
+We really only have one microstate.
+
+592
+01:20:19,176 --> 01:20:21,546
+With the corresponding probability of one.
+
+593
+01:20:21,606 --> 01:20:30,276
+To be adopted, and this is the microstate that corresponds to every energy level filled up to that Fermi surface.
+
+594
+01:20:30,756 --> 01:20:35,496
+Um, where the energy is equal to mu, the Fermi energy.
+
+595
+01:20:36,126 --> 01:20:40,446
+So the logarithm of one times one is zero.
+
+596
+01:20:42,266 --> 01:20:46,146
+So the energy is zero and it remains a zero.
+
+597
+01:20:46,166 --> 01:20:50,305
+Even if we add another particle. So add another particle.
+
+598
+01:20:50,306 --> 01:20:54,226
+Refill the next available energy level. There's still only one microstate.
+
+599
+01:20:54,236 --> 01:20:58,046
+There's still zero entropy. And.
+
+600
+01:21:00,366 --> 01:21:06,306
+The entropy then remains constant. Even as we keep adding.
+
+601
+01:21:08,316 --> 01:21:11,856
+Or, for that matter, removing particles from the system.
+
+602
+01:21:12,486 --> 01:21:22,716
+The the microstate that is possible will change, but there is only ever one leading to constant zero entropy.
+
+603
+01:21:23,346 --> 01:21:28,566
+So that tells us that we can just consider without worrying about the entropy.
+
+604
+01:21:28,866 --> 01:21:32,946
+What happens to the energy when, say, we had some number of particles?
+
+605
+01:21:36,416 --> 01:21:40,826
+So that's a positive change in the number of particles.
+
+606
+01:21:42,236 --> 01:21:45,656
+And all that happens if we add particles.
+
+607
+01:21:46,256 --> 01:21:49,796
+Is that the next energy level that is.
+
+608
+01:21:51,186 --> 01:21:58,376
+Still empty will be filled. Formerly the.
+
+609
+01:22:00,116 --> 01:22:03,236
+Fermi energy will shift.
+
+610
+01:22:06,806 --> 01:22:09,326
+But, uh, before it shifts,
+
+611
+01:22:09,326 --> 01:22:20,846
+the the first open energy level will absorb whatever particle we add in the change in energy resulting from filling that level.
+
+612
+01:22:21,296 --> 01:22:31,085
+Well, it will be. The number of particles that we add multiplied by the energy of the level that we add them.
+
+613
+01:22:31,086 --> 01:22:37,356
+Two which is going to be approximately that Fermi energy will make that an approximately equal to sign.
+
+614
+01:22:38,076 --> 01:22:43,116
+All we really care about is whether this change the energy is positive or negative.
+
+615
+01:22:43,446 --> 01:22:49,896
+It is very obviously positive and therefore our derivative.
+
+616
+01:22:50,526 --> 01:22:53,946
+If we have an increase in particle number, we have an increase in energy.
+
+617
+01:22:54,276 --> 01:23:10,116
+We have a positive chemical potential. And yeah, one of the interesting things we can do looking at the the Somerfield expansion more carefully if.
+
+618
+01:23:11,486 --> 01:23:16,286
+Time permits. You know, in the last week or two of the term.
+
+619
+01:23:19,076 --> 01:23:29,096
+That's, uh. Will allow us to cool to connect this zero temperature result of positive chemical potential.
+
+620
+01:23:31,126 --> 01:23:34,036
+To higher temperatures and even confirm.
+
+621
+01:23:35,016 --> 01:23:45,066
+That we end up with the chemical potential going below zero, changing sign as the temperature increases, and approaching in that way.
+
+622
+01:23:46,896 --> 01:23:50,906
+The. The classical limit at high temperatures.
+
+623
+01:23:53,236 --> 01:23:58,036
+With large negative chemical potentials that we've talked about previously.
+
+624
+01:24:00,856 --> 01:24:07,666
+So any questions about energy particle number, chemical potential for fermion gases.
+
+625
+01:24:11,506 --> 01:24:17,896
+The one remaining piece for the fermion gas compared to the photon gas.
+
+626
+01:24:19,316 --> 01:24:27,686
+We started off with today. We can make good progress and the last 15 minutes is going to be again the pressure.
+
+627
+01:24:28,916 --> 01:24:38,126
+And here it's more obvious that we can expect pressure from non-relativistic gases of massive particles like electrons.
+
+628
+01:24:39,086 --> 01:24:46,166
+So it's maybe less of a slippery concept in the radiation pressure, but it's the same definition.
+
+629
+01:24:47,406 --> 01:24:58,546
+The response. Of the internal energy expectation value with response or with respect to the volume fixing the entropy.
+
+630
+01:24:59,776 --> 01:25:10,415
+So. A convenient form of the energy to plug in to start off with is just its relation to the
+
+631
+01:25:10,416 --> 01:25:19,356
+average particle number 3/5 times the chemical potential times the number of particles.
+
+632
+01:25:22,436 --> 01:25:29,786
+And another change compared to photons is that the condition of constant entropy is
+
+633
+01:25:29,786 --> 01:25:37,706
+going to be qualitatively different from both classical gases as well as photon gases.
+
+634
+01:25:38,216 --> 01:25:48,206
+In fact, we just went through the argument that for sufficiently low temperatures, the entropy is always zero and always constant at zero.
+
+635
+01:25:49,166 --> 01:25:58,736
+So at least in that limit. We will have a constant entropy.
+
+636
+01:26:00,896 --> 01:26:08,256
+Pretty much by. Default just from having that single microstates.
+
+637
+01:26:12,956 --> 01:26:18,716
+The nice physical picture of all energy levels being filled up to the Fermi energy.
+
+638
+01:26:18,776 --> 01:26:28,326
+The Fermi surface. So the condition of constant entropy is pretty much automatically satisfied by working in the zero temperature limit.
+
+639
+01:26:28,956 --> 01:26:34,396
+So we can. Insert into the derivative.
+
+640
+01:26:36,246 --> 01:26:40,596
+The zero temperature value for the chemical potential.
+
+641
+01:26:40,596 --> 01:26:45,986
+That's the Fermi energy. That was h bar squared over to M.
+
+642
+01:26:47,486 --> 01:26:50,546
+Times at £0.03 squared and.
+
+643
+01:26:52,366 --> 01:27:05,866
+Over V to the two thirds power. And well, when doing so we have a volume to the minus two thirds.
+
+644
+01:27:05,866 --> 01:27:10,296
+That is the only. Part of this expression that depends on the volume.
+
+645
+01:27:11,856 --> 01:27:16,026
+Everything else, that negative sign can be pulled out front.
+
+646
+01:27:21,666 --> 01:27:34,796
+Three pi square to the. Two thirds power the number of particles now with one power here and two thirds power from the Fermi energy.
+
+647
+01:27:34,826 --> 01:27:44,666
+So 5/3 power total, and then a very simple derivative V to the minus two thirds,
+
+648
+01:27:45,746 --> 01:27:51,596
+which will give us a minus two thirds to cancel out that negative sign out front.
+
+649
+01:27:54,046 --> 01:27:57,946
+As for the photon gas, a one over V comes along.
+
+650
+01:27:59,566 --> 01:28:08,436
+And also as for the photon gas. Everything else in here just collapses back down to the energy.
+
+651
+01:28:08,476 --> 01:28:15,836
+The internal energy that we started off with. So.
+
+652
+01:28:18,456 --> 01:28:21,936
+We have here. Well, a.
+
+653
+01:28:24,356 --> 01:28:31,866
+Something that we can consider. The fermion gas equation of states a relation between these large scale properties like pressure, volume, and energy.
+
+654
+01:28:32,736 --> 01:28:38,466
+There are actually three ways that we can express these relations.
+
+655
+01:28:39,786 --> 01:28:44,145
+So. Three expressions,
+
+656
+01:28:44,146 --> 01:28:49,126
+each of which might be more useful depending on the circumstances and depending
+
+657
+01:28:49,126 --> 01:28:55,216
+on what quantities we have or what quantities we are interested in predicting.
+
+658
+01:28:56,146 --> 01:28:59,506
+So the pressure of the fermion gas.
+
+659
+01:29:02,116 --> 01:29:11,176
+Well, we have. Just the simple expression up there it is two thirds times the energy density.
+
+660
+01:29:13,466 --> 01:29:26,576
+If we again plug in a simple zero temperature relation between energy and particle number, the two thirds times five halves will convert to 2/5,
+
+661
+01:29:27,716 --> 01:29:36,056
+with an overall factor of that chemical potential and the particle number density and over v.
+
+662
+01:29:37,496 --> 01:29:49,076
+And finally, if we, um, insert the Fermi energy that we had before in place of that chemical potential, then.
+
+663
+01:29:50,986 --> 01:29:56,896
+We cancel off the factor of two and get h bar squared over.
+
+664
+01:29:58,366 --> 01:30:07,006
+5 a.m. we have a three pi squared to the two thirds power, and then we have.
+
+665
+01:30:08,226 --> 01:30:19,596
+One plus two thirds is 5/3 factors of this particle number density and over V, which I will in fact just introduce a new quantity rho.
+
+666
+01:30:22,776 --> 01:30:33,546
+That gets raised to the 5/3 where this row is just the density of the gas, the number of particles per unit volume.
+
+667
+01:30:36,336 --> 01:30:40,326
+So essentially just a simple shorthand and.
+
+668
+01:30:43,266 --> 01:30:53,556
+Um, in contrast to the photon gas that we worked with earlier today, or to the classical ideal gas law, where the.
+
+669
+01:30:55,076 --> 01:30:58,166
+The number of so and over v this.
+
+670
+01:30:59,716 --> 01:31:11,726
+Number of particles in the ideal gas law is. Um, just related to the pressure and the temperature here as the temperature goes to zero.
+
+671
+01:31:12,506 --> 01:31:18,996
+We. Still have a non-zero pressure and a non-zero density.
+
+672
+01:31:19,656 --> 01:31:25,106
+Um. So non-zero. As T goes to zero.
+
+673
+01:31:25,116 --> 01:31:30,626
+Unlike. The. Like classical behaviour.
+
+674
+01:31:33,016 --> 01:31:36,196
+In the zero temperature limit. This nonzero pressure.
+
+675
+01:31:37,456 --> 01:31:43,536
+Um. Goes by the name of the degeneracy pressure.
+
+676
+01:31:47,956 --> 01:31:59,766
+And it arises exactly from the Pauli exclusion principle that prevents all of these fermions from falling down into the lowest energy ground states.
+
+677
+01:31:59,776 --> 01:32:10,546
+They have to keep filling energy levels up to the Fermi energy of the Fermi surface, which results in this degeneracy pressure.
+
+678
+01:32:11,536 --> 01:32:21,376
+And that is one difference between this sort of intrinsically quantum effects compared to pressure as a force per unit area that we first introduced.
+
+679
+01:32:21,886 --> 01:32:26,445
+This pressure is not actually coming from any force that the particles are exerting on each other.
+
+680
+01:32:26,446 --> 01:32:32,806
+They are not interacting with each other. It's a purely quantum mechanical effect.
+
+681
+01:32:33,226 --> 01:32:43,366
+And I should also say this terminology of degeneracy is a different use of the word degenerate that has several meanings.
+
+682
+01:32:44,176 --> 01:32:49,636
+Previously, we've used this to refer to multiple energy levels with the same value of the energy.
+
+683
+01:32:50,326 --> 01:32:52,756
+Um, this use of the terminology.
+
+684
+01:32:56,386 --> 01:33:06,736
+Is slightly different and refers to situations where all of the particles would want to have the same ground state energy.
+
+685
+01:33:08,086 --> 01:33:13,006
+But are unable to to do so. So all of the energy levels are being filled.
+
+686
+01:33:14,446 --> 01:33:23,386
+That is called a degenerate gas. In that zero temperature limit and the pressure of a degenerate gas is its degeneracy pressure.
+
+687
+01:33:26,546 --> 01:33:35,966
+So, as I was saying, and what might be a good place to wrap up for today is.
+
+688
+01:33:37,496 --> 01:33:48,776
+Connecting this low temperature nonzero degeneracy pressure to what we would expect in the high temperature classical limit, where.
+
+689
+01:33:50,436 --> 01:33:55,976
+We have the ideal gas law. At play.
+
+690
+01:33:57,746 --> 01:34:06,986
+So remember the ideal gas law PV equals n t or rearranging the pressure is n over v times t,
+
+691
+01:34:07,376 --> 01:34:12,776
+which is what we have defined as our particle number density.
+
+692
+01:34:15,536 --> 01:34:25,616
+So that means that there is going to be a change, going from the low energies of the fermion gas to the high energies of classical gases.
+
+693
+01:34:26,126 --> 01:34:31,256
+At low energies, there is expressions that are all independent of the temperature.
+
+694
+01:34:31,826 --> 01:34:34,976
+At high energies we expect linear behaviour.
+
+695
+01:34:35,426 --> 01:34:45,056
+And if we compute again that summer field expansion to get us to higher temperatures, this is the functional form that would predict.
+
+696
+01:34:45,836 --> 01:34:53,496
+For now we can just look at the two limits. So as the temperature becomes large.
+
+697
+01:34:54,696 --> 01:35:05,136
+We go into the classical regime, where the pressure on the vertical axis is just the density times the temperature.
+
+698
+01:35:05,466 --> 01:35:10,656
+So we should have a straight line which we can see forming up here.
+
+699
+01:35:11,196 --> 01:35:20,406
+Where. The slope of that line on this plot is just the density of the classical ideal gas.
+
+700
+01:35:21,666 --> 01:35:27,636
+If we go the other direction down to low and eventually zero temperatures.
+
+701
+01:35:28,876 --> 01:35:32,886
+We get. To the degenerate Fermi gas.
+
+702
+01:35:37,056 --> 01:35:42,186
+And the degeneracy pressure here is independent of the temperature.
+
+703
+01:35:42,756 --> 01:35:47,076
+And just related to that density to the 5/3 power.
+
+704
+01:35:47,526 --> 01:35:53,806
+And there is a interesting. Crossover between those two types of behaviour that.
+
+705
+01:35:55,456 --> 01:35:59,746
+We will set aside for now, but may come back to.
+
+706
+01:36:01,166 --> 01:36:03,866
+If time permits later on in the term.
+
+707
+01:36:11,576 --> 01:36:23,126
+What we will pick up with on Tuesday is just a very quick application of this equation of state for low temperature fairy gases.
+
+708
+01:36:23,666 --> 01:36:33,356
+Looking at where this degeneracy pressure matters and plays a role, and where we can pick out actual observable physics, that is, um.
+
+709
+01:36:34,336 --> 01:36:38,986
+Not easily describable by classical mechanics, so we will be focusing on.
+
+710
+01:36:42,206 --> 01:36:46,256
+The regime where these intrinsically quantum effects.
+
+711
+01:36:48,696 --> 01:36:53,586
+Matter and in fact dominate. And this will be on the temperature is low,
+
+712
+01:36:54,216 --> 01:37:01,806
+and especially when it is low compared to the Fermi energy that is formally defined in that zero temperature limit.
+
+713
+01:37:02,436 --> 01:37:10,796
+And. We will see is proportional to rho to the two thirds power just coming from.
+
+714
+01:37:13,136 --> 01:37:18,495
+Um. The expression that we derived earlier today.
+
+715
+01:37:18,496 --> 01:37:24,286
+So there is that row to the two thirds power hiding in our result for that Fermi energy.
+
+716
+01:37:26,016 --> 01:37:32,936
+Um. So this is the the relevant scale rather than requiring.
+
+717
+01:37:35,636 --> 01:37:39,626
+Reaching the absolute or the exact limit of absolute zero temperature.
+
+718
+01:37:40,286 --> 01:37:44,246
+We can have nonzero temperatures as long as they are low compared to the Fermi energy.
+
+719
+01:37:44,606 --> 01:37:55,916
+So we will look at some physical examples where this inequality is satisfied, and the physical effects of the degeneracy pressure can be identified.
+
+720
+01:37:56,936 --> 01:38:01,166
+So I'll leave you with that forecast for next week too to wrap up today.
+
+721
+01:38:01,736 --> 01:38:10,976
+But happy to take any questions if you have them. Otherwise, uh, shut things down.
+
+722
+01:38:10,996 --> 01:38:16,756
+Moved to office hours and wish you luck with the homework if you have not, uh, submitted it already.
+
