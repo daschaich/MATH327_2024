@@ -1,0 +1,1452 @@
+1
+00:00:01,460 --> 00:00:06,800
+My clock says it's time to get going on the last day of April.
+
+2
+00:00:11,570 --> 00:00:18,290
+Tuesday the 30th with magic number 66.
+
+3
+00:00:21,030 --> 00:00:32,879
+80 and 51. So all done with the homework assignments and all the interim assessment for this module.
+
+4
+00:00:32,880 --> 00:00:37,620
+Only the final exam to look forward to. Uh, three weeks from tomorrow.
+
+5
+00:00:38,550 --> 00:00:46,950
+So there are some materials on canvas to help you prepare for that specimen exams and some extra sample problems.
+
+6
+00:00:47,580 --> 00:00:51,420
+And in the meantime, we have two weeks of lectures and tutorials left.
+
+7
+00:00:51,960 --> 00:01:02,250
+We'll focus those on the final main topic of this module, which is adding interactions to all of the statistical systems we've been looking at.
+
+8
+00:01:02,640 --> 00:01:10,500
+So having gone through three different, um, types of thermodynamic ensembles micro conical,
+
+9
+00:01:10,500 --> 00:01:18,570
+canonical or grand canonical, and most recently applying the grand canonical ensemble ensemble to analyse quantum gases.
+
+10
+00:01:19,920 --> 00:01:25,620
+Um, hopefully later today, but at the latest on Friday, we will dive into interacting systems,
+
+11
+00:01:25,620 --> 00:01:31,559
+which are much more complicated to analyse along the lines that we have introduced.
+
+12
+00:01:31,560 --> 00:01:35,550
+But there are still some things we can do to give you a flavour of how that goes.
+
+13
+00:01:36,570 --> 00:01:50,520
+Any questions before we get underway today, where we will start off by wrapping up the quantum gas, uh, topics at least, that we will cover.
+
+14
+00:01:52,640 --> 00:01:57,320
+At the moment. So I'm going to skip a couple of sections that are in the lecture notes.
+
+15
+00:01:58,070 --> 00:02:05,660
+Back from the days before we spent any time on computer labs and had an extra few hours of lectures for that reason.
+
+16
+00:02:06,020 --> 00:02:12,770
+So the neutrino gas of massless ultra relativistic fermions and the zero field expansion
+
+17
+00:02:12,770 --> 00:02:18,770
+we'll set aside for now and come back to those in the final week of the of the term,
+
+18
+00:02:18,770 --> 00:02:24,170
+if time permits. And if you are interested in looking at that as opposed to.
+
+19
+00:02:26,160 --> 00:02:31,860
+More details about interacting systems. But what we did last week was finish the photon gas.
+
+20
+00:02:31,860 --> 00:02:40,950
+We derived its equation of state, which related the pressure of a photon gas in a volume V to the usual.
+
+21
+00:02:42,110 --> 00:02:49,399
+Number of photons, which is now in the grand canonical ensemble, and expectation value multiplied by the temperature,
+
+22
+00:02:49,400 --> 00:03:01,969
+with a fun numerical factor of ratios of the Riemann zeta function that turns into pi to the fourth over 90 of theta cubed,
+
+23
+00:03:01,970 --> 00:03:12,440
+about 0.9 as a numerical value, so the same form as the classical ideal gas law, just with a slightly different coefficient.
+
+24
+00:03:14,700 --> 00:03:24,330
+And then on Friday, we did most of the work looking at non-relativistic gases of fermions,
+
+25
+00:03:24,990 --> 00:03:32,580
+where some things are very different from both bosons and classical physics.
+
+26
+00:03:32,880 --> 00:03:43,550
+So we focussed on low temperatures where we. We're able to impose a fairly dramatic simplification by taking the.
+
+27
+00:03:45,440 --> 00:03:53,180
+Fermi function that appears in the integral is defining large scale quantities like energy density and the number of photons.
+
+28
+00:03:53,780 --> 00:03:59,590
+So this looks like the. Um, occupation number.
+
+29
+00:04:00,660 --> 00:04:05,820
+For his Fermi gases or for fermions in general.
+
+30
+00:04:06,150 --> 00:04:09,300
+Varies between 0 and 1. And at low temperatures.
+
+31
+00:04:10,320 --> 00:04:13,590
+We saw that this was approximately a step function,
+
+32
+00:04:13,590 --> 00:04:22,770
+jumping between 0 and 1 at the point where the energy equals the chemical potential which defines that Fermi energy.
+
+33
+00:04:23,370 --> 00:04:26,730
+Which gives us a nice physical picture of what is happening.
+
+34
+00:04:28,090 --> 00:04:31,390
+In these low temperature, non-relativistic Fermi um gases,
+
+35
+00:04:32,080 --> 00:04:40,780
+and especially once that temperature gets all the way to absolute zero, this approximate picture becomes exact.
+
+36
+00:04:41,290 --> 00:04:50,430
+And we can talk about all of the energy levels of the gas being filled up to that Fermi energy.
+
+37
+00:04:56,660 --> 00:05:09,170
+And he. Concrete expression for the Fermi energy equal to the chemical potential at exactly zero temperature is basically the
+
+38
+00:05:09,620 --> 00:05:17,780
+density of the gas up to some numerical factors Planck's constant squared divided by twice the mass of the fermions,
+
+39
+00:05:18,290 --> 00:05:26,390
+and then there is a three pi squared to the two thirds power numerical factor, and then.
+
+40
+00:05:27,950 --> 00:05:34,520
+A factor of. The density of the gas also raised to the two thirds, which we checked is greater than zero.
+
+41
+00:05:34,850 --> 00:05:43,520
+In a way that makes sense, um, coming from the definition of the chemical potential at these low energies and this pressure,
+
+42
+00:05:43,520 --> 00:05:49,190
+rho is just the number of fermions in the gas per unit volume.
+
+43
+00:05:51,260 --> 00:05:57,919
+And the fact that all of these energy levels in the fermion gas can only be singly occupied,
+
+44
+00:05:57,920 --> 00:06:04,640
+so that the number of particles in the gas has to keep filling up higher and higher energy levels until it hits.
+
+45
+00:06:05,090 --> 00:06:12,680
+This Fermi energy leads to the sort of novel behaviour that, even at absolute zero,
+
+46
+00:06:13,220 --> 00:06:24,080
+there is a non-zero energy density in the gas, is 3/5 times the chemical potential times the average number of particles.
+
+47
+00:06:25,070 --> 00:06:30,889
+And the corresponding pressure of the gas is also nonzero at zero.
+
+48
+00:06:30,890 --> 00:06:36,410
+So that's a very clear difference compared to the photon gas and the ideal gas law.
+
+49
+00:06:36,860 --> 00:06:43,100
+As T goes to zero, so does the pressure. In the fermionic case, we have the so-called degeneracy pressure.
+
+50
+00:06:49,270 --> 00:06:55,570
+Which we can write in a few different ways related to that non-zero.
+
+51
+00:06:56,590 --> 00:07:02,500
+Energy density. Relating the energy density to the number of particles.
+
+52
+00:07:03,580 --> 00:07:08,760
+Which divided by v gives us a factor of the density.
+
+53
+00:07:08,770 --> 00:07:12,460
+So two thirds times 3/5 leaves 2/5.
+
+54
+00:07:13,820 --> 00:07:20,900
+A mu and a ro. And if we plug in our zero temperature expression for mu.
+
+55
+00:07:22,580 --> 00:07:28,130
+Then we have. H bar over five M rather than two N.
+
+56
+00:07:29,540 --> 00:07:34,340
+Funny numerical factors in 5/3 power of that density.
+
+57
+00:07:35,210 --> 00:07:39,370
+So we did a lot of calculations on Friday to get all of these results.
+
+58
+00:07:39,380 --> 00:07:47,480
+Are there any questions about them before we spend a few minutes looking at some of their physical consequences?
+
+59
+00:07:57,040 --> 00:08:01,960
+So yeah, in the tutorial I should say before we move on.
+
+60
+00:08:02,440 --> 00:08:11,839
+You can play with. Going beyond this very low temperature approximation of a step function and explore ways that are related to
+
+61
+00:08:11,840 --> 00:08:21,680
+the so-called Sommerfeld expansion of how to approximate these integrals that we evaluated on Friday for.
+
+62
+00:08:23,570 --> 00:08:32,780
+The full family function, at least expressed as an expansion around this ultimate limit of an approximation of an approximate step function.
+
+63
+00:08:33,390 --> 00:08:39,590
+That's something you can work on leading up to Thursday, and we'll talk a bit about it in the tutorial then.
+
+64
+00:08:40,580 --> 00:08:48,080
+For now, we will focus on a physical situation where this degeneracy pressure is important.
+
+65
+00:08:50,090 --> 00:08:56,870
+So. It is an unfortunate fact that we can never cool anything down to exactly absolute zero.
+
+66
+00:08:56,900 --> 00:09:03,110
+We can get quite close to within something like one billionth of a Kelvin of absolute zero,
+
+67
+00:09:03,110 --> 00:09:13,670
+but even at non-zero temperatures, this degeneracy pressure can still dominate over everything else going on in the system.
+
+68
+00:09:15,520 --> 00:09:27,020
+And. We can say more generally that the degeneracy pressure matters for low temperatures where low is.
+
+69
+00:09:29,200 --> 00:09:36,730
+The meaning of low is compared to one of these other dimensional scales that we have in the system, namely the Fermi energy.
+
+70
+00:09:37,210 --> 00:09:46,300
+So whenever T, the temperature is much less than that Fermi energy, we can expect a prominent role for this degeneracy pressure.
+
+71
+00:09:47,680 --> 00:09:51,700
+So we think about the situations where this can matter.
+
+72
+00:09:52,420 --> 00:09:56,590
+We can well we see the relation between.
+
+73
+00:09:57,970 --> 00:10:10,990
+Pressure and Fermi energy. So even at temperatures that may not seem particularly low by our everyday intuition, if we consider.
+
+74
+00:10:12,300 --> 00:10:17,910
+Materials that have larger densities, they will have a larger.
+
+75
+00:10:18,810 --> 00:10:28,170
+Fermi energy proportional to their density to the two thirds power, and that can make the degeneracy pressure or the.
+
+76
+00:10:29,830 --> 00:10:35,650
+Um, behaviour of the electrons in these materials or any other fermions.
+
+77
+00:10:36,160 --> 00:10:39,400
+More like this low temperature degenerate gas.
+
+78
+00:10:39,880 --> 00:10:45,310
+So as one initial example, just to set some scales.
+
+79
+00:10:46,690 --> 00:10:56,850
+If we think about. Everyday materials and in particular metals, where electrons are able to conduct freely and behave like a gas.
+
+80
+00:10:57,270 --> 00:11:06,990
+Within these metals, there are about order ten grams of metal per cubic centimetre, up to some small numerical factors.
+
+81
+00:11:07,440 --> 00:11:17,910
+This is just Avogadro's number and the corresponding number of electrons in a cubic centimetre of metal, so the density of electrons in these systems.
+
+82
+00:11:19,170 --> 00:11:31,200
+Ignoring sort of factors of 2 or 3 or pi, we will have of the order of magnitude of Avogadro's number worth of electrons per cubic centimetre,
+
+83
+00:11:32,790 --> 00:11:40,410
+which if we convert from cubic centimetre to cubic metre, there is a factor of 100 from metres per centimetre,
+
+84
+00:11:40,740 --> 00:11:44,940
+and then that gets cubed enough to account for all three dimensions.
+
+85
+00:11:45,420 --> 00:11:53,790
+So ten to the two cubed is ten to the sixth multiplied by Avogadro's number of ten to the 23.
+
+86
+00:11:54,150 --> 00:12:06,390
+It's giving us roughly ten to the 29 electrons per metre cubed of some ordinary metal like ion and that order.
+
+87
+00:12:06,570 --> 00:12:16,020
+So I won't go through the full unit conversion, but if you plug in masses of electrons compared to Planck's constant,
+
+88
+00:12:17,380 --> 00:12:23,700
+you just leave that as an exercise for the reader to tell you that the results up to order of magnitude,
+
+89
+00:12:24,240 --> 00:12:31,500
+is that the Fermi energy for electrons in metals is roughly 10,000 Kelvin.
+
+90
+00:12:32,550 --> 00:12:38,820
+Or in other units, one electron volt or ten to the -19 joule.
+
+91
+00:12:39,840 --> 00:12:47,640
+In plugging in lots of the unit conversion factors that we often just set to one by working in natural units,
+
+92
+00:12:48,480 --> 00:12:54,090
+but even at everyday temperatures of a few hundred Kelvin.
+
+93
+00:12:56,510 --> 00:13:03,460
+We have. Temperatures that are much lower than the Fermi energy in these metals.
+
+94
+00:13:04,300 --> 00:13:08,980
+Which is the reason why you might have seen in some other modules.
+
+95
+00:13:09,310 --> 00:13:11,469
+Depending on what modules you're taking,
+
+96
+00:13:11,470 --> 00:13:21,490
+that the behaviour of conducting metals can indeed be treated as the sort of degenerate ideal fermion gas that.
+
+97
+00:13:22,720 --> 00:13:32,320
+We learned about on Friday. A situation where this is not the case.
+
+98
+00:13:32,410 --> 00:13:42,490
+So to to contrast the metals that offer this low temperature for me on gas, even at a few hundred Kelvin.
+
+99
+00:13:42,940 --> 00:13:50,740
+Well, if we think about the sun, there are obviously higher temperatures in the sun than there are in our everyday experience.
+
+100
+00:13:51,160 --> 00:13:56,080
+But there's also a higher density which will lead to a higher Fermi energy.
+
+101
+00:13:56,740 --> 00:14:01,120
+And it's a priori an open question which of those will dominate.
+
+102
+00:14:02,200 --> 00:14:10,360
+So a few more facts that you could either look up or trust that I've looked up correctly.
+
+103
+00:14:10,950 --> 00:14:20,230
+Um, on average in the sun. The density of electrons is actually not all that much greater than.
+
+104
+00:14:22,300 --> 00:14:31,960
+Um, the density of metals. So the sun is a of plasma rather than a solid metal.
+
+105
+00:14:32,680 --> 00:14:37,360
+So despite the strong gravitational forces that are pulling it together and increasing its density,
+
+106
+00:14:37,930 --> 00:14:45,550
+it still only has about ten times as many electrons per cubic centimetre or per metre.
+
+107
+00:14:46,820 --> 00:14:58,440
+As. Metals that we work with here on Earth, and this in turn only increases its Fermi energy compared to those metals by a similar order of magnitude,
+
+108
+00:14:58,440 --> 00:15:02,460
+up to about 100,000 Kelvin, rather than 10,000 Kelvin.
+
+109
+00:15:04,300 --> 00:15:08,760
+So while the Fermi energy. Is similar.
+
+110
+00:15:08,770 --> 00:15:15,850
+The temperatures are much higher, and in the core of the sun they can get up to about 10 million Kelvin.
+
+111
+00:15:18,100 --> 00:15:27,290
+Which. Is, instead of being much less than the Fermi energy is much greater than the Fermi energy.
+
+112
+00:15:28,760 --> 00:15:35,870
+So that effectively. So relativistic effects of those electrons have to be taken into account.
+
+113
+00:15:36,770 --> 00:15:43,010
+And they cannot be treated as this low temperature, non-interacting ideal, uh, degenerate electron gas.
+
+114
+00:15:44,790 --> 00:15:50,940
+In the well. The reason that the temperature in the sun can be so much higher.
+
+115
+00:15:51,150 --> 00:15:56,760
+The density is not all that much higher is basically due to what's going on in the sun.
+
+116
+00:15:57,300 --> 00:16:08,880
+There is constant fusion of light elements, so hydrogen and helium are fusing together into lithium, boron, carbon, oxygen and a whole.
+
+117
+00:16:11,020 --> 00:16:15,580
+Set of relatively light elements that we rely on to.
+
+118
+00:16:17,390 --> 00:16:22,220
+To be composed of. So this fusion releases a great deal of energy.
+
+119
+00:16:22,610 --> 00:16:23,930
+So that's heating up the sun,
+
+120
+00:16:24,770 --> 00:16:36,560
+especially in the core where there's lots of material preventing the energy released by fusion from escaping into space and reaching us.
+
+121
+00:16:37,990 --> 00:16:48,400
+So in addition to heating up the sun, we've seen that, um, energy or radiation coming from these sorts of processes has a pressure of its own.
+
+122
+00:16:49,060 --> 00:17:02,060
+The radiation pressure that we. Derived for photon gases is going to be pushing outward from the core of the sun, counteracting the force of gravity.
+
+123
+00:17:05,540 --> 00:17:10,250
+In fact, balancing the force of gravity and keeping the sun from collapsing under its own weight.
+
+124
+00:17:10,880 --> 00:17:16,400
+But this outward pressure, outward force from the radiation in turn,
+
+125
+00:17:16,550 --> 00:17:25,990
+reduces the density of the sun compared to what gravity would would produce in isolation that would essentially keep it up,
+
+126
+00:17:26,180 --> 00:17:30,590
+keep pulling things inward until it collapsed down to a point or two, a black hole.
+
+127
+00:17:32,060 --> 00:17:42,980
+And something interesting could happen after all of this hydrogen helium fuel in the sun or any other star is exhausted.
+
+128
+00:17:48,560 --> 00:17:54,260
+So after hydrogen and helium are all combined into slightly heavier elements.
+
+129
+00:17:55,230 --> 00:18:05,820
+There will be. No more fusion going on to heat up the sun and introduce radiation pressure to counterbalance the force of gravity.
+
+130
+00:18:10,120 --> 00:18:13,660
+Which will in turn cause gravity to.
+
+131
+00:18:15,960 --> 00:18:19,770
+Pull the material of the star further down.
+
+132
+00:18:20,220 --> 00:18:27,520
+Um. Into a smaller radius with a larger density.
+
+133
+00:18:28,600 --> 00:18:42,220
+So any questions about. These sorts of of settings going from ordinary metals on Earth to to the centre of the sun.
+
+134
+00:18:48,190 --> 00:18:58,780
+So if all this is clear, we can consider what is likely to happen as the density of a star that has finished burning its,
+
+135
+00:18:59,500 --> 00:19:02,860
+um, hydrogen helium fuel for nuclear fusion.
+
+136
+00:19:04,060 --> 00:19:12,490
+Um, so the class of stars where this has happened, or a class of stars where this has happened are known as white dwarfs.
+
+137
+00:19:16,100 --> 00:19:20,839
+So these white dwarf stars have gone through this process.
+
+138
+00:19:20,840 --> 00:19:28,700
+They've exhausted all of the hydrogen helium fuel that was providing fusion energy and radiation pressure.
+
+139
+00:19:29,540 --> 00:19:33,140
+So even though they have roughly the mass of our sun.
+
+140
+00:19:35,600 --> 00:19:44,750
+At least to an order of magnitude. All of that mass is compressed now by gravity into something the size of the Earth.
+
+141
+00:19:45,290 --> 00:19:51,050
+So the Earth's radius is about 100 times smaller than the radius of our sun.
+
+142
+00:19:54,090 --> 00:20:01,200
+So the overall density of a white dwarf star is going to be that factor of 100 cubed.
+
+143
+00:20:01,260 --> 00:20:10,650
+So ten to the six times higher than the average energy of the sorry the average density of the sun.
+
+144
+00:20:11,340 --> 00:20:19,080
+So that corresponds to something like ten to the power 36 electrons in each cubic metre.
+
+145
+00:20:20,830 --> 00:20:30,580
+One fun way of presenting these units, because there is an atomic nucleus corresponding to each of these electrons.
+
+146
+00:20:32,320 --> 00:20:36,130
+This actually means that the mass of a white dwarf star.
+
+147
+00:20:37,930 --> 00:20:41,530
+Is roughly a tonne per cubic centimetre.
+
+148
+00:20:41,530 --> 00:20:45,040
+So if you take a cubic centimetre of the material in the white dwarf,
+
+149
+00:20:45,400 --> 00:20:54,100
+that will be a couple thousand kilograms corresponding to this power of ten to the 36 atoms that are donating their electrons,
+
+150
+00:20:54,850 --> 00:20:58,510
+uh, to to the electron gas.
+
+151
+00:21:00,300 --> 00:21:04,530
+And now that electron gas. Well, we have a similar question.
+
+152
+00:21:05,250 --> 00:21:11,640
+What is the Fermi energy? Now that we've increased this density and what is the temperature of the white dwarf.
+
+153
+00:21:12,450 --> 00:21:22,230
+So. Using our relation that the Fermi energy is proportional to the density to the two thirds power.
+
+154
+00:21:23,070 --> 00:21:31,830
+We can just plug in a factor of a million to the two thirds times the Fermi energy of the sun.
+
+155
+00:21:34,920 --> 00:21:40,120
+Which was 100,000 Kelvin ten to the six.
+
+156
+00:21:40,120 --> 00:21:49,230
+So over three is two squared, is ten to the four times that 100,000 Kelvin gives us roughly a billion Kelvin.
+
+157
+00:21:49,410 --> 00:21:54,930
+So a big increase in Fermi energy coming from the much higher density.
+
+158
+00:21:56,190 --> 00:22:01,010
+And this. Not surprisingly, is larger than the temperature.
+
+159
+00:22:01,490 --> 00:22:11,840
+Much larger than the temperature. So because we no longer have nuclear fusion heating up, these white dwarf stars, um,
+
+160
+00:22:13,160 --> 00:22:24,530
+when they are formed from the evolution of stars like our sun, they will start with that sort of maximum temperature up to 10 million Kelvin.
+
+161
+00:22:25,430 --> 00:22:29,090
+Um, just inheriting that from the.
+
+162
+00:22:30,680 --> 00:22:35,450
+The temperature of their progenitor, the star that is, that still has hydrogen and helium to burn.
+
+163
+00:22:35,930 --> 00:22:42,680
+And, well, there's no more fusion that is maintaining that temperature slow.
+
+164
+00:22:42,680 --> 00:22:50,450
+So it slowly radiates, unlike the black bodies that we looked at, governed by the Planck spectrum,
+
+165
+00:22:51,020 --> 00:22:56,090
+this temperature over the course of billions of years is slowly cooling.
+
+166
+00:22:57,820 --> 00:23:03,310
+So a lot of the white dwarf stars that we can look out and see in the sky that have been around for,
+
+167
+00:23:03,940 --> 00:23:10,140
+um, you know, order 10 billion years will have even lower temperatures.
+
+168
+00:23:10,150 --> 00:23:14,049
+So rather than. Um, 10 million Kelvin.
+
+169
+00:23:14,050 --> 00:23:17,320
+They'll have temperatures of about 1000 Kelvin.
+
+170
+00:23:17,410 --> 00:23:28,450
+So three times what is room temperature on Earth, but something that is even so, six orders of magnitude lower than the Fermi energy.
+
+171
+00:23:30,820 --> 00:23:35,000
+So that's after. Ten to the ten years.
+
+172
+00:23:38,900 --> 00:23:42,230
+So in this situation we have.
+
+173
+00:23:43,640 --> 00:23:49,220
+The proper conditions for. A reappearance.
+
+174
+00:23:50,470 --> 00:23:56,590
+Of a degenerate electron gas of the sorts we've been analysing.
+
+175
+00:23:57,820 --> 00:24:02,830
+And this is actually the reason these white dwarf stars are able to exist.
+
+176
+00:24:03,430 --> 00:24:08,080
+The degeneracy pressure. Of this gas.
+
+177
+00:24:09,020 --> 00:24:19,930
+Is essentially all that is left to. Oppose the force of gravity and keep them from collapsing all the way to a black hole or.
+
+178
+00:24:21,760 --> 00:24:31,270
+A singularity if we pretend that, uh, we don't know what's going on with general relativity and the, well,
+
+179
+00:24:31,270 --> 00:24:36,940
+the formation of black holes from curvature of space time so that further collapse will would
+
+180
+00:24:36,940 --> 00:24:44,530
+ultimately be to a black hole if there were not to these ten to the power 36 electrons per metre cubed,
+
+181
+00:24:45,040 --> 00:24:56,810
+preventing that from happening. So that's one way that we can see low temperature fairy gases in action.
+
+182
+00:24:56,990 --> 00:25:02,870
+They are the only way that these white dwarf stars can exist as a stable object,
+
+183
+00:25:03,590 --> 00:25:07,650
+which we can look out and see in the sky and see how they are slowly coal it,
+
+184
+00:25:07,670 --> 00:25:14,900
+slowly cooling and just sort of sitting there, radiating their heat away over billions of years.
+
+185
+00:25:17,440 --> 00:25:18,669
+So any questions about that?
+
+186
+00:25:18,670 --> 00:25:29,950
+Uh, stellar application of low temperature Fermi gases to systems that are not necessarily low temperature by either our standards,
+
+187
+00:25:30,460 --> 00:25:34,730
+but are compared to. The Fermi energy.
+
+188
+00:25:37,370 --> 00:25:50,170
+One last. Aspect of this can talk about today, which is an interesting situation that is somewhat unusual but possible.
+
+189
+00:25:50,830 --> 00:25:57,460
+And this is what happens when we have one of these white dwarf stars in a binary system with some other star,
+
+190
+00:25:57,610 --> 00:26:03,550
+maybe like our sun, maybe a red giant or some larger object.
+
+191
+00:26:04,870 --> 00:26:19,360
+So these so-called binary systems are. Reasonably common throughout the cosmos, and we are interested in cases where we have a white dwarf and.
+
+192
+00:26:20,540 --> 00:26:25,820
+Some other star with hydrogen helium fusion still going on.
+
+193
+00:26:25,910 --> 00:26:31,580
+They are orbiting about each other or formally about their common centre of mass.
+
+194
+00:26:32,030 --> 00:26:42,650
+Just as. As Newton would would have described several hundred years ago, and also, as Newtonian mechanics can tell us,
+
+195
+00:26:43,190 --> 00:26:52,880
+the very high mass and very low radius of this white dwarf in close proximity to another star, introduces very extreme tidal forces.
+
+196
+00:26:53,210 --> 00:27:00,800
+So the force of gravity on the nearer side of the ordinary star is so much greater than that on the far side,
+
+197
+00:27:01,190 --> 00:27:12,709
+that material can actually be stripped away from the star accompanying this white dwarf in the binary system and effectively eaten by the white dwarf.
+
+198
+00:27:12,710 --> 00:27:16,520
+This is, uh, say capture rather than eaten.
+
+199
+00:27:18,160 --> 00:27:21,820
+This is a process known as tidal stripping and.
+
+200
+00:27:27,670 --> 00:27:33,690
+Just to give you a. Image of of this process.
+
+201
+00:27:34,260 --> 00:27:38,040
+This is an artist's impression of.
+
+202
+00:27:40,750 --> 00:27:47,200
+The sort of dynamics that are going on here. We have the companion star orbiting if it focuses.
+
+203
+00:27:47,560 --> 00:27:57,700
+So the white dwarf is a very small system just in the centre of this disk of matter that is being stripped away from the companion star.
+
+204
+00:27:58,930 --> 00:28:05,620
+So the matter, once it is stripped away, is essentially orbiting about the white dwarf star,
+
+205
+00:28:06,160 --> 00:28:14,680
+radiating lots of energy as it as all the particles interact with each other and also just radiates ordinary heat.
+
+206
+00:28:15,460 --> 00:28:23,860
+And that loss of energy causes them to slowly spiral in toward the centre of this so-called accretion disk,
+
+207
+00:28:24,250 --> 00:28:34,240
+and eventually land on the white dwarf and be added to its mass and contribute to increasing its density.
+
+208
+00:28:36,610 --> 00:28:45,759
+Um. I should say those accretion disks are something that are fairly easy to see observationally,
+
+209
+00:28:45,760 --> 00:28:50,710
+just because there is so much energy being emitted by that process.
+
+210
+00:28:53,100 --> 00:29:02,429
+Oops. I zoomed in too far, but the consequence for the white dwarf as it captures matter from its companion is that well,
+
+211
+00:29:02,430 --> 00:29:08,010
+its mass and therefore its density will steadily increase.
+
+212
+00:29:09,960 --> 00:29:14,370
+Um, at a very stable rate over time.
+
+213
+00:29:14,970 --> 00:29:19,380
+So more mass lands and this white dwarf thing gets compacted into.
+
+214
+00:29:20,390 --> 00:29:23,510
+Its density and if.
+
+215
+00:29:24,770 --> 00:29:29,030
+If you were to take a, an astrophysics module, um,
+
+216
+00:29:29,480 --> 00:29:40,970
+later on and analyse some of the general relativistic equations governing the equation of states of this white dwarf star,
+
+217
+00:29:41,330 --> 00:29:47,030
+you would find something interesting happens when the mass of the of the white dwarf star increase,
+
+218
+00:29:47,090 --> 00:29:53,060
+um, increases above a certain value that is known as the Chandrasekhar limit.
+
+219
+00:29:55,360 --> 00:30:00,010
+After the. Fellow who first did this calculation about 100 years ago.
+
+220
+00:30:01,580 --> 00:30:09,500
+So the Chandrasekhar limit for the mass of the white dwarf is about 44% greater than the mass of our sun.
+
+221
+00:30:10,890 --> 00:30:22,260
+And once the mass of a white dwarf reaches that level, its density is high enough that new forms of fusion can actually start to occur.
+
+222
+00:30:22,980 --> 00:30:31,740
+So rather than hydrogen and helium, the carbon and oxygen that were produced by hydrogen and helium fusion, um.
+
+223
+00:30:34,090 --> 00:30:40,330
+Those heavier molecules themselves can start to undergo fusion processes.
+
+224
+00:30:41,800 --> 00:30:47,320
+This then starts releasing energy back into the white dwarf star.
+
+225
+00:30:49,210 --> 00:30:58,360
+And in particular, that energy is enough to result in a chain reaction of carbon and oxygen fusion.
+
+226
+00:30:58,870 --> 00:31:04,810
+So there's a runaway process where just a bit of fusion triggers a bit more, and then more and more and more.
+
+227
+00:31:06,460 --> 00:31:18,940
+So the temperature of that white dwarf star increases up to, well, at most ten to the seven Kelvin, possibly cooler than that.
+
+228
+00:31:19,690 --> 00:31:25,270
+It jumps up to about a billion Kelvin very rapidly in the space of.
+
+229
+00:31:26,300 --> 00:31:36,430
+A few seconds. But as we were also talking about with our sun, all of the fusion energy not only increases the temperature,
+
+230
+00:31:36,430 --> 00:31:43,660
+but it it introduces a whole bunch of radiation pressure into the sun.
+
+231
+00:31:45,230 --> 00:31:51,450
+And the radiation pressure. Corresponding to this fusion, that is.
+
+232
+00:31:53,790 --> 00:31:57,820
+Increase in the temperature. Basically.
+
+233
+00:31:58,420 --> 00:32:06,830
+Um. Is sufficient. So there's an enormous increase in temperature, an enormous amount of energy dumped out in radiation.
+
+234
+00:32:07,340 --> 00:32:15,440
+It basically blasts the white dwarf apart in a process known as a supernova, and specifically.
+
+235
+00:32:18,180 --> 00:32:21,990
+For obscure historical reasons, is called a type one a supernova.
+
+236
+00:32:24,090 --> 00:32:34,650
+Um, and the overall amount of energy that is being released in this supernova process is something like 5 billion times,
+
+237
+00:32:35,640 --> 00:32:43,590
+uh, what the sun our sun is releasing. So a supernova is orders of magnitude brighter than the sun.
+
+238
+00:32:44,220 --> 00:32:50,640
+It can briefly outshine the entire, uh, rest of the galaxy that it is sitting within.
+
+239
+00:32:51,480 --> 00:32:54,810
+And, of course, this is something I'm sure you've heard of.
+
+240
+00:32:55,290 --> 00:33:00,020
+And. Um, are familiar with as a concept.
+
+241
+00:33:01,380 --> 00:33:10,770
+The key aspect of these type one A supernovas specifically, are the fact that they well,
+
+242
+00:33:10,770 --> 00:33:19,500
+they are believed to correspond to this gradual process of a white dwarf in a binary system like steadily accumulating mass from its companion.
+
+243
+00:33:19,830 --> 00:33:25,280
+I should say this is not something we can go and directly test, but it's the, um,
+
+244
+00:33:26,640 --> 00:33:36,820
+broad consensus that what I have described is what is responsible for these type one supernovas and the that
+
+245
+00:33:36,900 --> 00:33:47,250
+steady process that is eventually leading to the triggering of the supernova means that the type one A supernovas.
+
+246
+00:33:47,820 --> 00:33:51,720
+Um, I misspelled regularity. They are very regular.
+
+247
+00:33:52,970 --> 00:33:59,900
+Processes, so they all have the same amount of energy with the same, um,
+
+248
+00:33:59,930 --> 00:34:07,700
+chemical composition that can be read off from the Planck spectrum that we see from the supernova,
+
+249
+00:34:08,330 --> 00:34:14,000
+and all of the absorption lines in it, similar to what we looked at for solar radiation.
+
+250
+00:34:16,170 --> 00:34:19,410
+And this can be exploited to.
+
+251
+00:34:22,280 --> 00:34:29,120
+Basically give a measure of how far away a type one a supernova is something that we can't necessarily
+
+252
+00:34:29,480 --> 00:34:37,730
+estimate if we don't know precisely how much energy an astrophysical object is releasing.
+
+253
+00:34:41,190 --> 00:34:47,890
+So the regularity of these supernovas. Makes them the so-called standard candle.
+
+254
+00:34:51,350 --> 00:34:54,710
+That's some terminology, just referring to the fact that we know how bright it is.
+
+255
+00:34:55,130 --> 00:34:59,750
+And from that, if we observe a supernova, we can determine how far away it is.
+
+256
+00:35:00,560 --> 00:35:06,010
+That provides. A measure of.
+
+257
+00:35:07,800 --> 00:35:11,100
+How far away these supernovas are,
+
+258
+00:35:11,490 --> 00:35:22,050
+and from the amount that the light released by the supernova is redshifted as it makes its way through the cosmos towards us.
+
+259
+00:35:22,590 --> 00:35:29,790
+We can tell how long ago in time those supernovas occurred.
+
+260
+00:35:30,450 --> 00:35:38,640
+So this gives a measure of how far away proton objects in the universe are as a function of time.
+
+261
+00:35:39,300 --> 00:35:43,360
+And this. In the late 90s,
+
+262
+00:35:43,960 --> 00:35:50,500
+was used to basically map out the expansion of the universe and obtain the surprising
+
+263
+00:35:50,500 --> 00:35:57,520
+result that the expansion of the universe is actually accelerating over time.
+
+264
+00:35:58,660 --> 00:36:05,290
+So not only is the universe getting larger as time passes, the rate at which it is getting larger is speeding up.
+
+265
+00:36:05,950 --> 00:36:15,200
+This is a phenomenon that. Received the somewhat inappropriate name of dark energy.
+
+266
+00:36:16,230 --> 00:36:22,469
+Which it's not really energy because energy gravitates and opposes the expansion of the universe.
+
+267
+00:36:22,470 --> 00:36:31,080
+This is some sort of negative vacuum pressure that pushes the universe further and further apart more and more rapidly.
+
+268
+00:36:31,530 --> 00:36:41,940
+And this discovery relied on the regularity of type one A supernovas was awarded the Nobel Prize in 2011,
+
+269
+00:36:42,750 --> 00:36:45,000
+and the regularity of these type one supernovas,
+
+270
+00:36:45,000 --> 00:36:57,030
+in turn, relies on the fact that the white dwarf that is going supernova is made stable by the degeneracy pressure of its electron gas.
+
+271
+00:36:59,080 --> 00:37:02,190
+So. That is well.
+
+272
+00:37:05,290 --> 00:37:11,980
+All that I planned to say about these feminine gases in the, uh, in practice.
+
+273
+00:37:13,280 --> 00:37:22,280
+So are there questions about how the quantum gases grand canonical ensemble or this particular application specifically?
+
+274
+00:37:22,910 --> 00:37:31,100
+Before we just spend a few of the last few minutes of today motivating the interacting systems we will be focusing on.
+
+275
+00:37:32,420 --> 00:37:36,710
+For the remainder of this week and into the final week.
+
+276
+00:37:45,050 --> 00:37:54,230
+So. I suppose the main underlying motivation for introducing interactions is just that.
+
+277
+00:37:54,500 --> 00:38:00,360
+We need them to describe a lot of the two phenomena that we want to analyse with statistical physics.
+
+278
+00:38:00,360 --> 00:38:03,950
+So systems that have a very large number of degrees of freedom.
+
+279
+00:38:04,670 --> 00:38:11,030
+Um, but those degrees of freedom cannot or if those degrees of freedom are treated independently of each other,
+
+280
+00:38:11,030 --> 00:38:14,900
+then the predictions that we get are not sufficiently accurate.
+
+281
+00:38:14,910 --> 00:38:20,140
+So we have. Seen some very nice predictions.
+
+282
+00:38:21,930 --> 00:38:29,580
+For. Um, physical phenomena ranging from.
+
+283
+00:38:31,770 --> 00:38:36,450
+The Planck spectrum, released by our sun and reaching us here on Earth,
+
+284
+00:38:37,230 --> 00:38:45,930
+as well as the cosmic microwave background that is a much colder photon gas in occupying intergalactic space.
+
+285
+00:38:46,530 --> 00:38:55,170
+In the tutorials, we've also seen some or we are currently seeing how heat capacities of metals can be,
+
+286
+00:38:55,710 --> 00:39:02,940
+um, described very well, at least in, uh, qualitative terms by non-interacting.
+
+287
+00:39:04,800 --> 00:39:11,500
+Solids and electron gases. These ideal systems, in which all of the.
+
+288
+00:39:11,520 --> 00:39:15,240
+Degrees of freedom are assumed not to interact with each other.
+
+289
+00:39:16,200 --> 00:39:28,550
+They are. Insufficient to analyse, uh, or to describe even in a, in a rough way, many other key phenomena.
+
+290
+00:39:32,280 --> 00:39:35,820
+So one example that you will be looking at.
+
+291
+00:39:37,530 --> 00:39:49,700
+Will be phase transitions. So the idea of a phase transition well before going on into that.
+
+292
+00:39:50,270 --> 00:39:59,600
+So interactions are. Needed, but have the downside of being much harder to.
+
+293
+00:40:01,010 --> 00:40:04,040
+Deal with much harder to analyse mathematically.
+
+294
+00:40:06,050 --> 00:40:12,470
+And we will just start scraping the surface of interacting statistical systems.
+
+295
+00:40:13,340 --> 00:40:19,460
+For the remainder of this modules of the remainder of this module, the remaining lectures.
+
+296
+00:40:20,990 --> 00:40:27,380
+And we will see. Um, to some extent.
+
+297
+00:40:28,930 --> 00:40:32,500
+How these analyses become more difficult.
+
+298
+00:40:32,650 --> 00:40:42,060
+There will generally be. No closed form expressions the way that of the sort that we've been able to.
+
+299
+00:40:43,300 --> 00:40:46,490
+Drive. In the ideal case.
+
+300
+00:40:51,070 --> 00:40:55,390
+Um. You know, or even rough approximations.
+
+301
+00:40:56,970 --> 00:41:03,360
+So any. Accurate approximations won't be available for.
+
+302
+00:41:04,820 --> 00:41:14,270
+These interacting systems. So focusing for the moment on motivating this idea of phase transitions.
+
+303
+00:41:16,930 --> 00:41:24,880
+Let's just make sure we're all on the same page with first what our phases themselves,
+
+304
+00:41:25,030 --> 00:41:34,240
+and then talk about transitions between them and phases in the language that we've established in this module are basically
+
+305
+00:41:34,690 --> 00:41:48,190
+situations where different large scale emergent behaviour arises from the same set of underlying microscopic degrees of freedom.
+
+306
+00:41:48,400 --> 00:41:52,180
+Well, they're produced by the same set of particles.
+
+307
+00:41:54,470 --> 00:42:09,200
+And. The most familiar example of different phases that you're probably already thinking of is how water molecules a bunch of H2O can,
+
+308
+00:42:09,200 --> 00:42:19,520
+depending on the temperature and the pressure, take various different forms of ice or liquid water or a gaseous steam.
+
+309
+00:42:21,850 --> 00:42:29,980
+Um, all of which arise well, from the same underlying water molecules.
+
+310
+00:42:31,270 --> 00:42:35,800
+But of course, so that's a familiar everyday example of different phases.
+
+311
+00:42:38,960 --> 00:42:46,850
+Um, that we're familiar with, but phases and transitions between them really play a ubiquitous role.
+
+312
+00:42:47,450 --> 00:42:50,510
+Well, from the everyday up to the.
+
+313
+00:42:53,170 --> 00:42:56,110
+The extremes of temperature and pressure.
+
+314
+00:42:56,110 --> 00:43:03,849
+So another example of a phase transition that you may or may not have heard of, um, occurs in the early universe,
+
+315
+00:43:03,850 --> 00:43:13,600
+where there are two different phases that the underlying building blocks of atomic nuclei can consist in.
+
+316
+00:43:14,470 --> 00:43:23,050
+So those protons, neutrons, and the nuclei that they make up are ultimately composed of quarks and gluons.
+
+317
+00:43:24,100 --> 00:43:29,050
+And in the very early universe, when. The temperature is sufficiently high,
+
+318
+00:43:29,530 --> 00:43:39,519
+those quarks and gluons are confined from protons and neutrons and just exist in a so-called quark gluon plasma that,
+
+319
+00:43:39,520 --> 00:43:49,900
+as the universe expands and cools, eventually change to the phase of nuclei that we experience today.
+
+320
+00:43:50,590 --> 00:43:58,810
+This quark gluon plasma can be recreated in some of the highest energy particle colliders that are currently in operation.
+
+321
+00:43:58,840 --> 00:44:03,760
+It was first achieved by the Relativistic Heavy Ion Collider in New York,
+
+322
+00:44:04,210 --> 00:44:09,190
+and now is regularly analysed at the Large Hadron Collider outside of Geneva.
+
+323
+00:44:10,960 --> 00:44:12,280
+And another example.
+
+324
+00:44:12,550 --> 00:44:26,200
+So going from the the very high temperatures of the early universe to very low temperatures of solid state systems, um, if we look at.
+
+325
+00:44:28,770 --> 00:44:30,990
+A system known as graphene,
+
+326
+00:44:31,770 --> 00:44:43,630
+which is basically just a a layer of carbon atoms that is just a single molecule thick and takes a characteristic shape of a,
+
+327
+00:44:43,670 --> 00:44:47,850
+of having those carbon atoms arranged in a honeycomb lattice structure.
+
+328
+00:44:49,320 --> 00:44:56,040
+If we take two of those layers of graphene, so two honeycomb lattices of carbon atoms,
+
+329
+00:44:56,040 --> 00:45:03,150
+each a single atom thick, place them on top of each other and slightly adjust the relative angle between them.
+
+330
+00:45:03,630 --> 00:45:08,670
+So this theta that is shown here, um.
+
+331
+00:45:09,800 --> 00:45:15,890
+Normally the electrons in graphene are insulating, so they are not conducting.
+
+332
+00:45:15,890 --> 00:45:22,100
+They are tied to the atoms that they come from or tied to the nuclei that they come from.
+
+333
+00:45:22,580 --> 00:45:34,700
+But in this bilayer system, when this angle takes a particular value of about one degree and the temperature is sufficiently low,
+
+334
+00:45:35,630 --> 00:45:41,450
+these electrons can transition to a different phase in which they are able to conduct.
+
+335
+00:45:42,050 --> 00:45:52,280
+Um, more than that, they're able to conduct without losing any energy to their interactions with each other or with the underlying structure of atoms.
+
+336
+00:45:52,880 --> 00:45:59,000
+This is related to the emergence of a so-called super lattice in the system.
+
+337
+00:45:59,420 --> 00:46:11,540
+So if we look at some of the edges here, it's easy to see the small hexagon, um, array of carbon atoms that are the basis for these graphene layers.
+
+338
+00:46:12,080 --> 00:46:21,800
+If we sort of change our focus, you can also see the so-called moiré pattern of larger scale hexagons that.
+
+339
+00:46:23,580 --> 00:46:30,390
+Bring together, um, lots of these underlying unit cells in this lattice.
+
+340
+00:46:34,310 --> 00:46:41,840
+Which is related to the emergence of a superconducting behaviour in the system.
+
+341
+00:46:42,230 --> 00:46:46,850
+So at that. Magic angle.
+
+342
+00:46:46,850 --> 00:46:50,060
+These are the two phases that, um.
+
+343
+00:46:50,890 --> 00:46:56,200
+We transition between are these electrons going from being insulating or non conducting?
+
+344
+00:47:00,320 --> 00:47:04,650
+To being superconducting. Oops.
+
+345
+00:47:05,190 --> 00:47:09,520
+So at. A relative.
+
+346
+00:47:12,810 --> 00:47:22,970
+Um. Change in orientation of these two layers, and for sufficiently low temperatures below about two Kelvin,
+
+347
+00:47:22,980 --> 00:47:31,170
+so cooler than the cosmic microwave background, but a temperature that can be achieved in laboratories in this day and age.
+
+348
+00:47:32,070 --> 00:47:42,390
+And the superconducting aspect of this means that the these materials allow electricity to flow without any loss of energy,
+
+349
+00:47:43,350 --> 00:47:50,909
+or equivalently, without any emission of heat. And this is very exciting from an industrial standpoint.
+
+350
+00:47:50,910 --> 00:47:57,510
+If we were able to make superconducting materials at more ordinary room temperatures
+
+351
+00:47:57,510 --> 00:48:02,160
+of a few hundred Kelvin and actually use those in systems like your laptop,
+
+352
+00:48:02,640 --> 00:48:07,650
+all of the energy efficiency of all of the electronics and electrical systems that
+
+353
+00:48:07,650 --> 00:48:14,220
+we rely on in modern life would immediately become far more energy efficient.
+
+354
+00:48:14,700 --> 00:48:22,170
+And that has or would have great benefits for both economy and the society.
+
+355
+00:48:22,800 --> 00:48:29,940
+So that is, while the search for so-called high temperature superconductivity is something that
+
+356
+00:48:30,210 --> 00:48:36,120
+many people around the world have worked on very hard in order to pursue that goal,
+
+357
+00:48:37,530 --> 00:48:41,730
+and that is probably a good place to wrap up for today,
+
+358
+00:48:42,180 --> 00:48:48,749
+is motivating some situations in which transitions between different phases
+
+359
+00:48:48,750 --> 00:48:55,110
+are important and we will see are not able to be described by ideal systems.
+
+360
+00:48:55,710 --> 00:48:57,420
+So when we come back on Friday,
+
+361
+00:48:57,810 --> 00:49:08,700
+we will go into more detail about what exactly interactions are mathematically and how we can deal with them in a simple system.
+
+362
+00:49:09,480 --> 00:49:19,840
+Any questions about what we've seen so far today? If not, I'll shut things down and see you later this week.
+
+363
+00:49:20,110 --> 00:49:22,870
+It will be May when we meet next.
+
