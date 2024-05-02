@@ -1,0 +1,1688 @@
+1
+00:00:03,080 --> 00:00:14,870
+Okay, let's get underway on the 2nd of May, which is also the warmest day of the year by some margin at this point.
+
+2
+00:00:14,870 --> 00:00:24,920
+So we have. A bit of a small crowd, though some are connected remotely on zoom, and I'm sure others will be checking out the recording.
+
+3
+00:00:25,790 --> 00:00:32,150
+Um, if for no other reason than to get the attendance code for today 64.
+
+4
+00:00:33,130 --> 00:00:44,370
+Oh four. 81. This is the last tutorial where we will be introducing a new activity.
+
+5
+00:00:44,380 --> 00:00:50,080
+In addition to reviewing the device solid activity from the past week.
+
+6
+00:00:50,800 --> 00:00:56,890
+And we are also then in the familiar situation where the new activity is going to,
+
+7
+00:00:57,730 --> 00:01:01,720
+uh, connect to some things that we will be doing in lecture tomorrow.
+
+8
+00:01:02,050 --> 00:01:10,900
+So in the time available, we can talk through the previous activity and at least begin to introduce
+
+9
+00:01:11,350 --> 00:01:16,630
+things like using models and lattices that we will see more formally tomorrow.
+
+10
+00:01:17,020 --> 00:01:25,300
+And that will give you all that you need to dive into the new activity on lattices and lattice structures.
+
+11
+00:01:25,630 --> 00:01:34,330
+So this tutorial activity and solution model solutions for the device solid are up on canvas.
+
+12
+00:01:34,810 --> 00:01:44,680
+Of course this is your tutorial. So if you have any questions about, well, anything in the module up to this point, uh, do shout them out at any time.
+
+13
+00:01:46,570 --> 00:01:53,170
+But if we go ahead and charge forward with just reviewing.
+
+14
+00:01:54,320 --> 00:01:58,820
+The past week's tutorial activity. On this two by model of solids,
+
+15
+00:02:00,050 --> 00:02:11,540
+we can remember that we were motivated motivated by these experimental data for the heat capacity of a few metals divided by the temperature,
+
+16
+00:02:11,540 --> 00:02:14,960
+and then plotted versus temperature squared, which means that.
+
+17
+00:02:15,890 --> 00:02:25,100
+The heat capacity itself has a functional form of some constant times the temperature, plus some other constant times the temperature cubed.
+
+18
+00:02:25,940 --> 00:02:30,060
+And we wanted to explain that which the Einstein solid did not.
+
+19
+00:02:30,080 --> 00:02:36,260
+It predicted exponential dependence at these low temperatures of four Kelvin or less.
+
+20
+00:02:37,040 --> 00:02:45,859
+So we introduced briefly the two by solid, which improved on the Einstein solid by taking this picture.
+
+21
+00:02:45,860 --> 00:02:52,460
+And rather than treating every oscillator between atoms as an independent degree of freedom,
+
+22
+00:02:52,820 --> 00:02:57,770
+recognised that wiggles in one atom will jiggle the oscillator,
+
+23
+00:02:58,460 --> 00:03:07,880
+the oscillators connected to it that will in turn jiggle other atoms and will end up with correlated waves of jiggling going through these materials.
+
+24
+00:03:08,660 --> 00:03:14,360
+So the Debye model of solids tried to account for that.
+
+25
+00:03:15,600 --> 00:03:20,800
+By. Introducing new so-called quasi particles.
+
+26
+00:03:22,140 --> 00:03:32,280
+So the jiggling of these coupled atoms, because that can be expected to produce overall collective wavelike motion.
+
+27
+00:03:34,160 --> 00:03:43,040
+The. Those waves are like electromagnetic waves being described by some idealised, non-interacting particles,
+
+28
+00:03:43,040 --> 00:03:49,370
+which about 20 years after Dubai introduced this model, they were given the name phonons.
+
+29
+00:03:50,700 --> 00:03:56,040
+Meant to inspire particles of sound rather than particles of light.
+
+30
+00:03:56,640 --> 00:04:01,330
+And apart from, well, that difference between sound and light.
+
+31
+00:04:01,350 --> 00:04:04,980
+Phonons and photons behave very similarly.
+
+32
+00:04:05,640 --> 00:04:09,780
+And if we. Think about having a gas of phonons.
+
+33
+00:04:12,860 --> 00:04:20,560
+Within. Our solid carrying the energy of thermal excitations, then.
+
+34
+00:04:21,720 --> 00:04:29,310
+The analysis will be essentially the same up to numerical factors that we will just ignore today.
+
+35
+00:04:30,870 --> 00:04:36,630
+Will be essentially the same as the analysis of the photon gas that gave us the Planck spectrum.
+
+36
+00:04:37,670 --> 00:04:41,790
+And we will just drop. All constant factors.
+
+37
+00:04:45,400 --> 00:04:48,880
+That leaves us. The light just burned out.
+
+38
+00:04:49,300 --> 00:04:52,210
+So that's why I'm looking around. Um.
+
+39
+00:04:53,140 --> 00:05:00,140
+The expression for the internal energy is what we want to get as a function of temperature to determine the heat capacity,
+
+40
+00:05:00,160 --> 00:05:04,220
+the derivative of that internal energy with respect to temperature.
+
+41
+00:05:04,240 --> 00:05:08,680
+That's our ultimate goal, but up to constant factors.
+
+42
+00:05:08,830 --> 00:05:18,550
+This internal energy is just the integral of our usual Planck spectrum here, expressed in terms of frequencies rather than wavelengths.
+
+43
+00:05:19,150 --> 00:05:25,990
+So we've seen this in lecture. And the new wrinkle with phonons as opposed to photons is that.
+
+44
+00:05:27,260 --> 00:05:37,850
+The. Nonzero spacing between atoms in the solid introduces a shortest possible wavelength for these phonons to oscillate,
+
+45
+00:05:38,210 --> 00:05:43,010
+which corresponds to a maximum frequency with which they can oscillate,
+
+46
+00:05:43,820 --> 00:05:54,380
+the minimum frequency spreading across the solid in any macroscopically sized solid with ten to the power 23 atoms in it will be effectively zero.
+
+47
+00:05:54,800 --> 00:06:02,000
+So we can set the lower limit of integration to zero with only a miserably small, uh, error.
+
+48
+00:06:02,480 --> 00:06:11,030
+But we are introducing this maximum frequency omega cutting off the top of this integral for phonons.
+
+49
+00:06:11,450 --> 00:06:13,820
+And as always, this is the grand canonical ensemble.
+
+50
+00:06:14,330 --> 00:06:21,320
+Zero chemical potential for these particles that can freely be created and destroyed without affecting the energy or entropy.
+
+51
+00:06:21,860 --> 00:06:32,600
+And just as we did for photons, we evaluate this integral by changing variables to our usual x, which is h bar omega divided by the temperature.
+
+52
+00:06:33,380 --> 00:06:46,250
+So a dimensionless number that can get exponentiated without a problem, and the upper bound of the integral expressed in terms of x will again up.
+
+53
+00:06:46,250 --> 00:06:54,950
+To cancel factors we can drop. Just be given by the maximum frequency divided by the temperature.
+
+54
+00:06:55,520 --> 00:07:03,350
+We will actually go further and absorb both that maximum frequency and all the constant factors into.
+
+55
+00:07:04,930 --> 00:07:10,150
+Something that we know has to behave like a temperature in order to keep all the XS dimensionless.
+
+56
+00:07:10,930 --> 00:07:14,410
+So all those mentioned for constant factors.
+
+57
+00:07:15,470 --> 00:07:21,530
+Get absorbed. Into what is conventionally called a divide temperature.
+
+58
+00:07:24,940 --> 00:07:28,810
+Which is just expressed as t sub d the D for Dubai,
+
+59
+00:07:29,470 --> 00:07:38,220
+and this ends up being proportional to the cube root of the number of atoms that we have n divided by the volume of our solid.
+
+60
+00:07:38,260 --> 00:07:47,410
+So dimensionally the cube root of a volume is one over length, and factors of hbar times C will convert an inverse length to an energy,
+
+61
+00:07:47,950 --> 00:07:54,250
+and then factors of Boltzmann's factor KB will convert a temperature to an energy.
+
+62
+00:07:54,820 --> 00:08:07,450
+So we have in the end. From subbing in tee times X for all three omega cubes, as well as the D omega,
+
+63
+00:08:08,200 --> 00:08:17,830
+an expression that will be proportional to four factors of temperature integral from zero to this omega max.
+
+64
+00:08:18,760 --> 00:08:28,030
+Times constants give us t d divided by t the temperature, and then just x cubed over e to the x minus 1DX.
+
+65
+00:08:29,970 --> 00:08:37,950
+Now. The task in the tutorial was not to evaluate this integral in full, but only to consider.
+
+66
+00:08:37,980 --> 00:08:45,270
+Well, as we usually do, first consider the limits of extremes high and low temperatures where there are simplifications.
+
+67
+00:08:45,690 --> 00:08:53,129
+So. The simplification that we can impose for high temperature is just that.
+
+68
+00:08:53,130 --> 00:08:56,460
+This upper limit of integration is very small.
+
+69
+00:08:57,560 --> 00:08:59,840
+The temperature is much greater than the divide temperature.
+
+70
+00:09:00,170 --> 00:09:09,500
+T over D is less than one, which means that we have to integrate over effectively a very small range of x.
+
+71
+00:09:10,800 --> 00:09:14,550
+We start at zero and we go up to something that is much less than one.
+
+72
+00:09:14,910 --> 00:09:21,750
+And throughout that range of small x, we can expand our E to the X as a power series and a small parameter x.
+
+73
+00:09:22,920 --> 00:09:26,430
+And the leading term in there is just x.
+
+74
+00:09:27,460 --> 00:09:34,810
+And we end up approximately with an energy that is proportional to t to the fourth times.
+
+75
+00:09:35,530 --> 00:09:44,350
+This integral over a small range of x cubed over x d x as x squared to its friends integrates back to x cubed.
+
+76
+00:09:44,800 --> 00:09:48,460
+We don't care about any constant factors that come along for the ride.
+
+77
+00:09:49,460 --> 00:09:54,560
+We just pick up three powers of T over T cubed.
+
+78
+00:09:55,720 --> 00:09:58,930
+The device temperature itself is a constant that we don't care about.
+
+79
+00:09:59,500 --> 00:10:01,960
+We are just left with something proportional to t.
+
+80
+00:10:02,680 --> 00:10:11,080
+So then the final step, the derivative of the internal energy with respect to temperature to give us the heat capacity.
+
+81
+00:10:12,450 --> 00:10:15,450
+Is a constant at high temperatures.
+
+82
+00:10:16,140 --> 00:10:21,720
+This is the same behaviour as the Einstein solid predicted.
+
+83
+00:10:24,400 --> 00:10:32,320
+And in fact, if we were to keep all of the constant factors which you can't do if you have the time and inclination, just repeat this calculation.
+
+84
+00:10:32,890 --> 00:10:36,340
+Uh, not dropping constants as you go along.
+
+85
+00:10:37,320 --> 00:10:40,380
+You actually find the same constant that.
+
+86
+00:10:41,070 --> 00:10:41,280
+Well,
+
+87
+00:10:41,280 --> 00:10:49,860
+we can see these results for the heat capacity approaching the limit of high temperatures going up to hundreds of Kelvin for some different solids.
+
+88
+00:10:50,370 --> 00:10:55,290
+Something we looked at, um, back a few weeks ago in the Einstein solid.
+
+89
+00:10:55,650 --> 00:10:59,520
+So the Einstein solids worked at high temperatures. It broke down at low temperatures.
+
+90
+00:11:00,000 --> 00:11:07,440
+The turbine model has exactly reproduced the correct part of the Einstein solid.
+
+91
+00:11:08,040 --> 00:11:14,550
+And now the interesting thing is what happens when the Einstein solid broke down that limit of low temperatures.
+
+92
+00:11:16,440 --> 00:11:21,660
+So here again it is a limit where the.
+
+93
+00:11:22,720 --> 00:11:28,900
+Computations simplify well. In the case where we have.
+
+94
+00:11:30,570 --> 00:11:33,810
+The upper limit of that integral much greater than one.
+
+95
+00:11:34,350 --> 00:11:40,440
+We actually get back to the situation that we looked at in class where.
+
+96
+00:11:42,090 --> 00:11:49,320
+We had the integral from the Planck spectrum of this expression x cubed over e to the x minus 1DX.
+
+97
+00:11:49,770 --> 00:11:58,020
+Going all the way from zero to infinity. And it was just a delicious combination of, um, Euler gamma functions and Riemann zeta functions.
+
+98
+00:11:58,980 --> 00:12:04,380
+So here with t over t, what's greater than one?
+
+99
+00:12:05,320 --> 00:12:15,070
+We can approximate this integral by. Being approximately zero to infinity given by gamma for.
+
+100
+00:12:16,190 --> 00:12:22,339
+Zeta four. Well, the important thing is not the specific values before times data for,
+
+101
+00:12:22,340 --> 00:12:28,640
+but the fact that all of these are just constants pi to the fourth over 15 specifically.
+
+102
+00:12:29,210 --> 00:12:34,910
+So this whole integral goes to a temperature independent constant.
+
+103
+00:12:35,510 --> 00:12:39,950
+The only temperature dependence that remains is that t to the fourth out front.
+
+104
+00:12:40,970 --> 00:12:46,150
+So. With the internal energy proportional to the fourth.
+
+105
+00:12:47,150 --> 00:12:56,720
+The heat capacity is proportional to t cubed, and that is indeed one of the terms we were going after.
+
+106
+00:12:57,410 --> 00:13:04,430
+Um, so the fact that these data form straight lines when divided by T and plotted versus t squared.
+
+107
+00:13:05,090 --> 00:13:14,690
+So that is one half of this analysis dealt with much more easily than the full integral would have been.
+
+108
+00:13:16,310 --> 00:13:22,190
+And unless there are questions about that in view of the passing time, I will.
+
+109
+00:13:23,650 --> 00:13:30,100
+Charge directly ahead into the second part of the analysis, trying to get the intercept.
+
+110
+00:13:30,460 --> 00:13:36,340
+So that term that sees heat capacity divided by t going to a constant.
+
+111
+00:13:36,940 --> 00:13:40,630
+So the heat capacity itself is a constant times t.
+
+112
+00:13:42,530 --> 00:13:52,430
+This involves the non-relativistic fermion gases that we only introduced last Friday after last week's tutorial.
+
+113
+00:13:53,540 --> 00:13:59,420
+But you have now had almost a week to bring all of that knowledge to bear.
+
+114
+00:14:00,020 --> 00:14:05,500
+So. The gas in question. Here are the electrons that.
+
+115
+00:14:07,230 --> 00:14:13,080
+Can float around the material of the solid in a conducting.
+
+116
+00:14:14,420 --> 00:14:17,420
+Um, metal. Like all of these. Gold, silver and copper.
+
+117
+00:14:17,870 --> 00:14:23,690
+The electrons are not tied to any particular atom, but free to move around as they gas.
+
+118
+00:14:24,750 --> 00:14:32,880
+And for a fermion gas. We found last week that the internal energy is proportional.
+
+119
+00:14:33,790 --> 00:14:38,530
+To an integral over the energies.
+
+120
+00:14:39,690 --> 00:14:43,320
+Of the energy levels that these fermions can occupy.
+
+121
+00:14:43,800 --> 00:14:50,770
+So we had. An integral over the energy of a individual electron.
+
+122
+00:14:51,190 --> 00:14:58,840
+Raised to the power of three halves. Integrating over energy with this Fermi function that I'll remind you.
+
+123
+00:14:59,840 --> 00:15:07,700
+Takes the form of one over E to the beta times energy minus chemical potential
+
+124
+00:15:08,090 --> 00:15:12,470
+now plus one instead of the minus one that we had in the Planck spectrum.
+
+125
+00:15:14,380 --> 00:15:21,970
+Now, in lectures, we approximated that Fermi function by a step function, which is what it reduces to at low temperatures.
+
+126
+00:15:22,940 --> 00:15:28,349
+But. In real materials.
+
+127
+00:15:28,350 --> 00:15:31,730
+We cannot in practice cool them down to absolute zero.
+
+128
+00:15:31,740 --> 00:15:39,570
+That turns out to be technologically impossible. So we have to worry about effects of low but non-zero temperatures.
+
+129
+00:15:41,410 --> 00:15:54,100
+So what those effects are, they will require us to retain this full temperature dependence of that Fermi function.
+
+130
+00:15:54,640 --> 00:15:58,930
+And we have to be a bit more careful about how we evaluate this integral.
+
+131
+00:15:59,770 --> 00:16:06,460
+There is a hint in the activity that the the way to go here is to invoke integration by parts,
+
+132
+00:16:07,000 --> 00:16:10,300
+which I'm sure you've seen in other modules, but possibly not recently.
+
+133
+00:16:10,780 --> 00:16:21,400
+So as a reminder, if we can express an integral from A to B in terms of two functions u times the differential factor DV,
+
+134
+00:16:22,150 --> 00:16:29,890
+then this is equal to the product of u and v evaluated at those boundaries.
+
+135
+00:16:30,800 --> 00:16:34,520
+Minus the corresponding integral where the.
+
+136
+00:16:35,780 --> 00:16:43,980
+Differential is swapped from the two you. And for the internal energy of a fermion gas.
+
+137
+00:16:45,030 --> 00:16:55,350
+The appropriate use in these to use are to assign the Fermi function itself to be u DV is that everything else?
+
+138
+00:16:56,010 --> 00:17:02,200
+Energy to the three halves, the e and the corresponding to u is.
+
+139
+00:17:02,690 --> 00:17:09,660
+Well, let's just write it for now as the derivative of the Fermi function with respect to energy times d, e,
+
+140
+00:17:10,350 --> 00:17:20,610
+and v itself is going to be 2/5 times the energy to the five halves to get back to DV upon taking that derivative.
+
+141
+00:17:22,080 --> 00:17:32,379
+So if we look first at the boundary term. So you times v we don't care about custom factors.
+
+142
+00:17:32,380 --> 00:17:40,209
+This is just proportional to the energy to the five halves power times that Fermi function.
+
+143
+00:17:40,210 --> 00:17:45,040
+And it is evaluated at two particular energies zero and infinity.
+
+144
+00:17:45,790 --> 00:17:50,020
+So as the energy goes to zero.
+
+145
+00:17:51,310 --> 00:17:54,460
+This boundary term also goes to zero.
+
+146
+00:17:55,390 --> 00:18:04,410
+And that is because e to the five halves goes to zero. But the Fermi function is a well finite constant.
+
+147
+00:18:04,420 --> 00:18:13,910
+It's actually bounded by zero and one. Um, if we remove the energy from here, we just have e to the minus beta mu plus one.
+
+148
+00:18:14,810 --> 00:18:20,620
+So that's that does not diverge. And the zero energy kills off this boundary term.
+
+149
+00:18:20,630 --> 00:18:24,830
+And that limit and the opposite limit of the energy going to infinity.
+
+150
+00:18:25,610 --> 00:18:31,830
+The boundary term also goes to zero. So here it's a bit more subtle.
+
+151
+00:18:32,640 --> 00:18:40,270
+Each of the five halves is diverging, but the Fermi function f of e is going to zero.
+
+152
+00:18:40,290 --> 00:18:43,440
+So we have an indeterminate form infinity times zero.
+
+153
+00:18:43,770 --> 00:18:50,730
+We have to look at it. And if we look at what happens to the Fermi function it basically goes like.
+
+154
+00:18:52,340 --> 00:18:57,370
+Won over the exponential of beta times E. Um.
+
+155
+00:18:58,340 --> 00:19:03,590
+And so if we plug that in, we would get infinity over infinity.
+
+156
+00:19:03,950 --> 00:19:10,759
+But as we know Patel that ratio the polynomial factors will die off and the exponentials
+
+157
+00:19:10,760 --> 00:19:16,400
+will just keep going and going forever until we end up with zero for the boundary term.
+
+158
+00:19:17,980 --> 00:19:29,440
+So our expression for the internal energy of the photon gas then just becomes again dropping factors of of constants.
+
+159
+00:19:30,010 --> 00:19:33,250
+We only care about this final integral over vdu.
+
+160
+00:19:34,390 --> 00:19:43,930
+So v is E to the five halves, and d u is the derivative of that Fermi function with respect to energy.
+
+161
+00:19:45,530 --> 00:19:52,070
+Which we now need to evaluate. It's not too hard if we just write.
+
+162
+00:19:53,040 --> 00:19:57,980
+The Fermi function as. This e to the.
+
+163
+00:19:59,150 --> 00:20:04,220
+Beta times energy minus chemical potential, plus one raised to the minus one power.
+
+164
+00:20:04,640 --> 00:20:07,790
+There it is. Back on the projector. Then.
+
+165
+00:20:08,700 --> 00:20:11,990
+Derivative of one over. Derivative of.
+
+166
+00:20:12,830 --> 00:20:18,670
+Um. Something to minus one is minus one over that squared.
+
+167
+00:20:19,540 --> 00:20:23,530
+I'm just going to well there's the negative sign which we will drop later on.
+
+168
+00:20:23,980 --> 00:20:31,540
+Let's call beta times E minus you just x as a simpler variable to write.
+
+169
+00:20:32,170 --> 00:20:35,440
+So we have e to the x plus one squared in the denominator.
+
+170
+00:20:35,920 --> 00:20:39,790
+We have a minus one from the initial power. And then we chain rule.
+
+171
+00:20:40,030 --> 00:20:45,130
+Everything that's going on in this denominator. We have an e to the x.
+
+172
+00:20:45,700 --> 00:20:52,630
+And then within that argument x we get a factor of beta that comes along from the second round of chain rule.
+
+173
+00:20:53,650 --> 00:21:02,400
+So overall. The energy of our electron gas is proportional.
+
+174
+00:21:03,770 --> 00:21:10,210
+To some E to the X. Over E to the x plus one squared.
+
+175
+00:21:11,350 --> 00:21:21,250
+The energy to the five has power. Comes along for the ride, and I'll take this beta and I'll stick it in the differential with the energy,
+
+176
+00:21:22,120 --> 00:21:28,210
+because in that way I can change beta times E to just a dx.
+
+177
+00:21:29,800 --> 00:21:33,550
+Um, when e when beta ego's to infinity, so does x.
+
+178
+00:21:33,550 --> 00:21:37,660
+When it goes to zero, x goes to minus beta mu.
+
+179
+00:21:38,440 --> 00:21:50,950
+So in terms of an integral over x we have this e to the x e to the x plus one squared energy to the five halves power d x.
+
+180
+00:21:53,010 --> 00:22:05,379
+So. Well, another complicated integral for us to evaluate, especially with this funny minus beta mu as a lower limit of integration,
+
+181
+00:22:05,380 --> 00:22:10,330
+I should ask, are there any questions about the steps we've gone through to get to?
+
+182
+00:22:11,490 --> 00:22:15,000
+This form of the internal energy for the electron gas.
+
+183
+00:22:16,110 --> 00:22:19,140
+I'll keep going, but shout them out. We've me down.
+
+184
+00:22:19,710 --> 00:22:22,710
+If there's anything that's not clear so far.
+
+185
+00:22:24,520 --> 00:22:28,060
+Um. Complicated expression. Knee jerk reaction.
+
+186
+00:22:28,300 --> 00:22:38,350
+Look at its limits. So if we look at this X being a large negative number, so much smaller than minus one.
+
+187
+00:22:39,160 --> 00:22:47,870
+And what happens to the integrand here. These exponential factors are going to be very very small.
+
+188
+00:22:47,890 --> 00:22:56,820
+They will go to zero exponentially quickly. So something that is exponentially small plus one is approximately one.
+
+189
+00:22:57,780 --> 00:23:02,640
+And well, something that is then exponentially small divided by one is much smaller than one.
+
+190
+00:23:03,960 --> 00:23:12,780
+So this is a suggestion that we can extend the range of integration in our expression.
+
+191
+00:23:14,990 --> 00:23:19,730
+If the integrand is very, very small, in fact exponentially small.
+
+192
+00:23:20,210 --> 00:23:26,480
+Then if we just shift this minus beta mu all the way to a nice negative infinity,
+
+193
+00:23:27,290 --> 00:23:34,930
+we will introduce only exponentially small errors in this approximate expression.
+
+194
+00:23:34,940 --> 00:23:39,110
+So we will have just a small approximation that will be negligible.
+
+195
+00:23:39,320 --> 00:23:45,590
+And I'll justify this a bit more in just a bit if you are suspicious at the moment.
+
+196
+00:23:46,610 --> 00:23:53,290
+Before. Looking at this in more detail, let's look at the other limit.
+
+197
+00:23:53,530 --> 00:24:00,340
+If X is a very large positive number then well the exponential factors are exponentially large.
+
+198
+00:24:01,060 --> 00:24:06,910
+Now the one is negligible and we end up with e to the x over e to the two x.
+
+199
+00:24:07,970 --> 00:24:11,930
+Known to his friends as one of the X, which again is much less than one.
+
+200
+00:24:13,400 --> 00:24:25,220
+So in both limits of very large and very small, uh, arguments, very small values of x, we find a very small integrand.
+
+201
+00:24:26,640 --> 00:24:37,650
+Which suggests that if this integrand is ever not very small, if it ever matters, it will be in the middle.
+
+202
+00:24:39,190 --> 00:24:44,370
+Somewhere around. X. Well, equal to zero.
+
+203
+00:24:44,910 --> 00:24:48,870
+Equivalently, the energy equal to the chemical potential.
+
+204
+00:24:50,220 --> 00:24:58,530
+So. Just to give a visual confirmation of the mathematical arguments we went through.
+
+205
+00:24:59,160 --> 00:25:02,430
+This is the exponential part of the integrand.
+
+206
+00:25:02,430 --> 00:25:06,780
+We were talking about e to the x over e to the x plus one.
+
+207
+00:25:08,390 --> 00:25:12,440
+We can see. Indeed there is a peak right at zero.
+
+208
+00:25:12,500 --> 00:25:21,130
+This is our X. The inverse temperature times difference between energy and chemical potential.
+
+209
+00:25:21,820 --> 00:25:26,920
+And as we get to large negative x or large positive x.
+
+210
+00:25:29,150 --> 00:25:40,610
+The integrand is going to zero exponentially quickly, and it only really matters in this range of factors of a few around x equal to zero.
+
+211
+00:25:42,490 --> 00:25:49,840
+One other thing to note just now is that this isn't even function around zero.
+
+212
+00:25:49,840 --> 00:25:53,290
+It's symmetric and we can.
+
+213
+00:25:56,040 --> 00:26:00,330
+Make that easier to see just by taking this expression.
+
+214
+00:26:02,140 --> 00:26:08,980
+And. Dividing through by that e to the x in the numerator.
+
+215
+00:26:10,130 --> 00:26:18,110
+So if we just keep E to the X plus one and divide the other term by e to the x, we get one plus e to the minus x.
+
+216
+00:26:18,800 --> 00:26:25,280
+So if we interchange x and minus x, those two terms that are being multiplied together just swap.
+
+217
+00:26:25,790 --> 00:26:34,310
+And multiplication is commutative. So this is an even function that will be useful to know later on.
+
+218
+00:26:38,080 --> 00:26:46,150
+The complication, and what I've not gotten to so far is the polynomial e to the five halves factor.
+
+219
+00:26:46,930 --> 00:26:51,300
+So this e is related to x.
+
+220
+00:26:51,310 --> 00:26:55,480
+We can't just pull it out of the integral. It is a function of x essentially.
+
+221
+00:26:56,440 --> 00:26:59,410
+And we need to express e in terms of x.
+
+222
+00:27:02,480 --> 00:27:11,820
+And not just E, which is easy enough from our definition of X, but this funny polynomial function e to the five halves power.
+
+223
+00:27:14,480 --> 00:27:18,120
+We want to write that. In terms of.
+
+224
+00:27:20,200 --> 00:27:28,929
+Our X, which, just as a reminder, is the difference between energy and chemical potential divided by the energy.
+
+225
+00:27:28,930 --> 00:27:32,290
+Sorry, divided by the temperature E minus mu over t.
+
+226
+00:27:33,850 --> 00:27:47,110
+So. I think another hint that was given in the tutorial activity itself was to Taylor expand around the peak.
+
+227
+00:27:47,980 --> 00:27:51,520
+Value of this integrand where e equals mu.
+
+228
+00:27:53,680 --> 00:27:56,710
+So let's see what happens when we do that.
+
+229
+00:28:00,490 --> 00:28:07,950
+So a Taylor expansion. Around E equals mu.
+
+230
+00:28:09,390 --> 00:28:15,720
+If we have our function to expand being E to the five halves, the first term in the Taylor expansion,
+
+231
+00:28:16,710 --> 00:28:21,780
+as always, is just going to be this function evaluated at the central point.
+
+232
+00:28:23,290 --> 00:28:32,980
+Which is new to the five house power. Then the next correction takes the derivative of the function with respect to uh.
+
+233
+00:28:34,400 --> 00:28:39,140
+E that we're expanding. Sorry. Yeah. With respect to E.
+
+234
+00:28:39,170 --> 00:28:44,360
+So the derivative of e to the five has with respect to e is five halves, e to the three halves.
+
+235
+00:28:45,230 --> 00:28:56,960
+Our expansion parameter is the difference e minus mu, and we evaluate then e to the three halves at the central value mu like so.
+
+236
+00:28:58,280 --> 00:29:04,610
+And then we just keep repeating with higher and higher derivatives of each of the five halves with respect to E,
+
+237
+00:29:05,630 --> 00:29:09,980
+as well as with additional causal factors of the second term,
+
+238
+00:29:10,430 --> 00:29:17,960
+has a one half power second derivative of e to the five halves, so that is one half times that five halves.
+
+239
+00:29:18,320 --> 00:29:22,940
+Times the three halves that comes down is three times five is 15.
+
+240
+00:29:23,540 --> 00:29:28,940
+And three factors of two give eight. We have e minus mu squared.
+
+241
+00:29:29,720 --> 00:29:35,600
+And the power comes down from five halves to three halves to one half.
+
+242
+00:29:36,140 --> 00:29:41,180
+When we evaluated at e equals mu and there are higher and higher terms after this.
+
+243
+00:29:43,310 --> 00:29:55,250
+Now we want to express all of these terms. Um, in terms of our X, we can recognise that e minus view is x times T.
+
+244
+00:29:55,880 --> 00:30:00,180
+So we just have. Nothing going on in the leading term.
+
+245
+00:30:01,240 --> 00:30:05,710
+Then five halves x t times mu to the three halves.
+
+246
+00:30:06,760 --> 00:30:09,940
+And then 15/8 times XT squared.
+
+247
+00:30:10,750 --> 00:30:17,410
+Use the one half and then smaller and smaller terms going off to infinity.
+
+248
+00:30:22,000 --> 00:30:25,480
+So this is just what we wanted.
+
+249
+00:30:26,440 --> 00:30:31,900
+Each of the five has power expressed in terms of X that gets plugged in to our integral.
+
+250
+00:30:32,290 --> 00:30:35,680
+That is now going from minus infinity to plus infinity.
+
+251
+00:30:36,370 --> 00:30:41,500
+And every term in this Taylor expansion that slipped off the screen there.
+
+252
+00:30:41,740 --> 00:30:49,060
+So every term in this Taylor expansion gives us a independent integral in the.
+
+253
+00:30:50,120 --> 00:31:03,160
+Average internal energy. So I will note that we have made the approximation of integrating from minus infinity to infinity.
+
+254
+00:31:04,370 --> 00:31:08,650
+Because we care only about functional form still. Let's.
+
+255
+00:31:09,990 --> 00:31:16,650
+Just bring in the functional form of the integrand e to the x over e to the x plus 1DX in the first term.
+
+256
+00:31:17,130 --> 00:31:22,170
+This mu is just a constant chemical potential independent of temperature.
+
+257
+00:31:22,980 --> 00:31:26,940
+We can call that and all other factors here just some constant a.
+
+258
+00:31:29,290 --> 00:31:38,860
+The next term will have a similar constant be. There will be a factor of the temperature that we can pull out of the integral over X,
+
+259
+00:31:39,490 --> 00:31:47,350
+and what's left in the integral is E to the x times x over e to the x plus one squared d x.
+
+260
+00:31:48,160 --> 00:31:51,240
+And. Um.
+
+261
+00:31:52,650 --> 00:31:57,510
+I'm running out of space to put the next term in. It will be very similar.
+
+262
+00:31:58,440 --> 00:32:03,900
+We have now t cubed with another constant. Same limits of integration.
+
+263
+00:32:04,710 --> 00:32:10,380
+E to the x x squared d x over e to the x plus one squared.
+
+264
+00:32:10,410 --> 00:32:13,620
+Sorry to cram it in at the side of the page there.
+
+265
+00:32:13,950 --> 00:32:20,320
+But it's. A simple progression in the series will truncate the series there.
+
+266
+00:32:20,370 --> 00:32:23,370
+Observe that at the approximately equal sign.
+
+267
+00:32:23,850 --> 00:32:27,810
+Think about each of these integrals independently.
+
+268
+00:32:29,360 --> 00:32:33,850
+So this first expression. Well, we could integrate it.
+
+269
+00:32:33,870 --> 00:32:36,360
+We don't. We can recognise we don't actually have to.
+
+270
+00:32:36,840 --> 00:32:43,680
+We are going after the heat capacity, which is the derivative of this energy with respect to temperature.
+
+271
+00:32:44,640 --> 00:32:50,730
+This first term is t independent. So it drops out of the heat capacity entirely.
+
+272
+00:32:51,510 --> 00:33:00,450
+So don't have to care about that. It's constant with respect to temperature and doesn't have any effect on the heat capacity.
+
+273
+00:33:01,140 --> 00:33:12,320
+The second term. We can recall the hint that I gave earlier that e to the x over e to the x plus one squared is an even function.
+
+274
+00:33:13,190 --> 00:33:18,380
+Hit it with another factor of x. It becomes an odd function, kind of trivially an.
+
+275
+00:33:18,410 --> 00:33:23,360
+Integrating an odd function symmetrically about zero always gives us zero.
+
+276
+00:33:24,340 --> 00:33:32,230
+Since this is odd. So what we are left with is just this last term squeezed in here and.
+
+277
+00:33:33,770 --> 00:33:37,130
+This is another integral we could evaluate. Um.
+
+278
+00:33:37,900 --> 00:33:45,340
+If we were so inclined. But because we only care about functional forms, we can just say this integral is going to be some constant,
+
+279
+00:33:45,850 --> 00:33:51,580
+specifically some other combination of gamma functions and zeta functions.
+
+280
+00:33:52,030 --> 00:33:54,370
+So what we have for.
+
+281
+00:33:55,780 --> 00:34:07,150
+The internal energy is some old constant times t squared, and for the heat capacity that is the temperature derivative of the internal energy.
+
+282
+00:34:07,600 --> 00:34:12,760
+We then just have something proportional to t a linear function.
+
+283
+00:34:14,520 --> 00:34:19,740
+Which is, well, exactly the final term that we were going after.
+
+284
+00:34:20,520 --> 00:34:30,510
+So we can declare victory and say that we have been able to understand at least the main features of.
+
+285
+00:34:32,820 --> 00:34:40,890
+The. These experimental data points both at low and high temperatures through two different types of quantum gases.
+
+286
+00:34:41,580 --> 00:34:50,400
+First, an ideal, non-interacting quantum gas of phonons, and then an ideal, non-interacting quantum gas of fermionic electrons.
+
+287
+00:34:51,030 --> 00:34:56,370
+And in fact, since we did the electron gas in lecture, um,
+
+288
+00:34:57,120 --> 00:35:07,110
+it is not that hard again to instead of looking just at the functional form to come up with the actual a constant of proportionality.
+
+289
+00:35:07,740 --> 00:35:15,490
+So. Um, this is done in that section 8.8 on the field expansion that we are skipping.
+
+290
+00:35:15,970 --> 00:35:25,990
+If you look at that section in the lecture notes, you find that the cost of factor in the heat capacity is n pi squared over twice the Fermi energy.
+
+291
+00:35:26,410 --> 00:35:36,080
+And this is in fact um. One of the main ways that the Fermi energy of metals is experimentally measured.
+
+292
+00:35:36,770 --> 00:35:44,389
+Measure the heat capacity. Get those experimental data points and then this intercept.
+
+293
+00:35:44,390 --> 00:35:51,560
+Here, heat capacity divided by temperature is just a constant factor per unit.
+
+294
+00:35:51,890 --> 00:35:56,330
+Uh, number of particles. Constant factor divided by Fermi energy.
+
+295
+00:35:58,490 --> 00:36:09,620
+So any questions about all of those quantum gas applications before we move on to something new and in fact,
+
+296
+00:36:09,620 --> 00:36:14,620
+so new, we have not yet run into it in the lectures, though.
+
+297
+00:36:14,630 --> 00:36:17,930
+That will come first thing tomorrow morning.
+
+298
+00:36:22,680 --> 00:36:26,010
+So. Not seeing any.
+
+299
+00:36:27,750 --> 00:36:30,750
+Questions about last week's activity.
+
+300
+00:36:31,560 --> 00:36:44,290
+Let's move on to. Just briefly introducing this idea of lattices, which to a first approximation, um, which we will build upon tomorrow.
+
+301
+00:36:45,040 --> 00:36:48,490
+We can think of this as a generalisation.
+
+302
+00:36:49,600 --> 00:36:56,420
+Of the spins that we had. Embedded in a solid, in a line or in a row.
+
+303
+00:36:57,890 --> 00:37:07,850
+Way back in February, you know. Unit 2 or 3 when we were contrasting distinguishable versus indistinguishable spins.
+
+304
+00:37:09,810 --> 00:37:19,590
+What we will introduce tomorrow is the idea that these lattices provide a simple way of organising interactions in statistical systems.
+
+305
+00:37:20,490 --> 00:37:31,530
+So we can imagine that we have a bunch of our usual spins that have two possible orientations spin up and spin down, and each spin.
+
+306
+00:37:32,460 --> 00:37:40,950
+That is embedded at some point in a lattice will interact only with the other spins that are closest by.
+
+307
+00:37:41,860 --> 00:37:45,940
+Is by it. So those are.
+
+308
+00:37:48,850 --> 00:37:53,070
+The so-called nearest neighbours. Of the spin.
+
+309
+00:37:56,400 --> 00:38:01,080
+I'll just call that an end for short, rather than writing nearest neighbours each time.
+
+310
+00:38:01,950 --> 00:38:08,940
+And as one example of how these interactions can be represented mathematically.
+
+311
+00:38:09,690 --> 00:38:19,620
+If we go back to the canonical ensemble, we have a fixed number of spins back in unit three, possibly even two.
+
+312
+00:38:19,920 --> 00:38:28,320
+We said that each spin can coupled to an external magnetic field that has strength H and.
+
+313
+00:38:29,470 --> 00:38:38,850
+The energy that this adds is just minus h times the value of the spin plus or minus one, summed over all of those spins.
+
+314
+00:38:38,860 --> 00:38:44,830
+That's the non-interacting spin system. And the interactions that we will say more about tomorrow.
+
+315
+00:38:45,370 --> 00:38:50,620
+Sum over all pairs of nearest neighbour spins sj and s k.
+
+316
+00:38:51,280 --> 00:38:59,770
+This funny summation with this parentheses in the bottom is a shorthand for all pairs of nearest neighbour spins.
+
+317
+00:39:01,090 --> 00:39:09,310
+Um. To sum over, these are two terms adding up to the energy and defining the so-called easing model,
+
+318
+00:39:10,030 --> 00:39:14,230
+which is called the easy model, even though it was invented by a guy named Lenz.
+
+319
+00:39:14,890 --> 00:39:18,190
+Um, the same Lenz as introduced Lenz's law.
+
+320
+00:39:20,180 --> 00:39:29,530
+So just to give an illustration of what sorts of nearest neighbour pairs we have in mind in this summation.
+
+321
+00:39:30,930 --> 00:39:40,910
+Simplest case a one dimensional lattice is just the same as those spins that we had all in a line.
+
+322
+00:39:42,050 --> 00:39:47,450
+So I will represent this as just a bunch of lattice sites.
+
+323
+00:39:48,110 --> 00:39:57,860
+There is a spin associated with each one, and we can connect each site to the sites next to it, all of its nearest neighbours.
+
+324
+00:39:59,330 --> 00:40:08,930
+Tomorrow we will call these connections links, but for now we'll just count nearest neighbours and see that if we look at the spin that we have on.
+
+325
+00:40:10,640 --> 00:40:15,740
+This site. It has two nearest neighbours, one to the left and one to the right.
+
+326
+00:40:17,000 --> 00:40:23,910
+So. Let's call that C the number of nearest neighbour spins that each spin has.
+
+327
+00:40:25,610 --> 00:40:31,100
+So there are two nearest neighbours per site. They spin at each site and the sea.
+
+328
+00:40:32,120 --> 00:40:40,550
+We can refer to more formally or mathematically as the coordination number of this lattice structure.
+
+329
+00:40:41,630 --> 00:40:47,060
+There's not much to it at this point where we just have a one dimensional lattice with spins all in a row.
+
+330
+00:40:47,810 --> 00:40:53,780
+Simple generalisation is to a two dimensional square lattice.
+
+331
+00:40:54,410 --> 00:40:58,820
+So if we look at a three by three lattice of nine spins.
+
+332
+00:40:59,840 --> 00:41:05,900
+At these nine sites connect all of them to their nearest neighbours, both left and right.
+
+333
+00:41:06,620 --> 00:41:14,090
+Also going beyond what we draw as well as their nearest neighbours up and down.
+
+334
+00:41:16,020 --> 00:41:24,900
+And we can, by inspection, read off that any given spin in here has four nearest neighbours,
+
+335
+00:41:25,440 --> 00:41:35,940
+so a coordination number of four which generalises to twice the dimensionality when we consider higher dimensional analogues of.
+
+336
+00:41:36,850 --> 00:41:40,780
+This two dimensional square lattice. Sorry to drop that off the projector.
+
+337
+00:41:41,770 --> 00:41:45,280
+So in three dimensions this is a simple cubic lattice.
+
+338
+00:41:46,090 --> 00:41:49,090
+Each site will have six nearest neighbours.
+
+339
+00:41:50,510 --> 00:41:57,710
+In four dimensions, which is relevant in relativity, where we have space time as a combined concept.
+
+340
+00:41:58,130 --> 00:42:03,560
+We have a hyper cubic lattice with eight nearest neighbours, and so on and so on.
+
+341
+00:42:05,090 --> 00:42:11,030
+One question you may have at this point is what happens when you hit the edge of this lattice?
+
+342
+00:42:11,750 --> 00:42:16,070
+If we put the final spin in a lattice structure,
+
+343
+00:42:16,190 --> 00:42:27,740
+seems like it might buck this trend and not have the same coordination number because it won't have a spin beyond it to be a nearest neighbour of.
+
+344
+00:42:28,980 --> 00:42:32,130
+So one simplification that we can impose.
+
+345
+00:42:34,020 --> 00:42:37,730
+Is to impose what are called periodic boundary conditions.
+
+346
+00:42:39,160 --> 00:42:45,040
+No idea why the projector just brightened up there, but it seems to have settled down.
+
+347
+00:42:47,200 --> 00:42:55,280
+So these periodic boundary conditions. If you haven't encountered them before, the simplest way to think about them is.
+
+348
+00:42:56,270 --> 00:42:59,420
+By playing the old game Pac-Man.
+
+349
+00:43:00,760 --> 00:43:05,770
+Which hopefully is familiar to most, if not all of you.
+
+350
+00:43:06,160 --> 00:43:10,810
+In Pac-Man, you have a character that you direct around a maze,
+
+351
+00:43:11,260 --> 00:43:17,200
+and if you ever get to the right side of your screen and your character goes off the screen to the right side,
+
+352
+00:43:17,380 --> 00:43:23,950
+it immediately appears on the screen on the left side. So the two sides of the screen have been wrapped around like that.
+
+353
+00:43:24,430 --> 00:43:29,650
+The top and bottom are similarly similarly wrapped around, and more mathematically,
+
+354
+00:43:30,490 --> 00:43:41,860
+these periodic boundary conditions are a way to define tauruses to try and higher dimensional generalisations.
+
+355
+00:43:41,860 --> 00:43:55,360
+Hyper try. Which. Um, if you've seen tauruses in a module that gets into topology and manifolds,
+
+356
+00:43:55,990 --> 00:44:06,550
+then you will know that the Taurus is a flat space, a flat surface in the sense that it has no Gaussian curvature.
+
+357
+00:44:09,860 --> 00:44:13,520
+That's a technical terminology. Yeah. Washing curvature.
+
+358
+00:44:14,120 --> 00:44:18,340
+Um. Less technical, more physical terminology.
+
+359
+00:44:18,850 --> 00:44:25,230
+Is that all of the. Sites on the tourists are equally spaced.
+
+360
+00:44:29,220 --> 00:44:36,060
+And there's no. You know, if you go around the Taurus, it looks flat as you go from one spin to the next.
+
+361
+00:44:36,070 --> 00:44:43,570
+There's no sign that you are on any curved space, even though its horse tends to appear curved.
+
+362
+00:44:44,080 --> 00:44:47,110
+When we embedded into our three dimensional space.
+
+363
+00:44:48,530 --> 00:44:51,620
+So that is.
+
+364
+00:44:52,740 --> 00:44:55,860
+The basics of what lattices are.
+
+365
+00:44:56,340 --> 00:45:01,800
+And now there are an enormous number of generalisations that we can consider.
+
+366
+00:45:03,540 --> 00:45:07,170
+That have enormous relevance. Both.
+
+367
+00:45:08,430 --> 00:45:15,780
+Physically. Generalisations. They are enormously important in both physics as well as mathematics.
+
+368
+00:45:16,200 --> 00:45:24,930
+So one example connects to the high temperature superconductivity that came up at the end of Tuesday's lecture.
+
+369
+00:45:26,020 --> 00:45:37,870
+I mentioned that bilayer graphene enters a superconducting phase when it's twisted to a magic angle and cooled to below 1.7 Kelvin.
+
+370
+00:45:39,270 --> 00:45:47,550
+If and you know that superconducting phase transmits electricity with no energy lost to heat.
+
+371
+00:45:48,510 --> 00:45:54,130
+It's. If we were able to have superconducting materials at room temperature,
+
+372
+00:45:54,730 --> 00:46:03,550
+all of the electronics and electrical devices that we use would instantaneously become vastly more energy efficient.
+
+373
+00:46:04,420 --> 00:46:14,410
+And there are huge efforts to look for high temperature superconductivity that rely on engineering fancy lattice structures.
+
+374
+00:46:14,420 --> 00:46:24,160
+So this is one example of a high temperature superconductor, a three dimensional lattice which has one of the highest.
+
+375
+00:46:25,550 --> 00:46:29,590
+Um. Critical temperatures where superconductivity.
+
+376
+00:46:30,720 --> 00:46:42,480
+Up. Here's. Here in the context of superconductivity, a high temperature is 50 Kelvin, so about -220 some degrees centigrade.
+
+377
+00:46:43,380 --> 00:46:52,320
+So not not high temperature by our everyday experience, but very high compared to the 1.7 Kelvin of.
+
+378
+00:46:53,470 --> 00:46:59,410
+Um, twisted by their graphene. This is called a ferro connected superconductor.
+
+379
+00:47:00,070 --> 00:47:07,120
+The ferro comes from the iron atoms that appear in the top and bottom layers.
+
+380
+00:47:07,690 --> 00:47:15,720
+The tide comes from the. Nitrogen and nitrogen family atoms that appear sandwiched in between them.
+
+381
+00:47:17,260 --> 00:47:27,700
+And this that is, you know, one example of the sorts of more complicated lattice structures that many researchers are investigating.
+
+382
+00:47:28,930 --> 00:47:36,850
+So I am running out of time and will go just a couple of minutes over to look here at a few simple
+
+383
+00:47:36,970 --> 00:47:43,420
+two dimensional lattices that have different coordination numbers than the square lattice.
+
+384
+00:47:43,990 --> 00:47:48,550
+So the lattice structure in the middle here known as the honeycomb lattice.
+
+385
+00:47:49,520 --> 00:47:54,890
+We can just count in two dimensions that it has each side.
+
+386
+00:47:55,250 --> 00:47:58,310
+Each spin has three nearest neighbours connected by these links.
+
+387
+00:47:59,000 --> 00:48:04,400
+Coordination number of three that generalises to D plus one in D dimensions.
+
+388
+00:48:05,150 --> 00:48:13,050
+That gives a so-called hyper diamond lattice. The triangular lattice on the right has six.
+
+389
+00:48:14,130 --> 00:48:18,900
+Nearest neighbours per site. Generalising to twice D plus one.
+
+390
+00:48:19,200 --> 00:48:22,290
+In higher dimensional AD star lattices.
+
+391
+00:48:23,430 --> 00:48:29,160
+And there's also this interesting so-called Kagami lattice on the bottom right here.
+
+392
+00:48:31,420 --> 00:48:40,990
+Which I don't think generalises above two dimensions, but in two dimensions it has the same coordination number of four as the simple square lattice,
+
+393
+00:48:41,560 --> 00:48:49,480
+while obviously being much less simple, much more elaborate lattice structure in there.
+
+394
+00:48:49,480 --> 00:48:58,630
+So the coordination number is not the be all and end all of these lattices, but one important piece of information characterising them.
+
+395
+00:48:59,110 --> 00:49:04,410
+So despite having four. It is not the same as the square lattice.
+
+396
+00:49:06,430 --> 00:49:12,770
+So. One conceptual question that you can start thinking about already later today is.
+
+397
+00:49:14,700 --> 00:49:18,840
+What are the ground states for the easing model?
+
+398
+00:49:20,220 --> 00:49:28,900
+For all of these. Lattice structure. Um, these various different lattices that can define our nearest neighbour pairs.
+
+399
+00:49:29,650 --> 00:49:41,740
+And in particular, what happens if we change between a positive interaction strength J and a negative interaction strength that appeared in.
+
+400
+00:49:43,750 --> 00:49:52,860
+The. Definitions that we have here. So as this j changes sign what happens to the ground states.
+
+401
+00:49:53,840 --> 00:50:01,040
+And a subsequent and more interesting or more challenging task is to think about this
+
+402
+00:50:01,040 --> 00:50:06,800
+fully connected lattice or a complete graph where every particle is a nearest neighbour,
+
+403
+00:50:07,100 --> 00:50:11,390
+or every spin is a nearest neighbour of every other.
+
+404
+00:50:13,160 --> 00:50:17,270
+Uh, spin. So on this fully connected lattice.
+
+405
+00:50:18,350 --> 00:50:24,920
+One relatively simple question is how many nearest neighbour pairs?
+
+406
+00:50:26,250 --> 00:50:31,280
+Are there as a function of n. Um.
+
+407
+00:50:33,190 --> 00:50:39,060
+So as. There are more and more spins in this lattice.
+
+408
+00:50:39,090 --> 00:50:45,210
+We can see that the number of nearest neighbour pairs grows in some predictable way.
+
+409
+00:50:45,240 --> 00:50:50,930
+That's the numbers here. And finally something.
+
+410
+00:50:52,250 --> 00:50:56,600
+Um. A more challenging task is.
+
+411
+00:50:59,240 --> 00:51:05,050
+To actually solve the using model. Um, on this fully connected lattice.
+
+412
+00:51:07,470 --> 00:51:16,980
+There are some hints in the tutorial activity about how to approach this, and by solving the using model in this case.
+
+413
+00:51:20,820 --> 00:51:28,290
+What I mean is getting a closed form expression for its partition function.
+
+414
+00:51:34,660 --> 00:51:39,610
+Which is something that we were able to do for non-interacting systems,
+
+415
+00:51:40,420 --> 00:51:47,579
+but something that we will see is often impossible once there are interactions, like in the case of the using models.
+
+416
+00:51:47,580 --> 00:51:53,740
+So this is a very special system that actually worked on.
+
+417
+00:51:55,280 --> 00:52:04,130
+Generalisations of the easing model called spin classes, where j is taken to vary from spin to spin rather than being a constant.
+
+418
+00:52:04,640 --> 00:52:11,300
+Um. Those were rewarded with a portion of the Nobel Prize just a few years ago in 2021.
+
+419
+00:52:11,900 --> 00:52:14,180
+So I'll shut things down now since I'm well over time.
+
+420
+00:52:14,180 --> 00:52:23,090
+Sorry for running over and hopefully this gives you something to look forward to tomorrow morning and also to play with in the meantime.
+
+421
+00:52:23,930 --> 00:52:26,960
+Any final questions before we shut down?
+
+422
+00:52:27,630 --> 00:52:31,970
+No, I didn't think so. Going too far over. Sorry about that.
+
