@@ -1,0 +1,2912 @@
+1
+00:00:02,830 --> 00:00:05,559
+So just barely getting set up here on time.
+
+2
+00:00:05,560 --> 00:00:16,360
+I haven't given you much time to consider this question today, but we will get to this in due course first.
+
+3
+00:00:16,720 --> 00:00:20,710
+So the attendance code for you to plug in.
+
+4
+00:00:21,960 --> 00:00:29,510
+And. Just check if you have any questions about anything we've been doing recently.
+
+5
+00:00:30,140 --> 00:00:34,760
+Um, on Tuesday we wrapped up.
+
+6
+00:00:37,580 --> 00:00:43,729
+All of the topics related to quantum gases that we will be doing in lectures,
+
+7
+00:00:43,730 --> 00:00:50,000
+unless things go faster than I anticipate with the interacting systems that we're now focusing on next week.
+
+8
+00:00:53,030 --> 00:00:54,799
+There any way I can get that a lot better?
+
+9
+00:00:54,800 --> 00:01:04,520
+So we're skipping a couple of sections in the lecture notes, though you're welcome to read those on your own and ask me about them if you.
+
+10
+00:01:05,500 --> 00:01:14,250
+Have the time and inclination. And instead we are focusing on, uh, interacting systems.
+
+11
+00:01:14,430 --> 00:01:19,480
+So we briefly met. Um.
+
+12
+00:01:19,960 --> 00:01:25,540
+So back on Tuesday did a very rough motivation for.
+
+13
+00:01:27,350 --> 00:01:43,300
+Interactions motivated by. The phenomena of phase transitions, which in general require some interactions in order to be described mathematically.
+
+14
+00:01:44,140 --> 00:01:50,110
+We basically just talked through a few examples of phase transitions ranging from everyday life.
+
+15
+00:01:51,690 --> 00:01:57,750
+Water freezing into ice or melting into, sorry, evaporating into steam.
+
+16
+00:01:59,140 --> 00:02:09,020
+As well as more extreme. Or exotic phase transitions, like the transition from a quark gluon plasma to nuclei in the early universe.
+
+17
+00:02:10,600 --> 00:02:17,800
+Or the transition of electrons in bilayer graphene from an insulating state to a superconducting state.
+
+18
+00:02:18,580 --> 00:02:23,320
+Which is a major topic in condensed matter research here and now.
+
+19
+00:02:23,800 --> 00:02:30,430
+So. Not seeing any questions about those topics or other topics.
+
+20
+00:02:31,030 --> 00:02:40,750
+We will make things a bit more formal with interactive systems and start by considering more precisely or more mathematically.
+
+21
+00:02:41,820 --> 00:02:46,200
+What we mean by interacting beyond just the.
+
+22
+00:02:48,560 --> 00:02:51,980
+Loose everyday meaning of that term in the English language.
+
+23
+00:02:52,850 --> 00:03:01,700
+So we want to distinguish between systems that are interacting or not interacting, which.
+
+24
+00:03:03,630 --> 00:03:11,310
+Is not always obvious. If we think back to the tutorial activity on the device solid,
+
+25
+00:03:11,940 --> 00:03:20,999
+we introduce the device model of solids by thinking about atoms in the solid all interacting with their neighbours through their oscillators.
+
+26
+00:03:21,000 --> 00:03:29,070
+But we were able to, um, recast that into a gas of non-interacting quasi particles known as phonons.
+
+27
+00:03:31,040 --> 00:03:40,070
+So it is worth considering more precisely what distinguishes interacting versus not interacting party US systems.
+
+28
+00:03:40,520 --> 00:03:48,680
+So if we think back to the systems that we have seen before, in particular our usual simple spin system.
+
+29
+00:03:51,170 --> 00:03:56,150
+Um, that we introduced as a non-interacting system.
+
+30
+00:03:57,940 --> 00:04:07,120
+Let's look a bit at the properties of that and see what aspects of it we can use to distinguish against.
+
+31
+00:04:08,170 --> 00:04:12,790
+Um, actual interacting systems. So the microstates.
+
+32
+00:04:13,830 --> 00:04:20,220
+In. That non-interacting spin system were defined by the collection of.
+
+33
+00:04:21,560 --> 00:04:32,490
+Spin values. So. We got to the point of labelling those as sub n for n, ranging from one up to a capital N, the total number of spins.
+
+34
+00:04:33,090 --> 00:04:40,620
+And I should say, or should have said in the recap that we are back into the canonical setting in general,
+
+35
+00:04:41,370 --> 00:04:44,790
+where we will have a fixed number of degrees of freedom and a fixed temperature.
+
+36
+00:04:45,480 --> 00:04:51,920
+Um. And we will be interested in looking at the canonical partition function and its logarithm.
+
+37
+00:04:51,920 --> 00:05:01,670
+That's related to the Helmholtz free energy. So the values for each of these spins were either plus or minus one.
+
+38
+00:05:03,200 --> 00:05:10,550
+And we also introduced an external magnetic field that these spins coupled to that um.
+
+39
+00:05:13,320 --> 00:05:17,210
+Contributed to the energy. Of each microstate.
+
+40
+00:05:17,330 --> 00:05:19,310
+So the overall energy e sub I.
+
+41
+00:05:19,670 --> 00:05:31,490
+For microstate omega sub I defined by the full set of n spins, we were able to write just as a negative h times the sum over all of these spins,
+
+42
+00:05:32,960 --> 00:05:43,700
+or equivalently, recast this as just a sum over the small contribution epsilon sub n to the energy coming from each of these and spins.
+
+43
+00:05:48,680 --> 00:05:55,580
+A more interesting, um, expression that we can consider for the energy of a system of spins.
+
+44
+00:05:57,770 --> 00:06:02,720
+Will include, in addition to this coupling to an external magnetic field.
+
+45
+00:06:05,310 --> 00:06:09,320
+A. And a new term.
+
+46
+00:06:15,730 --> 00:06:21,510
+Which. Will involve two pairs of spins.
+
+47
+00:06:22,990 --> 00:06:31,490
+And. Should have said when recalling these non-interacting spin systems, let's consider them.
+
+48
+00:06:32,840 --> 00:06:36,500
+Fixed in some lattice and distinguishable.
+
+49
+00:06:39,710 --> 00:06:44,060
+So this was one of the cases that we considered many weeks ago.
+
+50
+00:06:44,630 --> 00:06:51,410
+So we are now introducing a contribution to the energy coming from the product of two of these spins.
+
+51
+00:06:51,950 --> 00:07:01,639
+And. Specifically considering only nearest neighbour spins in this solid lattice into
+
+52
+00:07:01,640 --> 00:07:04,820
+which we are embedding these degrees of freedom to make them distinguishable.
+
+53
+00:07:06,110 --> 00:07:09,140
+We will have more to say about this momentarily.
+
+54
+00:07:10,960 --> 00:07:15,970
+We still keep this coupling with the external magnetic field and this funny sum with.
+
+55
+00:07:17,390 --> 00:07:30,080
+Here parentheses JC running underneath it is mathematical shorthand just to refer to all pairs of nearest neighbours spins.
+
+56
+00:07:32,190 --> 00:07:40,140
+And to keep from writing. Nearest neighbour. Too many times I'll just call those and spins for now.
+
+57
+00:07:45,040 --> 00:08:02,350
+So for each of these cases. We want to consider well how we can analyse these energies and well distinguish the interacting from non-interacting case.
+
+58
+00:08:05,260 --> 00:08:20,260
+So. We can recall that in that non-interacting case, Factorisation gave us a very simple expression for the partition function for n particles.
+
+59
+00:08:29,940 --> 00:08:38,850
+So. You can either recognise or look up in your past notes that.
+
+60
+00:08:42,770 --> 00:08:46,810
+The. And particle.
+
+61
+00:08:47,950 --> 00:08:55,209
+Canonical partition function was just and powers of the single particle canonical partition function, which was.
+
+62
+00:08:55,210 --> 00:09:00,970
+This hyperbolic cosine of the inverse temperature beta times h.
+
+63
+00:09:01,210 --> 00:09:12,520
+All of that then raised to the end power. So we were able to get a simple closed form mathematical expression for the partition function.
+
+64
+00:09:12,520 --> 00:09:21,970
+That was our starting point for all subsequent analyses predicting large scale properties like the energy, entropy, heat capacity, and so on.
+
+65
+00:09:23,290 --> 00:09:29,770
+And we will be interested in trying to do something like this in more complicated interacting cases.
+
+66
+00:09:31,600 --> 00:09:37,960
+So we could consider defining interacting versus non-interacting by whether this factorisation is possible.
+
+67
+00:09:39,100 --> 00:09:52,160
+And that is. A consequence of the more formal definition that I'll state now and will check for these two cases that they do distinguish.
+
+68
+00:09:53,550 --> 00:09:56,670
+Between interacting versus non-interacting, as we expect.
+
+69
+00:09:57,630 --> 00:10:00,390
+Try to keep everything on the screen.
+
+70
+00:10:01,890 --> 00:10:10,320
+If instead of trying to go all the way through factorisation to the final partition function, we consider something simpler.
+
+71
+00:10:12,880 --> 00:10:16,710
+We consider how much. The energy changes.
+
+72
+00:10:17,900 --> 00:10:22,400
+Due to altering one degree of freedom, which here.
+
+73
+00:10:24,380 --> 00:10:30,860
+I've labelled the the jth degree of freedom or the jth particle.
+
+74
+00:10:33,450 --> 00:10:43,860
+So doing something to one of the particles will cause some change of energy to the system, and the system is defined to be non-interacting.
+
+75
+00:10:45,780 --> 00:10:54,980
+If and only if this. Change in energy due to altering the nth degree of freedom is independent.
+
+76
+00:10:56,390 --> 00:11:00,050
+Of all of the other degrees of freedom. In other words, it factorises.
+
+77
+00:11:01,410 --> 00:11:09,520
+So. You see that more quickly? It's independent of all particles K that are not equal to j.
+
+78
+00:11:10,300 --> 00:11:13,810
+And. Try zooming out just a bit to get.
+
+79
+00:11:15,740 --> 00:11:20,680
+Better coverage on the screen. So. Let's go back to.
+
+80
+00:11:23,650 --> 00:11:35,740
+These two examples. In a spin system, there's really only one alteration that we can make to the jth particle, which is to negate its value or.
+
+81
+00:11:38,440 --> 00:11:44,530
+In other words, flip it. So spin J, we will flip.
+
+82
+00:11:45,840 --> 00:11:56,540
+To negative, whatever it was. The initial energy that we had in the, um, non-interacting case we looked at earlier there.
+
+83
+00:11:56,780 --> 00:12:03,360
+We want to check is non-interacting under this definition that was minus h times all of the spins.
+
+84
+00:12:03,690 --> 00:12:11,520
+If we pull out this jth spin, all that remains is the sum over k not equal to j.
+
+85
+00:12:12,420 --> 00:12:19,050
+And then upon flipping the spin, all that happens is a negative sign introduced in here.
+
+86
+00:12:20,320 --> 00:12:25,080
+A subsequent sum is not. Affected,
+
+87
+00:12:25,950 --> 00:12:33,149
+and I can read off very easily that the difference between these two energies before and after the change is
+
+88
+00:12:33,150 --> 00:12:44,220
+just twice that external magnetic field strength multiplied by whatever the initial value of that spin SJ was.
+
+89
+00:12:45,450 --> 00:12:49,630
+And this is indeed. Independent.
+
+90
+00:12:51,310 --> 00:13:02,080
+Of all of the other spins SK with k not equal to j, so non-interacting as as claimed.
+
+91
+00:13:03,910 --> 00:13:08,500
+So a very quick and easy check that this definition makes sense so far.
+
+92
+00:13:09,820 --> 00:13:18,580
+If we go to that more interesting definition of the energy that brings in these products,
+
+93
+00:13:19,330 --> 00:13:22,750
+the sum over products of all nearest neighbour pairs of spins.
+
+94
+00:13:25,180 --> 00:13:37,550
+Let's. Call that a second example and see whether our definition makes this interacting rather than non-interacting.
+
+95
+00:13:38,510 --> 00:13:43,160
+So. We do the same.
+
+96
+00:13:45,800 --> 00:13:50,629
+Spin. Flip. With the. SJ Usk.
+
+97
+00:13:50,630 --> 00:13:59,500
+Contribution to the energy. The overall energy again pulling out all of the.
+
+98
+00:14:01,610 --> 00:14:06,320
+SJS that will be flipped. So we are left with.
+
+99
+00:14:07,840 --> 00:14:12,840
+Two types of products. That we can.
+
+100
+00:14:14,380 --> 00:14:24,900
+Pull out here. So there will be either. Terms where this K is a nearest neighbour of the spin j.
+
+101
+00:14:26,630 --> 00:14:31,520
+So if we pull out that cost, it's been j sum over all K's that are in.
+
+102
+00:14:32,620 --> 00:14:45,280
+The nearest neighbour pairs j k. We will also, in addition to this, have a sum over all nearest neighbour pairs MK that do not contain j s, m.
+
+103
+00:14:46,090 --> 00:14:54,190
+It Esk. And then the same coupling to the external magnetic field that we had in the non-interacting case.
+
+104
+00:14:58,330 --> 00:15:07,230
+Which is a bit simpler. Do the same alteration to that youth spin.
+
+105
+00:15:08,760 --> 00:15:12,920
+We now have a plus SJ multiplied by.
+
+106
+00:15:14,690 --> 00:15:23,110
+The sum over all of its nearest neighbours. The sum that does not involve spin J.
+
+107
+00:15:24,260 --> 00:15:33,470
+Is unchanged, and we pick up a negative sign here in the coupling to the external field, as before.
+
+108
+00:15:35,570 --> 00:15:43,760
+So taking the difference of these, the energy before and after the alteration gives us.
+
+109
+00:15:45,050 --> 00:15:50,150
+Two contributions, both of which are proportional to twice.
+
+110
+00:15:51,290 --> 00:15:54,410
+This initial value of the spin j.
+
+111
+00:15:54,740 --> 00:16:01,490
+We again have the factor of H that we had before, but now we also pick up.
+
+112
+00:16:03,600 --> 00:16:09,060
+The sum over all of the nearest neighbours of that spin J.
+
+113
+00:16:10,760 --> 00:16:16,000
+Which. Although they are nearest neighbours of spinach, they are not spinach.
+
+114
+00:16:16,510 --> 00:16:27,070
+So the change in energy delta ij depends on degrees of freedom other than the one that is changed.
+
+115
+00:16:27,970 --> 00:16:30,040
+This is k not equal to j.
+
+116
+00:16:31,150 --> 00:16:44,880
+So our definition confirms our suspicion that we have defined an interacting statistical system through this new definition of the energy,
+
+117
+00:16:44,890 --> 00:16:48,430
+depending on the spin degrees of freedom.
+
+118
+00:16:51,580 --> 00:17:01,300
+Any questions about this formal definition, or just getting back to systems of spins in a lattice that we haven't looked at for a while now?
+
+119
+00:17:15,540 --> 00:17:19,980
+I guess when I say we haven't looked at it for a while now. I was ignoring yesterday's tutorial,
+
+120
+00:17:20,280 --> 00:17:25,530
+which said a lot about the various different letter structures that we can use to define
+
+121
+00:17:25,950 --> 00:17:33,750
+these sorts of interacting systems with products of spins contributing to the energy.
+
+122
+00:17:34,890 --> 00:17:40,970
+And in particular, I've been coy about what exactly these nearest neighbour pairs are.
+
+123
+00:17:40,980 --> 00:17:44,370
+This funny sum over parentheses GK.
+
+124
+00:17:45,900 --> 00:17:51,900
+And all that really connects to the final tutorial activity that you're working on now.
+
+125
+00:17:52,260 --> 00:17:55,350
+What nearest neighbour pairs that we have?
+
+126
+00:17:56,460 --> 00:18:02,910
+Depend on the lattice structure in which we embed these spin degrees of freedom.
+
+127
+00:18:06,200 --> 00:18:06,770
+So.
+
+128
+00:18:08,110 --> 00:18:29,140
+By defining, um, both the energy as a function of sin that at least contains the sum over nearest neighbour pairs sj, sk, and by defining the lattice.
+
+129
+00:18:30,100 --> 00:18:37,270
+We obtain with both of those ingredients, something known as the easing model.
+
+130
+00:18:40,550 --> 00:18:48,740
+Um. Which. Historically was invented by a fellow named Lince, who, a few years after he invented it.
+
+131
+00:18:49,220 --> 00:18:54,379
+He assigned it as a problem to his PhD students and was using to try to solve.
+
+132
+00:18:54,380 --> 00:19:03,050
+In a simple case, using was able to do that, and the model has borne his name for now, exactly 100 years.
+
+133
+00:19:03,590 --> 00:19:11,310
+Um. Even though it was basically given to him as an exercise by his PhD supervisor.
+
+134
+00:19:12,420 --> 00:19:18,780
+The lattices that um, we will consider in the lectures will just be the simple case.
+
+135
+00:19:19,350 --> 00:19:27,730
+So we will look at. Cubic or hyper cubic lattices in some number of dimensions.
+
+136
+00:19:29,640 --> 00:19:35,090
+Okay. So we've talked about that in some detail yesterday afternoon.
+
+137
+00:19:37,010 --> 00:19:49,430
+Um, I will just say that the number of dimensions in practical applications, really 1 or 2 or three dimensional lattices are what will appear.
+
+138
+00:19:50,660 --> 00:19:56,300
+We saw an example of three dimensional lattices for that ferro cation superconductor yesterday.
+
+139
+00:19:56,720 --> 00:19:59,630
+Two dimensional lattices are flat films.
+
+140
+00:20:00,020 --> 00:20:10,489
+Um, like graphene for example, that that's the honeycomb lattice rather than the 2D square lattice that corresponds to the cubic lattice.
+
+141
+00:20:10,490 --> 00:20:16,070
+And then 1D lattice is what we get when we just have particles in a fixed in a row.
+
+142
+00:20:17,720 --> 00:20:24,950
+But I will introduce a bit of shorthand terminology where these lattices will have sites.
+
+143
+00:20:26,650 --> 00:20:39,660
+Where the spins are located. And the nearest neighbour pairs of spins.
+
+144
+00:20:39,660 --> 00:20:43,860
+We can associate with links in this lattice,
+
+145
+00:20:45,180 --> 00:20:52,080
+so we can talk just about links rather than talking about nearest neighbour pairs, which is a bit easier to.
+
+146
+00:20:53,850 --> 00:20:58,139
+I'll say to write down and in some cases to analyse.
+
+147
+00:20:58,140 --> 00:21:07,890
+When we look, for instance, at, say, picture of these lattices, to have a mental image of what we are actually talking about.
+
+148
+00:21:08,760 --> 00:21:12,030
+So this is a three dimensional lattice.
+
+149
+00:21:13,020 --> 00:21:20,570
+Um, you can see sort of. X and y axes going along like so.
+
+150
+00:21:21,050 --> 00:21:28,370
+That is a y, and then the z axis is going sort of into the page indicated by um.
+
+151
+00:21:31,550 --> 00:21:37,170
+Lighter and lighter shading for sites that are further layers back in this, but.
+
+152
+00:21:38,320 --> 00:21:41,980
+Projection of a three dimensional lattice onto a two dimensional sheet of paper.
+
+153
+00:21:43,540 --> 00:21:49,400
+So the links in a three dimensional lattice can go in any one of those three directions.
+
+154
+00:21:49,420 --> 00:21:59,650
+A site will have nearest neighbours, either left or right along that x axis, up or down along that y axis, forward or backward along that z axis.
+
+155
+00:22:00,100 --> 00:22:06,520
+So we can count six um nearest neighbours for each spin.
+
+156
+00:22:07,270 --> 00:22:14,140
+There are also higher dimensional objects that we can define, though we won't be talking about those in this module.
+
+157
+00:22:14,600 --> 00:22:22,750
+Pockets are just the smallest possible loops that we can have in two dimensional planes within this lattice.
+
+158
+00:22:23,110 --> 00:22:30,420
+Again, there are three different planes that we can consider in a three dimensional cubic lattice.
+
+159
+00:22:30,430 --> 00:22:35,260
+And finally we can think about unit cells that are not drawn on here.
+
+160
+00:22:38,220 --> 00:22:49,830
+But it will be useful to keep this picture in mind as we talk about some of the more mathematical aspects of these lattices.
+
+161
+00:22:51,690 --> 00:22:56,850
+Again, connecting to the. Tutorial yesterday.
+
+162
+00:22:57,480 --> 00:23:02,340
+Well, one of the things we were interested in in that tutorial activity is.
+
+163
+00:23:03,430 --> 00:23:07,360
+The coordination number of each of these lattice structures.
+
+164
+00:23:10,980 --> 00:23:21,860
+So that. Is just a fancy terminology for the number of links that each site in a regular lattice has.
+
+165
+00:23:24,020 --> 00:23:36,050
+We introduced that yesterday. We saw that this coordination number C was twice the dimensionality for these simple cubic lattices in.
+
+166
+00:23:37,560 --> 00:23:46,200
+D dimensions. Um, and we also introduced.
+
+167
+00:23:47,680 --> 00:23:54,700
+The periodic boundary conditions that help make all of the all of the sites in these.
+
+168
+00:23:56,470 --> 00:24:05,670
+Lattices. Equivalent to all the other sites, so that every single site has the same number of links, the same number of nearest neighbour pairs.
+
+169
+00:24:06,420 --> 00:24:12,510
+If we get to the edge of this figure, we just wrap around to the other side.
+
+170
+00:24:13,200 --> 00:24:27,550
+So let's say. A top wraps around to the bottom right, wraps around to the left so every site is on an equal footing.
+
+171
+00:24:29,290 --> 00:24:35,049
+Every site has. Well, in a three dimensional D equals three lattice, we just counted the six nearest neighbours.
+
+172
+00:24:35,050 --> 00:24:39,480
+Left. Right, up. Down. Forward, backward. And it's worth.
+
+173
+00:24:39,750 --> 00:24:44,910
+Well, if we want to count the total number of links that correspond to that coordination number.
+
+174
+00:24:45,360 --> 00:24:50,280
+We have to note that each of these links is shared between two sites.
+
+175
+00:24:50,850 --> 00:24:57,509
+So the link that is the right hand nearest neighbour for one site will be the
+
+176
+00:24:57,510 --> 00:25:01,740
+left hand nearest neighbour for the other site on the other side of that link.
+
+177
+00:25:03,180 --> 00:25:06,239
+So the. Total number of links.
+
+178
+00:25:06,240 --> 00:25:18,450
+The total number of nearest neighbour pairs that we have to sum over when analysing the easing model will be half of the overall coordination number.
+
+179
+00:25:23,250 --> 00:25:29,050
+Multiplied by that number of links. So the total number of links.
+
+180
+00:25:29,260 --> 00:25:35,860
+I'll just call that number L for short is coordination number times that number of sites,
+
+181
+00:25:35,860 --> 00:25:40,480
+the number of degrees of freedom that we have in the canonical approach divided by two.
+
+182
+00:25:40,510 --> 00:25:46,390
+For that, double counting just reduces to the dimensionality times n.
+
+183
+00:25:47,430 --> 00:25:53,010
+Or I'm putting dots in between here so that they're not mixed up with a differential DNA factor.
+
+184
+00:25:56,280 --> 00:26:04,639
+So. A question I raised just when we introduced the energy for the easing model.
+
+185
+00:26:04,640 --> 00:26:12,920
+As a sum over all of these nearest neighbour pairs is can we do what we did for the non-interacting spin
+
+186
+00:26:12,920 --> 00:26:20,450
+system and come up with a closed form expression for the canonical partition function for the system?
+
+187
+00:26:22,690 --> 00:26:28,719
+And again, as discussed yesterday, this is what we mean when we talk about solving a statistical system,
+
+188
+00:26:28,720 --> 00:26:36,940
+getting a closed form expression for its partition function, or equivalently, its free energy.
+
+189
+00:26:41,620 --> 00:26:44,770
+The short answer is that this is difficult.
+
+190
+00:26:45,820 --> 00:26:55,530
+Let's write down this partition function. As a function as usual in the canonical ensemble of the temperature, the conserved number of particles,
+
+191
+00:26:55,530 --> 00:27:00,870
+as well as this control parameter h for our external magnetic field.
+
+192
+00:27:03,420 --> 00:27:07,200
+So we have to take the Boltzmann factor.
+
+193
+00:27:07,800 --> 00:27:14,730
+Exponential of minus beta times the energy. And we have to sum over all of the microstates of the system.
+
+194
+00:27:16,140 --> 00:27:21,570
+For spin systems we have seen. That the number of microstates.
+
+195
+00:27:22,200 --> 00:27:27,450
+Exactly corresponds to the number of configurations of spins that we can have.
+
+196
+00:27:27,930 --> 00:27:33,330
+So all of the possible ways that each of the distinguishable spins can be either up or down.
+
+197
+00:27:34,680 --> 00:27:42,600
+So there are a total of a two to the n terms in this overall sum over microstates.
+
+198
+00:27:43,880 --> 00:27:50,720
+That's the same two to the n factor we have seen before. I won't belabour it, but feel free to ask if it's not clear.
+
+199
+00:27:51,560 --> 00:28:02,150
+And then a minus beta times our expression for the energy will give negative signs that cancel out and leave us just with.
+
+200
+00:28:03,070 --> 00:28:08,350
+Those sums over nearest neighbour pairs as well as.
+
+201
+00:28:10,680 --> 00:28:16,050
+The coupling of each individual spin to that external magnetic field.
+
+202
+00:28:17,540 --> 00:28:24,710
+And we've seen that. These nearest neighbour pairs are the number of distinct links d10.
+
+203
+00:28:25,100 --> 00:28:31,220
+So in this sum, within the overall sum over spin configurations, we have.
+
+204
+00:28:32,290 --> 00:28:35,290
+These terms and then an additional.
+
+205
+00:28:36,490 --> 00:28:41,730
+In terms. From the final coupling to the external magnetic field.
+
+206
+00:28:44,480 --> 00:28:47,840
+So can we solve this? The answer is it depends.
+
+207
+00:28:48,320 --> 00:28:55,820
+And one thing it depends upon is the number of dimensions d that we are working on or working in.
+
+208
+00:28:57,440 --> 00:29:05,720
+So in the case of a single dimension, a row of spins, all in a line fixed in place in a lattice.
+
+209
+00:29:06,320 --> 00:29:11,840
+That was the case that, uh, Lenz assigned to.
+
+210
+00:29:13,560 --> 00:29:19,590
+Is student using to solve and using that solution.
+
+211
+00:29:20,880 --> 00:29:26,250
+100 years ago, in 1924, as part of his PhD dissertation.
+
+212
+00:29:27,740 --> 00:29:32,810
+And that's sort of where things stopped for decades.
+
+213
+00:29:33,350 --> 00:29:44,960
+It was not for another 20 years that the next highest dimension was solved, although there were interesting things that were done with it.
+
+214
+00:29:45,350 --> 00:29:50,989
+Um, called Kramers one duality that you probably won't have lecture time to cover,
+
+215
+00:29:50,990 --> 00:29:54,469
+but they are in a bit of discussion about that is in the lecture notes.
+
+216
+00:29:54,470 --> 00:29:58,760
+Again, if you have time to time and inclination to read them.
+
+217
+00:29:59,810 --> 00:30:11,790
+So after 20 years. The special case of a vanishing external magnetic field in two dimensions for this easy model was exactly solved.
+
+218
+00:30:13,130 --> 00:30:17,300
+By. Fellow named Lars Onsager.
+
+219
+00:30:18,870 --> 00:30:22,060
+That was in 1944. He published that.
+
+220
+00:30:22,080 --> 00:30:30,530
+It's really. Um, an amazing calculation that we won't be able to touch in this module.
+
+221
+00:30:30,890 --> 00:30:38,480
+It's just, um, fantastically complicated and impressive that Onsager was able to solve it at all.
+
+222
+00:30:38,510 --> 00:30:45,740
+He later received the Nobel Prize, but for different work in chemistry, rather than for solving the two dimensional easing model.
+
+223
+00:30:47,210 --> 00:30:57,770
+Um, but I will say his solution just sparked a huge wave of applications where this easing model was being used to model
+
+224
+00:30:57,770 --> 00:31:08,120
+everything from neural networks to the sociology of how people choose where to live in cities or choose how to vote.
+
+225
+00:31:08,780 --> 00:31:18,140
+Um, in elections. I have yet to upload a little article about that to the canvas site, but I'll do so, uh, later today or over the weekend.
+
+226
+00:31:18,800 --> 00:31:24,830
+More important, more interesting for us now is what happens if we have a three dimensional lattice.
+
+227
+00:31:25,310 --> 00:31:29,810
+Or mathematically we can consider more than three dimensions, you know,
+
+228
+00:31:29,810 --> 00:31:35,240
+an abstract space rather than, um, the three dimensional space of positions that we have.
+
+229
+00:31:35,840 --> 00:31:39,260
+So we can go up to formally, infinitely many dimensions.
+
+230
+00:31:41,090 --> 00:31:46,790
+If we specify a finite number of dimensions, that is at least three, then.
+
+231
+00:31:47,990 --> 00:31:54,650
+As of now. There is no known exact solution.
+
+232
+00:31:54,670 --> 00:31:59,290
+It is not, in fact, known whether any exact solution.
+
+233
+00:31:59,590 --> 00:32:09,520
+May or may not exist. Um, I think the general feeling is that there is no closed form exact solution in any of these cases,
+
+234
+00:32:09,520 --> 00:32:15,220
+but it's not something that we can disprove or that's something we've been able to disprove yet.
+
+235
+00:32:15,670 --> 00:32:22,420
+It's a question of have we just been insufficiently clever to find these exact solutions for.
+
+236
+00:32:23,780 --> 00:32:26,840
+He's using models in more than two dimensions.
+
+237
+00:32:27,980 --> 00:32:33,290
+If we do have infinite dimensions, we will see that there is an exact solution in that case.
+
+238
+00:32:34,680 --> 00:32:46,509
+Most likely next week and not later today. But there's a vast range of um d for which the solution to the easing model,
+
+239
+00:32:46,510 --> 00:32:54,220
+even in the simplest possible case of a cubic lattice defining its nearest neighbour pairs, is an open question.
+
+240
+00:32:56,400 --> 00:33:10,300
+Um, what is done in this case are. Um, both approximations approximate analysis and numerical computations like what we did for random walks.
+
+241
+00:33:11,080 --> 00:33:20,840
+Um. Way back in our first computer project, we were not able to use the central limit theorem to predict the outcomes of random walks.
+
+242
+00:33:20,840 --> 00:33:27,410
+When the step size was drawn from the koshi Lorenz distribution that violated some assumptions of the central limit theorem.
+
+243
+00:33:27,860 --> 00:33:33,230
+We brought computing to bear and were able to determine that numerically without too much trouble.
+
+244
+00:33:35,260 --> 00:33:38,890
+For the easing model, especially as the number of.
+
+245
+00:33:39,840 --> 00:33:53,460
+Dimensions increases. Sort of computationally evaluating this partition function, computing all of these terms that show up in this sum.
+
+246
+00:33:54,330 --> 00:33:58,410
+I'll call that a brute force numerical evaluation where.
+
+247
+00:34:00,630 --> 00:34:05,140
+We don't do anything. Fancy, but just.
+
+248
+00:34:06,570 --> 00:34:15,630
+Um, sum over all of these exponential factors, um, that are determined by the spin configuration we are summing over.
+
+249
+00:34:16,920 --> 00:34:20,940
+It's not too surprising that this is impractical.
+
+250
+00:34:22,120 --> 00:34:27,530
+Let's. Quantify just just how impractical this is.
+
+251
+00:34:28,190 --> 00:34:32,060
+If we look at some tiny lattice system with.
+
+252
+00:34:33,460 --> 00:34:39,190
+A two dimensional square lattice and say ten sites in each.
+
+253
+00:34:40,630 --> 00:34:52,150
+Direction. So a ten by ten lattice gives us 100 overall spins and the number of terms that we would have to numerically evaluate in this partition
+
+254
+00:34:52,150 --> 00:35:05,710
+function is then two to the power 100 times 300 terms in the exponential for each of the 2 to 1 power 100 spin configurations.
+
+255
+00:35:08,080 --> 00:35:13,550
+Uh, two to the power 100 is actually very close to a power of ten.
+
+256
+00:35:13,570 --> 00:35:22,630
+That's about ten to the power 30. So overall, we have ten to the power 32 terms for our computer to evaluate.
+
+257
+00:35:24,250 --> 00:35:27,190
+When we have just 100 spins a ten by ten lattice,
+
+258
+00:35:27,640 --> 00:35:36,010
+compared to sort of Avogadro's number sizes of systems that are relevant macroscopically, if we imagine that.
+
+259
+00:35:37,230 --> 00:35:43,890
+We have a computer that can evaluate a billion of these terms every second.
+
+260
+00:35:45,550 --> 00:35:50,930
+Which is not unreasonable. Then it will take that computer.
+
+261
+00:35:50,950 --> 00:35:54,490
+So a billion is ten to the ninth. Divide that out of ten to the 32.
+
+262
+00:35:55,750 --> 00:36:03,780
+We need ten to the 23. Seconds to complete this evaluation for a tiny ten by ten system.
+
+263
+00:36:04,950 --> 00:36:08,540
+If we convert units to years, that is.
+
+264
+00:36:09,600 --> 00:36:13,889
+Ten to the power 15 years. So 1,000,000 billion years.
+
+265
+00:36:13,890 --> 00:36:20,400
+Or put it another way, 500,000 times the age of the universe.
+
+266
+00:36:24,950 --> 00:36:29,450
+For a system that we could pretty easily just draw by hand on a sheet of paper.
+
+267
+00:36:29,990 --> 00:36:35,630
+So that's what I mean by in practical numerical approach.
+
+268
+00:36:36,800 --> 00:36:43,760
+Um, and we can see as well that this, uh, computational cost,
+
+269
+00:36:43,760 --> 00:36:49,610
+the amount of time it would take to evaluate the partition function in this way will
+
+270
+00:36:49,610 --> 00:36:56,270
+increase exponentially quickly as a power of two to the end as that n increases.
+
+271
+00:36:57,590 --> 00:37:02,090
+So the plan for the remainder of today and running into next week.
+
+272
+00:37:03,390 --> 00:37:12,000
+How we will, um. Tackle these interacting systems will have three parts.
+
+273
+00:37:13,320 --> 00:37:20,190
+And. The first part is not going to be a surprise.
+
+274
+00:37:20,210 --> 00:37:25,790
+It is essentially our knee jerk reaction whenever we are confronted with a new statistical system.
+
+275
+00:37:27,620 --> 00:37:36,440
+To analyse. We try to look for extreme limits where that system becomes simpler and we can analyse it.
+
+276
+00:37:38,120 --> 00:37:42,470
+And solve it without so much difficulty. And in this case.
+
+277
+00:37:44,520 --> 00:37:49,829
+Um, this will just be the limits of high and low temperature, which we've seen before,
+
+278
+00:37:49,830 --> 00:37:55,020
+most recently on that, uh, second homework assignment that you wrapped up just last week.
+
+279
+00:37:56,490 --> 00:37:59,639
+That will tell us some of the extreme behaviour of the system.
+
+280
+00:37:59,640 --> 00:38:05,730
+It will leave as an open question what's happening for generic temperatures in between those limits?
+
+281
+00:38:07,200 --> 00:38:12,780
+In that case, we can develop and bring to bear an approximation.
+
+282
+00:38:13,680 --> 00:38:24,840
+Which. Philosophically, we'll resemble, um, what we did with the Dubai bottle of solids in the tutorial.
+
+283
+00:38:25,260 --> 00:38:33,260
+We will try to find a non-interacting system that we can factorise and solve that, uh,
+
+284
+00:38:33,360 --> 00:38:44,400
+gives us at least some qualitatively accurate description of the corresponding interacting system, and we will evaluate how well that works.
+
+285
+00:38:45,420 --> 00:38:51,450
+And then the final step getting into the unit ten on broader applications.
+
+286
+00:38:52,260 --> 00:39:02,159
+You will look at the sort of thing I do, how to make numerical analyses more intelligent and more practical,
+
+287
+00:39:02,160 --> 00:39:10,590
+so that they don't take 500 times the age of the universe to give us an answer for a tiny ten by ten lattice system.
+
+288
+00:39:12,780 --> 00:39:18,850
+So. That is. The the upcoming plan.
+
+289
+00:39:18,880 --> 00:39:31,450
+Are there questions about the groundwork? We've lain with the using model partition function, how difficult it is, and how we plan to address that.
+
+290
+00:39:38,490 --> 00:39:42,120
+In that case, we have a few minutes still before a break.
+
+291
+00:39:42,540 --> 00:39:47,610
+So let's charge ahead and start putting this plan into practice.
+
+292
+00:39:48,420 --> 00:39:59,400
+And for simplicity, let's also simplify these high and low temperature limits by turning off that external magnetic field.
+
+293
+00:40:00,480 --> 00:40:11,320
+So this just involves. Setting h to zero in the expression for the energy in the partition function, which then.
+
+294
+00:40:12,990 --> 00:40:17,190
+Take a simple form. I didn't leave myself enough room for a negative sign there.
+
+295
+00:40:17,190 --> 00:40:23,970
+The energy is now only the sum over all of these nearest neighbour pairs.
+
+296
+00:40:24,840 --> 00:40:36,240
+The sum over the stick links in the lattice and the partition function now depends only on the inverse temperature and the number of particles.
+
+297
+00:40:38,310 --> 00:40:46,080
+As always, it sums over. All to the n spin configurations, and we just have the exponential factor.
+
+298
+00:40:47,070 --> 00:40:51,330
+Inverse temperature times sum over nearest neighbour pairs.
+
+299
+00:40:52,730 --> 00:41:00,440
+S j s k. So keep that.
+
+300
+00:41:03,280 --> 00:41:08,990
+On a separate sheet and. Where's the edge of?
+
+301
+00:41:11,180 --> 00:41:20,750
+The page there. So starting first with the asymptotic limit of very high temperatures.
+
+302
+00:41:22,360 --> 00:41:26,620
+That is the limit where the inverse temperature beta goes to zero.
+
+303
+00:41:28,970 --> 00:41:39,260
+We have some finite number of spins and that translates to d times n nearest neighbour pairs in d dimensions.
+
+304
+00:41:40,130 --> 00:41:45,530
+Each of those pairs in the argument of this exponential will just be contributing plus or minus one,
+
+305
+00:41:46,010 --> 00:41:58,130
+depending on whether sj and sk have the same sign plus one minus one, or if they have different signs so that Holcim stays finite.
+
+306
+00:41:58,790 --> 00:42:02,810
+Beta goes to zero. So the partition function itself.
+
+307
+00:42:03,820 --> 00:42:10,060
+Just goes to a sum over spin configurations of the exponential of zero.
+
+308
+00:42:10,750 --> 00:42:17,080
+Known to his friends as one that just counts the number of terms in that sum, which we've said is two to the end.
+
+309
+00:42:18,760 --> 00:42:21,040
+So what's going on in this high temperature limit?
+
+310
+00:42:21,460 --> 00:42:35,860
+Is that all of these energies defined by the links are effectively irrelevant compared to the energy scale set by at high temperature.
+
+311
+00:42:37,540 --> 00:42:46,990
+In other words, we have effectively gotten back to the micro canonical ensemble rather than the canonical ensemble.
+
+312
+00:42:47,410 --> 00:42:55,870
+We can treat all of these two to the power and micro states as having exactly the same conserved energy.
+
+313
+00:42:57,010 --> 00:43:01,310
+So. Going all the way back to the micro canonical ensemble.
+
+314
+00:43:02,630 --> 00:43:10,550
+We can recall that the probability for adopting each of these different micro states, each of these different spin configurations,
+
+315
+00:43:11,420 --> 00:43:21,980
+is just constant and equal to one over the total number of microstates, so that the sum of the probability adds up to 100%.
+
+316
+00:43:26,240 --> 00:43:30,320
+One summed over all of those Omega I which just are.
+
+317
+00:43:31,660 --> 00:43:35,410
+All two of the impossible spin configurations that we have.
+
+318
+00:43:39,650 --> 00:43:45,110
+So. One simple way that we can characterise.
+
+319
+00:43:46,150 --> 00:43:51,639
+The well. Going back to the micro canonical ensemble.
+
+320
+00:43:51,640 --> 00:43:57,520
+Stepping back for a moment, we can remember that with all of these probabilities equal,
+
+321
+00:43:58,150 --> 00:44:05,980
+the likely state of the system that dominates its large scale behaviour is determined by the multiplicity.
+
+322
+00:44:06,430 --> 00:44:10,170
+For microstates with various properties.
+
+323
+00:44:10,180 --> 00:44:13,780
+This is what we looked at in one of our first tutorial activities.
+
+324
+00:44:14,950 --> 00:44:23,410
+There is one property that we will introduce in the next few minutes that will be very interesting to consider.
+
+325
+00:44:24,400 --> 00:44:28,980
+So one way to characterise. These systems.
+
+326
+00:44:30,860 --> 00:44:36,030
+His by defining. The so-called magnetisation.
+
+327
+00:44:36,450 --> 00:44:41,460
+This, uh, sort of historical terminology that goes back to.
+
+328
+00:44:43,780 --> 00:44:51,670
+That initial work by Lentz and using, where they introduced this model as a way to describe ferro magnets.
+
+329
+00:44:52,600 --> 00:45:03,340
+So the magnetisation that I'll call a lowercase m is the difference between all of the other spins with value plus one.
+
+330
+00:45:04,030 --> 00:45:08,200
+Subtracting the number of spins with value minus one.
+
+331
+00:45:08,380 --> 00:45:19,570
+This is another form of notation that we used a while ago, though not recently, so shout out if it causes any confusion.
+
+332
+00:45:20,200 --> 00:45:24,490
+Then we divide this by the total number of spins, which.
+
+333
+00:45:26,690 --> 00:45:32,260
+Is the sum of all of those that are plus one, plus all of those that are minus one.
+
+334
+00:45:32,270 --> 00:45:43,850
+So the two extremes that we can have are the case where every single one of these and spins is pointing up and pluses n and minus is zero.
+
+335
+00:45:44,360 --> 00:45:46,640
+And we have a magnetisation of one.
+
+336
+00:45:48,510 --> 00:45:57,570
+The other extreme is where every single spin is pointing down and pluses and minuses, and the magnetisation is minus one.
+
+337
+00:45:58,020 --> 00:46:04,470
+So we have. A simple number characterising um.
+
+338
+00:46:05,930 --> 00:46:15,950
+How plus one and minus one spins are showing up in our system without having to worry about where they are,
+
+339
+00:46:15,950 --> 00:46:19,490
+just counting the total number of how many there are.
+
+340
+00:46:21,840 --> 00:46:29,850
+It will also be. Simpler to actually take the absolute value of this magnetisation.
+
+341
+00:46:30,780 --> 00:46:37,560
+And that is because we have set the external magnetic field to zero for simplicity.
+
+342
+00:46:38,370 --> 00:46:43,440
+Um, there is actually no way of distinguishing between.
+
+343
+00:46:44,640 --> 00:46:47,840
+Systems if we flip the value of every spin.
+
+344
+00:46:47,850 --> 00:46:57,870
+So this is a symmetry like the symmetry that we talked about a long time ago for the six sides of a fair die.
+
+345
+00:47:00,010 --> 00:47:04,750
+We here have a two fold symmetry. If we flip.
+
+346
+00:47:06,350 --> 00:47:11,220
+Every single spin. From plus 1 to -1.
+
+347
+00:47:12,350 --> 00:47:21,710
+And from minus one to plus one. All of the nearest neighbour pairs in the energy and in the partition function.
+
+348
+00:47:22,670 --> 00:47:28,340
+If SJ and sk were the same, both plus one for example, they stay the same when they're both flipped.
+
+349
+00:47:28,790 --> 00:47:35,300
+They're not both minus one. If they were difference one plus, one minus, and when they are both flipped, they stay different.
+
+350
+00:47:35,420 --> 00:47:39,320
+One minus one plus. So that symmetry.
+
+351
+00:47:40,070 --> 00:47:43,950
+Um. Basically means that.
+
+352
+00:47:46,620 --> 00:47:53,820
+We can't distinguish. Between the two microstates, obtained by flipping all the spins in this way.
+
+353
+00:47:55,660 --> 00:48:03,400
+So it makes more sense to consider the absolute value of the magnetisation, which is adding up non-negative terms.
+
+354
+00:48:04,090 --> 00:48:11,830
+It still has the same maximum upper limit of one, but now it is non-negative and cut off at zero.
+
+355
+00:48:13,570 --> 00:48:24,850
+So. I'm looking at the time and deciding whether to take the break now,
+
+356
+00:48:26,020 --> 00:48:30,640
+or charge ahead and actually compute the magnetisation in this high temperature limit.
+
+357
+00:48:31,270 --> 00:48:38,590
+And I think that computation will be a nice place to resume at noon in just about ten minutes.
+
+358
+00:48:39,880 --> 00:48:49,480
+Um, as always, ask for questions before taking this break to check that everything is making sense and proceeding well.
+
+359
+00:48:50,650 --> 00:48:53,290
+And will you consider whether you have any questions?
+
+360
+00:48:54,070 --> 00:49:04,930
+I have been asked to encourage you to fill out the the module survey, which is useful information for me to have when we come to.
+
+361
+00:49:06,010 --> 00:49:15,910
+It comes time to run this module again in future years. So no past surveys have had an influence on how the module is run.
+
+362
+00:49:16,600 --> 00:49:25,360
+So they are the reason we have those separate computer labs, rather than just trying to do all the programming work in tutorials.
+
+363
+00:49:25,810 --> 00:49:30,340
+Uh, the reason why we're using the dot cam rather than writing on the board.
+
+364
+00:49:31,900 --> 00:49:36,970
+Um, so any input that you have will be appreciated.
+
+365
+00:49:38,740 --> 00:49:40,988
+Let me pause the recording. You can just keep this on the screen.
+
+366
+00:49:45,904 --> 00:49:51,854
+One thing I forgot to say when talking about this survey is that I don't see the the
+
+367
+00:49:52,504 --> 00:49:57,153
+results of submissions for this survey until after all the marks are in and finalised,
+
+368
+00:49:57,154 --> 00:50:01,954
+so you don't need to worry about me taking retribution.
+
+369
+00:50:02,164 --> 00:50:08,764
+Not that I would, but, uh, you can feel free to be frank in your input.
+
+370
+00:50:09,154 --> 00:50:13,954
+So any questions come to mind during that break?
+
+371
+00:50:16,154 --> 00:50:17,464
+Not seeing any.
+
+372
+00:50:18,154 --> 00:50:28,084
+Let's charge ahead and think about computing this new observable, the magnetisation for the high temperature limit of the easing model.
+
+373
+00:50:28,684 --> 00:50:39,724
+And as always uh, defined here, the magnetisation for a particular spin configuration with some particular set of uh plus one and minus one spins.
+
+374
+00:50:40,984 --> 00:50:44,914
+But we will, as always in statistical physics,
+
+375
+00:50:44,914 --> 00:50:57,904
+be more concerned about the expectation value that sums and want to keep the absolute value within that, uh, expectation value.
+
+376
+00:50:58,474 --> 00:51:07,444
+So summing the absolute value of the magnetisation over all of the microstates weighted by the corresponding microstate probability.
+
+377
+00:51:09,604 --> 00:51:19,474
+If we look at the high temperature limit of this, we've seen that all of the microstate probabilities become equal.
+
+378
+00:51:21,514 --> 00:51:27,124
+So to find this limit of this expectation value.
+
+379
+00:51:28,374 --> 00:51:31,794
+We just need to count how many.
+
+380
+00:51:33,374 --> 00:51:42,374
+Equally probable microstates. We have four different values of this absolute value of the magnetisation.
+
+381
+00:51:44,864 --> 00:51:49,364
+And this is in fact something we've done for the non-interacting case.
+
+382
+00:51:52,974 --> 00:52:02,514
+Way back in that tutorial exercise where we looked at units of energy going back and forth between two systems in thermal contact,
+
+383
+00:52:02,964 --> 00:52:12,774
+and found that an equal distribution of units of energy between those two systems was um factorial e, more likely than any other.
+
+384
+00:52:14,084 --> 00:52:19,604
+Set of microstates the same thing, and even the same mathematics happens here.
+
+385
+00:52:20,144 --> 00:52:32,084
+The number of microstates with a given value of n plus spins with value plus one out of the total n is just the binomial factor in factorial.
+
+386
+00:52:32,994 --> 00:52:41,544
+Over and plus factorial times and minus and plus factorial, which is and minus factorial.
+
+387
+00:52:43,144 --> 00:52:47,224
+And itself is the sum of n plus and minus.
+
+388
+00:52:50,754 --> 00:52:55,553
+And we can recognise this is the same as the binomial coefficient.
+
+389
+00:52:55,554 --> 00:53:02,904
+If we were to specify the spin configuration by considering how many of the spins had value minus one rather than plus one,
+
+390
+00:53:02,904 --> 00:53:09,204
+so that all is self-consistent. And when we have a large value of n.
+
+391
+00:53:10,764 --> 00:53:15,864
+Like Avogadro's number ten to the power 23. These factorials.
+
+392
+00:53:17,054 --> 00:53:20,814
+We've seen this by explicit computation in that tutorial.
+
+393
+00:53:21,714 --> 00:53:30,204
+Give an extremely sharp peak at an even distribution of plus one and minus one spins.
+
+394
+00:53:31,794 --> 00:53:35,344
+In other words, n plus is equal to n minus.
+
+395
+00:53:35,364 --> 00:53:38,874
+Both of them are one half of the total number of spins.
+
+396
+00:53:40,294 --> 00:53:46,804
+And when n plus is equal to n minus, the magnetisation is just zero.
+
+397
+00:53:49,754 --> 00:53:57,434
+Again for those specific spin configurations, um, with such a distribution and.
+
+398
+00:53:59,124 --> 00:54:09,174
+We formally consider. The so-called thermodynamic limit that I believe has been mentioned, at least in passing before.
+
+399
+00:54:09,684 --> 00:54:14,334
+This is the limit where the number of degrees of freedom is taken to infinity.
+
+400
+00:54:16,074 --> 00:54:27,924
+Then. This speaker becomes sharper and sharper as and increases and not only the individual configurations that we um.
+
+401
+00:54:29,524 --> 00:54:35,074
+Can consider on their own, but also the expectation value as a whole.
+
+402
+00:54:35,704 --> 00:54:40,984
+Steadily approaches zero even though it can never quite reach there,
+
+403
+00:54:41,104 --> 00:54:48,274
+never quite reached zero due to the absolute value sign there that includes some non-negative contributions.
+
+404
+00:54:48,994 --> 00:54:58,324
+It gets smaller and smaller as and increases, and if the limit that it tends to in that thermodynamic limit is a vanishing magnetisation.
+
+405
+00:54:59,984 --> 00:55:05,574
+And this is. A way to characterise the system and.
+
+406
+00:55:07,324 --> 00:55:16,294
+The characterisation that we will assign to a vanishing magnetisation is that of.
+
+407
+00:55:17,874 --> 00:55:22,934
+A disordered. System or a disordered phase where.
+
+408
+00:55:24,054 --> 00:55:29,274
+We have equal numbers of spins with value plus one and minus one.
+
+409
+00:55:29,694 --> 00:55:34,164
+We don't care where they are distributed in our lattice and.
+
+410
+00:55:35,424 --> 00:55:41,444
+Um. In order to get all of these factorial many microstates, we have to, um,
+
+411
+00:55:42,224 --> 00:55:48,194
+account for all of the different possible distributions of all of these different spins.
+
+412
+00:55:48,524 --> 00:55:55,214
+So there's really in general a, uh, well, disordered.
+
+413
+00:55:56,334 --> 00:56:00,564
+Pattern of upward and downward pointing spins with well, no pattern.
+
+414
+00:56:01,194 --> 00:56:11,934
+No rhyme or reason to to where they appear. So that is the maximisation in the high temperature phase.
+
+415
+00:56:14,234 --> 00:56:17,713
+And what happens? I'm starting to talk about phases already, though.
+
+416
+00:56:17,714 --> 00:56:22,664
+I'm getting ahead of myself. Um, that's the magnetisation at high temperatures.
+
+417
+00:56:22,874 --> 00:56:28,574
+We will establish that this is a distinct phase compared to what happens at low temperatures.
+
+418
+00:56:29,144 --> 00:56:33,164
+To do that, it will help to talk about low temperatures now.
+
+419
+00:56:34,124 --> 00:56:41,594
+So again, looking at the simplified limit now of beta going to infinity as t goes to zero.
+
+420
+00:56:44,384 --> 00:56:54,734
+This is. Another case that we have looked at in the past, and we have seen that in the non-interacting case.
+
+421
+00:56:55,094 --> 00:57:00,253
+Observables are dominated by their minimum energy ground states.
+
+422
+00:57:00,254 --> 00:57:05,904
+So the microstates with the lowest possible energy. And all of the.
+
+423
+00:57:07,954 --> 00:57:12,214
+Effects coming from higher energy excited states.
+
+424
+00:57:13,324 --> 00:57:17,944
+Are suppressed exponentially due to the role of.
+
+425
+00:57:18,774 --> 00:57:21,594
+The temperature and the energy in the Boltzmann factor.
+
+426
+00:57:28,384 --> 00:57:37,684
+Specifically, the probability for the system to occupy any of those higher energy states is proportional to.
+
+427
+00:57:39,334 --> 00:57:44,134
+The exponential of minus beta times, the energy beta is going to infinity.
+
+428
+00:57:44,434 --> 00:57:51,154
+So if the energy is above the ground state value, there is that large exponential suppression.
+
+429
+00:57:54,634 --> 00:58:01,024
+So what are the ground states? What is the ground state for the using model?
+
+430
+00:58:01,024 --> 00:58:07,144
+If we have our simplification of no external magnetic field, then.
+
+431
+00:58:08,494 --> 00:58:13,234
+There are. Two microstates that.
+
+432
+00:58:14,504 --> 00:58:22,514
+Are degenerate with the minimum energy. Um.
+
+433
+00:58:25,474 --> 00:58:31,414
+Can any of you shout out what those degenerate ground states are in terms of these?
+
+434
+00:58:31,414 --> 00:58:35,434
+And plus and minus the number of plus one and minus one spins?
+
+435
+00:59:03,044 --> 00:59:12,944
+Or to think about these ground states. We just need to go back to our expression for the energy and the limit of vanishing magnetic field.
+
+436
+00:59:13,994 --> 00:59:19,274
+We get a negative contribution. So we want to minimise the energy, make it as negative as possible.
+
+437
+00:59:19,784 --> 00:59:28,574
+We get a negative contribution whenever spin j and spin k along a link that nearest neighbour pair have the same value.
+
+438
+00:59:29,534 --> 00:59:36,824
+So the lowest possible energy we can get is when every term in this sum contributes that overall minus one,
+
+439
+00:59:37,364 --> 00:59:42,614
+rather than the plus one that we would get if SJ and K were different.
+
+440
+00:59:44,624 --> 00:59:47,894
+So the minimum energy that is.
+
+441
+00:59:50,214 --> 00:59:58,074
+Negative the number of links minus d times n for a d dimensional cubic lattice occurs when either all of the.
+
+442
+00:59:59,294 --> 01:00:06,284
+Spins or have value plus one or all of the spins have value minus one, which.
+
+443
+01:00:08,064 --> 01:00:17,394
+Gives us the maximum value for the absolute value of the Magnetisation and is just going to be one.
+
+444
+01:00:20,464 --> 01:00:23,464
+And the the ground state energy that we have.
+
+445
+01:00:24,784 --> 01:00:32,134
+I've already said that. We pick up a minus one for each term in this sum.
+
+446
+01:00:32,974 --> 01:00:43,164
+So when all of SJ and ask are the same. Every term in this sum is just either plus or minus one squared, and that is minus d times.
+
+447
+01:00:43,164 --> 01:00:52,104
+And for our simple d dimensional cubic lattice, even minus one, the contribution to the energy from every link.
+
+448
+01:00:56,404 --> 01:01:01,864
+So this is what we can expect to dominate the well.
+
+449
+01:01:02,344 --> 01:01:08,524
+For the non-interacting case, we saw that the this ground state dominated expectation values.
+
+450
+01:01:09,574 --> 01:01:15,154
+It's probably wise not to rely on non-interacting results when we have an interacting theory.
+
+451
+01:01:15,574 --> 01:01:22,024
+So let's actually think about the excited states for the low temperature using model.
+
+452
+01:01:23,764 --> 01:01:29,494
+So the ground states are when all of the spins are aligned either all plus 1 or -1.
+
+453
+01:01:31,874 --> 01:01:40,243
+There is a subtlety if we are working in one dimension, but if we assume we have at least two dimensions,
+
+454
+01:01:40,244 --> 01:01:44,323
+so either a square plane or a three dimensional solid,
+
+455
+01:01:44,324 --> 01:01:54,224
+or an abstract higher dimensional space that we can consider mathematically, then the first excited state above the ground states.
+
+456
+01:01:55,954 --> 01:02:01,564
+Will, um, correspond to just flipping any one of those in spins.
+
+457
+01:02:02,714 --> 01:02:13,584
+In. The system. That's the simplest change we can make to get a higher energy than the ground state.
+
+458
+01:02:14,704 --> 01:02:28,814
+So. Mathematically this is to say that and plus and and minus now have still two options either n minus one with only one negative spin or.
+
+459
+01:02:29,834 --> 01:02:33,824
+One positive spin and minus one negative spins.
+
+460
+01:02:36,194 --> 01:02:43,574
+But this doesn't tell us about which of the end spins we have flipped to point opposite to to all of the rest.
+
+461
+01:02:45,234 --> 01:02:49,824
+In each of these cases, we can choose any one of the end spinners to be the odd one out.
+
+462
+01:02:50,334 --> 01:02:58,464
+So there are N microstates with only a single spin that counterbalances the rest.
+
+463
+01:03:00,054 --> 01:03:05,634
+And similarly. In the symmetric case, for all of the values of the spins are flipped.
+
+464
+01:03:07,094 --> 01:03:14,474
+And so this means that we have. Two, in degenerate microstates.
+
+465
+01:03:18,514 --> 01:03:23,914
+Um, corresponding to this first excited energy level.
+
+466
+01:03:24,424 --> 01:03:34,094
+So there is a competition between that suppression based on the energy and the number of microstates that we have.
+
+467
+01:03:34,114 --> 01:03:40,564
+We went from just two degenerate ground states to now to n degenerate first excited states.
+
+468
+01:03:41,164 --> 01:03:45,674
+And. It's a bit.
+
+469
+01:03:49,344 --> 01:04:00,204
+That are on the screen there. So we need to think about the, um, competition between the energy suppression and the multiplicity enhancement.
+
+470
+01:04:01,554 --> 01:04:06,354
+The energy suppression comes from the probability and.
+
+471
+01:04:07,994 --> 01:04:12,334
+This. Will depend on.
+
+472
+01:04:13,664 --> 01:04:17,204
+The energy of the first excited state E1.
+
+473
+01:04:20,234 --> 01:04:27,314
+And it's not too hard to write down what this energy is.
+
+474
+01:04:28,964 --> 01:04:32,534
+Looking back at our mental picture of lattices.
+
+475
+01:04:33,284 --> 01:04:41,204
+We have to d times n different links corresponding to nearest neighbour pairs in the ground state.
+
+476
+01:04:41,204 --> 01:04:45,134
+Every link gave us a minus one contribution to the energy.
+
+477
+01:04:45,974 --> 01:04:50,894
+Now that we have flipped one of those spins, it will have D time.
+
+478
+01:04:51,644 --> 01:04:58,844
+It will have to the nearest neighbours that it is now um has the opposite sign of.
+
+479
+01:04:59,594 --> 01:05:12,404
+So in the using model energy, there will be two d terms in the overall sum that now bring in a positive sign to the energy.
+
+480
+01:05:15,014 --> 01:05:20,864
+And all of the other links will still be the same and will still contribute that negative sign.
+
+481
+01:05:21,254 --> 01:05:25,154
+So the total number of links was d times n.
+
+482
+01:05:26,064 --> 01:05:31,874
+We take away two d of those that are now giving this positive contribution, and that is the.
+
+483
+01:05:35,814 --> 01:05:38,244
+Uh, energy of the first. Excited.
+
+484
+01:05:39,404 --> 01:05:51,614
+Energy level in the easing model, instead of just minus down the largest negative value that we can have for the ground state, it's now minus D.
+
+485
+01:05:51,614 --> 01:05:58,124
+And apart from this for and factor coming from those two and links that have changed sign.
+
+486
+01:06:00,194 --> 01:06:05,874
+So. The question is which wins?
+
+487
+01:06:07,014 --> 01:06:15,534
+Um, in that competition between the lower probability and the larger multiplicity.
+
+488
+01:06:21,454 --> 01:06:25,874
+I should say these are the excited. Microstates.
+
+489
+01:06:27,184 --> 01:06:31,054
+They are less likely, but there are more of them.
+
+490
+01:06:37,014 --> 01:06:44,674
+So a higher degeneracy. And to consider which wins.
+
+491
+01:06:47,234 --> 01:06:50,464
+We need to. Compare.
+
+492
+01:06:51,414 --> 01:06:58,614
+The ground states and that first excited state taking into account both of those factors.
+
+493
+01:06:58,614 --> 01:07:08,303
+So the overall probability of having some having the system in a any of the two
+
+494
+01:07:08,304 --> 01:07:12,954
+degenerate ground states of the microstates with that minimal energy that will have.
+
+495
+01:07:14,054 --> 01:07:17,174
+There are two of them, so the probability gets doubled.
+
+496
+01:07:17,894 --> 01:07:22,874
+We have an exponential of minus theta times the ground state energy.
+
+497
+01:07:23,324 --> 01:07:37,064
+The minus signs cancel and we have. Beta times the dimensionality times n and then a one over z to normalise these probabilities.
+
+498
+01:07:38,804 --> 01:07:50,294
+At the same time, if we compare these with the probability of having any of our two N microstates in that first excited energy level,
+
+499
+01:07:51,254 --> 01:07:55,034
+there's that greater multiplicity. There is the lower.
+
+500
+01:07:57,344 --> 01:08:05,864
+Uh, probability. So the energy. And the probability is now d times n -40.
+
+501
+01:08:07,014 --> 01:08:16,184
+And. Another factor of that normalisation by the overall grand canonical partition function
+
+502
+01:08:16,184 --> 01:08:23,354
+that just cancels out in this ratio the exponential of beta d times and also cancels out.
+
+503
+01:08:25,744 --> 01:08:33,004
+We are left with a one over n from the higher multiplicity of the excited.
+
+504
+01:08:33,874 --> 01:08:35,494
+Um, energy level.
+
+505
+01:08:36,364 --> 01:08:48,484
+And in addition to that, the exponential of minus four beta d in the denominator, which we can move into the numerator just by reversing its sign.
+
+506
+01:08:52,134 --> 01:09:01,314
+So this is confirmation that the interacting system behaves the same as the non-interacting one we consider some time ago.
+
+507
+01:09:01,704 --> 01:09:08,304
+Looking at this at sufficiently low temperature, the ground states will always win.
+
+508
+01:09:11,444 --> 01:09:16,904
+The constant factor of an. Is insufficient to.
+
+509
+01:09:17,964 --> 01:09:25,764
+Uh, beat out that exponential of four beta d when d is greater than one and beta is going to infinity.
+
+510
+01:09:26,754 --> 01:09:36,554
+So. Here as the temperature approaches that asymptotically low limit.
+
+511
+01:09:38,274 --> 01:09:43,614
+The expectation value of the maximisation approaches one.
+
+512
+01:09:48,614 --> 01:10:00,163
+And in contrast to the disordered phase that had essentially random distributions of plus one and minus one spins, here the ground state wins.
+
+513
+01:10:00,164 --> 01:10:04,994
+So all of the spins are aligned and instead of in disordered phase.
+
+514
+01:10:07,144 --> 01:10:16,744
+They will call this an ordered phase. Again, still to confirm that it is a bona fide phase and not just, um.
+
+515
+01:10:19,494 --> 01:10:26,274
+Different behaviour in the high and low temperature limits, which was brought up at the start of today's lecture.
+
+516
+01:10:27,084 --> 01:10:34,614
+And for that matter, these. This different behaviour of the spins, the, um,
+
+517
+01:10:35,064 --> 01:10:47,304
+ground state dominance at low temperatures versus random mixture at high temperatures is what we got for the, uh, non-interacting case as well.
+
+518
+01:10:51,514 --> 01:11:02,213
+So. Our next step will be to formalise this concept of phases and distinguish the interacting system with a
+
+519
+01:11:02,214 --> 01:11:07,704
+phase transition from the non-interacting case where we just have different behaviour in different limits.
+
+520
+01:11:08,754 --> 01:11:20,794
+But. The basis for that distinction is this magnetisation that we have seen behaving differently in those two different limits.
+
+521
+01:11:24,254 --> 01:11:29,174
+So in the context of the easing model, this magnetisation is.
+
+522
+01:11:30,454 --> 01:11:37,284
+What is known as an order parameter. I will just write that as OP.
+
+523
+01:11:37,764 --> 01:11:42,894
+Just for short. That order parameter is the term to keep in mind.
+
+524
+01:11:43,584 --> 01:11:50,494
+And this. Well, one of the things this order parameter does, first of all is distinguish between.
+
+525
+01:11:51,774 --> 01:12:01,194
+The. High temperature. Disordered phase where the absolute value of the magnetisation approaches zero.
+
+526
+01:12:01,914 --> 01:12:15,104
+In the thermodynamic limit. Compared to the low temperature phase where the magnetisation approaches one.
+
+527
+01:12:15,194 --> 01:12:21,954
+Due to ground state dominance. And before.
+
+528
+01:12:24,624 --> 01:12:30,584
+Establishing that these are in fact two different phases, in contrast to the non-interacting case.
+
+529
+01:12:30,594 --> 01:12:34,494
+Let's just get a bit of a visual.
+
+530
+01:12:35,884 --> 01:12:40,964
+Bit of a visual picture that will help keep. This behaviour in mind.
+
+531
+01:12:41,534 --> 01:12:46,694
+So going beyond just the mathematics of M going to zero or M going to one.
+
+532
+01:12:48,544 --> 01:12:49,324
+These are.
+
+533
+01:12:51,204 --> 01:13:01,614
+Just pictures of selected states from a numerical evaluation of a 20 by 20 using model from Dan Schroeder's Introduction to Thermal physics.
+
+534
+01:13:02,184 --> 01:13:10,334
+So there are nine. Um. States that are collected onto this page.
+
+535
+01:13:11,864 --> 01:13:20,833
+One case is just randomly selecting spins to be plus 1 or -1 up in the top left, and then the other eight steadily decrease the temperature,
+
+536
+01:13:20,834 --> 01:13:25,814
+going from a relatively high temperature of ten down to a relatively low temperature of one.
+
+537
+01:13:26,384 --> 01:13:32,204
+And we can see this different behaviour in those two extremes.
+
+538
+01:13:32,594 --> 01:13:33,704
+For the high temperatures,
+
+539
+01:13:34,634 --> 01:13:45,134
+the system does not look by much different from just randomly assigning plus one and minus one spins that are drawn here as black and white squares.
+
+540
+01:13:46,184 --> 01:13:55,754
+The roughly equal number of black and white squares means that we have a magnetisation that is approximately zero for,
+
+541
+01:13:57,044 --> 01:14:01,664
+um, each of these particular high temperature configurations.
+
+542
+01:14:02,174 --> 01:14:10,184
+And then as the temperature cools and goes in particular between a temperature of about three to a temperature of about two.
+
+543
+01:14:11,664 --> 01:14:18,354
+We see the behaviour change. The spins become mostly either black or mostly white.
+
+544
+01:14:19,764 --> 01:14:23,004
+Whether they are black or white is essentially random.
+
+545
+01:14:23,634 --> 01:14:30,594
+Um, that's that symmetry of flipping all these spins black to white and white to black with zero magnetic field.
+
+546
+01:14:31,434 --> 01:14:40,584
+So at the temperature, uh, two here, this configuration might have a mean position of around one at a temperature of 1.5.
+
+547
+01:14:41,274 --> 01:14:49,704
+The magnetisation might be around minus one. And I see that I'm zoomed out too much to make those visible.
+
+548
+01:14:51,484 --> 01:14:57,464
+Um, and we can also see the role of the periodic boundary conditions in these, uh,
+
+549
+01:14:57,484 --> 01:15:06,334
+systems where at very low temperatures, this stripe of black spins has just come along because.
+
+550
+01:15:07,394 --> 01:15:13,754
+Um. It wraps around periodically, going between left and right and.
+
+551
+01:15:15,844 --> 01:15:22,734
+Um, we actually have. By accident a higher magnetisation for this system.
+
+552
+01:15:23,304 --> 01:15:27,234
+Just because there are two domains, one of which is ordered with black.
+
+553
+01:15:27,294 --> 01:15:33,684
+And the other of which, again with periodic boundary conditions wrapping around the top and bottom, is ordered with white.
+
+554
+01:15:36,034 --> 01:15:46,714
+Um. Just looking at individual spin configurations like this is not so illuminating because with this 20 by 20 lattice.
+
+555
+01:15:48,274 --> 01:15:57,064
+We have two to the 20 squared is two to the 400 possible configurations, which is about ten to the power 120.
+
+556
+01:15:58,234 --> 01:16:05,824
+But it at least gives us a visual. Um, picture to have in mind.
+
+557
+01:16:06,754 --> 01:16:14,444
+Another one that I'll flash quickly is, uh. This case if it will fit on the screen.
+
+558
+01:16:15,194 --> 01:16:19,214
+This is a bigger system, so 400 by 400.
+
+559
+01:16:22,374 --> 01:16:31,914
+Squaring 400 gives two to the power 160,000, which is about ten, to the power of 48,000.
+
+560
+01:16:34,064 --> 01:16:38,834
+This is at a particular temperature.
+
+561
+01:16:39,464 --> 01:16:42,944
+Well, the temperature here is set to be exactly 2.27.
+
+562
+01:16:44,624 --> 01:16:53,864
+And so in between the temperatures of two and three that we saw in the smaller system, something interesting happened.
+
+563
+01:16:54,474 --> 01:16:59,804
+We'll come back to this particular temperature in this particular configuration.
+
+564
+01:17:00,974 --> 01:17:12,454
+In just a few minutes. And any questions about the Magnetisation and its limits that we have looked at so far.
+
+565
+01:17:14,594 --> 01:17:18,294
+Let's zoom back in while you. Consider that.
+
+566
+01:17:20,814 --> 01:17:33,294
+One more zoom. There it is. So moving on to.
+
+567
+01:17:35,274 --> 01:17:40,853
+Introduce phase transitions more formally. You know, in the case of the easing model,
+
+568
+01:17:40,854 --> 01:17:50,544
+we have introduced this magnetisation and we have seen that it distinguishes between the behaviour at high and low temperatures and.
+
+569
+01:17:51,484 --> 01:17:58,444
+The general situation is that there is such an order parameter here.
+
+570
+01:17:58,444 --> 01:18:01,984
+It is specifically the Magnetisation in other systems.
+
+571
+01:18:04,344 --> 01:18:12,114
+It may be something different, but this order parameter is a way to distinguish between phases.
+
+572
+01:18:14,324 --> 01:18:28,634
+Um. Depending on whether the order parameter is zero or non-zero exactly as we have seen here for the easing model and its magnetisation.
+
+573
+01:18:31,544 --> 01:18:38,344
+Um. Zero versus non-zero order parameter in that thermodynamic limit.
+
+574
+01:18:38,644 --> 01:18:43,504
+Take the number of degrees of freedom to. Infinity.
+
+575
+01:18:47,844 --> 01:19:01,044
+There are. Well, two general ways that an order parameter can vary from zero to non-zero in that thermodynamic limit.
+
+576
+01:19:02,964 --> 01:19:13,824
+So first, if the order parameter or any of its derivatives, so its first derivative with respect to a control parameter of the system,
+
+577
+01:19:14,514 --> 01:19:19,434
+possibly a second derivative or a third derivative, or so on, if any of those derivatives.
+
+578
+01:19:21,154 --> 01:19:25,084
+Exhibit a discontinuity or a divergence.
+
+579
+01:19:27,004 --> 01:19:30,424
+Again in the end to infinity. Someone dynamic limit.
+
+580
+01:19:32,964 --> 01:19:37,014
+Then we say that there is a phase transition.
+
+581
+01:19:38,904 --> 01:19:42,804
+That separates these two phases.
+
+582
+01:19:43,494 --> 01:19:49,674
+This the two phases on either side of this discontinuity or this divergence.
+
+583
+01:19:51,354 --> 01:19:59,334
+The location of this discontinuity or divergence as a function of the control parameters.
+
+584
+01:20:00,254 --> 01:20:03,794
+Is referred to as a critical point.
+
+585
+01:20:09,184 --> 01:20:15,754
+So the particular values of the control parameters that cause the order parameter or
+
+586
+01:20:16,084 --> 01:20:22,144
+any of its derivatives to exhibit this end to infinity discontinuity or divergence,
+
+587
+01:20:22,804 --> 01:20:32,724
+defines that critical point. If we don't have any discontinuity or divergence in the order parameter or any of its derivatives.
+
+588
+01:20:34,414 --> 01:20:39,454
+Then the change in behaviour is not a bona fide phase transition.
+
+589
+01:20:39,994 --> 01:20:48,814
+We do not, in fact have distinct high and low temperature phases or phases at different values of the control parameters.
+
+590
+01:20:49,414 --> 01:20:53,224
+And we say there is just a smooth continuous crossover.
+
+591
+01:20:55,444 --> 01:20:59,644
+Between those two different domains. So this is.
+
+592
+01:21:02,454 --> 01:21:12,314
+The. Distinction between the behaviour we saw for the non-interacting spins the.
+
+593
+01:21:12,424 --> 01:21:22,354
+We can define the magnetisation. In that case we can see that it varies from 0 to 1 as we dial down the temperature from high to low.
+
+594
+01:21:23,254 --> 01:21:33,844
+But. That variation for the non-interacting system of spins that are just coupled to an external magnetic field is smooth,
+
+595
+01:21:33,844 --> 01:21:39,934
+continuous, and gives a crossover. Rather than having a true phase transition.
+
+596
+01:21:41,204 --> 01:21:47,834
+Uh, for. Interacting systems, potentially including the using model.
+
+597
+01:21:52,174 --> 01:22:01,114
+So for the easing model. Since we have simplified it by setting the external magnetic field to zero.
+
+598
+01:22:02,014 --> 01:22:12,004
+The only control parameter that we really have left that could define this critical critical point is a so-called critical temperature.
+
+599
+01:22:22,354 --> 01:22:27,004
+And again the behaviour of the using model,
+
+600
+01:22:27,394 --> 01:22:35,164
+and in particular the question of whether it exhibits a phase transition or a crossover depends on that dimensionality.
+
+601
+01:22:35,854 --> 01:22:49,294
+So in the one dimensional case that using worked on as a student, he found, he proved, in fact, that the one dimensional easing model has a crossover.
+
+602
+01:22:50,404 --> 01:22:52,233
+And so he thought that it was uninteresting,
+
+603
+01:22:52,234 --> 01:23:00,454
+and so did many other people for the following couple of decades before Onsager came along and showed that the.
+
+604
+01:23:01,724 --> 01:23:07,274
+True, the two dimensional easing model in the zero field limit has.
+
+605
+01:23:08,674 --> 01:23:14,654
+A phase transition. At a value of the critical temperature,
+
+606
+01:23:15,044 --> 01:23:23,594
+or at a critical temperature that he was able to predict by virtue of exactly solving the partition function for the system.
+
+607
+01:23:24,134 --> 01:23:29,324
+So critical temperature for the 2D using model with H equals zero.
+
+608
+01:23:30,424 --> 01:23:33,723
+It's just twice one. Sorry.
+
+609
+01:23:33,724 --> 01:23:38,224
+Two. Over the log of one plus the square root of two.
+
+610
+01:23:39,564 --> 01:23:43,914
+Which is approximately 2.27.
+
+611
+01:23:45,924 --> 01:23:58,694
+Um. There is a supplement in the lecture notes that reproduces this with some assumptions that this is the reason why this image we were looking at
+
+612
+01:23:58,694 --> 01:24:12,124
+here of focussed on this temperature of 2.27 to exhibit this behaviour or produce this sample spin configuration out of the ten to the power,
+
+613
+01:24:12,134 --> 01:24:20,984
+48,000 that are available. Um, just mentioned in passing something that we.
+
+614
+01:24:22,734 --> 01:24:32,934
+Maybe able to get back to later on. The. So a feature of this particular 2D easing model phase transition is that, um,
+
+615
+01:24:34,104 --> 01:24:43,074
+as we saw at lower temperatures, there are patches of sub spins that all align either black or white.
+
+616
+01:24:45,164 --> 01:25:00,644
+Part of what is referred to as a critical behaviour at the phase transition is the fact that these patches start to come in all of the possible sizes,
+
+617
+01:25:01,494 --> 01:25:06,614
+at least, that are allowed by this. The size of the system 400 by 400 spins.
+
+618
+01:25:08,554 --> 01:25:13,564
+This is not crucial to, um, appreciating phase transitions.
+
+619
+01:25:13,564 --> 01:25:20,553
+It's just a brief aside that you don't really need to worry about. But I'll just point out some of the black patches that we can see here,
+
+620
+01:25:20,554 --> 01:25:29,434
+ranging from just single spins that have flipped to small batches of spins, larger clusters, even larger ones.
+
+621
+01:25:29,914 --> 01:25:39,214
+And then finally this one. That's a substantial fraction of the overall, uh, system, the overall spin configuration that we have to look at.
+
+622
+01:25:41,044 --> 01:25:44,224
+That's something we may be able to get back to next week.
+
+623
+01:25:45,064 --> 01:25:49,324
+Um, related to universality and criticality.
+
+624
+01:25:50,134 --> 01:25:59,834
+Better suited for a, um. Second postgraduate level um module in statistical physics.
+
+625
+01:26:07,604 --> 01:26:12,574
+So that was an aside. Let's get back to phase transitions themselves.
+
+626
+01:26:12,584 --> 01:26:18,734
+There's a bit more to say about those, unless there are questions about what we've talked about so far.
+
+627
+01:26:24,384 --> 01:26:31,354
+Okay. There's one. Um. Formal aspect of phase transitions that.
+
+628
+01:26:33,714 --> 01:26:39,384
+I have not commented on, I have not introduced so far, so let's add it now.
+
+629
+01:26:42,024 --> 01:26:51,444
+Um, in order to have. A phase transition that distinguishes different phases by virtue of being zero or non-zero.
+
+630
+01:26:54,434 --> 01:26:59,564
+The order parameter. Doing that job formally needs to be related.
+
+631
+01:27:01,444 --> 01:27:04,834
+Somehow to the canonical partition function.
+
+632
+01:27:06,084 --> 01:27:13,764
+That. Is the basis for everything we do in the statistical analyses of.
+
+633
+01:27:15,524 --> 01:27:22,634
+Us in physical systems. And in particular, like the energy, like the entropy that we've seen before.
+
+634
+01:27:23,744 --> 01:27:34,784
+We want to express any order parameter as some derivative of the free energy which is related to.
+
+635
+01:27:35,924 --> 01:27:38,204
+The log of that partition function.
+
+636
+01:27:40,824 --> 01:27:49,734
+So if in that thermodynamic limit number of degrees of freedom going to zero, the order parameter itself is discontinuous.
+
+637
+01:27:51,794 --> 01:27:57,844
+This is referred to as. A first order phase transition.
+
+638
+01:28:00,304 --> 01:28:06,634
+With the idea being that the order parameter is the first derivative of the free energy.
+
+639
+01:28:08,924 --> 01:28:18,134
+So just to draw an illustration of this further down on this page, if we plot.
+
+640
+01:28:19,324 --> 01:28:27,214
+The order parameter as a function of control parameters, so for the easing model will specialise to the temperature being our only control parameter.
+
+641
+01:28:28,144 --> 01:28:32,104
+The order parameter is on the vertical axis.
+
+642
+01:28:32,944 --> 01:28:39,243
+In the first order case, we will see some temperature dependence and then some discontinuity or.
+
+643
+01:28:39,244 --> 01:28:46,744
+The order parameter jumps this continuously from a nonzero value down to a zero value.
+
+644
+01:28:49,424 --> 01:28:52,494
+Um, for that high temperature phase.
+
+645
+01:28:52,514 --> 01:28:56,474
+So this discontinuity is defined.
+
+646
+01:28:57,654 --> 01:29:07,374
+In the thermodynamic limit. It occurs at the critical temperature T c and characterises.
+
+647
+01:29:08,834 --> 01:29:10,184
+A first order transition.
+
+648
+01:29:12,964 --> 01:29:25,474
+It is also possible that the order parameter itself is continuous, but, um, some derivative of it either the first derivative of the order parameter,
+
+649
+01:29:26,014 --> 01:29:28,864
+which becomes the second derivative of the free energy,
+
+650
+01:29:29,554 --> 01:29:34,234
+or the second derivative of the order parameter, thus the third derivative of the free energy, etc.
+
+651
+01:29:36,094 --> 01:29:41,984
+If. Any of those is discontinuous or divergent.
+
+652
+01:29:46,564 --> 01:29:50,844
+Then. We will say that we have a second order transition.
+
+653
+01:29:55,244 --> 01:30:00,554
+And I will draw that case to contrast it to.
+
+654
+01:30:01,874 --> 01:30:11,114
+Divergent derivative. Um, contrast it to the first order case.
+
+655
+01:30:12,844 --> 01:30:20,743
+So this is. Just a bit of terminology that we will be using going forward.
+
+656
+01:30:20,744 --> 01:30:29,893
+And you may see elsewhere there are variations on this first order versus second order terminology, but it's useful to distinguish use cases.
+
+657
+01:30:29,894 --> 01:30:39,104
+So drawing a similar sort of plot for the order parameter is a function of the control parameter as the temperature.
+
+658
+01:30:40,544 --> 01:30:50,564
+Here the order parameter goes all the way to zero with no job, and then stays zero in the um,
+
+659
+01:30:51,884 --> 01:30:56,924
+high temperature disordered phase, it hits zero at that same critical temperature.
+
+660
+01:30:57,704 --> 01:31:04,304
+And if we consider the derivative of this behaviour.
+
+661
+01:31:06,064 --> 01:31:14,674
+Well, let's map the critical temperature onto that same point when the order parameter is always zero, so as its derivative.
+
+662
+01:31:16,054 --> 01:31:22,504
+You go like that. And as the order parameter approaches the critical temperature from.
+
+663
+01:31:22,504 --> 01:31:28,834
+So I'm plotting here. The temperature dependence of that order parameter.
+
+664
+01:31:31,384 --> 01:31:39,244
+So as we come down and this line is getting steeper and steeper, that corresponds to a more and more negative derivative.
+
+665
+01:31:39,814 --> 01:31:43,504
+So the derivative will look something like so.
+
+666
+01:31:44,104 --> 01:31:53,364
+And we again have a discontinuity showing up in the first derivative of the order parameter.
+
+667
+01:31:53,374 --> 01:31:58,114
+So this is. An example or a picture.
+
+668
+01:31:59,394 --> 01:32:03,384
+Of what's going on at a second order phase transition.
+
+669
+01:32:06,424 --> 01:32:10,504
+So just a few minutes left this afternoon.
+
+670
+01:32:12,874 --> 01:32:19,454
+And. That may be enough time to.
+
+671
+01:32:21,314 --> 01:32:27,524
+Close the circle. Come back to the magnetisation and connect that to this formal requirement
+
+672
+01:32:27,824 --> 01:32:34,214
+that an order parameter be related to the to a derivative of that free energy.
+
+673
+01:32:35,114 --> 01:32:38,144
+So let's try to squeeze in a relation.
+
+674
+01:32:40,614 --> 01:32:44,964
+Between the expectation value of the magnetisation.
+
+675
+01:32:48,274 --> 01:32:54,044
+And a derivative of. The free energy minus T.
+
+676
+01:32:55,404 --> 01:33:04,784
+Like I said. So the trick to to doing this is to restore the dependence on.
+
+677
+01:33:06,044 --> 01:33:10,234
+An external magnetic field. So.
+
+678
+01:33:11,424 --> 01:33:18,653
+The microstate energy in the easing model goes back to the full expression that we started off with today.
+
+679
+01:33:18,654 --> 01:33:23,844
+That includes this coupling of all spins to that magnetic field.
+
+680
+01:33:25,734 --> 01:33:34,854
+If we sum over all of the spins s n, then well, what is this sum giving us a plus one contribution?
+
+681
+01:33:35,214 --> 01:33:39,504
+Whenever the spin has a value plus one minus one, whenever it's minus one.
+
+682
+01:33:40,434 --> 01:33:45,174
+So we add up all of the plus one spins. We subtract all of the minus one spins.
+
+683
+01:33:46,194 --> 01:33:57,504
+In other words, we get from this sum coupled to the magnetic field and plus, minus and minus which is just related.
+
+684
+01:33:58,074 --> 01:34:06,234
+Well, that is just the magnetisation up to a factor of the total number of spins for a given spin configuration.
+
+685
+01:34:06,834 --> 01:34:15,594
+So the Magnetisation is just this sum over spins divided by n and the energy.
+
+686
+01:34:15,594 --> 01:34:19,784
+We can therefore write. As the.
+
+687
+01:34:21,044 --> 01:34:29,114
+Nearest neighbour some minus h times and times magnetisation.
+
+688
+01:34:31,554 --> 01:34:42,204
+So plugging this energy in to the partition function, we have a sum over all of the possible spin configurations.
+
+689
+01:34:43,254 --> 01:34:46,254
+The energy goes into the exponential factor.
+
+690
+01:34:46,254 --> 01:34:50,014
+The negative signs cancel. There's the beta.
+
+691
+01:34:52,154 --> 01:34:56,414
+Times some over and years day repairs and now plus beta.
+
+692
+01:34:57,854 --> 01:35:01,454
+H and times magnetisation.
+
+693
+01:35:03,014 --> 01:35:13,844
+So if we take the derivative of the Helmholtz free energy with respect to this, to the magnetic field that we have restored, what do we get?
+
+694
+01:35:14,924 --> 01:35:19,454
+The negative t factor is independent of H just pulls out front.
+
+695
+01:35:20,114 --> 01:35:26,294
+The derivative of the log is one over z times d z to h.
+
+696
+01:35:28,314 --> 01:35:38,514
+Which moving that d z into the sum over spin configurations, we take the derivative of an exponential with respect to h.
+
+697
+01:35:38,514 --> 01:35:42,744
+We get the exponential back with the chain rule acting on its argument.
+
+698
+01:35:43,674 --> 01:35:47,154
+The h goes away, the beta and m come out.
+
+699
+01:35:50,754 --> 01:35:56,634
+We have all of the same terms left in the exponential.
+
+700
+01:35:58,714 --> 01:36:05,224
+The temperature and inverse temperature cancel, and as a constant that can come out and we are left.
+
+701
+01:36:05,224 --> 01:36:14,544
+Then with a sum over spin configurations of m times our Boltzmann factor exponential of minus beta times energy.
+
+702
+01:36:14,554 --> 01:36:19,744
+Sorry to run off the screen, they're weighted by the partition function.
+
+703
+01:36:20,584 --> 01:36:25,024
+That is the expectation value of the magnetisation that we were after.
+
+704
+01:36:26,554 --> 01:36:33,514
+So we have for the magnetisation in relation to.
+
+705
+01:36:34,764 --> 01:36:38,964
+A first derivative of the Helmholtz free energy.
+
+706
+01:36:40,514 --> 01:36:44,294
+D f d h with respect to that magnetic field.
+
+707
+01:36:44,834 --> 01:36:48,644
+Overall constant normalisation minus one over n that we don't need to care about.
+
+708
+01:36:48,674 --> 01:36:54,674
+We can also express this as. Plus one over and beta times.
+
+709
+01:36:55,674 --> 01:37:03,954
+The derivative of the log of the partition function, but this is as promised for an order parameter.
+
+710
+01:37:04,764 --> 01:37:08,904
+We are able to express the easing model Magnetisation.
+
+711
+01:37:10,944 --> 01:37:14,154
+As a derivative of the free energy.
+
+712
+01:37:14,454 --> 01:37:18,984
+So it is all holding together with what we have formally stated,
+
+713
+01:37:20,094 --> 01:37:26,784
+a bona fide order parameter separating bona fide phases at a bona fide phase transition,
+
+714
+01:37:27,234 --> 01:37:35,814
+at least when the number of dimensions is two and it turns out any dimensionality greater than two as well.
+
+715
+01:37:36,054 --> 01:37:42,804
+The one dimensional case is a separate as a special case, um, which.
+
+716
+01:37:43,864 --> 01:37:45,814
+You probably won't have time to do.
+
+717
+01:37:47,544 --> 01:37:55,674
+But is related in the lecture notes to this assumption that we had to make when identifying the first excited energy level.
+
+718
+01:37:56,314 --> 01:38:01,284
+Um, this argument only goes through whenever the dimensions are greater than one.
+
+719
+01:38:01,914 --> 01:38:08,244
+That gives us a phase transition. So this is a good place to end for today.
+
+720
+01:38:09,054 --> 01:38:14,304
+We've introduced the using model, looked at simplify limits of high and low temperature behaviour,
+
+721
+01:38:14,754 --> 01:38:25,944
+and identified the Magnetisation as a formal order parameter that identifies the different behaviour as distinct phases and.
+
+722
+01:38:27,424 --> 01:38:27,814
+Um.
+
+723
+01:38:30,234 --> 01:38:38,394
+Can be used to analyse the phase transition between them, determine whether it's first or second order and that's what we will return to on Tuesday,
+
+724
+01:38:39,624 --> 01:38:49,913
+when we move to stage two of our grand plan and try to look at a simple approximation to the easing model that can tell us a
+
+725
+01:38:49,914 --> 01:38:56,874
+bit about what's going on between these high and low temperature limits when we have either a crossover or phase transition.
+
+726
+01:38:57,324 --> 01:39:05,654
+So. A last call for any questions to shout out today and otherwise.
+
+727
+01:39:06,574 --> 01:39:11,754
+Hope you enjoy the bank holiday weekend. And to some extent, the warmer weather.
+
+728
+01:39:21,294 --> 01:39:21,804
+And.
+
