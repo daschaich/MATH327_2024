@@ -1,6 +1,6 @@
 % ------------------------------------------------------------------
 \renewcommand{\thisunit}{MATH327 Unit 3}
-\renewcommand{\moddate}{Last modified 26 Feb.~2024}
+\renewcommand{\moddate}{Last modified 1 Mar.~2024}
 \setcounter{section}{3}
 \setcounter{subsection}{0}
 \phantomsection
@@ -341,7 +341,7 @@ From this we immediately obtain the entropy
   \label{eq:dist_entropy}
   S_D = \be\left(\vev{E}_D - F_D\right) = -N\be H \tanh\left(\be H\right) + N \log\left[2\cosh\left(\be H\right)\right].
 \end{equation}
-These results for $\vev{E}_D$ and $S_D$ are plotted below as functions of $\frac{T}{H} = \frac{1}{\be H}$, using \href{https://github.com/daschaich/MATH327_2023/blob/main/lecture_notes/unit03_distinguish.py}{this Python code}.
+These results for $\vev{E}_D$ and $S_D$ are plotted below as functions of $\frac{T}{H} = \frac{1}{\be H}$, using \href{https://github.com/daschaich/MATH327_2024/blob/main/lecture_notes/unit03_distinguish.py}{this Python code}.
 Since both these quantities are extensive, we normalize them by showing $\frac{\vev{E}_D}{NH}$ and $\frac{S_D}{N}$.
 
 \begin{center}
@@ -382,7 +382,7 @@ The low-temperature expansion of \eq{eq:dist_entropy} for the entropy $S_D$ in p
 \end{mdframed}
 Here the leading term includes a linear factor of $\be \De E \gg 1$, but this can't overcome the now-expected exponential suppression:
 \begin{equation*}
-  \frac{S_D}{N} = \be \De E e^{-\be \De E} + e^{-\be \De E} + \cO\left(e^{-2\be \De E}\right).
+  \frac{S_D}{N} = \be \De E e^{-\be \De E} + e^{-\be \De E} + \cO\left(\be \De E e^{-2\be \De E}\right).
 \end{equation*}
 
 In the limit of \textbf{high temperatures} we should instead expand in powers of the small factor $\be H \ll 1$.

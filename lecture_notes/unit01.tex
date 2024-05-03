@@ -274,23 +274,23 @@ When the outcome can be any number on the real line, the fundamental object is a
 Starting from this density, a probability is determined by integrating over a given interval.
 Calling this interval $[a, b]$, the integration produces the probability that the outcome $X$ lies within the interval,
 \begin{equation*}
-  P\left(a \leq X \leq b\right) = \int_a^b p(x) \; dx.
+  P\left(a \leq X \leq b\right) = \int_a^b p(x) \d{x}.
 \end{equation*}
 
 We similarly generalize the definition of an expectation value (\eq{eq:expect_disc}) to an integral over the entire domain of the  probability distribution,
 \begin{equation*}
-  \vev{f(x)} = \int f(x) \; p(x) \; dx.
+  \vev{f(x)} = \int f(x) \; p(x) \d{x}.
 \end{equation*}
-We will omit the limits on integrals over the entire domain, so for $x \in \Rbb$ we implicitly have $\int dx = \int_{-\infty}^{\infty} dx$, with $\int p(x) \; dx = 1$.
+We will omit the limits on integrals over the entire domain, so for $x \in \Rbb$ we implicitly have $\int \d{x} = \int_{-\infty}^{\infty} \d{x}$, with $\int p(x) \d{x} = 1$.
 An important set of expectation values is
 \begin{equation}
   \label{eq:expect_cont}
-  \vev{x^{\ell}} = \int x^{\ell} \; p(x) \; dx,
+  \vev{x^{\ell}} = \int x^{\ell} \; p(x) \d{x},
 \end{equation}
 which provides the mean and variance of the probability distribution $p(x)$, through generalizations of Eqs.~\ref{eq:mean}--\ref{eq:var}:
 \begin{align}
   \label{eq:mean_var}
-  \mu   & = \vev{x} = \int x \; p(x) \; dx &
+  \mu   & = \vev{x} = \int x \; p(x) \d{x} &
   \si^2 & = \vev{x^2} - \vev{x}^2.
 \end{align}
 The expression for the variance should be familiar from your determination of the standard deviation in an earlier gap.
@@ -524,7 +524,7 @@ This result is related to the generality of the law of diffusion (\eq{eq:diff_la
 Since $t > 0$, the exponential in the gaussian distribution $p(x)$ peaks at the drifting expectation value $x = \vdr t = \vev{x}$.
 The factor $(x - \vdr t)^2$ simply quantifies the distance from this peak.
 As $t$ increases, so does the factor $2D^2 t$ dividing this $(x - \vdr t)^2$, meaning that a larger distance from the peak is needed for the overall argument of the exponential to reach a given value --- in other words, the peak becomes broader.
-This in turn requires a lower peak, reflected in the $\frac{1}{\sqrt{t}}$ in the overall coefficient, which is set by requiring $\int p(x) \; dx = 1$.
+This in turn requires a lower peak, reflected in the $\frac{1}{\sqrt{t}}$ in the overall coefficient, which is set by requiring $\int p(x) \d{x} = 1$.
 In other words, the law of diffusion holds whenever the central limit theorem is applicable.
 This requires that the mean and variance of the single-step process are finite, and in the computer project we will numerically investigate the \textit{anomalous diffusion} that occurs when this condition is not satisfied.
 % ------------------------------------------------------------------

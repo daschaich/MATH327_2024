@@ -1,6 +1,6 @@
 % ------------------------------------------------------------------
 \renewcommand{\thisunit}{MATH327 Unit 9}
-\renewcommand{\moddate}{Last modified 22 Jan.~2024}
+\renewcommand{\moddate}{Last modified 3 May 2024}
 \setcounter{section}{9}
 \setcounter{subsection}{0}
 \phantomsection
@@ -266,20 +266,20 @@ The expectation value of the average spin, $\frac{1}{N} \sum_{n = 1}^N \vev{s_n}
 By adding and subtracting factors of $\vev{m}$, we can exactly rewrite each nearest-neighbour term in the Ising model energy, \eq{eq:Ising_energy}, as
 \begin{align}
   s_j s_k & = \left[\left(s_j - \vev{m}\right) + \vev{m}\right] \times \left[\left(s_k - \vev{m}\right) + \vev{m}\right] \cr
-          & = \left(s_j - \vev{m}\right) \left(s_k - \vev{m}\right) + \left(s_j + s_k\right)\vev{m} + \vev{m}^2. \label{eq:MF_start}
+          & = \left(s_j - \vev{m}\right) \left(s_k - \vev{m}\right) + \left(s_j + s_k\right)\vev{m} - \vev{m}^2. \label{eq:MF_start}
 \end{align}
 
 This is beneficial because we can note that the factors of $\left(s_j - \vev{m}\right)$ correspond to the spins' fluctuations around their mean value $\vev{m}$.
 By conjecturing that these fluctuations are small \textit{on average}, we can approximate the Ising model energy by neglecting the first term in \eq{eq:MF_start} when summing over all links:
 \begin{equation*}
-  E_i = -\sum_{(jk)} s_j s_k - H \sum_{n = 1}^N s_n \quad \lra \quad \EMF = -\sum_{(jk)} \left[\left(s_j + s_k\right)\vev{m} + \vev{m}^2\right] - H \sum_{n = 1}^N s_n.
+  E_i = -\sum_{(jk)} s_j s_k - H \sum_{n = 1}^N s_n \quad \lra \quad \EMF = -\sum_{(jk)} \left[\left(s_j + s_k\right)\vev{m} - \vev{m}^2\right] - H \sum_{n = 1}^N s_n.
 \end{equation*}
 The sum over the links $\ell = (jk)$ in $d$ dimensions simply counts $d\cdot N$ factors of the constant $\vev{m}^2$.
 Similarly, since the first term includes both spins $\left(s_j + s_k\right)$ on each end of the link, every individual spin appears $2d$ times in the sum over links.
 Therefore this term just gives us $2d\vev{m}$ times another sum over the spins $s_n$, which we can combine with the final term above:
 \begin{equation}
   \label{eq:MF_energy}
-  \EMF = -d\cdot N \vev{m}^2 - \left(2d\vev{m} + H\right) \sum_{n = 1}^N s_n \equiv -d\cdot N \vev{m}^2 - H_{\text{eff}} \sum_{n = 1}^N s_n.
+  \EMF = d\cdot N \vev{m}^2 - \left(2d\vev{m} + H\right) \sum_{n = 1}^N s_n \equiv d\cdot N \vev{m}^2 - H_{\text{eff}} \sum_{n = 1}^N s_n.
 \end{equation}
 
 In this expression we define an effective magnetic field $H_{\text{eff}} = 2d\vev{m} + H$ that depends on the mean spin.
@@ -293,9 +293,9 @@ Given the resulting mean-field energy \EMF from \eq{eq:MF_energy}, let's check t
 \newpage % WARNING: FORMATTING BY HAND
 In light of this result, it isn't surprising that the mean-field approximation producing \eq{eq:MF_energy} makes it very easy to compute the corresponding canonical partition function
 \begin{align}
-  \ZMF & = \sum_{\left\{s_n\right\}} \exp\left[-\be E(s_n)\right] = \exp\left[\be d\cdot N \vev{m}^2\right] \sum_{s_1 = \pm 1} \cdots \sum_{s_N = \pm 1} \exp\left[-x \sum_{n = 1}^N s_n\right] \cr
-       & = \exp\left[\be d\cdot N \vev{m}^2\right] \left(2\cosh\left[\be H_{\text{eff}}\right]\right)^N \nonumber \\
-       & = \exp\left[\be d\cdot N \vev{m}^2\right] \left(2\cosh\left[\be \left(2d\vev{m} + H\right)\right]\right)^N,
+  \ZMF & = \sum_{\left\{s_n\right\}} \exp\left[-\be E(s_n)\right] = \exp\left[-\be d\cdot N \vev{m}^2\right] \sum_{s_1 = \pm 1} \cdots \sum_{s_N = \pm 1} \exp\left[-x \sum_{n = 1}^N s_n\right] \cr
+       & = \exp\left[-\be d\cdot N \vev{m}^2\right] \left(2\cosh\left[\be H_{\text{eff}}\right]\right)^N \nonumber \\
+       & = \exp\left[-\be d\cdot N \vev{m}^2\right] \left(2\cosh\left[\be \left(2d\vev{m} + H\right)\right]\right)^N,
 \end{align}
 where we defined $x \equiv -\be H_{\text{eff}}$ to put the sums into the same form as in \eq{eq:spin_part_func}.
 Although this factorized result is far simpler than the partition function for the full Ising model, it does involve some complicated dependence on $\vev{m}$ --- especially when we recall that $\vev{m}$ itself is related to a derivative of $\log \ZMF$. % TODO: $\vev{m}$ is now essentially both degree of freedom and prediction...
