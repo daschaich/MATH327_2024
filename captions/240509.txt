@@ -1,0 +1,1616 @@
+1
+00:00:01,790 --> 00:00:08,420
+All right. My clock says it's time to get going with the last tutorial for statistical physics.
+
+2
+00:00:09,020 --> 00:00:17,480
+Um, so we'll take down the pretty pictures for the moment and put up the six digit number for today.
+
+3
+00:00:18,800 --> 00:00:22,550
+There's the screen. Second to last.
+
+4
+00:00:24,650 --> 00:00:30,530
+Teaching day in this term. And the code is.
+
+5
+00:00:33,460 --> 00:00:39,000
+I can still works five eight. 44.
+
+6
+00:00:40,060 --> 00:00:44,010
+98. And it looks like I may need to.
+
+7
+00:00:45,250 --> 00:00:49,319
+Zoom out a bit more to. Avoid running off that screen.
+
+8
+00:00:49,320 --> 00:00:56,790
+Before we get going today to see if there are any questions about anything we have seen in the entire module so far.
+
+9
+00:00:57,390 --> 00:01:06,330
+Before we. Go through what is on the more formal agenda for this afternoon.
+
+10
+00:01:08,240 --> 00:01:18,229
+So the one thing is that final tutorial activity that you've had the last week to work on exploring different ladder structures,
+
+11
+00:01:18,230 --> 00:01:26,930
+including this complete graph that has every single site in the lattice being a nearest neighbour of every other site.
+
+12
+00:01:28,410 --> 00:01:32,970
+There are two parts of that tutorial activity,
+
+13
+00:01:33,540 --> 00:01:42,089
+one of which is a bit of conceptual consideration of the ground states of the easing model for various lattice
+
+14
+00:01:42,090 --> 00:01:51,360
+structures that are important as the dominant contribution to the partition function at low temperatures.
+
+15
+00:01:52,760 --> 00:01:56,370
+So that's certainly something worth. Discussing about.
+
+16
+00:01:59,260 --> 00:02:04,460
+And how? Those easy battleground states depend on the latter structure.
+
+17
+00:02:05,760 --> 00:02:08,870
+Then we have. There are two directions we could go after that.
+
+18
+00:02:08,920 --> 00:02:16,540
+The second part of the tutorial activity is actually coming up with a full solution.
+
+19
+00:02:18,000 --> 00:02:22,680
+Um. To the easing model on that fully connected lattice.
+
+20
+00:02:27,540 --> 00:02:36,939
+That is a case where. There are simplifications, thanks to the pattern of sites and links,
+
+21
+00:02:36,940 --> 00:02:45,790
+that allow an exact prediction for the partition function of the easing model in a closed form analytic expression.
+
+22
+00:02:46,570 --> 00:02:57,580
+Um, that is a bit more complicated mathematically, and in the time that we have today, we would only be able to look at some of the highlights of it.
+
+23
+00:02:58,330 --> 00:03:04,330
+What I think maybe more interesting to prioritise is just.
+
+24
+00:03:06,720 --> 00:03:10,920
+A general overview of or recap of the module.
+
+25
+00:03:12,600 --> 00:03:17,220
+Looking ahead to the exam coming up in a couple of weeks from yesterday.
+
+26
+00:03:18,830 --> 00:03:27,080
+I will leave it to you to consider those possibilities and shout out which you may prefer when the time comes.
+
+27
+00:03:28,910 --> 00:03:34,850
+Unless there are objections. Let's start with these ground states for the easing model.
+
+28
+00:03:35,480 --> 00:03:46,850
+So these were conceptual questions in this tutorial activity considering two cases where that external magnetic field is set to zero,
+
+29
+00:03:47,270 --> 00:03:55,729
+and this interaction strength parameter j is either positive or negative, doesn't make sense.
+
+30
+00:03:55,730 --> 00:03:59,540
+For it to be zero, we would lose the interactions in that case. But.
+
+31
+00:04:01,750 --> 00:04:08,980
+We have non-zero values that. Can be either positive or negative.
+
+32
+00:04:08,990 --> 00:04:14,870
+It's worth considering those two cases and how the behaviour of the system can vary.
+
+33
+00:04:14,870 --> 00:04:19,100
+So there is a simplification with the absence of that external magnetic field.
+
+34
+00:04:20,060 --> 00:04:27,380
+The energy that we have for this generalisation of the using model is just a minus j, and then the usual sum.
+
+35
+00:04:28,390 --> 00:04:36,160
+Of spin spin interactions summed over all nearest neighbour pairs, and the lattice structure is what determines.
+
+36
+00:04:37,180 --> 00:04:41,710
+How many nearest neighbour pairs there are and what form they take.
+
+37
+00:04:43,180 --> 00:04:52,290
+So. The two cases we have to consider are positive or negative interaction strength J.
+
+38
+00:04:52,800 --> 00:05:01,740
+If we look first at this case J greater than zero, maybe I can ask you what the ground states are, what they are like in this case.
+
+39
+00:05:34,740 --> 00:05:39,840
+Well, there's not much to this one, or at least not much more than we have seen in the lectures,
+
+40
+00:05:40,350 --> 00:05:52,800
+because the case of J greater than zero actually includes the particular value j equals one that we've been looking at over the past week and a bit.
+
+41
+00:05:54,400 --> 00:06:05,290
+And we have seen for this that the energy is minimised and we get a ground state when every single term in this sum is positive.
+
+42
+00:06:05,650 --> 00:06:08,590
+So the overall negative sign just keeps decreasing that energy.
+
+43
+00:06:09,550 --> 00:06:17,410
+And positive products of two spins correspond to them all having the same value either plus 1 or -1.
+
+44
+00:06:18,190 --> 00:06:22,730
+So. All of the spins are aligned.
+
+45
+00:06:24,870 --> 00:06:33,090
+The energy is minus j times the number of links that we have in this sum over nearest neighbour pairs.
+
+46
+00:06:34,350 --> 00:06:37,380
+That ground state is doubly degenerate.
+
+47
+00:06:37,800 --> 00:06:39,700
+So. Something.
+
+48
+00:06:39,700 --> 00:06:48,610
+We have also seen that if we flip all the spins, so all plus one spins go to minus one, well, at the same time all minus one spins go to plus one.
+
+49
+00:06:49,600 --> 00:06:56,380
+Then the products of plus one squared versus minus one squared are all just one.
+
+50
+00:06:56,830 --> 00:07:02,740
+We get the same energy from a different configuration with all of the opposite spins.
+
+51
+00:07:04,400 --> 00:07:08,000
+And the case where all of these spins are aligned is what we, uh.
+
+52
+00:07:09,330 --> 00:07:14,730
+Identified as the ordered phase. Of the easing model.
+
+53
+00:07:15,190 --> 00:07:21,660
+And in the lecture we look specifically at cubic lattices like the square lattice in two dimensions.
+
+54
+00:07:22,620 --> 00:07:31,310
+Um. But. In general, for any ladder structure, we can have all the spins aligning.
+
+55
+00:07:31,670 --> 00:07:35,300
+There is a clear order there. They are all pointed in the same direction.
+
+56
+00:07:35,960 --> 00:07:42,260
+And our usual magnetisation continues to serve as an order parameter.
+
+57
+00:07:43,710 --> 00:07:50,580
+With an absolute value of one in both of these ground states with degeneracy two.
+
+58
+00:07:52,330 --> 00:07:57,250
+So this. Is. Sometimes.
+
+59
+00:07:58,640 --> 00:08:05,090
+Referred to as a ferromagnetic um phase or ferromagnetic magnetic state.
+
+60
+00:08:05,720 --> 00:08:14,330
+That's kind of historical terminology. Looking at, um, iron magnets that can develop.
+
+61
+00:08:15,590 --> 00:08:22,640
+Magnetisation at low temperatures, even in the absence of any external field to seeds.
+
+62
+00:08:24,160 --> 00:08:31,800
+To serve as a seed for that mechanisation, or to tell the material in which direction to magnetise these ferromagnetic materials.
+
+63
+00:08:31,810 --> 00:08:40,750
+Iron based magnets have an intrinsic magnetisation arising from the source of interactions being modelled by the system.
+
+64
+00:08:42,250 --> 00:08:45,940
+So that's a bit of terminology. We will come back to in a moment.
+
+65
+00:08:46,750 --> 00:08:56,620
+But one other thing we can see first, addressing the question of how does this depend on all of these different ladder
+
+66
+00:08:56,620 --> 00:09:02,290
+structures and all of these different dimensions that we talked to briefly last Thursday?
+
+67
+00:09:02,840 --> 00:09:06,670
+Well, the answer is it doesn't with all of the spins aligned.
+
+68
+00:09:07,480 --> 00:09:11,350
+All of the links are contributing minus J to the energy.
+
+69
+00:09:11,800 --> 00:09:16,760
+They are all. Interchangeable. So.
+
+70
+00:09:18,180 --> 00:09:22,920
+It doesn't matter what. Form they take, or how many of them there are.
+
+71
+00:09:23,550 --> 00:09:27,290
+The lattice structure. Does not affect.
+
+72
+00:09:29,800 --> 00:09:36,430
+The. The ground states that we have that dominate at low temperatures.
+
+73
+00:09:37,210 --> 00:09:43,770
+A lot of structures don't matter. So that's the simple case.
+
+74
+00:09:43,780 --> 00:09:48,070
+It's basically what we've already seen in the lectures with nothing.
+
+75
+00:09:49,150 --> 00:09:59,630
+More going on. And having called that the simple case, you might anticipate that when J is less than zero is the more complicated case.
+
+76
+00:10:00,500 --> 00:10:06,740
+You've had a week to think about this, and the story is going to be.
+
+77
+00:10:07,880 --> 00:10:12,560
+Qualitatively the same as for that ferromagnetic system.
+
+78
+00:10:13,250 --> 00:10:16,910
+We want to minimise the energy, which means thinking about how we can get.
+
+79
+00:10:18,170 --> 00:10:23,720
+The most negative contributions from all of these products over links.
+
+80
+00:10:24,110 --> 00:10:27,260
+Now the J is less than zero, so minus J is positive.
+
+81
+00:10:27,770 --> 00:10:37,249
+We want a negative product of nearest neighbour spins sj times s k in order to reduce the energy in the negative products column.
+
+82
+00:10:37,250 --> 00:10:42,170
+When all of these spins are opposite on all of the nearest neighbours.
+
+83
+00:10:43,590 --> 00:10:48,840
+So the aligned spins that we would have here are what we don't want.
+
+84
+00:10:49,170 --> 00:10:52,800
+Now with J less than zero and the negative sign out front.
+
+85
+00:10:53,280 --> 00:10:59,370
+Every pair of aligned nearest neighbour spins will increase the energy and take us away.
+
+86
+00:11:01,540 --> 00:11:05,700
+From the ground state. So we can.
+
+87
+00:11:06,960 --> 00:11:16,920
+Deduce from this that the ground state itself is going to maximise the number of negative contributions.
+
+88
+00:11:18,680 --> 00:11:22,560
+Maximises. So the pairs.
+
+89
+00:11:23,880 --> 00:11:29,250
+Of nearest neighbour spins that are pointed in the opposite direction or.
+
+90
+00:11:30,290 --> 00:11:33,410
+Have the opposite sign, plus 1 or -1.
+
+91
+00:11:35,900 --> 00:11:40,470
+I think on the screen I can zoom out a bit more and it'll stay legible and then fit a bit better.
+
+92
+00:11:42,100 --> 00:11:49,450
+So what this describes in words is something we can look at in a picture like this.
+
+93
+00:11:53,200 --> 00:11:56,470
+Every nearest neighbour pair of spins.
+
+94
+00:11:57,280 --> 00:12:03,470
+If they are anti aligned, they will. Reduce the energy, contribute a negative amount.
+
+95
+00:12:05,010 --> 00:12:11,070
+And we have been able to arrange things in a regular checkerboard pattern so that.
+
+96
+00:12:12,290 --> 00:12:24,620
+Every down, spin or spin of minus one has its four neighbours all pointing up, so contributing four units of minus j or sorry plus j.
+
+97
+00:12:25,360 --> 00:12:30,890
+So two minus signs that then cancel. So it gives that overall negative contribution to the energy.
+
+98
+00:12:31,460 --> 00:12:33,290
+And then we are able to just alternate this.
+
+99
+00:12:34,570 --> 00:12:42,040
+Um plus one, followed by minus one, followed by plus one and so on in both of the dimensions being printed here.
+
+100
+00:12:45,180 --> 00:12:50,160
+So that's maybe the simplest picture to have in mind for.
+
+101
+00:12:51,350 --> 00:12:54,560
+This negative j ground state.
+
+102
+00:12:57,630 --> 00:13:01,320
+What we want is in that ground state.
+
+103
+00:13:03,610 --> 00:13:07,390
+Just alternating patterns of upward and downward.
+
+104
+00:13:08,990 --> 00:13:13,280
+Spins. This is.
+
+105
+00:13:15,740 --> 00:13:24,560
+Going to be called the opposite of that ferromagnetic case, where all of the spins were aligned and there was an overall magnetisation in the system.
+
+106
+00:13:26,140 --> 00:13:30,370
+Here, with every spin pointing in an opposite direction from all of its neighbours.
+
+107
+00:13:30,910 --> 00:13:34,270
+The overall magnetisation is going to be zero and.
+
+108
+00:13:35,410 --> 00:13:40,960
+The system of the ground state that we have here is referred to as.
+
+109
+00:13:41,930 --> 00:13:46,160
+An antiferromagnetic as opposed to a ferro magnet.
+
+110
+00:13:46,190 --> 00:13:55,430
+So rather than aligning to form an overall magnetisation, the alternate, the nearest neighbour pairs are all anti aligning.
+
+111
+00:13:56,930 --> 00:14:03,200
+But there is still one similarity between these two cases of ferromagnetic and antiferromagnetic systems.
+
+112
+00:14:03,830 --> 00:14:09,920
+And if we imagine flipping the value of every single spin, then we still end up with something that looks the same.
+
+113
+00:14:10,580 --> 00:14:14,150
+All the downward pointing spins we come up and all the upward pointing spins we come down.
+
+114
+00:14:14,480 --> 00:14:20,600
+We still have this alternating pattern of every nearest neighbour pair of spins opposing each other.
+
+115
+00:14:21,170 --> 00:14:25,370
+So just like that ferromagnetic case, we again have.
+
+116
+00:14:26,520 --> 00:14:31,080
+This doubly degenerate ground states of fully alternating spins.
+
+117
+00:14:32,520 --> 00:14:37,380
+So to give another example for a different lattice structure.
+
+118
+00:14:38,540 --> 00:14:46,280
+This is. The. An illustration of the antiferromagnetic state in that honeycomb lattice.
+
+119
+00:14:48,300 --> 00:14:56,940
+Where we can see. So here it's different colours that are distinguishing between the plus one spins and the minus one spins.
+
+120
+00:14:57,780 --> 00:15:07,050
+And we can confirm that all of the nearest neighbours are between oppositely coloured pairs of spins.
+
+121
+00:15:07,200 --> 00:15:11,370
+So they are all contributing a negative j to the energy.
+
+122
+00:15:12,670 --> 00:15:20,790
+Just in the same way that. This regular alternating pattern in a two dimensional square lattice did.
+
+123
+00:15:25,110 --> 00:15:27,990
+So this is a nice illustration to have in mind.
+
+124
+00:15:28,110 --> 00:15:37,680
+But in a third year math module we want to do some maths as well as uh, pictures and qualitative illustrations and.
+
+125
+00:15:38,980 --> 00:15:43,360
+The maps start to become interesting when we have this antiferromagnetic setup.
+
+126
+00:15:44,440 --> 00:15:50,380
+As I just mentioned, if we compute the magnetisation for these ground states, which was.
+
+127
+00:15:51,350 --> 00:15:54,440
+Plus or minus one in the ferromagnetic case.
+
+128
+00:15:55,070 --> 00:16:02,540
+It is now the usual difference between upward and downward pointing spins divided by the total number of spins.
+
+129
+00:16:03,380 --> 00:16:14,450
+Well, if we have a regular alternation of up and down spins, then we by default have equal numbers of spin up and spin down.
+
+130
+00:16:14,810 --> 00:16:25,130
+The numerator cancels and we get a big fat zero, which is actually the same magnetisation that we would have in the high temperature disordered phase.
+
+131
+00:16:26,640 --> 00:16:36,730
+Where? The multiplicity of the different states dominates the partition function, rather than going for the lowest energy ground state,
+
+132
+00:16:37,150 --> 00:16:45,820
+and we just have random distributions of equal numbers at least approximately equal numbers of upward and downward spins.
+
+133
+00:16:47,470 --> 00:16:53,030
+So that. May raise the question is there a phase transition?
+
+134
+00:16:53,030 --> 00:17:02,930
+Is there any distinction between the disordered phase and the low temperature phase where we expect these Crown states to dominate?
+
+135
+00:17:04,220 --> 00:17:11,720
+And having looked at the illustrations of the Crown states, we can say there certainly should be.
+
+136
+00:17:12,560 --> 00:17:16,250
+Um, those ground states have a clear order.
+
+137
+00:17:16,650 --> 00:17:29,979
+There's a clear pattern in. How the upward and downward pointing spins are arranged so it does not look like the random distribution that the entropy,
+
+138
+00:17:29,980 --> 00:17:34,660
+the multiplicity would tell us to expect in the disordered phase.
+
+139
+00:17:35,200 --> 00:17:43,480
+This looks ordered, but it has an exactly vanishing magnetisation, which therefore is no longer distinguishing between.
+
+140
+00:17:45,140 --> 00:17:49,280
+The disordered phase and whatever order we are seeing here.
+
+141
+00:17:51,650 --> 00:17:59,150
+So the solution to this for the antiferromagnetic negative interaction system is to introduce.
+
+142
+00:18:00,620 --> 00:18:10,110
+A new order parameter. We'll just be averaging again over all of the spins.
+
+143
+00:18:10,890 --> 00:18:15,330
+But now with the change that depending on.
+
+144
+00:18:16,240 --> 00:18:25,890
+Whether the. The site that we are looking at labelled by N is an even or an odd number.
+
+145
+00:18:26,520 --> 00:18:32,190
+We bring in a power of minus one to that even or odd number.
+
+146
+00:18:32,640 --> 00:18:36,780
+So we pick up plus s for even sites.
+
+147
+00:18:37,200 --> 00:18:45,150
+And minus S for odd sites. You can call this the Staggered Magnetisation.
+
+148
+00:18:49,180 --> 00:18:59,600
+So m sub s. And the staggering is just this fact that there is a plus or minus one factor, depending on whether our sites are even or odd.
+
+149
+00:18:59,990 --> 00:19:05,060
+And in order for this to match up with the antiferromagnetic picture that we have,
+
+150
+00:19:05,540 --> 00:19:11,299
+we need to make sure that these even numbers correspond to the proper labels,
+
+151
+00:19:11,300 --> 00:19:17,710
+so that every even site has are labelled the nearest neighbours and vice versa.
+
+152
+00:19:17,720 --> 00:19:22,820
+Every odd site has nearest neighbours that are given an even label.
+
+153
+00:19:23,420 --> 00:19:26,960
+So and that we have here we need the condition.
+
+154
+00:19:28,640 --> 00:19:34,790
+That's. Even or odd numbers in how we label the lattice sites.
+
+155
+00:19:36,790 --> 00:19:42,150
+Are assigned with. Some thought or some care.
+
+156
+00:19:42,180 --> 00:19:42,960
+So that.
+
+157
+00:19:44,520 --> 00:19:57,600
+The staggered magnetisation in a system like this, it will pick up, say, a plus one from that, uh, alternating factor whenever SN is positive.
+
+158
+00:19:58,480 --> 00:20:05,370
+Whenever SN is negative, the green points here we introduce the additional negative sign.
+
+159
+00:20:05,730 --> 00:20:08,250
+Those two negative signs cancel. Everything adds up.
+
+160
+00:20:08,760 --> 00:20:18,690
+And we end up in these antiferromagnetic round states with this maximum value of the staggered magnetisation just one.
+
+161
+00:20:19,770 --> 00:20:29,850
+Whereas if we randomly distribute those, uh, upward and downward pointing spins the way that the high temperature phase requires,
+
+162
+00:20:30,210 --> 00:20:39,270
+we still get the staggered magnetisation like the ordinary magnetisation being zero in that disordered phase.
+
+163
+00:20:42,890 --> 00:20:48,530
+So that at least satisfies one of the requirements for this staggered maximisation to be an order parameter.
+
+164
+00:20:48,530 --> 00:20:56,750
+It. It distinguishes between the ordered and disordered phases, going from a zero value to a non-zero value.
+
+165
+00:20:58,820 --> 00:21:02,030
+The other condition for um.
+
+166
+00:21:04,000 --> 00:21:10,000
+This and so has to be a a proper order parameter is that it should be.
+
+167
+00:21:11,330 --> 00:21:20,440
+Related to the free energy. The negative log of the partition function, and we can do that.
+
+168
+00:21:22,100 --> 00:21:28,240
+By. Generalising the energy that we have.
+
+169
+00:21:28,750 --> 00:21:33,580
+So having turned off the usual external magnetic field.
+
+170
+00:21:35,080 --> 00:21:38,800
+We just had this interaction term in the energy.
+
+171
+00:21:40,060 --> 00:21:45,890
+If we add to that. Something that.
+
+172
+00:21:48,070 --> 00:21:52,660
+Looks like the staggered magnetisation parameter we have been.
+
+173
+00:21:53,430 --> 00:21:57,100
+We have introduced with this minus one to the n.
+
+174
+00:21:58,980 --> 00:22:09,000
+Then. Just in the same way that we related the magnetisation itself to the derivative of the partition function,
+
+175
+00:22:09,000 --> 00:22:14,850
+the sum over all microstates of the exponential of minus E over temperature.
+
+176
+00:22:15,960 --> 00:22:25,630
+The staggered magnetisation will be proportional to. The derivative of that free energy log z with respect to this.
+
+177
+00:22:27,030 --> 00:22:31,790
+Staggered magnetic field. So a direct.
+
+178
+00:22:33,400 --> 00:22:38,170
+Analogue of the magnetic field itself. Once we take this derivative.
+
+179
+00:22:39,010 --> 00:22:42,180
+And we get our sacred magnetisation from that.
+
+180
+00:22:42,250 --> 00:22:50,560
+We turn this external field back off just by setting the staggered magnetic magnetic field to be zero,
+
+181
+00:22:50,710 --> 00:22:55,250
+the same way that the ordinary magnetic field is. So.
+
+182
+00:22:57,220 --> 00:23:05,560
+Those are a longer discussion than I expected about those conceptual questions that don't require.
+
+183
+00:23:06,480 --> 00:23:12,360
+Any detailed calculations? Well, at least at least for the square and honeycomb cases.
+
+184
+00:23:12,900 --> 00:23:20,310
+The third case is the triangular lattice. And before going on to that, let me pause and see if there are questions about.
+
+185
+00:23:21,620 --> 00:23:29,300
+This ferromagnetic versus antiferromagnetic setup and the introduction of this staggered magnetisation parameter.
+
+186
+00:23:39,590 --> 00:23:49,700
+And not hearing any. Perhaps we can inspire some by going now to this third basic two dimensional lattice structure that we introduced last week.
+
+187
+00:23:50,210 --> 00:23:57,710
+So the triangular lattice we have. That same antiferromagnetic interaction.
+
+188
+00:23:57,710 --> 00:24:06,470
+Strength less than zero. Then we want to do the the same game, have everything fully alternating here.
+
+189
+00:24:06,980 --> 00:24:13,370
+So if this site in the centre here is pointing up, then all of its nearest neighbours we expect to point down.
+
+190
+00:24:16,360 --> 00:24:20,889
+And everything explodes already because those nearest neighbours of the central
+
+191
+00:24:20,890 --> 00:24:27,250
+site are nearest neighbours of each other and they are going to be unhappy.
+
+192
+00:24:28,470 --> 00:24:39,360
+Now that they've been assigned to a line rather than into line, and contribute a positive amount to the energy that we have from the interaction term.
+
+193
+00:24:40,860 --> 00:24:49,290
+So maybe if we look at just a single unit cell in this triangular lattice.
+
+194
+00:24:50,890 --> 00:24:56,470
+This is, um. A big old question mark on top of it.
+
+195
+00:24:58,160 --> 00:25:02,330
+When we set, say, one of these sites to be.
+
+196
+00:25:03,430 --> 00:25:16,460
+I'm spin up then. If we look at all of the possibilities that we have for, well, the eight ways we can assign.
+
+197
+00:25:18,180 --> 00:25:22,440
+Upward or downward pointing spins to this triangle. Um.
+
+198
+00:25:24,810 --> 00:25:34,020
+This bottom. Link between these two nearest neighbours is always going to be happy and contributing a negative contribution to the energy,
+
+199
+00:25:34,020 --> 00:25:40,110
+thanks to them being anti aligned. When we look at the third spin in this unit cell.
+
+200
+00:25:42,020 --> 00:25:44,270
+If this were chosen to be pointing up,
+
+201
+00:25:44,780 --> 00:25:53,270
+then that link would be happy if he aligned with the down to the point has been there, but that link would be unhappy.
+
+202
+00:25:54,140 --> 00:25:57,800
+Increasing the energy compared to what we would want to have.
+
+203
+00:25:58,490 --> 00:26:03,080
+Whereas if we assigned it to be green, then that link is now happy.
+
+204
+00:26:03,080 --> 00:26:07,790
+The red and green alternate. But now it's this.
+
+205
+00:26:08,780 --> 00:26:16,070
+Link here that has to aligned green spins, pointing down and increasing the energy.
+
+206
+00:26:18,610 --> 00:26:28,090
+So the basic situation that this that very simple minimal three spin triangular system suggests.
+
+207
+00:26:29,260 --> 00:26:34,230
+Is that we have. An issue for the triangular lattice.
+
+208
+00:26:35,190 --> 00:26:43,740
+When the interaction strength is less than zero, and now it's back on the screen for you to see this system.
+
+209
+00:26:44,820 --> 00:26:49,530
+Can't realise the the ground state that we want with fully alternating spins.
+
+210
+00:26:50,310 --> 00:26:55,340
+Just as as a consequence of. The lattice structure.
+
+211
+00:26:59,020 --> 00:27:03,340
+And it is therefore known as.
+
+212
+00:27:05,540 --> 00:27:12,830
+A frustrated anti-hero magnet. It's antiferromagnetic because it wants.
+
+213
+00:27:14,380 --> 00:27:18,070
+Nearest neighbour spins to align opposite to each other.
+
+214
+00:27:18,370 --> 00:27:25,360
+It is frustrated because that's not possible for all of the nearest neighbour pairs and.
+
+215
+00:27:27,620 --> 00:27:32,900
+To introduce just a bit of terminology. The reason for this frustration is.
+
+216
+00:27:33,940 --> 00:27:39,520
+Because this triangular lattice is what's known as a non bipartite lattice.
+
+217
+00:27:40,770 --> 00:27:46,090
+Where? Well. Let's start with the bipartite.
+
+218
+00:27:46,270 --> 00:27:56,570
+That basically means that the lattice structure can be split, divided, or partitioned into two classes of spins.
+
+219
+00:27:56,590 --> 00:28:02,950
+So if we go back to. The rectangular or honeycomb lattice.
+
+220
+00:28:02,970 --> 00:28:06,090
+These are examples of bipartite spins.
+
+221
+00:28:06,900 --> 00:28:13,920
+They can be partitioned into sets of even labelled spins that only have odd nearest neighbours.
+
+222
+00:28:15,070 --> 00:28:19,550
+As well as vice versa. Odd spins only have.
+
+223
+00:28:19,570 --> 00:28:23,770
+Even nearest neighbours. Maybe even easier to see with these colours.
+
+224
+00:28:24,970 --> 00:28:35,140
+Just the statement that every green point on here has only blue nearest neighbours and every blue point has
+
+225
+00:28:35,620 --> 00:28:43,990
+green nearest neighbours is exactly what we can't realise for the triangular lattice or for that matter,
+
+226
+00:28:44,500 --> 00:28:48,730
+we can't realise it for this Kagami lattice either.
+
+227
+00:28:49,420 --> 00:28:52,630
+Um, just because it has triangles embedded in it.
+
+228
+00:28:53,350 --> 00:29:01,340
+If. That were the upward pointing spin it would once down reporting spins on both of those nearest neighbours,
+
+229
+00:29:02,030 --> 00:29:04,070
+but they are nearest neighbours of each other,
+
+230
+00:29:04,940 --> 00:29:14,630
+and we therefore have frustration in that Kagami case as well as the triangular case, despite their different condition numbers.
+
+231
+00:29:18,080 --> 00:29:31,240
+So. This frustration in these non bipartite lattices like the triangular case, just make everything um.
+
+232
+00:29:32,850 --> 00:29:39,990
+Interesting. More complicated. In this single unit cell with just three spins.
+
+233
+00:29:41,230 --> 00:29:48,820
+There ended up being. Six degenerate states with the minimum amount of energy we can realise.
+
+234
+00:29:53,430 --> 00:29:56,910
+So 60 microstates or configurations.
+
+235
+00:30:01,420 --> 00:30:07,130
+Oops. Degenerate configurations of spins that all have.
+
+236
+00:30:09,080 --> 00:30:15,800
+Two of the three links anti aligned and then the third one contributing a positive energy.
+
+237
+00:30:17,420 --> 00:30:21,470
+So the overall energy in this case we have.
+
+238
+00:30:22,240 --> 00:30:27,370
+Two contributions of Linus J. Sorry.
+
+239
+00:30:28,090 --> 00:30:31,180
+Two contributions of plus J which is less than zero.
+
+240
+00:30:31,270 --> 00:30:38,200
+And plus that final spin. Um, basically whichever one of these has the x.
+
+241
+00:30:39,040 --> 00:30:48,070
+So that choice of upward or downward putting spin there gives two of those degenerate configurations of these three spins.
+
+242
+00:30:48,610 --> 00:30:58,300
+The other four we just get by shifting that choice to either of the other two uh vertices in this triangle.
+
+243
+00:30:59,560 --> 00:31:03,250
+So two plus two plus two gives us six. And if we.
+
+244
+00:31:04,930 --> 00:31:10,150
+Build a full triangular lattice out of a large number of spins.
+
+245
+00:31:10,870 --> 00:31:14,890
+This degeneracy factor just keeps growing and growing.
+
+246
+00:31:15,670 --> 00:31:20,830
+Um. So let's take a look at an example of that.
+
+247
+00:31:22,450 --> 00:31:29,710
+This is from a fairly old paper. Where we have a triangular lattice.
+
+248
+00:31:30,490 --> 00:31:34,910
+And this one here fellow has. Um, a signed.
+
+249
+00:31:36,570 --> 00:31:43,709
+Alternating spins to. It's in sort of the best way he can to get a relatively low energy.
+
+250
+00:31:43,710 --> 00:31:48,420
+So a large negative value for the energy in this easing model.
+
+251
+00:31:48,420 --> 00:31:57,690
+So we can see that what he's done, his strategy has been to go across each horizontal row in here and get nice alternating.
+
+252
+00:31:58,920 --> 00:32:07,540
+Upward and downward pointing spins in their. And then the consequence is that as we go from one row to the next,
+
+253
+00:32:08,410 --> 00:32:15,690
+only essentially every other link is going to be happy, the other is going to be frustrated.
+
+254
+00:32:15,700 --> 00:32:19,510
+So that one there is frustrated but happy.
+
+255
+00:32:20,410 --> 00:32:24,310
+Happy but frustrated and so on.
+
+256
+00:32:25,740 --> 00:32:27,149
+The one thing we can see here,
+
+257
+00:32:27,150 --> 00:32:36,810
+if we try to un focus our eyes and just look at the patterns of pluses and minuses for those upward pointing or down reporting spins.
+
+258
+00:32:37,530 --> 00:32:47,520
+There's not any obvious order, and there are lots of ways that these spins can be shifted without changing this pattern in the energy.
+
+259
+00:32:48,720 --> 00:32:52,850
+Of a happy rose, but unhappy diagonals.
+
+260
+00:32:52,860 --> 00:32:59,849
+So, for instance, if we look at this row here and imagine flipping every spin in there, or equivalently,
+
+261
+00:32:59,850 --> 00:33:10,440
+just shifting all the pluses and minuses by one unit, then we still have this alternating pattern of happy but frustrated links on the diagonal.
+
+262
+00:33:10,920 --> 00:33:15,690
+We can do that for every single one of the rows in this image.
+
+263
+00:33:17,240 --> 00:33:26,180
+And the end result is that. There's not any order for us to see and there's not any order parameter.
+
+264
+00:33:27,490 --> 00:33:38,050
+For us to mathematically define to distinguish between high temperature and and low temperature phases, even though we expect there to.
+
+265
+00:33:38,530 --> 00:33:42,129
+We expect something to happen going from that high temperature case where
+
+266
+00:33:42,130 --> 00:33:47,770
+we're just randomly picking out upward or downward pointing spins versus the,
+
+267
+00:33:48,940 --> 00:33:57,310
+uh, low temperature case where there is encouragement to anti align, but it is frustrated.
+
+268
+00:33:58,780 --> 00:34:08,979
+So. Yeah. What what one you introduced in that article back in 1950 was this observation and more
+
+269
+00:34:08,980 --> 00:34:17,890
+mathematical proofs that in this situation end up being essentially exponentially many.
+
+270
+00:34:18,670 --> 00:34:22,200
+Um. States of the the lowest energy.
+
+271
+00:34:24,550 --> 00:34:29,300
+So the degeneracy. Of the ground state.
+
+272
+00:34:31,020 --> 00:34:37,850
+Increases exponentially. With the number of sites that we have in our lattice.
+
+273
+00:34:39,320 --> 00:34:49,740
+Which ends up. Leading to a non vanishing entropy even in the limit of absolute zero temperature.
+
+274
+00:34:56,720 --> 00:35:01,830
+And this continues to be a, um.
+
+275
+00:35:02,960 --> 00:35:07,070
+Ongoing scientific quest to describe these systems,
+
+276
+00:35:07,070 --> 00:35:12,260
+in part because these sorts of antiferromagnetic interactions play crucial roles in
+
+277
+00:35:12,260 --> 00:35:17,030
+things like the high temperature superconductors that we looked at briefly last week.
+
+278
+00:35:18,740 --> 00:35:24,950
+Um. There are. There's. Funny quasi orderings and frustrations.
+
+279
+00:35:24,950 --> 00:35:31,940
+And if we want to analyse those sorts of systems and be able to predict their properties, we want to do things like find their ground states.
+
+280
+00:35:32,540 --> 00:35:39,010
+So this. Little reference here a.
+
+281
+00:35:40,610 --> 00:35:47,450
+A paper that was posted on the archive. Um, if you've heard of the archive, it was later published in Physical Review Letters.
+
+282
+00:35:47,630 --> 00:35:53,180
+You can find the gist with a Google search for this number. It's got, uh, 1500 citations in the past 20 years.
+
+283
+00:35:53,960 --> 00:36:03,110
+It was looking at precisely this question of frustration from the perspective of computational complexity and showing that.
+
+284
+00:36:04,140 --> 00:36:11,790
+Um, for related systems. So somewhat more complicated than this plain easing model.
+
+285
+00:36:11,940 --> 00:36:21,600
+More like the spin classes, where these interactions are allowed to vary from site to site, rather than being constant throughout the lattice.
+
+286
+00:36:24,460 --> 00:36:31,710
+From the perspective of computational complexity. Finding the ground states of those sorts of systems.
+
+287
+00:36:33,360 --> 00:36:38,370
+Is what's called an NP hard problem, which is.
+
+288
+00:36:40,020 --> 00:36:43,950
+Something we don't need to go into. It's kind of well beyond the scope of this module.
+
+289
+00:36:44,850 --> 00:36:51,719
+Um. NP stands for a non-deterministic polynomial complexity class.
+
+290
+00:36:51,720 --> 00:36:59,190
+That's basically the idea that it takes exponentially long or exponential computing resources
+
+291
+00:36:59,190 --> 00:37:05,100
+for any algorithm to find the solution to this problem of identifying the ground states.
+
+292
+00:37:05,970 --> 00:37:17,730
+But if you propose a potential solution, you can check whether it is in fact a ground state in a much shorter time polynomial rather than exponential.
+
+293
+00:37:18,870 --> 00:37:27,270
+The hard bit of this means that every, uh, computational problem in that non-deterministic polynomial class,
+
+294
+00:37:27,780 --> 00:37:37,500
+where it is hard to construct solutions but easy to check them, can be mapped to this problem of finding ground states.
+
+295
+00:37:38,820 --> 00:37:44,229
+Um. The shooting.
+
+296
+00:37:44,230 --> 00:37:48,340
+The long and short of it is that this is a hard problem to solve.
+
+297
+00:37:49,180 --> 00:37:59,740
+Even numerically, let alone analytically, with pen and paper and things like this have been motivation in recent years for.
+
+298
+00:38:00,810 --> 00:38:04,410
+The development of quantum computers that.
+
+299
+00:38:05,350 --> 00:38:09,050
+In principle, I can promise to. Uh.
+
+300
+00:38:10,770 --> 00:38:15,030
+Well, these classical complexity classes don't apply when.
+
+301
+00:38:16,220 --> 00:38:25,430
+We have a quantum computing to operate the algorithms for us and the the fellows who introduced this analysis
+
+302
+00:38:26,390 --> 00:38:33,320
+over against Visa and Matthias Troyer have gone on to be some of the leading figures in quantum computing.
+
+303
+00:38:33,590 --> 00:38:38,660
+One of them is still an academic at the University of Bern. The other was, uh, poached by Microsoft.
+
+304
+00:38:38,990 --> 00:38:43,250
+It's been working for them for the past 15 years on their quantum computers.
+
+305
+00:38:44,570 --> 00:38:55,050
+So as usual. Ended up talking for much longer than I expected about the simple conceptual questions that don't require detailed calculations.
+
+306
+00:38:56,220 --> 00:39:03,240
+So no chance of saying anything about the fully connected lattice on here.
+
+307
+00:39:03,600 --> 00:39:07,710
+Um, there is in the canvas site the.
+
+308
+00:39:09,630 --> 00:39:14,760
+Model solutions for that tutorial activity, which will show you how to.
+
+309
+00:39:15,640 --> 00:39:27,200
+Derive. The exact form of the partition function for the easing model on that fully connected lattice.
+
+310
+00:39:27,410 --> 00:39:32,300
+The complete graph. This is sometimes known as the Curie vice model.
+
+311
+00:39:32,330 --> 00:39:40,670
+Maybe the one thing to point out about it is that the solutions that we get.
+
+312
+00:39:42,080 --> 00:39:51,500
+Arise from the same self-consistency condition that we started looking at in the mean field approximation on Tuesday,
+
+313
+00:39:51,500 --> 00:39:56,900
+and we will wrap up the analysis of that mean field approximation tomorrow.
+
+314
+00:39:58,280 --> 00:40:02,990
+And this is with some reflection, something that we can expect just because.
+
+315
+00:40:04,000 --> 00:40:07,420
+That mean field analysis is um.
+
+316
+00:40:08,290 --> 00:40:18,910
+Supposing that the interactions that each site feels with its nearest neighbours are governed by the average magnetisation over the whole lattice.
+
+317
+00:40:19,270 --> 00:40:26,770
+And when we have this complete graph where the nearest neighbours of any site are the entire rest of the lattice,
+
+318
+00:40:27,130 --> 00:40:35,560
+it makes sense that its interactions with those nearest neighbours depend on the overall magnetisation.
+
+319
+00:40:36,550 --> 00:40:44,080
+So this is effectively an infinite dimensional lattice in the limit of infinitely many sites.
+
+320
+00:40:44,290 --> 00:40:53,550
+And that gives us the. The mean field approximation as an exact result in this case.
+
+321
+00:40:54,330 --> 00:40:57,510
+So setting that aside, just.
+
+322
+00:40:58,720 --> 00:41:03,790
+Spend the remaining time looking ahead to the exam, which.
+
+323
+00:41:06,170 --> 00:41:09,700
+Hopefully. You all have on your timetable.
+
+324
+00:41:09,700 --> 00:41:16,419
+The the main exam room will be in, uh, a couple of weeks from yesterday, in the afternoon of Wednesday,
+
+325
+00:41:16,420 --> 00:41:22,390
+the 22nd of May, in the Big Lecture theatre in the Yoko Ono Lennon Centre.
+
+326
+00:41:23,260 --> 00:41:29,680
+Um, we won't be the only module in there. There are some other larger modules that will be sharing that space with you,
+
+327
+00:41:29,680 --> 00:41:38,230
+but I will be around just in case there are, uh, any issues or ambiguities in the exam.
+
+328
+00:41:39,710 --> 00:41:48,050
+And in the meantime, uh, here on canvas, there have been for a few weeks, a couple of specimen exams.
+
+329
+00:41:49,640 --> 00:41:56,570
+For you to take a look at and use to practice and prepare for the exam itself.
+
+330
+00:41:57,920 --> 00:42:05,810
+So the idea with these specimen exams, this is a new way of running things that the department introduced this year.
+
+331
+00:42:06,650 --> 00:42:13,250
+Previously, we just shared on the exams from the past year or two for you to see what was actually.
+
+332
+00:42:14,310 --> 00:42:21,750
+Asked. In practice, that became suboptimal during the pandemic, when the format of the exam was changing from year to year,
+
+333
+00:42:22,260 --> 00:42:28,140
+and it was never clear if those past year exams were reliable guides to what you should expect.
+
+334
+00:42:29,190 --> 00:42:33,300
+The specimen exams improve upon that by.
+
+335
+00:42:35,240 --> 00:42:45,080
+Uh, having sort of precisely the same format, style and structure as what you will be seeing in a couple of weeks, just with different questions.
+
+336
+00:42:45,800 --> 00:42:48,890
+So there will be formula sheets like these.
+
+337
+00:42:49,370 --> 00:42:52,370
+These are all things that you do not need to memorise at all.
+
+338
+00:42:55,050 --> 00:43:03,030
+The basic ingredients will all be given to you, and you will just need to apply them appropriately to whatever the questions are.
+
+339
+00:43:04,650 --> 00:43:14,490
+It is worth you going through these assessment exams and having a go at the questions before looking at the solutions that are also.
+
+340
+00:43:15,390 --> 00:43:18,610
+Here on. On canvas.
+
+341
+00:43:19,380 --> 00:43:27,050
+Uh, you'll. That's how you'll get the most out of. Having these specimens to practice and gain some comfort with.
+
+342
+00:43:28,370 --> 00:43:35,449
+And for that reason, it's probably best if we don't talk through the the questions themselves.
+
+343
+00:43:35,450 --> 00:43:40,010
+In case any of you have not yet check them out and want to do so in sort of.
+
+344
+00:43:41,450 --> 00:43:45,320
+Conditions as close as possible to those of the actual exam.
+
+345
+00:43:45,890 --> 00:43:52,450
+What I will do is leave a few minutes for you to raise any questions that you have about those logistics,
+
+346
+00:43:52,460 --> 00:44:03,290
+what to expect from the exam or as at the start, any of the statistical physics content that we have been learning over the past few months.
+
+347
+00:44:18,060 --> 00:44:23,520
+And if there aren't any questions. I can either let you go or just.
+
+348
+00:44:24,370 --> 00:44:26,050
+Talk through a bit. The.
+
+349
+00:44:27,440 --> 00:44:39,140
+Overall ideas that you should expect to be able to understand and and work through in any exam now that you have gone through this module.
+
+350
+00:44:40,210 --> 00:44:43,900
+So out of these ten units.
+
+351
+00:44:45,130 --> 00:44:51,910
+Everything in all of these units is fair game, for the exam is not limited to any portion of the semester,
+
+352
+00:44:51,910 --> 00:44:55,600
+so we could go all the way back to the probability spaces.
+
+353
+00:44:55,600 --> 00:45:00,370
+Expectation values variance. The central limit theorem that we looked at in unit one.
+
+354
+00:45:01,060 --> 00:45:09,310
+A big aspect of this connected to that computer project was building up random walks and other stochastic processes from.
+
+355
+00:45:10,640 --> 00:45:17,120
+Um, repeating some single elementary process in a random walk of single step.
+
+356
+00:45:17,630 --> 00:45:24,560
+Repeat that a lot, and we get a, um, larger scale system that the central limit theorem can be applied to,
+
+357
+00:45:25,430 --> 00:45:28,940
+cast in the form of diffusion and the law of diffusion as well.
+
+358
+00:45:30,060 --> 00:45:42,320
+And then building up from that to. The statistical ensembles that were the key concept, organising most of the rest of the module.
+
+359
+00:45:43,010 --> 00:45:43,879
+Starting with the.
+
+360
+00:45:43,880 --> 00:45:56,330
+So, the idea that a statistical ensemble is a realisation of a probability space where the set of states that we have is given by the possible,
+
+361
+00:45:57,140 --> 00:46:00,110
+um, configurations of some number of particles.
+
+362
+00:46:01,090 --> 00:46:10,570
+As time goes by, the system probabilistically adopts different microstates, with some probabilities subject to physical constraints.
+
+363
+00:46:11,380 --> 00:46:19,420
+Some of those given by the laws of thermodynamics. So conservation of energy is directly realised in the micro canonical ensemble,
+
+364
+00:46:19,420 --> 00:46:24,010
+which also conserves the number of particles, the number of degrees of freedom.
+
+365
+00:46:25,470 --> 00:46:30,300
+The canonical ensemble, though, was around conservation of energy.
+
+366
+00:46:30,840 --> 00:46:37,229
+By coupling the system to a large external thermal reservoir that fixes the
+
+367
+00:46:37,230 --> 00:46:42,000
+temperature but allows the energy to fluctuate from microstate to microstate.
+
+368
+00:46:42,920 --> 00:46:53,120
+In both of those cases, the second law of thermodynamics tells us that equilibrium corresponds to a maximisation of the entropy.
+
+369
+00:46:55,020 --> 00:47:00,690
+Which we can use to derive the precise form of the partition function and the
+
+370
+00:47:00,690 --> 00:47:04,950
+Boltzmann distribution governing the probabilities for the different microstates.
+
+371
+00:47:05,850 --> 00:47:13,950
+And then we had a few weeks applying the canonical ensemble to real world situations like ideal gases,
+
+372
+00:47:14,130 --> 00:47:18,540
+where we derived the ideal gas law as an equation of state.
+
+373
+00:47:19,440 --> 00:47:24,450
+Introduced concepts of reversibility and irreversibility by looking at the mixing entropy,
+
+374
+00:47:25,230 --> 00:47:30,930
+and then putting those ideal gases into thermodynamic cycles,
+
+375
+00:47:30,930 --> 00:47:35,700
+adjusting their pressure or volume as described by those PV diagrams,
+
+376
+00:47:36,270 --> 00:47:42,570
+in such a way that we can move heat to do work, giving us an engine with some efficiency.
+
+377
+00:47:43,110 --> 00:47:47,820
+Or we can do work to move heat, giving us a refrigerator.
+
+378
+00:47:49,130 --> 00:47:54,560
+And then finally coming back to the third and final statistical ensemble,
+
+379
+00:47:54,560 --> 00:48:01,490
+the grand canonical ensemble that introduces the chemical potential, allowing the number of particles now to vary.
+
+380
+00:48:02,210 --> 00:48:07,370
+This is appropriate for quantum systems that obey quantum statistics.
+
+381
+00:48:08,000 --> 00:48:18,530
+Here, the key idea is defining microstates based on the occupation numbers of energy levels, rather than taking a single particle partition function,
+
+382
+00:48:19,700 --> 00:48:28,340
+raising that to the nth power for n particles, and then trying to correct for over counting from indistinguishable um based on.
+
+383
+00:48:29,500 --> 00:48:33,490
+That quantum approach to microstates and the grand canonical ensemble.
+
+384
+00:48:33,880 --> 00:48:40,000
+We derive the Planck spectrum applied to the sun stars and the cosmic microwave background.
+
+385
+00:48:40,660 --> 00:48:45,670
+Looked at the degeneracy pressure of low temperature fermion gases.
+
+386
+00:48:46,180 --> 00:48:52,540
+Seeing how those explain measured heat capacities and materials as well as type one supernovas.
+
+387
+00:48:52,990 --> 00:48:59,680
+And we are now looking finally at the using model as a paradigmatic interacting system.
+
+388
+00:49:01,210 --> 00:49:06,250
+Where? We have looked at phase transitions in there, the concept of order parameters,
+
+389
+00:49:06,640 --> 00:49:15,130
+the mean field approximation that we will wrap up tomorrow, and then a bit more about numerical analysis also tomorrow.
+
+390
+00:49:15,140 --> 00:49:25,300
+So that is hopefully all familiar. If not, then there's another couple of weeks to remind yourself of what's going on and then you will be through.
+
+391
+00:49:26,790 --> 00:49:29,910
+Speaking of through. We are through for today's tutorial.
+
+392
+00:49:31,110 --> 00:49:35,700
+Any final questions before I shut down the recording and let you go?
+
+393
+00:49:38,560 --> 00:49:45,770
+Looks like. Um.
+
+394
+00:49:47,420 --> 00:49:56,660
+If there were anything like that, it would be highlighted among the learning outcomes for the the module.
+
+395
+00:49:57,630 --> 00:50:03,540
+By complete coincidence, those are on the main page of the the canvas site.
+
+396
+00:50:04,020 --> 00:50:07,800
+So things like the equation of state is mentioned there.
+
+397
+00:50:08,340 --> 00:50:17,530
+Things like. These stochastic microscopic dynamics that we looked at for random walks are mentioned there, as well as, um,
+
+398
+00:50:17,920 --> 00:50:28,540
+the constraints that correspond to those three statistical ensembles and order parameters or interactions and the concept of phase transitions.
+
+399
+00:50:29,350 --> 00:50:30,669
+At the very end there.
+
+400
+00:50:30,670 --> 00:50:37,569
+So I won't go through all of those because they it'll sound a lot like the contents of the module that I could have read off here,
+
+401
+00:50:37,570 --> 00:50:44,680
+rather than opening up the the lecture notes. Not a coincidence that the topics and the learning outcomes align,
+
+402
+00:50:45,280 --> 00:50:51,820
+but the the learning outcomes will be formally what we try to assess with that assessment.
+
+403
+00:50:58,080 --> 00:51:02,010
+If there is nothing further, then, uh.
+
+404
+00:51:03,090 --> 00:51:04,500
+That is the recording.
+
