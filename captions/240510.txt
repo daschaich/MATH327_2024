@@ -1,0 +1,3012 @@
+1
+00:00:01,260 --> 00:00:12,210
+Here we go. Underway on this final day of lecturing for statistical physics and have some fun.
+
+2
+00:00:13,780 --> 00:00:18,370
+Stuff to wrap up with. So the plan for today with.
+
+3
+00:00:19,780 --> 00:00:24,130
+No further time to, uh, push things off to in the future.
+
+4
+00:00:24,160 --> 00:00:33,250
+We will wrap up the. Application of the mean field approximation to the using model.
+
+5
+00:00:34,720 --> 00:00:35,470
+And if you remember,
+
+6
+00:00:35,470 --> 00:00:45,310
+this was the second of the three stages of analysis we were going to do for interacting systems and the using model specifically as,
+
+7
+00:00:46,070 --> 00:00:50,260
+um, one of the simplest possible interacting statistical systems we can imagine.
+
+8
+00:00:51,040 --> 00:00:55,210
+We started off looking at the high and low temperature phases and their differences.
+
+9
+00:00:55,750 --> 00:01:01,210
+We developed this mean field approximation to try to look in between those two limits.
+
+10
+00:01:01,660 --> 00:01:07,240
+And then the third stage, which should be able to say a bit about today,
+
+11
+00:01:07,750 --> 00:01:20,020
+is applying smarter numerical methods as opposed to just a brute force evaluation of all two to the power n spin configurations in the using model.
+
+12
+00:01:21,580 --> 00:01:26,710
+And these numerical methods just say a bit about them at a.
+
+13
+00:01:28,690 --> 00:01:32,919
+High qualitative level. Um, and while they can be applied to the easing model,
+
+14
+00:01:32,920 --> 00:01:41,950
+they are much more broadly applicable and a feature of a lot of research that is actually carried out here in Liverpool.
+
+15
+00:01:43,180 --> 00:01:48,040
+So are there any questions before we get underway with this plan?
+
+16
+00:01:50,400 --> 00:01:58,250
+And if you don't have any immediately we can just recap where we are with the the mean field analysis.
+
+17
+00:01:58,250 --> 00:02:02,520
+So the starting point for that approximation was to.
+
+18
+00:02:03,790 --> 00:02:17,080
+Make the assumption that, on average. The value of the magnetisation is fluctuating only very little around its expectation value.
+
+19
+00:02:18,200 --> 00:02:25,940
+That expectation value we saw was equivalent to the mean spin, the average value of each spin.
+
+20
+00:02:28,210 --> 00:02:32,590
+Which is part of the name of this mean field approximation.
+
+21
+00:02:33,780 --> 00:02:38,140
+That means spin. It's just the expectation value of em.
+
+22
+00:02:38,800 --> 00:02:45,880
+And this assumption gave us a non-interacting system.
+
+23
+00:02:48,210 --> 00:02:53,430
+As opposed to that non factorise of all interacting using model that.
+
+24
+00:02:55,190 --> 00:03:05,300
+We saw was difficult to solve. Exactly. But there is a remnant of those interactions in the appearance of an effective magnetic field.
+
+25
+00:03:06,610 --> 00:03:13,879
+In the. Expression for the energy of this system after making this approximation.
+
+26
+00:03:13,880 --> 00:03:19,040
+So we have an effective magnetic field depending on the mean spin and.
+
+27
+00:03:20,610 --> 00:03:26,130
+To be fully explicit. We started off with that using model.
+
+28
+00:03:28,800 --> 00:03:34,650
+Hamiltonian or expression for the energy, the product of spins on nearest neighbour sites J and K,
+
+29
+00:03:35,280 --> 00:03:41,610
+the coupling to a constant external magnetic field, and our approximation just gave us a constant term.
+
+30
+00:03:43,540 --> 00:03:50,620
+Counting some factors of the being spin squared in D dimensions, and then.
+
+31
+00:03:51,670 --> 00:03:57,190
+The effective magnetic field. Taking this form.
+
+32
+00:03:57,280 --> 00:04:02,670
+Coupling to those spins. That was the effective.
+
+33
+00:04:04,900 --> 00:04:12,630
+That we introduced. This as a non-interacting system.
+
+34
+00:04:13,290 --> 00:04:18,849
+We can. Solve it more easily than the interacting case.
+
+35
+00:04:18,850 --> 00:04:27,730
+But because the average magnetisation related to the derivative of the log of the partition function appears in the partition function itself,
+
+36
+00:04:28,570 --> 00:04:34,720
+the solution that we get takes the form of a self-consistency condition, a transcendental.
+
+37
+00:04:35,680 --> 00:04:41,200
+Equation that the magnetisation as our order parameter has to obey.
+
+38
+00:04:41,560 --> 00:04:54,860
+And that was. That M itself must be equal to the tangent hyperbolic tangent of this effective magnetic field divided by the temperature.
+
+39
+00:04:56,600 --> 00:05:04,520
+So we turn off that magnetic field for simplicity and look at low temperatures.
+
+40
+00:05:05,560 --> 00:05:13,600
+We ended up on Tuesday by identifying. Three possible solutions to the self-consistency condition.
+
+41
+00:05:14,530 --> 00:05:23,670
+So the. Expectation value for our order parameter was either zero, which corresponds to the disorder phase,
+
+42
+00:05:24,630 --> 00:05:30,930
+or some nonzero constant with the plus or minus sign, which is that the street is.
+
+43
+00:05:30,930 --> 00:05:39,570
+Here, those three solutions being circled for the low temperature T equals 2 in 2 dimensions.
+
+44
+00:05:41,520 --> 00:05:45,270
+So that gets us back to where we wrapped up last time.
+
+45
+00:05:46,560 --> 00:05:49,050
+Any questions before we.
+
+46
+00:05:51,420 --> 00:06:02,220
+Conclude this analysis by first figuring out which of these three solutions is the appropriate one for us to focus on at low temperatures.
+
+47
+00:06:11,350 --> 00:06:14,350
+So that's the the first question. Um.
+
+48
+00:06:18,820 --> 00:06:26,530
+Which of these? Is the true solution that the system adopts.
+
+49
+00:06:27,370 --> 00:06:39,610
+And in order to address or to answer that question, we need to take a slight detour from equilibrium.
+
+50
+00:06:39,970 --> 00:06:52,900
+And just imagine we have a non-equilibrium system where the expectation value for the magnetic field is changing, but trying to find.
+
+51
+00:06:53,960 --> 00:06:58,640
+A, um, solution that satisfies the self-consistency condition.
+
+52
+00:06:59,570 --> 00:07:04,270
+So if we imagine. Slightly perturbing.
+
+53
+00:07:05,790 --> 00:07:13,440
+The expectation value for. That order parameter slightly away from that.
+
+54
+00:07:14,520 --> 00:07:20,610
+Disordered phase vanishing solution so that it becomes some infinitesimal positive epsilon.
+
+55
+00:07:21,930 --> 00:07:25,170
+Then? There are.
+
+56
+00:07:26,400 --> 00:07:29,580
+Two things that could happen depending on the temperature.
+
+57
+00:07:29,970 --> 00:07:35,580
+So looking back to this plot and looking at the red curve for the high temperature T equals eight,
+
+58
+00:07:36,270 --> 00:07:41,400
+if we shift to a positive value for m along the horizontal axis,
+
+59
+00:07:41,910 --> 00:07:52,500
+then we can see that the red curve itself, the corresponding hyperbolic tangent, is lower than M itself.
+
+60
+00:07:54,360 --> 00:08:03,690
+So that is the violation of the self-consistency condition, the space between the hyperbolic tangent and the dashed line form.
+
+61
+00:08:05,430 --> 00:08:10,710
+Another way of saying that the tangent is too small is saying that.
+
+62
+00:08:12,980 --> 00:08:17,820
+The magnetisation itself is too large. To satisfy.
+
+63
+00:08:18,830 --> 00:08:28,780
+The self-consistency condition. So in order to find an equilibrium that obeys the requirement we have derived.
+
+64
+00:08:30,970 --> 00:08:39,670
+The system will feel as though this magnetisation has to to decrease being too large, and this decrease will then take it back from.
+
+65
+00:08:40,570 --> 00:08:45,220
+An infinitesimal positive value to the disordered.
+
+66
+00:08:47,260 --> 00:08:53,890
+M equals zero solution, which is therefore stable under these sorts of perturbations or fluctuations.
+
+67
+00:08:54,460 --> 00:09:02,660
+Of course, this is what we should expect, since that was the only possible solution to the self-consistency condition we found for high temperatures.
+
+68
+00:09:02,680 --> 00:09:09,670
+So it's good that this is a stable solution that the system will not run away from.
+
+69
+00:09:11,290 --> 00:09:20,350
+And having talked about running away, it's kind of given the game away for the lower temperature case where the opposite happens.
+
+70
+00:09:20,890 --> 00:09:28,930
+Looking at the low temperature T equals two and a positive value along the horizontal axis we now have.
+
+71
+00:09:29,830 --> 00:09:35,230
+The dashed line for the magnetisation being too low compared to the hyperbolic tangent.
+
+72
+00:09:39,430 --> 00:09:45,070
+So it's just the opposite behaviour. As for at higher temperature.
+
+73
+00:09:47,380 --> 00:09:59,300
+With M2 small. System will search for equilibrium by increasing M and that will push it away.
+
+74
+00:10:01,340 --> 00:10:10,220
+From the disordered system with the vanishing magnetisation and push it to the.
+
+75
+00:10:11,890 --> 00:10:15,680
+Nonzero. Solution that we found.
+
+76
+00:10:17,170 --> 00:10:22,420
+For that low temperature where M is some positive constant.
+
+77
+00:10:24,070 --> 00:10:31,810
+And similarly, if we were to infinitesimally shift the magnetisation away from zero in the negative direction.
+
+78
+00:10:33,970 --> 00:10:41,730
+The. Argument would go the same way with different signs, and the system would end up approaching.
+
+79
+00:10:43,160 --> 00:10:48,170
+These solution that that negative constant again non-zero.
+
+80
+00:10:50,350 --> 00:10:59,610
+From even an infinitesimal. So oscillation to either side of the disordered solution.
+
+81
+00:11:00,900 --> 00:11:12,000
+The. Conclusion we can draw from this thought experiment of imagining perturbing the Magnetisation is that at low temperatures,
+
+82
+00:11:12,630 --> 00:11:17,400
+this zero magnetisation solution. Is unstable.
+
+83
+00:11:18,390 --> 00:11:25,870
+And we have. A true negative value for the order parameter that corresponds.
+
+84
+00:11:27,570 --> 00:11:35,280
+To the ordered phase at these low temperatures, which of course is what we would hope to see from this approximation.
+
+85
+00:11:35,650 --> 00:11:44,190
+That's the first stage of our analysis, was to determine these ordered and disordered phases for the full easing model.
+
+86
+00:11:44,460 --> 00:11:55,860
+In these simplified limits. Before moving on from that conclusion just more quickly mentioned there is.
+
+87
+00:11:57,330 --> 00:12:07,120
+Another way to. Go through this argument, which possibly you might have seen in other modules,
+
+88
+00:12:07,120 --> 00:12:13,030
+or those of you looking ahead head to a fourth year might see in future modules.
+
+89
+00:12:15,140 --> 00:12:17,780
+This is an idea that is sometimes called a flow diagram,
+
+90
+00:12:18,830 --> 00:12:25,640
+which is a fancy word for just plotting instead of both sides of the self-consistency condition separately.
+
+91
+00:12:26,240 --> 00:12:30,840
+Looking at. The difference between them. So the hyperbolic tangent.
+
+92
+00:12:31,170 --> 00:12:35,970
+Minus M just keeping the external magnetic field H set to zero.
+
+93
+00:12:36,720 --> 00:12:45,150
+And rather than looking for intersections, we look for the roots or the zeros of this difference.
+
+94
+00:12:45,930 --> 00:12:55,860
+And we can go through the same sort of argument. If that difference is positive, then the magnetisation is too small compared to the tangent.
+
+95
+00:12:57,530 --> 00:13:03,230
+And we should push to a larger value to find equilibrium.
+
+96
+00:13:04,100 --> 00:13:08,210
+And just the opposite when it's negative. We need to.
+
+97
+00:13:09,330 --> 00:13:15,000
+Push to a smaller value and decrease the m being subtracted from the tangent.
+
+98
+00:13:15,870 --> 00:13:21,570
+So this is how that looks. If I zoom out to put it on the screen.
+
+99
+00:13:22,500 --> 00:13:25,200
+Plotting as usual. Versus.
+
+100
+00:13:27,300 --> 00:13:34,440
+The order parameter that difference between the Tange and M itself for those same three temperatures with the same three colours.
+
+101
+00:13:36,060 --> 00:13:38,160
+Whenever this difference is positive,
+
+102
+00:13:38,370 --> 00:13:46,260
+the tangent to large and we should look to increase em so all the arrows are pointing in the direction of larger M,
+
+103
+00:13:47,160 --> 00:13:57,989
+and when the difference is negative, the magnetisation is too large and we push back the other direction so we can see that the
+
+104
+00:13:57,990 --> 00:14:04,800
+resulting arrows are either coming in to a stable solution for high temperatures and zero,
+
+105
+00:14:05,220 --> 00:14:09,090
+or pushing away for unstable solutions. And.
+
+106
+00:14:10,290 --> 00:14:17,460
+Leading the system to end up with a non-zero order parameter for those lower temperatures.
+
+107
+00:14:20,250 --> 00:14:28,980
+So any questions about that conclusion about which solutions to the self-consistency condition we have?
+
+108
+00:14:30,200 --> 00:14:40,850
+Depending on the temperature. Zooming back in to get this all legible.
+
+109
+00:14:42,950 --> 00:14:51,290
+Um, what we can say at this point is we have at least checked.
+
+110
+00:14:52,780 --> 00:14:56,300
+One aspect of this mean field approximation? Um.
+
+111
+00:14:56,320 --> 00:15:03,800
+It is. In agreement with the first stage of our analysis of it.
+
+112
+00:15:04,250 --> 00:15:11,390
+All of our analysis of these interacting systems. It gives the ordered and disordered phases that.
+
+113
+00:15:12,640 --> 00:15:18,710
+We found for the full system. At low and high temperatures.
+
+114
+00:15:24,050 --> 00:15:27,110
+So that is reassuring. And.
+
+115
+00:15:29,390 --> 00:15:33,400
+Try to. I think I'll keep the magnetisation at this level.
+
+116
+00:15:33,880 --> 00:15:38,980
+Just try to remember not to use the last inch on the side of that paper.
+
+117
+00:15:41,440 --> 00:15:44,640
+There are now further questions that we can ask. Um,
+
+118
+00:15:44,770 --> 00:15:50,860
+now that we have at least an approximate analytic expression for the magnetisation
+
+119
+00:15:50,860 --> 00:15:56,470
+in terms of this transcendental equation given by the hyperbolic tangent.
+
+120
+00:15:57,490 --> 00:16:01,030
+We can look at that in more detail and ask for example.
+
+121
+00:16:03,380 --> 00:16:14,990
+Um. When do we change from the disordered zero magnetisation solution to the ordered phase solution?
+
+122
+00:16:14,990 --> 00:16:21,130
+Which happens when that. Disorder solution becomes.
+
+123
+00:16:22,280 --> 00:16:34,750
+Unstable. So for what value of the temperature do we see this potential phase transition between these two different phases?
+
+124
+00:16:34,770 --> 00:16:41,520
+We haven't yet established that it is a phase transition, but there is some change that will set in at some temperature,
+
+125
+00:16:42,000 --> 00:16:47,520
+which we would identify with the critical temperature if it turned out to be a phase transition in the end.
+
+126
+00:16:48,810 --> 00:16:55,470
+So so we've been able to see from our analysis so far that.
+
+127
+00:16:56,760 --> 00:17:06,310
+The switch from. The tank being below versus above the magnetisation occurs as the temperature changes,
+
+128
+00:17:06,850 --> 00:17:20,110
+and it will set in when the slope of that tangent passes through the slope of the magnetisation itself, which is one when we plot y equals x.
+
+129
+00:17:21,820 --> 00:17:30,260
+So. This instability will arise when.
+
+130
+00:17:34,040 --> 00:17:40,250
+Slow when the tangent itself is greater than the magnetisation for an infinitesimal.
+
+131
+00:17:41,890 --> 00:17:52,160
+Nonzero value. Which corresponds to its slope being greater than one right at.
+
+132
+00:17:53,900 --> 00:17:57,860
+The origin in that plot when m equals zero.
+
+133
+00:17:59,610 --> 00:18:08,970
+So the slope of this hyperbolic tangent with respect to the horizontal axis in that plot is just the derivative.
+
+134
+00:18:10,360 --> 00:18:19,010
+Of a tangent. Hyperbolic tangent. And because we are evaluating this.
+
+135
+00:18:21,020 --> 00:18:24,380
+When the argument of that hyperbolic tangent goes to zero.
+
+136
+00:18:24,920 --> 00:18:30,920
+We may as well simplify things slightly by plugging in our usual power series
+
+137
+00:18:30,920 --> 00:18:36,830
+expansions to the Taylor expansion for that hyperbolic tangent we have seen before.
+
+138
+00:18:37,010 --> 00:18:40,460
+Hence the arguments of the tangent.
+
+139
+00:18:42,500 --> 00:18:46,010
+Um, plus one third rather minus one third.
+
+140
+00:18:46,550 --> 00:18:53,450
+Um, the argument cubed. Really, all we need is the leading term in that expression.
+
+141
+00:18:53,450 --> 00:19:03,410
+For now we will set em to zero after taking this derivative, which will kill off everything that comes in with more than one power of em.
+
+142
+00:19:04,100 --> 00:19:07,970
+And all that is left is just the. Constant term.
+
+143
+00:19:09,140 --> 00:19:13,220
+Two times the dimensionality. Times the inverse temperature. And this.
+
+144
+00:19:15,870 --> 00:19:19,830
+At the change from ordered to disordered, we set equal to one,
+
+145
+00:19:20,640 --> 00:19:27,270
+which means that if this is a true phase transition, that critical temperature that we have.
+
+146
+00:19:28,640 --> 00:19:33,530
+One over data is just 2D from solving that equation.
+
+147
+00:19:34,850 --> 00:19:48,920
+So a very simple prediction from the mean field model for when there is this change, which we could well have seen from this big picture earlier.
+
+148
+00:19:49,610 --> 00:19:55,070
+This is for two dimensions. So 2D equals four. And that green curve for four is right where.
+
+149
+00:19:56,360 --> 00:20:02,990
+Um, the difference goes to zero. Um, just as a flat horizontal line.
+
+150
+00:20:03,680 --> 00:20:12,350
+Maybe easier to see here. The green curve follows that slope of one exactly at m equals zero.
+
+151
+00:20:13,950 --> 00:20:23,070
+So that is all consistent between the mathematical calculation and the graphical image.
+
+152
+00:20:26,890 --> 00:20:36,430
+Now the question, even though I've displayed this as TK, we found out when there is a change from ordered to this ordered is this change?
+
+153
+00:20:37,370 --> 00:20:41,250
+Actually a phase transition. So we can.
+
+154
+00:20:42,210 --> 00:20:53,420
+Recall from our definitions. That phase transitions are characterised by some divergence or discontinuity in either the
+
+155
+00:20:53,420 --> 00:21:01,250
+order parameter or some derivative of the order parameter with respect to a control parameter.
+
+156
+00:21:02,720 --> 00:21:13,040
+So let's see first if the order parameter of the magnetisation is continuous or discontinuous right at this critical temperature.
+
+157
+00:21:13,640 --> 00:21:19,500
+So we will be considering. Temperatures very close to this TK.
+
+158
+00:21:20,100 --> 00:21:26,050
+And let's look at the ordered phase. Corresponding to lower temperatures.
+
+159
+00:21:26,890 --> 00:21:31,300
+Um, so lower than T, but still very close to t c.
+
+160
+00:21:33,550 --> 00:21:43,240
+This will mean that although the magnetisation has a non-zero value, let me put an absolute value sign.
+
+161
+00:21:44,240 --> 00:21:52,250
+Around it. Um, it is strictly positive, but at a temperature very close to TC.
+
+162
+00:21:52,760 --> 00:21:57,320
+This positive has not been able to move very far away from that origin.
+
+163
+00:21:57,740 --> 00:22:02,389
+So it is still a very small parameter, much less than one.
+
+164
+00:22:02,390 --> 00:22:06,680
+There would be an intersection right in there eventually,
+
+165
+00:22:06,680 --> 00:22:14,840
+in that infinitesimally small region and a non-zero epsilon away from vanishing magnetisation.
+
+166
+00:22:16,790 --> 00:22:25,370
+This is useful because it again allows us to expand the hyperbolic tangent and now maintaining.
+
+167
+00:22:26,730 --> 00:22:30,640
+Retaining the additional, uh.
+
+168
+00:22:32,050 --> 00:22:36,160
+Some leading correction. In our self-consistency condition.
+
+169
+00:22:37,950 --> 00:22:47,490
+So that we can cancel out. The M on the left hand side and still have some dependence on.
+
+170
+00:22:49,750 --> 00:23:01,390
+The magnetisation left over so that minus one third to beta d m whole cubed and then plus the.
+
+171
+00:23:02,950 --> 00:23:08,670
+Fifth order contribution that we can. Neglect for the time being.
+
+172
+00:23:09,630 --> 00:23:20,400
+So cancelling out the M from all of those terms and moving the remaining M's to the left hand side,
+
+173
+00:23:20,400 --> 00:23:25,470
+we end up with the positive one third times 2D times beta.
+
+174
+00:23:27,040 --> 00:23:43,900
+This 2D is our RTC and beta is one over T that's all cubed to powers of the magnetisation remain and the other terms are 2D beta,
+
+175
+00:23:44,590 --> 00:23:52,840
+which is again TK over t, and then the one that we get after dividing through by the magnetisation.
+
+176
+00:23:54,220 --> 00:24:04,300
+So a simple solution for this magnetisation itself is three times this ratio t over t c,
+
+177
+00:24:04,720 --> 00:24:10,510
+which is very close to one but slightly smaller than one, and so a cubed.
+
+178
+00:24:11,910 --> 00:24:24,430
+Multiplying that t c over t minus one, which we can rearrange slightly by pulling out one factor of t over TC and cancelling the opposite ratio.
+
+179
+00:24:24,450 --> 00:24:32,760
+That's a bit greater than one in the parentheses. So a t c over t squared and then one minus.
+
+180
+00:24:34,100 --> 00:24:45,230
+Uh, t over t c. And we can further simplify this by remembering that we are looking for discontinuities.
+
+181
+00:24:45,290 --> 00:24:49,460
+And I wrote that wrong. The TC is down there. So sorry.
+
+182
+00:24:50,420 --> 00:24:53,030
+About that. Hopefully that's more pleasing.
+
+183
+00:24:54,290 --> 00:25:02,120
+Simplification that we have is looking right at this critical temperature where any would be discontinuity would appear.
+
+184
+00:25:02,720 --> 00:25:10,370
+So this ratio of t over t c is very close to one.
+
+185
+00:25:12,740 --> 00:25:16,190
+The difference from one matters when we are subtracting it from one.
+
+186
+00:25:17,150 --> 00:25:27,770
+But when we are just multiplying a constant factor times something close to one, that is just a constant factor that we can then simplify.
+
+187
+00:25:27,800 --> 00:25:31,380
+So t over t c. There's approximately one.
+
+188
+00:25:33,130 --> 00:25:37,300
+Then we have the final result for the magnetisation itself.
+
+189
+00:25:37,510 --> 00:25:40,540
+Take the square root of both sides. Remember that.
+
+190
+00:25:42,110 --> 00:25:45,920
+You can have a plus or a minus sign from that square root.
+
+191
+00:25:46,850 --> 00:25:55,010
+So it's a root three times the square root of one minus t over t c where.
+
+192
+00:25:56,310 --> 00:26:00,660
+The argument of the second square root is non-negative.
+
+193
+00:26:00,840 --> 00:26:09,780
+Thanks to working in that low temperature phase and approaching the high temperature phase, we can also see this just by.
+
+194
+00:26:13,280 --> 00:26:17,720
+Getting a common denominator for both of those factors.
+
+195
+00:26:20,360 --> 00:26:27,920
+We have in the numerator the difference TC minus t that is greater than is close to zero.
+
+196
+00:26:29,940 --> 00:26:33,930
+So what we can see from this is that.
+
+197
+00:26:35,000 --> 00:26:43,220
+Our order parameter. The maximisation is indeed continuous at TK and for that matter everywhere else.
+
+198
+00:26:46,380 --> 00:26:50,160
+So we have two expressions for the acquisition.
+
+199
+00:26:50,160 --> 00:27:00,840
+Depending on what phase we are in, which side of TC the temperature is when the temperature is larger than t c.
+
+200
+00:27:01,050 --> 00:27:04,440
+We have seen that we have that disordered phase solution.
+
+201
+00:27:04,440 --> 00:27:11,640
+The Magnetisation is just a constant zero at the centre of all of our plots of the self-consistency condition.
+
+202
+00:27:13,230 --> 00:27:17,670
+And then as we approach t c from below.
+
+203
+00:27:19,270 --> 00:27:25,830
+We have. Something that is proportional to the square root of t c minus t.
+
+204
+00:27:30,640 --> 00:27:34,300
+Um, at least for temperatures close to TC.
+
+205
+00:27:35,380 --> 00:27:39,430
+So the picture that this describes looks a bit like this.
+
+206
+00:27:39,440 --> 00:27:47,040
+Plotting. Sorry. The magnetisation on the vertical axis versus temperature on the horizontal axis.
+
+207
+00:27:48,630 --> 00:27:51,750
+At low temperatures, we come down like a square root.
+
+208
+00:27:52,290 --> 00:27:56,970
+At high temperatures, it's exactly zero in the mean field approximation.
+
+209
+00:27:57,540 --> 00:28:08,910
+And the change between those two behaviours is our C, or would be TC that twice time twice the dimensionality of the system.
+
+210
+00:28:10,440 --> 00:28:22,320
+So so far we haven't seen a discontinuity that would indicate a phase transition, unless you've already gone ahead of me and done.
+
+211
+00:28:23,920 --> 00:28:29,590
+The derivative of the order parameter with respect to our control parameter in your head.
+
+212
+00:28:30,520 --> 00:28:36,610
+If the magnetisation is proportional to the square root and the derivative of that
+
+213
+00:28:36,880 --> 00:28:43,420
+again up to constant factors of proportionality is one over that square root.
+
+214
+00:28:44,990 --> 00:28:51,920
+And as. TK approaches or as T approaches tk from below.
+
+215
+00:28:52,400 --> 00:28:59,420
+The denominator goes to zero. The derivative diverges and we have a phase transition.
+
+216
+00:29:01,600 --> 00:29:09,970
+And in particular. Because the magnetisation itself is continuous, but the first derivative of it.
+
+217
+00:29:11,090 --> 00:29:14,450
+Corresponding to the second derivative of the log of the partition function.
+
+218
+00:29:14,930 --> 00:29:28,400
+Diverges at that critical temperature. Um, we have a prediction from the mean field approximation of a second order phase transition.
+
+219
+00:29:30,670 --> 00:29:34,390
+At tke just given by a critical temperature.
+
+220
+00:29:36,720 --> 00:29:40,530
+Just given by twice the dimensionality of the system.
+
+221
+00:29:40,800 --> 00:29:44,520
+So second order I'll call it PT for a phase transition.
+
+222
+00:29:49,120 --> 00:29:59,290
+For that using model. There's now a third question we can ask.
+
+223
+00:29:59,290 --> 00:30:06,700
+Is this correct? But before going on to that, are there questions about how we have gotten these results of a true phase transition,
+
+224
+00:30:07,330 --> 00:30:14,680
+a critical temperature of T, C and a second order character for that phase transition?
+
+225
+00:30:28,600 --> 00:30:37,719
+If you are happy with the results. Um, one useful thing to note is that this sort of behaviour, the second order of phase transition,
+
+226
+00:30:37,720 --> 00:30:46,000
+is something that happens whenever the order parameter behaves in this way.
+
+227
+00:30:47,000 --> 00:30:56,530
+Depending on some non-integer power of this difference between the critical temperature and the control parameter itself, that happens.
+
+228
+00:30:57,460 --> 00:31:00,970
+Well, fairly frequently in interacting statistical systems.
+
+229
+00:31:02,230 --> 00:31:06,160
+And we get from that a second order phase transition,
+
+230
+00:31:06,610 --> 00:31:16,150
+whenever I'll just call it the order parameter is proportional to that difference potentially with other.
+
+231
+00:31:18,570 --> 00:31:22,200
+Control parameters in addition to the temperature.
+
+232
+00:31:22,950 --> 00:31:27,060
+If this is raised to some non-integer power B.
+
+233
+00:31:30,170 --> 00:31:36,809
+Then. Sufficiently many derivatives of that order parameter with respect to the control
+
+234
+00:31:36,810 --> 00:31:42,150
+parameter will eventually take this difference down into the denominator,
+
+235
+00:31:42,510 --> 00:31:51,330
+so that it diverges as t, or as the control parameters approach that critical point and this b itself.
+
+236
+00:31:54,780 --> 00:32:01,260
+Is known as the critical exponent of that phase transition.
+
+237
+00:32:04,800 --> 00:32:09,690
+In the case of. The mean field approximation for the easing model.
+
+238
+00:32:09,690 --> 00:32:18,630
+This B was a half. But whenever it is non-zero, we get a second order phase transition, and we get, um,
+
+239
+00:32:18,990 --> 00:32:27,030
+information about this critical exponent, which I have underlined just because this aspect of the physics.
+
+240
+00:32:28,310 --> 00:32:32,260
+Turns out it's not obvious, but, um, to see by inspection.
+
+241
+00:32:33,010 --> 00:32:34,180
+But one of the.
+
+242
+00:32:36,560 --> 00:32:47,810
+Remarkable developments of statistical physics, and something known as the Renormalisation group in the 20th century was demonstrating that.
+
+243
+00:32:49,790 --> 00:32:57,290
+These critical exponents are. Key characteristics of phase transitions.
+
+244
+00:32:58,250 --> 00:33:05,420
+Even going beyond the specific interacting statistical systems in which those phase transitions arise.
+
+245
+00:33:05,660 --> 00:33:11,060
+So there are phase transitions in many different systems that turn out to have.
+
+246
+00:33:11,860 --> 00:33:16,780
+Exactly the same sets or sets of these critical exponents.
+
+247
+00:33:18,310 --> 00:33:21,730
+And we're just looking at the one here.
+
+248
+00:33:22,660 --> 00:33:30,040
+But um, this can be generalised to ways that other observable quantities depend on the order parameter.
+
+249
+00:33:30,610 --> 00:33:34,450
+Um, they will they will diverge if the order parameter diverges,
+
+250
+00:33:34,450 --> 00:33:39,940
+they're sort of dragged along for the ride with different values for different critical exponents.
+
+251
+00:33:41,440 --> 00:33:49,629
+Um, and this observation that was later put onto a more rigorous mathematical footing in
+
+252
+00:33:49,630 --> 00:33:54,520
+the development of quantum field theory and the renormalisation group is something.
+
+253
+00:33:56,990 --> 00:34:00,920
+Or it's a phenomenon that is known as universality.
+
+254
+00:34:02,810 --> 00:34:07,910
+The idea that the emergent large scale behaviour for.
+
+255
+00:34:10,550 --> 00:34:16,280
+Various different interacting statistical systems near.
+
+256
+00:34:18,010 --> 00:34:27,990
+A critical point. So where we have. A second order phase transition characterised by these divergences.
+
+257
+00:34:29,970 --> 00:34:42,550
+Um, this large scale behaviour ends up being identical, the same and independent of the details of the statistical system we are looking at.
+
+258
+00:34:42,570 --> 00:34:50,680
+So the microscopic dynamics. That formally define the theory.
+
+259
+00:34:51,010 --> 00:34:59,290
+So one famous example, I think the first place where this universality was observed.
+
+260
+00:34:59,620 --> 00:35:01,240
+Around the mid 20th century,
+
+261
+00:35:01,690 --> 00:35:13,179
+was looking at phase transitions in the easing model in three dimensions compared to the phase transition between a liquid and gas,
+
+262
+00:35:13,180 --> 00:35:17,050
+where the order parameter is the density of the material.
+
+263
+00:35:17,650 --> 00:35:26,320
+So the liquid gas phase transition, depending on the pressure, it can be second order when it is the sets of critical exponents.
+
+264
+00:35:26,320 --> 00:35:31,600
+The so-called universality class of that transition is exactly identical to the
+
+265
+00:35:31,600 --> 00:35:37,300
+three dimensional easing model of up and down spins set in a cubic lattice.
+
+266
+00:35:37,930 --> 00:35:48,310
+Two systems that obviously have nothing to do with each other but end up being, or end up producing identical emergent macroscopic physics.
+
+267
+00:35:50,270 --> 00:35:54,830
+One implication of that is that if you want to learn about the liquid gas phase transition,
+
+268
+00:35:55,280 --> 00:35:58,550
+you only have to analyse the easing model in three dimensions,
+
+269
+00:35:58,940 --> 00:36:04,550
+and you get all of the information characterising what's happening in that completely different system.
+
+270
+00:36:05,270 --> 00:36:09,660
+There are many other. Examples of this and.
+
+271
+00:36:11,490 --> 00:36:13,560
+A big research effort in Liverpool,
+
+272
+00:36:13,980 --> 00:36:23,850
+predicting the universality class for various interacting statistical systems like those that could lead to high temperature superconductivity.
+
+273
+00:36:24,990 --> 00:36:29,940
+Um, that characterises their behaviour and tells us um,
+
+274
+00:36:29,940 --> 00:36:36,450
+or gives us a handle to analyse them and make physical predictions much more easily
+
+275
+00:36:36,450 --> 00:36:41,760
+than trying to solve those often extraordinarily complicated interacting systems.
+
+276
+00:36:43,160 --> 00:36:47,900
+So that was an aside. And the questions about kind of that quick glimpse, um.
+
+277
+00:36:48,770 --> 00:36:55,220
+Two. What would be a central topic of a next higher level module in statistical physics?
+
+278
+00:36:58,660 --> 00:37:03,520
+That ended up being a longer digression than I had thought it would be, because at the start of it.
+
+279
+00:37:05,240 --> 00:37:12,320
+I had raised the question, having gotten these mean field predictions.
+
+280
+00:37:15,260 --> 00:37:18,260
+For the easing model with zero external field.
+
+281
+00:37:20,590 --> 00:37:26,020
+Are they actually correct? Um.
+
+282
+00:37:26,330 --> 00:37:31,030
+We've seen the correct high and low temperature limits, but we want well,
+
+283
+00:37:31,030 --> 00:37:36,730
+we are predicting now a second order phase transition in the zero field case.
+
+284
+00:37:39,290 --> 00:37:46,760
+And predicting its critical temperature, 2D and critical exponent of a half.
+
+285
+00:37:48,950 --> 00:37:53,030
+And there are some cases that we can check these predictions against.
+
+286
+00:37:53,510 --> 00:37:56,510
+So the one dimensional easing model is.
+
+287
+00:37:57,820 --> 00:38:08,590
+The case that easing himself solved as part of his PhD research back in the 1920s, so exactly 100 years ago.
+
+288
+00:38:09,130 --> 00:38:16,270
+His result was that the the one dimensional system has no phase transition at all.
+
+289
+00:38:16,690 --> 00:38:23,290
+There is no critical temperature. There is no, uh, discontinuity in any derivative of the magnetisation.
+
+290
+00:38:24,610 --> 00:38:29,860
+In fact, he found that the system remains disordered even down to absolute zero temperature.
+
+291
+00:38:30,340 --> 00:38:33,400
+And there is a brief derivation of that in.
+
+292
+00:38:34,320 --> 00:38:38,100
+The lecture notes that we just don't have time for this here.
+
+293
+00:38:38,100 --> 00:38:42,810
+So in this case, the mean field predictions are not correct.
+
+294
+00:38:43,560 --> 00:38:48,270
+We do not have a second order phase transition at temperature of two.
+
+295
+00:38:48,720 --> 00:38:52,590
+There's no phase transition at all in that exactly solvable case.
+
+296
+00:38:55,020 --> 00:38:59,970
+The two dimensional zero field easing model is also exactly solvable.
+
+297
+00:39:00,780 --> 00:39:15,130
+That was. On Seger's tour, tour de force in the 1940s, which since he had the exact solution, he was able to provide again an exact prediction.
+
+298
+00:39:17,170 --> 00:39:21,730
+And he predicted a second order phase transition.
+
+299
+00:39:24,320 --> 00:39:33,290
+In 1944, which at least is in better agreement with the mean field approximation compared to the one dimensional case.
+
+300
+00:39:33,500 --> 00:39:43,940
+So things are a bit better for the 2D using model on a square lattice compared to that one dimensional chain of spins in a row,
+
+301
+00:39:45,410 --> 00:39:49,940
+and having the exact solution had an exact expression for the critical temperature.
+
+302
+00:39:50,390 --> 00:39:57,230
+It's a very delicious combination of logs and square roots that ultimately comes from the hyperbolic sine.
+
+303
+00:39:57,960 --> 00:40:06,710
+You plug those numbers into a calculator. It's roughly 2.2692 over the log of one plus root two.
+
+304
+00:40:08,330 --> 00:40:15,920
+So this is. About half of what the mean field approximation predicts.
+
+305
+00:40:16,760 --> 00:40:21,110
+When d equals two, it gives TCO for which we.
+
+306
+00:40:22,760 --> 00:40:29,230
+Should say that the mean field prediction is off by about a factor of two.
+
+307
+00:40:29,240 --> 00:40:37,460
+So it's not perfect in two dimensions, but it is a bit better than we had in that one dimensional case.
+
+308
+00:40:38,540 --> 00:40:47,050
+And similarly. Onsager as exact solution gives a prediction for that critical exponent b, which is an eighth.
+
+309
+00:40:48,370 --> 00:40:53,080
+That's a factor of four off from the one half.
+
+310
+00:40:54,310 --> 00:41:04,700
+Of the mean field approximation. So qualitatively we get at least a phase transition which has the right order.
+
+311
+00:41:04,700 --> 00:41:12,970
+So the discontinuities are in the right place or discontinuities are appearing at the right stage I should say the place they appear.
+
+312
+00:41:12,980 --> 00:41:18,110
+The critical temperature is off. The way they appear is off.
+
+313
+00:41:19,160 --> 00:41:21,350
+But it's better than the one dimensional case.
+
+314
+00:41:22,550 --> 00:41:31,940
+And maybe not too surprisingly, if we go on to higher dimensions in the 3D case, there is no known exact solution.
+
+315
+00:41:33,170 --> 00:41:43,100
+It is likely that no closed form analytic expression for the 3D easing model even exists, though that also has not been proven.
+
+316
+00:41:44,240 --> 00:41:47,750
+But we can do. Numerical analyses.
+
+317
+00:41:50,500 --> 00:41:53,300
+That's where. The letters go.
+
+318
+00:41:53,750 --> 00:42:05,030
+And those numerical analyses, which we'll talk about, um, after the break in just a few minutes, indicate that this second order transition.
+
+319
+00:42:06,310 --> 00:42:11,110
+Persists in higher dimensions, and they can measure approximately.
+
+320
+00:42:11,170 --> 00:42:15,220
+The critical temperature of it. It's around 4.5.
+
+321
+00:42:16,450 --> 00:42:22,480
+So that's better than a factor of two compared to the six for the mean field approximation.
+
+322
+00:42:23,260 --> 00:42:28,210
+And they can compute approximately the critical exponent.
+
+323
+00:42:29,050 --> 00:42:40,990
+This is about 0.32. I think the state of the art numerical calculations have determined this critical exponent to about 4 or 5 significant figures.
+
+324
+00:42:41,530 --> 00:42:49,450
+It doesn't approach any, uh, suggestive combination of logs or square roots or anything like that.
+
+325
+00:42:50,290 --> 00:42:53,670
+That would give any hint about the existence of an exact solution.
+
+326
+00:42:53,680 --> 00:43:00,880
+It's just a number that we can predict, and the same number that I mentioned for the the liquid gas phase transition,
+
+327
+00:43:02,410 --> 00:43:08,470
+and also getting closer to the mean field approximation value of a half.
+
+328
+00:43:09,340 --> 00:43:17,440
+So we've gone from one eighth up to a little under a third and approaching that value of a half, which in fact.
+
+329
+00:43:18,510 --> 00:43:31,420
+We hit for every single realisation of the easing model on hyper cubic lattices in, um, an abstract number of dimensions greater than three.
+
+330
+00:43:31,440 --> 00:43:35,190
+So going beyond the three dimensions of the space time that we live in.
+
+331
+00:43:36,280 --> 00:43:41,710
+Again, numerical analyses are the tool that we use.
+
+332
+00:43:42,220 --> 00:43:50,230
+And those dimensions, they get increasingly more computationally expensive as the dimensionality increases.
+
+333
+00:43:51,490 --> 00:43:55,540
+There are more and more sites, um, all nearest neighbours of each other.
+
+334
+00:43:56,140 --> 00:44:01,990
+And so we get exactly the mean field prediction for the critical exponent.
+
+335
+00:44:02,470 --> 00:44:10,600
+So that mean field universality class for all of those variations of the easing model in four or more dimensions.
+
+336
+00:44:11,770 --> 00:44:20,890
+And the values for TK, um, I've seen computations in 4 or 5, six, seven and possibly eight dimensions.
+
+337
+00:44:21,940 --> 00:44:29,920
+They get approximate values for TK that do indeed approach that 2D mean field result as the.
+
+338
+00:44:31,000 --> 00:44:39,250
+Increases. At some point, the numerical calculations just can no longer be done on existing computers.
+
+339
+00:44:40,590 --> 00:44:44,730
+But in this limit of infinite dimensions.
+
+340
+00:44:46,350 --> 00:44:52,920
+The mean field approximation actually no longer becomes an approximation.
+
+341
+00:44:53,670 --> 00:44:58,170
+It becomes the exact description of the system.
+
+342
+00:44:58,770 --> 00:45:06,509
+Thanks to every site having infinitely many nearest neighbours in all of those dimensions to average over it.
+
+343
+00:45:06,510 --> 00:45:14,700
+Uh, those nearest neighbours provide a perfect estimator of the actual expectation
+
+344
+00:45:14,700 --> 00:45:20,160
+value for the maximisation that goes into that mean field approximation.
+
+345
+00:45:20,520 --> 00:45:28,520
+And we actually saw that yesterday afternoon. Um, this limit of infinite dimensions gives us the fully connected lattice.
+
+346
+00:45:28,530 --> 00:45:31,980
+Every site is a nearest neighbour of every other site.
+
+347
+00:45:32,460 --> 00:45:43,170
+And while we didn't go through that solution in detail, there are um, the derivation itself is up on canvas if you want to check it out and see,
+
+348
+00:45:43,800 --> 00:45:47,490
+with some approximations of that case that we don't actually need the.
+
+349
+00:45:48,990 --> 00:45:55,850
+Mean field. Um, well, the same self-consistency condition that the mean field approximation gave us resulted
+
+350
+00:45:56,240 --> 00:46:01,460
+from the easing model on that fully connected lattice without needing approximations.
+
+351
+00:46:04,000 --> 00:46:09,520
+So. We're roughly at the point where you need a break.
+
+352
+00:46:10,060 --> 00:46:15,930
+Um, before that, are there any questions about what we have seen so far?
+
+353
+00:46:15,940 --> 00:46:20,260
+We are done with the minefield approximation at this point.
+
+354
+00:46:20,710 --> 00:46:26,260
+We have an hour left to talk about the the final topic,
+
+355
+00:46:26,920 --> 00:46:34,600
+these numerical analyses that tell us about the higher dimensional cases with no analytic solution,
+
+356
+00:46:34,600 --> 00:46:44,020
+and of course, any other interacting statistical system you care to define can be subject to numerical analyses.
+
+357
+00:46:45,490 --> 00:46:53,980
+And. Maybe a question I can give you to think about while we do have this break is.
+
+358
+00:46:56,580 --> 00:47:04,380
+How do we actually carry out? Or how can we carry out, um, numerical analyses?
+
+359
+00:47:05,890 --> 00:47:13,770
+In a reasonable amount of time. Compared to half a million times the age of the universe.
+
+360
+00:47:13,770 --> 00:47:17,850
+That. We saw.
+
+361
+00:47:20,030 --> 00:47:25,640
+As the time required for a full computation of the partition function for a tiny ten by ten.
+
+362
+00:47:27,650 --> 00:47:35,690
+Two dimensional easing model last week. So that is.
+
+363
+00:47:38,080 --> 00:47:41,800
+Something you can think about while we take a brief break.
+
+364
+00:47:43,180 --> 00:47:51,670
+Um, reconvene at noon. And I think most of you have most likely, uh, filled out the.
+
+365
+00:47:53,480 --> 00:47:57,320
+Module survey that just remains open for a couple more days over the weekend.
+
+366
+00:47:57,320 --> 00:48:09,080
+But in case any of you want to spend time during the break dealing with that, I will put the QR code up on the screen for you.
+
+367
+00:48:09,110 --> 00:48:13,220
+Once I am authenticated with two factors.
+
+368
+00:48:19,030 --> 00:48:27,650
+Where is it? Here. Will it make me authenticate again?
+
+369
+00:48:28,490 --> 00:48:36,170
+No. So there is the QR code that can stay up on the screen.
+
+370
+00:48:37,683 --> 00:48:43,142
+Hey, we are back with the doc here is not.
+
+371
+00:48:43,143 --> 00:48:50,403
+So let's reboot that and see if we can get the screen reactivated.
+
+372
+00:48:52,833 --> 00:49:01,863
+Any questions arise during the break, or shall we just charge ahead and talk for just an hour about these numerical analysis, which, you know,
+
+373
+00:49:01,863 --> 00:49:03,363
+they're the key to my research,
+
+374
+00:49:03,363 --> 00:49:12,543
+key feature of my research and a big aspect of the research within the department of Liverpool and and around the world.
+
+375
+00:49:12,843 --> 00:49:18,063
+So it's always fun to talk about these and just make the point that, you know,
+
+376
+00:49:18,123 --> 00:49:25,473
+they are the the crucial means that we can actually make predictions for these interacting statistical systems.
+
+377
+00:49:25,923 --> 00:49:29,763
+Apart from the very simplest using model in two dimensions.
+
+378
+00:49:31,053 --> 00:49:41,733
+Um, so a crucial tool, you know, not only for the 3D using model and higher dimensions less than infinity,
+
+379
+00:49:41,733 --> 00:49:44,163
+where the mean field approximation becomes exact,
+
+380
+00:49:45,603 --> 00:49:54,273
+but as well as essentially every other interacting system that is out there, apart from a few very simple,
+
+381
+00:49:54,273 --> 00:50:02,672
+very special cases known as integrable systems, where the partition function as an integral can be evaluated.
+
+382
+00:50:02,673 --> 00:50:11,853
+Exactly. And we saw last week the thought experiment that if we tried to compute all of the
+
+383
+00:50:11,853 --> 00:50:18,333
+terms in the partition function for a tiny ten by ten two dimensional easing system,
+
+384
+00:50:19,083 --> 00:50:24,333
+it would take something like 500,000 times the age of the universe to evaluate the ten to the power,
+
+385
+00:50:24,333 --> 00:50:28,593
+23 different terms and all the spin configurations that we had.
+
+386
+00:50:29,493 --> 00:50:39,812
+And the question is, or the way we get around this is by looking only at a subset of those microstates rather than the full,
+
+387
+00:50:39,813 --> 00:50:42,212
+exhaustive list of spin configurations,
+
+388
+00:50:42,213 --> 00:50:53,073
+many of which, after all, are either very similar to each other, or up here with a vanishingly small probability in the partition function.
+
+389
+00:50:54,423 --> 00:51:06,573
+So the answer to this question of how we proceed is that we, instead of computing everything, we want to just look at a sample of microstates.
+
+390
+00:51:07,143 --> 00:51:14,763
+And this sampling, we'll just consider a very small subset of all of the possible exponentially many
+
+391
+00:51:15,333 --> 00:51:22,203
+microstates that are not conceivably accessible in in the age of the universe.
+
+392
+00:51:22,773 --> 00:51:25,563
+So this will give us just as we saw.
+
+393
+00:51:27,753 --> 00:51:37,563
+Um, in the computer project, when we used a bunch, a bunch of samples to approximate expectation values for random walks,
+
+394
+00:51:38,163 --> 00:51:49,053
+the arithmetic means across these samples will give us approximations to these operator expectation values that we are after as predictions for,
+
+395
+00:51:50,103 --> 00:52:00,183
+um, the large scale behaviour of all of these systems and this sampling, the selection of the samples that we consider.
+
+396
+00:52:01,863 --> 00:52:07,623
+Well, just like in that computer project, take advantage of pseudo random.
+
+397
+00:52:08,583 --> 00:52:16,433
+Numbers. Um, which? Due to the role of randomness in the sampling.
+
+398
+00:52:17,153 --> 00:52:24,263
+These are and whimsically called Monte Carlo methods after the Monte Carlo Casino.
+
+399
+00:52:24,713 --> 00:52:34,823
+So, like, uh, Jonathan Newman and Stanislaw Lem came up with that nickname back in the 1940s when they were, uh,
+
+400
+00:52:34,883 --> 00:52:41,783
+developing this approach with some of the new electronic computing machines that were just being invented in those days.
+
+401
+00:52:42,353 --> 00:52:45,683
+And the terminology has stuck.
+
+402
+00:52:45,693 --> 00:52:51,173
+So these are these ways of sampling. Microstates are known as Monte Carlo methods.
+
+403
+00:52:51,893 --> 00:53:03,773
+And the simplest example to put this on a more concrete footing is what's called Monte Carlo integration, where we want to evaluate.
+
+404
+00:53:05,053 --> 00:53:12,043
+Compute the value of sum integral just by evaluating its integrand.
+
+405
+00:53:14,073 --> 00:53:18,093
+At random points it is domain.
+
+406
+00:53:21,883 --> 00:53:29,983
+So we can draw. Like get that slightly on the screen just to see what it says.
+
+407
+00:53:30,673 --> 00:53:42,133
+But the idea is, if we have some function of however many variables x, it does not necessarily need to be continuous or differentiable.
+
+408
+00:53:42,313 --> 00:53:51,523
+Can have as long as it's single valued, and the integrand has one value for us to consider at any value of x.
+
+409
+00:53:52,213 --> 00:54:05,473
+Then the area under this potentially jagged curve can just be approximated by evaluating f of x at certain points, and then adding those up.
+
+410
+00:54:05,983 --> 00:54:12,222
+And as we fill in more and more points chosen randomly.
+
+411
+00:54:12,223 --> 00:54:17,773
+In this case, we will get a better and better approximation to.
+
+412
+00:54:19,123 --> 00:54:24,913
+The value of this integral, the area under that curve, even without any analytic expression.
+
+413
+00:54:27,933 --> 00:54:35,223
+So one fun example of a monte Carlo integration that we can do is a two dimensional integral.
+
+414
+00:54:35,463 --> 00:54:41,453
+So going over x and y within a two by two square.
+
+415
+00:54:41,463 --> 00:54:45,933
+So from minus one to plus one in both the x and y directions.
+
+416
+00:54:46,653 --> 00:54:51,053
+And we want to integrate. The so-called Heaviside step function.
+
+417
+00:54:51,953 --> 00:54:55,223
+I'm not sure if you've seen this before, but it's very simple.
+
+418
+00:54:56,333 --> 00:55:02,463
+Um, H of some argument R is either 0 or 1.
+
+419
+00:55:02,483 --> 00:55:09,413
+It's a step function. So it's one whenever r is greater than or equal to zero.
+
+420
+00:55:09,893 --> 00:55:19,643
+It is zero otherwise. So negative r. So with this arguments of one minus x squared plus y squared going into the Heaviside step function.
+
+421
+00:55:20,593 --> 00:55:27,823
+We get a value of one. Whenever x and y are in quadrature less than one.
+
+422
+00:55:28,213 --> 00:55:31,783
+So covering the unit disk with radius one.
+
+423
+00:55:32,353 --> 00:55:41,743
+Otherwise we get zero. So integrating over all of those values of x and y just give us gives us the area of a disk.
+
+424
+00:55:43,413 --> 00:55:51,753
+With radius one, and the area of a disk is pi r squared when r equals one.
+
+425
+00:55:52,383 --> 00:55:59,933
+This integral should just be pi. So this is a visualisation of the idea.
+
+426
+00:56:00,383 --> 00:56:06,263
+We have x and y hopefully visible up there ranging from -1 to 1.
+
+427
+00:56:06,263 --> 00:56:14,693
+So a two by two square. The disk that is picked out by that Heaviside step function is outlined in that black curve.
+
+428
+00:56:15,833 --> 00:56:22,673
+And we just sample random points in that integration domain -1 to 1 in both dimensions.
+
+429
+00:56:23,063 --> 00:56:32,393
+Those are those green points, and the fraction of those randomly sampled points that land in that domain.
+
+430
+00:56:32,753 --> 00:56:36,683
+They contribute to the integral with h one.
+
+431
+00:56:38,303 --> 00:56:45,473
+And we get the area of that disc pi divided by the area of the full integration domain.
+
+432
+00:56:45,953 --> 00:56:53,693
+Two times two is four. This is something you can do quite easily.
+
+433
+00:56:54,473 --> 00:56:58,583
+Um, having done the much more complicated computing project.
+
+434
+00:57:00,653 --> 00:57:08,383
+All we have to do is randomly choose x and y in the range from minus one to plus one.
+
+435
+00:57:08,393 --> 00:57:17,603
+So we know all about manipulating random dot random in Python to get appropriately distributed random numbers.
+
+436
+00:57:18,413 --> 00:57:22,673
+And then we just count how many of those random numbers land in the disc.
+
+437
+00:57:24,173 --> 00:57:33,143
+And. Solving for pi, which I now called P, is then just four times the fraction of.
+
+438
+00:57:34,503 --> 00:57:40,303
+Um. How many of those points have landed in the disk versus the full domain?
+
+439
+00:57:42,103 --> 00:57:49,723
+I'm doing something, some little fancy stuff here in order to estimate statistical uncertainties in this analysis.
+
+440
+00:57:50,023 --> 00:57:51,923
+So we'll go into detail about that.
+
+441
+00:57:51,943 --> 00:58:01,363
+Basically, I've broken up each calculation into 20 parts and looked at how the 20 different predictions fluctuate when I do them.
+
+442
+00:58:01,813 --> 00:58:08,413
+Something we didn't get to in the computing project. But once the, um.
+
+443
+00:58:09,883 --> 00:58:19,453
+System gets connected to the cloud. Within a few seconds, we will start getting estimates for pi from random numbers essentially.
+
+444
+00:58:20,263 --> 00:58:23,563
+So within one second we have.
+
+445
+00:58:24,383 --> 00:58:28,643
+Pi of 3.141 plus or -0.006.
+
+446
+00:58:29,833 --> 00:58:35,173
+That used a million random numbers in this calculation,
+
+447
+00:58:35,173 --> 00:58:42,823
+and I'll just leave that running in the background to see how many digits we can get in the next 40 minutes,
+
+448
+00:58:43,363 --> 00:58:46,303
+or however long it takes it to to wrap up.
+
+449
+00:58:48,193 --> 00:59:04,783
+So that is a very simple example of Monte Carlo integration as a monte Carlo method, using pseudo random numbers to solve, in this case an integral.
+
+450
+00:59:04,933 --> 00:59:10,332
+It's a silly example, because there are much better ways to compute pi from evaluating series
+
+451
+00:59:10,333 --> 00:59:15,763
+expansions and so on that even if you do put those into a numerical calculation,
+
+452
+00:59:15,763 --> 00:59:18,792
+it will run, you know, millions, billions,
+
+453
+00:59:18,793 --> 00:59:32,383
+trillions of times faster than this random sampling where Monte Carlo integration really shines, though, is when we have.
+
+454
+00:59:34,543 --> 00:59:41,443
+Not just 1 or 2 dimensions to integrate, but a large number of dimensions in the integral.
+
+455
+00:59:41,443 --> 00:59:47,653
+So by dimensions here I don't mean spatial dimensions, but the degrees of freedom that we are integrating over.
+
+456
+00:59:50,763 --> 00:59:57,063
+That's the case where other methods, either pen and paper or, uh, computational beast,
+
+457
+00:59:57,483 --> 01:00:02,253
+will struggle just from having to deal with so many different dimensions.
+
+458
+01:00:02,373 --> 01:00:07,473
+So I finished writing here. These are high dimensional integrals.
+
+459
+01:00:10,543 --> 01:00:14,743
+So this is the domain in which Monte Carlo integration, it can proceed.
+
+460
+01:00:14,953 --> 01:00:18,433
+Just as we have seen in 1 or 2 dimensions.
+
+461
+01:00:20,593 --> 01:00:28,453
+It directly applies independent to the number of dimensions that of course this is exactly what we want in statistical physics.
+
+462
+01:00:29,023 --> 01:00:35,982
+When we evaluate the partition function or expectation values coming from that partition function
+
+463
+01:00:35,983 --> 01:00:44,473
+for the large number of interacting degrees of freedom that we deal with in statistical physics,
+
+464
+01:00:45,983 --> 01:00:52,843
+that gives us basically integrations where each dimension corresponds to a degree of freedom.
+
+465
+01:00:53,323 --> 01:01:00,343
+We have n greater than one degrees of freedom in our system to analyse.
+
+466
+01:01:00,733 --> 01:01:07,153
+And just the research at Liverpool that I mentioned is sort of routinely evaluating billion
+
+467
+01:01:07,153 --> 01:01:13,963
+dimensional integrals through Monte Carlo methods that would not be accessible in any other way.
+
+468
+01:01:16,883 --> 01:01:26,483
+So that's the the basic idea. And now let's pause for questions and raise a question myself if you don't have one.
+
+469
+01:01:27,023 --> 01:01:34,163
+Um, delve a bit deeper into the question again of how reliable are these sorts of calculations?
+
+470
+01:01:35,063 --> 01:01:38,393
+And if they are not reliable, how can we make them more reliable?
+
+471
+01:01:39,063 --> 01:01:42,533
+Looks like nobody else has come in remotely.
+
+472
+01:01:44,543 --> 01:01:53,593
+So we can shut that down. And. Consider at the most basic level, if we want the length of our numerical.
+
+473
+01:01:54,543 --> 01:02:04,473
+Computation to be small compared to the age of the universe, that we saw was necessary to consider all microstates.
+
+474
+01:02:06,363 --> 01:02:13,593
+Even for very tiny school systems with only 100 degrees of freedom.
+
+475
+01:02:15,243 --> 01:02:22,203
+So this is yeah, not only much less than one, but maybe even I'll put a third less than sign there.
+
+476
+01:02:22,563 --> 01:02:27,723
+This is an extraordinarily small fraction of the microstates that we can possibly
+
+477
+01:02:28,623 --> 01:02:33,663
+consider in any calculation that we want to do while we're still alive.
+
+478
+01:02:41,223 --> 01:02:44,703
+So it is reasonable to worry that with.
+
+479
+01:02:45,863 --> 01:02:48,983
+Just a tiny, tiny subset of states sampled.
+
+480
+01:02:51,123 --> 01:02:54,863
+Um. How can just looking at.
+
+481
+01:02:55,943 --> 01:03:00,083
+Very, very small fraction of the system.
+
+482
+01:03:01,253 --> 01:03:11,513
+Give anything reliable and in particular reliable approximations for the expectation values that we want to compute.
+
+483
+01:03:13,223 --> 01:03:16,823
+So let's make this now a bit more concrete.
+
+484
+01:03:17,423 --> 01:03:24,653
+If we. Just go back to the easing model in any number of dimensions,
+
+485
+01:03:25,553 --> 01:03:37,463
+gives us a particular system to talk about where we know the behaviour that we should expect for high and low temperatures at high temperatures.
+
+486
+01:03:37,493 --> 01:03:47,573
+We saw that the energies of the different spin configurations, the different microstates, are essentially irrelevant compared to the temperature,
+
+487
+01:03:48,263 --> 01:03:55,433
+and all microstates have their Boltzmann probabilities that are going to be essentially equal.
+
+488
+01:03:57,383 --> 01:04:02,813
+And therefore, as a consequence, what we saw in one of our earliest tutorials,
+
+489
+01:04:02,813 --> 01:04:12,563
+all of these expectation values are going to be determined by the degeneracy of those microstates.
+
+490
+01:04:13,253 --> 01:04:20,523
+The. So the set of upper downwards pointing spins, for example, that are um.
+
+491
+01:04:22,303 --> 01:04:28,633
+For which there are more ways to distribute them among the lattice will appear more times in the sum that defines the partition function,
+
+492
+01:04:29,443 --> 01:04:37,623
+and that will then. Have the outsized role determining the.
+
+493
+01:04:38,763 --> 01:04:46,923
+Expectation values that we may be interested in. So for values of that expectation value that correspond to two.
+
+494
+01:04:47,753 --> 01:04:51,083
+The large degeneracy. What we want to look at.
+
+495
+01:04:51,263 --> 01:04:54,263
+Well, if we just sample a few, that is.
+
+496
+01:04:55,343 --> 01:05:06,063
+At least the. Sort of, uh, state sort of microstate, the sort of spin configuration that we are just more likely to choose by pure random chance.
+
+497
+01:05:07,923 --> 01:05:16,143
+So at least in this high temperature limit, we could be okay just to look at a small fraction of states,
+
+498
+01:05:16,803 --> 01:05:21,903
+we are likely to find the ones that matter, because the ones that matter are the ones we are likely to find.
+
+499
+01:05:22,563 --> 01:05:27,243
+A bit tautological, but at least self-consistent for high temperatures.
+
+500
+01:05:31,963 --> 01:05:40,273
+That leads us to low temperatures, where things will, if we can expect things will be different.
+
+501
+01:05:43,153 --> 01:05:46,153
+So this is the domain where.
+
+502
+01:05:47,783 --> 01:05:54,483
+We have seen that all of these observables are. Dominated by the minimum energy ground state.
+
+503
+01:05:55,523 --> 01:06:01,703
+Which typically has. A limited degeneracy and the easing model.
+
+504
+01:06:01,723 --> 01:06:11,713
+The ground state has the degeneracy of two other, the spins all pointing up or all pointing down, compared to the factorial.
+
+505
+01:06:11,773 --> 01:06:20,893
+Large degeneracy of. Just random states that we would be sampling all of the other contributions.
+
+506
+01:06:23,133 --> 01:06:28,503
+To all of these. Observables that we care about.
+
+507
+01:06:29,993 --> 01:06:34,993
+Our exponentially suppressed. By our usual form factor.
+
+508
+01:06:36,093 --> 01:06:43,593
+The exponential of minus energy over temperature that becomes larger and larger as the temperature becomes smaller and smaller.
+
+509
+01:06:45,353 --> 01:06:52,643
+So there is essentially no chance of finding the very special states that dominate the answer here.
+
+510
+01:06:53,093 --> 01:07:02,393
+And we have to do something other than just randomly choose a microstate and use that as the basis of a numerical computation.
+
+511
+01:07:03,083 --> 01:07:08,263
+So the. So that all makes sense as a, um.
+
+512
+01:07:10,413 --> 01:07:17,013
+Next, or just a general concern about numerical analyses.
+
+513
+01:07:18,633 --> 01:07:32,733
+The only solution that will possibly work to make these numerical calculations reliable is to find the states that are actually,
+
+514
+01:07:33,333 --> 01:07:37,263
+um, important for determining expectation values.
+
+515
+01:07:37,653 --> 01:07:43,083
+In other words, you want our sampling of microstates not to be completely random.
+
+516
+01:07:44,093 --> 01:07:52,523
+But to be pseudorandom and governed by the probability distribution that we have in the canonical ensemble.
+
+517
+01:07:52,523 --> 01:08:00,293
+So the Boltzmann factor E to the minus beta e beta being the inverse temperature.
+
+518
+01:08:02,283 --> 01:08:06,993
+I gives the probability for this microstate omega I.
+
+519
+01:08:07,713 --> 01:08:15,093
+And the challenge, of course, is that we don't know these probabilities, because if we knew them then we would have the the full solution already.
+
+520
+01:08:15,513 --> 01:08:20,683
+So determining that full. Probability distribution.
+
+521
+01:08:22,303 --> 01:08:26,473
+Is what would take many times the age of the universe.
+
+522
+01:08:27,163 --> 01:08:39,193
+So somehow we want to sample states that follow the probabilities in such a way that our calculation is filling out those probabilities as it goes,
+
+523
+01:08:39,763 --> 01:08:48,683
+rather than doing them in advance. It is possible to do this, otherwise I wouldn't be telling you about it.
+
+524
+01:08:49,073 --> 01:08:58,343
+And because this is an approach to sample the important microstates, it is known as important sampling.
+
+525
+01:09:06,583 --> 01:09:16,153
+So this is how actual numerical calculations proceed to to run in a reasonable amount of time.
+
+526
+01:09:16,933 --> 01:09:24,373
+So these are numerical algorithms that. Take advantage of pseudo randomness.
+
+527
+01:09:25,383 --> 01:09:30,413
+As we are used to. In order to find.
+
+528
+01:09:32,663 --> 01:09:38,513
+The important microstates to find the microstates with large probabilities.
+
+529
+01:09:39,763 --> 01:09:47,683
+Um, without knowing them in advance and without provably without any bias in the microstates that are sampled.
+
+530
+01:09:49,153 --> 01:09:59,563
+That is to say, um, the sampling depends only on the probabilities that are trying to be reconstructed or determined and aren't,
+
+531
+01:10:00,733 --> 01:10:11,653
+um, well, they give the correct distribution without being led astray by any remnants or artefacts of this algorithm.
+
+532
+01:10:13,823 --> 01:10:19,253
+And the most famous important sampling algorithm.
+
+533
+01:10:20,333 --> 01:10:25,123
+Out there. Is the first one that was developed.
+
+534
+01:10:25,723 --> 01:10:28,813
+It is usually called the Metropolis algorithm.
+
+535
+01:10:29,383 --> 01:10:38,623
+That was one of the, um. So Nick Metropolis was one of the five authors on the 1953 publication that introduced this algorithm.
+
+536
+01:10:39,793 --> 01:10:45,943
+I like to call it the mirror algorithm to note all of those five authors.
+
+537
+01:10:47,673 --> 01:10:57,083
+So. This is in part because Metropolis Nick Metropolis, who is the M, actually didn't do any work designing the algorithm itself.
+
+538
+01:10:57,563 --> 01:11:02,273
+Um, he was one of the people building those early electronic computing machines,
+
+539
+01:11:02,723 --> 01:11:09,083
+and he gave the others access to his machine so that their algorithm could be tested.
+
+540
+01:11:09,563 --> 01:11:13,793
+Um, those others are Ariana Rosenbluth, Marshall Rosenbluth.
+
+541
+01:11:13,973 --> 01:11:19,493
+Those are the two hours. And then Edward Teller and Michi Teller are the two T's.
+
+542
+01:11:20,393 --> 01:11:31,743
+And really, the Rosen Bluffs were the ones who did the actual work developing the algorithm based on some ideas from Edward Teller and.
+
+543
+01:11:33,773 --> 01:11:38,003
+That deserves some recognition, I think, in how this is presented.
+
+544
+01:11:38,453 --> 01:11:43,433
+So this Emirati algorithm is very simple.
+
+545
+01:11:45,193 --> 01:11:49,962
+You basically start with a system in. Any microstate.
+
+546
+01:11:49,963 --> 01:11:54,973
+It doesn't matter whether it is completely randomly chosen or something simple,
+
+547
+01:11:54,973 --> 01:12:02,743
+like choosing all of the spins to be up always tends to be down in a pattern of up or down spins, the starting position doesn't matter.
+
+548
+01:12:03,133 --> 01:12:08,523
+Um. You can prove that whatever bias it would introduce can be eliminated.
+
+549
+01:12:09,753 --> 01:12:17,953
+And then from this microstates that we have. We make a pseudorandom change.
+
+550
+01:12:23,793 --> 01:12:26,253
+To the degrees of freedom in that microstate.
+
+551
+01:12:26,823 --> 01:12:35,213
+And this will result in some change in the energy, just as we have discussed, to distinguish interacting and non-interacting systems.
+
+552
+01:12:35,223 --> 01:12:39,993
+So for the easy model specifically, this microstate would be a spin configuration.
+
+553
+01:12:40,833 --> 01:12:43,982
+The only change we can make is to flip a spin.
+
+554
+01:12:43,983 --> 01:12:46,983
+So we randomly choose a spin to flip.
+
+555
+01:12:47,433 --> 01:12:51,543
+We compute the change in energy that results. And then we have a choice.
+
+556
+01:12:52,593 --> 01:13:03,423
+Do we accept this changed system as a new microstate, or do we reject the change and repeat the previous microstate in our sampling?
+
+557
+01:13:04,413 --> 01:13:10,653
+We do that probabilistically with an acceptance probability, and that is.
+
+558
+01:13:11,583 --> 01:13:15,553
+No more than 100%. Um.
+
+559
+01:13:16,653 --> 01:13:26,043
+But given by the smaller of 100% and the exponential of minus beta times that delta e.
+
+560
+01:13:27,993 --> 01:13:37,833
+So with that probability, we choose to accept the change to the microstate, otherwise that change is rejected.
+
+561
+01:13:38,073 --> 01:13:41,733
+And no matter what happens, we end up with.
+
+562
+01:13:42,853 --> 01:13:55,743
+A new microstate. Which, with probability one minus p, except could be the same as the previous microstates of possibly.
+
+563
+01:13:57,243 --> 01:14:07,552
+Unchanged compared to the. Um, the state of the system before making before proposing the pseudo random change.
+
+564
+01:14:07,553 --> 01:14:10,433
+And then with this new microstate,
+
+565
+01:14:10,433 --> 01:14:18,893
+we just repeat the process as many times as we possibly can in the time available to us with the computers available to us.
+
+566
+01:14:19,403 --> 01:14:26,423
+And that's the end. That's all the algorithm really involves in its essence, what we get from this.
+
+567
+01:14:27,113 --> 01:14:30,803
+So we have some initial state.
+
+568
+01:14:31,313 --> 01:14:34,793
+We propose changes, we accept some of them, we reject others,
+
+569
+01:14:35,093 --> 01:14:44,543
+and we end up with a sequence of configurations that we are sampling and the sequence that we get.
+
+570
+01:14:46,893 --> 01:14:53,343
+So these very small subset of microstates that we analyse to predict.
+
+571
+01:14:55,103 --> 01:15:05,922
+The. Quantities we are after is an example of the Markov chain that would have come up just
+
+572
+01:15:05,923 --> 01:15:13,693
+in the first week or two of the light of the term back in around the start of February,
+
+573
+01:15:13,693 --> 01:15:18,173
+when we were talking about the the random walks in unit one. That's a similar idea.
+
+574
+01:15:18,193 --> 01:15:26,283
+The position of a random walk or. Is a sequence of randomly chosen positions.
+
+575
+01:15:27,033 --> 01:15:31,923
+Um, just in the same way as the sequence of randomly chosen microstates.
+
+576
+01:15:33,033 --> 01:15:41,883
+The specific Markov property that uh, gives this chain its name is the fact that.
+
+577
+01:15:43,673 --> 01:15:48,983
+Each microstate that appears in this sequence is.
+
+578
+01:15:50,273 --> 01:15:54,503
+Just based very simply on the previous one. There is no.
+
+579
+01:15:56,463 --> 01:15:59,913
+A memory of anything that came before.
+
+580
+01:16:00,303 --> 01:16:04,593
+So there's no bias to avoid microstates that have already been sampled,
+
+581
+01:16:04,953 --> 01:16:08,613
+or going the other way to return to microstates that have already been sampled.
+
+582
+01:16:10,143 --> 01:16:16,113
+Um, you can see there's no memory of any previous links in that chain.
+
+583
+01:16:18,383 --> 01:16:24,593
+And just as a way to quickly touch base and note why this makes sense,
+
+584
+01:16:25,103 --> 01:16:37,373
+we can go back to this low temperature concern about the observables being dominated by that lowest energy ground state,
+
+585
+01:16:37,973 --> 01:16:41,783
+and just confirm that this makes sense in that context.
+
+586
+01:16:42,353 --> 01:16:50,513
+If we end up hitting that ground state in this Markov chain and we want predictions to be dominated by it,
+
+587
+01:16:50,993 --> 01:16:56,573
+then there should be some way to stick with that ground state for further updates.
+
+588
+01:16:58,603 --> 01:17:04,572
+Um. So we should have the ground state repeated many times in the chain that we
+
+589
+01:17:04,573 --> 01:17:09,223
+are sampling in order to give us what we expect in the low temperature phase.
+
+590
+01:17:09,943 --> 01:17:11,922
+That low temperature is when beta is large,
+
+591
+01:17:11,923 --> 01:17:19,723
+and this exponential factor becomes a very highly suppressed exponential for any positive change in the energies.
+
+592
+01:17:20,953 --> 01:17:27,073
+So if our pseudo random change leads to a decrease in the energy delta E is negative,
+
+593
+01:17:27,673 --> 01:17:35,563
+then we will always accept that, um, the exponential of a positive number will be greater than 100%.
+
+594
+01:17:36,163 --> 01:17:42,643
+So we will always move to lower energy microstates if they pseudo randomly arise.
+
+595
+01:17:43,963 --> 01:17:47,863
+If, on the other hand, our pseudo random change increases the energy,
+
+596
+01:17:48,313 --> 01:17:56,233
+then there is only an exponentially small chance of fluctuating back up to that energy as we go along,
+
+597
+01:17:56,863 --> 01:18:01,303
+and that chance becomes smaller and smaller as the temperature becomes lower and lower.
+
+598
+01:18:01,753 --> 01:18:10,303
+So everything is making sense qualitatively, and we can now fairly easily confirm that.
+
+599
+01:18:11,673 --> 01:18:15,003
+The probabilities that we have for going between.
+
+600
+01:18:16,503 --> 01:18:19,563
+Any two microstates. We can call them A and B.
+
+601
+01:18:20,733 --> 01:18:28,803
+If we look at the probability of going from A to B versus the probability of going in the opposite direction from B to A.
+
+602
+01:18:31,173 --> 01:18:42,223
+Then. In both of these cases, we will say that the system has the corresponding energy, either energy be or energy A.
+
+603
+01:18:43,213 --> 01:18:46,573
+We don't know in advance which of those is larger.
+
+604
+01:18:47,713 --> 01:18:54,163
+If we knew all the energies, we would know all the Boltzmann factors. We would have the full brute force solution.
+
+605
+01:18:54,703 --> 01:19:02,413
+So as we go along, we have to evaluate all of these energy changes that then get exponentiated.
+
+606
+01:19:06,253 --> 01:19:14,143
+So they only differ by which of A or B is the final state and which we are starting from in this pseudorandom update.
+
+607
+01:19:15,793 --> 01:19:25,543
+There are two possibilities here. Either the energy B is greater than or equal to the energy A, or it is less than or equal to the energy A.
+
+608
+01:19:26,953 --> 01:19:31,633
+In one case, we will pick out a one in either the numerator or denominator.
+
+609
+01:19:31,843 --> 01:19:39,643
+One of the arguments of the exponential will be positive or zero, and give us a 100% acceptance probability,
+
+610
+01:19:40,903 --> 01:19:47,383
+and then the other one will give the exponential factor either an e to the minus beta.
+
+611
+01:19:49,153 --> 01:19:56,533
+Energy be minus energy A from the numerator, or one over the exponential of minus b to e minus eb,
+
+612
+01:19:57,013 --> 01:20:03,853
+which we can move from the denominator up to the numerator by reversing the sign of the argument of the exponential,
+
+613
+01:20:04,213 --> 01:20:07,993
+which gets us to eb minus e again.
+
+614
+01:20:08,923 --> 01:20:19,033
+So no matter what happens, that is the ratio for these probabilities of accepting these moves between microstates in our Markov chain,
+
+615
+01:20:20,143 --> 01:20:26,083
+we can write that as the exponential of minus beta eb.
+
+616
+01:20:27,543 --> 01:20:40,923
+Over the corresponding factor for PTA, which is exactly the ratio of the probabilities that we want without knowing those probabilities in advance.
+
+617
+01:20:42,303 --> 01:20:49,603
+So this is a way for the computer to fill out these probabilities without knowing where they are.
+
+618
+01:20:49,643 --> 01:20:53,703
+It's proceeding blindly just with this algorithmic acceptance probability.
+
+619
+01:20:54,183 --> 01:21:02,103
+That then guarantees that. Um states will be sampled with the proper proportions.
+
+620
+01:21:03,813 --> 01:21:08,943
+Well. It guarantees this subject to a few conditions.
+
+621
+01:21:09,873 --> 01:21:17,103
+So in order for this algorithmic approach to give the correct answer and avoid.
+
+622
+01:21:18,223 --> 01:21:24,943
+The biases that we wouldn't necessarily be able to, um, check because we don't know the full answer.
+
+623
+01:21:25,963 --> 01:21:29,533
+It must be possible, at least in principle.
+
+624
+01:21:31,863 --> 01:21:41,883
+For every single microstates to be reached in this iterative process of going through the Markov chain.
+
+625
+01:21:43,813 --> 01:21:47,853
+Um. So we must be able.
+
+626
+01:21:51,443 --> 01:21:57,513
+To reach any microstates from any other microstate that we might have started from.
+
+627
+01:22:01,563 --> 01:22:05,013
+Which may well be the the same microstate.
+
+628
+01:22:06,663 --> 01:22:15,303
+We'll just use different indices there. If we were not able to reach some microstates, you know, for whatever reason, maybe, um,
+
+629
+01:22:15,513 --> 01:22:21,333
+in the easing model, our pseudo random selection of spins ended up only choosing the odd sites.
+
+630
+01:22:21,663 --> 01:22:32,733
+So we never flipped spins at even sites. Then, even though the ratios of sites we can go between comes out with the correct relative probability,
+
+631
+01:22:33,693 --> 01:22:39,723
+there are microstates missing from the updates in the first place that are then missing from.
+
+632
+01:22:41,343 --> 01:22:50,313
+The Markov chain as a whole and all of its predictions. This condition for the correctness of numerical computations is.
+
+633
+01:22:53,763 --> 01:23:02,973
+Known as ergodicity. So a fancy word just for being able to sample all of the microstates that have non-zero probabilities.
+
+634
+01:23:04,023 --> 01:23:15,693
+And the question of whether a Markov chain Monte Carlo analysis is ergodic depends both on the interacting system.
+
+635
+01:23:17,713 --> 01:23:25,963
+We look at in the first place, as well as the pseudo random approach we design to.
+
+636
+01:23:28,383 --> 01:23:34,323
+Uh, move from one microstate to the next, which is not always as simple as flipping a spin.
+
+637
+01:23:43,623 --> 01:24:00,753
+So this is. One aspect of numerical analyses in Monte Carlo algorithms that has to be carefully treated in order to ensure the correct results, and.
+
+638
+01:24:03,613 --> 01:24:16,063
+Another aspect of these Markov chains, ways that, um, numerical analysis can run into problems is the question of.
+
+639
+01:24:17,923 --> 01:24:27,373
+Actually getting our small number of samples to be effectively independent of each other so that they are really,
+
+640
+01:24:27,763 --> 01:24:32,803
+um, exploring the full range of microstates that we want to investigate.
+
+641
+01:24:34,553 --> 01:24:40,463
+So again, we can go back to the using model to put this consideration on a more concrete footing.
+
+642
+01:24:40,973 --> 01:24:48,173
+If we have some huge number of spins and we choose one of them and we flip it and either accept or reject that probability,
+
+643
+01:24:49,103 --> 01:24:53,453
+that is going to be a one over n change in the overall system.
+
+644
+01:24:54,443 --> 01:25:01,103
+So the new microstate that we get out from this sort of algorithm is um.
+
+645
+01:25:03,483 --> 01:25:07,983
+Even if it changes, that change can be very minor,
+
+646
+01:25:08,283 --> 01:25:17,373
+and the new microstate that we get is then correlated with the one that we started off with and often.
+
+647
+01:25:19,183 --> 01:25:27,973
+Many updates may be needed in order to correlate the microstates that are being considered, so it may take.
+
+648
+01:25:30,833 --> 01:25:36,013
+Many updates. For this Markov chain approach to.
+
+649
+01:25:36,973 --> 01:25:45,493
+Produce a new configuration that is statistically independent of the one we started with.
+
+650
+01:25:48,913 --> 01:25:56,683
+And it is only those statistically independent microstates that we want to take, uh,
+
+651
+01:25:56,893 --> 01:26:05,533
+take into account when predicting observable expectation values or approximate, uh, expectation values.
+
+652
+01:26:07,003 --> 01:26:20,883
+So. The fact that all of these updates may be needed refers to the possible correlations of the system with itself as we go through this Markov chain,
+
+653
+01:26:21,423 --> 01:26:25,723
+and. Adjust the microstates from one to the next.
+
+654
+01:26:26,443 --> 01:26:31,903
+So this is known as an autocorrelation, and it has the.
+
+655
+01:26:33,953 --> 01:26:39,503
+Uh, results the effect of increasing the computational costs.
+
+656
+01:26:41,493 --> 01:26:47,763
+As well as increasing the statistical uncertainties that.
+
+657
+01:26:50,693 --> 01:26:57,323
+Would come along with all of these numerical predictions, with a finite number of microstates being sampled.
+
+658
+01:26:58,923 --> 01:27:02,003
+Something we don't have time to prove, but a.
+
+659
+01:27:03,823 --> 01:27:06,583
+Result that essentially comes from the central limit theorem.
+
+660
+01:27:06,583 --> 01:27:11,803
+And something you might have seen before is that the uncertainties on these numerical predictions
+
+661
+01:27:12,433 --> 01:27:18,683
+decrease proportionally to one over the square number of the number of samples that we have.
+
+662
+01:27:18,703 --> 01:27:28,633
+So I'll call that's. But this only holds when all of these samples being considered are statistically independent.
+
+663
+01:27:31,073 --> 01:27:39,263
+And the longer it takes the Markov chain to generate a statistically independent sample from the previous one,
+
+664
+01:27:39,263 --> 01:27:44,063
+the longer it will take to beat down these statistical uncertainties.
+
+665
+01:27:44,873 --> 01:27:56,963
+So. We can hop back to our Monte Carlo computation of pi going up to, uh, billion samples.
+
+666
+01:27:57,413 --> 01:28:04,793
+In the end, we were able to get pi of 3.1416 in a little over ten minutes with.
+
+667
+01:28:05,733 --> 01:28:11,273
+The statistical uncertainty in the fourth decimal place so we can check that is correct.
+
+668
+01:28:11,283 --> 01:28:23,283
+Pi is 3.14159, etc. so we are getting the right answer and we are seeing these statistical uncertainties decrease by roughly a factor of three.
+
+669
+01:28:23,643 --> 01:28:36,903
+Every time the number of samples goes up by a factor of ten, which is exactly that one over the square root that I tried to get on the screen.
+
+670
+01:28:36,903 --> 01:28:43,363
+And okay, there it is. So that's an illustration of this.
+
+671
+01:28:45,473 --> 01:28:52,303
+And. One big aspect of research from.
+
+672
+01:28:54,243 --> 01:29:00,623
+Starting in the 1970s or 80s for using like systems in particular.
+
+673
+01:29:00,633 --> 01:29:09,083
+So systems where. There are kind of discrete degrees of freedom, not necessarily using spins.
+
+674
+01:29:10,923 --> 01:29:13,983
+But, uh. Different from.
+
+675
+01:29:15,633 --> 01:29:20,883
+I should say just using like so, including the using model, but a bit more general.
+
+676
+01:29:24,393 --> 01:29:38,793
+There is or there has been found a way to dramatically decrease these autocorrelations improve the efficiency of numerical Monte Carlo sampling and.
+
+677
+01:29:41,603 --> 01:29:52,553
+This approach. Proceeds by instead of choosing a single spin.
+
+678
+01:29:52,823 --> 01:30:01,223
+Flipping it and then hitting it with the accept reject test. The algorithm identifies a whole cluster.
+
+679
+01:30:02,263 --> 01:30:11,533
+Of spins that are aligned in the same direction, or the generalisation of that direction for more general systems like the using model.
+
+680
+01:30:11,743 --> 01:30:16,243
+So that's what I mean by using like something where we can define a direction.
+
+681
+01:30:17,773 --> 01:30:24,613
+All of those spins in that cluster are flipped at once rather than going one by one.
+
+682
+01:30:25,363 --> 01:30:37,743
+And if we. Think back to some of the pictures that we have seen for field configurations in the using model.
+
+683
+01:30:39,303 --> 01:30:43,053
+Last week, I believe we should be.
+
+684
+01:30:44,863 --> 01:30:53,863
+So these sorts of pictures. This is especially useful around the critical temperature, which is where again,
+
+685
+01:30:53,863 --> 01:31:00,883
+for reasons we haven't had time to cover, the orientations of the spins tend to start forming these clusters,
+
+686
+01:31:01,393 --> 01:31:05,653
+rather than being roughly randomly distributed at higher temperatures,
+
+687
+01:31:06,283 --> 01:31:12,463
+or just forming a boring single cluster spanning the whole lattice at lower temperatures.
+
+688
+01:31:13,033 --> 01:31:15,673
+So I think I pointed this out and circled.
+
+689
+01:31:16,693 --> 01:31:28,543
+Some of the clusters of black spins of increasing size in this 400 by 400, using model spin configuration right around the critical temperature.
+
+690
+01:31:30,633 --> 01:31:33,593
+And we can appreciate sort of by looking at this, um,
+
+691
+01:31:33,903 --> 01:31:41,643
+maybe more concretely than just by talking through it, that if we can design an algorithm that flips.
+
+692
+01:31:42,863 --> 01:31:47,213
+Any of these clusters of black spins of any size. All in a single step.
+
+693
+01:31:47,633 --> 01:31:53,603
+It's going to lead to bigger changes in the microstates before and after that change,
+
+694
+01:31:53,993 --> 01:31:59,273
+compared to just trying to go through each of the thousands of spins that are in there
+
+695
+01:31:59,573 --> 01:32:06,953
+independently and doing the accept reject test for each and every one of those one after the next.
+
+696
+01:32:09,323 --> 01:32:18,833
+Those clustering algorithm is really sort of revolutionised numerical analysis of using like systems that tend to arise in condensed matter physics.
+
+697
+01:32:18,833 --> 01:32:23,423
+So things that might have taken a week or a month to compute.
+
+698
+01:32:23,693 --> 01:32:30,353
+You can sort of do with a clustering algorithm overnight started running go home and it's done when you come back in the morning.
+
+699
+01:32:32,233 --> 01:32:38,383
+For particle physics systems like the, the ones I, uh, research.
+
+700
+01:32:38,623 --> 01:32:45,823
+So quantum field theories that are discretized on a, uh, space time lattice,
+
+701
+01:32:46,693 --> 01:32:54,033
+where there are certain continuous symmetries that prevents the application of clusters of spins.
+
+702
+01:32:54,043 --> 01:32:57,163
+Our calculations don't benefit from this.
+
+703
+01:32:58,973 --> 01:33:06,623
+Um, removal. So this, these benefits, um, that reduce the autocorrelations and become particularly important as.
+
+704
+01:33:07,633 --> 01:33:10,993
+The system approaches a phase transition.
+
+705
+01:33:12,893 --> 01:33:16,043
+I'll say just in passing that. This.
+
+706
+01:33:17,113 --> 01:33:21,243
+These so-called cluster algorithms. By taking this approach.
+
+707
+01:33:23,783 --> 01:33:28,703
+They avoid a phenomenon that. Has long been observed.
+
+708
+01:33:29,643 --> 01:33:35,243
+Critical. Misspelled that on this critical slowing down.
+
+709
+01:33:37,163 --> 01:33:45,383
+Just refers to these autocorrelations becoming an increasing problem as we approach a critical point for a phase transition.
+
+710
+01:33:50,813 --> 01:33:56,753
+In particular for second order phase transitions where we would want to predict.
+
+711
+01:33:57,903 --> 01:34:02,613
+The critical exponents for the systems universality class.
+
+712
+01:34:04,883 --> 01:34:14,653
+This is the second order phase. Transitions are. What lead to those fluctuations on all length scales.
+
+713
+01:34:15,323 --> 01:34:20,143
+Just thanks to the divergence of the derivative of the order parameter.
+
+714
+01:34:21,683 --> 01:34:30,833
+That ultimately is the origin of. Those black and white clusters we were able to see visually in that picture.
+
+715
+01:34:32,693 --> 01:34:45,263
+And there is a lot of ongoing research trying to apply these sorts of cluster algorithms to the lattice quantum field theory research that I work on,
+
+716
+01:34:46,373 --> 01:34:53,392
+just to give a flavour of that in the last couple of minutes that we have here, unless there are questions about important sampling,
+
+717
+01:34:53,393 --> 01:34:59,453
+Markov chains, um, ergodicity and autocorrelations, those key concepts that we have seen.
+
+718
+01:35:01,173 --> 01:35:07,083
+Just a. Final topic I can mention.
+
+719
+01:35:08,793 --> 01:35:13,053
+As close to my heart is this lattice quantum field theory.
+
+720
+01:35:14,133 --> 01:35:16,353
+So a particular, in fact,
+
+721
+01:35:17,103 --> 01:35:26,973
+the only known way to define quantum field theory in a mathematically rigorous way without relying on expansions that don't actually converge.
+
+722
+01:35:27,813 --> 01:35:39,033
+Um, quantum field theory is what we get from combining relativity, special relativity, and quantum mechanics.
+
+723
+01:35:40,253 --> 01:35:47,143
+So. We are necessarily led to a description of nature.
+
+724
+01:35:48,823 --> 01:36:00,473
+If we have both of those ingredients. We have to have fields, some capital Phi, possibly more than one, but they fill all space.
+
+725
+01:36:03,093 --> 01:36:07,353
+And, um, evolve at all moments in time.
+
+726
+01:36:07,563 --> 01:36:19,353
+Typically with some interactions. The interactions in any particular quantum field theory are governed by the.
+
+727
+01:36:21,643 --> 01:36:28,933
+La grande density. So a generalisation of the Lagrangian that you may have seen if you took math 2 to 8.
+
+728
+01:36:28,963 --> 01:36:30,703
+The basis of classical mechanics.
+
+729
+01:36:32,023 --> 01:36:42,463
+The Lagrangian density in quantum field theory is a functional of all of the fields as functions of all points in space and time.
+
+730
+01:36:44,053 --> 01:36:51,533
+This Lagrangian. Well, the way that these interactions govern the system.
+
+731
+01:36:54,283 --> 01:37:01,123
+Is described by a so-called path integral introduced by and named after Richard Feynman.
+
+732
+01:37:02,323 --> 01:37:08,413
+This path integral is also a functional of all of our fields at all points in space and time.
+
+733
+01:37:10,113 --> 01:37:15,123
+It is called Z and we will see that for good reason. We integrate over all of those fields.
+
+734
+01:37:16,193 --> 01:37:22,213
+And the arguments of this integral. Is the exponential function.
+
+735
+01:37:23,163 --> 01:37:33,633
+Of the integral of the Lagrangian itself, again as a functional of all the fields phi at all points in space and time.
+
+736
+01:37:35,403 --> 01:37:45,963
+So this expression, integrating over all the degrees of freedom with an exponential of some functional in there,
+
+737
+01:37:46,803 --> 01:37:56,253
+has exactly the same functional form as the canonical partition function that we have been dealing with a lot in this module,
+
+738
+01:37:56,763 --> 01:38:12,513
+up to the temperature being replaced by the Planck constant h bar, governing the scale of fluctuations and the time that we are integrating over.
+
+739
+01:38:12,513 --> 01:38:17,913
+So if we replace T with the so-called imaginary time tau,
+
+740
+01:38:18,723 --> 01:38:26,043
+then the factors of I cancel off and give us the negative sign that we would be used to from E to the minus b to E.
+
+741
+01:38:27,753 --> 01:38:33,273
+So we've run out of time to tell you anything more about lattice quantum field theory.
+
+742
+01:38:33,753 --> 01:38:43,593
+Any of you who will be around for a fourth year can take the math 4 to 5 and hear a bit more about all of these Lagrangian densities and functionals.
+
+743
+01:38:44,133 --> 01:38:55,413
+But for now, I'll just point out that you know, the at the conclusion of this module, you have all the mathematical tools to.
+
+744
+01:38:57,083 --> 01:39:00,623
+Be able to tackle these sorts of open and ongoing.
+
+745
+01:39:01,623 --> 01:39:05,603
+Research questions. Just having started.
+
+746
+01:39:06,963 --> 01:39:18,123
+A few months ago by looking at. Some of the very basic probability foundations, like the central limit theorem and concepts of.
+
+747
+01:39:19,413 --> 01:39:28,643
+Expectation, value and variance. So you've come a long way in this module scene a lot, and I hope that you have enjoyed it.
+
+748
+01:39:30,713 --> 01:39:41,273
+And found some interesting and rewarding applications for this statistical approach of looking at large numbers of.
+
+749
+01:39:42,463 --> 01:39:51,393
+Interacting or non-interacting. Degrees of freedom. The one very final last call for questions, and I'm not expecting any.
+
+750
+01:39:52,283 --> 01:39:59,373
+Uh, there will be office hours today. And as we approach the exam in a couple of weeks, you're always welcome to to get in touch with me.
+
+751
+01:39:59,373 --> 01:40:07,623
+If any questions do arise. I will be holding formal office hours, but you have all my contact information through canvas if you need it.
+
+752
+01:40:08,343 --> 01:40:14,673
+So with that, I'll leave you to the remainder of your day and the remainder of your semester.
+
+753
+01:40:14,943 --> 01:40:17,973
+Wish you good luck on the upcoming exam.
+
